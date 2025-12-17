@@ -1,5 +1,6 @@
 # Projekt: Advanced Data Analysis (DLBDSEDA02)
-Ziel des Projekts ist es NLP-Techniken auf einem organisch entstandenen Datensatz auszuführen.
+Ziel des Projekts ist es NLP-Techniken auf einem organisch entstandenen Datensatzgemäß der Aufgabenstellung der Hochschule auszuführen.
+Aufgabe Nr. 1
 
 
 
@@ -13,9 +14,9 @@ Datenformat: csv
 Datenquellen mit organisch vermutetem Ursprung werden lokal heruntergeladen und anschließend anhand eines KI-Detectors genauer geprüft.
 
 #### Datenprüfung (engl. )
-Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten überprüft und 
+Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.
 
-. Anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.
+anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.
 #### Datenauswahl (engl. ) 
 
 
