@@ -98,10 +98,10 @@ anhand von Kriterien wie
   <!-- Pre-Processing -->
     <details>
       <summary>Pre-Processing</summary>
-      <ul>
+      <ol>
         <li><a>Tokenisierung<a></li>
         <li><a>Normalisierung<a></li>
-      </ul>
+      </ol>
     </details>
   </li>
 
