@@ -49,6 +49,8 @@ Trichter
   <summary>Datenaquisition</summary>
   <ol>
     <li><a href="#datenrecherche">Datenrecherche</a></li>
+    ### Datenrecherche (engl. data )
+Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen (Kaggle, GitHub, ect. ) durchgeführt und nach geeigneten englischen und deutschen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten () werden ignoriert.
     <li><a href="#datensammlung">Phase 1 - Konzeptionsphase</a>
       <ul>
       <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
@@ -77,8 +79,6 @@ Trichter
   </ol>
 </details>
 
-### Datenrecherche (engl. data )
-Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen (Kaggle, GitHub, ect. ) durchgeführt und nach geeigneten englischen und deutschen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten () werden ignoriert.
 
 ### Datensammlung (engl. data collection)
 Datenformat: csv
