@@ -43,6 +43,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 </details>
 
 ## Datenaquisition (engl. data acquisition)
+In der Phase der Datenaquisition werden die Daten für den NLP-Pipeline-Input bestimmt. Dazu wird ein trichterförmiger Prozess angestrebt, dessen Zweck die Bestimmung, eines den Anforderungen entsprechende Datenquelle ist.
 Trichter
 
 <!-- Datenaquisition -->
@@ -126,8 +127,8 @@ Beginn der Merkmalsaufbereitung (engl. feature engineering)
 </ol>
 
 ### Post-Processing
+Beginn der Evaluation
 <ol>
-Post-Processing
   <details>
       <summary>Post-Processing</summary>
       <ol>
