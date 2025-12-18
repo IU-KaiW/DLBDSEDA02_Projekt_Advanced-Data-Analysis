@@ -95,7 +95,6 @@ anhand von Kriterien wie
 ### Pre-Processing
 Beginn der der Merkmalsvorbereitung (engl. feature preparation).
 <ol>
-  <li>
     <details>
       <summary>Textbereinigung (engl. text cleaning)</summary>
         <ol>
@@ -110,7 +109,6 @@ Beginn der der Merkmalsvorbereitung (engl. feature preparation).
         <li> Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
         </ol>
     </details>
-  </li>
 </ol>
 
 
