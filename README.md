@@ -91,7 +91,7 @@ Trichter
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
-
+## Pre-Processing
 <ol>
   <li>
 Pre-Processing
@@ -103,6 +103,7 @@ Pre-Processing
         Standardisierung (engl. standardisation)<br>
         <br>
         Rauschentfernung (engl. noise reduction)<br>
+        </ol>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
         Tokenisierung (engl. tokenization)<br>
