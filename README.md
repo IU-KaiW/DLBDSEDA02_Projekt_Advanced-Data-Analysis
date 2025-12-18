@@ -97,13 +97,13 @@ anhand von Kriterien wie
 
 <!-- Processing -->
 <details>
-  <summary>Pre-Processing</summary>
+  <summary>Processing</summary>
   <ol>
 
 
 <!-- Post-Processing -->
 <details>
-  <summary>Pre-Processing</summary>
+  <summary>Post-Processing</summary>
   <ol>
 
 
