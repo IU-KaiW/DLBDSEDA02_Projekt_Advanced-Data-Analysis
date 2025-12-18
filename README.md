@@ -92,10 +92,9 @@ Trichter
 anhand von Kriterien wie
 
 ### Pre-Processing
-
+Beginn der der Merkmalsvorbereitung
 <ol>
   <li>
-Pre-Processing
     <details>
       <summary>Merkmalsvorbereitung (engl. feature preparation)</summary>
         <ol>
