@@ -44,6 +44,40 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ## Datenaquisition (engl. data acquisition)
 Trichter
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Datenaquisition</summary>
+  <ol>
+    <li><a href="#datenrecherche">Datenrecherche</a></li>
+    <li><a href="#datensammlung">Phase 1 - Konzeptionsphase</a>
+      <ul>
+      <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
+        Datenrecherche
+        Datensammlung
+        Download
+        Datenprüfung
+        Datenauswahl
+        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
+        Pre-Processing
+        Processing
+        Post-Processing
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
+      </ul>
+    <li><a href="#phase2">Phase 2 - Erarbeitungsphase</a>
+    <li><a href="#phase3">Phase 3 - Finalisierungsphase</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
+      </ul>
+    
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#configuration">Configuration</a></li>x
+  </ol>
+</details>
+
 ### Datenrecherche (engl. data )
 Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen (Kaggle, GitHub, ect. ) durchgeführt und nach geeigneten englischen und deutschen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten () werden ignoriert.
 
