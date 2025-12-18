@@ -1,4 +1,13 @@
 # Projekt: Advanced Data Analysis (DLBDSEDA02)
+
+## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
+Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden. 
+
+1. Schriftliches Konzept
+2. Datenverarbeitung
+2.1. Vektorisierung 2 Techniken
+2.2. Extraktion von Themen 2 Ansätze.
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Inhaltsverzeichnis</summary>
@@ -32,14 +41,6 @@
     <li><a href="#configuration">Configuration</a></li>x
   </ol>
 </details>
-
-## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden. 
-
-1. Schriftliches Konzept
-2. Datenverarbeitung
-2.1. Vektorisierung 2 Techniken
-2.2. Extraktion von Themen 2 Ansätze.
 
 ## Datenaquisition (engl. data acquisition)
 Trichter
