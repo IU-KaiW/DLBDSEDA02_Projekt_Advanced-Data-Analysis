@@ -6,7 +6,7 @@
     <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlung-zu-analyieren">Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren</a></li>
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
-        <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
+      <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
         Datenrecherche
         Datensammlung
         Download
