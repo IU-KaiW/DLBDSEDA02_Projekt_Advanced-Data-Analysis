@@ -104,8 +104,8 @@ Pre-Processing
         <br>
         Rauschentfernung (engl. noise reduction)<br>
         <li><a>Merkmalsextraktion (engl. feature extraction)<a></li>
-        Tokenisierung (engl. tokenization)
-        Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)
+        Tokenisierung (engl. tokenization)<br>
+        Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
       </ol>
     </details>
   </li>
