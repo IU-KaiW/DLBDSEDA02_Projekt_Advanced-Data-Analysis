@@ -43,16 +43,16 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 </details>
 
 ## Datenaquisition (engl. data acquisition)
-*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, fünf stufiger  Prozess durchlaufen an dessen Ende der für die Pipeline-Eingabe gewählte Datensatz steht.*
+*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, fünf stufiger  Prozess durchlaufen an dessen Ende ein Datensatz für die Pipeline-Eingabe steht.*
 
 <details>
   <summary>Datenaquisition (engl. data acquisition)</summary>
   <ol>
     <li><a href="#datenrecherche">Datenrecherche (engl. data research)</a></li>
-    Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen (Kaggle, GitHub, ect. ) durchgeführt und nach geeigneten englischen oder deutschen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten () werden ignoriert.
+    Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten wurden hierbei ignoriert.
     <li><a href="#datensammlung">Datensammlung (engl. data collection)</a></li>
     Datenformat: csv
-      <li><a href="#download">Download (engl. data collection)</a></li>
+      <li><a href="#download">Download (engl. data download)</a></li>
       Datenquellen mit organisch vermutetem Ursprung werden lokal heruntergeladen und anschließend anhand eines KI-Detectors genauer geprüft.
       <li><a href="#datensatzprüfung">Datenprüfung (engl. data check)</a></li>
       Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.
