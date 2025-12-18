@@ -95,39 +95,35 @@ anhand von Kriterien wie
 <ol>
   <li>
 Pre-Processing
-  <!-- Pre-Processing -->
     <details>
       <summary>Merkmalsvorbereitung (engl. feature preparation)</summary>
         <ol>
-        <li><a>Textbereinigung (engl. text cleaning)<a></li>
-        Standardisierung (engl. standardisation)<br>
-        <br>
-        Rauschentfernung (engl. noise reduction)<br>
+        <li> Textbereinigung (engl. text cleaning)</li>
+        <li> Standardisierung (engl. standardisation)<br></li>
+        <li> Rauschentfernung (engl. noise reduction)<br></li>
         </ol>
+    </details>
+    <details>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
-        Tokenisierung (engl. tokenization)<br>
-        Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
-      </ol>
+        <li> Tokenisierung (engl. tokenization)</li>
+        <li> Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
+        </ol>
     </details>
-  </li>
-
   <li>
 Processing
-  <!-- Processing -->
     <details>
-      <summary>Processing</summary>
+      <summary>Merkmalsextraktion (engl. feature extraction)</summary>
       <ol>
-        <li><a>Merkmalsextraktion (engl. feature extraction)<a></li>
-        <li>Frequency Based Embedding</li>
+        <li>Vektorisierung</li>
+          <li>Frequency Based Embedding</li>
         <li>Prediction Based Word Embedding</li>
       </ol>
     </details>
   </li>
 
   <li>
-  <!-- Post-Processing -->
-  Post-Processing
+Post-Processing
     <details>
       <summary>Post-Processing</summary>
       <ol>
@@ -137,9 +133,3 @@ Processing
     </details>
   </li>
 </ol>
-
-
-
-### 1
-### 2
-### 3
