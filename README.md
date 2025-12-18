@@ -91,7 +91,8 @@ Trichter
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
-## Pre-Processing
+### Pre-Processing
+
 <ol>
   <li>
 Pre-Processing
@@ -112,6 +113,7 @@ Pre-Processing
     </details>
   <li>
 Processing
+Beginn der Merkmalsaufbereitung (engl. Feature Engineering)
     <details>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
       <ol>
@@ -133,3 +135,7 @@ Post-Processing
     </details>
   </li>
 </ol>
+
+### Processing
+
+### Post-Processing
