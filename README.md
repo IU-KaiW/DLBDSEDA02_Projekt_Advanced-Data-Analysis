@@ -34,8 +34,12 @@
 </details>
 
 ## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.
+Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden. 
 
+1. Schriftliches Konzept
+2. Datenverarbeitung
+2.1. Vektorisierung 2 Techniken
+2.2. Extraktion von Themen 2 Ansätze.
 
 ## Datenaquisition (engl. data acquisition)
 Trichter
@@ -58,11 +62,9 @@ anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples
 
 
 
-## NLP-Pipeline
-1. Schriftliches Konzept
-2. Datenverarbeitung
-2.1. Vektorisierung 2 Techniken
-2.2. Extraktion von Themen 2 Ansätze.
+## Verarbeitungsschritte (engl. Pipeline)
+anhand von Kriterien wie
+
 
 ### Pre-Processing
 
