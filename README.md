@@ -43,8 +43,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 </details>
 
 ## Datenaquisition (engl. data acquisition)
-In der Phase der Datenaquisition werden die Daten für den NLP-Pipeline-Input bestimmt. Dazu wird ein trichterförmiger Prozess angestrebt, dessen Zweck die Bestimmung, eines den Anforderungen entsprechende Datenquelle ist.
-Trichter
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht und bewertet. Dazu wird ein trichterförmiger Prozess durchlaufen, dessen Ziel die Bestimmung eines geeigneten Datensatzes ist.
 
 <!-- Datenaquisition -->
 <details>
@@ -61,31 +60,6 @@ Trichter
       <li><a href="#datensatzauswahl">Datensatzauswahl (engl. data selection)</a></li>
       <li><a href="#datenaufnahme">Datenaufnahme (engl. data ingestion)</a></li>
       Pipeline-Input
-
-      <ul>
-      <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
-        Datenrecherche
-        Datensammlung
-        Download
-        Datenprüfung
-        Datenauswahl
-        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
-        Pre-Processing
-        Processing
-        Post-Processing
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
-      </ul>
-    <li><a href="#phase2">Phase 2 - Erarbeitungsphase</a>
-    <li><a href="#phase3">Phase 3 - Finalisierungsphase</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#configuration">Configuration</a></li>x
   </ol>
 </details>
 
