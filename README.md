@@ -95,20 +95,50 @@ anhand von Kriterien wie
   <summary>Pre-Processing</summary>
   <ol>
       <ul>
+
 <!-- Processing -->
 <details>
   <summary>Processing</summary>
   <ol>
 
-
 <!-- Post-Processing -->
 <details>
   <summary>Post-Processing</summary>
   <ol>
+<ol>
+  <li>
+    <details>
+      <summary>Pre-Processing</summary>
+      <ul>
+        <li>Tokenisierung</li>
+        <li>Normalisierung</li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Processing</summary>
+      <ul>
+        <li>POS-Tagging</li>
+        <li>Named Entity Recognition</li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Post-Processing</summary>
+      <ul>
+        <li>Aggregation</li>
+        <li>Visualisierung</li>
+      </ul>
+    </details>
+  </li>
+</ol>
 
 
 
-
-### Pre-Processing
-### Processing
-### Post-Processing
+### 1
+### 2
+### 3
