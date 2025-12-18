@@ -3,7 +3,7 @@
 <details>
   <summary>Inhaltsverzeichnis</summary>
   <ol>
-    <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlng-zu-analyieren">Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren</a></li>
+    <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlung-zu-analyieren">Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren</a></li>
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
         <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
@@ -25,17 +25,17 @@
   </ol>
 </details>
 
-## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren
+## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
 Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.
 
 
 ## Datenaquisition (engl. data acquisition)
 Trichter
 
-### Datenrecherche (engl. )
+### Datenrecherche (engl. data )
 Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen (Kaggle, GitHub, ect. ) durchgeführt und nach geeigneten englischen und deutschen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten () werden ignoriert.
 
-### Datensammlung (engl. )
+### Datensammlung (engl. data collection)
 Datenformat: csv
 
 #### Download (engl. )
