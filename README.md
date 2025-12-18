@@ -96,7 +96,7 @@ anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples
 
 
 
-## Verarbeitungsschritte (engl. Pipeline)
+## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
 
