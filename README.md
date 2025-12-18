@@ -94,7 +94,7 @@ anhand von Kriterien wie
 <details>
   <summary>Pre-Processing</summary>
   <ol>
-
+      <ul>
 <!-- Processing -->
 <details>
   <summary>Processing</summary>
