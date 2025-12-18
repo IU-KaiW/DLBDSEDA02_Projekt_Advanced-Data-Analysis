@@ -1,7 +1,25 @@
 # Projekt: Advanced Data Analysis (DLBDSEDA02)
-Ziel des Projekts ist es NLP-Techniken auf einem organisch entstandenen Datensatzgemäß der Aufgabenstellung der Hochschule auszuführen.
-Aufgabe Nr. 1
+Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren
+Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Inhaltsverzeichnis</summary>
+  <ol>
+    <li><a href="#about-the-project">Aufgabenbeschreibung</a></li>
+    <li><a href="#getting-started">Phase 1 - Konzeptionsphase</a>
+    <li><a href="#getting-started">Phase 2 - Erarbeitungsphase</a>
+    <li><a href="#getting-started">Phase 3 - Finalisierungsphase</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#environment-variables">Environment Variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+  </ol>
+</details>
 
 
 ## Datenaquisition (engl. data acquisition)
@@ -20,9 +38,13 @@ Datenquellen mit organisch vermutetem Ursprung werden lokal heruntergeladen und 
 Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.
 
 anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.
+
 #### Datenauswahl (engl. ) 
 
-
+1. Schriftliches Konzept
+2. Datenverarbeitung
+2.1. Vektorisierung 2 Techniken
+2.2. Extraktion von Themen 2 Ansätze.
 
 ## NLP-Pipeline
 
@@ -31,20 +53,3 @@ anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples
 ### Processing
 
 ### Post-Processing
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#environment-variables">Environment Variables</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#configuration">Configuration</a></li>
-  </ol>
-</details>
