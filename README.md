@@ -109,10 +109,10 @@ anhand von Kriterien wie
   <!-- Processing -->
     <details>
       <summary>Processing</summary>
-      <ul>
+      <ol>
         <li>POS-Tagging</li>
         <li>Named Entity Recognition</li>
-      </ul>
+      </ol>
     </details>
   </li>
 
@@ -120,10 +120,10 @@ anhand von Kriterien wie
   <!-- Post-Processing -->
     <details>
       <summary>Post-Processing</summary>
-      <ul>
+      <ol>
         <li>Aggregation</li>
         <li>Visualisierung</li>
-      </ul>
+      </ol>
     </details>
   </li>
 </ol>
