@@ -3,7 +3,7 @@
 <details>
   <summary>Inhaltsverzeichnis</summary>
   <ol>
-    <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlng-zu-analyieren">Aufgabe</a></li>
+    <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlng-zu-analyieren">Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren</a></li>
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
         <li><a href="#prerequisites">Datenaquisition (engl. data acquisition)</a></li>
