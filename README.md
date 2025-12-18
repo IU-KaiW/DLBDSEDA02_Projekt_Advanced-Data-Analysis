@@ -4,9 +4,15 @@
   <summary>Inhaltsverzeichnis</summary>
   <ol>
     <li><a href="## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren">Aufgabe</a></li>
-    <li><a href="#getting-started">Phase 1 - Konzeptionsphase</a>
-    <li><a href="#getting-started">Phase 2 - Erarbeitungsphase</a>
-    <li><a href="#getting-started">Phase 3 - Finalisierungsphase</a>
+    <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
+      <ul>
+        <li><a href="#prerequisites">Datenaquisition (engl. data acquisition)</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#environment-variables">Environment Variables</a></li>
+      </ul>
+    <li><a href="#phase2">Phase 2 - Erarbeitungsphase</a>
+
+    <li><a href="#phase3">Phase 3 - Finalisierungsphase</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
