@@ -15,7 +15,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#environment-variables">Environment Variables</a></li>
+        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
       </ul>
     
     </li>
