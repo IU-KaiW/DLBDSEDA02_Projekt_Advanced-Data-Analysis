@@ -98,12 +98,13 @@ Pre-Processing
   <!-- Pre-Processing -->
     <details>
       <summary>Merkmalsvorbereitung (engl. feature preparation)</summary>
-      <ol>
+        <ol>
         <li><a>Textbereinigung (engl. text cleaning)<a></li>
         Standardisierung (engl. standardisation)<br>
         <br>
         Rauschentfernung (engl. noise reduction)<br>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
+        <ol>
         Tokenisierung (engl. tokenization)<br>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
       </ol>
