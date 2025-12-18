@@ -7,8 +7,9 @@
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
         <li><a href="#prerequisites">Datenaquisition (engl. data acquisition)</a></li>
+        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#environment-variables">Environment Variables</a></li>
+        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
       </ul>
     <li><a href="#phase2">Phase 2 - Erarbeitungsphase</a>
     <li><a href="#phase3">Phase 3 - Finalisierungsphase</a>
