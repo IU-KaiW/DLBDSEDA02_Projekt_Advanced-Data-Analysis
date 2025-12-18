@@ -96,9 +96,8 @@ Beginn der der Merkmalsvorbereitung
 <ol>
   <li>
     <details>
-      <summary>Merkmalsvorbereitung (engl. feature preparation)</summary>
+      <summary>Textbereinigung (engl. text cleaning)</summary>
         <ol>
-        <li> Textbereinigung (engl. text cleaning)</li>
         <li> Standardisierung (engl. standardisation)<br></li>
         <li> Rauschentfernung (engl. noise reduction)<br></li>
         </ol>
