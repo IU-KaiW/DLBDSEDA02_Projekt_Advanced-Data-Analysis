@@ -98,5 +98,13 @@ anhand von Kriterien wie
 ### Pre-Processing
 
 ### Processing
+<!-- Processing -->
+<details>
+  <summary>Pre-Processing</summary>
+  <ol>
 
 ### Post-Processing
+<!-- Post-Processing -->
+<details>
+  <summary>Pre-Processing</summary>
+  <ol>
