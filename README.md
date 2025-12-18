@@ -43,7 +43,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 </details>
 
 ## Datenaquisition (engl. data acquisition)
-*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, fünf stufiger  Prozess durchlaufen an dessen Ende ein Datensatz für die Pipeline-Eingabe steht.*
+*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.*
 
 <details>
   <summary>Datenaquisition (engl. data acquisition)</summary>
