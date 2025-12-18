@@ -11,16 +11,17 @@
         <li><a href="#environment-variables">Environment Variables</a></li>
       </ul>
     <li><a href="#phase2">Phase 2 - Erarbeitungsphase</a>
-
+**
     <li><a href="#phase3">Phase 3 - Finalisierungsphase</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#environment-variables">Environment Variables</a></li>
-      </ul>
+      </ul>**
+    
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#configuration">Configuration</a></li>x
   </ol>
 </details>
 
