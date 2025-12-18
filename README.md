@@ -52,6 +52,7 @@ Trichter
 Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen (Kaggle, GitHub, ect. ) durchgeführt und nach geeigneten englischen und deutschen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten () werden ignoriert.
     <li><a href="#datensammlung">Datensammlung (engl. data collection)</a></li>
 Datenformat: csv
+    <li><a href="#download-engl">Download (engl. data collection)</a></li>
       <ul>
       <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
         Datenrecherche
