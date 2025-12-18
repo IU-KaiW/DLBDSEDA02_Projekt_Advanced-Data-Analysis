@@ -3,7 +3,7 @@
 <details>
   <summary>Inhaltsverzeichnis</summary>
   <ol>
-    <li><a href="#Aufgabenbeschreibung">Aufgabenbeschreibung</a></li>
+    <li><a href="#Aufgabe">Aufgabe</a></li>
     <li><a href="#getting-started">Phase 1 - Konzeptionsphase</a>
     <li><a href="#getting-started">Phase 2 - Erarbeitungsphase</a>
     <li><a href="#getting-started">Phase 3 - Finalisierungsphase</a>
@@ -41,12 +41,13 @@ anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples
 
 #### Datenauswahl (engl. ) 
 
+
+
+## NLP-Pipeline
 1. Schriftliches Konzept
 2. Datenverarbeitung
 2.1. Vektorisierung 2 Techniken
 2.2. Extraktion von Themen 2 Ansätze.
-
-## NLP-Pipeline
 
 ### Pre-Processing
 
