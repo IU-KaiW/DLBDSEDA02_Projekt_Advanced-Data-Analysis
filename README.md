@@ -7,7 +7,15 @@
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
         <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
+        Datenrecherche
+        Datensammlung
+        Download
+        Datenprüfung
+        Datenauswahl
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
+        Pre-Processing
+        Processing
+        Post-Processing
         <li><a href="#installation">Installation</a></li>
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
       </ul>
