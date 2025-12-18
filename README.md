@@ -44,7 +44,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ## Datenaquisition (engl. data acquisition)
 Trichter
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABLE OF Datenaquisition -->
 <details>
   <summary>Datenaquisition</summary>
   <ol>
