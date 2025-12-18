@@ -1,14 +1,9 @@
-# Projekt: Advanced Data Analysis (DLBDSEDE02_D)
+# Projekt: Advanced Data Analysis (DLBDSEDA02)
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Inhaltsverzeichnis</summary>
   <ol>
     <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlung-zu-analyieren">Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren</a></li>
-    Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden. 
-1. Schriftliches Konzept
-2. Datenverarbeitung
-2.1. Vektorisierung 2 Techniken
-2.2. Extraktion von Themen 2 Ansätze.
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
       <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
@@ -49,7 +44,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ## Datenaquisition (engl. data acquisition)
 Trichter
 
-<!-- TABLE OF Datenaquisition -->
+<!-- Datenaquisition -->
 <details>
   <summary>Datenaquisition</summary>
   <ol>
@@ -76,7 +71,6 @@ Trichter
         <li><a href="#installation">Installation</a></li>
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
       </ul>
-    
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#configuration">Configuration</a></li>x
@@ -101,7 +95,7 @@ anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples
 
 
 
-## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
+## NLP-Verarbeitungsschritte (engl. Pipeline)
 anhand von Kriterien wie
 
 
