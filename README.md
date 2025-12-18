@@ -103,7 +103,7 @@ Pre-Processing
         Standardisierung (engl. standardisation)<br>
         <br>
         Rauschentfernung (engl. noise reduction)<br>
-        <li><a>Merkmalsextraktion (engl. feature extraction)<a></li>
+      <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         Tokenisierung (engl. tokenization)<br>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
       </ol>
