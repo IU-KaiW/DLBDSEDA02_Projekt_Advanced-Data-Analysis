@@ -107,6 +107,7 @@ anhand von Kriterien wie
 </ol>
 <ol>
   <li>
+  Processing
   <!-- Processing -->
     <details>
       <summary>Processing</summary>
@@ -120,6 +121,7 @@ anhand von Kriterien wie
 <ol>
   <li>
   <!-- Post-Processing -->
+  Post-Processing
     <details>
       <summary>Post-Processing</summary>
       <ol>
