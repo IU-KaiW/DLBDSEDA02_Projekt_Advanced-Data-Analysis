@@ -103,6 +103,8 @@ Pre-Processing
         Standardisierung (engl. standardisation)
         Rauschentfernung (engl. noise reduction)
         <li><a>Merkmalsextraktion (engl. feature extraction)<a></li>
+        Tokenisierung (engl. tokenization)
+        Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)
       </ol>
     </details>
   </li>
@@ -113,8 +115,9 @@ Processing
     <details>
       <summary>Processing</summary>
       <ol>
-        <li>POS-Tagging</li>
-        <li>Named Entity Recognition</li>
+        <li><a>Merkmalsextraktion (engl. feature extraction)<a></li>
+        <li>Frequency Based Embedding</li>
+        <li>Prediction Based Word Embedding</li>
       </ol>
     </details>
   </li>
