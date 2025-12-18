@@ -131,12 +131,12 @@ Beginn der Merkmalsaufbereitung (engl. Feature Engineering)
 <ol>
   <li>
 Post-Processing
-    <details>
+  <details>
       <summary>Post-Processing</summary>
       <ol>
         <li>Aggregation</li>
         <li>Visualisierung</li>
       </ol>
-    </details>
+  </details>
   </li>
 </ol>
