@@ -110,8 +110,12 @@ Beginn der der Merkmalsvorbereitung
         </ol>
     </details>
   <li>
-Processing
+
+
+### Processing
 Beginn der Merkmalsaufbereitung (engl. Feature Engineering)
+<ol>
+  <li>
     <details>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
       <ol>
@@ -121,9 +125,7 @@ Beginn der Merkmalsaufbereitung (engl. Feature Engineering)
       </ol>
     </details>
   </li>
-
-
-### Processing
+</ol>
 
 ### Post-Processing
 <ol>
