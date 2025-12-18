@@ -104,8 +104,7 @@ Pre-Processing
       </ol>
     </details>
   </li>
-</ol>
-<ol>
+
   <li>
 Processing
   <!-- Processing -->
@@ -117,8 +116,7 @@ Processing
       </ol>
     </details>
   </li>
-  </ol>
-<ol>
+
   <li>
   <!-- Post-Processing -->
   Post-Processing
