@@ -94,20 +94,20 @@ anhand von Kriterien wie
 
 <ol>
   <li>
-  Pre-Processing
+Pre-Processing
   <!-- Pre-Processing -->
     <details>
-      <summary>Pre-Processing</summary>
+      <summary>Merkmalsvorbereitung (engl. feature preparation)</summary>
       <ol>
-        <li><a>Tokenisierung<a></li>
-        <li><a>Normalisierung<a></li>
+        <li><a>Textbereinigung (engl. text cleaning)<a></li>
+        <li><a>Merkmalsextraktion (engl. feature extraction)<a></li>
       </ol>
     </details>
   </li>
 </ol>
 <ol>
   <li>
-  Processing
+Processing
   <!-- Processing -->
     <details>
       <summary>Processing</summary>
