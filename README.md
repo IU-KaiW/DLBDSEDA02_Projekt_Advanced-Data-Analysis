@@ -90,7 +90,7 @@ Trichter
 
 ## NLP-Verarbeitungsschritte (engl. Pipeline)
 anhand von Kriterien wie
-<!-- Pre-Processing -->
+<!-- #Pre-Processing -->
 <details>
   <summary>Pre-Processing</summary>
   <ol>
