@@ -3,7 +3,7 @@
 <details>
   <summary>Inhaltsverzeichnis</summary>
   <ol>
-    <li><a href="## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren>Aufgabe</a></li>
+    <li><a href="## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren">Aufgabe</a></li>
     <li><a href="#getting-started">Phase 1 - Konzeptionsphase</a>
     <li><a href="#getting-started">Phase 2 - Erarbeitungsphase</a>
     <li><a href="#getting-started">Phase 3 - Finalisierungsphase</a>
