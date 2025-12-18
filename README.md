@@ -58,7 +58,7 @@ Trichter
       Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.
       <li><a href="#datensatzauswahl">Datensatzauswahl (engl. data selection)</a></li>
       <li><a href="#datenaufnahme">Datenaufnahme (engl. data ingestion)</a></li>
-
+      Pipeline-Input
 
       <ul>
       <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
@@ -88,7 +88,7 @@ Trichter
 </details>
 
 
-## NLP-Verarbeitungsschritte (engl. Pipeline)
+## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
 
@@ -98,8 +98,8 @@ anhand von Kriterien wie
     <details>
       <summary>Pre-Processing</summary>
       <ul>
-        <li>Tokenisierung</li>
-        <li>Normalisierung</li>
+        <li><a>Tokenisierung<a></li>
+        <li><a>Normalisierung<a></li>
       </ul>
     </details>
   </li>
