@@ -114,7 +114,7 @@ Beginn der der Merkmalsvorbereitung (engl. feature preparation).
 
 
 ### Processing
-Beginn der Merkmalsaufbereitung (engl. Feature Engineering)
+Beginn der Merkmalsaufbereitung (engl. feature engineering)
 <ol>
   <li>
     <details>
@@ -122,7 +122,7 @@ Beginn der Merkmalsaufbereitung (engl. Feature Engineering)
       <ol>
         <li>Vektorisierung</li>
           <li>Frequency Based Embedding</li>
-        <li>Prediction Based Word Embedding</li>
+          <li>Prediction Based Word Embedding</li>
       </ol>
     </details>
   </li>
