@@ -109,7 +109,7 @@ Beginn der der Merkmalsvorbereitung (engl. feature preparation).
         <li> Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
         </ol>
     </details>
-  <li>
+  </li>
 </ol>
 
 
