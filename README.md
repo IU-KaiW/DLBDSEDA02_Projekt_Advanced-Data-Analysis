@@ -100,6 +100,8 @@ Pre-Processing
       <summary>Merkmalsvorbereitung (engl. feature preparation)</summary>
       <ol>
         <li><a>Textbereinigung (engl. text cleaning)<a></li>
+        Standardisierung (engl. standardisation)
+        Rauschentfernung (engl. noise reduction)
         <li><a>Merkmalsextraktion (engl. feature extraction)<a></li>
       </ol>
     </details>
