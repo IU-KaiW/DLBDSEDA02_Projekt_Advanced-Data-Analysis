@@ -43,7 +43,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 </details>
 
 ## Datenaquisition (engl. data acquisition)
-*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger Prozess durchlaufen an dessen Ende genutzte Datensatz steht.*
+*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, fünf stufiger  Prozess durchlaufen an dessen Ende der für die Pipeline-Eingabe gewählte Datensatz steht.*
 
 <details>
   <summary>Datenaquisition (engl. data acquisition)</summary>
@@ -57,17 +57,16 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
       <li><a href="#datensatzprüfung">Datenprüfung (engl. data check)</a></li>
       Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.
       <li><a href="#datensatzauswahl">Datensatzauswahl (engl. data selection)</a></li>
-      <li><a href="#datenaufnahme">Datenaufnahme (engl. data ingestion)</a></li>
-      Pipeline-Input
   </ol>
 </details>
 
+Pipeline-Input
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
 ### Pre-Processing
-Beginn der der Merkmalsvorbereitung (engl. feature preparation).
+*Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
       <summary>Textbereinigung (engl. text cleaning)</summary>
@@ -87,7 +86,7 @@ Beginn der der Merkmalsvorbereitung (engl. feature preparation).
 
 
 ### Processing
-Beginn der Merkmalsaufbereitung (engl. feature engineering)
+*Beginn der Merkmalsaufbereitung (engl. feature engineering)*
 <ol>
     <details>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
@@ -100,7 +99,7 @@ Beginn der Merkmalsaufbereitung (engl. feature engineering)
 </ol>
 
 ### Post-Processing
-Beginn der Evaluation
+*Beginn der Evaluation*
 <ol>
   <details>
       <summary>Post-Processing</summary>
