@@ -115,7 +115,6 @@ Beginn der der Merkmalsvorbereitung (engl. feature preparation).
 ### Processing
 Beginn der Merkmalsaufbereitung (engl. feature engineering)
 <ol>
-  <li>
     <details>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
       <ol>
@@ -124,12 +123,10 @@ Beginn der Merkmalsaufbereitung (engl. feature engineering)
           <li>Prediction Based Word Embedding</li>
       </ol>
     </details>
-  </li>
 </ol>
 
 ### Post-Processing
 <ol>
-  <li>
 Post-Processing
   <details>
       <summary>Post-Processing</summary>
@@ -138,5 +135,4 @@ Post-Processing
         <li>Visualisierung</li>
       </ol>
   </details>
-  </li>
 </ol>
