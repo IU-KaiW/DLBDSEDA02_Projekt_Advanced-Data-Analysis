@@ -6,7 +6,7 @@
     <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlng-zu-analyieren">Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren</a></li>
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
-        <li><a href="#prerequisites">Datenaquisition (engl. data acquisition)</a></li>
+        <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
