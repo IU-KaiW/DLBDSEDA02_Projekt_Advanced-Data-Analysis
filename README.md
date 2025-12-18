@@ -104,7 +104,8 @@ anhand von Kriterien wie
       </ol>
     </details>
   </li>
-
+</ol>
+<ol>
   <li>
   <!-- Processing -->
     <details>
@@ -115,7 +116,8 @@ anhand von Kriterien wie
       </ol>
     </details>
   </li>
-
+  </ol>
+<ol>
   <li>
   <!-- Post-Processing -->
     <details>
