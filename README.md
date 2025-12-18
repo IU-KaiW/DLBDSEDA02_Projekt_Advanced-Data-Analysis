@@ -90,23 +90,11 @@ Trichter
 
 ## NLP-Verarbeitungsschritte (engl. Pipeline)
 anhand von Kriterien wie
-<!-- Pre-Processing -->
-<details>
-  <summary>Pre-Processing</summary>
-  <ol>
-      <ul>
 
-<!-- Processing -->
-<details>
-  <summary>Processing</summary>
-  <ol>
 
-<!-- Post-Processing -->
-<details>
-  <summary>Post-Processing</summary>
-  <ol>
 <ol>
   <li>
+  <!-- Pre-Processing -->
     <details>
       <summary>Pre-Processing</summary>
       <ul>
@@ -117,6 +105,7 @@ anhand von Kriterien wie
   </li>
 
   <li>
+  <!-- Processing -->
     <details>
       <summary>Processing</summary>
       <ul>
@@ -127,6 +116,7 @@ anhand von Kriterien wie
   </li>
 
   <li>
+  <!-- Post-Processing -->
     <details>
       <summary>Post-Processing</summary>
       <ul>
