@@ -1,12 +1,9 @@
 # Projekt: Advanced Data Analysis (DLBDSEDA02)
-Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren
-Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Inhaltsverzeichnis</summary>
   <ol>
-    <li><a href="#about-the-project">Aufgabenbeschreibung</a></li>
+    <li><a href="#Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren">Aufgabenbeschreibung</a></li>
     <li><a href="#getting-started">Phase 1 - Konzeptionsphase</a>
     <li><a href="#getting-started">Phase 2 - Erarbeitungsphase</a>
     <li><a href="#getting-started">Phase 3 - Finalisierungsphase</a>
@@ -20,6 +17,9 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
     <li><a href="#configuration">Configuration</a></li>
   </ol>
 </details>
+
+## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren
+Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.
 
 
 ## Datenaquisition (engl. data acquisition)
