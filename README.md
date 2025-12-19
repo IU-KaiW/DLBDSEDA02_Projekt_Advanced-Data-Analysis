@@ -96,15 +96,9 @@ anhand von Kriterien wie
         <ol>
         <li>Vektorisierung</li>
        <ul>
-          <li><a prerequisites>Prerequisites</a></li>
-          <li><a href="#installation">Installation</a></li>
-          <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
+          <li><a prerequisites>Frequency Based Embedding<</a></li>
+          <li><a href="#installation">Prediction Based Word Embedding</a></li>
         </ul>
-
-        In diesem Schritt
-        <li>Frequency Based Embedding</li>
-        In diesem Schritt  
-        <li>Prediction Based Word Embedding</li>
         </ol>
     </details>
 </ol>
