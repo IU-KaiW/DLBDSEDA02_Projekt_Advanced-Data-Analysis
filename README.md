@@ -22,9 +22,9 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
         Datenprüfung<br>
         Datenauswahl<br>
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
-        Pre-Processing
-        Processing
-        Post-Processing
+        Pre-Processing<br>
+        Processing<br>
+        Post-Processing<br>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
       </ul>
@@ -71,14 +71,18 @@ anhand von Kriterien wie
       <summary>Textbereinigung (engl. text cleaning)</summary>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
+        In diesem Schritt wird
         <li> Rauschentfernung (engl. noise reduction)<br></li>
+        In Diesem Schritt werden
         </ol>
     </details>
     <details>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
         <li> Tokenisierung (engl. tokenization)</li>
+         In diesem Schritt
         <li> Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
+         In diesem Schritt
         </ol>
     </details>
 </ol>
@@ -91,8 +95,10 @@ anhand von Kriterien wie
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
       <ol>
         <li>Vektorisierung</li>
-          <li>Frequency Based Embedding</li>
-          <li>Prediction Based Word Embedding</li>
+        
+        <li>Frequency Based Embedding</li>
+        
+        <li>Prediction Based Word Embedding</li>
       </ol>
     </details>
 </ol>
