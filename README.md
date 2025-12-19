@@ -96,8 +96,8 @@ anhand von Kriterien wie
         <ol>
         <li>Vektorisierung</li>
        <ul>
-          <li><a prerequisites>Frequency Based Embedding</a></li>
-          <li><a installation>Prediction Based Word Embedding</a></li>
+        <li><a prerequisites>Frequency Based Embedding</a></li>
+        <li><a installation>Prediction Based Word Embedding</a></li>
         </ul>
         </ol>
     </details>
