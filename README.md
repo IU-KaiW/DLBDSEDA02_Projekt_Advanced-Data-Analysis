@@ -104,7 +104,7 @@ Features of Texts are:
           <li><a installation>Prediction Based Word Embedding</a></li>
            GloVE; Word2Vec
           <li><a installation>Contextualized Based Word Embedding</a></li>
-           GloVE; Word2Vec
+           ELMO; BERT
        </ul>
        </ol>
     </details>
