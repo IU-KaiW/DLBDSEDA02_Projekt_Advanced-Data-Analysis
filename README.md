@@ -114,6 +114,7 @@ Features of Texts are:
         <ol>
         <li> LSA <br></li>
         In diesem Schritt wird
+        <ul>
         </ol>
     </details>
     <details>
