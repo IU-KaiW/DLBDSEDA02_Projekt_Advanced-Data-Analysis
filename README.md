@@ -110,9 +110,10 @@ Features of Texts are:
 
 #### <h4><font color="blue">Text Analyse (engl. Text Analytics)</font></h4>
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
+
 <ol>
     <details>
-      <summary>Themenmodellierung (engl. topic modeling)</summary>
+      <summary><font color="green">Themenmodellierung (engl. topic modeling)</font></summary>
       Beginn der Themenmodellierung
            ELMO; BERT
        </ul>
