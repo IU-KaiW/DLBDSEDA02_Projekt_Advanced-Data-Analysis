@@ -95,6 +95,7 @@ anhand von Kriterien wie
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
         <li>Vektorisierung</li>
+       <ul>
           <li><a prerequisites>Prerequisites</a></li>
           <li><a href="#installation">Installation</a></li>
           <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
