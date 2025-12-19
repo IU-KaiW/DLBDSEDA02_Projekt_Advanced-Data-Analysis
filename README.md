@@ -106,16 +106,22 @@ Features of Texts are:
           <li><a installation>Contextualized Based Word Embedding</a></li>
     </details>
     <details>
-      <summary>Themenmodellierungengl. (engl. topic modeling)</summary>
-        *Beginn der Themenmodellierung*
+      <summary>Themenmodellierung (engl. topic modeling)</summary>
+      Beginn der Themenmodellierung
            ELMO; BERT
        </ul>
        </ol>
     </details>
     <details>
       <summary>Merkmals ... (engl. feature transformation)</summary>
+      <summary>Themenmodellierung (engl. topic modeling)</summary>
+      Beginn der Themenmodellierung
+           ELMO; BERT
+       </ul>
+       </ol>
+    </details>
         <ol>
-        <li> LSA <br></li>
+        <li> Latent Semantic Analysis (LSA) <br></li>
         In diesem Schritt wird
         <ul>
         </ol>
