@@ -104,6 +104,7 @@ Features of Texts are:
           <li><a installation>Prediction Based Word Embedding</a></li>
            GloVE; Word2Vec
           <li><a installation>Contextualized Based Word Embedding</a></li>
+        <li>Themenmodellierung (engl. topic modeling)</li>
            ELMO; BERT
        </ul>
        </ol>
@@ -111,10 +112,8 @@ Features of Texts are:
     <details>
       <summary>Merkmals ... (engl. feature transformation)</summary>
         <ol>
-        <li> 1<br></li>
+        <li> LSA <br></li>
         In diesem Schritt wird
-        <li> 2<br></li>
-        In Diesem Schritt werden
         </ol>
     </details>
     <details>
