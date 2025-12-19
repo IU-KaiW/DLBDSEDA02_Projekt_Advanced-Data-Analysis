@@ -122,7 +122,7 @@ Features of Texts are:
        </ol>
     </details>
     <details>
-      <summary>Merkmalsextraktion (engl. feature extraction)</summary>
+      <summary><b>🟢 Merkmalsextraktion (engl. feature extraction)</b></summary>
       Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
@@ -131,8 +131,8 @@ Features of Texts are:
        </ol>
     </details>
     <details>
-      <summary>Merkmalsumwandlung (engl. feature transformation)</summary>
-      Beginn der Merkmalsumwandlung 
+      <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</b></summary>
+      Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
            ELMO; BERT
@@ -147,6 +147,7 @@ Features of Texts are:
     </details>
     <details>
       <summary>Merkmalsauswahl (engl. feature selection)</summary>
+       Zum Ende werden die besten Merkmale ausgewählt.
         <ol>
         <li> 1<br></li>
         In diesem Schritt wird
