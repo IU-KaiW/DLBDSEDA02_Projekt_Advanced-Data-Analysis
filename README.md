@@ -67,8 +67,9 @@ anhand von Kriterien wie
 Features of Texts are: 
 
 ### Pre-Processing
+
+<b>🟢 Merkmalsvorbereitun</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
-<b>🟢 Merkmalsvorbereitun</b>
 <ol>
     <details>
       <summary> Textbereinigung (engl. text cleaning)</b></summary>
