@@ -104,7 +104,8 @@ Features of Texts are:
           <li><a installation>Prediction Based Word Embedding</a></li>
            GloVE; Word2Vec
           <li><a installation>Contextualized Based Word Embedding</a></li>
-        <li>Themenmodellierung (engl. topic modeling)</li>
+      <summary>Themenmodellierungengl. (engl. topic modeling)</summary>
+        *Beginn der Themenmodellierung*
            ELMO; BERT
        </ul>
        </ol>
