@@ -122,6 +122,15 @@ Features of Texts are:
        </ol>
     </details>
     <details>
+      <summary>Merkmalsextraktion (engl. feature extraction)</summary>
+      Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung
+      <summary>Themenmodellierung (engl. topic modeling)</summary>
+      Beginn der Themenmodellierung
+           ELMO; BERT
+       </ul>
+       </ol>
+    </details>
+    <details>
       <summary>Merkmalsumwandlung (engl. feature transformation)</summary>
       Beginn der Merkmalsumwandlung 
       <summary>Themenmodellierung (engl. topic modeling)</summary>
