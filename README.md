@@ -70,7 +70,7 @@ Features of Texts are:
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
-      <summary>Textbereinigung (engl. text cleaning)</summary>
+      <summary><b>🟢 Textbereinigung (engl. text cleaning)</b></summary>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
         In diesem Schritt wird
