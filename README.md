@@ -107,7 +107,7 @@ Features of Texts are:
     </details>
 </ol>
 
-#### Text Analyse (engl. Text Analytics)
+~~#### Text Analyse (engl. Text Analytics)~~
 Beginn der Textanalyse, bei der Extraction Themen aus de
 <ol>
     <details>
