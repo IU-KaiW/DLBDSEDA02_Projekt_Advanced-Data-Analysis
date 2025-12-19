@@ -68,7 +68,7 @@ Features of Texts are:
 
 ### Pre-Processing
 
-<b>🟢 Merkmalsvorbereitun</b></br>
+<b>🟢 Merkmalsvorbereitung (engl. feature preparation)</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
@@ -110,11 +110,11 @@ Features of Texts are:
 </ol>
 
 
-#### Text Analyse (engl. Text Analytics)
+<b>🟢 Text Analyse (engl. Text Analytics)</b></br>
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
-      <summary><b>🟢Themenmodellierung (engl. topic modeling)</b></summary>
+      <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
            ELMO; BERT
        </ul>
