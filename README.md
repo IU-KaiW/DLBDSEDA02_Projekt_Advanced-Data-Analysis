@@ -149,6 +149,7 @@ Features of Texts are:
         </ol>
     </details>    
 </ol>
+<b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 
 #### Pipeline Ausgabe (engl. Pipeline Output)
 
@@ -164,3 +165,5 @@ Features of Texts are:
       </ol>
   </details>
 </ol>
+
+#### Referenzen
