@@ -107,7 +107,8 @@ Features of Texts are:
     </details>
 </ol>
 
-#### Text Analyse (engl. Text Analytics)
+
+#### <h4><font color="blue">Text Analyse (engl. Text Analytics)</font></h4>
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
@@ -118,7 +119,8 @@ Features of Texts are:
        </ol>
     </details>
     <details>
-      <summary>Merkmals ... (engl. feature transformation)</summary>
+      <summary>Merkmalsumwandlung (engl. feature transformation)</summary>
+      Beginn der Merkmalsumwandlung 
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
            ELMO; BERT
@@ -132,7 +134,7 @@ Features of Texts are:
         </ol>
     </details>
     <details>
-      <summary>Merkmals ... (engl. feature selection)</summary>
+      <summary>Merkmalsauswahl (engl. feature selection)</summary>
         <ol>
         <li> 1<br></li>
         In diesem Schritt wird
@@ -141,6 +143,9 @@ Features of Texts are:
         </ol>
     </details>    
 </ol>
+
+#### Pipeline Ausgabe (engl. Pipeline Output)
+
 
 ### Post-Processing
 *Beginn der Evaluation*
