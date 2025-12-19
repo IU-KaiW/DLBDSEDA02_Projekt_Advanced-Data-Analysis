@@ -68,9 +68,10 @@ Features of Texts are:
 
 ### Pre-Processing
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
+<b>🟢 Merkmalsvorbereitun</b>
 <ol>
     <details>
-      <summary><b>🟢 Textbereinigung (engl. text cleaning)</b></summary>
+      <summary> Textbereinigung (engl. text cleaning)</b></summary>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
         In diesem Schritt wird
@@ -108,7 +109,7 @@ Features of Texts are:
 </ol>
 
 
-#### >**Text Analyse (engl. Text Analytics)**
+#### Text Analyse (engl. Text Analytics)
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
