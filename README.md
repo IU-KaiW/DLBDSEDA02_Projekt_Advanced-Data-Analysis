@@ -115,13 +115,6 @@ Features of Texts are:
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
-      <summary>Themenmodellierung (engl. topic modeling)</summary>
-      Beginn der Themenmodellierung
-           ELMO; BERT
-       </ul>
-       </ol>
-    </details>
-    <details>
       <summary><b>🟢 Merkmalsextraktion (engl. feature extraction)</b></summary>
       Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung
       <summary>Themenmodellierung (engl. topic modeling)</summary>
