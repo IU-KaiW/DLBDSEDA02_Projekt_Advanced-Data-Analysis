@@ -3,10 +3,10 @@
 ## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
 Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden. 
 
-1. Schriftliches Konzeptx
-2. Datenverarbeitung
-2.1. Vektorisierung 2 Techniken
-2.2. Extraktion von Themen 2 Ansätze.
+1. Schriftliches Konzept<br>
+2. Datenverarbeitung<br>
+2.1. Vektorisierung 2 Techniken<br>
+2.2. Extraktion von Themen 2 Ansätze.<br>
 
 <!-- TABLE OF CONTENTS -->
 <details>
