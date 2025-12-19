@@ -101,8 +101,25 @@ anhand von Kriterien wie
         </ul>
         </ol>
     </details>
+    <details>
+      <summary>Merkmals ... (engl. feature transformation)</summary>
+        <ol>
+        <li> 1<br></li>
+        In diesem Schritt wird
+        <li> 2<br></li>
+        In Diesem Schritt werden
+        </ol>
+    </details>
+    <details>
+      <summary>Merkmals ... (engl. feature selection)</summary>
+        <ol>
+        <li> 1<br></li>
+        In diesem Schritt wird
+        <li> 2<br></li>
+        In Diesem Schritt werden
+        </ol>
+    </details>    
 </ol>
-
 ### Post-Processing
 *Beginn der Evaluation*
 <ol>
