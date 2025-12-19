@@ -95,9 +95,14 @@ anhand von Kriterien wie
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
         <li>Vektorisierung</li>
+        In diesem Schritt
        <ul>
         <li><a prerequisites>Frequency Based Embedding</a></li>
+        TF-IDF
         <li><a installation>Prediction Based Word Embedding</a></li>
+        GloVE; Word2Vec
+        <li><a installation>Contextualized Based Word Embedding</a></li>
+        GloVE; Word2Vec
         </ul>
         </ol>
     </details>
