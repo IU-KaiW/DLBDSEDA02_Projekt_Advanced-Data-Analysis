@@ -94,12 +94,12 @@ anhand von Kriterien wie
     <details>
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
-       <li>Vektorisierung</li>
-       In diesem Schritt
-       <li>Frequency Based Embedding</li>
-       In diesem Schritt  
-       <li>Prediction Based Word Embedding</li>
-       </ol>
+        <li>Vektorisierung</li>
+        In diesem Schritt
+        <li>Frequency Based Embedding</li>
+        In diesem Schritt  
+        <li>Prediction Based Word Embedding</li>
+        </ol>
     </details>
 </ol>
 
