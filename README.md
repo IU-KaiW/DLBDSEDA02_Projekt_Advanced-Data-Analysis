@@ -16,11 +16,11 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
     <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
       <ul>
       <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
-        Datenrecherche
-        Datensammlung
-        Download
-        Datenprüfung
-        Datenauswahl
+        Datenrecherche<br>
+        Datensammlung<br>
+        Download<br>
+        Datenprüfung<br>
+        Datenauswahl<br>
         <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
         Pre-Processing
         Processing
