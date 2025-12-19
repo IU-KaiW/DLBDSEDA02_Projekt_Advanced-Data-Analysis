@@ -105,6 +105,8 @@ Features of Texts are:
            GloVE; Word2Vec
           <li><a installation>Contextualized Based Word Embedding</a></li>
     </details>
+</ol>
+*Beginn der Textanalyse*
     <details>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
