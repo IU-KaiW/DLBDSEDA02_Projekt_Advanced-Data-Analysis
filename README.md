@@ -111,7 +111,7 @@ Features of Texts are:
 </ol>
 
 
-<b>🟢 Text Analyse (engl. Text Analytics)</b></br>
+#### Text Analyse (engl. Text Analytics)
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
@@ -131,7 +131,7 @@ Features of Texts are:
        </ol>
     </details>
     <details>
-      <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</b></summary>
+      <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</summary>
       Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
