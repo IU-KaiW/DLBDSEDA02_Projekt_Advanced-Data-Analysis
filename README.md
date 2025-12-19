@@ -106,7 +106,8 @@ Features of Texts are:
           <li><a installation>Contextualized Based Word Embedding</a></li>
     </details>
 </ol>
-*Beginn der Textanalyse*
+Beginn der Textanalyse
+<ol>
     <details>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
