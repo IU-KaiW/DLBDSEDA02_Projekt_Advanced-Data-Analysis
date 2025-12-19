@@ -97,7 +97,7 @@ anhand von Kriterien wie
         <li>Vektorisierung</li>
      <li><a href="#phase3">Phase 3 - Finalisierungsphase</a>
        <ul>
-          <li><a href="#prerequisites">Prerequisites</a></li>
+          <li><a prerequisites>Prerequisites</a></li>
           <li><a href="#installation">Installation</a></li>
           <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
         </ul>
