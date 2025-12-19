@@ -127,11 +127,12 @@ Features of Texts are:
         </ol>
     </details>    
 </ol>
+
 ### Post-Processing
 *Beginn der Evaluation*
 <ol>
   <details>
-      <summary>Post-Processing</summary>
+      <summary>Evaluation</summary>
       <ol>
         <li>Aggregation</li>
         <li>Visualisierung</li>
