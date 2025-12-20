@@ -124,7 +124,7 @@ Features of Texts are:
       </ol>
     </details>
     <details>
-      <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</summary>
+      <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</b></summary>
       *Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.*
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       *Beginn der Themenmodellierung*
