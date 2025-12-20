@@ -132,8 +132,6 @@ Features of Texts are:
       </ul>
       </ol>
 </ol>
-    </details>
-        <ol>
         <li> Latent Semantic Analysis (LSA) <br></li>
         *In diesem Schritt wird*
         <ul>
