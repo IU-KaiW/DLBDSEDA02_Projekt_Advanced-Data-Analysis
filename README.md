@@ -29,7 +29,7 @@ Pipeline-Input
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
-#### Features of Texts are: 
+Features of Texts are: 
 
 ### Pre-Processing
 
@@ -38,11 +38,12 @@ anhand von Kriterien wie
 <ol>
     <details>
       <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
+      <i>xxxxx</i>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
-        In diesem Schritt wird
+        <i>xxxxx</i>
         <li> Rauschentfernung (engl. noise reduction)<br></li>
-        In Diesem Schritt werden
+        <i>xxxxx</i>
         </ol>
     </details>
     <details>
