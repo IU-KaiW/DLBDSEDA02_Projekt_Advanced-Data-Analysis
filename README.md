@@ -1,7 +1,7 @@
 # Projekt: Advanced Data Analysis (DLBDSEDA02_D)
 
 ## Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so, die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden. 
+Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlihen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden. 
 
 1. Schriftliches Konzept<br>
 2. Datenverarbeitung<br>
@@ -128,11 +128,12 @@ Features of Texts are:
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       *Beginn der Themenmodellierung*
            LSA
-</ol>
     </details>
+    <details>
       <b>🟢 Merkmalsauswahl (engl. feature selection)</b><br>
       *Zum Ende werden die besten Merkmale ausgewählt.*
-      
+    </details>
+</ol>    
 <b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 Beginn der Modellbildung für Aufgaben
 
@@ -152,4 +153,4 @@ Beginn der Modellbildung für Aufgaben
   </details>
 </ol>
 
-#### Referenzen
+### Referenzen
