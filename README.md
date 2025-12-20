@@ -117,7 +117,9 @@ Features of Texts are:
 <ol>
     <details>
       <summary><b>🟢 Merkmalsextraktion (engl. feature extraction)</b></summary>
-      <blockquote><i>Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung</i></blockquote>
+      <ul>
+      <i>Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung</i>
+      </ul>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       <i>Beginn der Themenmodellierung</i>
            NMF, LDA
