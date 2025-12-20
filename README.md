@@ -126,15 +126,11 @@ Features of Texts are:
     <details>
       <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</b></summary>
       Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.
-      .
+      .<br>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       *Beginn der Themenmodellierung*
            LSA
 </ol>
-        <li> Latent Semantic Analysis (LSA) <br></li>
-        *In diesem Schritt wird*
-        <ul>
-        </ol>
     </details>
     <details>
       <summary>Merkmalsauswahl (engl. feature selection)</summary>
