@@ -120,7 +120,7 @@ Features of Texts are:
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
            NMF, LDA
-       </ul>
+      </ul>
        </ol>
     </details>
     <details>
@@ -129,7 +129,8 @@ Features of Texts are:
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
            LSA
-       </ul>
+      </ul>
+</ol>
        </ol>
     </details>
         <ol>
