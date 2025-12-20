@@ -100,7 +100,7 @@ Features of Texts are:
       <summary>Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
         <li>Vektorisierung</li>
-         In diesem Schritt
+        <i>In diesem Schritt</i>
        <ul>
           <li><a prerequisites>Frequency Based Embedding</a></li>
            TF-IDF
@@ -116,17 +116,17 @@ Features of Texts are:
 <ol>
     <details>
       <summary><b>🟢 Merkmalsextraktion (engl. feature extraction)</b></summary>
-      _Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung_
+      <i>Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung</i>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
-      *Beginn der Themenmodellierung*
+      <i>Beginn der Themenmodellierung</i>
            NMF, LDA
     </details>
     <details>
       <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</b></summary>
-      *Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.*
+      <i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.</i>
           .<br>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
-      *Beginn der Themenmodellierung*
+      <i>Beginn der Themenmodellierung</i>
            LSA
     </details>
     <details>
@@ -142,11 +142,11 @@ Features of Texts are:
 <ol>
     <details>
       <summary><b>🟢 Visualisierung</b></summary>
-      <quote>grafische Darstellung</quote>
+      <i>grafische Darstellung</i>
     </details>
     <details>
       <summary><b>🟢 Aggregation</b></summary>
-      <quote>numerische Darstellun</quote>
+      <i>numerische Darstellun</i>
     </details>
 
 ### Post-Processing
