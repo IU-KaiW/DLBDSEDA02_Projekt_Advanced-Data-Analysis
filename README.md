@@ -10,40 +10,6 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Inhaltsverzeichnis</summary>
-  <ol>
-    <li><a href="##aufgabe-11-nlp-techniken-anwenden-um-eine-textsammlung-zu-analyieren">Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlng zu analyieren</a></li>
-    <li><a href="#phase1">Phase 1 - Konzeptionsphase</a>
-      <ul>
-      <li><a href="#datenaquisition-engl-data-acquisition">Datenaquisition (engl. data acquisition)</a></li>
-        Datenrecherche<br>
-        Datensammlung<br>
-        Download<br>
-        Datenprüfung<br>
-        Datenauswahl<br>
-        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
-        Pre-Processing<br>
-        Processing<br>
-        Post-Processing<br>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
-      </ul>
-    <li><a href="#phase2">Phase 2 - Erarbeitungsphase</a>
-    <li><a href="#phase3">Phase 3 - Finalisierungsphase</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#nlp-pipeline">NLP-Pipeline</a></li>
-      </ul>
-    
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#configuration">Configuration</a></li>x
-  </ol>
-</details>
-
 ## Datenaquisition (engl. data acquisition)
 *In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.*
 
@@ -179,3 +145,9 @@ Features of Texts are:
 ````python
 33333
 ````
+
+
+### Installation
+
+Prerequisites
+Installation
