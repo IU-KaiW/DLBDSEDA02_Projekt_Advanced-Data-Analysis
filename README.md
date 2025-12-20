@@ -133,7 +133,7 @@ Features of Texts are:
 </ol>
     </details>
     <details>
-      <summary><b>🟢 Merkmalsauswahl (engl. feature selection)</summary>
+      <b>🟢 Merkmalsauswahl (engl. feature selection)</b>
       *Zum Ende werden die besten Merkmale ausgewählt.*
         <ol>
         <li> 1<br></li>
