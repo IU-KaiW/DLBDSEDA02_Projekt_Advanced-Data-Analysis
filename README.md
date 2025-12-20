@@ -20,11 +20,11 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
     </details>
     <details>
       <summary>⚪ Datensammlung (engl. data collection)</summary>
-      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit organisch vermutetem Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert. Im Anschluss wird anhand eines KI-Detectors automatisch geprüft, ob die Textdaten organisch entstanden sein können.</i></br>
+      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert.</i></br>
     </details>
     <details>
       <summary>⚪ Datenprüfung (engl. data check)</summary>
-      <i>Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
+      <i>Die heruntergeladenen Datensätze werden anhand eines KI-Detectors auf synthetisch erzeugte Textdaten geprüft. Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt. anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
     </details>
     <details>
       <summary>⚪ Datensatzauswahl (engl. data selection)</summary>
