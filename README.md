@@ -131,16 +131,14 @@ Features of Texts are:
     </details>
     <details>
       <summary><b>🟢 Merkmalsauswahl (engl. feature selection)</b></summary>
-      *Zum Ende werden die besten Merkmale ausgewählt.*
+      <quote>Zum Ende werden die besten Merkmale ausgewählt.<quote>
     </details>
 </ol>    
 <b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
-<quote>
-  <em>Beginn der Modellbildung für Aufgabe</em>
-</quote>
+<quote>Beginn der Modellbildung für Aufgabe</quote>
 
 #### Pipeline Ausgabe (engl. Pipeline Output)
-<b>🟢 Merkmalsanalyse(engl. feature-analysis)</b></br>
+<b>🟢 Merkmalsanalyse (engl. feature-analysis)</b></br>
 
 
 ### Post-Processing
