@@ -11,7 +11,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
 ## Datenaquisition (engl. data acquisition)
-*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.*
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.
 
 <b>⚪ Datenrecherche (engl. data research)</b></br>
      <i>Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
@@ -156,7 +156,7 @@ Prerequisites
 Installation
 
 
-### Projekt Struktur
+### Projektstruktur
 ```markdown
 ├── data/      # Roh- und vorverarbeitete Texte
 ├── notebooks/ # Analysen & Experimente
@@ -164,3 +164,11 @@ Installation
 ├── docs/      # Abbildungen, PDFs
 └── README.md
 ```
+
+
+### 
+
+📊 Ergebnisse
+Themenverteilungen
+Top-Wörter pro Thema
+Modellvergleich
