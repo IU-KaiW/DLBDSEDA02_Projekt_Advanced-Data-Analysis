@@ -70,7 +70,7 @@ Features of Texts are:
 
 ### Pre-Processing
 
-<b>🟢 Merkmalsvorbereitung (engl. feature preparation)</b></br>
+<b>🔴 Merkmalsvorbereitung (engl. feature preparation)</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
@@ -96,7 +96,7 @@ Features of Texts are:
 
 ### Processing
 
-<b>🟢 Merkmalsaufbereitung (engl. feature engineering)</b></br>
+<b>🟠 Merkmalsaufbereitung (engl. feature engineering)</b></br>
 *Beginn der Merkmalsaufbereitung (engl. feature engineering)*
 <ol>
     <details>
@@ -118,14 +118,14 @@ Features of Texts are:
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
-      <summary><b>🟢 Merkmalsextraktion (engl. feature extraction)</b></summary>
+      <summary><b>🟡 Merkmalsextraktion (engl. feature extraction)</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung</i>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       <i>Beginn der Themenmodellierung</i>
            NMF, LDA
     </details>
     <details>
-      <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</b></summary>
+      <summary><b>🟡 Merkmalsumwandlung (engl. feature transformation)</b></summary>
       <i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.</i>
           .<br>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
@@ -133,11 +133,11 @@ Features of Texts are:
            LSA
     </details>
     <details>
-      <summary><b>🟢 Merkmalsauswahl (engl. feature selection)</b></summary>
+      <summary><b>🟡 Merkmalsauswahl (engl. feature selection)</b></summary>
       <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
 </ol>    
-<b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
+<b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
 ### Pipeline Ausgabe (engl. Pipeline Output)
