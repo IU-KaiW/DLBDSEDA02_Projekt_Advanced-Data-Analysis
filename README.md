@@ -119,7 +119,7 @@ Features of Texts are:
       Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
-           ELMO; BERT
+           NMF, LDA
        </ul>
        </ol>
     </details>
@@ -128,7 +128,7 @@ Features of Texts are:
       Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       Beginn der Themenmodellierung
-           ELMO; BERT
+           LSA
        </ul>
        </ol>
     </details>
@@ -150,6 +150,8 @@ Features of Texts are:
     </details>    
 </ol>
 <b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
+*Beginn der Modellbildung für Aufgaben*
+
 
 #### Pipeline Ausgabe (engl. Pipeline Output)
 
