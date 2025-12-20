@@ -26,6 +26,26 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 <b>⚪ Datensatzauswahl (engl. data selection)</b></br>
      <i>xxxx</i></br>
 
+
+
+<ol>
+    <details>
+      <summary>⚪ Datenrecherche (engl. data research)</b></summary>
+      <i>xxxxx</i>
+    </details>
+    <details>
+      <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
+      <i>xxxxx</i>
+        <ol>
+        <li>Tokenisierung (engl. tokenization)</li>
+        <i>In diesem Schritt</i>
+        <li>Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
+        <i>In diesem Schritt</i>
+        </ol>
+    </details>
+</ol>
+
+
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
