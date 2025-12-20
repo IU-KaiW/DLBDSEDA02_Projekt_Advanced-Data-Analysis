@@ -158,11 +158,11 @@ Features of Texts are:
 *Beginn der Evaluation*
 <ol>
   <details>
-      <summary>Evaluation</summary>
+      <summary>🟣 Evaluation</summary>
       <ol>
-        <li>Aggregation</li>
+        <li>🟣 Aggregation</li>
         <i>blub blub, blub</i>
-        <li>Visualisierung</li>
+        <li>🟣 Visualisierung</li>
         <i>blub blub, blub</i>
       </ol>
   </details>
