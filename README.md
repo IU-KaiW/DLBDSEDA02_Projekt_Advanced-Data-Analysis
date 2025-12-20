@@ -16,11 +16,11 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 <ol>
     <details>
       <summary>⚪ Datenrecherche (engl. data research)</b></summary>
-      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
+      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
       <summary>⚪ Datensammlung (engl. data collection)</summary>
-      <i>Datenquellen mit organisch vermutetem Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert. Im Anschluss wird anhand eines KI-Detectors automatisch geprüft, ob die Textdaten organisch entstanden sind.</i></br>
+      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit organisch vermutetem Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert. Im Anschluss wird anhand eines KI-Detectors automatisch geprüft, ob die Textdaten organisch entstanden sein können.</i></br>
     </details>
     <details>
       <summary>⚪ Datenprüfung (engl. data check)</summary>
