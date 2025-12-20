@@ -132,7 +132,6 @@ Features of Texts are:
            LSA
 </ol>
     </details>
-    <details>
       <b>🟢 Merkmalsauswahl (engl. feature selection)</b>
       *Zum Ende werden die besten Merkmale ausgewählt.*
         <ol>
@@ -141,7 +140,7 @@ Features of Texts are:
         <li> 2<br></li>
         In Diesem Schritt werden
         </ol>
-    </details>    
+
 </ol>
 <b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 *Beginn der Modellbildung für Aufgaben*
