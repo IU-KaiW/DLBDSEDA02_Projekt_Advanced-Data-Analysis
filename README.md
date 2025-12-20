@@ -25,7 +25,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 <b>⚪ Datensatzauswahl (engl. data selection)</b></br>
      <i>xxxx</i></br>
 
-Pipeline-Input
+### Pipeline-Input
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
