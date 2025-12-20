@@ -137,9 +137,15 @@ Features of Texts are:
 <b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <quote>Beginn der Modellbildung für Aufgabe</quote>
 
-#### Pipeline Ausgabe (engl. Pipeline Output)
+### Pipeline Ausgabe (engl. Pipeline Output)
 <b>🟢 Merkmalsanalyse (engl. feature-analysis)</b></br>
-
+<ol>
+    <details>
+      <summary><b>🟢 Visualisierung</b></summary>
+      <quote>grafische Darstellung</quote>
+      <summary>Aggregation</summary>
+      <quote>numerische Darstellung Darstellung</quote>
+    </details>
 
 ### Post-Processing
 *Beginn der Evaluation*
