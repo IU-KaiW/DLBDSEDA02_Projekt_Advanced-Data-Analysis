@@ -158,9 +158,9 @@ Installation
 
 ### Projekt Struktur
 ```markdown
-├── data/ # Roh- und vorverarbeitete Texte</br>
-├── notebooks/ # Analysen & Experimente</br>
-├── src/ # Python-Module</br>
-├── docs/ # Abbildungen, PDFs</br>
-└── README.md</br>
+├── data/      # Roh- und vorverarbeitete Texte
+├── notebooks/ # Analysen & Experimente
+├── src/       # Python-Module
+├── docs/      # Abbildungen, PDFs
+└── README.md
 ```
