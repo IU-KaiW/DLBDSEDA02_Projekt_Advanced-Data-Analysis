@@ -129,8 +129,6 @@ Features of Texts are:
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       *Beginn der Themenmodellierung*
            LSA
-      </ul>
-      </ol>
 </ol>
         <li> Latent Semantic Analysis (LSA) <br></li>
         *In diesem Schritt wird*
