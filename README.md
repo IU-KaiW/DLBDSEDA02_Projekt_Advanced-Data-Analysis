@@ -29,7 +29,7 @@ Pipeline-Input
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
-##### Features of Texts are: 
+#### Features of Texts are: 
 
 ### Pre-Processing
 
