@@ -120,13 +120,11 @@ Features of Texts are:
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       *Beginn der Themenmodellierung*
            NMF, LDA
-      </ul>
-      </ol>
     </details>
     <details>
       <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</b></summary>
-      Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.
-      .<br>
+      *Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.*
+          .<br>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       *Beginn der Themenmodellierung*
            LSA
