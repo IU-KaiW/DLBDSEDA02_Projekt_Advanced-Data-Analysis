@@ -63,7 +63,7 @@ Features of Texts are:
 *Beginn der Merkmalsaufbereitung (engl. feature engineering)*
 <ol>
     <details>
-      <summary>Merkmalsextraktion (engl. feature extraction)</summary>
+      <summary>🟠 Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
         <li>Vektorisierung</li>
         <i>In diesem Schritt</i>
