@@ -131,7 +131,7 @@ Features of Texts are:
     </details>
     <details>
       <summary><b>🟢 Merkmalsauswahl (engl. feature selection)</b></summary>
-      <quote>Zum Ende werden die besten Merkmale ausgewählt.<quote>
+      <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
 </ol>    
 <b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
@@ -145,7 +145,7 @@ Features of Texts are:
       <quote>grafische Darstellung</quote>
     </details>
     <details>
-      <summary><b>🟢 Visualisierung</b></summary>
+      <summary><b>🟢 Aggregation</b></summary>
       <quote>numerische Darstellun</quote>
     </details>
 
