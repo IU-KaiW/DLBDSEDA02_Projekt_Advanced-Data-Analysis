@@ -31,7 +31,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 <ol>
     <details>
       <summary>⚪ Datenrecherche (engl. data research)</b></summary>
-      <i>xxxxx</i>
+      <i>Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
     </details>
     <details>
       <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
