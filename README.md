@@ -8,7 +8,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.1. Vektorisierung 2 Techniken<br>
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
-![asdasd](https://google.de)
+![NLP-Pipeline](https://https://file+.vscode-resource.vscode-cdn.net/Users/kaiweber/Desktop/ae3bd2b6-0018-4e98-9396-9120c9f2d9b1.png?version%3D1766232780895)
 
 <!-- TABLE OF CONTENTS -->
 <details>
