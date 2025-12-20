@@ -173,10 +173,8 @@ Features of Texts are:
 ````
 
 <li>2</li>
-````python
-22222
-````
 
+### Codeblocks
 ````python
 33333
 ````
