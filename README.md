@@ -130,7 +130,7 @@ Features of Texts are:
            LSA
     </details>
     <details>
-      <b>🟢 Merkmalsauswahl (engl. feature selection)</b><br>
+      <summary><b>🟢 Merkmalsauswahl (engl. feature selection)</b></summary>
       *Zum Ende werden die besten Merkmale ausgewählt.*
     </details>
 </ol>    
