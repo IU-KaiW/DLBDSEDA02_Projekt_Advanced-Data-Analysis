@@ -31,7 +31,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <i>Anhand der ermittelten Label wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint.</i></br>
     </details>
 
-$(REAL / FAKE )-Quotient$
+$\left(\frac{REAL}{FAKE}\right)$
 
 <i>AnhandDer so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
 </ol>
