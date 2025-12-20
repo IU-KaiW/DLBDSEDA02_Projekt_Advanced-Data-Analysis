@@ -11,23 +11,23 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
 ## Pipeline-Input
-<b>⚪ Datenaquisition (engl. data acquisition)</b></br>
+<b>⚪ Datenaquisition (engl. dataset acquisition)</b></br>
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.</br>
 <ol>
     <details>
-      <summary>⚪ Datenrecherche (engl. data research)</b></summary>
+      <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
       <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
-      <summary>⚪ Datensammlung (engl. data collection)</summary>
+      <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
       <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert.</i></br>
     </details>
     <details>
-      <summary>⚪ Datenprüfung (engl. data check)</summary>
+      <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
       <i>Die heruntergeladenen Datensätze werden anhand eines KI-Detectors auf synthetisch erzeugte Textdaten geprüft. Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt. anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
     </details>
     <details>
-      <summary>⚪ Datensatzauswahl (engl. data selection)</summary>
+      <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
       <i>xxxxx</i></br>
     </details>
 </ol>
