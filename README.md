@@ -143,6 +143,8 @@ Features of Texts are:
     <details>
       <summary><b>🟢 Visualisierung</b></summary>
       <quote>grafische Darstellung</quote>
+    </details>
+    <details>
       <summary><b>🟢 Visualisierung</b></summary>
       <quote>numerische Darstellun</quote>
     </details>
