@@ -66,6 +66,7 @@ Features of Texts are:
 <ol>
     <details>
       <summary>🟠 Merkmalsextraktion (engl. feature extraction)</summary>
+      <i>xxxxx</i>
         <ol>
         <li>Vektorisierung</li>
         <i>In diesem Schritt</i>
