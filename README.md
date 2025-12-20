@@ -126,7 +126,7 @@ Features of Texts are:
     </details>
     <details>
       <summary><b>🟡 Merkmalsumwandlung (engl. feature transformation)</b></summary>
-      <i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.</i>
+      <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.</i>
           .<br>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       <i>Beginn der Themenmodellierung</i>
@@ -134,7 +134,7 @@ Features of Texts are:
     </details>
     <details>
       <summary><b>🟡 Merkmalsauswahl (engl. feature selection)</b></summary>
-      <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
+      <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
 </ol>    
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
@@ -146,11 +146,11 @@ Features of Texts are:
 <ol>
     <details>
       <summary><b>🟢 Visualisierung</b></summary>
-      <i>grafische Darstellung</i>
+      <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grafische Darstellung</i>
     </details>
     <details>
       <summary><b>🟢 Aggregation</b></summary>
-      <i>numerische Darstellun</i>
+      <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerische Darstellun</i>
     </details>
 </ol>
 
@@ -160,9 +160,9 @@ Features of Texts are:
   <details>
       <summary>🟣 Evaluation</summary>
       <ol>
-        <li>🟣 Aggregation</li>
+        <li> Aggregation</li>
         <i>blub blub, blub</i>
-        <li>🟣 Visualisierung</li>
+        <li> Visualisierung</li>
         <i>blub blub, blub</i>
       </ol>
   </details>
