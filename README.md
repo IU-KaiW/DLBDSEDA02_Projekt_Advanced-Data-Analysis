@@ -8,6 +8,8 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.1. Vektorisierung 2 Techniken<br>
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
+![asdasd](https://google.de)
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Inhaltsverzeichnis</summary>
