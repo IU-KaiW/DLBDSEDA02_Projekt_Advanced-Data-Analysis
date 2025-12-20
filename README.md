@@ -154,3 +154,11 @@ Features of Texts are:
 
 Prerequisites
 Installation
+
+
+### Projekt Struktur
+├── data/ # Roh- und vorverarbeitete Texte
+├── notebooks/ # Analysen & Experimente
+├── src/ # Python-Module
+├── docs/ # Abbildungen, PDFs
+└── README.md
