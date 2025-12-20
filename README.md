@@ -116,32 +116,32 @@ Features of Texts are:
 <ol>
     <details>
       <summary><b>🟢 Merkmalsextraktion (engl. feature extraction)</b></summary>
-      Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung
+      *Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung*
       <summary>Themenmodellierung (engl. topic modeling)</summary>
-      Beginn der Themenmodellierung
+      *Beginn der Themenmodellierung*
            NMF, LDA
       </ul>
        </ol>
     </details>
     <details>
       <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</summary>
-      Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.
+      *Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.*
       <summary>Themenmodellierung (engl. topic modeling)</summary>
-      Beginn der Themenmodellierung
+      *Beginn der Themenmodellierung*
            LSA
       </ul>
-</ol>
+      </ol>
        </ol>
     </details>
         <ol>
         <li> Latent Semantic Analysis (LSA) <br></li>
-        In diesem Schritt wird
+        *In diesem Schritt wird*
         <ul>
         </ol>
     </details>
     <details>
       <summary>Merkmalsauswahl (engl. feature selection)</summary>
-       Zum Ende werden die besten Merkmale ausgewählt.
+      *Zum Ende werden die besten Merkmale ausgewählt.*
         <ol>
         <li> 1<br></li>
         In diesem Schritt wird
