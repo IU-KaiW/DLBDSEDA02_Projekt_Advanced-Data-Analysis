@@ -37,7 +37,7 @@ Features of Texts are:
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
-      <summary> Textbereinigung (engl. text cleaning)</b></summary>
+      <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
         In diesem Schritt wird
@@ -46,7 +46,7 @@ Features of Texts are:
         </ol>
     </details>
     <details>
-      <summary>Merkmalsextraktion (engl. feature extraction)</summary>
+      <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
         <ol>
         <li> Tokenisierung (engl. tokenization)</li>
          In diesem Schritt
