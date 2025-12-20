@@ -34,8 +34,8 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
       <i>Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
     </details>
     <details>
-      <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
-      <i>xxxxx</i>
+      <summary>⚪ Datensammlung (engl. data collection)</summary>
+      <i>Datenquellen mit organisch vermutetem Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert. Im Anschluss wird anhand eines KI-Detectors automatisch geprüft, ob die Textdaten organisch entstanden sind.</i>
         <ol>
         <li>Tokenisierung (engl. tokenization)</li>
         <i>In diesem Schritt</i>
