@@ -157,8 +157,8 @@ Installation
 
 
 ### Projekt Struktur
-├── data/ # Roh- und vorverarbeitete Texte
-├── notebooks/ # Analysen & Experimente
-├── src/ # Python-Module
-├── docs/ # Abbildungen, PDFs
-└── README.md
+├── data/ # Roh- und vorverarbeitete Texte</br>
+├── notebooks/ # Analysen & Experimente</br>
+├── src/ # Python-Module</br>
+├── docs/ # Abbildungen, PDFs</br>
+└── README.md</br>
