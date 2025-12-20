@@ -11,19 +11,19 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
 ## Datenaquisition (engl. data acquisition)
-In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.
+*In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.*
 
 <b>⚪ Datenrecherche (engl. data research)</b></br>
-     <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
+     <i>Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
 
 <b>⚪ Datensammlung (engl. data collection)</b></br>
-     <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Datenquellen mit organisch vermutetem Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert. Im Anschluss wird anhand eines KI-Detectors automatisch geprüft, ob die Textdaten organisch entstanden sind.</i></br>
+     <i>Datenquellen mit organisch vermutetem Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert. Im Anschluss wird anhand eines KI-Detectors automatisch geprüft, ob die Textdaten organisch entstanden sind.</i></br>
 
 <b>⚪ Datenprüfung (engl. data check)</b></br>
-     <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
+     <i>Die Instanzen (engl. samples) der Datensätze werden auf synthetisch erzeugte Varianten hin geprüft und im Anschluss getaggt.anhand von Kriterien wie dem vermuteten Anteil realer oder synthetischer Samples sowie den nicht durch das Modell verarbeitbaren Samples (Real/Fake/Error) wird der Datensatz mit dem geringsten Real/Fake-Quotienten gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten erscheint. Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
 
 <b>⚪ Datensatzauswahl (engl. data selection)</b></br>
-     <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxx</i></br>
+     <i>xxxx</i></br>
 
 ### Pipeline-Input
 
@@ -167,7 +167,6 @@ Installation
 
 
 ### 
-
 📊 Ergebnisse
 Themenverteilungen
 Top-Wörter pro Thema
