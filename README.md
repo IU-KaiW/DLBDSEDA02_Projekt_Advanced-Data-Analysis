@@ -130,18 +130,11 @@ Features of Texts are:
            LSA
 </ol>
     </details>
-      <b>🟢 Merkmalsauswahl (engl. feature selection)</b>
+      <b>🟢 Merkmalsauswahl (engl. feature selection)</b><br>
       *Zum Ende werden die besten Merkmale ausgewählt.*
-        <ol>
-        <li> 1<br></li>
-        In diesem Schritt wird
-        <li> 2<br></li>
-        In Diesem Schritt werden
-        </ol>
-
-</ol>
+      
 <b>🟢 Merkmalslernen (engl. feature learning / representation learning)</b></br>
-*Beginn der Modellbildung für Aufgaben*
+Beginn der Modellbildung für Aufgaben
 
 
 #### Pipeline Ausgabe (engl. Pipeline Output)
