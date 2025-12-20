@@ -121,7 +121,7 @@ Features of Texts are:
       *Beginn der Themenmodellierung*
            NMF, LDA
       </ul>
-       </ol>
+      </ol>
     </details>
     <details>
       <summary><b>🟢 Merkmalsumwandlung (engl. feature transformation)</summary>
@@ -131,7 +131,7 @@ Features of Texts are:
            LSA
       </ul>
       </ol>
-       </ol>
+</ol>
     </details>
         <ol>
         <li> Latent Semantic Analysis (LSA) <br></li>
