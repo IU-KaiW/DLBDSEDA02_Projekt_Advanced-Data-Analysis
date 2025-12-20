@@ -14,7 +14,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.
 
 <b>⚪ Datenrecherche (engl. data research)</b></br>
-     <i>Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
+    >  <i>Zunächst wird eine Onlinerecherche auf verschiedenen Plattformen und Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten  deutschen oder englischen Datensätzen gesucht. Offensichtlich synthetisch erzeugte Varianten werden hierbei ignoriert.</i></br>
 
 <b>⚪ Datensammlung (engl. data collection)</b></br>
      <i>Datenquellen mit organisch vermutetem Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert. Im Anschluss wird anhand eines KI-Detectors automatisch geprüft, ob die Textdaten organisch entstanden sind.</i></br>
