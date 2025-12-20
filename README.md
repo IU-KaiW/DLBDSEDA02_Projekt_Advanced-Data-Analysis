@@ -48,11 +48,12 @@ Features of Texts are:
     </details>
     <details>
       <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
+      <i>xxxxx</i>
         <ol>
-        <li> Tokenisierung (engl. tokenization)</li>
-         In diesem Schritt
-        <li> Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
-         In diesem Schritt
+        <li>Tokenisierung (engl. tokenization)</li>
+        <i>In diesem Schritt</i>
+        <li>Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
+        <i>In diesem Schritt</i>
         </ol>
     </details>
 </ol>
