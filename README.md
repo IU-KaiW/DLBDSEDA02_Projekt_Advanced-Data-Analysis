@@ -8,7 +8,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.1. Vektorisierung 2 Techniken<br>
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.pdf" width="500">
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
 <!-- TABLE OF CONTENTS -->
 <details>
