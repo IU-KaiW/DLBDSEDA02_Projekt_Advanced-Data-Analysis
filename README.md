@@ -12,7 +12,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 
 ## Pipeline-Input
 <b>⚪ Datenaquisition (engl. data acquisition)</b></br>
-<i>In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.</i></br>
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatz-Recherche, –Sammlung, –Prüfung sowie –Auswahl durchlaufen, an dessen Ende die Pipeline-Eingabe steht.</br>
 <ol>
     <details>
       <summary>⚪ Datenrecherche (engl. data research)</b></summary>
