@@ -32,23 +32,17 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     </details>
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand eines vorhandenen KI-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (Real / Fake / Error) getaggt.</i></br>
+      <i>Die gesammelten Datensätze werden anhand eines vorhandenen KI-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (Real / Fake / Error) getaggt.</i><br>
     </details>
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
-      <i>Anhand der Label wird der Datensatz mit dem höchsten Score an organisch identifizierten Instanzen gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten scheint.</i></br>
-      </br>
+      <i>Anhand der Label wird der Datensatz mit dem höchsten Score an organisch identifizierten Instanzen gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten scheint.</i><br>
+      <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
-      </br>
+      <br>
       <br><i>Der so identifizierte Datensatz wird für weitere Verarbeitungsschritte genutzt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
 </ol>
     </details>
-
-      
-<b>test</b></br>
-```markdown
-$ \%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$
-```
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
