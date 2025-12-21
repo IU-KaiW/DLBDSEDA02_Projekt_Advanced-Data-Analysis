@@ -17,15 +17,24 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 └── README.md
 ```
 #### Installation
-##### Golbal
-###### Dependencies
-<li>[Gensim] https://pypi.org/project/gensim/</li> 
+##### Dependencies
+###### initial setup
 <li>[pandas] https://pandas.pydata.org</li>
+
+###### Pipeline Eingabe
+<li>[Gensim] https://pypi.org/project/gensim/</li> 
+
+###### Pipeline Verarbeitung
 <li>[spacy] https://spacy.io</li>
 <li>[nltk] https://www.nltk.org</li>
+
+###### Pipeline Ausgabe
 <li>[matplotlib] https://matplotlib.org</li>
 <li>[seaborn] https://seaborn.pydata.org</li>
 <li>[Cartopy] https://cartopy.readthedocs.io/stable/getting_started/index.html</li>
+
+
+
 
 
 bash: im Terminal
@@ -33,11 +42,6 @@ bash: im Terminal
 
 Virtuelle Umgebung
 conda
-
-##### Pipeline Eingabe
-
-##### Pipeline Verarbeitung
-##### Pipeline Ausgabe
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
