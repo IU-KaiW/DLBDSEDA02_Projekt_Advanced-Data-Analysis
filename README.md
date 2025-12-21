@@ -16,12 +16,13 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ├── docs/      # Abbildungen, PDFs
 └── README.md
 ```
-#### Installation
+### Installation
 ##### Dependencies
 ###### initial setup
+
+Virtuelle Umgebung
 ```console
-`Virtuelle Umgebung
-conda`
+`pip install conda`
 ```
 ###### Pipeline Eingabe
 <li>[Gensim] https://pypi.org/project/gensim/</li> 
