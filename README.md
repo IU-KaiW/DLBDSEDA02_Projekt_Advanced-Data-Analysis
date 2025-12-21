@@ -51,7 +51,7 @@ Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Inst
 <u>datasets</u>
 | Datensätze   | Bezeichnung                   | Bewertung |   Größe  |  Quelle  |  Link  |
 |--------------|-------------------------------|-----------|----------|----------|--------|
-| Datensatz 1  | Comcast Telecom Complaints    | 82%       |          | GitHub   |  xxxx  |
+| Datensatz 1  | Comcast Telecom Complaints    | 82%       |          | Kaggle   |  https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints  |
 | Datensatz 2  | Complaints classification     | 13,5%     |          |          |  xxxx  |
 | Datensatz 3  | Consumler Complaints Dataset  | 64,72%    |          |          |  xxxx  |
 | Datensatz 4  | Portfolio Schostock           | 35,03%    |          |          |  xxxx  |
