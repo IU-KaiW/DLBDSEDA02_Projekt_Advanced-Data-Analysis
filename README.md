@@ -50,13 +50,13 @@ Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Inst
 
 datasets
 
-| Datensätze| Bezeichnung | Bewertung | Quelle |
-|----------|----------|----------|----------|
-| Datensatz 1  | Comcast Telecom Complaints  | 82%     |
-| Datensatz 2  | Complaints classification B  | 13,5%     |
-| Datensatz 3  | Consumler Complaints Dataset: | 64,72%     |
-| Datensatz 4  | Portfolio Schostock: | 35,03%     |
-| Datensatz 5  | user_complaints  | 0,69%     |
+| Datensätze   | Bezeichnung                   | Bewertung |  Quelle  |
+|--------------|-------------------------------|-----------|----------|
+| Datensatz 1  | Comcast Telecom Complaints    | 82%       |          |
+| Datensatz 2  | Complaints classification     | 13,5%     |          |
+| Datensatz 3  | Consumler Complaints Dataset  | 64,72%    |          |
+| Datensatz 4  | Portfolio Schostock           | 35,03%    |          |
+| Datensatz 5  | user_complaints               | 0,69%     |          |
 
 
 
