@@ -48,15 +48,18 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 </ol>
 
 ```markdown
-| Nr. | Datensatz                | Bewertung | Größe    | Quelle         | Link                                                                               |
-|-----|--------------------------|-----------|----------|----------------|------------------------------------------------------------------------------------|
-| 1   | Comcast.csv              | 82%       | 60,0 kB  | Kaggle         | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints                 |
-| 2   | Consumer_Complaints.csv  | 13,5%     | 107,0 MB | Kaggle/GovData | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification           |
-| 3   | complaints_processed.csv | 64,72%    | 19,8 MB  | Kaggle         | https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp     |
-| 4   | chatgpt_reviews.csv      | 35,03%    | 119,9 MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                        |
-| 5   | user_complaints          | 0,69%     | 229,0 kB | GitHub         | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv |
+| Nr. | Datensatz                | Bewertung | Größe    | Quelle         | Link                                                                                        |
+|-----|--------------------------|-----------|----------|----------------|---------------------------------------------------------------------------------------------|
+| 1   | Comcast.csv              | 82%       | 60,0  kB | Kaggle         | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints                          |
+| 2   | Consumer_Complaints.csv  | 13,5%     | 107,0 MB | Kaggle/GovData | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification                    |
+| 3   | complaints_processed.csv | 64,72%    | 19,8  MB | Kaggle         | https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp              |
+| 4   | chatgpt_reviews.csv      | 35,03%    | 119,9 MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                                 |
+| 5   | user_complaints          | 0,69%     | 229,0 kB | GitHub         | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv          |
+| 6   | rows.csv.                | n/a       | 176   MB | Kaggle         | https://www.kaggle.com/datasets/selener/consumer-complaint-database                         |
+| 7   | Consumer_Complaints.csv  | n/a       | 59,40 MB | Kaggle         | https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products             |
+| 8   | telco_churn_with_all_feedback.csv  | n/a       | 1,87  MB | Kaggle         | https://www.kaggle.com/datasets/beatafaron/telco-customer-churn-realistic-customer-feedback |
 ```
-Der Datensatz mit dem prozentualen höchsten Wert wird als Textkorpus für die Aufgabe gewält.
+Der Datensatz mit dem prozentualen höchsten Bewertung wird als Textkorpus für die Aufgabe gewält.
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung begrenzt/gesplittet.
