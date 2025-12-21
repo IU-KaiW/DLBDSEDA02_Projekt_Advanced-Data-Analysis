@@ -49,18 +49,13 @@ Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Inst
 </ol>
 
 <u>datasets</u>
-| Datensätze   | Bezeichnung                   | Bewertung |   Größe  |  Quelle  |  Link  |
-|--------------|-------------------------------|-----------|----------|----------|--------|
-|  1  | Comcast Telecom Complaints    | 82%       |          | Kaggle   |  https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints  |
-|  2  | Complaints classification     | 13,5%     |          |          |  xxxx  |
-|  3  | Consumler Complaints Dataset  | 64,72%    |          |          |  xxxx  |
-|  4  | Portfolio Schostock           | 35,03%    |          |          |  xxxx  |
-|  5  | user_complaints               | 0,00%     |          |  GitHub  |  https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv  |
-|  6  | user_complaints               | 0,00%     |          |          |  xxxx  |
-|  7  | user_complaints               | 0,00%     |          |          |  xxxx  |
-|  8  | user_complaints               | 0,00%     |          |          |  xxxx  |
-|  9  | user_complaints               | 0,00%     |          |          |  xxxx  |
-
+| Datensätze   | Bezeichnung                   | Bewertung |   Größe  |       Quelle      |  Link  |
+|--------------|-------------------------------|-----------|----------|-------------------|--------|
+|           1  | Comcast.csv                   | 82%       |          |       Kaggle      | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints  |
+|           2  | Consumer_Complaints.csv       | 13,5%     |          | Kaggle/GovData    | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification |
+|           3  | complaints_processed.csv      | 64,72%    |          |  Kaggle           | https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp  |
+|           4  | chatgpt_reviews.csv           | 35,03%    |          |    GitHub         |  https://github.com/Schossi2908/DLBDSEDA02_D |
+|           5  | user_complaints               | 0,00%     |          |           GitHub  | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv  |
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung begrenzt/gesplittet.
