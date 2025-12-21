@@ -208,7 +208,7 @@ Modellvergleich
 Detector
 `KI-Detektor`
 
-Bibliotheken
+<li>Bibliotheken</li>
 `Gensim`
 
 <li>1</li>
