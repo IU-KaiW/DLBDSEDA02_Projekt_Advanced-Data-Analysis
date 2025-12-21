@@ -206,7 +206,8 @@ Modellvergleich
 
 ### Referenzen
 <ul>
-<li>Detector</li>
+<li>KI-Text-Detector</li>
+
 `KI-Detektor`
 
 <li>Bibliotheken</li>
