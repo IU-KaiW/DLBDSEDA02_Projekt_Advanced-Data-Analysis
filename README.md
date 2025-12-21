@@ -17,7 +17,9 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 └── README.md
 ```
 #### Installation
-Prerequisites
+##### Pipeline Eingabe
+##### Pipeline Verarbeitung
+##### Pipeline Ausgabe
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
