@@ -56,7 +56,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 4   | chatgpt_reviews.csv      | 35,03%    | 119,9 MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                        |
 | 5   | user_complaints          | 0,69%     | 229,0 kB | GitHub         | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv |
 ```
-<br>Der Datensatz mit dem prozentualen höchsten Wert wird als Textkorpus für die Aufgabe gewält.<br>
+Der Datensatz mit dem prozentualen höchsten Wert wird als Textkorpus für die Aufgabe gewält.
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung begrenzt/gesplittet.
