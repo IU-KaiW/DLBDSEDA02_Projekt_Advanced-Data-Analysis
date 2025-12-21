@@ -135,7 +135,7 @@ Das pre-processing
     </details>
 </ol>
 
-<b🟠 Text Analyse (engl. Text Analytics)</b></br>
+<b>🟠 Text Analyse (engl. Text Analytics)</b></br>
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
