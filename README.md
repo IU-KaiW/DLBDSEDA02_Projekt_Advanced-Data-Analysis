@@ -18,9 +18,9 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ```
 ### Installation
 ##### Dependencies
-###### initial setup
+##### initial setup
 
-Virtuelle Umgebung
+###### Virtuelle Umgebung
 ```console
 `pip install conda`
 ```
