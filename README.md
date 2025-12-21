@@ -42,11 +42,18 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       <br><i>ausgewertet. Die Wahrscheinlichkeit des organischen Ursprungs eines Datensatzes erscheint höher, je höher der Prozentsatz der als organisch identifizierten Instanzen im Verhältnis zum Gesamtdatensatz ist.</i><br>
     </details>
-Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Instanzen wird als Korpus gewählt.
+Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Instanzen (engl. samples) wird als Korpus für die Aufgabe genutzt.
 </ol>
 
+datasets
+Comcast Telecom Complaints Dataset: 82%
+Complaints classification:          13,50 %
+Consumler Complaints Dataset:       64,72 % 
+Portfolio Schostock:                35,03 %
+user_complaints:                    0,69 %
+
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
-Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz aus Performancegründen gesplittet.
+Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung begrenzt/gesplittet.
 
 anhand von Kriterien wie
 
