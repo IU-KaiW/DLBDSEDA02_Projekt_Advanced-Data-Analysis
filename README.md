@@ -10,7 +10,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 
 ### Projektstruktur
 ```markdown
-├── data/      # Roh- und vorverarbeitete Texte
+├── datasets/  # Roh- und vorverarbeitete Texte
 ├── src/       # Python-Module
 ├── docs/      # Abbildungen, PDFs
 └── README.md
