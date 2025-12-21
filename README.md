@@ -28,7 +28,10 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 
 ###### Pipeline Eingabe
 <li>[Gensim] https://pypi.org/project/gensim/</li> 
+<li>[Gensim] https://pypi.org/project/gensim/</li> 
 <li>[pandas] https://pandas.pydata.org</li>
+<li>[transformers] - für Vorprüfung</li>
+<li>torch https://pytorch.org</li>
 
 ###### Pipeline Verarbeitung
 <li>[spacy] https://spacy.io</li>
@@ -56,7 +59,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     </details>
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand eines vorhandenen KI-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (Real / Fake / Error) getaggt.</i><br>
+      <i>Die gesammelten Datensätze werden anhand eines KI-Text-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden. </i><br>
     </details>
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
