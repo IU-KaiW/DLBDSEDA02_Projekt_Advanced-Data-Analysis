@@ -9,12 +9,14 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
 ### Projektstruktur
+#### Ordnerstruktur
 ```markdown
 ├── datasets/  # Roh- und vorverarbeitete Texte
 ├── src/       # Python-Module
 ├── docs/      # Abbildungen, PDFs
 └── README.md
 ```
+#### Installation
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
@@ -185,9 +187,6 @@ Bibliotheken
 33333
 ````
 
-
-### Installation
-
 Prerequisites
 Installation
 
@@ -197,9 +196,3 @@ Installation
 Themenverteilungen
 Top-Wörter pro Thema
 Modellvergleich
-
-
-<details>
-  <summary>⚪ <u>Datensatzrecherche (engl. dataset research)</u></summary>
-  <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, etc.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i><br>
-</details>
