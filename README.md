@@ -24,7 +24,9 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ```console
 `pip install conda`
 ```
-####### venv
+###### venv
+###### KI-Text-Detector
+https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 
 ###### Pipeline Eingabe
 <li>[Gensim] https://pypi.org/project/gensim/</li> 
@@ -225,7 +227,7 @@ Modellvergleich
 <li>Literatur</li>
 `Gensim`
 <li>Websites</li>
-- [GeeksforGeeks]- https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/
+- (Sanchhaya Education Private Ltd., 2025)- https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/
 - 
 -
 <li>2</li>
