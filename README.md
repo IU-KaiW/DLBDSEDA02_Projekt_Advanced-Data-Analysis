@@ -17,6 +17,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 └── README.md
 ```
 #### Installation
+Prerequisites
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
@@ -53,6 +54,16 @@ Complaints classification:          13,50 %
 Consumler Complaints Dataset:       64,72 % 
 Portfolio Schostock:                35,03 %
 user_complaints:                    0,69 %
+
+| Datensätze| Spalte 2 | Spalte 3 |
+|----------|----------|----------|
+| Datensatz 1  | Comcast Telecom Complaints  | 42%     |
+| Datensatz 2  | Complaints classification B  | 75%     |
+| Datensatz 3  | Consumler Complaints Dataset: | 75%     |
+| Datensatz 4  | Portfolio Schostock: | 75%     |
+| Datensatz 5  | user_complaints  | 75%     |
+
+
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung begrenzt/gesplittet.
@@ -168,6 +179,21 @@ Features of Texts are:
   </details>
 </ol>
 
+### Codeblocks
+````python
+33333
+````
+
+Installation
+
+
+### 
+📊 Ergebnisse
+Themenverteilungen
+Top-Wörter pro Thema
+Modellvergleich
+
+
 ### Referenzen
 Detector
 `KI-Detektor`
@@ -179,29 +205,7 @@ Bibliotheken
 ````python
 12535
 ````
+Literatur
+`Gensim`
 
 <li>2</li>
-
-### Codeblocks
-````python
-33333
-````
-
-Prerequisites
-Installation
-
-
-### 
-📊 Ergebnisse
-Themenverteilungen
-Top-Wörter pro Thema
-Modellvergleich
-
-
-| Datensätze| Spalte 2 | Spalte 3 |
-|----------|----------|----------|
-| Datensatz 1  | Daten A  | 42%     |
-| Datensatz 2  | Daten B  | 75%     |
-| Datensatz 3  | Daten B  | 75%     |
-| Datensatz 4  | Daten B  | 75%     |
-| Datensatz 5  | Daten B  | 75%     |
