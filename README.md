@@ -40,8 +40,9 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
-      <br><i>ausgewertet. Die Wahrscheinlichkeit des organischen Ursprungs eines Datensatzes erscheint höher, je höher der Prozentsatz der als organisch identifizierten Instanzen im Verhältnis zum Gesamtdatensatz ist. Der Datensatz mit dem höchsten prozentualen Wert wird gewählt und als Korpus für die folgenden NLP-Verarbeitungsschritte genutzt.</i><br>
+      <br><i>ausgewertet. Die Wahrscheinlichkeit des organischen Ursprungs eines Datensatzes erscheint höher, je höher der Prozentsatz der als organisch identifizierten Instanzen im Verhältnis zum Gesamtdatensatz ist.</i><br>
     </details>
+    Der Datensatz mit dem höchsten prozentualen Wert wird gewählt und als Korpus für die folgenden NLP-Verarbeitungsschritte genutzt.
 </ol>
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
