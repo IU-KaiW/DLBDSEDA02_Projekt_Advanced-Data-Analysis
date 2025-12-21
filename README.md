@@ -19,8 +19,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 #### Installation
 ##### Golbal
 ###### Dependencies
-<li> Gensim</li> 
-[asdasdasd](https://)
+<li> Gensim [Gensim](https://pypi.org/project/gensim/)</li> 
 
 ##### Pipeline Eingabe
 
