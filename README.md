@@ -196,3 +196,9 @@ Installation
 Themenverteilungen
 Top-Wörter pro Thema
 Modellvergleich
+
+
+| Spalte 1 | Spalte 2 | Spalte 3 |
+|----------|----------|----------|
+| Zeile 1  | Daten A  | 42%     |
+| Zeile 2  | Daten B  | 75%     |
