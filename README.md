@@ -40,8 +40,8 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
-## Pipeline Eingabe (engl. Pipeline-Input)
-<b>⚪ Datenaquisition (engl. dataset acquisition)</b></br>
+## ⚪ Pipeline Eingabe (engl. Pipeline-Input)
+<b> Datenaquisition (engl. dataset acquisition)</b></br>
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
     <details>
@@ -89,7 +89,7 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
 ### 🔴 Vorverarbeitung (engl. pre-processing)
 Das pre-processing
 
-<b>🔴 Merkmalsvorbereitung (engl. feature preparation)</b></br>
+<b> Merkmalsvorbereitung (engl. feature preparation)</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
@@ -117,7 +117,7 @@ Das pre-processing
 
 ### 🟠 Verarbeitung (engl. processing)
 
-<b>🟠 Merkmalsaufbereitung (engl. feature engineering)</b></br>
+<b> Merkmalsaufbereitung (engl. feature engineering)</b></br>
 *Beginn der Merkmalsaufbereitung (engl. feature engineering)*
 <ol>
     <details>
@@ -135,18 +135,18 @@ Das pre-processing
     </details>
 </ol>
 
-<b>🟡 Text Analyse (engl. Text Analytics)</b></br>
+<b🟠 Text Analyse (engl. Text Analytics)</b></br>
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
 <ol>
     <details>
-      <summary><b>🟡 Merkmalsextraktion (engl. feature extraction)</b></summary>
+      <summary><b>🟠 Merkmalsextraktion (engl. feature extraction)</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung</i>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
       <i>Beginn der Themenmodellierung</i>
            NMF, LDA
     </details>
     <details>
-      <summary><b>🟡 Merkmalsumwandlung (engl. feature transformation)</b></summary>
+      <summary><b>🟠 Merkmalsumwandlung (engl. feature transformation)</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.</i>
           .<br>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
@@ -154,7 +154,7 @@ Das pre-processing
            LSA
     </details>
     <details>
-      <summary><b>🟡 Merkmalsauswahl (engl. feature selection)</b></summary>
+      <summary><b>🟠 Merkmalsauswahl (engl. feature selection)</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
 </ol>    
