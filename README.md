@@ -48,16 +48,18 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Instanzen (engl. samples) wird als Korpus für die Aufgabe genutzt.
 </ol>
 
-datasets
-
-| Datensätze   | Bezeichnung                   | Bewertung |  Quelle  |
-|--------------|-------------------------------|-----------|----------|
-| Datensatz 1  | Comcast Telecom Complaints    | 82%       |          |
-| Datensatz 2  | Complaints classification     | 13,5%     |          |
-| Datensatz 3  | Consumler Complaints Dataset  | 64,72%    |          |
-| Datensatz 4  | Portfolio Schostock           | 35,03%    |          |
-| Datensatz 5  | user_complaints               | 0,69%     |          |
-
+<u>datasets</u>
+| Datensätze   | Bezeichnung                   | Bewertung |   Größe  |  Quelle  |  Link  |
+|--------------|-------------------------------|-----------|----------|----------|--------|
+| Datensatz 1  | Comcast Telecom Complaints    | 82%       |          | GitHub   |  xxxx  |
+| Datensatz 2  | Complaints classification     | 13,5%     |          |          |  xxxx  |
+| Datensatz 3  | Consumler Complaints Dataset  | 64,72%    |          |          |  xxxx  |
+| Datensatz 4  | Portfolio Schostock           | 35,03%    |          |          |  xxxx  |
+| Datensatz 5  | user_complaints               | 0,00%     |          |  GitHub  |  xxxx  |
+| Datensatz 6  | user_complaints               | 0,00%     |          |          |  xxxx  |
+| Datensatz 7  | user_complaints               | 0,00%     |          |          |  xxxx  |
+| Datensatz 8  | user_complaints               | 0,00%     |          |          |  xxxx  |
+| Datensatz 9  | user_complaints               | 0,00%     |          |          |  xxxx  |
 
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
