@@ -205,7 +205,7 @@ Modellvergleich
 
 
 ### Referenzen
-Detector
+<li>Detector</li>
 `KI-Detektor`
 
 <li>Bibliotheken</li>
@@ -215,7 +215,7 @@ Detector
 ````python
 12535
 ````
-Literatur
+<li>Literatur</li>
 `Gensim`
 
 <li>2</li>
