@@ -20,7 +20,8 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ##### Dependencies
 ##### initial setup
 
-###### Virtuelle Umgebung
+###### Virtuelle Umgebung (engl. virtual environment)
+Als virtuelle Umgebungen stehen Conda und venv zur Verfügung. Aufgrund der Bibiliothek SpaCy wird Conda genutzt.
 ```console
 `pip install conda`
 ```
