@@ -51,15 +51,15 @@ Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Inst
 <u>datasets</u>
 | Datensätze   | Bezeichnung                   | Bewertung |   Größe  |  Quelle  |  Link  |
 |--------------|-------------------------------|-----------|----------|----------|--------|
-| Datensatz 1  | Comcast Telecom Complaints    | 82%       |          | Kaggle   |  https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints  |
-| Datensatz 2  | Complaints classification     | 13,5%     |          |          |  xxxx  |
-| Datensatz 3  | Consumler Complaints Dataset  | 64,72%    |          |          |  xxxx  |
-| Datensatz 4  | Portfolio Schostock           | 35,03%    |          |          |  xxxx  |
-| Datensatz 5  | user_complaints               | 0,00%     |          |  GitHub  |  https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv  |
-| Datensatz 6  | user_complaints               | 0,00%     |          |          |  xxxx  |
-| Datensatz 7  | user_complaints               | 0,00%     |          |          |  xxxx  |
-| Datensatz 8  | user_complaints               | 0,00%     |          |          |  xxxx  |
-| Datensatz 9  | user_complaints               | 0,00%     |          |          |  xxxx  |
+|  1  | Comcast Telecom Complaints    | 82%       |          | Kaggle   |  https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints  |
+|  2  | Complaints classification     | 13,5%     |          |          |  xxxx  |
+|  3  | Consumler Complaints Dataset  | 64,72%    |          |          |  xxxx  |
+|  4  | Portfolio Schostock           | 35,03%    |          |          |  xxxx  |
+|  5  | user_complaints               | 0,00%     |          |  GitHub  |  https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv  |
+|  6  | user_complaints               | 0,00%     |          |          |  xxxx  |
+|  7  | user_complaints               | 0,00%     |          |          |  xxxx  |
+|  8  | user_complaints               | 0,00%     |          |          |  xxxx  |
+|  9  | user_complaints               | 0,00%     |          |          |  xxxx  |
 
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
