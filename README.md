@@ -40,11 +40,11 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br><i>Der so identifizierte Datensatz wird für weitere Verarbeitungsschritte genutzt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
 </ol>
-    </details>
-    
 $$
 $\%\text{ organisch}=\left(\frac{REAL}{REAL + FAKE + ERROR}\right)\cdot100$
 $$
+    </details>
+
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
