@@ -80,13 +80,13 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
-Der Datensatz mit der prozentualen höchsten Bewertung wird als Textkorpus für die nachfolgenden Aufgabe verwendet.
+Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Aufgabe genutzt.
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
-### Vorverarbeitung (engl. pre-processing)
+### 🔴 Vorverarbeitung (engl. pre-processing)
 Das pre-processing
 
 <b>🔴 Merkmalsvorbereitung (engl. feature preparation)</b></br>
@@ -115,7 +115,7 @@ Das pre-processing
 </ol>
 
 
-### Verarbeitung (engl. processing)
+### 🟠 Verarbeitung (engl. processing)
 
 <b>🟠 Merkmalsaufbereitung (engl. feature engineering)</b></br>
 *Beginn der Merkmalsaufbereitung (engl. feature engineering)*
@@ -161,7 +161,7 @@ Das pre-processing
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
-## Pipeline Ausgabe (engl. Pipeline Output)
+## 🟢 Pipeline Ausgabe (engl. Pipeline Output)
 <b>🟢 Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>xxxxxxxxxxxx</i>
 <ol>
