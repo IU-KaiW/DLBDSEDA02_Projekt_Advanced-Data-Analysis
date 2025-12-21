@@ -18,13 +18,15 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ```
 ### Installation
 ##### Dependencies
-##### initial setup
-
+##### Einrichtung (engl. initial setup)
 ###### Virtuelle Umgebung (engl. virtual environment)
-Als virtuelle Umgebungen stehen Conda und venv zur Verfügung. Aufgrund der Bibiliothek SpaCy wird Conda genutzt.
+####### conda
+Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wird Conda genutzt.
 ```console
 `pip install conda`
 ```
+####### venv
+
 ###### Pipeline Eingabe
 <li>[Gensim] https://pypi.org/project/gensim/</li> 
 <li>[pandas] https://pandas.pydata.org</li>
