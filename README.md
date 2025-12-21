@@ -20,6 +20,19 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ##### Golbal
 ###### Dependencies
 <li>[Gensim] https://pypi.org/project/gensim/</li> 
+<li>[pandas] https://pandas.pydata.org</li>
+<li>[spacy] https://spacy.io</li>
+<li>[nltk] https://www.nltk.org</li>
+<li>[matplotlib] https://matplotlib.org</li>
+<li>[seaborn] https://seaborn.pydata.org</li>
+<li>[Cartopy] https://cartopy.readthedocs.io/stable/getting_started/index.html</li>
+
+
+bash: im Terminal
+
+
+Virtuelle Umgebung
+conda
 
 ##### Pipeline Eingabe
 
