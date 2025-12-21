@@ -42,9 +42,8 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 </ol>
     </details>
     
-$$
-\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100
-$$
+$$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
+
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 anhand von Kriterien wie
 
