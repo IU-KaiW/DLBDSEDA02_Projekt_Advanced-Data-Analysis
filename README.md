@@ -21,7 +21,7 @@ Prerequisites
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
-## Pipeline-Input
+## Pipeline Eingabe (engl. Pipeline-Input)
 <b>⚪ Datenaquisition (engl. dataset acquisition)</b></br>
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
