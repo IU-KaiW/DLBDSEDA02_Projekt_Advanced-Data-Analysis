@@ -198,7 +198,10 @@ Top-Wörter pro Thema
 Modellvergleich
 
 
-| Spalte 1 | Spalte 2 | Spalte 3 |
+| Datensätze| Spalte 2 | Spalte 3 |
 |----------|----------|----------|
-| Zeile 1  | Daten A  | 42%     |
-| Zeile 2  | Daten B  | 75%     |
+| Datensatz 1  | Daten A  | 42%     |
+| Datensatz 2  | Daten B  | 75%     |
+| Datensatz 3  | Daten B  | 75%     |
+| Datensatz 4  | Daten B  | 75%     |
+| Datensatz 5  | Daten B  | 75%     |
