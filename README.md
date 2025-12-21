@@ -205,6 +205,7 @@ Modellvergleich
 
 
 ### Referenzen
+<ol>
 <li>Detector</li>
 `KI-Detektor`
 
@@ -219,3 +220,4 @@ Modellvergleich
 `Gensim`
 
 <li>2</li>
+</ol>
