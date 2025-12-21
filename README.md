@@ -40,8 +40,8 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
-</ol>
     </details>
+</ol>
 
 ## Pipeline-Input
 **⚪ Datenaquisition (engl. dataset acquisition)**
@@ -64,9 +64,9 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
       <i>Anhand der Labels wird der Datensatz mit dem höchsten Score an organisch identifizierten Instanzen gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten scheint.</i>
-      $$
+      $
       \% \text{organisch} = \frac{REAL}{REAL + FAKE + ERROR} \cdot 100
-      $$
+      $
       <i>Der so identifizierte Datensatz wird für weitere Verarbeitungsschritte genutzt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i>
     </details>
 </ol>
