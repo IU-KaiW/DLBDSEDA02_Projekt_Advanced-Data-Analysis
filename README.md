@@ -45,9 +45,6 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       <br><i>ausgewertet. Die Wahrscheinlichkeit des organischen Ursprungs eines Datensatzes erscheint höher, je höher der Prozentsatz der als organisch identifizierten Instanzen im Verhältnis zum Gesamtdatensatz ist.</i><br>
     </details>
-Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Instanzen (engl. samples) wird als Korpus für die Aufgabe genutzt.
-
-datasets
 | Datensätze | Bezeichnung                   | Bewertung |   Größe  |       Quelle      |                                       Link                                            |
 |------------|-------------------------------|-----------|----------|-------------------|---------------------------------------------------------------------------------------|
 |         1  | Comcast.csv                   | 82%       | 60,0 kB  | Kaggle            | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints                    |
@@ -57,7 +54,7 @@ datasets
 |         5  | user_complaints               | 0,69%     | 229,0 kB | GitHub            | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv    |
 
 </ol>
-
+Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Instanzen (engl. samples) wird als Korpus für die Aufgabe genutzt.
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung begrenzt/gesplittet.
