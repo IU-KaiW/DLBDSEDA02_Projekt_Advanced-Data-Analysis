@@ -19,7 +19,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 #### Installation
 ##### Golbal
 ###### Dependencies
-Gensim
+<li> Gensim</li> 
 [asdasdasd](https://)
 
 ##### Pipeline Eingabe
