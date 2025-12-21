@@ -225,6 +225,8 @@ Modellvergleich
 <li>Literatur</li>
 `Gensim`
 <li>Websites</li>
-[GeeksforGeeks](https://www.GeekforGeeks.com)
+- [GeeksforGeeks]- https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/
+- 
+-
 <li>2</li>
 </ul>
