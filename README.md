@@ -43,7 +43,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
-      <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und der Datensatz fließt nicht in die engere Auswahl mit ein.</i>
+      <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und der Datensatz fließt nicht in den Ergebnisvergleich ein.</i>
     </details>
 </ol>
 
@@ -67,8 +67,8 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Textkorpus für 
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
-### Pre-Processing
-*Das pre-processing
+### Vorverarbeitung (engl. pre-processing)
+Das pre-processing
 
 <b>🔴 Merkmalsvorbereitung (engl. feature preparation)</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
@@ -96,7 +96,7 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
 </ol>
 
 
-### Processing
+### Verarbeitung (engl. processing)
 
 <b>🟠 Merkmalsaufbereitung (engl. feature engineering)</b></br>
 *Beginn der Merkmalsaufbereitung (engl. feature engineering)*
@@ -156,7 +156,7 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
     </details>
 </ol>
 
-### Post-Processing
+### Nachverarbeitung (engl. post-processing)
 *Beginn der Evaluation*
 <ol>
   <details>
