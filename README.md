@@ -142,7 +142,7 @@ Das pre-processing
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
-### Pipeline Ausgabe (engl. Pipeline Output)
+## Pipeline Ausgabe (engl. Pipeline Output)
 <b>🟢 Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>xxxxxxxxxxxx</i>
 <ol>
