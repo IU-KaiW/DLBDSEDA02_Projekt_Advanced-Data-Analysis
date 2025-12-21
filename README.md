@@ -47,6 +47,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     </details>
 </ol>
       <br>Der Datensatz mit dem prozentualen höchsten Wert wird als Textkorpus für die Aufgabe gewält.<br>
+      
 ```markdown
 | Datensätze | Bezeichnung                   | Bewertung |   Größe  |       Quelle      |                                       Link                                            |
 |------------|-------------------------------|-----------|----------|-------------------|---------------------------------------------------------------------------------------|
