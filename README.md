@@ -49,7 +49,7 @@ Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Inst
 </ol>
 
 <u>datasets</u>
-| Datensätze | Bezeichnung                   | $$\%\text{ organisch}$$|   Größe  |       Quelle      |                                       Link                                            |
+| Datensätze | Bezeichnung                   | $\%\text{ organisch}$|   Größe  |       Quelle      |                                       Link                                            |
 |------------|-------------------------------|-----------|----------|-------------------|---------------------------------------------------------------------------------------|
 |         1  | Comcast.csv                   | 82%       | 60,0 kB  | Kaggle            | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints                    |
 |         2  | Consumer_Complaints.csv       | 13,5%     | 107,0 MB | Kaggle/GovData    | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification              |
