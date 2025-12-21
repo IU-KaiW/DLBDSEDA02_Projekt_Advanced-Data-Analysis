@@ -37,9 +37,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
       <i>Anhand der Label wird der Datensatz mit höchsten Prozentsatz an als organisch identifizierten Instanzen gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten scheint.</i></br>
-      <div style="text-align:center;">
       </br>$$ \left(\frac{REAL - FAKE}{REAL + FAKE + ERROR}\right)\cdot100 $$</br>
-      </div>
       </br><i>Der so identifizierte Datensatz wird für weitere Verarbeitungsschritte genutzt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
 </ol>
     </details>
