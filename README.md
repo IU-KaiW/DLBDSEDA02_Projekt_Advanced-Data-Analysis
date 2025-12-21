@@ -43,7 +43,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
-      <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist.</i>
+      <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und der Datensatz fließt nicht in die engere Auswahl mit ein.</i>
     </details>
 </ol>
 
@@ -58,19 +58,13 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 7   | user_complaints                    | 0,69%     | 229,0  kB | GitHub         | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv   |
 | 8   | consumer_complaints.csv            | n/a       | 175,39 MB | Kaggle         | https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints           |
 | 9   | Complaints_Reports_Data.sql        | n/a       | 3,28   MB | MendeleyData   | https://data.mendeley.com/datasets/w2cp7h53s5/1                                      |
-| 6   | chatgpt_reviews.csv                | 35,03%    | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
-
-
-
-| 10  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
+| 10  | chatgpt_reviews.csv                | 35,03%    | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
+| 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
 Der Datensatz mit dem prozentualen höchsten Bewertung wird als Textkorpus für die Aufgabe gewält.
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
-Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung begrenzt/gesplittet.
-
-anhand von Kriterien wie
-
+Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die weitere Verarbeitung auf diese Anzahl begrenzt.
 
 Features of Texts are: 
 
