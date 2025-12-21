@@ -42,7 +42,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       <br><i>ausgewertet. Die Wahrscheinlichkeit des organischen Ursprungs eines Datensatzes erscheint höher, je höher der Prozentsatz der als organisch identifizierten Instanzen im Verhältnis zum Gesamtdatensatz ist.</i><br>
     </details>
-    Der Datensatz mit dem höchsten prozentualen Wert wird gewählt und als Korpus für die folgenden NLP-Verarbeitungsschritte genutzt.
+    Der Datensatz mit dem höchsten prozentualen Wert an organisch entstandenen Instanzen wird als Korpus gewählt.
 </ol>
 
 ## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
