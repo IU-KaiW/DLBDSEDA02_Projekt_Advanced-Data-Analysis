@@ -8,6 +8,15 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.1. Vektorisierung 2 Techniken<br>
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
+### Projektstruktur
+```markdown
+├── data/      # Roh- und vorverarbeitete Texte
+├── notebooks/ # Analysen & Experimente
+├── src/       # Python-Module
+├── docs/      # Abbildungen, PDFs
+└── README.md
+```
+
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
 
 ## Pipeline-Input
@@ -165,16 +174,6 @@ Bibliotheken
 
 Prerequisites
 Installation
-
-
-### Projektstruktur
-```markdown
-├── data/      # Roh- und vorverarbeitete Texte
-├── notebooks/ # Analysen & Experimente
-├── src/       # Python-Module
-├── docs/      # Abbildungen, PDFs
-└── README.md
-```
 
 
 ### 
