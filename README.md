@@ -36,9 +36,11 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     </details>
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
-      <i>Anhand der Label wird der Datensatz mit höchsten Prozentsatz an REAL-Labels identifiziert und gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten scheint.</i></br>
-      </br>$\left(\frac{REAL - FAKE}{REAL + FAKE + ERROR}\right)*100$</br>
-      </br><i>Der so identifizierte Datensatz geht in die NLP-Pipeline, welche mit der Textvorverarbeitung (engl. text pre-processing) des Datensatzes beginnt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
+      <i>Anhand der Label wird der Datensatz mit höchsten Prozentsatz an als organisch identifizierten Instanzen gewählt, da hier die Wahrscheinlichkeit eines organischen Ursprungs am höchsten scheint.</i></br>
+      \[
+      </br>$\left(\frac{REAL - FAKE}{REAL + FAKE + ERROR}\right)\cdot100$</br>
+      \]
+      </br><i>Der so identifizierte Datensatz wird für weitere Verarbeitungsschritte genutzt. Übersteigt die Anzahl der Samples eine Schwelle von 2000 wird der Datensatz zunächst aus Performancegründen gesplittet.</i></br>
 </ol>
     </details>
 
@@ -48,6 +50,7 @@ anhand von Kriterien wie
 Features of Texts are: 
 
 ### Pre-Processing
+*Das pre-processing
 
 <b>🔴 Merkmalsvorbereitung (engl. feature preparation)</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
