@@ -55,8 +55,8 @@ Consumler Complaints Dataset:       64,72 %
 Portfolio Schostock:                35,03 %
 user_complaints:                    0,69 %
 
-| Datensätze| Spalte 2 | Spalte 3 |
-|----------|----------|----------|
+| Datensätze| Bezeichnung | Bewertung | Quelle |
+|----------|----------|----------|----------|
 | Datensatz 1  | Comcast Telecom Complaints  | 42%     |
 | Datensatz 2  | Complaints classification B  | 75%     |
 | Datensatz 3  | Consumler Complaints Dataset: | 75%     |
