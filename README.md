@@ -36,11 +36,11 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     </details>
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
-      <i>Durch Zählung der Label wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL) Instanzen Über die Formel:</i><br>
+      <i>Durch eine Häufigkeitsauswertung der Label wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen die die Formel:</i><br>
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
-      <br><i>ermittel. Die Wahrscheinlichkeit eines organischen Ursprungs erschient hier am höchsten. Der Datensatz wird im Anschluss für die folgenden Verarbeitungsschritte genutzt.</i><br>
+      <br><i>ausgewertet. Die Wahrscheinlichkeit des organischen Ursprungs eines Datensatzes erscheint höher, je höher der Prozentsatz der organisch identifizierten Instanzen zum Gesamtdatensatz ist. Der Datensatz wird im Anschluss für die folgenden Verarbeitungsschritte genutzt.</i><br>
     </details>
 </ol>
 
