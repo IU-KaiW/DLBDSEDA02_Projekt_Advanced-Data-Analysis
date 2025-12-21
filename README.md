@@ -197,3 +197,9 @@ Installation
 Themenverteilungen
 Top-Wörter pro Thema
 Modellvergleich
+
+
+<details>
+  <summary>⚪ <u>Datensatzrecherche (engl. dataset research)</u></summary>
+  <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, etc.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i><br>
+</details>
