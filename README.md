@@ -40,8 +40,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
-      <br><i>ermittel. Die Wahrscheinlichkeit eines organischen Ursprungs erschient hier am höchsten.</i><br>
-      <br><i>Der Datensatz wird im Anschluss für die folgenden Verarbeitungsschritte genutzt.</i><br>
+      <br><i>ermittel. Die Wahrscheinlichkeit eines organischen Ursprungs erschient hier am höchsten. Der Datensatz wird im Anschluss für die folgenden Verarbeitungsschritte genutzt.</i><br>
     </details>
 </ol>
 
