@@ -45,7 +45,7 @@ https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 <li>[Cartopy] https://cartopy.readthedocs.io/stable/getting_started/index.html</li>
 
 
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="700">
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
 
 ## ⚪ Pipeline Eingabe (engl. Pipeline-Input)
 <b> Datenaquisition (engl. dataset acquisition)</b></br>
