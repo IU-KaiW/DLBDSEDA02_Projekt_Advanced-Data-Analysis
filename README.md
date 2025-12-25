@@ -219,12 +219,16 @@ https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 
 <li>Bibliotheken</li>
 
+###### initial setup
+
 ###### Vorprüfung
+`transoformers`
 
 ###### NLP-Pipeline
+`Gensim`
 
 ###### Nachverarbeitung
-`Gensim`
+
 
 <li>Literatur</li>
 
@@ -232,7 +236,7 @@ https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 
 <li>Websites</li>
 GeekforGeek.org - Sanchhaya Education Private Ltd., 2025
-<li> - https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/</li> 
+- https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/
 - <br>
 - <br>
 <li>2</li>
