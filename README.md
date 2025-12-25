@@ -20,13 +20,12 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ##### Einrichtung (engl. initial setup)
 ###### Virtuelle Umgebung (engl. virtual environment)
 ###### conda
-Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wird Conda genutzt.
+Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
 ```console
 `pip install conda`
 ```
-###### venv
 ###### KI-Text-Detector
-https://github.com/Kishanjaisoorya/AI-Text-Detector-python
+Für die Prüfung der Datensätze kommt ein extern etwickelter AI-Text-Detector zum Einsatz.
 
 ###### Pipeline Eingabe
 <li>[Gensim] https://pypi.org/project/gensim/</li> 
@@ -218,30 +217,26 @@ Modellvergleich
 #### Referenzen
 
 `KI-Detektor`
-###### KI-Text-Detector
+##### KI-Text-Detector
 https://github.com/Kishanjaisoorya/AI-Text-Detector-python
+
 
 <li>Bibliotheken</li>
 
-###### Bibliotheken
+##### Vorprüfung
 
+##### NLP-Pipeline
+
+##### Nachverarbeitung
 `Gensim`
 
 <li>1</li>
-````python
-12535
-````
 
-###### Literatur
+##### Literatur
 
 <li>Literatur</li>
 `Gensim`
 
-###### Websites
-
-<li>Websites</li>
+##### Websites
 - (Sanchhaya Education Private Ltd., 2025)- https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/
-- 
--
-<li>2</li>
 </ul>
