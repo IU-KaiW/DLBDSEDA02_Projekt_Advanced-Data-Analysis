@@ -226,14 +226,14 @@ https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 ##### Nachverarbeitung
 `Gensim`
 
-<li>1</li>
+<li>Literatur</li>
 
 ##### Literatur
 
-##### Websites
+<li>Websites</li>
 GeekforGeek.org - Sanchhaya Education Private Ltd., 2025
-<li> https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/</li> 
-- 
--
+<li> - https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/</li> 
+- <br>
+- <br>
 <li>2</li>
 </ul>
