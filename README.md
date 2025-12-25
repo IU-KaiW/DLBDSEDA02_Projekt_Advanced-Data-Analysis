@@ -219,11 +219,11 @@ https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 
 <li>Bibliotheken</li>
 
-##### Vorprüfung
+###### Vorprüfung
 
-##### NLP-Pipeline
+###### NLP-Pipeline
 
-##### Nachverarbeitung
+###### Nachverarbeitung
 `Gensim`
 
 <li>Literatur</li>
