@@ -215,6 +215,8 @@ Modellvergleich
 <ul>
 <li>KI-Text-Detector</li>
 
+#### Referenzen
+
 `KI-Detektor`
 ###### KI-Text-Detector
 https://github.com/Kishanjaisoorya/AI-Text-Detector-python
