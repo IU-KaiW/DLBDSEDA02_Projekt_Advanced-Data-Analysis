@@ -220,14 +220,23 @@ Modellvergleich
 https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 
 <li>Bibliotheken</li>
+
+###### Bibliotheken
+
 `Gensim`
 
 <li>1</li>
 ````python
 12535
 ````
+
+###### Literatur
+
 <li>Literatur</li>
 `Gensim`
+
+###### Websites
+
 <li>Websites</li>
 - (Sanchhaya Education Private Ltd., 2025)- https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/
 - 
