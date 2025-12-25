@@ -45,7 +45,7 @@ https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 <li>[Cartopy] https://cartopy.readthedocs.io/stable/getting_started/index.html</li>
 
 
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Projekt%20ADA%20v.3-Pipeline.jpg" width="500">
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="500">
 
 ## ⚪ Pipeline Eingabe (engl. Pipeline-Input)
 <b> Datenaquisition (engl. dataset acquisition)</b></br>
@@ -216,6 +216,8 @@ Modellvergleich
 <li>KI-Text-Detector</li>
 
 `KI-Detektor`
+###### KI-Text-Detector
+https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 
 <li>Bibliotheken</li>
 `Gensim`
