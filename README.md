@@ -71,13 +71,12 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
       <ol type="2">
             <li>Normalisierung</li>
             Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie  Formatnormalisierungen (engl. format normalisations). 
-            case conversion
-            inflection reductions
-            Da Lemmatisierung genauer als Stammformreduktion ist, wird lemmatisierung 
-            Lemmatisierung
-            format normalisations
             <ul>
-            <li>case conversion</li>
+              <li>case conversion</li>
+              <li>inflection reductions</li>
+              Da Lemmatisierung genauer als Stammformreduktion ist, wird diese eingesetzt. (WordNet lemmatizer from NLTK)
+       
+              <li>format normalisations</li>
             </ul>
             <li>Rechtschreibkorrektur</li>
             Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt.
