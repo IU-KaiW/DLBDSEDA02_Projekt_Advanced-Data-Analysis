@@ -242,10 +242,10 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 <li>Literatur</li>
 
 ###### Skripte
-<br>Internationale Hochschule IU. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
+Internationale Hochschule IU. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
 
 ###### Wissenschaftliche Artikel
-<br>Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
+Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
 
 <li>Websites</li>
 
