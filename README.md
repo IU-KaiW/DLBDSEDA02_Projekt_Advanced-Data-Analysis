@@ -3,8 +3,6 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 
 Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die zu verwendenten Python-Bibliotheken erwähnt werden.
 
-<color> #0969DA </color> 
-
 1. Schriftliches Konzept<br>
 2. Datenverarbeitung<br>
 2.1. Vektorisierung 2 Techniken<br>
@@ -12,7 +10,7 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 
 
 ## Konzeption
-Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline-Eingabe, NLP-Pipeline, 🟢Pipeline Ausgabe, Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den durch klicken auf ► erweiterbaren Einzelschritten entnommen werden.
+Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline-Eingabe, NLP-Pipeline, ⚪Pipeline Ausgabe, Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den durch klicken auf ► erweiterbaren Einzelschritten entnommen werden.
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
@@ -138,19 +136,19 @@ Das pre-processing
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
-### 🟢 Pipeline Ausgabe (engl. Pipeline Output)
-<b>🟢 Merkmalsanalyse (engl. feature-analysis)</b></br>
+### ⚪ Pipeline Ausgabe (engl. Pipeline Output)
+<b>⚪ Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>xxxxxxxxxxxx</i>
 <ol>
     <details>
-      <summary><b>🟢 Visualisierung</b></summary>
+      <summary><b>⚪ Visualisierung</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grafische Darstellung</i>
     </details>
     Alpha - 
     Beta - Wortverteilung in Themen
     K<sup>T</sup> (n × k)
     <details>
-      <summary><b>🟢 Aggregation</b></summary>
+      <summary><b>⚪ Aggregation</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerische Darstellung</i>
     </details>
 </ol>
@@ -159,7 +157,7 @@ Das pre-processing
 *Beginn der Evaluation*
 <ol>
   <details>
-      <summary>🟣 Evaluation</summary>
+      <summary>🟣 🟢Evaluation</summary>
       <ol>
         <li> Aggregation</li>
         <i>blub blub, blub</i>
