@@ -67,18 +67,19 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
     <ol type="1">
       <li>
         Standardisierung (engl. standardisation)<br>
-        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. Die Standardisierung besteht aus den Schritten Rechtschreibfehlerkorrektur (engl. spelling correction) und  Normalisierung (engl. normalisation). </i>
+        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. </i>
       <ol type="2">
-            <li>Normalisierung</li>
+            <li>Normalisierung (engl. normalisation)</li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
+              In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
               <li>Grundformreduktion (engl. inflection reduction)</li>
-              Da Lemmatisierung genauer als Stammformreduktion ist, wird diese eingesetzt. (WordNet lemmatizer from NLTK)
+              Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt. (WordNet lemmatizer from NLTK)
               <li>Formatnormalisierungen (engl. format normalisations)</li>
             </ul>
-            <li>Rechtschreibkorrektur</li>
-            Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt.
+            <li>Rechtschreibfehlerkorrektur (engl. spelling correction)</li>
+            Durch Rechtschreibkorrekrur werden Tipp bzw. Schreibfehler korrigiert.
       </ol>
       </li>
       <li>
