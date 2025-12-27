@@ -10,7 +10,7 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 
 
 ## Konzeption
-Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline-Eingabe, NLP-Pipeline, ⚪Pipeline Ausgabe, Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den durch klicken auf ► erweiterbaren Einzelschritten entnommen werden.
+Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline Eingabe, 🟣 Verarbeitung, ⚪Pipeline Ausgabe sowie Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den durch klicken auf ► erweiterbaren Einzelschritten entnommen werden.
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
@@ -57,7 +57,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 ```
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Aufgabe genutzt.
 
-### NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
+### 🟣 NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
@@ -157,7 +157,7 @@ Das pre-processing
 *Beginn der Evaluation*
 <ol>
   <details>
-      <summary>🟣 🟢Evaluation</summary>
+      <summary>Evaluation</summary>
       <ol>
         <li> Aggregation</li>
         <i>blub blub, blub</i>
@@ -272,6 +272,9 @@ SpaCy -  https://spacy.io/usage/spacy-101
 GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
 </ul>
+
+🟣 🟢
+
 
 [^1]. pandas
 [^1]: pandas.de
