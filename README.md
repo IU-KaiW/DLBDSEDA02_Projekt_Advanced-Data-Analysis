@@ -14,7 +14,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>
     <details>
       <summary>⚪ <u> Datensatzrecherche (engl. dataset research) <u></b></summary>
-      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle [^1]., GitHub [^2]., GovData [^3]., ect. [^4].) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
+      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub , GovData , ect.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
@@ -35,18 +35,18 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 </ol>
 
 ```markdown
-| Nr. | Datensatz                          | Bewertung | Größe     | Quelle         | Link                                                                                 |
-|-----|------------------------------------|-----------|-----------|----------------|--------------------------------------------------------------------------------------|
-| 1   | Consumer_Complaints.csv            | n/a       | 59,40  MB | Kaggle         | https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products      |
-| 2   | rows.csv                           | n/a       | 176    MB | Kaggle         | https://www.kaggle.com/datasets/selener/consumer-complaint-database                  |
-| 3   | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB | Kaggle/GovData | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification             |
-| 4   | complaints_processed.csv           | 64,72 %   | 19,8   MB | Kaggle         | https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp       |
-| 5   | Comcast.csv                        | 82 %      | 60,0   kB | Kaggle         | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints                   |
-| 7   | user_complaints                    | 0,69 %    | 229,0  kB | GitHub         | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv   |
-| 8   | consumer_complaints.csv            | n/a       | 175,39 MB | Kaggle         | https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints           |
-| 9   | Complaints_Reports_Data.sql        | n/a       | 3,28   MB | MendeleyData   | https://data.mendeley.com/datasets/w2cp7h53s5/1                                      |
-| 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
-| 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
+| Nr. | Datensatz                          | Bewertung | Größe     | Quelle         | Link                                                                                            |
+|-----|------------------------------------|-----------|-----------|----------------|-------------------------------------------------------------------------------------------------|
+| 1   | Consumer_Complaints.csv            | n/a       | 59,40  MB | Kaggle         [^1].      | https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products      |
+| 2   | rows.csv                           | n/a       | 176    MB | Kaggle                    | https://www.kaggle.com/datasets/selener/consumer-complaint-database                  |
+| 3   | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB | Kaggle/GovData [^1].[^3]. | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification             |
+| 4   | complaints_processed.csv           | 64,72 %   | 19,8   MB | Kaggle                    | https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp       |
+| 5   | Comcast.csv                        | 82 %      | 60,0   kB | Kaggle                    | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints                   |
+| 7   | user_complaints                    | 0,69 %    | 229,0  kB | GitHub         [^2]       | https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv   |
+| 8   | consumer_complaints.csv            | n/a       | 175,39 MB | Kaggle                    | https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints           |
+| 9   | Complaints_Reports_Data.sql        | n/a       | 3,28   MB | MendeleyData   [^4]       | https://data.mendeley.com/datasets/w2cp7h53s5/1                                      |
+| 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         [^2].      | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
+| 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle                    | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt.
 
