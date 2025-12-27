@@ -43,10 +43,13 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 
 ```python
 import seaborn as sns
+import matplotlib as mpl
+import pandas as pd“ 
+import numpy as np“ 
 ```
 
 `Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
-
+`re`         
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
 
