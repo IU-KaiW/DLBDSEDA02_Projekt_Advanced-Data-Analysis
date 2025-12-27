@@ -57,7 +57,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 ```
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Aufgabe genutzt.
 
-### 🟠 NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
+### ⚫ NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
@@ -201,17 +201,17 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 `pip install conda`
 ```
 
-##### Pipeline Eingabe
-`pandas`[^1].       https://pandas.pydata.org<br>
+##### ⚪ Pipeline Eingabe
+`pandas`[^1].  https://pandas.pydata.org<br>
 `Gensim`       https://pypi.org/project/gensim/<br>
 `transformers` https://pypi.org/project/transformers/<br>
 `torch`        https://pytorch.org<br>
 
-##### Pipeline Verarbeitung
+##### 🟠 Pipeline Verarbeitung
 `spacy`        https://spacy.io<br>
 `nltk`         https://www.nltk.org<br>
 
-##### Pipeline Ausgabe
+##### ⚪ Pipeline Ausgabe
 `matplotlib`   https://matplotlib.org<br>
 `seaborn`      https://seaborn.pydata.org<br>
 
@@ -267,6 +267,9 @@ Blum et al., 2020 ?
 ###### GeekforGeek.org
 Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)
 
+https://emojiterra.com/de/gelber-kreis/
+
+
 ###### Dokumentationen
 SpaCy -  https://spacy.io/usage/spacy-101
 GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
@@ -274,7 +277,7 @@ GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-starte
 </ul>
 
 🟣 🟢🟠🔴
-🔵 
+🔵 🟡🟤⚫
 
 [^1]. pandas
 [^1]: pandas.de
