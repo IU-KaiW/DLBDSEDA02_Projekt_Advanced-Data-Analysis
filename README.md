@@ -85,13 +85,13 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
       <li>
         Rauschentfernung (engl. noise reduction)<br>
         <i>Ziel der Rauschentfernung ist es, für die Verarbeitung irrelevante Tokens durch eine Zeichenentfernung zu löschen.</i>
-            <ul>
+            <ol type="1">
             <li>Stoppworte (engl. stopwords)</li>
             <li>Satzzeichen (engl. punctuation marks)</li>
             <li> Leerzeichen (engl. white space)</li>
             <li> Nummern (engl. removing numbers)</li>
             <li>Sonderzeichen (engl. special character)</li>
-      </li>
+      </oi>
     </ol>
   </details>
 
