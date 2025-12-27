@@ -16,6 +16,11 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ├── docs/      # Abbildungen, PDFs
 └── README.md
 ```
+
+#### Konzeption
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
+
+
 ### Installation
 ##### Einrichtung (engl. initial setup)
 ###### KI-Text-Detector
@@ -42,16 +47,14 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 `seaborn`      https://seaborn.pydata.org<br>
 
 ```python
-import seaborn as sns
+import pandas as pd
+import numpy as np
 import matplotlib as mpl
-import pandas as pd“ 
-import numpy as np“ 
+import seaborn as sns
 ```
 
 `Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
 `re`         
-
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
 
 ## ⚪ Pipeline Eingabe (engl. Pipeline-Input)
 <b> Datenaquisition (engl. dataset acquisition)</b></br>
