@@ -229,7 +229,7 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 
 ###### Einrichtung (engl. initial setup)
-[^1]: `pandas` https://pandas.pydata.org<br>
+`pandas` https://pandas.pydata.org<br>
 
 ###### Vorprüfung
 `transformers`https://pypi.org/project/transformers/<br>
