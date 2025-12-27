@@ -262,6 +262,8 @@ Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-ge
 ###### Dokumentationen
 SpaCy -  https://spacy.io/usage/spacy-101
 GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-- <br>
-- <br>
+
 </ul>
+
+[^1]. pandas
+[^1]: pandas.de
