@@ -231,13 +231,13 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 ###### NLP-Pipeline
 `Gensim` https://pypi.org/project/gensim/
-`SpaCy`
-`NLTK`
+`SpaCy` https://spacy.io<br>
+`NLTK`https://www.nltk.org<br>
 
 
 ###### Nachverarbeitung
-`matplotlib`
-`seaborn`
+`matplotlib` https://matplotlib.org<br>
+`seaborn` https://seaborn.pydata.org<br>
 
 <li>Literatur</li>
 
@@ -251,6 +251,10 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 
 ###### GeekforGeek.org
 Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)
+
+###### Dokumentationen
+https://spacy.io/usage/spacy-101
+
 - <br>
 - <br>
 </ul>
