@@ -21,6 +21,8 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ```
 
 ### Installation
+Für die Prüfung de
+
 ##### Einrichtung (engl. initial setup)
 ###### KI-Text-Detector
 Für die Prüfung der recherchierten Datensätze kommt ein extern entwickelter AI-Text-Detector zum Einsatz. Zur Nutzbarmachung wurde die Installationsroutine des Entwicklers befolgt. 
@@ -267,3 +269,5 @@ GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-starte
 
 [^1]. pandas
 [^1]: pandas.de
+[^2]. gensim
+[^2]: gensim.de
