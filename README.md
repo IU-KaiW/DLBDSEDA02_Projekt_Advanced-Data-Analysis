@@ -19,7 +19,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ### Installation
 ##### Einrichtung (engl. initial setup)
 ###### KI-Text-Detector
-Für die Prüfung der recherchierten Datensätze kommt ein extern etwickelter AI-Text-Detector zum Einsatz. Hierfür wurden die Installationsroutine des Entwicklers befolgt. 
+Für die Prüfung der recherchierten Datensätze kommt ein extern entwickelter AI-Text-Detector zum Einsatz. Zur Nutzbarmachung wurde die Installationsroutine des Entwicklers befolgt. 
 
 ###### Virtuelle Umgebung (engl. virtual environment)
 Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
@@ -223,19 +223,20 @@ https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 <li>Bibliotheken</li>
 
 ###### initial setup
-
+`pandas`
 
 ###### Vorprüfung
 `transformers`
 
 ###### NLP-Pipeline
 `Gensim`
-`SoaCy`
+`SpaCy`
 `NLTK`
 
 
 ###### Nachverarbeitung
-
+`matplotlib`
+`seaborn`
 
 <li>Literatur</li>
 
