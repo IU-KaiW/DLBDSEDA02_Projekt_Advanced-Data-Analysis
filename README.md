@@ -75,7 +75,6 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
               <li>case conversion</li>
               <li>inflection reductions</li>
               Da Lemmatisierung genauer als Stammformreduktion ist, wird diese eingesetzt. (WordNet lemmatizer from NLTK)
-       
               <li>format normalisations</li>
             </ul>
             <li>Rechtschreibkorrektur</li>
