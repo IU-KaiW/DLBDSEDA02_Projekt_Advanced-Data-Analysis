@@ -70,12 +70,12 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. Die Standardisierung besteht aus den Schritten Rechtschreibfehlerkorrektur (engl. spelling correction) und  Normalisierung (engl. normalisation). </i>
       <ol type="2">
             <li>Normalisierung</li>
-            Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie  Formatnormalisierungen (engl. format normalisations). 
+            Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
             <ul>
-              <li>case conversion</li>
-              <li>inflection reductions</li>
+              <li>Kasusumwandlung (engl. case conversion)</li>
+              <li>Grundformreduktion (engl. inflection reduction)</li>
               Da Lemmatisierung genauer als Stammformreduktion ist, wird diese eingesetzt. (WordNet lemmatizer from NLTK)
-              <li>format normalisations</li>
+              <li>Formatnormalisierungen (engl. format normalisations)</li>
             </ul>
             <li>Rechtschreibkorrektur</li>
             Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt.
