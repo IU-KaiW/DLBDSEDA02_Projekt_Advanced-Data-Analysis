@@ -28,10 +28,10 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ```
 
 ###### Pipeline Eingabe
-<li>[Gensim] https://pypi.org/project/gensim/</li> 
-<li>`pandas` https://pandas.pydata.org</li>
-<li>[transformers] - für Vorprüfung</li>
-<li>torch https://pytorch.org</li>
+[Gensim] https://pypi.org/project/gensim
+pandas` https://pandas.pydata.org
+[transformers] - für Vorprüfung
+torch https://pytorch.org
 
 ###### Pipeline Verarbeitung
 <li>[spacy] https://spacy.io</li>
