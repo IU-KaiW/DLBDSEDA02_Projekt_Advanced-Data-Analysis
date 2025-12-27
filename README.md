@@ -76,7 +76,9 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
             Da Lemmatisierung genauer als Stammformreduktion ist, wird lemmatisierung 
             Lemmatisierung
             format normalisations
-
+            <ul>
+            <li>case conversion</li>
+            </ul>
             <li>Rechtschreibkorrektur</li>
             Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt.
       </ol>
@@ -104,9 +106,6 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
   </details>
 </ol>
 
-<ul>
-<li>Test</li>
-</ul>
 #### 🟤 Verarbeitung (engl. processing)
 
 <b> Merkmalsaufbereitung (engl. feature engineering)</b></br>
