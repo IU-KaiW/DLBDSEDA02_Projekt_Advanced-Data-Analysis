@@ -10,12 +10,12 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 
 
 ## Konzeption
-Der Grafik können die geplanten Phasen des Projekts (⚪Pipeline Eingabe, ⚫ Verarbeitung, ⚪Pipeline Ausgabe und Evaluation) sowie die zugeordneten Einzelschritte entnommen werden. Die Erwähnung der Python-Bibliotheken erfolgt in den Einzelschritten, welche durch einen Klick auf ► erweiterbar sind und Erläuterungen enthalten.
+Der Grafik können die geplanten Phasen des Projekts (⚪Pipeline Eingabe, ⚫ NLP-Verarbeitung, ⚪Pipeline Ausgabe und Evaluation) sowie die zugeordneten Einzelschritte entnommen werden. Die Erwähnung der Python-Bibliotheken erfolgt in den Einzelschritten, welche durch einen Klick auf ► erweiterbar sind und Erläuterungen enthalten.
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
       
-### ⚪ Pipeline Eingabe (engl. Pipeline-Input)
+### ⚪ Datenakquisition (engl. data acquisition)
 <b> Datenaquisition (engl. dataset acquisition)</b></br>
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
@@ -55,7 +55,8 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
-Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Aufgabe genutzt.
+Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt.
+
 
 ### ⚫ NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
@@ -137,6 +138,11 @@ Das pre-processing
 <i>Beginn der Modellbildung für Aufgabe<i>
 
 ### ⚪ Pipeline Ausgabe (engl. Pipeline Output)
+
+
+#### Datenkonsolidierung (engl. data consolidation)
+*Nachverarbeitung (engl. post-processing)*
+
 <b>⚪ Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>xxxxxxxxxxxx</i>
 <ol>
@@ -153,11 +159,9 @@ Das pre-processing
     </details>
 </ol>
 
-#### Nachverarbeitung (engl. post-processing)
-*Beginn der Evaluation*
 <ol>
   <details>
-      <summary>Evaluation</summary>
+      <summary>⚪ Evaluation</summary>
       <ol>
         <li> Aggregation</li>
         <i>blub blub, blub</i>
