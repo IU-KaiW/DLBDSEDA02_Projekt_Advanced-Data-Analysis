@@ -9,7 +9,7 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
 ## Konzeption
-Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline-Eingabe, NLP-Pipeline, 🟢Pipeline Ausgabe, Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den Einzelschritten entnommen werden, die durch Klicken auf ► eingesehen werden.
+Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline-Eingabe, NLP-Pipeline, 🟢Pipeline Ausgabe, Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den durch klicken auf ► erweiterbaren Einzelschritten entnommen werden.
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
