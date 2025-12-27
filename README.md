@@ -150,8 +150,8 @@ Das pre-processing
       <summary><b>⚪ Visualisierung</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grafische Darstellung</i>
     </details>
-    Alpha - 
-    Beta - Wortverteilung in Themen
+    𝛼 (Alpha) - Themenmischung pro Dokument
+    β (Beta) - Wortverteilung in Themen
     K<sup>T</sup> (n × k)
     <details>
       <summary><b>⚪ Aggregation</b></summary>
@@ -270,8 +270,8 @@ Blum et al., 2020 ?
 
 ###### GeekforGeek.org
 Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)
+https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/)
 
-https://emojiterra.com/de/gelber-kreis/
 
 
 ###### Dokumentationen
@@ -282,6 +282,8 @@ GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-starte
 
 🟣 🟢🟠🔴
 🔵 🟡🟤⚫
+https://emojiterra.com/de/gelber-kreis/
+
 
 [^1]. pandas
 [^1]: pandas.de
