@@ -92,6 +92,26 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
   </details>
 </ol>
 
+<ol type="1">
+  <details>
+    <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
+    <ol type="1">
+      <li>
+        Standardisierung (engl. standardisation)
+        <ol type="1">
+          <li>Rechtschreibfehlerkorrektur (engl. spelling correction)</li>
+          <li>Normalisierung (engl. normalisation)</li>
+        </ol>
+      </li>
+      <li>
+        Rauschentfernung (engl. noise reduction)
+        <!-- Hier ggf. weitere ol für 2.1, 2.2 -->
+      </li>
+    </ol>
+  </details>
+</ol>
+
+
 
 #### 🟤 Verarbeitung (engl. processing)
 
