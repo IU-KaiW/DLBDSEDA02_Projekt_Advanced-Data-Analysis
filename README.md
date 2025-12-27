@@ -6,9 +6,7 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 1. Schriftliches Konzept<br>
 2. Datenverarbeitung<br>
 2.1. Vektorisierung 2 Techniken<br>
-2.2. Extraktion von Themen 2 Ansätze.<br>
-
-`#0969DA`
+<color>1.2. Extraktion von Themen 2 Ansätze.<br></color>
 
 ## Konzeption
 Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline-Eingabe, NLP-Pipeline, 🟢Pipeline Ausgabe, Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den durch klicken auf ► erweiterbaren Einzelschritten entnommen werden.
