@@ -14,7 +14,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>
     <details>
       <summary>⚪ <u> Datensatzrecherche (engl. dataset research) <u></b></summary>
-      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle [^1]., GitHub[^2]., GovData[^3]., ect.[^4].) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
+      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle [^1]., GitHub [^2]., GovData [^3]., ect. [^4].) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
