@@ -97,11 +97,12 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
 
   <details>
     <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
-    <p><i>xxxxx</i></p>
+    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsvorbereitung zur weiteren Verarbeitung präpariert.</i></p>
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>In diesem Schritt ...</i>
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen zerlegt.</i>
+        SpaCy
       </li>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
@@ -299,6 +300,9 @@ Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-ge
 https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/)
 
 https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html#sphx-glr-auto-examples-tutorials-run-lda-py
+
+https://konfuzio.com/de/spacy-vs-nltk/
+
 
 ###### Datenportale
 [^1]: www.kaggle.com/
