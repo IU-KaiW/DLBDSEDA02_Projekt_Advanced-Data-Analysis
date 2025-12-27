@@ -143,9 +143,6 @@ Das pre-processing
       <summary><b>⚪ Visualisierung</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grafische Darstellung</i>
     </details>
-    𝛼 (Alpha) - Themenmischung pro Dokument<br>
-    β (Beta) - Wortverteilung in Themen<br>
-    K<sup>T</sup> (n × k)
     <details>
       <summary><b>⚪ Aggregation</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerische Darstellung</i>
@@ -157,7 +154,9 @@ Das pre-processing
       <summary>⚪ Evaluation</summary>
       <ol>
         <li> Aggregation</li>
-        <i>blub blub, blub</i>
+              𝛼 (Alpha) - Themenmischung pro Dokument<br>
+              β (Beta) - Wortverteilung in Themen<br>
+              K<sup>T</sup> (n × k)
         <li> Visualisierung</li>
         <i>blub blub, blub</i>
       </ol>
