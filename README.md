@@ -231,10 +231,10 @@ Modellvergleich<br>
 ###### KI-Text-Detector 
 Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
 
-<li>Bibliotheken</li>
+<li>Bibliotheken (engl. librarys)</li>
 
 
-###### initial setup
+###### Einrichtung (engl. initial setup)
 `pandas` https://pandas.pydata.org<br>
 
 ###### Vorprüfung
