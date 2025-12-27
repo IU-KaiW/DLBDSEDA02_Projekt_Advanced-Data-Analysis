@@ -54,15 +54,17 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 Es wird Datensatz Nr. 5 "Comcast.csv" mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
 
 ### ⚫ NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
-Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
+Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication)
+
+Haupt Freatures / Sekundärfeatuers?
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-In der Phase der Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation).*
+In der Phase der Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* durch einen dreischrittigen Prozess.
 
 <ol>
     <details>
       <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
-      <i>xxxxx</i>
+      <i>Im Rahmen der Textbereinigung wird Text standadisiert und normalisiert um ihn für die Tokenisierung vorzubereiten</i>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
         <i>xxxxx</i>
