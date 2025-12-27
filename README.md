@@ -70,13 +70,13 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. Die Standardisierung besteht aus den Schritten Rechtschreibfehlerkorrektur (engl. spelling correction) und  Normalisierung (engl. normalisation). </i>
       <ol type="2">
             <li>Normalisierung</li>
-            Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie eine Formatnormalisierung (engl. format normalisation).
-case conversion
-inflection reduction
-Stammformreduktion
-Lemmatisierung
+            Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie  Formatnormalisierungen (engl. format normalisations). 
+            case conversion
+            inflection reductions
+            Da Lemmatisierung genauer als Stammformreduktion ist, wird lemmatisierung 
+            Lemmatisierung
+            format normalisations
 
-format normalisation
             <li>Rechtschreibkorrektur</li>
             Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt.
       </ol>
@@ -104,8 +104,9 @@ format normalisation
   </details>
 </ol>
 
-
-
+<ul>
+<li>Test</li>
+</ul>
 #### 🟤 Verarbeitung (engl. processing)
 
 <b> Merkmalsaufbereitung (engl. feature engineering)</b></br>
@@ -292,6 +293,8 @@ Blum et al., 2020 ?
 ###### GeekforGeek.org
 Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)
 https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/)
+
+https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html#sphx-glr-auto-examples-tutorials-run-lda-py
 
 ###### Datenportale
 [^1]: www.kaggle.com/
