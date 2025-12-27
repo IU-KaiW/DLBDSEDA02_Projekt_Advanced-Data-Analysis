@@ -40,6 +40,11 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ###### Pipeline Ausgabe
 `matplotlib`   https://matplotlib.org<br>
 `seaborn`      https://seaborn.pydata.org<br>
+
+```python
+import seaborn as sns
+```
+
 `Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
 
 
@@ -206,10 +211,10 @@ Installation
 
 
 ### 
-📊 Ergebnisse
-Themenverteilungen
-Top-Wörter pro Thema
-Modellvergleich
+📊 Ergebnisse<br>
+Themenverteilungen<br>
+Top-Wörter pro Thema<br>
+Modellvergleich<br>
 
 
 ### Referenzen
@@ -223,14 +228,14 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 
 ###### initial setup
-`pandas` https://pandas.pydata.org
+`pandas` https://pandas.pydata.org<br>
 
 ###### Vorprüfung
-`transformers`https://pypi.org/project/transformers/
+`transformers`https://pypi.org/project/transformers/<br>
 
 
 ###### NLP-Pipeline
-`Gensim` https://pypi.org/project/gensim/
+`Gensim` https://pypi.org/project/gensim/<br>
 `SpaCy` https://spacy.io<br>
 `NLTK`https://www.nltk.org<br>
 
