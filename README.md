@@ -8,11 +8,11 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 2.1. Vektorisierung 2 Techniken<br>
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
-### Konzeption
+## Konzeption
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
-### Projektstruktur
-#### Ordnerstruktur
+## Projektstruktur
+### Ordnerstruktur
 ```markdown
 ├── datasets/  # Roh- und vorverarbeitete Texte
 ├── src/       # Python-Module
@@ -20,30 +20,30 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 └── README.md
 ```
 
-### Installation
+## Installation
 Für die Prüfung de
 
-##### Einrichtung (engl. initial setup)
-###### KI-Text-Detector
+#### Einrichtung (engl. initial setup)
+##### KI-Text-Detector
 Für die Prüfung der recherchierten Datensätze kommt ein extern entwickelter AI-Text-Detector zum Einsatz. Zur Nutzbarmachung wurde die Installationsroutine des Entwicklers befolgt. 
 
-###### Virtuelle Umgebung (engl. virtual environment)
+##### Virtuelle Umgebung (engl. virtual environment)
 Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
 ```console
 `pip install conda`
 ```
 
-###### Pipeline Eingabe
+##### Pipeline Eingabe
 `pandas`[^1].       https://pandas.pydata.org<br>
 `Gensim`       https://pypi.org/project/gensim/<br>
 `transformers` https://pypi.org/project/transformers/<br>
 `torch`        https://pytorch.org<br>
 
-###### Pipeline Verarbeitung
+##### Pipeline Verarbeitung
 `spacy`        https://spacy.io<br>
 `nltk`         https://www.nltk.org<br>
 
-###### Pipeline Ausgabe
+##### Pipeline Ausgabe
 `matplotlib`   https://matplotlib.org<br>
 `seaborn`      https://seaborn.pydata.org<br>
 
