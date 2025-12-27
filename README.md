@@ -11,6 +11,8 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ### Konzeption
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
+y
+
 ### Projektstruktur
 #### Ordnerstruktur
 ```markdown
