@@ -10,7 +10,7 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 
 
 ## Konzeption
-Der Grafik kann der geplanten Gesamtablauf des Projekts (⚪Pipeline Eingabe, 🟣 Verarbeitung, ⚪Pipeline Ausgabe sowie Evaluation) entnommen werden. Die geforderte Erwähnung der Python-Bibliotheken kann den durch klicken auf ► erweiterbaren Einzelschritten entnommen werden.
+Der Grafik können die geplanten Phasen des Projekts (⚪Pipeline Eingabe, 🟣 Verarbeitung, ⚪Pipeline Ausgabe und Evaluation) sowie die zugeordneten Einzelschritte entnommen werden. Die Erwähnung der Python-Bibliotheken erfolgt in den Einzelschritten, welche durch einen Klick auf ► erweiterbar sind und Erläuterungen enthalten.
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
@@ -57,18 +57,18 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 ```
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Aufgabe genutzt.
 
-### 🟣 NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
+### 🟠 NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
-#### 🔴 Vorverarbeitung (engl. pre-processing)
+#### 🟠 Vorverarbeitung (engl. pre-processing)
 Das pre-processing
 
 <b> Merkmalsvorbereitung (engl. feature preparation)</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
-      <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
+      <summary>🟠 Textbereinigung (engl. text cleaning)</b></summary>
       <i>xxxxx</i>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
@@ -78,7 +78,7 @@ Das pre-processing
         </ol>
     </details>
     <details>
-      <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
+      <summary>🟠 Merkmalsextraktion (engl. feature extraction)</summary>
       <i>xxxxx</i>
         <ol>
         <li>Tokenisierung (engl. tokenization)</li>
@@ -133,7 +133,7 @@ Das pre-processing
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
 </ol>    
-<b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
+<b>🟠 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
 ### ⚪ Pipeline Ausgabe (engl. Pipeline Output)
@@ -273,8 +273,8 @@ GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-starte
 
 </ul>
 
-🟣 🟢
-
+🟣 🟢🟠🔴
+🔵 
 
 [^1]. pandas
 [^1]: pandas.de
