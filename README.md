@@ -64,10 +64,11 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
     <p><i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert und anschließend von Rauschen befreit.</i></p>
-    <ol type="1.">
+    <ol type="1">
       <li>
         Standardisierung (engl. standardisation)<br>
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. Die Standardisierung besteht aus den Schritten Rechtschreibfehlerkorrektur (engl. spelling correction) und  Normalisierung (engl. normalisation). Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt. Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie eine Formatnormalisierung (engl. format normalisation).</i>
+        <ol type=".">dasdasd
       </li>
       <li>
         Rauschentfernung (engl. noise reduction)<br>
