@@ -10,7 +10,7 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 
 
 ## Konzeption
-Der Grafik können die geplanten Phasen des Projekts (⚪Pipeline Eingabe, 🟣 Verarbeitung, ⚪Pipeline Ausgabe und Evaluation) sowie die zugeordneten Einzelschritte entnommen werden. Die Erwähnung der Python-Bibliotheken erfolgt in den Einzelschritten, welche durch einen Klick auf ► erweiterbar sind und Erläuterungen enthalten.
+Der Grafik können die geplanten Phasen des Projekts (⚪Pipeline Eingabe, ⚫ Verarbeitung, ⚪Pipeline Ausgabe und Evaluation) sowie die zugeordneten Einzelschritte entnommen werden. Die Erwähnung der Python-Bibliotheken erfolgt in den Einzelschritten, welche durch einen Klick auf ► erweiterbar sind und Erläuterungen enthalten.
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
@@ -61,14 +61,14 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die 
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
-#### 🟠 Vorverarbeitung (engl. pre-processing)
+#### 🔴 Vorverarbeitung (engl. pre-processing)
 Das pre-processing
 
 <b> Merkmalsvorbereitung (engl. feature preparation)</b></br>
 *Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
-      <summary>🟠 Textbereinigung (engl. text cleaning)</b></summary>
+      <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
       <i>xxxxx</i>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
@@ -78,7 +78,7 @@ Das pre-processing
         </ol>
     </details>
     <details>
-      <summary>🟠 Merkmalsextraktion (engl. feature extraction)</summary>
+      <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
       <i>xxxxx</i>
         <ol>
         <li>Tokenisierung (engl. tokenization)</li>
@@ -90,13 +90,13 @@ Das pre-processing
 </ol>
 
 
-#### 🟠 Verarbeitung (engl. processing)
+#### 🟤 Verarbeitung (engl. processing)
 
 <b> Merkmalsaufbereitung (engl. feature engineering)</b></br>
 *Beginn der Merkmalsaufbereitung (engl. feature engineering)*
 <ol>
     <details>
-      <summary>🟠 Merkmalsextraktion (engl. feature extraction)</summary>
+      <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
       <i>xxxxx</i>
         <ol>
         <li>Vektorisierung</li>
@@ -133,7 +133,7 @@ Das pre-processing
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
 </ol>    
-<b>🟠 Merkmalslernen (engl. feature learning / representation learning)</b></br>
+<b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
 ### ⚪ Pipeline Ausgabe (engl. Pipeline Output)
@@ -207,7 +207,7 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 `transformers` https://pypi.org/project/transformers/<br>
 `torch`        https://pytorch.org<br>
 
-##### 🟠 Pipeline Verarbeitung
+##### ⚫ Pipeline Verarbeitung
 `spacy`        https://spacy.io<br>
 `nltk`         https://www.nltk.org<br>
 
