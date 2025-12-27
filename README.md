@@ -59,17 +59,17 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
 Haupt Freatures / Sekundärfeatuers?
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-In der Phase der Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* durch einen dreischrittigen Prozess.
+In der Phase der Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* durch einen 
 
 <ol>
     <details>
       <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
-      <i>Im Rahmen der Textbereinigung wird Text standadisiert und normalisiert um ihn für die Tokenisierung vorzubereiten</i>
+      <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert und anschließend von Rauschen befreit.</i>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
-        <i>xxxxx</i>
+        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren leicht unterschiedlichen Varianten auftreten.</i>
         <li> Rauschentfernung (engl. noise reduction)<br></li>
-        <i>xxxxx</i>
+        <i>Ziel der Rauschentfernung ist es, irrelevante Tokens zu löschen, damit Modelle sich auf die aussagekräftigen Teile des Textes konzentrieren können und keine Kapazität für nutzlose Daten verschwenden.</i>
         </ol>
     </details>
     <details>
