@@ -9,7 +9,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
 ### Konzeption
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
 ### Projektstruktur
 #### Ordnerstruktur
@@ -252,6 +252,7 @@ IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Ler
 
 ###### Wissenschaftliche Artikel
 Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
+Blum et al., 2020 ?
 
 <li>Websites</li>
 
