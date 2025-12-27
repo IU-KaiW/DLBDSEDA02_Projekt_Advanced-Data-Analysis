@@ -56,11 +56,9 @@ Es wird Datensatz Nr. 5 "Comcast.csv" mit der Bewertung von 82 % gewählt und al
 ### ⚫ NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
-#### 🔴 Vorverarbeitung (engl. pre-processing)
-Das pre-processing
+#### 🔴 Datenvorverarbeiten (engl. data pre-processing)
+In der Phase der Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation).*
 
-<b> Merkmalsvorbereitung (engl. feature preparation)</b></br>
-*Beginn der der Merkmalsvorbereitung (engl. feature preparation).*
 <ol>
     <details>
       <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
