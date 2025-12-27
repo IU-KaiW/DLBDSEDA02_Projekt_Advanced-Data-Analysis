@@ -77,7 +77,7 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
       </li>
       <li>
         Rauschentfernung (engl. noise reduction)<br>
-        <i>Ziel der Rauschentfernung ist es, irrelevante Tokens zu löschen, damit Modelle sich auf die aussagekräftigen Teile des Textes konzentrieren können und keine Kapazität für nutzlose Daten verschwenden.</i>
+        <i>Ziel der Rauschentfernung ist es, für die Verarbeitung irrelevante Tokens zu löschen.</i>
       </li>
     </ol>
   </details>
