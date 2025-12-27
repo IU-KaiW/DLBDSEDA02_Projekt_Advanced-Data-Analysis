@@ -35,7 +35,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 </ol>
 
 ###### Ergebnis
-Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt.
+Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt. Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte die Anzahl begrenzt.
 
 ```markdown
 | Nr. | Datensatz                          | Bewertung | Größe     | Quelle         | Link                                                                                 |
@@ -51,10 +51,9 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
-Es wird Datensatz Nr. 5 "Comcast.csv" mit einer Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
+Es wird Datensatz Nr. 5 "Comcast.csv" mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
 
 ### ⚫ NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
-Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
 #### 🔴 Vorverarbeitung (engl. pre-processing)
