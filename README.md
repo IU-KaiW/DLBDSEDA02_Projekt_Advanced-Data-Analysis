@@ -215,6 +215,9 @@ Modellvergleich
 
 ### Referenzen
 <ul>
+<li>Software</li>
+KI-Text-Detector (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
+
 <li>Bibliotheken</li>
 
 ###### initial setup
@@ -222,7 +225,7 @@ Modellvergleich
 
 ###### Vorprüfung
 `transformers`
-KI-Text-Detector (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
+
 
 ###### NLP-Pipeline
 `Gensim`
