@@ -9,56 +9,11 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
 ## Konzeption
+Der Grafik kann der Ablauf der geplanten Datenverarbeitung entnommen werden. D
+
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
-## Projektstruktur
-### Ordnerstruktur
-```markdown
-├── datasets/  # Roh- und vorverarbeitete Texte
-├── src/       # Python-Module
-├── docs/      # Abbildungen, PDFs
-└── README.md
-```
-
-## Installation
-Für die Prüfung de
-
-#### Einrichtung (engl. initial setup)
-##### KI-Text-Detector
-Für die Prüfung der recherchierten Datensätze kommt ein extern entwickelter AI-Text-Detector zum Einsatz. Zur Nutzbarmachung wurde die Installationsroutine des Entwicklers befolgt. 
-
-##### Virtuelle Umgebung (engl. virtual environment)
-Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
-```console
-`pip install conda`
-```
-
-##### Pipeline Eingabe
-`pandas`[^1].       https://pandas.pydata.org<br>
-`Gensim`       https://pypi.org/project/gensim/<br>
-`transformers` https://pypi.org/project/transformers/<br>
-`torch`        https://pytorch.org<br>
-
-##### Pipeline Verarbeitung
-`spacy`        https://spacy.io<br>
-`nltk`         https://www.nltk.org<br>
-
-##### Pipeline Ausgabe
-`matplotlib`   https://matplotlib.org<br>
-`seaborn`      https://seaborn.pydata.org<br>
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib as mpl
-import seaborn as sns
-```
-
-`Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
-`re`   
-`csv`   
       
-
 ## ⚪ Pipeline Eingabe (engl. Pipeline-Input)
 <b> Datenaquisition (engl. dataset acquisition)</b></br>
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
@@ -219,6 +174,60 @@ Themenverteilungen<br>
 Top-Wörter pro Thema<br>
 Modellvergleich<br>
 
+
+____
+
+
+
+
+
+## Projektstruktur
+### Ordnerstruktur
+```markdown
+├── datasets/  # Roh- und vorverarbeitete Texte
+├── src/       # Python-Module
+├── docs/      # Abbildungen, PDFs
+└── README.md
+```
+
+## Installation
+Für die Prüfung de
+
+#### Einrichtung (engl. initial setup)
+##### KI-Text-Detector
+Für die Prüfung der recherchierten Datensätze kommt ein extern entwickelter AI-Text-Detector zum Einsatz. Zur Nutzbarmachung wurde die Installationsroutine des Entwicklers befolgt. 
+
+##### Virtuelle Umgebung (engl. virtual environment)
+Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
+```console
+`pip install conda`
+```
+
+##### Pipeline Eingabe
+`pandas`[^1].       https://pandas.pydata.org<br>
+`Gensim`       https://pypi.org/project/gensim/<br>
+`transformers` https://pypi.org/project/transformers/<br>
+`torch`        https://pytorch.org<br>
+
+##### Pipeline Verarbeitung
+`spacy`        https://spacy.io<br>
+`nltk`         https://www.nltk.org<br>
+
+##### Pipeline Ausgabe
+`matplotlib`   https://matplotlib.org<br>
+`seaborn`      https://seaborn.pydata.org<br>
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+import seaborn as sns
+```
+
+`Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
+`re`   
+`csv`   
+______________
 
 ### Referenzen
 <ul>
