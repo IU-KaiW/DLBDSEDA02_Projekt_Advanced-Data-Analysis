@@ -29,7 +29,6 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 
 ###### Pipeline Eingabe
 <li>[Gensim] https://pypi.org/project/gensim/</li> 
-<li>[Gensim] https://pypi.org/project/gensim/</li> 
 <li>[pandas] https://pandas.pydata.org</li>
 <li>[transformers] - für Vorprüfung</li>
 <li>torch https://pytorch.org</li>
@@ -222,15 +221,20 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken</li>
 
+<li>[Gensim] https://pypi.org/project/gensim/</li> 
+<li>[pandas] https://pandas.pydata.org</li>
+<li>[transformers] - für Vorprüfung</li>
+<li>torch https://pytorch.org</li>
+
 ###### initial setup
-`pandas`
+`pandas` https://pandas.pydata.org
 
 ###### Vorprüfung
 `transformers`
 
 
 ###### NLP-Pipeline
-`Gensim`
+`Gensim` https://pypi.org/project/gensim/
 `SpaCy`
 `NLTK`
 
@@ -242,7 +246,7 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 <li>Literatur</li>
 
 ###### Skripte
-Internationale Hochschule IU. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
+IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
 
 ###### Wissenschaftliche Artikel
 Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
