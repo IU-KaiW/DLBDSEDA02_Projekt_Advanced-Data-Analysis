@@ -188,7 +188,7 @@ Das pre-processing
     </details>
     Alpha - 
     Beta - Wortverteilung in Themen
-    K^T (n × k)
+    K<sup>T</sup> (n × k)
     <details>
       <summary><b>🟢 Aggregation</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerische Darstellun</i>
@@ -209,12 +209,6 @@ Das pre-processing
   </details>
 </ol>
 
-### Codeblocks
-````python
-33333
-````
-
-Installation
 
 
 ### 
@@ -265,8 +259,8 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)
 
 ###### Dokumentationen
-https://spacy.io/usage/spacy-101
-
+SpaCy -  https://spacy.io/usage/spacy-101
+GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 - <br>
 - <br>
 </ul>
