@@ -222,8 +222,7 @@ Modellvergleich
 
 ###### Vorprüfung
 `transformers`
-###### KI-Text-Detector
-https://github.com/Kishanjaisoorya/AI-Text-Detector-python
+KI-Text-Detector (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
 
 ###### NLP-Pipeline
 `Gensim`
