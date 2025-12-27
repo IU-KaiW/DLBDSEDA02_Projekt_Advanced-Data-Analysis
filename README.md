@@ -98,7 +98,7 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
     <ol type="1">
       <li>
         Standardisierung (engl. standardisation)
-        <ol type="3">
+        <ol type="4">
           <li>Rechtschreibfehlerkorrektur (engl. spelling correction)</li>
           <li>Normalisierung (engl. normalisation)</li>
         </ol>
