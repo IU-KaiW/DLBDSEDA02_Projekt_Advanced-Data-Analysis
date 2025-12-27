@@ -271,7 +271,11 @@ Blum et al., 2020 ?
 Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)
 https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/)
 
-
+###### Datenportale
+Kaggle
+GovData
+Huggingface
+Github
 
 ###### Dokumentationen
 SpaCy -  https://spacy.io/usage/spacy-101
