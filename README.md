@@ -71,6 +71,12 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
       <ol type="2">
             <li>Normalisierung</li>
             Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie eine Formatnormalisierung (engl. format normalisation).
+case conversion
+inflection reduction
+Stammformreduktion
+Lemmatisierung
+
+format normalisation
             <li>Rechtschreibkorrektur</li>
             Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt.
       </ol>
