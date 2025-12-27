@@ -86,7 +86,7 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
         Rauschentfernung (engl. noise reduction)<br>
         <i>Ziel der Rauschentfernung ist es, für die Verarbeitung irrelevante Tokens durch eine Zeichenentfernung zu löschen.</i>
             <ol type="2">
-            <li><u>Stoppworte (engl. stopwords)</u></li>
+            <li>Stoppworte (engl. stopwords)</li>
             <li>Satzzeichen (engl. punctuation marks)</li>
             <li>Leerzeichen (engl. white space)</li>
             <li>Nummern (engl. removing numbers)</li>
@@ -106,7 +106,7 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
       </li>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
-        <i>Die Vokabularerstellung bildet schließlich den letzten Schritt der </i>
+        <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
       </li>
     </ol>
   </details>
