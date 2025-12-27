@@ -105,7 +105,7 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
       </li>
       <li>
         Rauschentfernung (engl. noise reduction)
-        <!-- Hier ggf. weitere ol für 2.1, 2.2 -->
+        <ol type="2">
       </li>
     </ol>
   </details>
