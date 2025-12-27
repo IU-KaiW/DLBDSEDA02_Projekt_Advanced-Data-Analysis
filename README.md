@@ -209,7 +209,7 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 
 ##### ⚪ Pipeline Ausgabe
 ###### Visualisierung
-`PyLDAvis`     https://pypi.org/project/pyLDAvis/
+
 `matplotlib`   https://matplotlib.org<br>
 `seaborn`      https://seaborn.pydata.org<br>
 
@@ -248,8 +248,13 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 
 ###### Nachverarbeitung
+Visualisierung
 `matplotlib` https://matplotlib.org<br>
 `seaborn` https://seaborn.pydata.org<br>
+`PyLDAvis`     https://pypi.org/project/pyLDAvis/
+
+Evaluation
+
 
 <li>Literatur</li>
 
