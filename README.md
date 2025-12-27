@@ -28,19 +28,19 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ```
 
 ###### Pipeline Eingabe
-`pandas` https://pandas.pydata.org
-`Gensim` https://pypi.org/project/gensim/
-`transformers` - für Vorprüfung
-`torch` https://pytorch.org
+`pandas` https://pandas.pydata.org<br>
+`Gensim` https://pypi.org/project/gensim/<br>
+`transformers` - für Vorprüfung<br>
+`torch` https://pytorch.org<br>
 
 ###### Pipeline Verarbeitung
-<li>[spacy] https://spacy.io</li>
-<li>[nltk] https://www.nltk.org</li>
+`spacy` https://spacy.io<br>
+`nltk` https://www.nltk.org<br>
 
 ###### Pipeline Ausgabe
-<li>[matplotlib] https://matplotlib.org</li>
-<li>[seaborn] https://seaborn.pydata.org</li>
-<li>[Cartopy] https://cartopy.readthedocs.io/stable/getting_started/index.html</li>
+`matplotlib` https://matplotlib.org<br>
+`seaborn` https://seaborn.pydata.org<br>
+`Cartopy` https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
