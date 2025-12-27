@@ -9,12 +9,14 @@ Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeit
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
 ## Konzeption
-Der Grafik kann der Ablauf der geplanten Datenverarbeitung entnommen werden. D
+Der Grafik kann der geplanten Gesamtablauf des Projekts, bestehend aus Pipeline-Eingabe, NLP-Pipeline sowie Pipeline Ausgabe entnommen werden. Die geforderten Erwähnungen zu
+
+Die NLP-Datenverarbeitung entnommen werden. D
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
       
-## ⚪ Pipeline Eingabe (engl. Pipeline-Input)
+### ⚪ Pipeline Eingabe (engl. Pipeline-Input)
 <b> Datenaquisition (engl. dataset acquisition)</b></br>
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
@@ -56,11 +58,11 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 ```
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Aufgabe genutzt.
 
-## NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
+### NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte auf diese Anzahl begrenzt.
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication). 
 
-### 🔴 Vorverarbeitung (engl. pre-processing)
+#### 🔴 Vorverarbeitung (engl. pre-processing)
 Das pre-processing
 
 <b> Merkmalsvorbereitung (engl. feature preparation)</b></br>
@@ -89,7 +91,7 @@ Das pre-processing
 </ol>
 
 
-### 🟠 Verarbeitung (engl. processing)
+#### 🟠 Verarbeitung (engl. processing)
 
 <b> Merkmalsaufbereitung (engl. feature engineering)</b></br>
 *Beginn der Merkmalsaufbereitung (engl. feature engineering)*
@@ -135,7 +137,7 @@ Das pre-processing
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
-## 🟢 Pipeline Ausgabe (engl. Pipeline Output)
+### 🟢 Pipeline Ausgabe (engl. Pipeline Output)
 <b>🟢 Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>xxxxxxxxxxxx</i>
 <ol>
@@ -152,7 +154,7 @@ Das pre-processing
     </details>
 </ol>
 
-### Nachverarbeitung (engl. post-processing)
+#### Nachverarbeitung (engl. post-processing)
 *Beginn der Evaluation*
 <ol>
   <details>
@@ -175,10 +177,7 @@ Top-Wörter pro Thema<br>
 Modellvergleich<br>
 
 
-____
-
-
-
+______________
 
 
 ## Projektstruktur
@@ -227,7 +226,6 @@ import seaborn as sns
 `Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
 `re`   
 `csv`   
-______________
 
 ### Referenzen
 <ul>
