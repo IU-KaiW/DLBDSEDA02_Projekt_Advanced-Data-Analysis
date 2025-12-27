@@ -240,12 +240,11 @@ KI-Text-Detector (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
 <li>Literatur</li>
 
 ##### Literatur
-Internationale Hochschule IU. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
-Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
+<br>Internationale Hochschule IU. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
+<br>Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
 
 <li>Websites</li>
-GeekforGeek.org - Sanchhaya Education Private Ltd., 2025
-- https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/
+GeekforGeek.org - Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)
 - <br>
 - <br>
 <li>2</li>
