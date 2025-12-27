@@ -216,7 +216,9 @@ Modellvergleich
 ### Referenzen
 <ul>
 <li>Software</li>
-KI-Text-Detector (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
+
+###### KI-Text-Detector 
+Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
 
 <li>Bibliotheken</li>
 
