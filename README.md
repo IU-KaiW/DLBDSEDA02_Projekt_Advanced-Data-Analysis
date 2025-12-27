@@ -28,19 +28,19 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ```
 
 ###### Pipeline Eingabe
-`pandas` https://pandas.pydata.org<br>
-`Gensim` https://pypi.org/project/gensim/<br>
-`transformers` - für Vorprüfung<br>
-`torch` https://pytorch.org<br>
+`pandas`       https://pandas.pydata.org<br>
+`Gensim`       https://pypi.org/project/gensim/<br>
+`transformers` https://pypi.org/project/transformers/<br>
+`torch`        https://pytorch.org<br>
 
 ###### Pipeline Verarbeitung
-`spacy` https://spacy.io<br>
-`nltk` https://www.nltk.org<br>
+`spacy`        https://spacy.io<br>
+`nltk`         https://www.nltk.org<br>
 
 ###### Pipeline Ausgabe
-`matplotlib` https://matplotlib.org<br>
-`seaborn` https://seaborn.pydata.org<br>
-`Cartopy` https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
+`matplotlib`   https://matplotlib.org<br>
+`seaborn`      https://seaborn.pydata.org<br>
+`Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
@@ -226,7 +226,7 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 `pandas` https://pandas.pydata.org
 
 ###### Vorprüfung
-`transformers`
+`transformers`https://pypi.org/project/transformers/
 
 
 ###### NLP-Pipeline
