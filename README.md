@@ -14,7 +14,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>
     <details>
       <summary>⚪ <u> Datensatzrecherche (engl. dataset research) <u></b></summary>
-      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, ect.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
+      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle [^1]., GitHub[^2]., GovData[^3]., ect.[^4].) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
@@ -165,7 +165,7 @@ Das pre-processing
 
 
 
-### 
+### Visualisierung
 📊 Ergebnisse<br>
 Themenverteilungen<br>
 Top-Wörter pro Thema<br>
@@ -272,10 +272,11 @@ Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-ge
 https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/)
 
 ###### Datenportale
-Kaggle
-GovData
+[^1]: www.kaggle.com/
+[^2]: www.github.com
+[^3]: GovData
+[^4]: data.mendeley.com
 Huggingface
-Github
 
 ###### Dokumentationen
 SpaCy -  https://spacy.io/usage/spacy-101
@@ -286,9 +287,3 @@ GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-starte
 🟣 🟢🟠🔴
 🔵 🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
-
-
-[^1]. pandas
-[^1]: pandas.de
-[^2]. gensim
-[^2]: gensim.de
