@@ -28,10 +28,10 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ```
 
 ###### Pipeline Eingabe
-[Gensim] https://pypi.org/project/gensim
-pandas` https://pandas.pydata.org
-[transformers] - für Vorprüfung
-torch https://pytorch.org
+`pandas` https://pandas.pydata.org
+`Gensim` https://pypi.org/project/gensim/
+`transformers` - für Vorprüfung
+`torch` https://pytorch.org
 
 ###### Pipeline Verarbeitung
 <li>[spacy] https://spacy.io</li>
@@ -221,9 +221,6 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken</li>
 
-<li>`Gensim` https://pypi.org/project/gensim/</li> 
-<li>[transformers] - für Vorprüfung</li>
-<li>torch https://pytorch.org</li>
 
 ###### initial setup
 `pandas` https://pandas.pydata.org
