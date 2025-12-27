@@ -208,6 +208,8 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 `nltk`         https://www.nltk.org<br>
 
 ##### ⚪ Pipeline Ausgabe
+###### Visualisierung
+`PyLDAvis`     https://pypi.org/project/pyLDAvis/
 `matplotlib`   https://matplotlib.org<br>
 `seaborn`      https://seaborn.pydata.org<br>
 
