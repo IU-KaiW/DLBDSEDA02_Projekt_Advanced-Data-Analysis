@@ -8,6 +8,9 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.1. Vektorisierung 2 Techniken<br>
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
+### Konzeption
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
+
 ### Projektstruktur
 #### Ordnerstruktur
 ```markdown
@@ -16,10 +19,6 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 ├── docs/      # Abbildungen, PDFs
 └── README.md
 ```
-
-#### Konzeption
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/Visualisierung.jpg" width="1200">
-
 
 ### Installation
 ##### Einrichtung (engl. initial setup)
