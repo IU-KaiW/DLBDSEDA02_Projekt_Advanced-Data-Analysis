@@ -9,10 +9,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 2.2. Extraktion von Themen 2 Ansätze.<br>
 
 ### Konzeption
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
-
-y
-
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.pdf" width="1200">
 ### Projektstruktur
 #### Ordnerstruktur
 ```markdown
