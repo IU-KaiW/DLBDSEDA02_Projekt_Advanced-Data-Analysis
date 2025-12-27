@@ -59,7 +59,7 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
 Haupt Freatures / Sekundärfeatuers?
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
+Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
@@ -86,7 +86,7 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
         Rauschentfernung (engl. noise reduction)<br>
         <i>Ziel der Rauschentfernung ist es, für die Verarbeitung irrelevante Tokens durch eine Zeichenentfernung zu löschen.</i>
             <ol type="2">
-            <li>Stoppworte (engl. stopwords)</li>
+            <li><u>Stoppworte (engl. stopwords)</u></li>
             <li>Satzzeichen (engl. punctuation marks)</li>
             <li>Leerzeichen (engl. white space)</li>
             <li>Nummern (engl. removing numbers)</li>
@@ -101,12 +101,12 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen zerlegt.</i>
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen (n-Gramme) zerlegt.</i>
         SpaCy
       </li>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
-        <i>In diesem Schritt ...</i>
+        <i>Die Vokabularerstellung bildet schließlich den letzten Schritt der </i>
       </li>
     </ol>
   </details>
