@@ -60,31 +60,6 @@ Haupt Freatures / Sekundärfeatuers?
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
 In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
-<ol>
-    <details>
-      <summary>🔴 Textbereinigung (engl. text cleaning)</b></summary>
-      <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert und anschließend von Rauschen befreit.</i>
-        <ol>
-        <li> Standardisierung (engl. standardisation)<br></li>
-        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. Die Standardisierung besteht aus den Schritten Rechtschreibfehlerkorrektur (engl. spelling correction) und  Normalisierung (engl. normalisation). Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt. Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie eine Formatnormalisierung (engl. format normalisation).
-</i>
-        <li> Rauschentfernung (engl. noise reduction)<br></li>
-        <i>Ziel der Rauschentfernung ist es, irrelevante Tokens zu löschen, damit Modelle sich auf die aussagekräftigen Teile des Textes konzentrieren können und keine Kapazität für nutzlose Daten verschwenden.</i>
-        </ol>
-    </details>
-    <details>
-      <summary>🔴 Merkmalsextraktion (engl. feature extraction)</summary>
-      <i>xxxxx</i>
-        <ol>
-        <li>Tokenisierung (engl. tokenization)</li>
-        <i>In diesem Schritt</i>
-        <li>Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)</li>
-        <i>In diesem Schritt</i>
-        </ol>
-    </details>
-</ol>
-
-
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
@@ -92,11 +67,11 @@ In der Phase der Datenvorverarbeiten erfolgt die *Merkmalsvorbereitung (engl. fe
     <ol type="1">
       <li>
         Standardisierung (engl. standardisation)<br>
-        <i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. ...</i>
+        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. Die Standardisierung besteht aus den Schritten Rechtschreibfehlerkorrektur (engl. spelling correction) und  Normalisierung (engl. normalisation). Durch die Rechtschreibkorrekrur werden Schreibfehler beseitigt. Durch die Normalisierung erfolg eine Kasusumwandlung (engl. case conversion), die Grundformreduktion (engl. inflection reduction) sowie eine Formatnormalisierung (engl. format normalisation).</i>
       </li>
       <li>
         Rauschentfernung (engl. noise reduction)<br>
-        <i>Ziel der Rauschentfernung ist es, irrelevante Tokens zu löschen, damit Modelle sich auf die aussagekräftigen Teile des Textes konzentrieren können.</i>
+        <i>Ziel der Rauschentfernung ist es, irrelevante Tokens zu löschen, damit Modelle sich auf die aussagekräftigen Teile des Textes konzentrieren können und keine Kapazität für nutzlose Daten verschwenden.</i>
       </li>
     </ol>
   </details>
