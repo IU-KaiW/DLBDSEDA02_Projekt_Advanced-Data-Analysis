@@ -67,7 +67,8 @@ In der Phase der Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. f
       <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert und anschließend von Rauschen befreit.</i>
         <ol>
         <li> Standardisierung (engl. standardisation)<br></li>
-        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren leicht unterschiedlichen Varianten auftreten.</i>
+        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren leicht unterschiedlichen Varianten auftreten. Die Standardisierung besteht Rechtschreibfehlerkorrektur (engl. spelling correction) aus der Normalisierung (engl. normalisation) die aus der Kasusumwandlung (engl. case conversion), Grundformreduktion (engl. inflection reduction) und einer Formatnormalisierung (engl. format normalisation) besteht.
+</i>
         <li> Rauschentfernung (engl. noise reduction)<br></li>
         <i>Ziel der Rauschentfernung ist es, irrelevante Tokens zu löschen, damit Modelle sich auf die aussagekräftigen Teile des Textes konzentrieren können und keine Kapazität für nutzlose Daten verschwenden.</i>
         </ol>
