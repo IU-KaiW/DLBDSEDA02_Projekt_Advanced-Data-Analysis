@@ -147,11 +147,12 @@ Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (
      <p><i>Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.</i></p>
     <ol type="1">
      <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
-     <p><i>Themenmodellierung kann überwacht oder unüberwacht werden.</i></p>
+     <p><i>Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.</i></p>
     <ol type="2">
       <li>
         Merkmalsextraktion (engl. feature extraction)<br>
         <i>Latent Dirichlet Allocation (LDA)</i>
+        Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.
       <li>
         Merkmalsumwandlung (engl. feature transformation)<br>
         <i>Latent Semantic Analysis (LSA)</i>
