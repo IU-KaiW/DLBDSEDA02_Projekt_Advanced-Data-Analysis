@@ -141,21 +141,6 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
 <b>🟠 Text Analyse (engl. Text Analytics)</b></br>
 Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition), eingeordnet werden.*
 <ol>
-    <details>
-      <summary><b>🟠 Merkmalsumwandlung (engl. feature transformation)</b></summary>
-      <p><i>xxxxx</i></p>
-      <ul>
-        <li>NMF, LDA</li>
-      </ul>
-        <li>Merkmalsauswahl (engl. feature selection)</li>
-        Zum Ende werden die besten Merkmale ausgewählt.
-      <summary><b>🟠 Feature Recognition</b></summary>
-      <p><i>Merkmalserkennung</i></p>
-      </ol> 
-    </details>
-</ol> 
-
-<ol>
   <details>
     <summary>🟠 Themenmodellierung (engl. topic modelin)</summary>
     <p><i>xxxxx</i></p>
@@ -164,15 +149,22 @@ Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature mode
         Merkmalsextraktion (engl. feature extraction)<br>
         <i>xxxx</i>
       <li>
-        Merkmalsumwandlung<br>
-        <i>xxxx</i>
+        Merkmalsumwandlung (engl. feature transformation)<br>
+        <i>NMF, LDA<</i>
       <li>
-        Markmalsauswahl<br>
-        <i>xxxx</i>
+       Merkmalsauswahl (engl. feature selection)<br>
+        <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
     </ol>
   </details>
 </ol>
 
+<ol>
+  <details>
+      <summary><b>🟠 Feature Recognition</b></summary>
+      <p><i>Merkmalserkennung</i></p>
+      </ol> 
+    </details>
+</ol> 
 
 
 
