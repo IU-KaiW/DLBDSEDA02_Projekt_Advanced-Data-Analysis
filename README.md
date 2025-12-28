@@ -113,14 +113,16 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
 </ol>
 
 #### 🟤 Datenverarbeitung (engl. data processing)
-Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning). Die Merkmalsaufbereitung kann in die Phasen Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl eingeteilt werden kann. In der Phase des Merkmalslernens erfolgen Modellbildungen.
+In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning). Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl unterteilt werden. Im Merkmalslernen erfolgt die Bildung von Modellen, basierend auf ...
 <ol>
   <details>
-    <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
-    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur weiteren Verarbeitung vorbereitet.</i></p>
+    <summary>🟤 Vektorisierung (engl. vectorization)</summary>
+    <p><i> Vektorisierungstechniken wandeln Text in Embeddings, nummerische Repräsentationen um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i></p>
+
+    Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur weiteren Verarbeitung vorbereitet.</i></p>
     <ol type="1">
       <li>
-        Vektorisierung (engl. vectorization)<br>
+        Merkmalsextraktion (engl. vectorization)<br>
         <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
       <ol type="2">
        <li>unsemantische Embeddings</li>
@@ -342,3 +344,32 @@ GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-starte
 🟣 🟢🟠🔴
 🔵 🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
+
+
+
+
+<ol>
+  <details>
+    <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
+    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur weiteren Verarbeitung vorbereitet.</i></p>
+    <ol type="1">
+      <li>
+        Vektorisierung (engl. vectorization)<br>
+        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
+      <ol type="2">
+       <li>unsemantische Embeddings</li>
+       Hierunter werden 
+          <ul>
+            <li>Frequency Based Embedding</li>
+           BoW, TF-IDF
+          </ul>
+       <li>semantische Embeddings</li>
+          <ul>
+            <li>Prediction Based Word Embedding</li>
+            GloVE; Word2Vec, FastText
+            <li>Contextualized Based Word Embedding</li>
+            ELMO, BERT, GPT
+          </ul>
+    </ol>
+  </details>
+</ol>
