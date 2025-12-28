@@ -142,6 +142,7 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
        <li>🟠 Merkmalsmodellierung (engl. feature modeling)s</li>
        Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.
           <ul>
+            <ol type="2">
             <li>🟠 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.<br>
             BoW, TF-IDF<br>
