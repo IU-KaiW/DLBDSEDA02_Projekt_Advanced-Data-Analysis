@@ -112,16 +112,14 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
   </details>
 </ol>
 
-#### 🟤 Verarbeitung (engl. processing)
-
-<b> Merkmalsaufbereitung (engl. feature engineering)</b></br>
-*Beginn der Merkmalsaufbereitung (engl. feature engineering)*
+#### 🟤 Datenverarbeitung (engl. data processing)
+Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning). Die Merkmalsaufbereitung kann in die Phasen Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl eingeteilt werden kann. In der Phase des Merkmalslernens erfolgt die Modellbildung.
 <ol>
     <details>
       <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
-      <i>xxxxx</i>
+      <i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur Verarbeitung vorbereitet</i>
         <ol>
-        <li>Vektorisierung</li>
+        <li>VVektorisierung (engl. vectorization)</li>
         <i>In diesem Schritt</i>
        <ul>
           <li><a prerequisites>Frequency Based Embedding</a></li>
