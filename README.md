@@ -117,13 +117,11 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
 <ol>
   <details>
     <summary>🟤 Vektorisierung (engl. vectorization)</summary>
-    <p><i> Vektorisierungstechniken wandeln Text in Embeddings, nummerische Repräsentationen um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i></p>
-
-    Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur weiteren Verarbeitung vorbereitet.</i></p>
+    <p><i> Vektorisierungstechniken wandeln Text in Embeddings, nummerische Repräsentationen um. Hierbei wird zwischen unsemantischen Embeddings (feature vektors) und semantischen Varianten (word vectors / sentence vectors) differenziert. Vektorisierungstechniken nutzen Merkmalsextraktion, um Text im Rahmen der Merkmalsaufbereitung für die Textanalyse vorbereitet.</i></p>
     <ol type="1">
       <li>
         Merkmalsextraktion (engl. vectorization)<br>
-        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
+        <i>...</i>
       <ol type="2">
        <li>unsemantische Embeddings</li>
        Hierunter werden 
@@ -141,7 +139,7 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
     </ol>
   </details>
 </ol>
-<b>🟠 Text Analyse (engl. Text Analytics)</b></br>
+<b>🟤 Text Analyse (engl. Text Analytics)</b></br>
 Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.<br><br>
 <ol>
   <details>
