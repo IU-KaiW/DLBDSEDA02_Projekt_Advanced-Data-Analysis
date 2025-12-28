@@ -124,6 +124,10 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
         <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen und semantischen Varianten differenziert.</i>
       <ol type="2">
        <li>unsemantische Embeddings</li>
+          <ul>
+            <li>Frequency Based Embedding</li>
+            TF-IDF
+          </ul>
        <li>Frequency Based Embedding (TF-IDF)</li>
        <li>semantische Embeddings</li>
        <li>Prediction Based Word Embedding (GloVE; Word2Vec)</li>
