@@ -124,9 +124,10 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
         <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
       <ol type="2">
        <li>unsemantische Embeddings</li>
+       Hierunter werden 
           <ul>
             <li>Frequency Based Embedding</li>
-           BoW; TF-IDF
+           BoW, TF-IDF
           </ul>
        <li>semantische Embeddings</li>
           <ul>
@@ -139,18 +140,20 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
   </details>
 </ol>
 <b>🟠 Text Analyse (engl. Text Analytics)</b></br>
-Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition), eingeordnet werden.<br><br>
+Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.<br><br>
 <ol>
   <details>
-    <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
-    <p><i>xxxxx</i></p>
+     <summary>🟠 Merkmalsmodellierung (engl. feature modeling)</summary>
+     <p><i>Unter Merkmalsmodellierung wird </i></p>
+     <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
+    
     <ol type="1">
       <li>
         Merkmalsextraktion (engl. feature extraction)<br>
         <i>LDA</i>
       <li>
         Merkmalsumwandlung (engl. feature transformation)<br>
-        <i>NMF, LSA<</i>
+        <i>NMF, LSA</i>
       <li>
        Merkmalsauswahl (engl. feature selection)<br>
         <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
