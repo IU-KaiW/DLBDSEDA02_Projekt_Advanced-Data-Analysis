@@ -138,7 +138,7 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
     <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i></p>
     <ol type="1">
        <li>🟤 Merkmalsmodellierung (engl. feature modeling)s</li>
-       Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung der zuvor vektorisierten Textmerkmale. Sie legt fest wie die Merkmale thematisch oder semantisch genutzt werden können, etwa bei der Themenanalyse, die über Themenmodellierung (engl. topic modeling) erfolt.
+       Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung der zuvor vektorisierten Textmerkmale. Sie legt fest wie die Merkmale thematisch oder semantisch genutzt werden können, etwa bei der Themenanalyse, welche über die Themenmodellierung (engl. topic modeling) erfolgen kann.
             <ol type="2">
             <li>🟤 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.<br>
