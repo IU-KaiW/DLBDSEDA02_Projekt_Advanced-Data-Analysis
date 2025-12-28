@@ -133,18 +133,15 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
             ELMO, BERT, GPT
           </ul>
   </details>
-
-
   <details>
     <summary>🟤 Text Analyse (engl. Text Analytics)</summary>
     <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i></p>
     <ol type="1">
-       <li>🟠 Merkmalsmodellierung (engl. feature modeling)s</li>
-       Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.
+       <li>🟤 Merkmalsmodellierung (engl. feature modeling)s</li>
+       Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung der zuvor vektorisierten Textmerkmale. Sie legt fest wie die Merkmale thematisch oder semantisch genutzt werden können, etwa bei der Themenanalyse, die über Themenmodellierung (engl. topic modeling) erfolt.
             <ol type="2">
-            <li>🟠 Themenmodellierung (engl. topic modeling)</li>
+            <li>🟤 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.<br>
-            BoW, TF-IDF<br>
             <li>Merkmalsextraktion (engl. feature extraction)</li><br>
             <i>Latent Dirichlet Allocation (LDA)</i>
             Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
@@ -153,7 +150,7 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
             <li> Merkmalsauswahl (engl. feature selection)<br>
             <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
           </ol>
-       <li>🟠 Merkmalserkennung (engl. feature recognition)</li>
+       <li>🟤 Merkmalserkennung (engl. feature recognition)</li>
           <ol>
             <li>1</li>
             xxx
