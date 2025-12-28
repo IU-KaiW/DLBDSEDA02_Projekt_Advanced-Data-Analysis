@@ -144,14 +144,14 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
           <ul>
             <li>🟠 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.
-           BoW, TF-IDF
+            BoW, TF-IDF
           </ul>
-       <li>semantische Embeddings</li>
+       <li>🟠 Merkmalserkennung (engl. feature recognition)</li>
           <ul>
-            <li>Prediction Based Word Embedding</li>
-            GloVE; Word2Vec, FastText
-            <li>Contextualized Based Word Embedding</li>
-            ELMO, BERT, GPT
+            <li>1</li>
+            xxx
+            <li>2</li>
+            xxx
           </ul>
   </details>
 
@@ -172,15 +172,6 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
     </ol>
   </details>
 </ol>
-
-<ol>
-  <details>
-      <summary>🟠 Merkmalserkennung (engl. feature recognition)</summary>
-      <p><i>Merkmalserkennung</i></p>
-      </ol> 
-    </details>
-</ol> 
-
 
 
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
