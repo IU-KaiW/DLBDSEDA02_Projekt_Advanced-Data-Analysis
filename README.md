@@ -148,22 +148,16 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
       <summary><b>🟠 Merkmalsextraktion (engl. feature extraction)</b></summary>
       <p><i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden./i></p>
       <ol type="1">
-        <li>🟠 Themenmodellierung (engl. topic modeling)<br>
+        <li>🟠 Themenmodellierung (engl. topic modeling</li><br>
         <i>Beginn der Themenmodellierung</i>
       </ol> 
         <ol type="2">
-        <li>🟠Merkmalsumwandlung (engl. feature transformation)</li>
+        <li>Merkmalsumwandlung (engl. feature transformation)</li>
           <ul>
             <li>NMF, LDA</li>
           </ul>
-        <li>🟠Merkmalsauswahl (engl. feature selection)</li>
+        <li>Merkmalsauswahl (engl. feature selection)</li>
         Zum Ende werden die besten Merkmale ausgewählt.
-          <ul>
-            <li>Prediction Based Word Embedding</li>
-            GloVE; Word2Vec, FastText
-            <li>Contextualized Based Word Embedding</li>
-            ELMO, BERT, GPT
-          </ul>
     </ol> 
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
