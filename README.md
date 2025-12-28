@@ -145,10 +145,10 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
             <li>🟠 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.<br>
             BoW, TF-IDF<br>
-            Merkmalsextraktion (engl. feature extraction)<br>
+            <li>Merkmalsextraktion (engl. feature extraction)</li><br>
             <i>Latent Dirichlet Allocation (LDA)</i>
             Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
-            Merkmalsumwandlung (engl. feature transformation)<br></i>
+           <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
             <i>Latent Semantic Analysis (LSA)</i>
             <li> Merkmalsauswahl (engl. feature selection)<br>
             <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
