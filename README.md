@@ -164,7 +164,7 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
 ### ⚪ Pipeline Ausgabe (engl. Pipeline Output)
 
 
-#### Datenkonsolidierung (engl. data consolidation)
+#### 🔵 Datenkonsolidierung (engl. data consolidation)
 *Nachverarbeitung (engl. post-processing)*
 
 <b>⚪ Merkmalsanalyse (engl. feature-analysis)</b></br>
