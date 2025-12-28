@@ -113,7 +113,7 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
 </ol>
 
 #### 🟤 Datenverarbeitung (engl. data processing)
-Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning). Die Merkmalsaufbereitung kann in die Phasen Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl eingeteilt werden kann. In der Phase des Merkmalslernens erfolgt die Modellbildung.
+Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning). Die Merkmalsaufbereitung kann in die Phasen Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl eingeteilt werden kann. In der Phase des Merkmalslernens erfolgen Modellbildungen.
 <ol>
   <details>
     <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
@@ -164,6 +164,32 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
 </ol>    
+    <p><i>Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung.</i></p>
+    <ol type="1">
+      <li>
+        Themenmodellierung (engl. topic modeling<br>
+        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
+      <ol type="2">
+       <li>unsemantische Embeddings</li>
+          <ul>
+            <li>Frequency Based Embedding</li>
+           BoW; TF-IDF
+          </ul>
+       <li>semantische Embeddings</li>
+          <ul>
+            <li>Prediction Based Word Embedding</li>
+            GloVE; Word2Vec, FastText
+            <li>Contextualized Based Word Embedding</li>
+            ELMO, BERT, GPT
+          </ul>
+    </ol>
+  </details>
+</ol>
+
+
+
+
+
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
