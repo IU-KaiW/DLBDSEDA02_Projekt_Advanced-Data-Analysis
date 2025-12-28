@@ -142,22 +142,22 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
 
 
 <b>🟠 Text Analyse (engl. Text Analytics)</b></br>
-*Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
+*Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition), eingeordnet werden.*
 <ol>
     <details>
       <summary><b>🟠 Merkmalsextraktion (engl. feature extraction)</b></summary>
-      <p><i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden</i></p>
+      <p><i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden./i></p>
       <ol type="1">
         <li>
         Themenmodellierung (engl. topic modeling)<br>
-        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
+        <i>Beginn der Themenmodellierung</i>
         <ol type="2">
-        <li>unsemantische Embeddings</li>
+        <li>Merkmalsumwandlung (engl. feature transformation)</li>
           <ul>
-            <li>Frequency Based Embedding</li>
-           BoW; TF-IDF
+            <li>NMF, LDA</li>
           </ul>
-        <li>semantische Embeddings</li>
+        <li>Merkmalsauswahl (engl. feature selection)</li>
+        Zum Ende werden die besten Merkmale ausgewählt.
           <ul>
             <li>Prediction Based Word Embedding</li>
             GloVE; Word2Vec, FastText
@@ -165,29 +165,6 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
             ELMO, BERT, GPT
           </ul>
     </ol> 
-
-
-      <i>Beginn der Themenmodellierung</i>
-           NMF, LDA
-    </details>
-    <details>
-      <summary><b>🟠 Merkmalsumwandlung (engl. feature transformation)</b></summary>
-      <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.</i>
-          .<br>
-      <summary>Themenmodellierung (engl. topic modeling)</summary>
-      <i>Beginn der Themenmodellierung</i>
-           LSA
-    </details>
-    <details>
-      <summary><b>🟠 Merkmalsauswahl (engl. feature selection)</b></summary>
-      <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zum Ende werden die besten Merkmale ausgewählt.</i>
-    </details>
-  </details>
-</ol>
-
-
-
-
 
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
