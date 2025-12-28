@@ -143,13 +143,13 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
 <ol>
     <details>
       <summary><b>🟠 Merkmalsextraktion (engl. feature extraction)</b></summary>
-      <p><i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden./i></p>
+      <p><i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden.</i></p>
       <ol type="1">
         <li>🟠 Themenmodellierung (engl. topic modeling</li><br>
         <i>Beginn der Themenmodellierung</i>
       </ol> 
         <ol type="2">
-        <li>Merkmalsumwandlung (engl. feature transformation)</li>
+        <summary><b>🟠 Merkmalsumwandlung (engl. feature transformation)</b></summary>
           <ul>
             <li>NMF, LDA</li>
           </ul>
