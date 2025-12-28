@@ -121,7 +121,7 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
     <ol type="1">
       <li>
         Vektorisierung (engl. vectorization)<br>
-        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen und semantischen Varianten differenziert.</i>
+        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
       <ol type="2">
        <li>unsemantische Embeddings</li>
           <ul>
@@ -131,9 +131,9 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
        <li>semantische Embeddings</li>
           <ul>
             <li>Prediction Based Word Embedding</li>
-            GloVE; Word2Vec
-      <li>Contextualized Based Word Embedding ()</li>
-            <li>xxxxx</li>
+            GloVE; Word2Vec, FastText
+            <li>Contextualized Based Word Embedding</li>
+            ELMO, BERT, GPT
           </ul>
     </ol>
   </details>
