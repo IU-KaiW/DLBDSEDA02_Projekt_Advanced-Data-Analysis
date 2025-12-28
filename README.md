@@ -324,13 +324,13 @@ https://konfuzio.com/de/spacy-vs-nltk/
 [^4]: data.mendeley.com
 Huggingface
 
-https://www.kaggle.com
-https://www.github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv  
-https://data.mendeley.com
+https://www.kaggle.com<br>
+https://www.github.com<br>
+https://data.mendeley.com<br>
 
 ###### Dokumentationen
-SpaCy -  https://spacy.io/usage/spacy-101
-GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+SpaCy -  https://spacy.io/usage/spacy-101<br>
+GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
 
 </ul>
 
