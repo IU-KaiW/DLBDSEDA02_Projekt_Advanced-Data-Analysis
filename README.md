@@ -141,7 +141,6 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
     <ol type="1">
        <li>🟠 Merkmalsmodellierung (engl. feature modeling)s</li>
        Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.
-          <ul>
             <ol type="2">
             <li>🟠 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.<br>
@@ -153,14 +152,14 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
             <i>Latent Semantic Analysis (LSA)</i>
             <li> Merkmalsauswahl (engl. feature selection)<br>
             <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
-          </ul>
+          </ol>
        <li>🟠 Merkmalserkennung (engl. feature recognition)</li>
-          <ul>
+          <ol>
             <li>1</li>
             xxx
             <li>2</li>
             xxx
-          </ul>
+          </ol>
   </details>
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
