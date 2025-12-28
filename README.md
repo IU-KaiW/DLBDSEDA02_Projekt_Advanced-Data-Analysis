@@ -126,7 +126,7 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
        <li>unsemantische Embeddings</li>
           <ul>
             <li>Frequency Based Embedding</li>
-            TF-IDF
+           BoW; TF-IDF
           </ul>
        <li>semantische Embeddings</li>
           <ul>
