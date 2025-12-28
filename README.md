@@ -117,13 +117,15 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
 <ol>
   <details>
     <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
-    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur Verarbeitung vorbereitet</i></p>
+    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur weiteren Verarbeitung vorbereitet.</i></p>
     <ol type="1">
       <li>
         Vektorisierung (engl. vectorization)<br>
-        <i>xxxxx</i>
+        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen und semantischen Varianten differenziert.</i>
       <ol type="2">
-       <li>Frequency Based Embedding ( TF-IDF)</li>
+       <li>unsemantische Embeddings</li>
+       <li>Frequency Based Embedding (TF-IDF)</li>
+       <li>semantische Embeddings</li>
        <li>Prediction Based Word Embedding (GloVE; Word2Vec)</li>
       <li> Contextualized Based Word Embedding ()</li>
     </ol>
