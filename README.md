@@ -156,8 +156,10 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
             xxx
           </ol>
   </details>
-<b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
-<i>Beginn der Modellbildung für Aufgabe<i>
+  <details>
+    <summary>🟤  Merkmalslernen (engl. feature learning / representation learning)</summary></br>
+    <i>Beginn der Modellbildung für Aufgabe<i>
+  </details>
 
 ### ⚪ Pipeline Ausgabe (engl. Pipeline Output)
 
