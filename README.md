@@ -160,7 +160,7 @@ Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature mode
 
 <ol>
   <details>
-      <summary><b>🟠 Merkmalserkennung (engl. feature recognition)</b></summary>
+      <summary>🟠 Merkmalserkennung (engl. feature recognition)</summary>
       <p><i>Merkmalserkennung</i></p>
       </ol> 
     </details>
