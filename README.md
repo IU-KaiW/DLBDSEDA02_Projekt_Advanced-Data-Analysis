@@ -134,7 +134,6 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
           </ul>
     </ol>
   </details>
-</ol>
   <details>
     <summary><b>🟤 Text Analyse (engl. Text Analytics)</b></br>
     Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.<br><br>
