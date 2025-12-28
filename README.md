@@ -146,13 +146,10 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
 <ol>
     <details>
       <summary><b>🟠 Merkmalsextraktion (engl. feature extraction)</b></summary>
-      <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung</i>
-      <summary>Themenmodellierung (engl. topic modeling)</summary>
-    </ol>    
-      <p><i>Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung.</i></p>
+      <p><i>Beginn der Merkmalsumwandlung in der Merkmale in eine geeignete Form gebracht werden</i></p>
       <ol type="1">
         <li>
-        Themenmodellierung (engl. topic modeling<br>
+        Themenmodellierung (engl. topic modeling)<br>
         <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
         <ol type="2">
         <li>unsemantische Embeddings</li>
