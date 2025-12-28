@@ -152,11 +152,11 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
         Themenmodellierung (engl. topic modeling)<br>
         <i>Beginn der Themenmodellierung</i>
         <ol type="2">
-        <li>Merkmalsumwandlung (engl. feature transformation)</li>
+        <li>🟠Merkmalsumwandlung (engl. feature transformation)</li>
           <ul>
             <li>NMF, LDA</li>
           </ul>
-        <li>Merkmalsauswahl (engl. feature selection)</li>
+        <li>🟠Merkmalsauswahl (engl. feature selection)</li>
         Zum Ende werden die besten Merkmale ausgewählt.
           <ul>
             <li>Prediction Based Word Embedding</li>
@@ -165,7 +165,6 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
             ELMO, BERT, GPT
           </ul>
     </ol> 
-
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
