@@ -147,6 +147,7 @@ Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (
      <p><i>Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.</i></p>
     <ol type="1">
      <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
+     <p><i>Themenmodellierung kann überwacht oder unüberwacht werden.</i></p>
     <ol type="2">
       <li>
         Merkmalsextraktion (engl. feature extraction)<br>
