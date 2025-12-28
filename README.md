@@ -134,17 +134,32 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
           </ul>
   </details>
 
+
   <details>
-    <summary><b>🟤 Text Analyse (engl. Text Analytics)</b></br>
-    <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i><p><br><br>
+    <summary>🟤 Text Analyse (engl. Text Analytics)</summary>
+    <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i></p>
     <ol type="1">
-     <summary>🟠 Merkmalsmodellierung (engl. feature modeling)</summary>
-     <p><i>Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.</i></p>
-    <ol type="1">
-     <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
-     <p><i>Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.</i></p>
-    <ol type="2">
-      <li>
+       <li>🟠 Merkmalsmodellierung (engl. feature modeling)s</li>
+       Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.
+          <ul>
+            <li>🟠 Themenmodellierung (engl. topic modeling)</li>
+            Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.
+           BoW, TF-IDF
+          </ul>
+       <li>semantische Embeddings</li>
+          <ul>
+            <li>Prediction Based Word Embedding</li>
+            GloVE; Word2Vec, FastText
+            <li>Contextualized Based Word Embedding</li>
+            ELMO, BERT, GPT
+          </ul>
+  </details>
+
+
+
+
+
+  <details>
         Merkmalsextraktion (engl. feature extraction)<br>
         <i>Latent Dirichlet Allocation (LDA)</i>
         Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.
