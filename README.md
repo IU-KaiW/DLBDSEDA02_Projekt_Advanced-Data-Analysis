@@ -128,10 +128,15 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
             <li>Frequency Based Embedding</li>
             TF-IDF
           </ul>
-       <li>Frequency Based Embedding (TF-IDF)</li>
        <li>semantische Embeddings</li>
-       <li>Prediction Based Word Embedding (GloVE; Word2Vec)</li>
+          <ul>
+            <li>Prediction Based Word Embedding</li>
+            GloVE; Word2Vec
+          </ul>
       <li> Contextualized Based Word Embedding ()</li>
+          <ul>
+            <li>xxxxx</li>
+          </ul>
     </ol>
   </details>
 </ol>
