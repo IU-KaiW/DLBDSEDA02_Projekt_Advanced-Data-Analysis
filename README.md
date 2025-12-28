@@ -133,10 +133,11 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
             ELMO, BERT, GPT
           </ul>
   </details>
+
   <details>
     <summary><b>🟤 Text Analyse (engl. Text Analytics)</b></br>
     <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i><p><br><br>
-  </details>
+    <ol type="1">
      <summary>🟠 Merkmalsmodellierung (engl. feature modeling)</summary>
      <p><i>Unter Merkmalsmodellierung wird ... verstanden. Merkmale wie z.B. Themen.</i></p>
     <ol type="1">
