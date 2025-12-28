@@ -123,13 +123,9 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
         Vektorisierung (engl. vectorization)<br>
         <i>xxxxx</i>
       <ol type="2">
-       Frequency Based Embedding ( TF-IDF)
-       Prediction Based Word Embedding (  GloVE; Word2Vec)
-       Contextualized Based Word Embedding ()
-      <li>
-        Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
-        <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
-      </li>
+       <li>Frequency Based Embedding ( TF-IDF)</li>
+       <li>Prediction Based Word Embedding (  GloVE; Word2Vec)</li>
+      <li> Contextualized Based Word Embedding ()</li>
     </ol>
   </details>
 </ol>
