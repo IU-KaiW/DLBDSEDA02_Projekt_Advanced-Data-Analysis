@@ -148,6 +148,28 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
       <summary><b>🟠 Merkmalsextraktion (engl. feature extraction)</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung</i>
       <summary>Themenmodellierung (engl. topic modeling)</summary>
+    </ol>    
+      <p><i>Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung.</i></p>
+      <ol type="1">
+        <li>
+        Themenmodellierung (engl. topic modeling<br>
+        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
+        <ol type="2">
+        <li>unsemantische Embeddings</li>
+          <ul>
+            <li>Frequency Based Embedding</li>
+           BoW; TF-IDF
+          </ul>
+        <li>semantische Embeddings</li>
+          <ul>
+            <li>Prediction Based Word Embedding</li>
+            GloVE; Word2Vec, FastText
+            <li>Contextualized Based Word Embedding</li>
+            ELMO, BERT, GPT
+          </ul>
+    </ol> 
+
+
       <i>Beginn der Themenmodellierung</i>
            NMF, LDA
     </details>
@@ -163,26 +185,6 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
       <summary><b>🟠 Merkmalsauswahl (engl. feature selection)</b></summary>
       <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zum Ende werden die besten Merkmale ausgewählt.</i>
     </details>
-</ol>    
-    <p><i>Beginn der Merkmalsextraktion zum Zweck der Themenmodellierung.</i></p>
-    <ol type="1">
-      <li>
-        Themenmodellierung (engl. topic modeling<br>
-        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
-      <ol type="2">
-       <li>unsemantische Embeddings</li>
-          <ul>
-            <li>Frequency Based Embedding</li>
-           BoW; TF-IDF
-          </ul>
-       <li>semantische Embeddings</li>
-          <ul>
-            <li>Prediction Based Word Embedding</li>
-            GloVE; Word2Vec, FastText
-            <li>Contextualized Based Word Embedding</li>
-            ELMO, BERT, GPT
-          </ul>
-    </ol>
   </details>
 </ol>
 
