@@ -151,10 +151,10 @@ Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (
     <ol type="2">
       <li>
         Merkmalsextraktion (engl. feature extraction)<br>
-        <i>LDA</i>
+        <i>Latent Dirichlet Allocation (LDA)</i>
       <li>
         Merkmalsumwandlung (engl. feature transformation)<br>
-        <i>NMF, LSA</i>
+        <i>Latent Semantic Analysis (LSA)</i>
       <li>
        Merkmalsauswahl (engl. feature selection)<br>
         <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
