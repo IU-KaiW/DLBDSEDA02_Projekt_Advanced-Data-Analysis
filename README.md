@@ -138,15 +138,15 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
     <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i></p>
     <ol type="1">
        <li>🟤 Merkmalsmodellierung (engl. feature modeling)s</li>
-       Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung der zuvor vektorisierten Textmerkmale. Sie legt fest wie die Merkmale thematisch oder semantisch genutzt werden können, etwa bei der Themenanalyse, welche über die Themenmodellierung (engl. topic modeling) erfolgen kann.
+       Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung der zuvor vektorisierten Textmerkmale. Sie legt fest wie die Merkmale thematisch oder semantisch genutzt werden können, etwa bei der Themenanalyse, die über Themenmodellierung (engl. topic modeling) erfolgen kann.
             <ol type="2">
             <li>🟤 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.<br>
             <li>Merkmalsextraktion (engl. feature extraction)</li><br>
             <i>Latent Dirichlet Allocation (LDA)</i>
             Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
-           <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
-            <i>Latent Semantic Analysis (LSA)</i>
+           <br><li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
+            <i>Latent Semantic Analysis (LSA)</i><br>
             <li> Merkmalsauswahl (engl. feature selection)<br>
             <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
           </ol>
