@@ -132,9 +132,7 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
           <ul>
             <li>Prediction Based Word Embedding</li>
             GloVE; Word2Vec
-          </ul>
-      <li> Contextualized Based Word Embedding ()</li>
-          <ul>
+      <li>Contextualized Based Word Embedding ()</li>
             <li>xxxxx</li>
           </ul>
     </ol>
