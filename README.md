@@ -147,10 +147,10 @@ Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature mode
     <ol type="1">
       <li>
         Merkmalsextraktion (engl. feature extraction)<br>
-        <i>xxxx</i>
+        <i>LDA</i>
       <li>
         Merkmalsumwandlung (engl. feature transformation)<br>
-        <i>NMF, LDA<</i>
+        <i>NMF, LSA<</i>
       <li>
        Merkmalsauswahl (engl. feature selection)<br>
         <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
@@ -199,7 +199,7 @@ Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature mode
               β (Beta) - Wortverteilung in Themen<br>
               K<sup>T</sup> (n × k)
         <li> Visualisierung</li>
-        <i>blub blub, blub</i>
+        <i>PyLDAvis</i>
       </ol>
   </details>
 </ol>
@@ -323,6 +323,10 @@ https://konfuzio.com/de/spacy-vs-nltk/
 [^3]: GovData
 [^4]: data.mendeley.com
 Huggingface
+
+https://www.kaggle.com
+https://www.github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv  
+https://data.mendeley.com
 
 ###### Dokumentationen
 SpaCy -  https://spacy.io/usage/spacy-101
