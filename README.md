@@ -145,21 +145,6 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
             <li>🟠 Themenmodellierung (engl. topic modeling)</li>
             Themenmodellierung kann unüberwacht über Merkmalsextraktion oder Merkmalsumwandlung erfolgen.
             BoW, TF-IDF
-          </ul>
-       <li>🟠 Merkmalserkennung (engl. feature recognition)</li>
-          <ul>
-            <li>1</li>
-            xxx
-            <li>2</li>
-            xxx
-          </ul>
-  </details>
-
-
-
-
-
-  <details>
         Merkmalsextraktion (engl. feature extraction)<br>
         <i>Latent Dirichlet Allocation (LDA)</i>
         Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.
@@ -169,11 +154,16 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
       <li>
        Merkmalsauswahl (engl. feature selection)<br>
         <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
-    </ol>
+
+          </ul>
+       <li>🟠 Merkmalserkennung (engl. feature recognition)</li>
+          <ul>
+            <li>1</li>
+            xxx
+            <li>2</li>
+            xxx
+          </ul>
   </details>
-</ol>
-
-
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
