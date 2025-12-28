@@ -144,9 +144,10 @@ Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (
 <ol>
   <details>
      <summary>🟠 Merkmalsmodellierung (engl. feature modeling)</summary>
-     <p><i>Unter Merkmalsmodellierung wird </i></p>
+     <p><i>Unter Merkmalsmodellierung wird ... verstanden. Merkmale können beispielsweise Themen sein.</i></p>
+    </ol>
      <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
-     <ul type="1">
+    <ol type="1">
       <li>
         Merkmalsextraktion (engl. feature extraction)<br>
         <i>LDA</i>
@@ -156,7 +157,7 @@ Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (
       <li>
        Merkmalsauswahl (engl. feature selection)<br>
         <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
-    </ul>
+    </ol>
   </details>
 </ol>
 
