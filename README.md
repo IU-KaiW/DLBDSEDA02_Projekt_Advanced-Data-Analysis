@@ -158,7 +158,8 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
           </ul>
         <li>Merkmalsauswahl (engl. feature selection)</li>
         Zum Ende werden die besten Merkmale ausgewählt.
-    </ol> 
+</ol> 
+
 <b>🔵 Merkmalslernen (engl. feature learning / representation learning)</b></br>
 <i>Beginn der Modellbildung für Aufgabe<i>
 
