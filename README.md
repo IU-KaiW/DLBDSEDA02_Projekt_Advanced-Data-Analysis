@@ -138,9 +138,6 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
     </ol>
   </details>
 </ol>
-
-
-
 <b>🟠 Text Analyse (engl. Text Analytics)</b></br>
 *Beginn der Textanalyse (engl. Text Analytics),in welcher ein (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition), eingeordnet werden.*
 <ol>
@@ -158,6 +155,10 @@ Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engin
           </ul>
         <li>Merkmalsauswahl (engl. feature selection)</li>
         Zum Ende werden die besten Merkmale ausgewählt.
+      <ol type="1">
+        <li>🟠 Feature Recognition</li><br>
+        <i>Beginn der Themenmodellierung</i>
+      </ol> 
     </details>
 </ol> 
 
