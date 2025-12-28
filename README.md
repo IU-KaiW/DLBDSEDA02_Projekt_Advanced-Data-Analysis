@@ -115,20 +115,26 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
 #### 🟤 Datenverarbeitung (engl. data processing)
 Mit der Datenverarbeitung beginnen die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning). Die Merkmalsaufbereitung kann in die Phasen Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl eingeteilt werden kann. In der Phase des Merkmalslernens erfolgt die Modellbildung.
 <ol>
-    <details>
-      <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
-      <i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur Verarbeitung vorbereitet</i>
-        <ol>
-        <li>VVektorisierung (engl. vectorization)</li>
-        <i>In diesem Schritt</i>
-       <ul>
-          <li><a prerequisites>Frequency Based Embedding</a></li>
-           TF-IDF
-          <li><a installation>Prediction Based Word Embedding</a></li>
-           GloVE; Word2Vec
-          <li><a installation>Contextualized Based Word Embedding</a></li>
-    </details>
+  <details>
+    <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
+    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur Verarbeitung vorbereitet</i></p>
+    <ol type="1">
+      <li>
+        Vektorisierung (engl. vectorization)<br>
+        <i>xxxxx</i>
+       Frequency Based Embedding ( TF-IDF)
+       Prediction Based Word Embedding (  GloVE; Word2Vec)
+       Contextualized Based Word Embedding ()
+      </li>
+      <li>
+        Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
+        <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
+      </li>
+    </ol>
+  </details>
 </ol>
+
+
 
 <b>🟠 Text Analyse (engl. Text Analytics)</b></br>
 *Beginn der Textanalyse (engl. Text Analytics), bei der die Themenmodellierung beginnt, durch welche Themen aus dem Text extrahiert werden.*
