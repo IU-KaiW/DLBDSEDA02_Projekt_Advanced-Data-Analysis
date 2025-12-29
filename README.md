@@ -185,17 +185,6 @@ Im Rahmen der Datenkonsolidierung erfolgt eine Datennachverarbeitung (engl. data
       <summary><b>⚪ Aggregation</b></summary>
       <i>umerische Darstellung</i>
     </details>
-    <details>
-      <summary>⚪ Evaluation</summary>
-      <ol>
-        <li> Aggregation</li>
-              𝛼 (Alpha) - Themenmischung pro Dokument<br>
-              β (Beta) - Wortverteilung in Themen<br>
-              K<sup>T</sup> (n × k)
-        <li> Visualisierung</li>
-        <i>PyLDAvis</i>
-      </ol>
-    </details>
 </ol>
 
   <ol>
