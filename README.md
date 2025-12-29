@@ -180,8 +180,6 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <summary><b>⚪ Aggregation</b></summary>
       <i>umerische Darstellung</i>
     </details>
-</ol>
-    <summary>⚪ Datenpräsentation (engl. data presentation)</b><summary>
     <b>⚪ Evaluation (engl. )</b></br>
   <ol>
     <details>
@@ -197,6 +195,8 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
     </details>
 </ol>
 
+Datenauswertung
+Datenpräsentation
 
 ______________
 
