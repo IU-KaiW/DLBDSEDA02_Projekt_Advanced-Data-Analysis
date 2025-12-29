@@ -171,6 +171,11 @@ Im Rahmen der Datenkonsolidierung erfolgt eine Datennachverarbeitung (engl. data
 
 <b>⚪ Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>xxxxxxxxxxxx</i>
+      📊 Ergebnisse<br>
+      Themenverteilungen<br>
+      Top-Wörter pro Thema<br>
+
+
   <ol>
     <details>
       <summary><b>⚪ Visualisierung</b></summary>
@@ -192,9 +197,11 @@ Im Rahmen der Datenkonsolidierung erfolgt eine Datennachverarbeitung (engl. data
       </ol>
     </details>
 </ol>
+
   <ol>
     <details>
       <summary>⚪ Evaluation</summary>
+      Modellvergleich<br>
       <ol>
         <li> Aggregation</li>
               𝛼 (Alpha) - Themenmischung pro Dokument<br>
@@ -205,16 +212,7 @@ Im Rahmen der Datenkonsolidierung erfolgt eine Datennachverarbeitung (engl. data
       </ol>
     </details>
 </ol>
-
-### Visualisierung
-📊 Ergebnisse<br>
-Themenverteilungen<br>
-Top-Wörter pro Thema<br>
-Modellvergleich<br>
-
-
 ______________
-
 
 ## Projektstruktur
 ### Ordnerstruktur
