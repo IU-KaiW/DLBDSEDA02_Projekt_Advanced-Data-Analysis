@@ -182,8 +182,6 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   </details>
   <details>
       <summary>⚪ Evaluation (engl. model evaluation)<summary>
-  <ol>
-  <details>
       Modellvergleich<br>
       <ol>
         <li> Aggregation</li>
