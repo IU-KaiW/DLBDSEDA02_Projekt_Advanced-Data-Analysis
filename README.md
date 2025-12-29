@@ -188,8 +188,8 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   <details>
     <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
     <summary>⚪ Visualisierung</summary>
-      <i>grafische Darstellung</i>
-        <i>PyLDAvis</i>
+    <i>grafische Darstellung</i><br>
+    <li>PyLDAvis</li>
     <summary>⚪ Aggregation</summary>
       <i>numerische Darstellung</i>
       Modellperformance
