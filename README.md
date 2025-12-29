@@ -51,6 +51,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ```
 ###### Pipeline-Eingabe
 Es wird Datensatz Nr. 5 "Comcast.csv" mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
+______________
 
 ### ⚫ NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication)
@@ -165,6 +166,7 @@ Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering)
 </ol>
 
 ###### Pipeline Ausgabe (engl. Pipeline Output)
+______________
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
 Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalyse (engl. feature-analysis) sowie die Evaluation (engl. evaluation) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
@@ -194,9 +196,9 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   </details>
 </ol>
 
-Datenauswertung
-Datenpräsentation
-
+Datenauswertung<br>
+Datenpräsentation<br>
+___
 ______________
 
 ## Projektstruktur
