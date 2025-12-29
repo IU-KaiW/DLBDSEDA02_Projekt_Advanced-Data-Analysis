@@ -4,7 +4,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die zu verwendenten Python-Bibliotheken erwähnt werden.
 
 ## Konzeption
-Der Grafik können die geplanten Phasen des Projekts (⚪Pipeline Eingabe, ⚫ NLP-Verarbeitung, ⚪Pipeline Ausgabe und Evaluation) sowie die zugeordneten Einzelschritte entnommen werden. Die Erwähnung der Python-Bibliotheken erfolgt in den Einzelschritten, welche durch einen Klick auf ► erweiterbar sind und Erläuterungen enthalten.
+Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
