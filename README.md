@@ -176,11 +176,8 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
     <summary>⚪ Datenauswertung</summary>
     <i>Merkmalsauswertungen (engl. feature Inspections)</i>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-  </details>
-  
-  <details>
-      <summary>⚪ Evaluation (engl. model evaluation)</summary>
-      Modellvergleich<br>
+    <summary>⚪ Evaluation (engl. model evaluation)</summary>
+    <i>Modellvergleich</i><br>
         <li> Aggregation</li>
               𝛼 (Alpha) - Themenmischung pro Dokument<br>
               β (Beta) - Wortverteilung in Themen<br>
