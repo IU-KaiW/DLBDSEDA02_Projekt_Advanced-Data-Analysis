@@ -167,11 +167,9 @@ Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering)
 ###### Pipeline Ausgabe (engl. Pipeline Output)
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
-Im Rahmen der Datenkonsolidierung erfolgt eine Datennachverarbeitung (engl. data post-processing) in welcher die Merkmalsanalyse (engl. feature-analysis) sowie die Evaluation (engl. evaluation)  durchgeführt und dargestellt werden.
+Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalyse (engl. feature-analysis) sowie die Evaluation (engl. evaluation) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
-<b>⚪ Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>Die Merkmalsanalyse </i>
-      📊 Ergebnisse<br>
       Themenverteilungen<br>
       Top-Wörter pro Thema<br>
 
