@@ -184,16 +184,14 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
     <summary> Evaluation (engl. model evaluation)</summary>
     <i>Modellvergleich</i><br>
   </details>
-<ol>
   <details>
     <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
-    <summary>⚪ Visualisierung</summary>
+    <summary>Visualisierung</summary>
     <i>grafische Darstellung</i><br>
     <li>PyLDAvis</li>
-    <summary>⚪ Aggregation</summary>
+    <summary>Aggregation</summary>
     <i>numerische Darstellung</i>
     Modellperformance
-
   </details>
 </ol>
 ______________
@@ -346,5 +344,33 @@ https://emojiterra.com/de/gelber-kreis/
             ELMO, BERT, GPT
           </ul>
     </ol>
+  </details>
+</ol>
+
+
+
+<ol> 
+  <details>
+    <summary>⚪ Datenauswertung (engl. data analysis)</summary>
+    <p><i>xxxxxxx</i></p>
+    <ol type="1">
+      <li>Merkmalsauswertungen (engl. feature Inspections)</li>
+      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
+        𝛼 (Alpha) - Themenmischung pro Dokument<br>
+        β (Beta) - Wortverteilung in Themen<br>
+        K<sup>T</sup> (n × k)
+    <summary> Evaluation (engl. model evaluation)</summary>
+    <i>Modellvergleich</i><br>
+  </details>
+<ol>
+  <details>
+    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
+    <summary>⚪ Visualisierung</summary>
+    <i>grafische Darstellung</i><br>
+    <li>PyLDAvis</li>
+    <summary>⚪ Aggregation</summary>
+    <i>numerische Darstellung</i>
+    Modellperformance
+
   </details>
 </ol>
