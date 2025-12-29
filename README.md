@@ -183,20 +183,18 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   <details>
       <summary>⚪ Evaluation (engl. model evaluation)</summary>
       Modellvergleich<br>
-      <ol>
         <li> Aggregation</li>
               𝛼 (Alpha) - Themenmischung pro Dokument<br>
               β (Beta) - Wortverteilung in Themen<br>
               K<sup>T</sup> (n × k)
         <li> Visualisierung</li>
         <i>PyLDAvis</i>
-      </ol>
   </details>
 </ol>
 
 <ol>
   <details>
-    <summary>⚪ Datenpräsentation<br></summary>
+    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
     <summary>⚪ Visualisierung</summary>
       <i>grafische Darstellung</i>
     <summary>⚪ Aggregation</summary>
