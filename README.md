@@ -171,10 +171,11 @@ ______________
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
 Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalysen (engl. feature analysis) sowie die Modellevaluationen (engl. model evaluations) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
+<ol> 
   <details>
     <summary>⚪ Datenauswertung (engl. data analysis)</summary>
     <ol type="1">
-    <li>Merkmalsauswertungen (engl. feature Inspections)</li>
+      <li>Merkmalsauswertungen (engl. feature Inspections)</li>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
         𝛼 (Alpha) - Themenmischung pro Dokument<br>
         β (Beta) - Wortverteilung in Themen<br>
