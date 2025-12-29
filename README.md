@@ -192,15 +192,14 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       </ol>
   </details>
 </ol>
+
 <ol>
   <details>
-  Datenpräsentation<br>
+    <summary><b>⚪ Datenpräsentation<br></summary>
     <summary><b>⚪ Visualisierung</b></summary>
       <i>grafische Darstellung</i>
-  </details>
-  <details>
-      <summary><b>⚪ Aggregation</b></summary>
-      <i>umerische Darstellung</i>
+    <summary><b>⚪ Aggregation</b></summary>
+      <i>numerische Darstellung</i>
   </details>
 
 ______________
