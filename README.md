@@ -33,8 +33,6 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und die Bewertung als n/a markiert. Der Datensatz fließt dann nicht in den Ergebnisvergleich ein.</i>
     </details>
 </ol>
-
-###### Ergebnis
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt. Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte die Anzahl begrenzt.
 
 ```markdown
@@ -51,6 +49,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
+###### Pipeline-Eingabe
 Es wird Datensatz Nr. 5 "Comcast.csv" mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
 
 ### ⚫ NLP-Verarbeitungsschritte (engl. NLP-Pipeline)
@@ -161,8 +160,7 @@ In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature enginee
     <i>Beginn der Modellbildung für Aufgabe<i>
   </details>
 
-### ⚪ Pipeline Ausgabe (engl. Pipeline Output)
-
+###### Pipeline Ausgabe (engl. Pipeline Output)
 
 #### 🔵 Datenkonsolidierung (engl. data consolidation)
 *Nachverarbeitung (engl. post-processing)*
