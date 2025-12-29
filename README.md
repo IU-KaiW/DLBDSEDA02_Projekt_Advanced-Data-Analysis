@@ -175,6 +175,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
     <summary><b>⚪ Visualisierung</b></summary>
       <i>grafische Darstellung</i>
+    </details>
     <details>
       <summary><b>⚪ Aggregation</b></summary>
       <i>umerische Darstellung</i>
@@ -191,7 +192,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
         <li> Visualisierung</li>
         <i>PyLDAvis</i>
       </ol>
-  </details>
+    </details>
 </ol>
 
 Datenauswertung
