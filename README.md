@@ -173,14 +173,14 @@ ______________
 Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalysen (engl. feature analysis) sowie die Modellevaluationen (engl. model evaluations) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 <ol>
   <details>
-  Datenauswertung<br>
-    <summary>⚪ Merkmalsauswertungen (engl. feature Inspections)</summary> 
+    <summary><b>⚪ Datenauswertung</b></summary>
+    Merkmalsauswertungen (engl. feature Inspections)
       <i>Die Merkmalsanalyse</i>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
   </details>
 
   <details>
-      <summary>⚪ Evaluation (engl. model evaluation)<summary>
+      <summary>⚪ Evaluation (engl. model evaluation)</summary>
       Modellvergleich<br>
       <ol>
         <li> Aggregation</li>
@@ -196,6 +196,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
 <ol>
   <details>
     <summary><b>⚪ Datenpräsentation<br></summary>
+
     <summary><b>⚪ Visualisierung</b></summary>
       <i>grafische Darstellung</i>
     <summary><b>⚪ Aggregation</b></summary>
