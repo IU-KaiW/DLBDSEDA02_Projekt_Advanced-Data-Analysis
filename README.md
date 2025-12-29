@@ -181,10 +181,8 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <i>umerische Darstellung</i>
     </details>
 </ol>
-
-<b>⚪ Datenpräsentation (engl. data presentation)</b></br>
-
-<b>⚪ Evaluation (engl. )</b></br>
+    <summary>⚪ Datenpräsentation (engl. data presentation)</b><summary>
+    <b>⚪ Evaluation (engl. )</b></br>
   <ol>
     <details>
       Modellvergleich<br>
