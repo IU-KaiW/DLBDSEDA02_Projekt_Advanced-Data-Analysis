@@ -174,7 +174,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
 <ol>
   <details>
     <summary>⚪ Datenauswertung (engl. data analysis)</summary>
-    <i>Merkmalsauswertungen (engl. feature Inspections)</i>
+    <li>Merkmalsauswertungen (engl. feature Inspections)</li>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
         𝛼 (Alpha) - Themenmischung pro Dokument<br>
         β (Beta) - Wortverteilung in Themen<br>
