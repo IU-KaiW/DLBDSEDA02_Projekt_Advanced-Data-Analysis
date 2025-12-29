@@ -174,13 +174,12 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
 <ol>
   <details>
     <summary><b>⚪ Datenauswertung</b></summary>
-    <li> Merkmalsauswertungen (engl. feature Inspections)</li>
+    <li>Merkmalsauswertungen (engl. feature Inspections)</li>
       <i>Die Merkmalsanalyse</i>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
   </details>
-
   <details>
-      <summary><li>⚪ Evaluation (engl. model evaluation)</li></summary>
+    <summary><li>⚪ Evaluation (engl. model evaluation)</li></summary>
       Modellvergleich<br>
       <ol>
         <li> Aggregation</li>
