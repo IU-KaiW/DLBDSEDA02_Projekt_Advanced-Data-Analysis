@@ -173,7 +173,6 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <summary>Merkmalsauswertung (engl. feature ) Auswertung? Die Merkmalsanalyse</i>
       Themenverteilungen<br>
       Top-Wörter pro Thema<br>
-    <details> 
       <summary><b>⚪ Visualisierung</b></summary>
       <i>grafische Darstellung</i>
     </details>
