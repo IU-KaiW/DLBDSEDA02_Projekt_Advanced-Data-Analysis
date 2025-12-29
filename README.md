@@ -174,7 +174,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
 <ol>
   <details>
     <summary><b>⚪ Datenauswertung</b></summary>
-    Merkmalsauswertungen (engl. feature Inspections)
+    <li> Merkmalsauswertungen (engl. feature Inspections)</li>
       <i>Die Merkmalsanalyse</i>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
   </details>
