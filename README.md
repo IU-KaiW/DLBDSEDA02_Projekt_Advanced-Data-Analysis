@@ -186,7 +186,8 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   </details>
   <details>
     <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
-        <ol type="1">
+    <p><i>xxxxxxx</i></p>
+    <ol type="1">
       <li>Aggregation</li>
       Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.
       <li>Visualisierung</li>
