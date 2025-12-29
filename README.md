@@ -182,7 +182,6 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
         K<sup>T</sup> (n × k)
     <summary> Evaluation (engl. model evaluation)</summary>
     <i>Modellvergleich</i><br>
-    </ol>
   </details>
 <ol>
   <details>
