@@ -193,7 +193,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <li>Visualisierung</li>
       <i>Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen, während Visualisierung diese aggregierten Daten grafisch darstellt, um Muster erkennbar zu machen.</i>
       <i>grafische Darstellung</i><br>
-      <li>PyLDAvis</li>
+      PyLDAvis
       <i>numerische Darstellung</i>
       <i>Modellperformance<i>
   </details>
