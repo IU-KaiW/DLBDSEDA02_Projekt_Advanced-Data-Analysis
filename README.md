@@ -175,9 +175,9 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   <details>
   Datenauswertung<br>
     <summary>⚪ Merkmalsauswertungen (engl. feature Inspections)</summary> 
-    <i>Die Merkmalsanalyse</i>
+      <i>Die Merkmalsanalyse</i>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-
+  </details>
 
   <details>
       <summary>⚪ Evaluation (engl. model evaluation)<summary>
@@ -192,8 +192,9 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       </ol>
   </details>
 </ol>
-
-Datenpräsentation<br>
+<ol>
+  <details>
+  Datenpräsentation<br>
     <summary><b>⚪ Visualisierung</b></summary>
       <i>grafische Darstellung</i>
   </details>
@@ -201,7 +202,7 @@ Datenpräsentation<br>
       <summary><b>⚪ Aggregation</b></summary>
       <i>umerische Darstellung</i>
   </details>
-  
+
 ______________
 
 ## Projektstruktur
