@@ -170,7 +170,7 @@ Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering)
 Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalyse (engl. feature-analysis) sowie die Evaluation (engl. evaluation) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 <ol>
   <details>
-    <summary>Merkmalsauswertung (engl. feature ) Auswertung?</summary> 
+    <summary>Merkmalsauswertung (engl. feature Inspection) Auswertung?</summary> 
     <i>Die Merkmalsanalyse</i>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
     <summary><b>⚪ Visualisierung</b></summary>
@@ -180,7 +180,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <summary><b>⚪ Aggregation</b></summary>
       <i>umerische Darstellung</i>
   </details>
-    <b>⚪ Evaluation (engl. )</b></br>
+    <b>⚪ Evaluation (engl. model evaluation)</b></br>
   <ol>
   <details>
       Modellvergleich<br>
