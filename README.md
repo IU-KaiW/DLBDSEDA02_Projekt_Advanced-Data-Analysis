@@ -174,12 +174,10 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
 <ol>
   <details>
     <summary>⚪ Datenauswertung</summary>
-    Merkmalsauswertungen (engl. feature Inspections)
-      <i>Die Merkmalsanalyse</i>
+    <i>Merkmalsauswertungen (engl. feature Inspections)</i>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
   </details>
-</ol>
-<ol>
+  
   <details>
       <summary>⚪ Evaluation (engl. model evaluation)</summary>
       Modellvergleich<br>
@@ -187,8 +185,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
               𝛼 (Alpha) - Themenmischung pro Dokument<br>
               β (Beta) - Wortverteilung in Themen<br>
               K<sup>T</sup> (n × k)
-        <li> Visualisierung</li>
-        <i>PyLDAvis</i>
+
   </details>
 </ol>
 
@@ -197,10 +194,13 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
     <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
     <summary>⚪ Visualisierung</summary>
       <i>grafische Darstellung</i>
+        <i>PyLDAvis</i>
+
     <summary>⚪ Aggregation</summary>
       <i>numerische Darstellung</i>
 
       Modellperformance
+
   </details>
 
 ______________
