@@ -167,11 +167,11 @@ Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering)
 ###### Pipeline Ausgabe (engl. Pipeline Output)
 
 #### 🔵 Datenkonsolidierung (engl. data consolidation)
-Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der eine finale Merkmalsanalyse (engl. feature-analysis) sowie die Evaluation (engl. evaluation) von Modellen durchgeführt werden.
+Im Rahmen der Datenkonsolidierung erfolgt eine Datennachverarbeitung (engl. data post-processing) in der eine Merkmalsanalyse (engl. feature-analysis) sowie die Evaluation (engl. evaluation) von Modellen durchgeführt werden.
 
 <b>⚪ Merkmalsanalyse (engl. feature-analysis)</b></br>
       <i>xxxxxxxxxxxx</i>
-<ol>
+  <ol>
     <details>
       <summary><b>⚪ Visualisierung</b></summary>
       <i>grafische Darstellung</i>
@@ -180,10 +180,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <summary><b>⚪ Aggregation</b></summary>
       <i>umerische Darstellung</i>
     </details>
-</ol>
-
-<ol>
-  <details>
+    <details>
       <summary>⚪ Evaluation</summary>
       <ol>
         <li> Aggregation</li>
@@ -193,11 +190,22 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
         <li> Visualisierung</li>
         <i>PyLDAvis</i>
       </ol>
-  </details>
+    </details>
+</ol>
+  <ol>
+    <details>
+      <summary>⚪ Evaluation</summary>
+      <ol>
+        <li> Aggregation</li>
+              𝛼 (Alpha) - Themenmischung pro Dokument<br>
+              β (Beta) - Wortverteilung in Themen<br>
+              K<sup>T</sup> (n × k)
+        <li> Visualisierung</li>
+        <i>PyLDAvis</i>
+      </ol>
+    </details>
 </ol>
 
-<b>⚪ Evaluation</b></br>
-<i>xxxxxxxxxxxx</i>
 ### Visualisierung
 📊 Ergebnisse<br>
 Themenverteilungen<br>
