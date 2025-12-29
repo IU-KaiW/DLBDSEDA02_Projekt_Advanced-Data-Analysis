@@ -199,6 +199,8 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <i>grafische Darstellung</i>
     <summary>⚪ Aggregation</summary>
       <i>numerische Darstellung</i>
+
+      Modellperformance
   </details>
 
 ______________
