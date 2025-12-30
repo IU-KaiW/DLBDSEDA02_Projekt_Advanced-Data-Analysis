@@ -10,12 +10,13 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 
       
 ### ⚪ Datenakquisition (engl. data acquisition)
+      > [!NOTE]
+      > Useful information that users should know, even when skimming content.
+      
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
     <details>
       <summary>⚪ <u> Datensatzrecherche (engl. dataset research) <u></b></summary>
-      > [!NOTE]
-      > Useful information that users should know, even when skimming content.
       <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
