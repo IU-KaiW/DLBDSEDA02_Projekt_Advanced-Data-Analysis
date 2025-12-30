@@ -382,3 +382,28 @@ https://emojiterra.com/de/gelber-kreis/
 
   </details>
 </ol>
+
+#### 🔴 Datenvorverarbeiten (engl. data pre-processing)
+Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung* für nachfolgende Phasen.
+
+- **Textbereinigung (engl. text cleaning)**  
+  *Texte werden standardisiert und von Rauschen befreit.*
+
+  1. **Standardisierung (engl. standardisation)**  
+     *Inhalte werden vereinheitlicht.*
+
+     - **Normalisierung (engl. normalisation)**  
+       Besteht aus:  
+       - **Kasusumwandlung**: Konsequente Kleinschreibung aller Wörter.  
+       - **Grundformreduktion**: Lemmatisierung mit NLTK WordNet.  
+       - **Formatnormalisierungen**.
+
+     - **Rechtschreibfehlerkorrektur**: Korrigiert Tippfehler.
+
+  2. **Rauschentfernung (engl. noise reduction)**  
+     *Irrelevante Tokens werden entfernt.*  
+     - **Stoppworte**  
+     - **Satzzeichen**  
+     - **Leerzeichen**  
+     - **Nummern**  
+     - **Sonderzeichen**
