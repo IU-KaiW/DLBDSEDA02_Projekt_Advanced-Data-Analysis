@@ -198,6 +198,18 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
       <i>Modellperformance<i>
   </details>
 </ol>
+
+@misc{oleszakFeatureSelectionMethods2022,
+  title = {Feature {{Selection Methods}} and {{How}} to {{Choose Them}}},
+  author = {Oleszak, Micha{\l}},
+  year = 2022,
+  month = sep,
+  journal = {neptune.ai},
+  urldate = {2025-12-29},
+  abstract = {Learn about feature selection methods: understand their importance, explore various approaches, and learn how to choose the right one.},
+  langid = {american},
+  file = {/Users/kaiweber/Zotero/storage/CXHT3QRL/feature-selection-methods.html}
+}
 ______________
 
 ## Projektstruktur
