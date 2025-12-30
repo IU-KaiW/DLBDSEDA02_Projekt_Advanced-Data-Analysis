@@ -67,7 +67,7 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
     <p><i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert und anschließend von Rauschen befreit.</i></p>
     <ol type="1">
       <li>
-        Standardisierung (engl. standardisation)<br>
+        <ins>Standardisierung (engl. standardisation)</ins><br>
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. </i>
       <ol type="2">
             <li>**Normalisierung (engl. normalisation)**</li>
