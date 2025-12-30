@@ -199,7 +199,7 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   </details>
 </ol>
 
-Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.
+
 
 ______________
 
@@ -292,6 +292,9 @@ IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Ler
 ###### Wissenschaftliche Artikel
 Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
 Blum et al., 2020 ?
+
+Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.
+
 
 <li>Websites</li>
 
