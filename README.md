@@ -199,17 +199,8 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
   </details>
 </ol>
 
-@online{oleszakFeatureSelectionMethods2022,
-  title = {Feature {{Selection Methods}} and {{How}} to {{Choose Them}}},
-  author = {Oleszak, Michał},
-  date = {2022-09-09T09:23:09+00:00},
-  url = {https://neptune.ai/blog/feature-selection-methods},
-  urldate = {2025-12-29},
-  abstract = {Learn about feature selection methods: understand their importance, explore various approaches, and learn how to choose the right one.},
-  langid = {american},
-  organization = {neptune.ai},
-  file = {/Users/kaiweber/Zotero/storage/CXHT3QRL/feature-selection-methods.html}
-}
+Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.
+
 ______________
 
 ## Projektstruktur
