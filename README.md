@@ -14,7 +14,7 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 <ol>
     <details>
       <summary>⚪ <u> Datensatzrecherche (engl. dataset research) <u></b></summary>
-      > <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
+      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
@@ -55,7 +55,7 @@ ______________
 Es wird Datensatz Nr. 5 "Comcast.csv" mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
 
 ### ⚫ Sprachverarbeitung (engl. NLP-Pipeline)
-Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication)
+> Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication)
 
 Haupt Freatures / Sekundärfeatuers?
 
@@ -114,7 +114,7 @@ Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature 
 </ol>
 
 #### 🟤 Datenverarbeitung (engl. data processing)
-Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering) und Modellbildung (engl. modeling). Bei Merkmalsaufbereitung werden Rohdaten in Merkmale (engl. features) umgewandelt werden, weclhe ein Modell im Anschluss nutzen kann. Bei Modellbildung werden 
+> Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering) und Modellbildung (engl. modeling). Bei Merkmalsaufbereitung werden Rohdaten in Merkmale (engl. features) umgewandelt werden, weclhe ein Modell im Anschluss nutzen kann. Bei Modellbildung werden 
 
  Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl unterteilt werden. Im Merkmalslernen erfolgt die Bildung von Modellen ohne Feature Engineering, basierend auf ...
 <ol>
@@ -170,7 +170,7 @@ Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering)
 ______________
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
-Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalysen (engl. feature analysis) sowie die Modellevaluationen (engl. model evaluations) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
+> Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalysen (engl. feature analysis) sowie die Modellevaluationen (engl. model evaluations) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 <ol> 
   <details>
     <summary>⚪ Datenauswertung (engl. data analysis)</summary>
