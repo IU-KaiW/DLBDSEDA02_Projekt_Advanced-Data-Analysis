@@ -265,9 +265,9 @@ import seaborn as sns
 [^2]: www.github.com
 [^3]: GovData
 [^4]: data.mendeley.com
-Huggingface
+[^5]: Huggingface
 
-<li>Software</li>
+<li>Datenportale/li>
 
 ###### KI-Text-Detector 
 Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
