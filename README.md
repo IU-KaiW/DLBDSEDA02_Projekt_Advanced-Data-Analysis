@@ -60,18 +60,6 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 [^09] `https://data.mendeley.com/datasets/w2cp7h53s5/1`<br>
 [^10] `https://github.com/Schossi2908/DLBDSEDA02_D`<br>
 [^11] `https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets`<br>
-
-[^01]: [D01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)<br>
-[^02]: [D02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)<br>
-[^03]: [D03] (https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)<br>
-[^04]: [D04] (https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)<br>
-[^05]: [D05] (https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints)<br>
-[^06]: [D06] (https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)<br>
-[^07]: [D07] (https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)<br>
-[^08]: [D08] (https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)<br>
-[^09]: [D09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)<br>
-[^10]: [D10] (https://github.com/Schossi2908/DLBDSEDA02_D)<br>
-[^11]: [D11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)<br>
 ______________
 
 
