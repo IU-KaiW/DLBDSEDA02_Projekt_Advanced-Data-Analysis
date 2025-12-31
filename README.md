@@ -276,7 +276,11 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken (engl. librarys)</li>
 
-`pandas`<br>          https://pandas.pydata.org Dokumentation: 
+| Bibliothek | Bezeichnung                        | Bewertung | Größe     |Quelle                     |
+|  `pandas`  |------------------------------------|-----------|-----------|---------------------------|
+
+
+`pandas`         https://pandas.pydata.org Dokumentation: 
 `transformers` <br>   https://pypi.org/project/transformers/ Dokumentation: <br>
 `gensim`<br>          https://pypi.org/project/gensim/<br> Dokumentation: <br>
 `SpaCy`            <br> https://spacy.io<br>Dokumentation: <br>
@@ -335,34 +339,6 @@ GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-starte
 🔵 🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
 
-
-
-
-<ol>
-  <details>
-    <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
-    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur weiteren Verarbeitung vorbereitet.</i></p>
-    <ol type="1">
-      <li>
-        Vektorisierung (engl. vectorization)<br>
-        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
-      <ol type="2">
-       <li>unsemantische Embeddings</li>
-       Hierunter werden 
-          <ul>
-            <li>Frequency Based Embedding</li>
-           BoW, TF-IDF
-          </ul>
-       <li>semantische Embeddings</li>
-          <ul>
-            <li>Prediction Based Word Embedding</li>
-            GloVE; Word2Vec, FastText
-            <li>Contextualized Based Word Embedding</li>
-            ELMO, BERT, GPT
-          </ul>
-    </ol>
-  </details>
-</ol>
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
