@@ -173,8 +173,7 @@ ______________
 <ol> 
   <details>
     <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
-    <p><i>xxxxx</i></p>
-      <summary>Merkmalsauswertungen (engl. feature Inspections)</summary>
+    <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
         𝛼 (Alpha) - Themenmischung pro Dokument<br>
         β (Beta) - Wortverteilung in Themen<br>
