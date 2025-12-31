@@ -185,7 +185,7 @@ ______________
   </details>
   <ol>
   <details>
-    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
+    <summary>⚪ Aggregation (engl. xxxx )<br></summary>
     <p><i>xxxxxxx</i></p>
     <ol type="1">
       <li>Aggregation</li>
