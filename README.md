@@ -254,6 +254,12 @@ ______________
 #### Datenvalidierung (engl. data validation)
 KI Detektor
 
+```console
+`pip install transformers`
+```
+python AITextDetector.py
+
+
 #### Laufzeitumgebung (engl. runtime environment)
 Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
 ```console
