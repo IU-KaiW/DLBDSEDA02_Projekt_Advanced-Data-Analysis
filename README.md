@@ -190,7 +190,7 @@ ____
         <li>
           <details>
             <summary>↳ Evaluation (engl. model evaluation)</summary>
-            <p><i>Modellvergleich</i></p>
+            <p><i>Modellvergleich / Modellperformance</i></p>
           </details>
         </li>
       </ol>
@@ -208,8 +208,7 @@ ____
       </details>
       <details>
         <summary>↳ Aggregation</summary>
-        <p><i>numerische Darstellung</i></p>
-        Modellperformance
+        <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
       </details>
     </details>
   </li>
