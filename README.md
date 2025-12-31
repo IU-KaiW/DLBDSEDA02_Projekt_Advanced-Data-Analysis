@@ -197,7 +197,8 @@ ____
     </details>
   </li>
     <details>
-      <summary>⚪ Datenpräsentation (engl. data presentation)</summary>
+      <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
+      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
       <details>
         <summary>↳ Visualisierung</summary>
         <p><i>grafische Darstellung</i></p>
