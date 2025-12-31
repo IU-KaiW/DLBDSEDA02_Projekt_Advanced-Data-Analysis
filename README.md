@@ -276,9 +276,9 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken (engl. librarys)</li>
 
-| Bibliothek | Bezeichnung                        | Bewertung | Größe     |Quelle                     |
+| Bibliothek | Website                      | Dokumentation | Größe     |Quelle                     |
+|------------|------------------------------------|-----------|-----------|---------------------------|
 |  `pandas`  |------------------------------------|-----------|-----------|---------------------------|
-
 
 `pandas`         https://pandas.pydata.org Dokumentation: 
 `transformers` <br>   https://pypi.org/project/transformers/ Dokumentation: <br>
