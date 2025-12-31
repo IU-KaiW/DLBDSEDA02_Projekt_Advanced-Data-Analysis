@@ -213,7 +213,6 @@ ______________
 ```
 
 ## Installation (engl. setup)
-#### Einrichtung (engl. initial setup)
 ##### Vorbereitende Installation (engl. preparatory setup)
 ###### Datenvalidierung (engl. data validation)
 
@@ -222,6 +221,11 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ```console
 `pip install conda`
 ```
+#### Erstinstallation (engl. initial setup)
+
+
+
+
 
 ##### ⚪ Pipeline Eingabe
 `pandas`[^1].  https://pandas.pydata.org<br>
