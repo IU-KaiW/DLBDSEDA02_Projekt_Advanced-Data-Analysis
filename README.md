@@ -430,7 +430,6 @@ https://emojiterra.com/de/gelber-kreis/
     <details>
       <summary>⚪ Datenauswertung (engl. data analysis)</summary>
       <p><i>xxxxxxx</i></p>
-
       <ol type="1">
         <li>
           <ins>Merkmalsauswertungen (engl. feature inspections)</ins>
@@ -448,11 +447,9 @@ https://emojiterra.com/de/gelber-kreis/
       </ol>
     </details>
   </li>
-
   <li>
     <details>
       <summary>⚪ Datenpräsentation (engl. data presentation)</summary>
-
       <details>
         <summary>↳ Visualisierung</summary>
         <p><i>grafische Darstellung</i></p>
@@ -460,7 +457,6 @@ https://emojiterra.com/de/gelber-kreis/
           <li>PyLDAvis</li>
         </ul>
       </details>
-
       <details>
         <summary>↳ Aggregation</summary>
         <p><i>numerische Darstellung</i></p>
