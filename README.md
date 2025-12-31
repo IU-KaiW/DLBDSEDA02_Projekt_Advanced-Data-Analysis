@@ -212,7 +212,7 @@ ______________
     <details>
       <summary>⚪ Merkmalsauswertungen (engl. feature Inspections)</summary>
       <p><i>Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)</i></p>
-      <ul style="margin-left: 2em; padding-left: 1em;">
+     <ul style="margin-left: 2em; padding-left: 1em; list-style: none;">
         <li>
           <details>
             <summary><ins>↳ Aggregation (engl.)</ins></summary>
@@ -235,7 +235,7 @@ ______________
     <details>
       <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
       <p><i>Modellvergleich / Modellperformance</i></p>
-      <ul style="margin-left: 2em; padding-left: 1em;">
+      <ul style="margin-left: 2em; padding-left: 1em; list-style: none;">
         <li>
           <details>
             <summary><ins>↳ Kohärenz</ins></summary>
