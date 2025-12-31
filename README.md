@@ -229,24 +229,10 @@ Abhängigkeiten (engl. dependencies)
 ###### Bibliotheken (engl. librarys)
 Sprachverarbeitung (engl. NLP-Pipeline)
 Datenkonsolidierung (engl. data consolidation)
-
-
-
-##### ⚪ Pipeline Eingabe
-`pandas`[^1].  https://pandas.pydata.org<br>
-`Gensim`       https://pypi.org/project/gensim/<br>
-`transformers` https://pypi.org/project/transformers/<br>
-`torch`        https://pytorch.org<br>
-
-##### ⚫ Pipeline Verarbeitung
-`spacy`        https://spacy.io<br>
-`nltk`         https://www.nltk.org<br>
-
-##### ⚪ Pipeline Ausgabe
 ###### Visualisierung
+###### Aggregation
 
-`matplotlib`   https://matplotlib.org<br>
-`seaborn`      https://seaborn.pydata.org<br>
+
 
 ```python
 import pandas as pd
@@ -258,6 +244,14 @@ import seaborn as sns
 `Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
 `re`   
 `csv`   
+`matplotlib`   https://matplotlib.org<br>
+`seaborn`      https://seaborn.pydata.org<br>
+`spacy`        https://spacy.io<br>
+`nltk`         https://www.nltk.org<br>
+`pandas`[^1].
+`Gensim`
+`transformers`
+`torch`        
 
 ### Referenzen
 <ul>
