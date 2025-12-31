@@ -276,32 +276,32 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken (engl. librarys)</li>
 
-| Bibliothek    | Website                      | Dokumentation |Verwendung |
-|-------------- |------------------------------|---------------|-----------|
-|  `pandas`     |https://pandas.pydata.org     |---------------|-----------|
-|`transformers` |https://pypi.org/project/transformers/ 
-|`gensim`       |https://pypi.org/project/gensim/<
-|`SpaCy`        |https://spacy.io<
-|`NLTK`         |https://www.nltk.org
-|`matplotlib`   |https://matplotlib.org
-|`seaborn`      |https://seaborn.pydata.org
-|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/
-|`Cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html
-|`matplotlib`   |https://matplotlib.org
-|`seaborn`      |https://seaborn.pydata.org
-|`spacy`        |https://spacy.io
-|`nltk`         |https://www.nltk.org
-|`pandas`       |
-|`gensim`       |
-|`transformers` |
-|`torch`        |
+| Bibliothek    | Website                                                               | Dokumentation |Verwendung |
+|-------------- |-----------------------------------------------------------------------|---------------|-----------|
+|  `pandas`     |https://pandas.pydata.org                                              |               |           |
+|`transformers` |https://pypi.org/project/transformers/                                 |               |           |
+|`gensim`       |https://pypi.org/project/gensim/                                       |               |           |
+|`SpaCy`        |https://spacy.io                                                       |https://spacy.io/usage/spacy-101               |           |
+|`NLTK`         |https://www.nltk.org                                                   |               |           |
+|`matplotlib`   |https://matplotlib.org                                                 |               |           |
+|`seaborn`      |https://seaborn.pydata.org                                             |               |           |
+|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |               |           |
+|`Cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html       |               |           |
+|`matplotlib`   |https://matplotlib.org                                                 |               |           |
+|`seaborn`      |https://seaborn.pydata.org                                             |               |           |
+|`spacy`        |https://spacy.io                                                       |               |           |
+|`nltk`         |https://www.nltk.org                                                   |               |           |
+|`pandas`       |                                                                       |               |           |
+|`gensim`       |                                                                       |               |           |
+|`transformers` |                                                                       |               |           |
+|`torch`        |                                                                       |               |           |
 
 <ins>Standardbibliothek</ins>
 
-| Bibliothek    | Website                      | Dokumentation |Verwendung |
-|-------------- |------------------------------|---------------|-----------|
-|`re`           |                              |               |           |
-|`csv`          |                              |               |          
+| Bibliothek    | Website                                                               | Dokumentation |Verwendung |
+|-------------- |-----------------------------------------------------------------------|---------------|-----------|
+|`re`           |                                                                       |               |           |
+|`csv`          |                                                                       |               |           |
 
 <li>Literatur</li>
 
@@ -322,21 +322,9 @@ Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-ge
 StudySmarter GmbH, 2025 (https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/)
 Radim Řehůřek, 10.08.2024 - (https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html#sphx-glr-auto-examples-tutorials-run-lda-py)
 Christopher Helm, 08.05.2025 - (https://konfuzio.com/de/spacy-vs-nltk/)
+GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-
-
-https://www.kaggle.com<br>
-https://www.github.com<br>
-https://data.mendeley.com<br>
-
-###### Dokumentationen
-SpaCy -  https://spacy.io/usage/spacy-101<br>
-GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
-
-</ul>
-
-🟣 🟢🟠🔴
-🔵 🟡🟤⚫
+🟣🟢🟠🔴🔵🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
 
 
