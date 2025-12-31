@@ -51,7 +51,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ______________
 
 ###### Pipeline-Eingabe
-Es wird Datensatz Nr. 5 "Comcast.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
+Es wird Datensatz Nr. 05 "Comcast.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
 
 ### ⚫ Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication)
@@ -166,6 +166,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
 </ol>
 
 ###### Pipeline Ausgabe (engl. Pipeline Output)
+Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
 ______________
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
@@ -192,6 +193,8 @@ Datenpräsentation  (engl. data presentation)
     </details>
   </li>
 </ol>
+
+`Cartopy`
 
 #### 🔵 Modellauswertung (engl. model evaluation)
 > Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)
