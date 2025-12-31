@@ -59,7 +59,7 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
 Haupt Freatures / Sekundärfeatuers?
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
+> Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
@@ -177,13 +177,14 @@ Datenpräsentation  (engl. data presentation)
 
 #### 🔵 Merkmalsauswertungen (engl. feature Inspections)
 >Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)
-____
 <ol>
     <details>
       <summary>🔵 Aggregation (engl.)</summary>
       <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
+    <ol>
+    <details>
+      <summary>🔵 Visualisierung (engl.)</summary>
           <details>
-            <summary><ins>↳ Visualisierung (engl.)</ins></summary>
             <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.<</i></p>
         <ul>
           <li>PyLDAvis</li>
