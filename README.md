@@ -46,7 +46,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 06 | user_complaints                    | 0,69 %    | 229,0  kB |[^06]  GitHub        |
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07]  Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08]  MendeleyData  |
-| 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09]  GitHub        |
+| 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09]" "GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle        |
 ______________
 
