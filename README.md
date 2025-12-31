@@ -276,32 +276,32 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken (engl. librarys)</li>
 
-| Bibliothek | Website                      | Dokumentation | Größe     |Quelle                     |
-|------------|------------------------------------|-----------|-----------|---------------------------|
-|  `pandas`  |------------------------------------|-----------|-----------|---------------------------|
-
-`pandas`         https://pandas.pydata.org Dokumentation: 
-`transformers` <br>   https://pypi.org/project/transformers/ Dokumentation: <br>
-`gensim`<br>          https://pypi.org/project/gensim/<br> Dokumentation: <br>
-`SpaCy`            <br> https://spacy.io<br>Dokumentation: <br>
-`NLTK`            <br>https://www.nltk.org<br> Dokumentation: <br>
-`matplotlib`      <br>https://matplotlib.org<br> Dokumentation: <br>
-`seaborn`         <br>https://seaborn.pydata.org<br> Dokumentation: <br>
-`PyLDAvis`        <br>https://pypi.org/project/pyLDAvis/<br> Dokumentation: <br>
-`Cartopy`         <br>https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
-`matplotlib`      <br>https://matplotlib.org<br>
-`seaborn`         <br>https://seaborn.pydata.org<br>
-`spacy`           <br>https://spacy.io<br>
-`nltk`            <br>https://www.nltk.org<br>
-`pandas`
-`gensim`<br>
-`transformers`<br>
-`torch`    <br>
+| Bibliothek    | Website                      | Dokumentation |Verwendung |
+|-------------- |------------------------------|---------------|-----------|
+|  `pandas`     |https://pandas.pydata.org     |---------------|-----------|
+|`transformers` |https://pypi.org/project/transformers/ 
+|`gensim`       |https://pypi.org/project/gensim/<
+|`SpaCy`        |https://spacy.io<
+|`NLTK`         |https://www.nltk.org
+|`matplotlib`   |https://matplotlib.org
+|`seaborn`      |https://seaborn.pydata.org
+|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/
+|`Cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html
+|`matplotlib`   |https://matplotlib.org
+|`seaborn`      |https://seaborn.pydata.org
+|`spacy`        |https://spacy.io
+|`nltk`         |https://www.nltk.org
+|`pandas`       |
+|`gensim`       |
+|`transformers` |
+|`torch`        |
 
 <ins>Standardbibliothek</ins>
 
-`re`   <br>
-`csv`  <br>
+| Bibliothek    | Website                      | Dokumentation |Verwendung |
+|-------------- |------------------------------|---------------|-----------|
+|`re`           |                              |               |           |
+|`csv`          |                              |               |          
 
 <li>Literatur</li>
 
