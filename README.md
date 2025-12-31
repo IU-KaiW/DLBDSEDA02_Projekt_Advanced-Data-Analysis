@@ -34,6 +34,10 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     </details>
 </ol>
 
+Datensatzprüfung:
+`library 1`
+`library 2`
+
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
 | 01 | Consumer_Complaints.csv            | n/a       | 59,40  MB |[^01] &nbsp; Kaggle        |
@@ -210,16 +214,16 @@ Visualisierung:
     <ol>
     </details>
     <details>
-      <summary>🔵 Perplexität (engl. Perplexity)</summary>
+      <summary>🔵 Perplexität (engl. perplexity)</summary>
         <p><i>xxxxx</i></p>
     </details>
   </li>
 </ol>
 
-Kohärenz
+Kohärenz:
 `library 1`
 `library 2`
-Perplexität
+Perplexität:
 `library 3`
 `library 4`
 ______________
