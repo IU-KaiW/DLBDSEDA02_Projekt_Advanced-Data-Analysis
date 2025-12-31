@@ -223,7 +223,12 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ```
 #### Erstinstallation (engl. initial setup)
 
+###### Voraussetzungen (engl. prerequisite setup)
+Abhängigkeiten (engl. dependencies)
 
+###### Bibliotheken (engl. librarys)
+Sprachverarbeitung (engl. NLP-Pipeline)
+Datenkonsolidierung (engl. data consolidation)
 
 
 
