@@ -35,7 +35,7 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 </ol>
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt. Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte die Anzahl begrenzt.<br>
 
-```markdown
+
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle        |
 |----|------------------------------------|-----------|-----------|--------------|
 | 01 | Consumer_Complaints.csv            | n/a       | 59,40  MB |Kaggle [^01]  |
@@ -48,7 +48,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |Kaggle        |
-```
+
 Links
 [^01] ; [^02] ; [^03] ; [^04] ; [^05] ; [^06] ; [^07] ; [^08] ; [^09] ; [^10]
 
