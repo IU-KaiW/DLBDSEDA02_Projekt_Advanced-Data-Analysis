@@ -186,10 +186,8 @@ ______________
   <ol>
   <details>
     <summary>⚪ Aggregation (engl. xxxx )<br></summary>
-    <p><i>xxxxxxx</i></p>
+    <p><i>Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.<br></i></p>
     <ol type="1">
-      <li>Aggregation</li>
-      Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.<br>
       <li>Visualisierung</li>
       <i>Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen, während Visualisierung diese aggregierten Daten grafisch darstellt, um Muster erkennbar zu machen.</i>
       <i>grafische Darstellung</i><br>
