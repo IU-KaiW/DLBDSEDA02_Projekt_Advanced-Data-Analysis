@@ -278,6 +278,7 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 
 
 
+
 ```python
 import pandas as pd
 import numpy as np
@@ -290,7 +291,7 @@ import seaborn as sns
 <li>Externe Software</li>
 
 ###### Detektor
-Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
+Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python
 
 <li>Bibliotheken (engl. librarys)</li>
 
