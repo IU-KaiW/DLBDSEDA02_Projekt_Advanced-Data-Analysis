@@ -256,7 +256,7 @@ import seaborn as sns
 `seaborn`      https://seaborn.pydata.org<br>
 `spacy`        https://spacy.io<br>
 `nltk`         https://www.nltk.org<br>
-`pandas`[^1].
+`pandas`
 `Gensim`
 `transformers`
 `torch`        
