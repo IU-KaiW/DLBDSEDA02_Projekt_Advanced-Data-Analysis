@@ -61,7 +61,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 [^10] `https://github.com/Schossi2908/DLBDSEDA02_D`<br>
 [^11] `https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets`<br>
 
-[^01]: [D01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)<br>
+[^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)<br>
 [^02]: [D02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)<br>
 [^03]: [D03] (https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)<br>
 [^04]: [D04] (https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)<br>
