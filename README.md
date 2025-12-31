@@ -56,20 +56,22 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 [^5]. [D5](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
 [^6]. [D6](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
 [^7]. [D7](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
-[^8]. [D8]
-[^9]. [D9]
-[^10].[10]
+[^8]. [D8](https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
+[^9]. [D9](https://data.mendeley.com/datasets/w2cp7h53s5/1)
+[^10].[D10](https://github.com/Schossi2908/DLBDSEDA02_D)
+[^11].[D11](https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 
 [^1]: [Kaggle] https://www.kaggle.com/datasets/ashwinik/
 [^2]: [Kaggle] https://www.kaggle.com/datasets/selener/
-[^3]: [] www.github.com
-[^4]: [] GovData
+[^3]: [GitHub] www.github.com
+[^4]: [GovData] GovData
 [^5]: [MendeleyData] data.mendeley.com
-[^6]: [] Huggingface
-[^7]:   
+[^6]: [Huggingface] Huggingface
+[^7]: []
 [^8]:
 [^9]:
 [^10]:      
+[^11]:     
 ______________
 
 ###### Pipeline-Eingabe
