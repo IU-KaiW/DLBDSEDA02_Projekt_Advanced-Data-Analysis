@@ -55,10 +55,10 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 [^4]. [D4](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
 [^5]. [D5](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
 [^6]. [D6](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
-[^7].
-[^8].
-[^9].
-[^10].
+[^7]. [D7](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
+[^8]. [D8]
+[^9]. [D9]
+[^10].[10]
 
 [^1]: [Kaggle] https://www.kaggle.com/datasets/ashwinik/
 [^2]: [Kaggle] https://www.kaggle.com/datasets/selener/
