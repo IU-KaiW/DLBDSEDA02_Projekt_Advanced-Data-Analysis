@@ -265,19 +265,7 @@ import pandas as pd
 import numpy as np
 import matplotlib as mpl
 import seaborn as sns
-```
-
-`Cartopy`      https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
-`re`   
-`csv`   
-`matplotlib`   https://matplotlib.org<br>
-`seaborn`      https://seaborn.pydata.org<br>
-`spacy`        https://spacy.io<br>
-`nltk`         https://www.nltk.org<br>
-`pandas`
-`Gensim`
-`transformers`
-`torch`        
+```    
 
 ### Referenzen
 <ul>
@@ -288,38 +276,28 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken (engl. librarys)</li>
 
+`pandas`          https://pandas.pydata.org<br>Dokumentation: 
+`transformers`    https://pypi.org/project/transformers/<br>Dokumentation: 
+`gensim`          https://pypi.org/project/gensim/<br> Dokumentation: 
+`SpaCy`           https://spacy.io<br>Dokumentation: 
+`NLTK`            https://www.nltk.org<br> Dokumentation: 
+`matplotlib`      https://matplotlib.org<br> Dokumentation: 
+`seaborn`         https://seaborn.pydata.org<br> Dokumentation: 
+`PyLDAvis`        https://pypi.org/project/pyLDAvis/<br> Dokumentation: 
+`Cartopy`         https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
+`matplotlib`      https://matplotlib.org<br>
+`seaborn`         https://seaborn.pydata.org<br>
+`spacy`           https://spacy.io<br>
+`nltk`            https://www.nltk.org<br>
+`pandas`
+`gensim`
+`transformers`
+`torch`    
 
-###### Einrichtung (engl. initial setup)
-`pandas` https://pandas.pydata.org<br>
+<ins>Standardbibliothek</ins>
 
-###### Vorprüfung
-`transformers`https://pypi.org/project/transformers/<br>
-
-
-###### NLP-Pipeline
-`Gensim` https://pypi.org/project/gensim/<br>
-Dokumentation: 
-
-`SpaCy` https://spacy.io<br>
-Dokumentation: 
-
-`NLTK`https://www.nltk.org<br>
-Dokumentation: 
-
-
-###### Nachverarbeitung
-Visualisierung
-`matplotlib` https://matplotlib.org<br>
-Dokumentation: 
-
-`seaborn` https://seaborn.pydata.org<br>
-Dokumentation: 
-
-`PyLDAvis`     https://pypi.org/project/pyLDAvis/
-Dokumentation: 
-
-Evaluation
-
+`re`   
+`csv`   
 
 <li>Literatur</li>
 
