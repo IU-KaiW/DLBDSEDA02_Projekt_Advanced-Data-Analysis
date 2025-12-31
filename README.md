@@ -26,7 +26,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand eines KI-Text-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden. </i><br>
+      <i>Die gesammelten Datensätze werden anhand eines KI-Text-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden. </i><br></br>
       <div style="margin-left: 2em;">
         <code>transformers</code>&nbsp;<code>torch</code><br></br>
       </div>
@@ -112,7 +112,7 @@ Haupt Freatures / Sekundärfeatuers?
         SpaCy
       </li>
       <div style="margin-left: 2em;">
-        <code>SpaCy</code>&nbsp;<code>torch</code><br></br>
+        <code>SpaCy</code>&nbsp;<code>????</code><br></br>
       </div>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
@@ -197,6 +197,10 @@ Datenpräsentation  (engl. data presentation)
     <details>
       <summary>🔵 Visualisierung (engl. visualization)</summary>
             <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.<</i></p>
+           </i><br></br>
+      <div style="margin-left: 2em;">
+        <code>PyLDAvis</code>&nbsp;<code>???</code><br></br>
+      </div>
         <ul>
           <li>PyLDAvis</li>
         </ul>
