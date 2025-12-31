@@ -195,6 +195,11 @@ ____
           </details>
     </details>
   </li>
+</ol>
+
+#### 🔵 Modellauswertung (engl. model evaluation)
+> Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)
+<ol>
       <details>
       <summary>🔵 Modellauswertung (engl. model evaluation)</summary>
       <p><i>Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)</p>
