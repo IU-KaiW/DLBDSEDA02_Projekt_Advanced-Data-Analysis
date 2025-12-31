@@ -16,14 +16,20 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
       <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
+</ol>
+<ol>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
       <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert.</i></br>
     </details>
+</ol>
+<ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
       <i>Die gesammelten Datensätze werden anhand eines KI-Text-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden. </i><br>
     </details>
+</ol>
+<ol>    
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
       <i>Durch eine Häufigkeitsauswertung der Label wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen die die Formel:</i><br>
