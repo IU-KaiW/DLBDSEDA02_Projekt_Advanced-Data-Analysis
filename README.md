@@ -219,10 +219,10 @@ Visualisierung:
   </li>
 </ol>
 
-Kohärenz (engl. coherence)
+Kohärenz
 `library 1`
 `library 2`
-Perplexität (engl. perplexity)
+Perplexität
 `library 3`
 `library 4`
 ______________
