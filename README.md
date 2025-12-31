@@ -271,14 +271,6 @@ import seaborn as sns
 
 ### Referenzen
 <ul>
-<li>Datenportale</li>
-
-###### Kaggle
-###### GovData
-###### MendeleyData
-###### Huggingface
-###### Github
-
 <li>Externe Software</li>
 
 ###### Detektor
