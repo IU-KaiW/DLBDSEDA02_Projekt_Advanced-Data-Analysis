@@ -187,7 +187,7 @@ ____
         </li>
         <li>
           <details>
-            <summary>↳ Evaluation (engl. model evaluation)</summary>
+            <summary><ins>↳ Evaluation (engl. model evaluation)</ins></summary>
             <p><i>Modellvergleich / Modellperformance</i></p>
           </details>
         </li>
