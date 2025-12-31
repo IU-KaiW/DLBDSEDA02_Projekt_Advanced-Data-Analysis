@@ -31,7 +31,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 </ol>
     <div style="margin-left: 2em;">
       `transformers`<br>
-      `torch`<br>
+      <code>`torch`</code><br>
     </div>
 <ol>    
     <details>
