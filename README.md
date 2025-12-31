@@ -29,10 +29,12 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <i>Die gesammelten Datensätze werden anhand eines KI-Text-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden. </i><br>
     </details>
 </ol>
+<ol>   
     <div style="margin-left: 2em;">
-      `transformers`<br>
-      <code>`torch`</code><br>
+      <code>transformers</code><br>
+      <code>torch</code><br>
     </div>
+</ol>
 <ol>    
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
