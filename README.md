@@ -28,11 +28,11 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
       <i>Die gesammelten Datensätze werden anhand eines KI-Text-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden. </i><br>
     </details>
-</ol>
-    <div style="margin-left: 2em;">
-      <code>transformers</code>&nbsp;<code>torch</code><br>
-    </div>
-<ol>    
+    </ol>
+      <div style="margin-left: 2em;">
+        <code>transformers</code>&nbsp;<code>torch</code><br>
+      </div>
+    <ol>    
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
       <i>Durch eine Häufigkeitsauswertung der Label wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen die die Formel:</i><br>
