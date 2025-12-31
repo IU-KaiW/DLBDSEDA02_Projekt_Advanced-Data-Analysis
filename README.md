@@ -10,7 +10,7 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 
       
 ### ⚪ Datenakquisition (engl. data acquisition)
-> In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
@@ -59,7 +59,7 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
 Haupt Freatures / Sekundärfeatuers?
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
+> Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
