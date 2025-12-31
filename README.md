@@ -13,7 +13,7 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 > In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
     <details>
-      <summary>⚪ <u> Datensatzrecherche (engl. dataset research) <u></b></summary>
+      <summary>⚪<u>Datensatzrecherche (engl. dataset research)</u></b></summary>
       <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
@@ -36,8 +36,8 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt. Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte die Anzahl begrenzt.<br><br>
 
 
-| Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle              |
-|----|------------------------------------|-----------|-----------|--------------------|
+| Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
+|----|------------------------------------|-----------|-----------|---------------------------|
 | 01 | Consumer_Complaints.csv            | n/a       | 59,40  MB |[^01] &nbsp; Kaggle        |
 | 02 | rows.csv                           | n/a       | 176    MB |[^02] &nbsp; Kaggle        |
 | 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
@@ -47,7 +47,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
-| 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle        |
+| 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
 ______________
 
 ###### Pipeline-Eingabe
