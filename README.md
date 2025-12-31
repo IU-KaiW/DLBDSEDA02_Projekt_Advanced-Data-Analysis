@@ -207,40 +207,27 @@ ____
 </ol>
 ______________
 
+1. ⚪ Merkmalsauswertungen (engl. feature Inspections)
+   
+   *Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; Kᵀ (n × k)*
+   
+   - ↳ **Aggregation (engl.)**
+     *alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert...*
+   
+   - ↳ **Visualisierung (engl.)**
+     *grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar...*
+     
+     - PyLDAvis
 
-<ol>
-  <li>
-    <details>
-      <summary>⚪ Merkmalsauswertungen (engl. feature Inspections)</summary>
-      <p><i>Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)</i></p>
-      <details>
-        <summary><ins>↳ Aggregation (engl.)</ins></summary>
-        <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge…</i></p>
-      </details>
-      <details>
-        <summary><ins>↳ Visualisierung (engl.)</ins></summary>
-        <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar…</i></p>
-        <ul>
-          <li>PyLDAvis</li>
-        </ul>
-      </details>
-    </details>
-  </li>
-  <li>  <!-- ← HIER fehlte das <li> für Einrückung! -->
-    <details>
-      <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
-      <p><i>Modellvergleich / Modellperformance; Evaluation</i></p>
-      <details>
-        <summary><ins>↳ Kohärenz</ins></summary>
-        <p><i>Coherence</i></p>
-      </details>
-      <details>
-        <summary><ins>↳ Perplexity</ins></summary>
-        <p><i>Perplexity</i></p>
-      </details>
-    </details>
-  </li>
-</ol>
+2. ⚪ Modellauswertung (engl. model evaluation)
+   
+   *Modellvergleich / Modellperformance*
+   
+   - ↳ **Kohärenz**
+     *Coherence*
+   
+   - ↳ **Perplexity**
+     *Perplexity*
 
 
 ## Projektstruktur
