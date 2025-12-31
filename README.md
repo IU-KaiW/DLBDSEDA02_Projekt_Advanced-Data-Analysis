@@ -175,7 +175,7 @@ ______________
     <summary>⚪ Datenauswertung (engl. data analysis)</summary>
     <p><i>xxxxxxx</i></p>
     <ol type="1">
-      <li>Merkmalsauswertungen (engl. feature Inspections)</li>
+      <summary>Merkmalsauswertungen (engl. feature Inspections)</summary>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
         𝛼 (Alpha) - Themenmischung pro Dokument<br>
         β (Beta) - Wortverteilung in Themen<br>
@@ -399,3 +399,29 @@ https://emojiterra.com/de/gelber-kreis/
 [^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
+
+<ol> 
+  <details>
+    <summary>⚪ Datenauswertung (engl. data analysis)</summary>
+    <p><i>xxxxxxx</i></p>
+    <ol type="1">
+      <li><ins>Merkmalsauswertungen (engl. feature Inspections)</ins></li>
+      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
+        𝛼 (Alpha) - Themenmischung pro Dokument<br>
+        β (Beta) - Wortverteilung in Themen<br>
+        K<sup>T</sup> (n × k)
+    <summary> Evaluation (engl. model evaluation)</summary>
+    <i>Modellvergleich</i><br>
+  </details>
+<ol>
+  <details>
+    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
+    <summary>⚪ Visualisierung</summary>
+    <i>grafische Darstellung</i><br>
+    <li>PyLDAvis</li>
+    <summary>⚪ Aggregation</summary>
+    <i>numerische Darstellung</i>
+    Modellperformance
+
+  </details>
+</ol>
