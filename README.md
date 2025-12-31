@@ -276,28 +276,28 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 <li>Bibliotheken (engl. librarys)</li>
 
-`pandas`          https://pandas.pydata.org<br>Dokumentation: 
-`transformers`    https://pypi.org/project/transformers/<br>Dokumentation: 
-`gensim`          https://pypi.org/project/gensim/<br> Dokumentation: 
-`SpaCy`           https://spacy.io<br>Dokumentation: 
-`NLTK`            https://www.nltk.org<br> Dokumentation: 
-`matplotlib`      https://matplotlib.org<br> Dokumentation: 
-`seaborn`         https://seaborn.pydata.org<br> Dokumentation: 
-`PyLDAvis`        https://pypi.org/project/pyLDAvis/<br> Dokumentation: 
-`Cartopy`         https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
-`matplotlib`      https://matplotlib.org<br>
-`seaborn`         https://seaborn.pydata.org<br>
-`spacy`           https://spacy.io<br>
-`nltk`            https://www.nltk.org<br>
+`pandas`<br>          https://pandas.pydata.org Dokumentation: 
+`transformers` <br>   https://pypi.org/project/transformers/ Dokumentation: <br>
+`gensim`<br>          https://pypi.org/project/gensim/<br> Dokumentation: <br>
+`SpaCy`            <br> https://spacy.io<br>Dokumentation: <br>
+`NLTK`            <br>https://www.nltk.org<br> Dokumentation: <br>
+`matplotlib`      <br>https://matplotlib.org<br> Dokumentation: <br>
+`seaborn`         <br>https://seaborn.pydata.org<br> Dokumentation: <br>
+`PyLDAvis`        <br>https://pypi.org/project/pyLDAvis/<br> Dokumentation: <br>
+`Cartopy`         <br>https://cartopy.readthedocs.io/stable/getting_started/index.html<br>
+`matplotlib`      <br>https://matplotlib.org<br>
+`seaborn`         <br>https://seaborn.pydata.org<br>
+`spacy`           <br>https://spacy.io<br>
+`nltk`            <br>https://www.nltk.org<br>
 `pandas`
-`gensim`
-`transformers`
-`torch`    
+`gensim`<br>
+`transformers`<br>
+`torch`    <br>
 
 <ins>Standardbibliothek</ins>
 
-`re`   
-`csv`   
+`re`   <br>
+`csv`  <br>
 
 <li>Literatur</li>
 
