@@ -209,6 +209,9 @@ Visualisierung:
       <p><i>xxxx</i></p>
     <ol>
     </details>
+    ```markdown
+    `library 1`
+    ```
     <details>
       <summary>🔵 Perplexität (engl. Perplexity)</summary>
         <p><i>xxxxx</i></p>
@@ -219,10 +222,10 @@ Visualisierung:
   </li>
 </ol>
 
->Kohärenz
+Kohärenz
 `library 1`
 `library 2`
->Perplexität
+Perplexität
 `library 3`
 `library 4`
 ______________
