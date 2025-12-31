@@ -49,27 +49,27 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
-[^1]. [D01](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
-[^2]. [D02](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
-[^3]. [D03](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
-[^4]. [D04](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
-[^5]. [D05](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
-[^6]. [D06](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
-[^7]. [D07](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
-[^8]. [D08](https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
-[^9]. [D09](https://data.mendeley.com/datasets/w2cp7h53s5/1)
+[^01]. [D01](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
+[^02]. [D02](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
+[^03]. [D03](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
+[^04]. [D04](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
+[^05]. [D05](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
+[^06]. [D06](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
+[^07]. [D07](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
+[^08]. [D08](https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
+[^09]. [D09](https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^10].[D10](https://github.com/Schossi2908/DLBDSEDA02_D)
 [^11].[D11](https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 
-[^1]: [Kaggle] https://www.kaggle.com/datasets/ashwinik/
-[^2]: [Kaggle] https://www.kaggle.com/datasets/selener/
-[^3]: [GitHub] www.github.com
-[^4]: [GovData] GovData
-[^5]: [MendeleyData] data.mendeley.com
-[^6]: [Huggingface] Huggingface
-[^7]: []
-[^8]:
-[^9]:
+[^01]: [Kaggle] https://www.kaggle.com/datasets/ashwinik/
+[^02]: [Kaggle] https://www.kaggle.com/datasets/selener/
+[^03]: [GitHub] www.github.com
+[^04]: [GovData] GovData
+[^05]: [MendeleyData] data.mendeley.com
+[^06]: [Huggingface] Huggingface
+[^07]: []
+[^08]:
+[^09]:
 [^10]:      
 [^11]:     
 ______________
