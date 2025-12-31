@@ -194,11 +194,11 @@ Datenpräsentation  (engl. data presentation)
   </li>
 </ol>
 
-Visualisierung: 
-`library 1`;
+Aggregation: 
+`library 1`
 `library 2`
-Evaluierung: 
-`library 3`;
+Visualisierung: 
+`library 3`
 `library 4`
 
 #### 🔵 Modellauswertung (engl. model evaluation)
