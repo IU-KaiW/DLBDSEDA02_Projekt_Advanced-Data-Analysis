@@ -174,12 +174,10 @@ ______________
 
 
 ____
-
 <ol>
     <details>
       <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-      <ol type="1">
         <li>
           <ins>Merkmalsauswertungen (engl. feature inspections)</ins>
           <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
@@ -193,7 +191,6 @@ ____
             <p><i>Modellvergleich / Modellperformance</i></p>
           </details>
         </li>
-      </ol>
     </details>
   </li>
     <details>
