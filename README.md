@@ -215,8 +215,9 @@ ______________
 ## Installation (engl. setup)
 #### Einrichtung (engl. initial setup)
 ##### Vorbereitende Installation (engl. preparatory setup)
+###### Datenvalidierung (engl. data validation)
 
-##### Virtuelle Umgebung (engl. virtual environment)
+###### Laufzeitumgebung (engl. runtime environment)
 Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
 ```console
 `pip install conda`
