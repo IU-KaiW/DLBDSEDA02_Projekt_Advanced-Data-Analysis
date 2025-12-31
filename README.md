@@ -180,7 +180,7 @@ Datenpräsentation  (engl. data presentation)
 ____
 <ol>
     <details>
-      <summary>⚪ Aggregation (engl.)</summary>
+      <summary>🔵 Aggregation (engl.)</summary>
       <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
           <details>
             <summary><ins>↳ Aggregation (engl.)</ins></summary>
@@ -196,7 +196,7 @@ ____
     </details>
   </li>
       <details>
-      <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
+      <summary>🔵 Modellauswertung (engl. model evaluation)</summary>
       <p><i>Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)</p>
           <details>
             <summary><ins>↳ Kohärenz</ins></summary>
