@@ -50,14 +50,23 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
 [^1]. [Test 1](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
-[^2]. [Test 2](https://www.kaggle.com/datasets/selener/consumer-complaint-database) 
-[^1]: [Kaggle] https://www.kaggle.com/datasets/ashwinik/
-[^2]: www.kaggle.com/](https://www.kaggle.com/datasets/selener/
-[^2]: www.github.com
-[^3]: GovData
-[^4]: data.mendeley.com
-[^5]: Huggingface
+[^2]. [Test 2](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
+[^3]. [Test 3]  
+[^4]. [Test 4] 
+[^5]. [Test 5] 
+[^6.] [Test 6] 
 
+
+
+
+
+[^1]: [Kaggle] https://www.kaggle.com/datasets/ashwinik/
+[^2]: [Kaggle] https://www.kaggle.com/datasets/selener/
+[^3]: [] (www.github.com)
+[^4]: GovData
+[^5]: data.mendeley.com
+[^6]: Huggingface
+[^7]:   
 ______________
 
 ###### Pipeline-Eingabe
