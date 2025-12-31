@@ -219,10 +219,10 @@ Visualisierung:
   </li>
 </ol>
 
-Kohärenz
+>Kohärenz
 `library 1`
 `library 2`
-Perplexität
+>Perplexität
 `library 3`
 `library 4`
 ______________
