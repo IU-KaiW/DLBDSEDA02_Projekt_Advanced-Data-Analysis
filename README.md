@@ -39,15 +39,15 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle              |
 |----|------------------------------------|-----------|-----------|--------------------|
 | 01 | Consumer_Complaints.csv            | n/a       | 59,40  MB |[^01] &nbsp; Kaggle        |
-| 02 | rows.csv                           | n/a       | 176    MB |[^02] &nbspKaggle        |
-| 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |[^03] &nbspKaggle/GovData|
-| 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbspKaggle        |
-| 05 | Comcast.csv                        | 82 %      | 60,0   kB |[^05] &nbspKaggle        |
-| 06 | user_complaints                    | 0,69 %    | 229,0  kB |[^06] &nbspGitHub        |
-| 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbspKaggle        |
-| 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbspMendeleyData  |
-| 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbspGitHub        |
-| 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] &nbspKaggle        |
+| 02 | rows.csv                           | n/a       | 176    MB |[^02] &nbsp; Kaggle        |
+| 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
+| 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbsp; Kaggle        |
+| 05 | Comcast.csv                        | 82 %      | 60,0   kB |[^05] &nbsp; Kaggle        |
+| 06 | user_complaints                    | 0,69 %    | 229,0  kB |[^06] &nbsp; GitHub        |
+| 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
+| 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
+| 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
+| 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle        |
 ______________
 
 ###### Pipeline-Eingabe
