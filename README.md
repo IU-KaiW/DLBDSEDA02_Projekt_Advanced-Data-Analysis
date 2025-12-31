@@ -174,6 +174,7 @@ ______________
   <details>
     <summary>⚪ Datenauswertung (engl. data analysis)</summary>
     <p><i>xxxxxxx</i></p>
+    <ol type="1">
       <summary>Merkmalsauswertungen (engl. feature Inspections)</summary>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
         𝛼 (Alpha) - Themenmischung pro Dokument<br>
@@ -418,9 +419,14 @@ https://emojiterra.com/de/gelber-kreis/
     <summary>⚪ Visualisierung</summary>
     <i>grafische Darstellung</i><br>
     <li>PyLDAvis</li>
+  </details>
+  <details>
+    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
+    <summary>⚪ Visualisierung</summary>
+    <i>grafische Darstellung</i><br>
+    <li>PyLDAvis</li>
     <summary>⚪ Aggregation</summary>
     <i>numerische Darstellung</i>
     Modellperformance
-
   </details>
 </ol>
