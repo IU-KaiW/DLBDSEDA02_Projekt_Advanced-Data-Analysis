@@ -13,7 +13,7 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 > In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
     <details>
-      <summary>⚪Datensatzrecherche (engl. dataset research)</b></summary>
+      <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
       <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
     </details>
     <details>
@@ -177,10 +177,7 @@ ____
 <ol>
     <details>
       <summary>⚪ Merkmalsauswertungen (engl. feature Inspections)</summary>
-      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-          𝛼 (Alpha) – Themenmischung pro Dokument<br>
-          β (Beta) – Wortverteilung in Themen<br>
-          K<sup>T</sup> (n × k)
+      <p><i>Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)</i></p>
           <details>
             <summary><ins>↳ Aggregation (engl.)</ins></summary>
             <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
