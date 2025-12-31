@@ -255,7 +255,17 @@ import seaborn as sns
 `torch`        
 
 ### Referenzen
+<ol>
+1
+</ol>
 <ul>
+###### Datenportale
+[^1]: www.kaggle.com/
+[^2]: www.github.com
+[^3]: GovData
+[^4]: data.mendeley.com
+Huggingface
+
 <li>Software</li>
 
 ###### KI-Text-Detector 
@@ -317,12 +327,6 @@ Radim Řehůřek, 10.08.2024 - (https://radimrehurek.com/gensim/auto_examples/tu
 Christopher Helm, 08.05.2025 - (https://konfuzio.com/de/spacy-vs-nltk/)
 
 
-###### Datenportale
-[^1]: www.kaggle.com/
-[^2]: www.github.com
-[^3]: GovData
-[^4]: data.mendeley.com
-Huggingface
 
 https://www.kaggle.com<br>
 https://www.github.com<br>
