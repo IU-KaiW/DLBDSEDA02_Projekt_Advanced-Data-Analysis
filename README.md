@@ -49,17 +49,17 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
-[^01] ; 
-[^02] 
-[^03] 
-[^04] 
-[^05] `(https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints`<br>
-[^06] `https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv`<br>
-[^07] `https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv`<br>
-[^08] `https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints`<br>
-[^09] `https://data.mendeley.com/datasets/w2cp7h53s5/1`<br>
-[^10] `https://github.com/Schossi2908/DLBDSEDA02_D`<br>
-[^11] `https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets`<br>
+[^01] ;
+[^02]  ;
+[^03]  ;
+[^04]  ;
+[^05];
+[^06];
+[^07]
+[^08]
+[^09]
+[^10]
+[^11]
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)<br>
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)<br>
