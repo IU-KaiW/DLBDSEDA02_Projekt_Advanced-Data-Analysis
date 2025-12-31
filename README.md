@@ -424,3 +424,48 @@ https://emojiterra.com/de/gelber-kreis/
     Modellperformance
   </details>
 </ol>
+
+<ol>
+  <li>
+    <details>
+      <summary>⚪ Datenauswertung (engl. data analysis)</summary>
+      <p><i>xxxxxxx</i></p>
+
+      <ol type="1">
+        <li>
+          <ins>Merkmalsauswertungen (engl. feature inspections)</ins>
+          <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
+          𝛼 (Alpha) – Themenmischung pro Dokument<br>
+          β (Beta) – Wortverteilung in Themen<br>
+          K<sup>T</sup> (n × k)
+        </li>
+        <li>
+          <details>
+            <summary>↳ Evaluation (engl. model evaluation)</summary>
+            <p><i>Modellvergleich</i></p>
+          </details>
+        </li>
+      </ol>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>⚪ Datenpräsentation (engl. data presentation)</summary>
+
+      <details>
+        <summary>↳ Visualisierung</summary>
+        <p><i>grafische Darstellung</i></p>
+        <ul>
+          <li>PyLDAvis</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>↳ Aggregation</summary>
+        <p><i>numerische Darstellung</i></p>
+        Modellperformance
+      </details>
+    </details>
+  </li>
+</ol>
