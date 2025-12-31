@@ -49,9 +49,9 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
-[^01]. [D01](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
-[^02]. [D02](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
-[^03]. [D03](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
+[^01] [D01](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
+[^02] [D02](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
+[^03] [D03](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
 [^04]. [D04](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
 [^05]. [D05](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
 [^06]. [D06](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
