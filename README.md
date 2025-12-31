@@ -213,22 +213,23 @@ ______________
 ```
 
 ## Installation (engl. setup)
-##### Vorbereitende Installation (engl. preparatory setup)
-###### Datenvalidierung (engl. data validation)
+### Vorbereitende Installation (engl. preparatory setup)
+#### Datenvalidierung (engl. data validation)
+KI Detektor
 
-###### Laufzeitumgebung (engl. runtime environment)
+#### Laufzeitumgebung (engl. runtime environment)
 Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
 ```console
 `pip install conda`
 ```
-#### Erstinstallation (engl. initial setup)
+### Erstinstallation (engl. initial setup)
 
-###### Voraussetzungen (engl. prerequisite setup)
-Abhängigkeiten (engl. dependencies)
+#### Voraussetzungen (engl. prerequisite setup)
+##### Abhängigkeiten (engl. dependencies)
 
-###### Bibliotheken (engl. librarys)
-####### Sprachverarbeitung (engl. NLP-Pipeline)
-####### Datenkonsolidierung (engl. data consolidation)
+#### Bibliotheken (engl. librarys)
+##### Sprachverarbeitung (engl. NLP-Pipeline)
+##### Datenkonsolidierung (engl. data consolidation)
 ###### Visualisierung
 ###### Aggregation
 
