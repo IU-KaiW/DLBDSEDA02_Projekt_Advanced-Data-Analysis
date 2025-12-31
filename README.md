@@ -191,8 +191,7 @@ ______________
     <details>
     <summary>⚪ Visualisierung (engl. )<br></summary>    
       <i>Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i>
-      <i>grafische Darstellung</i><br>
-      PyLDAvis
+      `PyLDAvis`
       <i>numerische Darstellung</i>
       <i>Modellperformance<i>
     </ol>
