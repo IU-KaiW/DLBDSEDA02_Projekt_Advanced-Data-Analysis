@@ -43,25 +43,25 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 03  | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB | Kaggle/GovData |
 | 04  | complaints_processed.csv           | 64,72 %   | 19,8   MB | Kaggle         |
 | 05  | Comcast.csv                        | 82 %      | 60,0   kB | Kaggle         |
-| 07  | user_complaints                    | 0,69 %    | 229,0  kB | GitHub         |
-| 08  | consumer_complaints.csv            | n/a       | 175,39 MB | Kaggle         |
-| 09  | Complaints_Reports_Data.sql        | n/a       | 3,28   MB | MendeleyData   |
-| 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         |
-| 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         |
+| 06  | user_complaints                    | 0,69 %    | 229,0  kB | GitHub         |
+| 07  | consumer_complaints.csv            | n/a       | 175,39 MB | Kaggle         |
+| 08  | Complaints_Reports_Data.sql        | n/a       | 3,28   MB | MendeleyData   |
+| 09  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         |
+| 10  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         |
 ```
 Links
-[^01] ; [^02] ; [^03] ; [^04] ; [^05] ; [^06] ; [^07] ; [^08] ; [^09] ; [^10] ; [^11] ;
+[^01] ; [^02] ; [^03] ; [^04] ; [^05] ; [^06] ; [^07] ; [^08] ; [^09] ; [^10]
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)<br>
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)<br>
 [^03]: [Datensatz03] (https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)<br>
 [^04]: [Datensatz04] (https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)<br>
 [^05]: [Datensatz05] (https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints)<br>
-[^07]: [Datensatz07] (https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)<br>
-[^08]: [Datensatz08] (https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)<br>
-[^09]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)<br>
-[^10]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)<br>
-[^11]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)<br>
+[^06]: [Datensatz07] (https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)<br>
+[^07]: [Datensatz08] (https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)<br>
+[^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)<br>
+[^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)<br>
+[^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)<br>
 ______________
 
 
