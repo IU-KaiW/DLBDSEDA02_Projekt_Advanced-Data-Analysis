@@ -193,7 +193,7 @@ ____
   </li>
       <details>
       <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
-      <p><i>Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)</p><br>
+      <p><i>Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)</p>
           <details>
             <summary><ins>↳ Kohärenz</ins></summary>
             <p><i>Coherence</i></p>
