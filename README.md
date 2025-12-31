@@ -206,18 +206,12 @@ Visualisierung:
 <ol>
     <details>
       <summary>🔵 Kohärenz (engl. coherence)</summary>
-      <p><i>xxxx</i></p>
+        <p><i>xxxx</i></p>
     <ol>
     </details>
-    ```markdown
-    `library 1`
-    ```
     <details>
       <summary>🔵 Perplexität (engl. Perplexity)</summary>
         <p><i>xxxxx</i></p>
-        <ul>
-          <li>PyLDAvis</li>
-        </ul>
     </details>
   </li>
 </ol>
