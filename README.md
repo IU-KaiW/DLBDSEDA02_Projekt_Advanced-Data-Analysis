@@ -271,7 +271,8 @@ import seaborn as sns
 ###### Huggingface
 ###### Github
 
-##### Externe Software
+<li>Externe Software</li>
+
 ###### Detektor
 Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
 
