@@ -204,20 +204,27 @@ Visualisierung:
 #### 🔵 Modellauswertung (engl. model evaluation)
 > Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)
 <ol>
-      <details>
-      <summary>🔵 Modellauswertung (engl. model evaluation)</summary>
-      <p><i>Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)</p>
-          <details>
-            <summary><ins>↳ Kohärenz</ins></summary>
-            <p><i>Coherence</i></p>
-          </details>
-          <details>
-            <summary><ins>↳ Perplexity</ins></summary>
-            <p><i>Perplexity</i></p>
-          </details>
+    <details>
+      <summary>🔵 Kohärenz (engl. coherence)</summary>
+      <p><i>xxxx</i></p>
+    <ol>
+    </details>
+    <details>
+      <summary>🔵 Perplexität (engl. Perplexity)</summary>
+        <p><i>xxxxx</i></p>
+        <ul>
+          <li>PyLDAvis</li>
+        </ul>
     </details>
   </li>
 </ol>
+
+Kohärenz (engl. coherence)
+`library 1`
+`library 2`
+Perplexität (engl. perplexity)
+`library 3`
+`library 4`
 ______________
 
 ## Projektstruktur
