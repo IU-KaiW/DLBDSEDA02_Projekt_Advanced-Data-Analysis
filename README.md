@@ -38,10 +38,10 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle             |
 |----|------------------------------------|-----------|-----------|-------------------|
-| 01 | Consumer_Complaints.csv            | n/a       | 59,40  MB |Kaggle        [^01]|
-| 02 | rows.csv                           | n/a       | 176    MB |Kaggle        [^02]|
-| 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |Kaggle/GovData[^03]|
-| 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |Kaggle        [^04]|
+| 01 | Consumer_Complaints.csv            | n/a       | 59,40  MB |[^01]Kaggle        |
+| 02 | rows.csv                           | n/a       | 176    MB |[^02]Kaggle        |
+| 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |[^03]Kaggle/GovData|
+| 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04]Kaggle        |
 | 05 | Comcast.csv                        | 82 %      | 60,0   kB |Kaggle        [^05]|
 | 06 | user_complaints                    | 0,69 %    | 229,0  kB |GitHub        [^06]|
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |Kaggle        [^07]|
