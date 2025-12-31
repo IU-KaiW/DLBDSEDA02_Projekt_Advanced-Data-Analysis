@@ -50,11 +50,11 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
 [^1]. [D1](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
-[^2]. [Test 2](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
-[^3]. [Test 3](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
-[^4]. [Test 4](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
-[^5]. [Test 5](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
-[^6]. [Test 6](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
+[^2]. [D2](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
+[^3]. [D3](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
+[^4]. [D4](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
+[^5]. [D5](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
+[^6]. [D6](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
 [^7].
 [^8].
 [^9].
