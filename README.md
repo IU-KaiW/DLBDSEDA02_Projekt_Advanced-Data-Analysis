@@ -227,8 +227,8 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 Abhängigkeiten (engl. dependencies)
 
 ###### Bibliotheken (engl. librarys)
-Sprachverarbeitung (engl. NLP-Pipeline)
-Datenkonsolidierung (engl. data consolidation)
+####### Sprachverarbeitung (engl. NLP-Pipeline)
+####### Datenkonsolidierung (engl. data consolidation)
 ###### Visualisierung
 ###### Aggregation
 
@@ -272,15 +272,25 @@ Kishan Jai Soorya N. AI-Text-Detector-Python. (https://github.com/Kishanjaisoory
 
 ###### NLP-Pipeline
 `Gensim` https://pypi.org/project/gensim/<br>
+Dokumentation: 
+
 `SpaCy` https://spacy.io<br>
+Dokumentation: 
+
 `NLTK`https://www.nltk.org<br>
+Dokumentation: 
 
 
 ###### Nachverarbeitung
 Visualisierung
 `matplotlib` https://matplotlib.org<br>
+Dokumentation: 
+
 `seaborn` https://seaborn.pydata.org<br>
+Dokumentation: 
+
 `PyLDAvis`     https://pypi.org/project/pyLDAvis/
+Dokumentation: 
 
 Evaluation
 
