@@ -180,12 +180,12 @@ Datenpräsentation  (engl. data presentation)
 >Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)
 <ol>
     <details>
-      <summary>🔵 Aggregation (engl.)</summary>
+      <summary>🔵 Aggregation (engl. aggregation)</summary>
       <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
     <ol>
     </details>
     <details>
-      <summary>🔵 Visualisierung (engl.)</summary>
+      <summary>🔵 Visualisierung (engl. visualization)</summary>
             <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.<</i></p>
         <ul>
           <li>PyLDAvis</li>
@@ -194,9 +194,9 @@ Datenpräsentation  (engl. data presentation)
   </li>
 </ol>
 
-`library 1`
+Visualisierung `library 1`
 `library 2`
-`library 3`
+Evaluierung `library 3`
 `library 4`
 
 #### 🔵 Modellauswertung (engl. model evaluation)
@@ -386,74 +386,3 @@ https://emojiterra.com/de/gelber-kreis/
 [^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
-
-<ol> 
-  <details>
-    <summary>⚪ Datenauswertung (engl. data analysis)</summary>
-    <p><i>Merkmalsauswertungen (engl. feature Inspections)</i></p>
-    <ol type="1">
-      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-        𝛼 (Alpha) - Themenmischung pro Dokument<br>
-        β (Beta) - Wortverteilung in Themen<br>
-        K<sup>T</sup> (n × k)
-    <summary> Evaluation (engl. model evaluation)</summary>
-    <i>Modellvergleich</i><br>
-  </details>
-<ol>
-  <details>
-    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
-    <summary>⚪ Visualisierung</summary>
-    <i>grafische Darstellung</i><br>
-    <li>PyLDAvis</li>
-  </details>
-  <details>
-    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
-    <summary>⚪ Visualisierung</summary>
-    <i>grafische Darstellung</i><br>
-    <li>PyLDAvis</li>
-    <summary>⚪ Aggregation</summary>
-    <i>numerische Darstellung</i>
-    Modellperformance
-  </details>
-</ol>
-
-<ol>
-  <li>
-    <details>
-      <summary>⚪ Datenauswertung (engl. data analysis)</summary>
-      <p><i>xxxxxxx</i></p>
-      <ol type="1">
-        <li>
-          <ins>Merkmalsauswertungen (engl. feature inspections)</ins>
-          <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-          𝛼 (Alpha) – Themenmischung pro Dokument<br>
-          β (Beta) – Wortverteilung in Themen<br>
-          K<sup>T</sup> (n × k)
-        </li>
-        <li>
-          <details>
-            <summary>↳ Evaluation (engl. model evaluation)</summary>
-            <p><i>Modellvergleich</i></p>
-          </details>
-        </li>
-      </ol>
-    </details>
-  </li>
-  <li>
-    <details>
-      <summary>⚪ Datenpräsentation (engl. data presentation)</summary>
-      <details>
-        <summary>↳ Visualisierung</summary>
-        <p><i>grafische Darstellung</i></p>
-        <ul>
-          <li>PyLDAvis</li>
-        </ul>
-      </details>
-      <details>
-        <summary>↳ Aggregation</summary>
-        <p><i>numerische Darstellung</i></p>
-        Modellperformance
-      </details>
-    </details>
-  </li>
-</ol>
