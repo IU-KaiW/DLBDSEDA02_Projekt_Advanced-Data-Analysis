@@ -212,12 +212,9 @@ ______________
 └── README.md
 ```
 
-## Installation
-Für die Prüfung de
-
+## Installation (engl. setup)
 #### Einrichtung (engl. initial setup)
-##### KI-Text-Detector
-Für die Prüfung der recherchierten Datensätze kommt ein extern entwickelter AI-Text-Detector zum Einsatz. Zur Nutzbarmachung wurde die Installationsroutine des Entwicklers befolgt. 
+##### Vorbereitende Installation (engl. preparatory setup)
 
 ##### Virtuelle Umgebung (engl. virtual environment)
 Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibiliothek SpaCy wurde sich für conda entschieden.
