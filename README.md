@@ -208,40 +208,6 @@ ____
 </ol>
 ______________
 
-<ol>
-  <li>
-    <details>
-      <summary>⚪ Merkmalsauswertungen (engl. feature inspections)</summary>
-      <p><i>Themenverteilungen; Top-Wörter pro Thema; α – Themenmischung; β – Wortverteilung</i></p>
-      <details>
-        <summary><ins>↳ Aggregation (engl.)</ins></summary>
-        <p><i>Aggregation reduziert die Datenmenge durch mathematische Operationen …</i></p>
-      </details>
-      <details>
-        <summary><ins>↳ Visualisierung (engl.)</ins></summary>
-        <p><i>Grafische Darstellung aggregierter Daten …</i></p>
-        <ul>
-          <li>PyLDAvis</li>
-        </ul>
-      </details>
-    </details>
-  </li>
-  <li>
-    <details>
-      <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
-      <p><i>Modellvergleich / Modellperformance</i></p>
-      <details>
-        <summary><ins>↳ Kohärenz</ins></summary>
-        <p><i>Coherence</i></p>
-      </details>
-      <details>
-        <summary><ins>↳ Perplexity</ins></summary>
-        <p><i>Perplexity</i></p>
-      </details>
-    </details>
-  </li>
-</ol>
-____
 ## Projektstruktur
 ### Ordnerstruktur
 ```markdown
