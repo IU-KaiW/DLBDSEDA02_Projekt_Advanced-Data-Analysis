@@ -207,27 +207,7 @@ ____
 </ol>
 ______________
 
-1. ⚪ Merkmalsauswertungen (engl. feature Inspections)
-   
-   *Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; Kᵀ (n × k)*
-   
-   - ↳ **Aggregation (engl.)**
-     *alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert...*
-   
-   - ↳ **Visualisierung (engl.)**
-     *grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar...*
-     
-     - PyLDAvis
 
-2. ⚪ Modellauswertung (engl. model evaluation)
-   
-   *Modellvergleich / Modellperformance*
-   
-   - ↳ **Kohärenz**
-     *Coherence*
-   
-   - ↳ **Perplexity**
-     *Perplexity*
 
 
 ## Projektstruktur
