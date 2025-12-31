@@ -111,6 +111,9 @@ Haupt Freatures / Sekundärfeatuers?
         <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen (n-Gramme) zerlegt.</i>
         SpaCy
       </li>
+      <div style="margin-left: 2em;">
+        <code>SpaCy</code>&nbsp;<code>torch</code><br></br>
+      </div>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
         <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
@@ -268,6 +271,8 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ### Erstinstallation (engl. initial setup)
 
 #### Voraussetzungen (engl. prerequisite setup)
+Python 3.8+
+
 ##### Abhängigkeiten (engl. dependencies)
 
 #### Bibliotheken (engl. librarys)
@@ -282,6 +287,9 @@ import numpy as np
 import matplotlib as mpl
 import seaborn as sns
 ```    
+Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html
+Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/
+
 
 ### Referenzen
 <ul>
@@ -330,6 +338,7 @@ Blum et al., 2020 ?
 
 Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.
 
+Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf
 
 <li>Websites</li>
 
