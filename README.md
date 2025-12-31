@@ -36,18 +36,18 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipeline Eingabe (engl. Pipeline-Input) für die nachfolgenden Schritte genutzt. Übersteigt die Anzahl der Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte die Anzahl begrenzt.<br>
 
 ```markdown
-| Nr. | Bezeichnung                        | Bewertung | Größe     | Quelle         |
-|-----|------------------------------------|-----------|-----------|----------------|
-| 01  | Consumer_Complaints.csv            | n/a       | 59,40  MB | Kaggle         |
-| 02  | rows.csv                           | n/a       | 176    MB | Kaggle         |
-| 03  | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB | Kaggle/GovData |
-| 04  | complaints_processed.csv           | 64,72 %   | 19,8   MB | Kaggle         |
-| 05  | Comcast.csv                        | 82 %      | 60,0   kB | Kaggle         |
-| 06  | user_complaints                    | 0,69 %    | 229,0  kB | GitHub         |
-| 07  | consumer_complaints.csv            | n/a       | 175,39 MB | Kaggle         |
-| 08  | Complaints_Reports_Data.sql        | n/a       | 3,28   MB | MendeleyData   |
-| 09  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         |
-| 10  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         |
+| Nr. | Bezeichnung                        | Bewertung | Größe     | Quelle        |
+|-----|------------------------------------|-----------|-----------|---------------|
+| 01  | Consumer_Complaints.csv            | n/a       | 59,40  MB | Kaggle        |
+| 02  | rows.csv                           | n/a       | 176    MB | Kaggle        |
+| 03  | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB | Kaggle/GovData|
+| 04  | complaints_processed.csv           | 64,72 %   | 19,8   MB | Kaggle        |
+| 05  | Comcast.csv                        | 82 %      | 60,0   kB | Kaggle        |
+| 06  | user_complaints                    | 0,69 %    | 229,0  kB | GitHub        |
+| 07  | consumer_complaints.csv            | n/a       | 175,39 MB | Kaggle        |
+| 08  | Complaints_Reports_Data.sql        | n/a       | 3,28   MB | MendeleyData  |
+| 09  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub        |
+| 10  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle        |
 ```
 Links
 [^01] ; [^02] ; [^03] ; [^04] ; [^05] ; [^06] ; [^07] ; [^08] ; [^09] ; [^10]
