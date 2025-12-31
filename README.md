@@ -187,7 +187,7 @@ ____
           </details>
           <details>
             <summary><ins>↳ Visualisierung (engl.)</ins></summary>
-            <p><i>grafische Darstellung</i></p>
+            <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.<</i></p>
         <ul>
           <li>PyLDAvis</li>
         </ul>
@@ -195,7 +195,7 @@ ____
     </details>
   </li>
       <details>
-      <summary>⚪ Modellauswertung (engl. moel evaluation)</summary>
+      <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
       <p><i>Modellvergleich / Modellperformance</p><br>
           <details>
             <summary><ins>↳ Kohärenz</ins></summary>
@@ -209,33 +209,6 @@ ____
   </li>
 </ol>
 ____
-<ol> 
-  <details>
-    <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
-    <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-        𝛼 (Alpha) - Themenmischung pro Dokument<br>
-        β (Beta) - Wortverteilung in Themen<br>
-        K<sup>T</sup> (n × k)
-    <summary> Evaluation (engl. model evaluation)</summary>
-    <i>Modellvergleich</i><br>
-  </details>
-  <ol>
-    <details>
-    <summary>⚪ Aggregation (engl. xxxx )<br></summary>
-    <p><i>Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen. <br></i></p> 
-       <i>alphanumerische Darstellungen</i>
- </ol>
-  <ol>
-    <details>
-    <summary>⚪ Visualisierung (engl. )<br></summary>    
-      <i>Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i>
-      `PyLDAvis`
-      <i>Modellperformance<i>
-    </ol>
-   </details>
-</ol>
-
 <ol> 
   <details>
     <summary>⚪ Datenauswertung (engl. data analysis)</summary>
