@@ -174,6 +174,8 @@ ______________
 
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
+
+#### 🔵 Merkmalsauswertungen (engl. feature Inspections)
 ____
 <ol>
     <details>
