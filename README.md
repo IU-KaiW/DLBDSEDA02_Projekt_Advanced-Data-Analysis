@@ -29,6 +29,10 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <i>Die gesammelten Datensätze werden anhand eines KI-Text-Detectors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden. </i><br>
     </details>
 </ol>
+
+`transformers`
+`torch`
+
 <ol>    
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
@@ -39,10 +43,6 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und die Bewertung als n/a markiert. Der Datensatz fließt dann nicht in den Ergebnisvergleich ein.</i>
     </details>
 </ol>
-
-Datensatzprüfung:
-`transformers`
-`torch`
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
