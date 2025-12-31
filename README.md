@@ -50,7 +50,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
 [^1]. [Kaggle] https://www.kaggle.com/datasets/ashwinik/
-[^1]: www.kaggle.com/
+[^2]: [www.kaggle.com/](https://www.kaggle.com/datasets/selener/)
 [^2]: www.github.com
 [^3]: GovData
 [^4]: data.mendeley.com
