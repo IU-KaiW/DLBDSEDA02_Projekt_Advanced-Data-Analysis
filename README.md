@@ -181,12 +181,10 @@ ____
           𝛼 (Alpha) – Themenmischung pro Dokument<br>
           β (Beta) – Wortverteilung in Themen<br>
           K<sup>T</sup> (n × k)
-        <li>
           <details>
             <summary><ins>↳ Evaluation (engl. model evaluation)</ins></summary>
             <p><i>Modellvergleich / Modellperformance</i></p>
           </details>
-        </li>
     </details>
   </li>
     <details>
