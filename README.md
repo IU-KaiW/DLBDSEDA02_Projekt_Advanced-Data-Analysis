@@ -176,7 +176,6 @@ ______________
 ____
 
 <ol>
-  <li>
     <details>
       <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
@@ -197,7 +196,6 @@ ____
       </ol>
     </details>
   </li>
-  <li>
     <details>
       <summary>⚪ Datenpräsentation (engl. data presentation)</summary>
       <details>
