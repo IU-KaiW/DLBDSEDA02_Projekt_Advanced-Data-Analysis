@@ -403,9 +403,8 @@ https://emojiterra.com/de/gelber-kreis/
 <ol> 
   <details>
     <summary>⚪ Datenauswertung (engl. data analysis)</summary>
-    <p><i>xxxxxxx</i></p>
+    <p><i>Merkmalsauswertungen (engl. feature Inspections)</i></p>
     <ol type="1">
-      Merkmalsauswertungen (engl. feature Inspections)
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
         𝛼 (Alpha) - Themenmischung pro Dokument<br>
         β (Beta) - Wortverteilung in Themen<br>
