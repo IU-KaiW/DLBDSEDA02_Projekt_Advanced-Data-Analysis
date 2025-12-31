@@ -38,7 +38,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ```markdown
 | Nr. | Datensatz                          | Bewertung | Größe     | Quelle         | Link                                                                                 |
 |-----|------------------------------------|-----------|-----------|----------------|--------------------------------------------------------------------------------------|
-| 1   | Consumer_Complaints.csv            | n/a       | 59,40  MB | [^1]. Kaggle       | https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products      |
+| 1   | Consumer_Complaints.csv            | n/a       | 59,40  MB | [^1].Kaggle       | https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products      |
 | 2   | rows.csv                           | n/a       | 176    MB | Kaggle         | https://www.kaggle.com/datasets/selener/consumer-complaint-database                  |
 | 3   | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB | Kaggle/GovData | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification             |
 | 4   | complaints_processed.csv           | 64,72 %   | 19,8   MB | Kaggle         | https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp       |
