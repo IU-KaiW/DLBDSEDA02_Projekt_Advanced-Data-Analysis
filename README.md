@@ -178,13 +178,11 @@ ____
     <details>
       <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-        <li>
           <ins>Merkmalsauswertungen (engl. feature inspections)</ins>
           <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
           𝛼 (Alpha) – Themenmischung pro Dokument<br>
           β (Beta) – Wortverteilung in Themen<br>
           K<sup>T</sup> (n × k)
-        </li>
         <li>
           <details>
             <summary><ins>↳ Evaluation (engl. model evaluation)</ins></summary>
