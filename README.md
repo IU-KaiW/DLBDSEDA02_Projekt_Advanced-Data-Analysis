@@ -211,37 +211,44 @@ ______________
   <li>
     <details>
       <summary>⚪ Merkmalsauswertungen (engl. feature Inspections)</summary>
-      <p><i>Themenverteilungen...</i></p>
-      <div style="margin-left: 2.5em;">
-        <details>
-          <summary><ins>↳ Aggregation (engl.)</ins></summary>
-          <p><i>alphanumerische Darstellungen...</i></p>
-        </details>
-        
-        <details>
-          <summary><ins>↳ Visualisierung (engl.)</ins></summary>
-          <p><i>grafische Darstellung...</i></p>
-          <ul style="list-style: none; padding-left: 0;">
-            <li>PyLDAvis</li>
-          </ul>
-        </details>
-      </div>
+      <p><i>Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)</i></p>
+      <ul style="margin-left: 2em; padding-left: 1em; list-style: none;">
+        <li>
+          <details>
+            <summary><ins>↳ Aggregation (engl.)</ins></summary>
+            <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge...</i></p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary><ins>↳ Visualisierung (engl.)</ins></summary>
+            <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten...</i></p>
+            <ul>
+              <li>PyLDAvis</li>
+            </ul>
+          </details>
+        </li>
+      </ul>
     </details>
   </li>
   <li>
     <details>
       <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
       <p><i>Modellvergleich / Modellperformance</i></p>
-      <div style="margin-left: 2.5em;">
-        <details style="margin-bottom: 0.5em;">
-          <summary><ins>↳ Kohärenz</ins></summary>
-          <p><i>Coherence</i></p>
-        </details>
-        <details>
-          <summary><ins>↳ Perplexity</ins></summary>
-          <p><i>Perplexity</i></p>
-        </details>
-      </div>
+      <ul style="margin-left: 2em; padding-left: 1em; list-style: none;">
+        <li>
+          <details>
+            <summary><ins>↳ Kohärenz</ins></summary>
+            <p><i>Coherence</i></p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary><ins>↳ Perplexity</ins></summary>
+            <p><i>Perplexity</i></p>
+          </details>
+        </li>
+      </ul>
     </details>
   </li>
 </ol>
