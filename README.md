@@ -185,14 +185,12 @@ ______________
   <ol>
     <details>
     <summary>⚪ Aggregation (engl. xxxx )<br></summary>
-    <p><i>Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.<br></i></p> 
+    <p><i>Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen. <br></i></p> 
   </ol>
   <ol>
     <details>
     <summary>⚪ Visualisierung (engl. )<br></summary>    
-    <ol type="1">
-      <li>Visualisierung</li>
-      <i>Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen, während Visualisierung diese aggregierten Daten grafisch darstellt, um Muster erkennbar zu machen.</i>
+      <i>Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i>
       <i>grafische Darstellung</i><br>
       PyLDAvis
       <i>numerische Darstellung</i>
