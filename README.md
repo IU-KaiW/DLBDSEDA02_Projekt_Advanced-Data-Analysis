@@ -277,7 +277,7 @@ Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Auf
 ###### Aggregation
 
 
-
+[text](torch:%20Tensors%20and%20Dynamic%20neural%20networks%20in%20Python%20with%20strong%20GPU%20acceleration%20%28Version%202.9.1%29.%20%28o.%C2%A0J.%29.%20%5BC%2B%2B%2C%20Python%5D.%20Abgerufen%2031.%20Dezember%202025%2C%20von%20https%3A//pytorch.org)
 
 ```python
 import pandas as pd
