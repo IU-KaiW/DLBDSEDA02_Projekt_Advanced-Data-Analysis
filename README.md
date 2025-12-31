@@ -35,8 +35,8 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 </ol>
 
 Datensatzprüfung:
-`library 1`
-`library 2`
+`transformers`
+`torch`
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
