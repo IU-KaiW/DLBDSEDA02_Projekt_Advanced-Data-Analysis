@@ -38,8 +38,8 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ```markdown
 | Nr. | Datensatz                          | Bewertung | Größe     | Quelle         | Link                                                                                 |
 |-----|------------------------------------|-----------|-----------|----------------|--------------------------------------------------------------------------------------|
-| 1   | Consumer_Complaints.csv            | n/a       | 59,40  MB | [^1]. Kaggle       | (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)      |
-| 2   | rows.csv                           | n/a       | 176    MB | [^2]. Kaggle        | https://www.kaggle.com/datasets/selener/consumer-complaint-database                  |
+| 1   | Consumer_Complaints.csv            | n/a       | 59,40  MB | Kaggle         | https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products      |
+| 2   | rows.csv                           | n/a       | 176    MB | Kaggle         | https://www.kaggle.com/datasets/selener/consumer-complaint-database                  |
 | 3   | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB | Kaggle/GovData | https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification             |
 | 4   | complaints_processed.csv           | 64,72 %   | 19,8   MB | Kaggle         | https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp       |
 | 5   | Comcast.csv                        | 82 %      | 60,0   kB | Kaggle         | https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints                   |
@@ -49,6 +49,8 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
+[^1]. Test 1
+[^2]. Test 2
 [^1]: [Kaggle] https://www.kaggle.com/datasets/ashwinik/
 [^2]: www.kaggle.com/](https://www.kaggle.com/datasets/selener/
 [^2]: www.github.com
