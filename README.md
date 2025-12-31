@@ -226,6 +226,15 @@ Kohärenz:
 Perplexität:
 `library 3`
 `library 4`
+Topic Diversity::
+`library 3`
+`library 4`
+Topic Coherence:
+`library 3`
+`library 4`
+Silhouette Score:
+`library 3`
+`library 4`
 ______________
 
 ## Projektstruktur
