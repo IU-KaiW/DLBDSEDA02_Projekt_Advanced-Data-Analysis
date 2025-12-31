@@ -197,7 +197,6 @@ ____
       <details>
       <summary>⚪ Modellauswertung (engl. moel evaluation)</summary>
       <p><i>Modellvergleich / Modellperformance</p><br>
-          K<sup>T</sup> (n × k)
           <details>
             <summary><ins>↳ Kohärenz</ins></summary>
             <p><i>Coherence</i></p>
