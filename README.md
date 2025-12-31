@@ -172,24 +172,40 @@ ______________
 > Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalysen (engl. feature analysis) sowie die Modellevaluationen (engl. model evaluations) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
 
-
+Datenauswertung (engl. data analysis)
 ____
 <ol>
     <details>
-      <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
+      <summary>⚪ Merkmalsauswertungen (engl. feature Inspections)</summary>
       <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
           𝛼 (Alpha) – Themenmischung pro Dokument<br>
           β (Beta) – Wortverteilung in Themen<br>
           K<sup>T</sup> (n × k)
           <details>
-            <summary><ins>↳ Evaluation (engl. model evaluation)</ins></summary>
-            <p><i>Modellvergleich / Modellperformance</i></p>
+            <summary><ins>↳ Aggregation (engl.)</ins></summary>
+            <p><i>xxxxx</i></p>
+          </details>
+          <details>
+            <summary><ins>↳ Visualisierung (engl.)</ins></summary>
+            <p><i>xxxxx</i></p>
           </details>
     </details>
   </li>
+      <details>
+      <summary>⚪ Modellauswertung (engl. moel evaluation)</summary>
+      <p><i>Modellvergleich / Modellperformance</p><br>
+          K<sup>T</sup> (n × k)
+          <details>
+            <summary><ins>↳ Kohärenz</ins></summary>
+            <p><i>Coherence</i></p>
+          </details>
+          <details>
+            <summary><ins>↳ Perplexity</ins></summary>
+            <p><i>Perplexity</i></p>
+          </details>
+    </details>
+
     <details>
-      <summary>⚪ Datenauswertung (engl. data analysis) / Merkmalsauswertungen (engl. feature Inspections)</summary>
-      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
         <details>
         <summary>↳ Aggregation</summary>
         <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
