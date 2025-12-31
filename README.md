@@ -60,6 +60,8 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 [^09] `https://data.mendeley.com/datasets/w2cp7h53s5/1`<br>
 [^10] `https://github.com/Schossi2908/DLBDSEDA02_D`<br>
 [^11] `https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets`<br>
+
+[^01]: https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products<br>
 ______________
 
 
