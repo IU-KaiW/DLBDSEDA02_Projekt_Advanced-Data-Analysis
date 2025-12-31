@@ -49,15 +49,15 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 | 10  | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB | GitHub         | https://github.com/Schossi2908/DLBDSEDA02_D                                          |
 | 11  | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB | Kaggle         | https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets    |
 ```
-[^1]. [D1](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
-[^2]. [D2](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
-[^3]. [D3](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
-[^4]. [D4](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
-[^5]. [D5](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
-[^6]. [D6](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
-[^7]. [D7](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
-[^8]. [D8](https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
-[^9]. [D9](https://data.mendeley.com/datasets/w2cp7h53s5/1)
+[^1]. [D01](https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
+[^2]. [D02](https://www.kaggle.com/datasets/selener/consumer-complaint-database)
+[^3]. [D03](https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
+[^4]. [D04](https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
+[^5]. [D05](https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints) 
+[^6]. [D06](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
+[^7]. [D07](https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
+[^8]. [D08](https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
+[^9]. [D09](https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^10].[D10](https://github.com/Schossi2908/DLBDSEDA02_D)
 [^11].[D11](https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 
