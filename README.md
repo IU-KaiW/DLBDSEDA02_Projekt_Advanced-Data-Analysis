@@ -196,7 +196,7 @@ ____
   </li>
       <details>
       <summary>⚪ Modellauswertung (engl. model evaluation)</summary>
-      <p><i>Modellvergleich / Modellperformance</p><br>
+      <p><i>Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)</p><br>
           <details>
             <summary><ins>↳ Kohärenz</ins></summary>
             <p><i>Coherence</i></p>
@@ -208,34 +208,6 @@ ____
     </details>
   </li>
 </ol>
-____
-<ol> 
-  <details>
-    <summary>⚪ Datenauswertung (engl. data analysis)</summary>
-    <p><i>xxxxxxx</i></p>
-    <ol type="1">
-      <li><ins>Merkmalsauswertungen (engl. feature Inspections)</ins></li>
-      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-        𝛼 (Alpha) - Themenmischung pro Dokument<br>
-        β (Beta) - Wortverteilung in Themen<br>
-        K<sup>T</sup> (n × k)
-    <summary> Evaluation (engl. model evaluation)</summary>
-    <i>Modellvergleich</i><br>
-  </details>
-<ol>
-  <details>
-    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
-    <summary>⚪ Visualisierung</summary>
-    <i>grafische Darstellung</i><br>
-    <li>PyLDAvis</li>
-    <summary>⚪ Aggregation</summary>
-    <i>numerische Darstellung</i>
-    Modellperformance
-
-  </details>
-</ol>
-
-
 ______________
 
 ## Projektstruktur
