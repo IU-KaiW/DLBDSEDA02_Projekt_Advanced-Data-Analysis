@@ -112,6 +112,9 @@ Haupt Freatures / Sekundärfeatuers?
       <li>
       <ins>Rauschentfernung (engl. noise reduction)</ins><br>
         <i>Ziel der Rauschentfernung ist es, für die Verarbeitung irrelevante Tokens durch eine Zeichenentfernung zu löschen.</i>
+            <div style="margin-left: 2em;">
+              <code>???</code>&nbsp;<code>????</code><br></br>
+            </div>
             <ol type="2">
             <li>Stoppworte (engl. stopwords)</li>
             <li>Satzzeichen (engl. punctuation marks)</li>
