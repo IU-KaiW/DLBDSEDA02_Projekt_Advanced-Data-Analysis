@@ -8,7 +8,7 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
-      
+[ asdasd  ](https://qweqweqwe.de)   
 ### ⚪ Datenakquisition (engl. data acquisition)
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
