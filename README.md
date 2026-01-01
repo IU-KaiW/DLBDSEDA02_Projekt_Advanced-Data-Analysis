@@ -40,7 +40,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
     </details>
 </ol>
 
-[ KI-Detektor ](https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
+[^1][ KI-Detektor ](https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
