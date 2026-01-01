@@ -157,6 +157,9 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
             <li>Contextualized Based Word Embedding</li>
             ELMO, BERT, GPT
           </ul>
+          <div style="margin-left: 2em;">
+             <code>???</code>&nbsp;<code>????</code><br></br>
+          </div>
   </details>
   <details>
     <summary>🟤 Text Analyse (engl. Text Analytics)</summary>
