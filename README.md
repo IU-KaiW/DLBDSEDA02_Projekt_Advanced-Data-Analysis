@@ -83,6 +83,9 @@ Haupt Freatures / Sekundärfeatuers?
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
+              <div style="margin-left: 2em;">
+                <code>SpaCy</code>&nbsp;<code>????</code><br></br>
+              </div>
               <li>Grundformreduktion (engl. inflection reduction)</li>
               Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt. (WordNet lemmatizer from NLTK)
               <li>Formatnormalisierungen (engl. format normalisations)</li>
