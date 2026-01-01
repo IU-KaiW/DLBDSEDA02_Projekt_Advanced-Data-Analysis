@@ -340,32 +340,16 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 
 <li>Bibliotheken (engl. librarys)</li>
 
-| Bibliothek    | Website                                                               | Dokumentation |Verwendung |
-|-------------- |-----------------------------------------------------------------------|---------------|-----------|
-|  `pandas`     |https://pandas.pydata.org                                              |               |           |
-|`transformers` |https://pypi.org/project/transformers/                                 |               |           |
-|`gensim`       |https://pypi.org/project/gensim/                                       |               |           |
-|`SpaCy`        |https://spacy.io                                                       |https://spacy.io/usage/spacy-101               |           |
-|`NLTK`         |https://www.nltk.org                                                   |               |           |
-|`matplotlib`   |https://matplotlib.org                                                 |               |           |
-|`seaborn`      |https://seaborn.pydata.org                                             |               |           |
-|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |               |           |
-|`Cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html       |               |           |
-|`matplotlib`   |https://matplotlib.org                                                 |               |           |
-|`seaborn`      |https://seaborn.pydata.org                                             |               |           |
-|`spacy`        |https://spacy.io                                                       |               |           |
-|`nltk`         |https://www.nltk.org                                                   |               |           |
-|`pandas`       |                                                                       |               |           |
-|`gensim`       |                                                                       |               |           |
-|`transformers` |                                                                       |               |           |
-|`torch`        |                                                                       |               |           |
+| Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
+|-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
+|`pandas`       |https://pandas.pydata.org                                              |               |           |           |
 
 <ins>Standardbibliothek</ins>
 
-| Bibliothek    | Website                                                               | Dokumentation |Verwendung |
-|-------------- |-----------------------------------------------------------------------|---------------|-----------|
-|`re`           |                                                                       |               |           |
-|`csv`          |                                                                       |               |           |
+| Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
+|-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
+|`re`           |                                                                       |               |           |           |
+|`csv`          |                                                                       |               |           |           |
 
 <li>Literatur</li>
 
