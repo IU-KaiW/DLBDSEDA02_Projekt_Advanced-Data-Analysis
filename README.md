@@ -333,10 +333,10 @@ import nltk
 ### Referenzen
 <ul>
 <li>Externe Software</li>
-Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
+Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
 <li>Bibliotheken (engl. librarys)</li>
-<ins>Python-Standardbibliothek</ins>
+<ins>Python-Standardbibliothek</ins><br>
 
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
