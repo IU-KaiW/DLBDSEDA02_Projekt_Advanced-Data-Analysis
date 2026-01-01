@@ -67,7 +67,7 @@ Haupt Freatures / Sekundärfeatuers?
 
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-> Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
+> Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt. Seaborn [^11]
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
@@ -243,13 +243,6 @@ Datenpräsentation  (engl. data presentation)
   </li>
 </ol>
 
-Aggregation: 
-`library 1`
-`library 2`
-Visualisierung: 
-`library 3`
-`library 4`
-
 #### 🔵 Modellauswertung (engl. model evaluation)
 > Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)
 <ol>
@@ -371,7 +364,7 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 <br>Radim Řehůřek, 10.08.2024 - (https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html#sphx-glr-auto-examples-tutorials-run-lda-py)<br>
 <br>Christopher Helm, 08.05.2025 - (https://konfuzio.com/de/spacy-vs-nltk/)<br>
 <br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
-<br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
+[^11]<br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
 
 🟣🟢🟠🔴🔵🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
