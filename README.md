@@ -111,7 +111,6 @@ Haupt Freatures / Sekundärfeatuers?
       <li>
         Tokenisierung (engl. tokenization)<br>
         <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen (n-Gramme) zerlegt.</i>
-        SpaCy
       </li>
       <div style="margin-left: 2em;">
         <code>SpaCy</code>&nbsp;<code>????</code><br></br>
@@ -120,6 +119,9 @@ Haupt Freatures / Sekundärfeatuers?
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
         <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
       </li>
+      <div style="margin-left: 2em;">
+        <code>SpaCy</code><br></br>
+      </div>
     </ol>
   </details>
 </ol>
@@ -365,58 +367,3 @@ https://emojiterra.com/de/gelber-kreis/
 [^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
-
-
-<ol>
-  <details>
-    <summary>🟤 Merkmalsextraktion (engl. feature extraction)</summary>
-    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsaufbereitung zur weiteren Verarbeitung vorbereitet.</i></p>
-    <ol type="1">
-      <li>
-        Vektorisierung (engl. vectorization)<br>
-        <i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen Embeddings um. Hierbei wird zwischen unsemantischen Embeddings, die Feature Vektoren erzeugen und semantischen Varianten welche Word Embeddings erzeugen differenziert.</i>
-      <ol type="2">
-       <li>unsemantische Embeddings</li>
-       Hierunter werden 
-          <ul>
-            <li>Frequency Based Embedding</li>
-           BoW, TF-IDF
-          </ul>
-       <li>semantische Embeddings</li>
-          <ul>
-            <li>Prediction Based Word Embedding</li>
-            GloVE; Word2Vec, FastText
-            <li>Contextualized Based Word Embedding</li>
-            ELMO, BERT, GPT
-          </ul>
-    </ol>
-  </details>
-</ol>
-
-
-
-<ol> 
-  <details>
-    <summary>⚪ Datenauswertung (engl. data analysis)</summary>
-    <p><i>xxxxxxx</i></p>
-    <ol type="1">
-      <li><ins>Merkmalsauswertungen (engl. feature Inspections)</ins></li>
-      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
-        𝛼 (Alpha) - Themenmischung pro Dokument<br>
-        β (Beta) - Wortverteilung in Themen<br>
-        K<sup>T</sup> (n × k)
-    <summary> Evaluation (engl. model evaluation)</summary>
-    <i>Modellvergleich</i><br>
-  </details>
-<ol>
-  <details>
-    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
-    <summary>⚪ Visualisierung</summary>
-    <i>grafische Darstellung</i><br>
-    <li>PyLDAvis</li>
-    <summary>⚪ Aggregation</summary>
-    <i>numerische Darstellung</i>
-    Modellperformance
-
-  </details>
-</ol>
