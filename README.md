@@ -293,6 +293,8 @@ ______________
 ```
 
 ## Installation (engl. setup)
+Als Entwicklungsumgebung (engl. development environment - IDE) wurde Microsofts Visual Studio Code (VSCode) genutzt. 
+
 ### Vorbereitende Installation (engl. preparatory setup)
 #### Datenvalidierung (engl. data validation)
 KI Detektor
@@ -363,17 +365,19 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 <br>Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
 
 <li>Websites</li>
-
-###### GeekforGeek.org
 <br>Sanchhaya Education Private Ltd., 2025 (https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/)<br>
 <br>StudySmarter GmbH, 2025 (https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/)<br>
 <br>Radim Řehůřek, 10.08.2024 - (https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html#sphx-glr-auto-examples-tutorials-run-lda-py)<br>
 <br>Christopher Helm, 08.05.2025 - (https://konfuzio.com/de/spacy-vs-nltk/)<br>
 <br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
+<br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
 
 🟣🟢🟠🔴🔵🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
 
+        <ul>
+          <li>PyLDAvis</li>
+        </ul>
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
@@ -385,7 +389,3 @@ https://emojiterra.com/de/gelber-kreis/
 [^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
-
-        <ul>
-          <li>PyLDAvis</li>
-        </ul>
