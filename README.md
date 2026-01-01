@@ -94,7 +94,7 @@ Haupt Freatures / Sekundärfeatuers?
               <li>Grundformreduktion (engl. inflection reduction)</li>
               Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
               <div style="margin-left: 2em;">
-                <code>WordNet lemmatizer (NLTK)</code>&nbsp;<code>paCy</code><br></br>
+                <code>NLTK (WordNet lemmatizer)</code>&nbsp;<code>spaCy</code><br></br>
               </div>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
               <div style="margin-left: 2em;">
