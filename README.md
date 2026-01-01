@@ -189,6 +189,9 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
             <li>2</li>
             xxx
           </ol>
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
   </details>
   <details>
     <summary>🟤  Merkmalslernen (engl. feature learning / representation learning)</summary></br>
