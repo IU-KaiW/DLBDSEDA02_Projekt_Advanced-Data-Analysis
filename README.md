@@ -323,6 +323,8 @@ import numpy as np
 import matplotlib as mpl
 import seaborn as sns
 import spacy as sp
+import nltk
+
 ```    
 Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
@@ -331,22 +333,21 @@ import spacy as sp
 ### Referenzen
 <ul>
 <li>Externe Software</li>
-
-###### Detektor
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
 
 <li>Bibliotheken (engl. librarys)</li>
-
-| Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
-|-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
-|`pandas`       |https://pandas.pydata.org                                              |               |           |           |
-
-<ins>Standardbibliothek</ins>
+<ins>Python-Standardbibliothek</ins>
 
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`re`           |                                                                       |               |           |           |
 |`csv`          |                                                                       |               |           |           |
+
+<ins>externe Bibliothek</ins>
+| Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
+|-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
+|`pandas`       |https://pandas.pydata.org                                              |               |           |           |
+
 
 <li>Literatur</li>
 
