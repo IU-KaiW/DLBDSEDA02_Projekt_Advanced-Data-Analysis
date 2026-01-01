@@ -60,7 +60,7 @@ ______________
 ###### Pipeline-Eingabe
 Es wird Datensatz Nr. 05 "Comcast.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
 
-### ⚫ Sprachverarbeitung (engl. NLP-Pipeline)
+### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication)
 
 Haupt Freatures / Sekundärfeatuers?
@@ -147,13 +147,13 @@ Haupt Freatures / Sekundärfeatuers?
   </details>
 </ol>
 
-#### 🟤 Datenverarbeitung (engl. data processing)
+#### 🟡 Datenverarbeitung (engl. data processing)
 > Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering) und Modellbildung (engl. modeling). Bei Merkmalsaufbereitung werden Rohdaten in Merkmale (engl. features) umgewandelt werden, welche ein Modell im Anschluss nutzen kann. Bei Modellbildung werden
 
 Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl unterteilt werden. Im Merkmalslernen erfolgt die Bildung von Modellen ohne Feature Engineering, basierend auf ...
 <ol>
   <details>
-    <summary>🟤 Vektorisierung (engl. vectorization)</summary>
+    <summary>🟡 Vektorisierung (engl. vectorization)</summary>
     <p><i>Vektorisierungstechniken wandeln Text in Embeddings, nummerische Repräsentationen um. Hierbei wird zwischen unsemantischen Embeddings (feature vektors) und semantischen Varianten (word vectors / sentence vectors) differenziert. Vektorisierungstechniken nutzen Merkmalsextraktion, um Text im Rahmen der Merkmalsaufbereitung für nachfolgende Schritte vorzubereiten.</i></p>
     <ol type="1">
        <li>unsemantische Embeddings</li>
@@ -174,27 +174,27 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
           </div>
   </details>
   <details>
-    <summary>🟤 Text Analyse (engl. Text Analytics)</summary>
+    <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
     <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i></p>
     <ol type="1">
-       <li>🟤 Merkmalsmodellierung (engl. feature modeling)</li>
+       <li>🟡 Merkmalsmodellierung (engl. feature modeling)</li>
        Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung des zuvor vektorisierten Texts. Sie legt fest, wie Merkmale thematisch oder semantisch für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion oder Merkmalsumwandlung identifiziert werden.<br>
             <ol type="2">
-            <li>🟤 Merkmalsextraktion (engl. feature extraction)</li><br>
+            <li>🟡 Merkmalsextraktion (engl. feature extraction)</li><br>
             <i>Latent Dirichlet Allocation (LDA)</i>
             Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-           <br><li>🟤 Merkmalsumwandlung (engl. feature transformation)<br></i></li>
+           <br><li>🟡 Merkmalsumwandlung (engl. feature transformation)<br></i></li>
             <i>Latent Semantic Analysis (LSA)</i><br>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-            <li>🟤 Merkmalsauswahl (engl. feature selection)<br>
+            <li>🟡 Merkmalsauswahl (engl. feature selection)<br>
             <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
           </ol>
-       <li>🟤 Merkmalserkennung (engl. feature recognition)</li>
+       <li>🟡 Merkmalserkennung (engl. feature recognition)</li>
           <ol>
             <li>1</li>
             xxx
@@ -206,7 +206,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
               </div>
   </details>
   <details>
-    <summary>🟤  Merkmalslernen (engl. feature learning / representation learning)</summary></br>
+    <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary></br>
     In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning).
     <i>Beginn der Modellbildung für Aufgabe<i>
   </details>
