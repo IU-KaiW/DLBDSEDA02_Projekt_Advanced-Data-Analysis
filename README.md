@@ -120,7 +120,7 @@ Haupt Freatures / Sekundärfeatuers?
         <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
       </li>
       <div style="margin-left: 2em;">
-        <code>SpaCy</code><br></br>
+        <code>????</code>&nbsp;<code>????</code><br></br>
       </div>
     </ol>
   </details>
