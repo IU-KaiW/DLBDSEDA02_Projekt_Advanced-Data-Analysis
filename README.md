@@ -76,7 +76,10 @@ Haupt Freatures / Sekundärfeatuers?
     <ol type="1">
       <li>
         <ins>Standardisierung (engl. standardisation)</ins><br>
-        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. </i>
+        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
+          <div style="margin-left: 2em;">
+            <code>???</code>&nbsp;<code>????</code><br></br>
+          </div>
       <ol type="2">
             <li>Normalisierung (engl. normalisation)</li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
