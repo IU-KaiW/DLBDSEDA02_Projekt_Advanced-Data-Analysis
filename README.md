@@ -10,7 +10,7 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 
 
 ### ⚪ Datenakquisition (engl. data acquisition)
-In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, bewertet und ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [ KI-Detektors ](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die Pipeline steht.</br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
@@ -39,8 +39,6 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und die Bewertung als n/a markiert. Der Datensatz fließt dann nicht in den Ergebnisvergleich ein.</i>
     </details>
 </ol>
-
-[^1][ KI-Detektor ](https://github.com/Kishanjaisoorya/AI-Text-Detector-python)
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
