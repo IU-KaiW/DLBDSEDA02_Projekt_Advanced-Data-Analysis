@@ -110,7 +110,7 @@ Haupt Freatures / Sekundärfeatuers?
       </ol>
       </li>
       <li>
-        Rauschentfernung (engl. noise reduction)<br>
+      <ins>Rauschentfernung (engl. noise reduction)</ins><br>
         <i>Ziel der Rauschentfernung ist es, für die Verarbeitung irrelevante Tokens durch eine Zeichenentfernung zu löschen.</i>
             <ol type="2">
             <li>Stoppworte (engl. stopwords)</li>
