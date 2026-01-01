@@ -224,9 +224,9 @@ Datenpräsentation  (engl. data presentation)
     </details>
     <details>
       <summary>🔵 Visualisierung (engl. visualization)</summary>
-      <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.<</i></p>
+      <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
       <div style="margin-left: 2em;">
-        <code>???</code>&nbsp;<code>????</code><br></br>
+        Aggregation:<code>???</code>&nbsp;Visualisierung:<code>????</code><br></br>
       </div>
         <ul>
           <li>PyLDAvis</li>
