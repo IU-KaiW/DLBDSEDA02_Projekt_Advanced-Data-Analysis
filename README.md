@@ -67,7 +67,7 @@ Haupt Freatures / Sekundärfeatuers?
 
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-> Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt. Seaborn [^11]
+> Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt. spaCy [^11]
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
@@ -92,9 +92,9 @@ Haupt Freatures / Sekundärfeatuers?
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
               <li>Grundformreduktion (engl. inflection reduction)</li>
-              Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt. (WordNet lemmatizer from NLTK)
+              Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>WordNet lemmatizer (NLTK)</code>&nbsp;<code>paCy</code><br></br>
               </div>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
               <div style="margin-left: 2em;">
@@ -322,6 +322,7 @@ import pandas as pd
 import numpy as np
 import matplotlib as mpl
 import seaborn as sns
+import spacy as sp
 ```    
 Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
