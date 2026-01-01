@@ -65,6 +65,40 @@ Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Lä
 
 Haupt Freatures / Sekundärfeatuers?
 
+
+<ol> 
+  <details>
+    <summary>⚪ Datenauswertung (engl. data analysis)</summary>
+    <p><i>xxxxxxx</i></p>
+    <ol type="1">
+      Merkmalsauswertungen (engl. feature Inspections)
+      <p><i>Themenverteilungen; Top-Wörter pro Thema</i></p>
+        𝛼 (Alpha) - Themenmischung pro Dokument<br>
+        β (Beta) - Wortverteilung in Themen<br>
+        K<sup>T</sup> (n × k)
+    <summary> Evaluation (engl. model evaluation)</summary>
+    <i>Modellvergleich</i><br>
+  </details>
+<ol>
+  <details>
+    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
+    <summary>⚪ Visualisierung</summary>
+    <i>grafische Darstellung</i><br>
+    <li>PyLDAvis</li>
+  </details>
+  <details>
+    <summary>⚪ Datenpräsentation (engl. data presentation)<br></summary>
+    <summary>⚪ Visualisierung</summary>
+    <i>grafische Darstellung</i><br>
+    <li>PyLDAvis</li>
+    <summary>⚪ Aggregation</summary>
+    <i>numerische Darstellung</i>
+    Modellperformance
+  </details>
+</ol>
+
+
+
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
 > Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt.
 <ol type="1">
@@ -76,7 +110,7 @@ Haupt Freatures / Sekundärfeatuers?
         <ins>Standardisierung (engl. standardisation)</ins><br>
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten. </i>
       <ol type="2">
-            <li>**Normalisierung (engl. normalisation)**</li>
+            <li>Normalisierung (engl. normalisation)</li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
@@ -287,8 +321,8 @@ import numpy as np
 import matplotlib as mpl
 import seaborn as sns
 ```    
-Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html
-Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/
+Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
+Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
 
 
 ### Referenzen
@@ -296,7 +330,7 @@ import seaborn as sns
 <li>Externe Software</li>
 
 ###### Detektor
-Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python
+Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
 
 <li>Bibliotheken (engl. librarys)</li>
 
@@ -334,11 +368,11 @@ IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Ler
 
 ###### Wissenschaftliche Artikel
 Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
-Blum et al., 2020 ?
+Blum et al., 2020 ?<br>
 
-Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.
+Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.<br>
 
-Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf
+Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
 
 <li>Websites</li>
 
