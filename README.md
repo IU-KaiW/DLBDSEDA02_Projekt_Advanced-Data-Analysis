@@ -203,7 +203,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-  </details>
+  </details>  
   <details>
     <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary></br>
     In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning).
@@ -317,6 +317,8 @@ Python 3.8+
 ##### Abhängigkeiten (engl. dependencies)
 
 #### Bibliotheken (engl. librarys)
+`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
+
 ##### Sprachverarbeitung (engl. NLP-Pipeline)
 ##### Datenkonsolidierung (engl. data consolidation)
 ###### Visualisierung
