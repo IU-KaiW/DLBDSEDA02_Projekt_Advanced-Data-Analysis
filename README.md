@@ -364,7 +364,7 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 <br>Radim Řehůřek, 10.08.2024 - (https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html#sphx-glr-auto-examples-tutorials-run-lda-py)<br>
 <br>Christopher Helm, 08.05.2025 - (https://konfuzio.com/de/spacy-vs-nltk/)<br>
 <br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
-[^11]:<br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
+
 
 🟣🟢🟠🔴🔵🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
@@ -383,3 +383,4 @@ https://emojiterra.com/de/gelber-kreis/
 [^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
+[^11]: [Webseite] (Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/)
