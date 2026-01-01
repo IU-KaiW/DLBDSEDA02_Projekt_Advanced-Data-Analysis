@@ -80,6 +80,9 @@ Haupt Freatures / Sekundärfeatuers?
       <ol type="2">
             <li>Normalisierung (engl. normalisation)</li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
+            <div style="margin-left: 2em;">
+              <code>???</code>&nbsp;<code>????</code><br></br>
+            </div>
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
@@ -228,9 +231,6 @@ Datenpräsentation  (engl. data presentation)
       <div style="margin-left: 2em;">
         Aggregation:<code>???</code>&nbsp;Visualisierung:<code>????</code><br></br>
       </div>
-        <ul>
-          <li>PyLDAvis</li>
-        </ul>
     </details>
   </li>
 </ol>
@@ -392,3 +392,7 @@ https://emojiterra.com/de/gelber-kreis/
 [^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
+
+        <ul>
+          <li>PyLDAvis</li>
+        </ul>
