@@ -88,15 +88,15 @@ Haupt Freatures / Sekundärfeatuers?
               <li>Kasusumwandlung (engl. case conversion)</li>
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>Python Standardbibliothel (lower)</code>&nbsp;<code>????</code><br></br>
               </div>
               <li>Grundformreduktion (engl. inflection reduction)</li>
               Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
               <div style="margin-left: 2em;">
-                <code>NLTK (WordNet lemmatizer)</code>&nbsp;<code>spaCy</code><br></br>
+                <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy</code><br></br>
               </div>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
-              In der Formatnormalisierung erfolgt ...
+              In der Formatnormalisierung erfolgt die Normalisierung von Schreibweisen (Datenformate oder Zahlenformaten) und Sonderformen (Emojis).
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
@@ -109,30 +109,30 @@ Haupt Freatures / Sekundärfeatuers?
       </ol>
       </li>
       <li>Rauschentfernung (engl. noise reduction)</li><br>
-        <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und anschließend zu entfernen.</i>
+        <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
             <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br></br>
+              <code>NLTK</code>&nbsp;<code>regex</code><br></br>
             </div>
             <ol type="2">
             <li><ins>Stoppworte (engl. stopwords)</ins></li>
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>NLTK(stopwords)</code>&nbsp;<code>????</code><br></br>
               </div>
             <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br></br>
               </div>
             <li><ins>Leerzeichen (engl. white space)</ins></li>
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br></br>
               </div>
             <li><ins>Nummern (engl. removing numbers)</ins></li>
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br></br>
               </div>
             <li><ins>Sonderzeichen (engl. special character)</ins></li>
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br></br>
               </div>
       </ol>
     </ol>
@@ -404,6 +404,11 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 
 Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.
 Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2
+
+
+Recherche Bibliotheken ()
+
+Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/
 
 
 🟥🟨🟦🟫⬜🟧🟩🟪◼️◻️🔶🔸🔘
