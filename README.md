@@ -26,7 +26,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand eines extern entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. Dazu muss die Spaltenbeschriftung der textführende Spalte in "text" umgenannt werden.</i><br><br>
+      <i>Die gesammelten Datensätze werden anhand eines extern entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt.</i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br></br>
     </details>
@@ -160,17 +160,23 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
           <ul>
             <li>Frequency Based Embedding</li>
            BoW, TF-IDF
+            <div style="margin-left: 2em;">
+              <code>???</code>&nbsp;<code>????</code><br></br>
+            </div>
           </ul>
        <li>semantische Embeddings</li>
           <ul>
             <li>Prediction Based Word Embedding</li>
             GloVE; Word2Vec, FastText
+            <div style="margin-left: 2em;">
+              <code>???</code>&nbsp;<code>????</code><br></br>
+            </div>
             <li>Contextualized Based Word Embedding</li>
             ELMO, BERT, GPT
+            <div style="margin-left: 2em;">
+              <code>???</code>&nbsp;<code>????</code><br></br>
+            </div>
           </ul>
-          <div style="margin-left: 2em;">
-             <code>???</code>&nbsp;<code>????</code><br></br>
-          </div>
   </details>
   <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
@@ -237,7 +243,7 @@ Datenpräsentation  (engl. data presentation)
       <summary>🔵 Visualisierung (engl. visualization)</summary>
       <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
       <div style="margin-left: 2em;">
-        Aggregation:<code>???</code>&nbsp;Visualisierung:<code>????</code><br></br>
+        <code>???</code>&nbsp;<code>????</code><br></br>
       </div>
     </details>
   </li>
@@ -260,7 +266,7 @@ Datenpräsentation  (engl. data presentation)
   </li>
 </ol>
 
-Topic Diversity::
+Topic Diversity:
 `library 3`
 `library 4`
 Silhouette Score:
@@ -285,6 +291,7 @@ Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde 
 
 #### Datenvalidierung (engl. data validation)
 KI Detektor
+
 Requirements
 Python 3.x
 
@@ -292,6 +299,8 @@ Python 3.x
 `pip install transformers`
 ```
 python AITextDetector.py
+
+Die Spaltenbeschriftung der textführende Spalte muss in "text" umgenannt werden.
 
 ### Erstinstallation (engl. initial setup)
 
@@ -328,18 +337,19 @@ import nltk
 <li>Externe Software</li><br>
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
 
-<li>Bibliotheken (engl. librarys)</li>
+<li>Bibliotheken (engl. librarys)</li><br>
 
 <ins>Python-Standardbibliothek</ins><br><br>
 
 `stdlib`
 
-https://docs.python.org/3.9/py-modindex.html
 
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`re`           |                                                                       |               |           |           |
 |`csv`          |                                                                       |               |           |           |
+https://docs.python.org/3.9/py-modindex.html
+
 
 <ins>externe Bibliothek</ins>
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
