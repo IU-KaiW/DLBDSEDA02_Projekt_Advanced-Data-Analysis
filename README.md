@@ -248,7 +248,7 @@ Datenpräsentation  (engl. data presentation)
 <ol>
     <details>
       <summary>🔵 Kohärenz (engl. coherence)</summary>
-        <p><i>xxxx</i></p>
+        <p><i>Topic Coherence:</i></p>
         <code>???</code>&nbsp;<code>????</code><br>
     <ol>
     </details>
@@ -260,11 +260,7 @@ Datenpräsentation  (engl. data presentation)
   </li>
 </ol>
 
-
 Topic Diversity::
-`library 3`
-`library 4`
-Topic Coherence:
 `library 3`
 `library 4`
 Silhouette Score:
@@ -333,7 +329,11 @@ import nltk
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
 
 <li>Bibliotheken (engl. librarys)</li>
-<ins>Python-Standardbibliothek - stdlib</ins><br><br>
+
+<ins>Python-Standardbibliothek</ins><br><br>
+
+`stdlib`
+
 https://docs.python.org/3.9/py-modindex.html
 
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
