@@ -326,10 +326,6 @@ import spacy as sp
 import nltk
 
 ```    
-Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
-Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
-
-
 ### Referenzen
 <ul>
 <li>Externe Software</li>
@@ -347,6 +343,10 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`pandas`       |https://pandas.pydata.org                                              |               |           |           |
+
+<br>Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
+<br>Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
+
 
 
 <li>Literatur</li>
