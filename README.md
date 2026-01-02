@@ -325,7 +325,7 @@ import nltk
 
 ### Referenzen
 <ul>
-<li>Externe Software</li>
+<li>Externe Software</li><br>
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
 
 <li>Bibliotheken (engl. librarys)</li>
