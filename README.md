@@ -147,9 +147,11 @@ Haupt Freatures / Sekundärfeatuers?
 </ol>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
-> Datenverarbeitung erfolgt durch Merkmalsaufbereitung (engl. feature engineering) und Modellbildung (engl. modeling). Bei Merkmalsaufbereitung werden Rohdaten in Merkmale (engl. features) umgewandelt werden, welche ein Modell im Anschluss nutzen kann. Bei Modellbildung werden
+> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden Merkmale (engl. features) durch mittels Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion oder Merkmalsauswahl gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale mittels Modellbildung (engl. modeling) generiert, 
 
-Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl unterteilt werden. Im Merkmalslernen erfolgt die Bildung von Modellen ohne Feature Engineering, basierend auf ...
+ Im Merkmalslernen erfolgt die Bildung von Modellen ohne Feature Engineering, basierend auf ...
+
+
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
@@ -206,11 +208,6 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
           <ul>
             <li>1</li>
             xxx
-              <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
-              </div>
-            <li>2</li>
-            xxx<br><br>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
