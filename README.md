@@ -218,10 +218,10 @@ Haupt Freatures / Sekundärfeatuers?
                 <code>sklearn</code><br>
               </div><br>
             <li>Merkmalsauswahl (engl. feature selection)<br>
-            <i>Zum Ende werden die besten Merkmale ausgewählt.</i><br><br>
+            <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
               <div style="margin-left: 2em;">
                 <code>???</code>
-              </div>
+              </div><br>
           </ul>
        <li>🟡 Merkmalserkennung (engl. feature recognition)</li>
               Unter Merkmalserkennung 
