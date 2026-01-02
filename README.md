@@ -60,7 +60,7 @@ ______________
 Es wird Datensatz Nr. 05 "Comcast.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
-Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication)
+Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication), Syntaktisch, lexikalisch Semantisch (wie Bedeutung).....
 
 Haupt Freatures / Sekundärfeatuers?
 
@@ -204,12 +204,7 @@ Haupt Freatures / Sekundärfeatuers?
                 <code>gensim</code>&nbsp;<code>????</code><br></br>
               </div>
            <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
-           Latent Semantic Analysis (LSA) identifiziert unüberwacht Themen mittels Singulärwertzerlegung (engl. Singular Value Decomposition - SVD) wobei eine <i>Merkmalsumwandlung</i> stattfindet.<br>
-
-
-           (engl. silhouette score)
-`library 3`
-`library 4`
+           Latent Semantic Analysis (LSA) identifiziert unüberwacht Themen mittels <i>Merkmalsumwandlung</i> durch eine Singulärwertzerlegung (engl. Singular Value Decomposition - SVD).<br> Die Anzahl der Themen (k) muss optimal gewählt werden, weshalb Techniken wie Silhouettenkoeffizient (engl. silhouette score) oder Themenkohärenz (engl. topic coherence) in diesem Schritt anwendung finden.
               <div style="margin-left: 2em;">
                 <code>sklearn</code>&nbsp;<code>????</code><br></br>
               </div>
@@ -274,7 +269,7 @@ Datenpräsentation  (engl. data presentation)
 <ol>
     <details>
       <summary>🔵 Kohärenz (engl. coherence)</summary>
-        <p><i>Topic Coherence:</i></p>
+        <p><i></i></p>
         <code>???</code>&nbsp;<code>????</code><br>
     <ol>
     </details>
