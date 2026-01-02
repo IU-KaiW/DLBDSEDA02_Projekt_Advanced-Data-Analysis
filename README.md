@@ -116,10 +116,25 @@ Haupt Freatures / Sekundärfeatuers?
             </div>
             <ol type="2">
             <li>Stoppworte (engl. stopwords)</li>
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
             <li>Satzzeichen (engl. punctuation marks)</li>
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
             <li>Leerzeichen (engl. white space)</li>
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
             <li>Nummern (engl. removing numbers)</li>
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
             <li>Sonderzeichen (engl. special character)</li>
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
       </ol>
     </ol>
   </details>
