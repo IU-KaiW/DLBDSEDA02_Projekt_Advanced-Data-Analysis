@@ -185,13 +185,13 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
        <li>🟡 Merkmalsmodellierung (engl. feature modeling)</li>
        Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung des zuvor vektorisierten Texts. Sie legt fest, wie Merkmale thematisch oder semantisch für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion oder Merkmalsumwandlung identifiziert werden.<br><br>
             <ol type="2">
-            <li>Latent Dirichlet Allocation (LDA)</li><br>
+            <li>Latent Dirichlet Allocation (LDA)<br></li>
             <i>Merkmalsextraktion (engl. feature extraction)</i>
             Identifiziert latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-           <br><li>Latent Semantic Analysis (LSA)<br></i></li>
+           <li>Latent Semantic Analysis (LSA)<br></i></li>
             <i>Merkmalsumwandlung (engl. feature transformation)</i><br>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
@@ -203,12 +203,16 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
           <ol>
             <li>1</li>
             xxx
-            <li>2</li>
-            xxx<br><br>
-          </ol>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
+            <li>2</li>
+            xxx<br><br>
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
+          </ol>
+
   </details>  
   <details>
     <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary></br>
