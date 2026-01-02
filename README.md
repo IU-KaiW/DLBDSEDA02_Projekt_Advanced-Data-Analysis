@@ -174,6 +174,9 @@ Haupt Freatures / Sekundärfeatuers?
             <li>Frequency Based Embedding</li>
                 BoW<br>
                 TF-IDF<br>
+                <div style="margin-left: 2em;">
+                  <code>sklearn</code>
+                </div>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
