@@ -108,30 +108,29 @@ Haupt Freatures / Sekundärfeatuers?
               </div>
       </ol>
       </li>
-      <li>
-      <ins>Rauschentfernung (engl. noise reduction)</ins><br>
+      <li>Rauschentfernung (engl. noise reduction)</li><br>
         <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und anschließend zu entfernen.</i>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
             <ol type="2">
-            <li>Stoppworte (engl. stopwords)</li>
+            <li><ins>Stoppworte (engl. stopwords)</ins></li>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-            <li>Satzzeichen (engl. punctuation marks)</li>
+            <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-            <li>Leerzeichen (engl. white space)</li>
+            <li><ins>Leerzeichen (engl. white space)</ins></li>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-            <li>Nummern (engl. removing numbers)</li>
+            <li><ins>Nummern (engl. removing numbers)</ins></li>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-            <li>Sonderzeichen (engl. special character)</li>
+            <li><ins>Sonderzeichen (engl. special character)</ins></li>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
