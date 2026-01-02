@@ -181,12 +181,16 @@ Haupt Freatures / Sekundärfeatuers?
        <li>semantische Embeddings</li>
           <ul>
             <li>Prediction Based Word Embedding</li>
-            GloVE; Word2Vec, FastText
+            GloVE<br>
+            Word2Vec<br>
+            FastText<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
             <li>Contextualized Based Word Embedding</li>
-            ELMO, BERT, GPT
+            ELMO<br>
+            BERT<br>
+            GPT<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
@@ -207,7 +211,7 @@ Haupt Freatures / Sekundärfeatuers?
            <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
            Latent Semantic Analysis (LSA) identifiziert unüberwacht Themen mittels <i>Merkmalsumwandlung</i> durch eine Singulärwertzerlegung (engl. Singular Value Decomposition - SVD).<br> Die Anzahl der Themen (k) muss dabei optimal gewählt werden, weshalb Techniken wie den Silhouettenkoeffizienten (engl. silhouette score) oder Themenkohärenz (engl. topic coherence) Anwendung finden, um die Drehpunkte für die Themenextraktion zu bestimmen.
               <div style="margin-left: 2em;">
-                <code>sklearn</code>
+                <code>sklearn</code><br>
               </div>
             <li>Merkmalsauswahl (engl. feature selection)<br>
             <i>Zum Ende werden die besten Merkmale ausgewählt.</i><br><br>
