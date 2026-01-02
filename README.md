@@ -96,6 +96,7 @@ Haupt Freatures / Sekundärfeatuers?
                 <code>NLTK (WordNet lemmatizer)</code>&nbsp;<code>spaCy</code><br></br>
               </div>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
+              In der Formatnormalisierung erfolgt ...
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
