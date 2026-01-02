@@ -197,7 +197,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
             <li>Merkmalsauswahl (engl. feature selection)<br>
-            <i>Zum Ende werden die besten Merkmale ausgewählt.</i><br>
+            <i>Zum Ende werden die besten Merkmale ausgewählt.</i><br><br>
           </ul>
        <li>🟡 Merkmalserkennung (engl. feature recognition)</li>
           <ol>
