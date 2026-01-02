@@ -110,7 +110,7 @@ Haupt Freatures / Sekundärfeatuers?
       </li>
       <li>
       <ins>Rauschentfernung (engl. noise reduction)</ins><br>
-        <i>Ziel der Rauschentfernung ist es, für die Verarbeitung irrelevante Tokens durch eine Zeichenentfernung zu löschen.</i>
+        <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und anschließend zu entfernen.</i>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
