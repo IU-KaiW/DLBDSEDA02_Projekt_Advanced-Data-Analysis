@@ -310,13 +310,6 @@ Python 3.8+
 ##### Abhängigkeiten (engl. dependencies)
 
 #### Bibliotheken (engl. librarys)
-`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
-
-##### Sprachverarbeitung (engl. NLP-Pipeline)
-##### Datenkonsolidierung (engl. data consolidation)
-###### Visualisierung
-###### Aggregation
-
 ```python
 import pandas as pd
 import numpy as np
@@ -326,6 +319,12 @@ import spacy as sp
 import nltk
 
 ```    
+
+##### Sprachverarbeitung (engl. NLP-Pipeline)
+##### Datenkonsolidierung (engl. data consolidation)
+###### Visualisierung
+###### Aggregation
+
 ### Referenzen
 <ul>
 <li>Externe Software</li>
@@ -344,9 +343,9 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`pandas`       |https://pandas.pydata.org                                              |               |           |           |
 
-<br>Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
-<br>Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
-
+<br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
+<br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
+<br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
 
 
 <li>Literatur</li>
