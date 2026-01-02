@@ -193,18 +193,18 @@ Haupt Freatures / Sekundärfeatuers?
   </details>
   <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
-    <p><i>Textanalyse kann durch Merkmalsmodellierung (engl. feature modeling) oder Merkmalserkennung (engl. feature recognition) auf syntaktischer, lexikalischer oder semantischer Ebene erfolgen. Syntaktische Analyse befasst sich mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen wie Wortarten und ihre Zusammensetzung in Phrasen (Alpar et al., 2023, p. 45). Lexikalische Analysen befassen sich mit der Bedeutung einzelner Wörter. Semantische Analysen hingehen konzentrieren sich auf die Bedeutung größerer Textstücke. Dabei geht es um das Verstehen ganzer, in natürlicher Sprache verfasster Texte (Lane et al., 2019).</i></p><!--syntaktisch-Tokenization / Part-of-Speech(POS)-Tagging-->
+    <p><i>Textanalyse kann durch Merkmalsmodellierung (engl. feature modeling) oder Merkmalserkennung (engl. feature recognition) auf syntaktischer, lexikalischer oder semantischer Ebene erfolgen. Syntaktische Analyse befasst sich mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen wie Wortarten und ihre Zusammensetzung in Phrasen (Alpar et al., 2023, p. 45). Lexikalische Analysen befassen sich mit der Bedeutung einzelner Wörter. Semantische Analysen hingehen konzentrieren sich auf die Bedeutung größerer Textstücke. Dabei geht es um das Verstehen ganzer, in natürlicher Sprache verfasster Texte (Lane et al., 2019).</i></p><!--syntaktisch: Tokenization / Part-of-Speech(POS)-Tagging-->
     <ol type="1">
        <li>🟡 Merkmalsmodellierung (engl. feature modeling)</li>
               Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung des zuvor vektorisierten Texts. Sie legt fest, wie Merkmale thematisch oder semantisch für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion (engl. feature extraction) oder Merkmalsumwandlung (engl. feature transformation) identifiziert werden.<br><br>
           <ul>
             <li>Merkmalsextraktion (engl. feature extraction)</li><br>
-            Latent Dirichlet Allocation (LDA) identifitiert durch <i>Merkmalsextraktion</i> latente Themen in einer Sammlung von Dokumenten und stellt diese basierend auf ihren Verteilungen über die Themen dar.<br>
+            Latent Dirichlet Allocation (LDA) identifitiert unüberwacht durch <i>Merkmalsextraktion</i> latente Themen in einer Sammlung von Dokumenten und stellt diese basierend auf ihren Verteilungen über die Themen dar.<br>
               <div style="margin-left: 2em;">
                 <code>gensim</code>&nbsp;<code>????</code><br></br>
               </div>
            <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
-           Latent Semantic Analysis (LSA) identifiziert Themen mittels Singulärwertzerlegung  (engl. Singular Value Decomposition - SVD) wobei eine <i>Merkmalsumwandlung</i> stattfindet.<br>
+           Latent Semantic Analysis (LSA) identifiziert unüberwacht Themen mittels Singulärwertzerlegung (engl. Singular Value Decomposition - SVD) wobei eine <i>Merkmalsumwandlung</i> stattfindet.<br>
 
 
            (engl. silhouette score)
