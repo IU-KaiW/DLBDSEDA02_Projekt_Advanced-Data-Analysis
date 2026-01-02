@@ -199,7 +199,7 @@ Haupt Freatures / Sekundärfeatuers?
               Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung des zuvor vektorisierten Texts. Sie legt fest, wie Merkmale thematisch oder semantisch für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion (engl. feature extraction) oder Merkmalsumwandlung (engl. feature transformation) identifiziert werden.<br><br>
           <ul>
             <li>Latent Dirichlet Allocation (LDA)<br></li>
-            LDA identifitiert durch *Merkmalsextraktion* latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
+            LDA identifitiert durch <i>Merkmalsextraktion</i> latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
               <div style="margin-left: 2em;">
                 <code>gensim</code>&nbsp;<code>????</code><br></br>
               </div>
