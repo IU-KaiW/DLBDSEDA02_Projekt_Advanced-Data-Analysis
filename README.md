@@ -249,21 +249,18 @@ Datenpräsentation  (engl. data presentation)
     <details>
       <summary>🔵 Kohärenz (engl. coherence)</summary>
         <p><i>xxxx</i></p>
+        <code>???</code>&nbsp;<code>????</code><br>
     <ol>
     </details>
     <details>
       <summary>🔵 Perplexität (engl. perplexity)</summary>
         <p><i>xxxxx</i></p>
+        <code>???</code>&nbsp;<code>????</code><br>
     </details>
   </li>
 </ol>
 
-Kohärenz:
-`library 1`
-`library 2`
-Perplexität:
-`library 3`
-`library 4`
+
 Topic Diversity::
 `library 3`
 `library 4`
@@ -288,14 +285,17 @@ ______________
 Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt. 
 
 ### Vorbereitende Installation (engl. preparatory setup)
+
+
 #### Datenvalidierung (engl. data validation)
 KI Detektor
+Requirements
+Python 3.x
 
 ```python
 `pip install transformers`
 ```
 python AITextDetector.py
-
 
 ### Erstinstallation (engl. initial setup)
 
