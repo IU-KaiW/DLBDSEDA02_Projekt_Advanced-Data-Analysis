@@ -82,13 +82,13 @@ Haupt Freatures / Sekundärfeatuers?
             <li><ins>Normalisierung (engl. normalisation)</ins></li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
             <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br></br>
+              <code>stdlib</code>&nbsp;<code>????</code><br></br>
             </div>
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
               <div style="margin-left: 2em;">
-                <code>Python Standardbibliothel (lower)</code>&nbsp;<code>????</code><br></br>
+                <code>stdlib(lower)</code>&nbsp;<code>????</code><br></br>
               </div>
               <li>Grundformreduktion (engl. inflection reduction)</li>
               Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
