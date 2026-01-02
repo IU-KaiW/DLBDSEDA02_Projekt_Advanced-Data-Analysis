@@ -183,7 +183,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
     <p><i>Beginn der Textanalyse (engl. Text Analytics), in welcher Merkmalsmodellierung (engl. feature modeling) und die Merkmalserkennung (engl. feature recognition) zu verorten sind.</i></p>
     <ol type="1">
        <li>🟡 Merkmalsmodellierung (engl. feature modeling)</li>
-       Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung des zuvor vektorisierten Texts. Sie legt fest, wie Merkmale thematisch oder semantisch für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion oder Merkmalsumwandlung identifiziert werden.<br>
+       Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung des zuvor vektorisierten Texts. Sie legt fest, wie Merkmale thematisch oder semantisch für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion oder Merkmalsumwandlung identifiziert werden.<br><br>
             <ol type="2">
             <li>Latent Dirichlet Allocation (LDA)</li><br>
             <i>Merkmalsextraktion (engl. feature extraction)</i>
@@ -204,7 +204,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
             <li>1</li>
             xxx
             <li>2</li>
-            xxx
+            xxx<br><br>
           </ol>
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
