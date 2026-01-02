@@ -155,14 +155,14 @@ Haupt Freatures / Sekundärfeatuers?
         <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
       </li>
       <div style="margin-left: 2em;">
-        <code>sklearn(CountVectorizer)?</code>&nbsp;<code>????</code><br></br>
+        <code>sklearn(CountVectorizer)</code>&nbsp;<code>????</code><br></br>
       </div>
     </ol>
   </details>
 </ol>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
-> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden Merkmale (engl. features) durch mittels Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion oder Merkmalsauswahl gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale aus Rohtexten direkt durch ... (vortrainierte Modelle) gewonnen. 
+> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden Merkmale (engl. features) durch mittels Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle gewonnen.
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
@@ -172,7 +172,8 @@ Haupt Freatures / Sekundärfeatuers?
        Hierunter werden 
           <ul>
             <li>Frequency Based Embedding</li>
-           BoW, TF-IDF
+                BoW<br>
+                TF-IDF<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
