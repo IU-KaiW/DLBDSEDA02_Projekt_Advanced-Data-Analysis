@@ -166,22 +166,23 @@ Haupt Freatures / Sekundärfeatuers?
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i>Vektorisierungstechniken wandeln Text in Embeddings, nummerische Repräsentationen um. Hierbei wird zwischen unsemantischen Embeddings (feature vektors) und semantischen Varianten (word vectors / sentence vectors) differenziert. Vektorisierungstechniken nutzen Merkmalsextraktion, um Text im Rahmen der Merkmalsaufbereitung für nachfolgende Schritte vorzubereiten.</i></p>
+    <p><i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen sog. Embeddings um. Hierbei wird zwischen unsemantischen Embeddings (feature vektors) und semantischen Varianten (word vectors / sentence vectors) differenziert. Vektorisierungstechniken nutzen Merkmalsextraktion, um Text im Rahmen der Merkmalsaufbereitung für nachfolgende Schritte vorzubereiten.</i></p>
     <ol type="1">
        <li>unsemantische Embeddings</li>
        Hierunter werden 
           <ul>
             <li>Frequency Based Embedding</li>
                 BoW<br>
+                <div style="margin-left: 2em;">
+                  <code>???</code>&nbsp;<code>????</code><br></br>
+                </div>
                 TF-IDF<br>
                 <div style="margin-left: 2em;">
                   <code>sklearn</code>
                 </div>
-            <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br></br>
-            </div>
           </ul>
        <li>semantische Embeddings</li>
+       (word vectors / sentence vectors)
           <ul>
             <li>Prediction Based Word Embedding</li>
             GloVE<br>
