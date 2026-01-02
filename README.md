@@ -369,8 +369,8 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 <br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
 
 
-
-
+🟥🟨🟦🟫⬜🟧🟩🟪◼️◻️🔶🔸🔘
+:red_square:
 
 🟣🟢🟠🔴🔵🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
