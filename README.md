@@ -203,7 +203,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
               </div>
           </ul>
        <li>🟡 Merkmalserkennung (engl. feature recognition)</li>
-          <ol>
+          <ul>
             <li>1</li>
             xxx
               <div style="margin-left: 2em;">
@@ -214,7 +214,7 @@ Merkmalsaufbereitung kann in Merkmalsextraktion, Merkmalsumwandlung, Merkmalskon
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
-          </ol>
+          </ul>
 
   </details>  
   <details>
