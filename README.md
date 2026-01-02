@@ -201,12 +201,12 @@ Haupt Freatures / Sekundärfeatuers?
             <li>Latent Dirichlet Allocation (LDA)<br></li>
             LDA identifitiert durch *Merkmalsextraktion* latente Themen in einer Sammlung von Dokumenten und stellt Dokumente basierend auf ihren Verteilungen über diese Themen dar.<br>
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>gensim</code>&nbsp;<code>????</code><br></br>
               </div>
            <li>Latent Semantic Analysis (LSA)<br></i></li>
             <i>Merkmalsumwandlung</i><br>
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>sklearn</code>&nbsp;<code>????</code><br></br>
               </div>
             <li>Merkmalsauswahl (engl. feature selection)<br>
             <i>Zum Ende werden die besten Merkmale ausgewählt.</i><br><br>
