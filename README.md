@@ -1,7 +1,7 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
 Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
-Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die zu verwendenten Python-Bibliotheken erwähnt werden.
+Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (externen/integrierten) Bibliotheken genannt werden.
 
 ## Konzeption
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
@@ -331,7 +331,8 @@ import nltk
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
 
 <li>Bibliotheken (engl. librarys)</li>
-<ins>Python-Standardbibliothek</ins><br><br>
+<ins>Python-Standardbibliothek - stdlib</ins><br><br>
+https://docs.python.org/3.9/py-modindex.html
 
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
@@ -343,6 +344,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`pandas`       |https://pandas.pydata.org                                              |               |           |           |
 
+<br>`pandas` 
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
 <br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
