@@ -285,7 +285,7 @@ ______________
 ```
 
 ## Installation (engl. setup)
-Als Entwicklungsumgebung (engl. development environment - IDE) wurde Microsofts Visual Studio Code (VSCode) genutzt. 
+Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt. 
 
 ### Vorbereitende Installation (engl. preparatory setup)
 #### Datenvalidierung (engl. data validation)
@@ -297,12 +297,14 @@ KI Detektor
 python AITextDetector.py
 
 
+### Erstinstallation (engl. initial setup)
+
 #### Laufzeitumgebung (engl. runtime environment)
-Als virtuelle Umgebungen stehen in Python "conda" und "venv" zur Verfügung. Aufgrund der Bibliothek SpaCy wurde sich für conda entschieden.
+Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Aufgrund der Abhängigkeit von spaCy wird conda genutzt.
+
 ```console
 `pip install conda`
 ```
-### Erstinstallation (engl. initial setup)
 
 #### Voraussetzungen (engl. prerequisite setup)
 Python 3.8+
