@@ -73,14 +73,13 @@ Haupt Freatures / Sekundärfeatuers?
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
     <p><i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert und anschließend von Rauschen befreit.</i></p>
     <ol type="1">
-      <li>
-        <ins>Standardisierung (engl. standardisation)</ins><br>
+      <li>Standardisierung (engl. standardisation)<br></li>
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
           <div style="margin-left: 2em;">
             <code>???</code>&nbsp;<code>????</code><br></br>
           </div>
       <ol type="2">
-            <li>Normalisierung (engl. normalisation)</li>
+            <li><ins>Normalisierung (engl. normalisation)</ins></li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
@@ -101,7 +100,7 @@ Haupt Freatures / Sekundärfeatuers?
                 <code>???</code>&nbsp;<code>????</code><br></br>
               </div>
             </ul>
-            <li>Rechtschreibfehlerkorrektur (engl. spelling correction)</li>
+            <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins></li>
             Durch Rechtschreibkorrekrur werden Tipp bzw. Schreibfehler korrigiert.
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br></br>
