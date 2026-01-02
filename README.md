@@ -241,7 +241,19 @@ Haupt Freatures / Sekundärfeatuers?
   <details>
     <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary></br>
     In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning).
-    <i>Beginn der Modellbildung für Aufgabe<i>
+    <i>Modellauswertung (engl. model evaluation)<i>
+              <ul>
+            <li>Kohärenz (engl. coherence)</li>
+            xxx
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
+            <li>Perplexität (engl. perplexity)</li>
+            xxx
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br></br>
+              </div>
+          </ul>
   </details>
 </ol>
 
@@ -273,23 +285,6 @@ Datenpräsentation  (engl. data presentation)
       <div style="margin-left: 2em;">
         <code>???</code>&nbsp;<code>????</code><br></br>
       </div>
-    </details>
-  </li>
-</ol>
-
-#### 🔵 Modellauswertung (engl. model evaluation)
-> Modellvergleich / Modellperformance; Evaluation (engl. model evaluation)
-<ol>
-    <details>
-      <summary>🔵 Kohärenz (engl. coherence)</summary>
-        <p><i></i></p>
-        <code>???</code>&nbsp;<code>????</code><br>
-    <ol>
-    </details>
-    <details>
-      <summary>🔵 Perplexität (engl. perplexity)</summary>
-        <p><i>xxxxx</i></p>
-        <code>???</code>&nbsp;<code>????</code><br>
     </details>
   </li>
 </ol>
