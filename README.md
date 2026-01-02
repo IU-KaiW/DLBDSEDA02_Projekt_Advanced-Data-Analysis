@@ -198,13 +198,18 @@ Haupt Freatures / Sekundärfeatuers?
        <li>🟡 Merkmalsmodellierung (engl. feature modeling)</li>
               Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung des zuvor vektorisierten Texts. Sie legt fest, wie Merkmale thematisch oder semantisch für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion (engl. feature extraction) oder Merkmalsumwandlung (engl. feature transformation) identifiziert werden.<br><br>
           <ul>
-            <li>Merkmalsextraktion</li><br>
+            <li>Merkmalsextraktion (engl. feature extraction)</li><br>
             Latent Dirichlet Allocation (LDA) identifitiert durch <i>Merkmalsextraktion</i> latente Themen in einer Sammlung von Dokumenten und stellt diese basierend auf ihren Verteilungen über die Themen dar.<br>
               <div style="margin-left: 2em;">
                 <code>gensim</code>&nbsp;<code>????</code><br></br>
               </div>
-           <li>Merkmalsumwandlung<br></i></li>
-           Latent Semantic Analysis (LSA) identifiziert Themen mittels<i>Merkmalsumwandlung</i><br>
+           <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
+           Latent Semantic Analysis (LSA) identifiziert Themen mittels Singulärwertzerlegung  (engl. Singular Value Decomposition - SVD) wobei eine <i>Merkmalsumwandlung</i> stattfindet.<br>
+
+
+           (engl. silhouette score)
+`library 3`
+`library 4`
               <div style="margin-left: 2em;">
                 <code>sklearn</code>&nbsp;<code>????</code><br></br>
               </div>
@@ -284,9 +289,7 @@ Datenpräsentation  (engl. data presentation)
 Topic Diversity:
 `library 3`
 `library 4`
-Silhouette Score:
-`library 3`
-`library 4`
+
 ______________
 
 ## Projektstruktur
