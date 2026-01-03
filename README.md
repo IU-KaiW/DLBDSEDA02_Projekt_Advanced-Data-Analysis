@@ -386,16 +386,16 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`pandas`       |https://pandas.pydata.org                                              |               |           | df        |
-|`gensim`       |                                                                       |               |           |           |
-|`seaborn`      |                                                                       |               |           |           |
+|`gensim`       |https://pypi.org/project/gensim/                                       |               |LSA/LDA    |           |
+|`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html               |           |           |
 |`numpy`        |                                                                       |               |           |           |
-|`matplotlib`          |                                                                       |               |           |           |
-|`spacy`          |                                                                       |               |           |           |
-|`nltk`          |                                                                       |               |           |           |
-|`XXX`          |                                                                       |               |           |           |
-|`XXX`          |                                                                       |               |           |           |
-|`XXX`          |                                                                       |               |           |           |
-|`XXX`          |                                                                       |               |           |           |
+|`matplotlib`   |                                                                       |               |           |           |
+|`spacy`        |                                                                       |               |           |           |
+|`nltk`         |                                                                       |               |          |           |
+|`transformers` |                                                                       |               |           |           |
+|`torch`        |                                                                       |               | KI-Detektor          |           |
+|`sklearn`      |                                                                       |               |           |           |
+|`torchmetrics` |                                                                       |               |           |           |
 
 
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
