@@ -378,24 +378,24 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 | `stdlib`      | Dokumentation |Verwendung | Funktionen|
 |-------------- |--------------------------------------------------------------------|-----------|-----------|
 |[`re`]         |https://docs.python.org/3.9/library/re.html#module-re               |           |           |
-|[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |           |
-|[`venv`]         |               |           |           |
+|[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv           |           |           |
+|[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv         |           |           |
 
 
 <ins>externe Bibliothek</ins>
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
-|-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
-|`pandas`       |https://pandas.pydata.org                                              |               |           | df        |
-|`gensim`       |https://pypi.org/project/gensim/                                       |               |LSA/LDA    |           |
+|-------------- |-----------------------------------------------------------------------|----------------------------------------|-----------|-----------|
+|`pandas`       |https://pandas.pydata.org                                              |                                        |           | df        |
+|`gensim`       |https://pypi.org/project/gensim/                                       |                                        |LSA/LDA    |           |
 |`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html|           |           |
-|`numpy`        |                                                                       |               |           |           |
-|`matplotlib`   |https://matplotlib.org                                                 |               |           |           |
-|`spacy`        |                                                                       |               |           |           |
-|`nltk`         |                                                                       |               |           |           |
-|`transformers` |                                                                       |               |           |           |
-|`torch`        |                                                                       |               | KI-Detektor           |           |
-|`sklearn`      |                                                                       |               |           |           |
-|`torchmetrics` |                                                                       |               |           |           |
+|`numpy`        |https://numpy.org                                                      |https://numpy.org/doc/stable/.          |           |           |
+|`matplotlib`   |https://matplotlib.org                                                 |                                        |           |           |
+|`spacy`        |https://spacy.io                                                       |                                        |           |           |
+|`nltk`         |https://github.com/nltk                                                |https://www.nltk.org                    |           |           |
+|`transformers` |https://pypi.org/project/transformers/                                 |                                        |           |           |
+|`torch`        |https://pypi.org/project/torch/                                        |https://docs.pytorch.org/docs/stable/index.html| KI-Detektor            |           |
+|`sklearn`      |                                                                       |                                        |           |           |
+|`torchmetrics` |                                                                       |                                        |           |           |
 |`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |https://pyldavis.readthedocs.io/en/latest/|           |           |
 |`PyLDAvis`     |                                                                       |               |           |           |
 |`cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html       |               |           |           |
