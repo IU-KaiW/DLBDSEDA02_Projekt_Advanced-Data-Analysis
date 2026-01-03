@@ -387,7 +387,7 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`pandas`       |https://pandas.pydata.org                                              |               |           | df        |
 |`gensim`       |https://pypi.org/project/gensim/                                       |               |LSA/LDA    |           |
-|`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html               |           |           |
+|`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html|           |           |
 |`numpy`        |                                                                       |               |           |           |
 |`matplotlib`   |https://matplotlib.org                                                 |               |           |           |
 |`spacy`        |                                                                       |               |           |           |
@@ -396,12 +396,11 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |`torch`        |                                                                       |               | KI-Detektor           |           |
 |`sklearn`      |                                                                       |               |           |           |
 |`torchmetrics` |                                                                       |               |           |           |
-|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |https://pyldavis.readthedocs.io/en/latest/
-               |           |           |
+|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |https://pyldavis.readthedocs.io/en/latest/|           |           |
 |`PyLDAvis`     |                                                                       |               |           |           |
-|`cartopy`     |https://cartopy.readthedocs.io/stable/getting_started/index.html        |               |           |           |
-|`wordcloud`     |                                                                       |               |           |           |
-|`Top2Vec`     |                                                                       |               |           |           |
+|`cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html       |               |           |           |
+|`wordcloud`    |                                                                       |               |           |           |
+|`Top2Vec`      |                                                                       |               |           |           |
 
 
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
