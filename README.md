@@ -398,9 +398,9 @@ https://docs.python.org/3.9/py-modindex.html
 <li>Literatur</li>
 
 ###### Skripte
-<ul>
-<li>IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br></li>
-<li>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br></li>
+<ul> Liste
+  <li>IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br></li>
+  <li>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br></li>
 </ul>
 
 
