@@ -377,7 +377,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 `stdlib`
 
 
-| Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
+| Python-Standardbibliothek   | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`re`           |                                                                       |               |           |           |
 |`csv`          |                                                                       |               |           |           |
@@ -397,7 +397,7 @@ https://docs.python.org/3.9/py-modindex.html
 
 <li>Literatur</li>
 
-##### Skripte <ul> 
+###### Skripte <ul> 
   IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
   <br>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br>
 </ul>
