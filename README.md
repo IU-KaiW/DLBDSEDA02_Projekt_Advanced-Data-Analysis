@@ -46,7 +46,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 02 | rows.csv                           | n/a       | 176    MB |[^02] &nbsp; Kaggle        |
 | 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
 | 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbsp; Kaggle        |
-| 05 | complaints_data.csv                | 82 %      | 60,0   kB |[^05] &nbsp; ?       |
+| 05 | complaints_data.csv                | 82 %      | 7,20   MB |[^05] &nbsp; GitHub        |
 | 06 | user_complaints                    | 0,69 %    | 229,0  kB |[^06] &nbsp; GitHub        |
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
@@ -57,7 +57,8 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ______________
 
 ###### Pipeline-Eingabe
-Es wird Datensatz Nr. 05 "complaints_data"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt. Es handelt sich um eine CSV-Datei, deren Values "author" "posted_on" "rating" "text"
+Es wird Datensatz Nr. 05 "complaints_data.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt. Es handelt sich um einen Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen sowie 4 Spalten mit den Bezeichnungen "author" , "posted_on" , "rating" und "text", wobei letztere die Kundenbeschwerde in englischer Sprache enthält.
+
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können." (Timmermann, 2019).
@@ -65,8 +66,10 @@ Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand de
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichung (engl. date of publication) oder die Bedeutungen, Syntaktisch, lexikalisch Semantisch (wie Bedeutung).....
 
 Haupt Freatures / Sekundärfeatuers?
-
-
+Datenevrarbeitung
+<div style="margin-left: 2em;">
+  <code>pandas</code>&nbsp;<code>????</code><br></br>
+</div>
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
 > Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt. spaCy [^11]
@@ -411,9 +414,10 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 <br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
 <br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
 
-
+„“ (Klein, 2023, p. 262)
 Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.
 Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2
+
 
 
 Recherche Bibliotheken ()
@@ -435,10 +439,11 @@ https://emojiterra.com/de/gelber-kreis/
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
 [^03]: [Datensatz03] (https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
 [^04]: [Datensatz04] (https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
-[^05]: [Datensatz05] (https://www.kaggle.com/datasets/yasserh/comcast-telecom-complaints)
+[^05]: [Datensatz05] (https://github.com/sanax-997/nlp_customer_complaints_analysis/blob/main/Data/complaints_data.csv)
 [^06]: [Datensatz07] (https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
 [^07]: [Datensatz08] (https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
 [^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 [^11]: [Webseite] (Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/)
+[^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
