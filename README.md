@@ -396,6 +396,9 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |`torch`        |                                                                       |               | KI-Detektor          |           |
 |`sklearn`      |                                                                       |               |           |           |
 |`torchmetrics` |                                                                       |               |           |           |
+|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |https://pyldavis.readthedocs.io/en/latest/
+               |           |           |
+|`PyLDAvis`     |                                                                       |               |           |           |
 
 
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
