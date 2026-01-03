@@ -383,15 +383,15 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
 
 <ins>externe Bibliothek</ins>
-| Bibliothek    | Website                                                                                                                                           |Verwendung  | Funktionen|
-|-------------- |-------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------|-----------| 
+| Bibliothek    | Website                                                                 |                                                                         |Verwendung     |Funktionen |
+|-------------- |-------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------|-----------|
 |`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation:                                                       |               |df         |
 |`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |LSA/LDA        |           |
 |`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung |           |
 |`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |               |           |
 |`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |               |           |
-|`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |               |           |
-|`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |               |           |
+|`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP            |           |
+|`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP            |           |
 |`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |               |           |
 |`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor    |           |
 |`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |               |           |
