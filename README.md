@@ -383,29 +383,29 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
 
 <ins>externe Bibliothek</ins>
-| Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
-|-------------- |-----------------------------------------------------------------------|----------------------------------------|-----------|-----------|
-|`pandas`       |https://pandas.pydata.org                                              |                                        |           | df        |
-|`gensim`       |https://pypi.org/project/gensim/                                       |                                        |LSA/LDA    |           |
-|`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html|           |           |
-|`numpy`        |https://numpy.org                                                      |https://numpy.org/doc/stable/.          |           |           |
-|`matplotlib`   |https://matplotlib.org                                                 |                                        |           |           |
-|`spacy`        |https://spacy.io                                                       |                                        |           |           |
-|`nltk`         |https://github.com/nltk                                                |https://www.nltk.org                    |           |           |
-|`transformers` |https://pypi.org/project/transformers/                                 |                                        |           |           |
-|`torch`        |https://pypi.org/project/torch/                                        |https://docs.pytorch.org/docs/stable/index.html| KI-Detektor            |           |
-|`sklearn`      |                                                                       |                                        |           |           |
-|`torchmetrics` |                                                                       |                                        |           |           |
-|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |https://pyldavis.readthedocs.io/en/latest/|           |           |
-|`PyLDAvis`     |                                                                       |               |           |           |
-|`cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html       |               |           |           |
-|`wordcloud`    |                                                                       |               |           |           |
-|`Top2Vec`      |                                                                       |               |           |           |
+| Bibliothek    | Website                                                               | Dokumentation                                       |Verwendung  | Funktionen|
+|-------------- |-----------------------------------------------------------------------|-----------------------------------------------------|------------|-----------|
+|`pandas`       |https://pandas.pydata.org                                              |                                                     |            |df         |
+|`gensim`       |https://pypi.org/project/gensim/                                       |                                                     |LSA/LDA     |           |
+|`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html             |            |           |
+|`numpy`        |https://numpy.org                                                      |https://numpy.org/doc/stable/.                       |            |           |
+|`matplotlib`   |https://matplotlib.org                                                 |https://matplotlib.org/stable/index.html             |            |           |
+|`spacy`        |https://spacy.io                                                       |                                                     |            |           |
+|`nltk`         |https://github.com/nltk                                                |https://www.nltk.org                                 |            |           |
+|`transformers` |https://pypi.org/project/transformers/                                 |                                                     |            |           |
+|`torch`        |https://pypi.org/project/torch/                                        |https://docs.pytorch.org/docs/stable/index.html      |KI-Detektor |           |
+|`sklearn`      |https://scikit-learn.org/stable/index.html                             |                                                     |            |           |
+|`torchmetrics` |https://pypi.org/project/torchmetrics/                                 |https://lightning.ai/docs/torchmetrics/stable/.      |            |           |
+|`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |https://pyldavis.readthedocs.io/en/latest/           |            |           |
+|`cartopy`      |https://cartopy.readthedocs.io/stable/getting_started/index.html       |                                                     |            |           |
+|`wordcloud`    |https://pypi.org/project/wordcloud/                                    |https://amueller.github.io/word_cloud/               |            |           |
+|`Top2Vec`      |https://pypi.org/project/top2vec/                                      |https://top2vec.readthedocs.io/en/stable/Top2Vec.html|            |           |
 
+<br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
 
+###### Skripte <ul>
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
-<br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
 
 
 <li>Literatur</li>
