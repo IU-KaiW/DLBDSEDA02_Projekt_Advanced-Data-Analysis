@@ -383,27 +383,27 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
 
 <ins>externe Bibliothek</ins>
-| Bibliothek    | Website                                                                                                                                      |Verwendung  | Funktionen|
-|-------------- |-------------------------------------------------------------------------|--------------------------------------------------------------------|------------|
-|`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation:                                                  |            |df         |
-|`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                  |LSA/LDA     |           |
-|`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html         |            |
-|`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                   |            |           |
-|`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html         |            |           |
-|`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                  |            |           |
-|`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                             |            |           |
-|`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                  |            |           |
-|`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html  |KI-Detektor |           |
-|`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                  |            |           |
-|`torchmetrics` |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.  |            |           |
-|`PyLDAvis`     |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/       |            |           |
-|`cartopy`      |Website: https://cartopy.readthedocs.io/stable/getting_started/index.html <br>Dokumentation:                                                  |            |           |
-|`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/               |            |           |
-|`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html|            |           |
+| Bibliothek    | Website                                                                                                                                           |Verwendung  | Funktionen|
+|-------------- |-------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------|-----------| 
+|`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation:                                                       |               |df         |
+|`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |LSA/LDA        |           |
+|`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung |           |
+|`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |               |           |
+|`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |               |           |
+|`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |               |           |
+|`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |               |           |
+|`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |               |           |
+|`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor    |           |
+|`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |               |           |
+|`torchmetrics` |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation     |           |
+|`PyLDAvis`     |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung |           |
+|`cartopy`      |Website: https://cartopy.readthedocs.io/stable/getting_started/index.html <br>Dokumentation:                                                       |Visualisierung |           |
+|`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung |           |
+|`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung |           |
 
 <br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
 
-###### Skripte <ul>
+###### Tutorials <ul>
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
 
