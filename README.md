@@ -375,19 +375,29 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-| `stdlib`      | Website                                                               | Dokumentation |Verwendung | Funktionen|
-|-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
-|`re`           |                                                                       |               |           |           |
-|`csv`          |                                                                       |               |           |           |
-
+| `stdlib`      | Dokumentation |Verwendung | Funktionen|
+|-------------- |--------------------------------------------------------------------|-----------|-----------|
+|`re`           |https://docs.python.org/3.9/library/re.html#module-re               |           |           |
+|`csv`          |               |           |           |
+|               |               |           |           |
 
 
 <ins>externe Bibliothek</ins>
 | Bibliothek    | Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
-|`pandas`       |https://pandas.pydata.org                                              |               |           |           |
+|`pandas`       |https://pandas.pydata.org                                              |               |           | df        |
+|`gensim`       |                                                                       |               |           |           |
+|`seaborn`      |                                                                       |               |           |           |
+|`numpy`        |                                                                       |               |           |           |
+|`matplotlib`          |                                                                       |               |           |           |
+|`spacy`          |                                                                       |               |           |           |
+|`nltk`          |                                                                       |               |           |           |
+|`XXX`          |                                                                       |               |           |           |
+|`XXX`          |                                                                       |               |           |           |
+|`XXX`          |                                                                       |               |           |           |
+|`XXX`          |                                                                       |               |           |           |
 
-<br>`pandas` 
+
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
 <br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
