@@ -385,7 +385,7 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 <ins>externe Bibliothek</ins>
 | Bibliothek    | Website                                                               | Dokumentation                                       |Verwendung  | Funktionen|
 |-------------- |-----------------------------------------------------------------------|-----------------------------------------------------|------------|-----------|
-|`pandas`       |Website: https://pandas.pydata.org  Dokumentation:www.test.de                                   |                                                     |            |df         |
+|`pandas`       |Website: https://pandas.pydata.org<br>Dokumentation:www.test.de                                   |                                                     |            |df         |
 |`gensim`       |https://pypi.org/project/gensim/                                       |                                                     |LSA/LDA     |           |
 |`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html             |            |           |
 |`numpy`        |https://numpy.org                                                      |https://numpy.org/doc/stable/.                       |            |           |
