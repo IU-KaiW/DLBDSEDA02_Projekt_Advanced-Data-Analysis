@@ -57,10 +57,11 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ______________
 
 ###### Pipeline-Eingabe
-Es wird Datensatz Nr. 05 "Comcast.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt.
-
+Es wird Datensatz Nr. XX "Comcast Telecom Complaints Dataset"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt. Es handelt sich um eine CSV-Datei, deren Values "author" "posted_on" "rating" "text"
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
-Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichungsdatum (engl. date of publication), Syntaktisch, lexikalisch Semantisch (wie Bedeutung).....
+Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können." (Timmermann, 2019).
+
+Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichung (engl. date of publication) oder die Bedeutungen, Syntaktisch, lexikalisch Semantisch (wie Bedeutung).....
 
 Haupt Freatures / Sekundärfeatuers?
 
@@ -144,7 +145,8 @@ Haupt Freatures / Sekundärfeatuers?
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen (n-Gramme) zerlegt.</i>
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen (n-Gramme) zerlegt.
+        Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können. Dafür eignen sich statistische Informationen über die Token beziehungsweise Wörter“ (Timmermann, 2019).        </i>
       </li>
       <div style="margin-left: 2em;">
         <code>SpaCy</code>&nbsp;<code>????</code><br></br>
