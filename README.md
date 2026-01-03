@@ -372,7 +372,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 
 <li>Bibliotheken (engl. librarys)</li><br>
 
-<ins>Python-Standardbibliothek</ins>
+<ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
 | `stdlib`      | Website                                                               | Dokumentation |Verwendung | Funktionen|
