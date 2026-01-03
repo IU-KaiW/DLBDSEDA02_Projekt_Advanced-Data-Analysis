@@ -398,8 +398,12 @@ https://docs.python.org/3.9/py-modindex.html
 <li>Literatur</li>
 
 ###### Skripte
-IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
-IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.
+<ul>
+  <li>IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br></li>
+  <li>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br></li>
+</ul>
+
+
 
 ###### Artikel
 Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
@@ -431,9 +435,7 @@ Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with 
 🟣🟢🟠🔴🔵🟡🟤⚫
 https://emojiterra.com/de/gelber-kreis/
 
-<ul>
- <li>PyLDAvis</li>
-</ul>
+
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
