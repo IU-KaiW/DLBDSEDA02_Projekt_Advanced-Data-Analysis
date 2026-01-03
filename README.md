@@ -20,7 +20,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
-      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat heruntergeladen und lokal gespeichert.</i></br>
+      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i></br>
     </details>
 </ol>
 <ol>    
@@ -46,7 +46,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 02 | rows.csv                           | n/a       | 176    MB |[^02] &nbsp; Kaggle        |
 | 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
 | 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbsp; Kaggle        |
-| 05 | Comcast.csv                        | 82 %      | 60,0   kB |[^05] &nbsp; Kaggle        |
+| 05 | complaints_data.csv                | 82 %      | 60,0   kB |[^05] &nbsp; ?       |
 | 06 | user_complaints                    | 0,69 %    | 229,0  kB |[^06] &nbsp; GitHub        |
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
@@ -57,7 +57,8 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ______________
 
 ###### Pipeline-Eingabe
-Es wird Datensatz Nr. XX "Comcast Telecom Complaints Dataset"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt. Es handelt sich um eine CSV-Datei, deren Values "author" "posted_on" "rating" "text"
+Es wird Datensatz Nr. 05 "complaints_data"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt. Es handelt sich um eine CSV-Datei, deren Values "author" "posted_on" "rating" "text"
+
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können." (Timmermann, 2019).
 
@@ -299,7 +300,7 @@ ______________
 ## Projektstruktur
 ### Ordnerstruktur
 ```markdown
-├── datasets/  # Roh- und vorverarbeitete Texte
+├── dataset/   # gewählter Datensatz
 ├── src/       # Python-Module
 ├── docs/      # Abbildungen, PDFs
 └── README.md
@@ -310,6 +311,13 @@ Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde 
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
+Download des Datensatzes
+```python
+`import kagglehub
+path = kagglehub.dataset_download("yasserh/comcast-telecom-complaints")
+print("Path to dataset files:", path)
+`
+```
 
 #### Datenvalidierung (engl. data validation)
 KI Detektor
