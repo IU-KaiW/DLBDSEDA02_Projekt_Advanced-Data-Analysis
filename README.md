@@ -378,7 +378,7 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 | `stdlib`      | Dokumentation |Verwendung | Funktionen|
 |-------------- |--------------------------------------------------------------------|-----------|-----------|
 |`re`           |https://docs.python.org/3.9/library/re.html#module-re               |           |           |
-|`csv`          |               |           |           |
+|`csv`          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |           |
 |               |               |           |           |
 
 
@@ -416,8 +416,12 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
 <br>Blum et al., 2020 ?<br>
 <br>Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.<br>
+
+###### Abschlussarbeiten
+
 <br>Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
 
+###### Artikel
 <li>Websites</li>
 <br>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/<br>
 <br>Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/<br>
@@ -425,6 +429,7 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 <br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
 <br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
 
+###### Bücher
 <br>Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.
 
 <br>Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2
