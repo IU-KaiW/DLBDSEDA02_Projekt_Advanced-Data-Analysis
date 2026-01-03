@@ -374,7 +374,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 
 <ins>Python-Standardbibliothek</ins>
 
-| `stdlib` www.w.de | Website                                                               | Dokumentation |Verwendung | Funktionen|
+| `stdlib` https://www.docs.python.org/3.9/py-modindex.html| Website                                                               | Dokumentation |Verwendung | Funktionen|
 |-------------- |-----------------------------------------------------------------------|---------------|-----------|-----------|
 |`re`           |                                                                       |               |           |           |
 |`csv`          |                                                                       |               |           |           |
