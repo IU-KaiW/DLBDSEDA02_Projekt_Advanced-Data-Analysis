@@ -375,7 +375,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-| `stdlib`      | Dokumentation |Verwendung | Funktionen|
+| `stdlib-`      | Dokumentation |Verwendung | Funktionen|
 |-------------- |--------------------------------------------------------------------|-----------|-----------|
 |`re`           |https://docs.python.org/3.9/library/re.html#module-re               |           |           |
 |`csv`          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |           |
@@ -389,16 +389,19 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |`gensim`       |https://pypi.org/project/gensim/                                       |               |LSA/LDA    |           |
 |`seaborn`      |https://seaborn.pydata.org                                             |https://seaborn.pydata.org/tutorial.html               |           |           |
 |`numpy`        |                                                                       |               |           |           |
-|`matplotlib`   |                                                                       |               |           |           |
+|`matplotlib`   |https://matplotlib.org                                                 |               |           |           |
 |`spacy`        |                                                                       |               |           |           |
-|`nltk`         |                                                                       |               |          |           |
+|`nltk`         |                                                                       |               |           |           |
 |`transformers` |                                                                       |               |           |           |
-|`torch`        |                                                                       |               | KI-Detektor          |           |
+|`torch`        |                                                                       |               | KI-Detektor           |           |
 |`sklearn`      |                                                                       |               |           |           |
 |`torchmetrics` |                                                                       |               |           |           |
 |`PyLDAvis`     |https://pypi.org/project/pyLDAvis/                                     |https://pyldavis.readthedocs.io/en/latest/
                |           |           |
 |`PyLDAvis`     |                                                                       |               |           |           |
+|`cartopy`     |https://cartopy.readthedocs.io/stable/getting_started/index.html        |               |           |           |
+|`wordcloud`     |                                                                       |               |           |           |
+|`Top2Vec`     |                                                                       |               |           |           |
 
 
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
