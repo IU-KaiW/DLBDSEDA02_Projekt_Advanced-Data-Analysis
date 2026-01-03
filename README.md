@@ -1,7 +1,7 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
 Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
-Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (externen/integrierten) Bibliotheken genannt werden.
+Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (integrierten/externen) Bibliotheken aufgeführt werden.
 
 ## Konzeption
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
@@ -26,7 +26,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand eines extern entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt.</i><br><br>
+      <i>Die gesammelten Datensätze werden anhand eines extern (vortrainierten?) entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt.</i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br></br>
     </details>
@@ -305,12 +305,12 @@ ______________
 ```markdown
 ├── dataset/   # gewählter Datensatz
 ├── src/       # Python-Module
-├── docs/      # Abbildungen, PDFs
+├── docs/      # Abbildungen, PDFs (Datensatzauswertung, Übersichten)
 └── README.md
 ```
 
 ## Installation (engl. setup)
-Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt. 
+Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt. Als Programmiersprsche wurde Python in der Version 3.9 genutzt. 
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
@@ -375,35 +375,38 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-| `stdlib`      | Dokumentation |Verwendung | Funktionen|
-|-------------- |--------------------------------------------------------------------|-----------|-----------|
-|[`re`]         |https://docs.python.org/3.9/library/re.html#module-re               |           |           |
-|[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv           |           |           |
-|[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv         |           |           |
+|`stdlib`         | Dokumentation                                                      |Verwendung | Funktionen|
+|-----------------|--------------------------------------------------------------------|-----------|-----------|
+|[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |           |           |
+|[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |           |
+|[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |           |
 
 
 <ins>externe Bibliothek</ins>
-| Bibliothek    | Website                                                                                                                                           |Verwendung     |Funktionen |
-|-------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-----------|
-|`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation:                                                       |               |df         |
-|`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |LSA/LDA        |           |
-|`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung |           |
-|`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |               |           |
-|`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |               |           |
-|`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP            |           |
-|`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP            |           |
-|`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |               |           |
-|`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor    |           |
-|`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |               |           |
-|`torchmetrics` |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation     |           |
-|`PyLDAvis`     |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung |           |
-|`cartopy`      |Website: https://cartopy.readthedocs.io/stable/getting_started/index.html <br>Dokumentation:                                                       |Visualisierung |           |
-|`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung |           |
-|`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung |           |
+| Bibliothek    | Website                                                                                                                                           |Verwendung        |Funktionen |
+|-------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-----------|
+|`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |           |
+|`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor       |           |
+|`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation:                                                       |                  |df         |
+|`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP               |           |
+|`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP               |           |
+|`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |Themenmodellierung|           |
+|`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                  |           |
+|`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                  |           |
+|`torchmetrics` |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation        |           |
+|`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |                  |           |
+|`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung    |           |
+|`PyLDAvis`     |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung    |           |
+|`cartopy`      |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |           |
+|`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |           |
+|`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |           |
 
 <br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
+<br>`cartopy` - https://zenodo.org/badge/DOI/10.5281/zenodo.1182735
+Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 
-###### Tutorials <ul>
+
+##### Tutorials <ul>
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
 
