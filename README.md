@@ -151,10 +151,10 @@ Datenevrarbeitung
       <li>
         Tokenisierung (engl. tokenization)<br>
         <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen (n-Gramme) zerlegt.
-        Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können. Dafür eignen sich statistische Informationen über die Token beziehungsweise Wörter“ (Timmermann, 2019).        </i>
+        Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können. Dafür eignen sich statistische Informationen über die Token beziehungsweise Wörter“ (Timmermann, 2019).</i><br>
       </li>
       <div style="margin-left: 2em;">
-        <code>SpaCy</code>&nbsp;<code>????</code><br></br>
+        <code>SpaCy</code>&nbsp;<code>NLTK(word_toeknize; sent_tokenize)</code><br></br>
       </div>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
