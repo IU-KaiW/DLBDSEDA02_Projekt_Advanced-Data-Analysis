@@ -61,7 +61,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 
 |author                                      |posted_on                 |rating |text              |
 |--------------------------------------------|--------------------------|-------|------------------|
-|`<Benutzername>`of`<Ort>`,`<US-Bundesstaat>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
+|`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
 Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
 
