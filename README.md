@@ -310,20 +310,18 @@ ______________
 ```
 
 ## Installation (engl. setup)
-Als Programmiersprsche wird Python in der Version 3.9 genutzt.  Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) gewählt.
+Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wird Visual Studio Code (VSCode) genutzt.
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
 ###### Datenvalidierung (engl. data validation)
-Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein, damit das Skript den Datensatz verarbeiten kann.
+Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein damit das Skript den Datensatz durch das externe Modul "AITextDetector.py" verarbeiten kann.
 <ul>
 <li>KI Detektor</li>
-Requirements Python 3.8+
-
+Python in einer Version 3.8+
 ```python
 `pip install transformers`
 ```
-python AITextDetector.py
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
 </ul>
