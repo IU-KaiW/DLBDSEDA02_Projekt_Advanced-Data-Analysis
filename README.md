@@ -328,11 +328,17 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 </ul>
 
 ###### Laufzeitumgebung (engl. runtime environment)
-Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Aufgrund der Abhängigkeit von spaCy wird conda genutzt.
+Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung, welche über
 
 ```console
 `pip install conda`
 ```
+oder 
+
+```console
+`pip install venv?`
+```
+installiert werden können.
 
 ## Abhängigkeiten (engl. dependencies)
 ###### Script/Modul (.py)
