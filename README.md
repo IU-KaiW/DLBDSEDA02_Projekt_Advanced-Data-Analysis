@@ -67,9 +67,11 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
 
 <ul>
   <li><ins>struktierte Informationen</ins></li>
-  Strukturierte Informationen
+  In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. 
+
   <ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016<br>
   <Monat>`.`<Tag>`,`<Jahr>`<br>
+  
   <ins>"rating"</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)<br>
   <0-5>`<br>
   <br><br>
