@@ -388,7 +388,7 @@ Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zwec
 ###### Funktionen (engl. function)<br>
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
 
-### Referenzen
+## Referenzen
 
 ###### Tutorials
 `gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
