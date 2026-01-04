@@ -315,6 +315,7 @@ Als Programmiersprsche wird Python in der Version 3.9 genutzt.  Als Entwicklungs
 ### Vorbereitende Installation (engl. preparatory setup)
 
 ###### Datenvalidierung (engl. data validation)
+Die Spaltenbeschriftung der textführende Spalte muss mit "text" benannt sein.
 <ul>
 <li>KI Detektor</li>
 Requirements Python 3.8+
@@ -323,8 +324,6 @@ Requirements Python 3.8+
 `pip install transformers`
 ```
 python AITextDetector.py
-
-Die Spaltenbeschriftung der textführende Spalte muss in "text" umgenannt werden.
 </ul>
 
 ###### Laufzeitumgebung (engl. runtime environment)
