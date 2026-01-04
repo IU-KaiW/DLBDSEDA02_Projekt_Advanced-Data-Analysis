@@ -327,6 +327,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 
 </ul>
 
+
 ###### Laufzeitumgebung (engl. runtime environment)
 Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung, welche über
 
@@ -341,15 +342,15 @@ oder
 installiert werden können.
 
 ## Abhängigkeiten (engl. dependencies)
-###### Module/Scripts (.py)
 
-###### Packages
-Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.<br>
+###### Module
+Ein Python Skript mit der Endung .py wird als Modul bezeichnet. 
+
+###### Packages (engl. package)
+Eine Sammlung von Modulen in einem Ordner, wird Paket genannt.<br>
 
 ###### Bibliotheken (engl. librarys)
-Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.<br>
-
-###### Bibliotheken (engl. librarys)
+Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt.<br>
 
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
@@ -381,17 +382,16 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
 
 
-###### Frameworks<br>
+###### Frameworks (engl. framework)<br>
 Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.<br><br>
 
-###### Funktionen<br>
+###### Funktionen (engl. function)<br>
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
 
 ### Referenzen
 
 <br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
-<br>`cartopy` - https://zenodo.org/badge/DOI/10.5281/zenodo.1182735
-Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
+<br> Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 
 ##### Tutorials <ul>
 `gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
@@ -418,6 +418,7 @@ Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Comp
 <br>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/<br>
 <br>Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/<br>
 <br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
+<br>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
 
 <li>Bücher</li>
 Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.<br>
