@@ -335,13 +335,16 @@ Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Auf
 
 #### Voraussetzungen (engl. prerequisite setup)
 ## Abhängigkeiten (engl. dependencies)
-###### Datenvalidierung (engl. data validation)
+###### Script/Modul (.py)
 <ul>
 <li>Script/Modul (.py)</li>
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
+###### Packages
 <li>Package ()<br>
 Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.<br>
+
+##### Bibliotheken (engl. librarys)
 <li>library ()<br>
 Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.<br>
 
