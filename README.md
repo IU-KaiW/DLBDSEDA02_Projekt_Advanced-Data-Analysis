@@ -59,19 +59,18 @@ ______________
 ###### Pipeline-Eingabe
 Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. Die Datenstruktur ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten organisiert sind.
 
-|author                                      |posted_on                 |rating |text              |
-|--------------------------------------------|--------------------------|-------|------------------|
+|author                             |posted_on                 |rating |text              |
+|-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
 Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
 
 <ul>
   <li><ins>struktierte Informationen</ins></li>
-  In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne Aufbereitung weiterverarbeitet werden können.<br>
+  In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne Aufbereitung direkt weiterverarbeitet werden können.<br>
 
   <br><ins>"author"</ins> <br>
-  <Monat>`.`<Tag>`,`<Jahr>`<br>
-
+  Die Spalte enthält den alphanumerischen Benutzernamen des Beschwerdeverfassers getrennt von einen "of" sowie eine US-Ortsangabe bestehend aus `<US-Ortsangabe , US-Bundesstaat>`
   <br><ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016<br>
   <Monat>`.`<Tag>`,`<Jahr>`<br>
   
