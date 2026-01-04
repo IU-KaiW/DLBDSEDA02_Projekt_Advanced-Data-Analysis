@@ -317,7 +317,7 @@ Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsu
 ###### Datenvalidierung (engl. data validation)
 Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein damit das Skript den Datensatz durch das externe Modul "AITextDetector.py" verarbeiten kann.
 <ul>
-<li>KI Detektor</li>
+<li><ins>KI Detektor</ins></li>
 Python in einer Version 3.8+
 
 ```python
