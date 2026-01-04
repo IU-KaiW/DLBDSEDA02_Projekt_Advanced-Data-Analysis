@@ -390,12 +390,7 @@ Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zwec
 <li>Funktionen<br>
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
 
-
-
-##### Sprachverarbeitung (engl. NLP-Pipeline)
-##### Datenkonsolidierung (engl. data consolidation)
-###### Visualisierung
-###### Aggregation
+</ul>
 
 ### Referenzen
 
