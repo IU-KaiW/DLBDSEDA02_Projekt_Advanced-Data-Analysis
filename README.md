@@ -368,7 +368,8 @@ import nltk
 ### Referenzen
 <ul>
 <li>Externe Software</li><br>
-Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
+Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
+
 
 <li>Bibliotheken (engl. librarys)</li><br>
 
@@ -404,6 +405,18 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 <br>`seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
 <br>`cartopy` - https://zenodo.org/badge/DOI/10.5281/zenodo.1182735
 Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
+
+Script/Modul (.py)
+Package ()
+Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.
+library ()
+Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.
+
+Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)
+
+Frameworks ()
+Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.
+
 
 
 ##### Tutorials <ul>
