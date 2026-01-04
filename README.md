@@ -395,9 +395,6 @@ aufgerufen werden.[^15]<br>
   |`spacy`               |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP                     |
   |`nltk`                |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP                     |
   |`pyspellchecker`      |Website: https://pypi.org/project/pyspellchecker/                         <br>Dokumentation: https://pyspellchecker.readthedocs.io/en/latest/      |NLP                     |
-
-
-
   |`gensim`              |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |NLP - Themenmodellierung|
   |`numpy`               |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                        |
   |`sklearn`             |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                        |
