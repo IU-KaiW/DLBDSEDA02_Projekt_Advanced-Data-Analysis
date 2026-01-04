@@ -376,11 +376,11 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-|`stdlib`         | Dokumentation                                                      |Verwendung | Funktionen|
-|-----------------|--------------------------------------------------------------------|-----------|-----------|
-|[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |           |           |
-|[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |           |
-|[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |           |
+|`stdlib`         | Dokumentation                                                      |Verwendung |
+|-----------------|--------------------------------------------------------------------|-----------|
+|[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |           |
+|[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |
+|[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |
 
 
 <ins>externe Bibliothek</ins>
