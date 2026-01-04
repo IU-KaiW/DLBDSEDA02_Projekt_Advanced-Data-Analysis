@@ -61,7 +61,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 
 | author                                    | posted_on                        | rating    | text      |
 |-------------------------------------------|----------------------------------|-----------|-----------|
-| <Benutzername> of <stadt>,<US-Bundesstaat>| posted_on                        | rating    | text      |
+| "<Benutzername>" of "<stadt>,<US-Bundesstaat>"| posted_on                        | rating    | text      |
 
 
 Header-Zeilen
