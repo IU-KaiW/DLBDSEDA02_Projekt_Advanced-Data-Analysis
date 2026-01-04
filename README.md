@@ -350,7 +350,14 @@ Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet.[^15]<br>
 Eine Sammlung von Modulen in einem Ordner, wird Paket genannt.[^15]<br>
 
 ###### Bibliotheken (engl. librarys)
-Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichne.t[^15]<br>
+Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet.<br>
+Viele Funktionen sind Bestandteil von Bibliotheken und können über: 
+
+```python
+<paketname>.<funktionsname>(<funktionsargumente>)
+```
+aufgerufen werden.[^15]<br>
+
 <ul>
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
@@ -381,14 +388,6 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
 |`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
 </ul>
-
-###### Funktionen (engl. function)<br>
-Viele Funktionen sind Bestandteil von Bibliotheken und können über: 
-
-```python
-<paketname>.<funktionsname>(<funktionsargumente>)
-```
-aufgerufen werden. [^15]<br>
 
 ## Referenzen
 
