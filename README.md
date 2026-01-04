@@ -367,7 +367,7 @@ import nltk
 
 ### Referenzen
 <ul>
-<li>Script/Modul (.py)</li><br>
+<li>Script/Modul (.py)</li>
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
 <li>Package ()<br>
