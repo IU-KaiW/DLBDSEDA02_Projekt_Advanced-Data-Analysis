@@ -94,12 +94,12 @@ Datenevrarbeitung
               <li>Kasusumwandlung (engl. case conversion)</li>
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
               <div style="margin-left: 2em;">
-                <code>stdlib(lower)</code>&nbsp;<code>????</code><br></br>
+                <code>stdlib(.lower)</code>&nbsp;<code>????</code><br></br>
               </div>
               <li>Grundformreduktion (engl. inflection reduction)</li>
               Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
               <div style="margin-left: 2em;">
-                <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy</code><br></br>
+                <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy()</code><br></br>
               </div>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
               In der Formatnormalisierung erfolgt die Normalisierung von Schreibweisen (Datenformate oder Zahlenformaten) und Sonderformen (Emojis).
@@ -110,7 +110,7 @@ Datenevrarbeitung
             <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins></li>
             Durch Rechtschreibkorrekrur werden Tipp bzw. Schreibfehler korrigiert.
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>pyspellchecker</code>&nbsp;<code>????</code><br></br>
               </div>
       </ol>
       </li>
@@ -370,23 +370,25 @@ aufgerufen werden.[^15]<br>
 
   <li><ins>externe Bibliothek</ins></li><br>
 
-  | Bibliothek    | Website                                                                                                                                           |Verwendung        |
-  |-------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-  |`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |
-  |`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor       |
-  |`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                       |Datahandling      |
-  |`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP               |
-  |`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP               |
-  |`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |Themenmodellierung|
-  |`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                  |
-  |`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                  |
-  |`torchmetrics` |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation        |
-  |`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |Visualisierung    |
-  |`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung    |
-  |`PyLDAvis`     |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung    |
-  |`cartopy`      |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |
-  |`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
-  |`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
+  | Bibliothek           | Website                                                                                                                                           |Verwendung        |
+  |--------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+  |`torch`               |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |
+  |`transformers`        |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor       |
+  |`pandas`              |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                       |Datahandling      |
+  |`spacy`               |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP               |
+  |`nltk`                |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP               |
+  |`gensim`              |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |Themenmodellierung|
+  |`numpy`               |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                  |
+  |`sklearn`             |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                  |
+  |`torchmetrics`        |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation        |
+  |`matplotlib`          |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |Visualisierung    |
+  |`seaborn`             |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung    |
+  |`PyLDAvis`            |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung    |
+  |`cartopy`             |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |
+  |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
+  |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
+  |`pyspellchecker`      |Website: https://pypi.org/project/pyspellchecker/                         <br>Dokumentation: https://pyspellchecker.readthedocs.io/en/latest/      |NLP               |
+
 
 </ul>
 
