@@ -341,15 +341,15 @@ oder
 installiert werden können.
 
 ## Abhängigkeiten (engl. dependencies)
-###### Module/Scripte (.py)
+###### Module/Scripts (.py)
 
 ###### Packages
 Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.<br>
 
-##### Bibliotheken (engl. librarys)
+###### Bibliotheken (engl. librarys)
 Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.<br>
 
-#### Bibliotheken (engl. librarys)
+###### Bibliotheken (engl. librarys)
 
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
@@ -384,13 +384,11 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 <br>`cartopy` - https://zenodo.org/badge/DOI/10.5281/zenodo.1182735
 Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 
-<li>Frameworks ()<br>
+###### Frameworks<br>
 Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.<br><br>
 
-<li>Funktionen<br>
+###### Funktionen<br>
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
-
-</ul>
 
 ### Referenzen
 
