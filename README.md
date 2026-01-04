@@ -314,7 +314,7 @@ Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde 
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
-##### Datenvalidierung (engl. data validation)
+###### Datenvalidierung (engl. data validation)
 KI Detektor
 
 Requirements
