@@ -362,11 +362,11 @@ aufgerufen werden.[^15]<br>
   <li><ins>Python-Standardbibliothek</ins></li><br>
   Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-  |`stdlib`         | Dokumentation                                                      |Verwendung |
-  |-----------------|--------------------------------------------------------------------|-----------|
-  |[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |           |
-  |[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |
-  |[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |
+  |`stdlib`         | Dokumentation                                                      |Verwendung      |
+  |-----------------|--------------------------------------------------------------------|----------------|
+  |[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |NLP             |
+  |[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |Datahandling    |
+  |[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |Laufzeitumgebung|
 
   <li><ins>externe Bibliothek</ins></li><br>
 
