@@ -57,25 +57,21 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ______________
 
 ###### Pipeline-Eingabe
-Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. Die Datenstruktur ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen sowie 4 Spalten mit den Bezeichnungen "author" , "posted_on" , "rating" und "text".
+Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. Die Datenstruktur ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen und die 4 nachfolgenden Spalten.
 
 | author                                           | posted_on                        | rating    | text                 |
 |--------------------------------------------------|----------------------------------|-----------|----------------------|
 | `<Benutzername>`of`<Ort>`,`<US-Bundesstaat>` | `<Monat>`.`<Tag>`,`<Jahr>`           | `<0-5>`   |`<Beschwerdetext>`    |
 
 
-Header-Zeilen
-
 Spalten
-
-<ins>author</ins> "Alantae of Chesterfeild, MI" - Benutzername "of" Ortsangabe
-
-<ins>posted_on</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016
-
-<ins>rating</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)
-
-<ins>text</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, 
-
+Header-Zeilen
+<ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016
+`<Monat>`.`<Tag>`,`<Jahr>`
+<ins>"rating"</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)
+`<0-5>`
+<ins>"text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, 
+`<Beschwerdetext>` 
 
 wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus <Benutzername>of<Ortsangabe, Bundesstaat>
 
