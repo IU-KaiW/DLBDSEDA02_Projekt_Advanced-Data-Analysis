@@ -315,7 +315,10 @@ Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde 
 ### Vorbereitende Installation (engl. preparatory setup)
 
 ###### Datenvalidierung (engl. data validation)
-KI Detektor
+<ul>
+<li>KI Detektor</li>
+</ul>
+
 
 Requirements
 Python 3.x
