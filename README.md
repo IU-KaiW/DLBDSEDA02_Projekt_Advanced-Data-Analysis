@@ -335,6 +335,7 @@ Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Auf
 
 #### Voraussetzungen (engl. prerequisite setup)
 ## Abhängigkeiten (engl. dependencies)
+###### Datenvalidierung (engl. data validation)
 <ul>
 <li>Script/Modul (.py)</li>
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
