@@ -305,7 +305,7 @@ ______________
 ```markdown
 ├── dataset/   # gewählter Datensatz
 ├── src/       # Python-Module
-├── docs/      # Abbildungen, PDFs (Datensatzauswertung, Übersichten)
+├── docs/      # Datensatzauswertung, Übersichten
 └── README.md
 ```
 
@@ -411,7 +411,7 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 
 <li>Frameworks ()<br>
-Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.<br>
+Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.<br><br>
 
 <li>Funktionen<br>
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
