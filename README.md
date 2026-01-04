@@ -57,9 +57,24 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ______________
 
 ###### Pipeline-Eingabe
-Es wird Datensatz Nr. 05 "complaints_data.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt. Es handelt sich um einen Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen sowie 4 Spalten mit den Bezeichnungen "author" , "posted_on" , "rating" und "text", wobei letztere die Kundenbeschwerde in englischer Sprache enthält.
+Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. Die Datenstruktur ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen sowie 4 Spalten mit den Bezeichnungen "author" , "posted_on" , "rating" und "text".
 
-Datenstruktur????
+
+Header-Zeilen
+
+Spalten
+
+author "Alantae of Chesterfeild, MI" - Benutzername "of" Ortsangabe
+posted_on "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016
+rating "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)
+text "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, 
+
+
+wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus <Benutzername>of<Ortsangabe, Bundesstaat>
+
+als Input genutzt
+
+
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16](Timmermann, 2019).
@@ -306,7 +321,7 @@ ______________
 ```markdown
 ├── dataset/   # gewählter Datensatz
 ├── src/       # Python-Module
-├── docs/      # Datensatzauswertung, Übersichten
+├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
 └── README.md
 ```
 
@@ -370,24 +385,27 @@ aufgerufen werden.[^15]<br>
 
   <li><ins>externe Bibliothek</ins></li><br>
 
-  | Bibliothek           | Website                                                                                                                                           |Verwendung        |
-  |--------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-  |`torch`               |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |
-  |`transformers`        |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor       |
-  |`pandas`              |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                       |Datahandling      |
-  |`spacy`               |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP               |
-  |`nltk`                |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP               |
-  |`gensim`              |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |Themenmodellierung|
-  |`numpy`               |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                  |
-  |`sklearn`             |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                  |
-  |`torchmetrics`        |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation        |
-  |`matplotlib`          |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |Visualisierung    |
-  |`seaborn`             |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung    |
-  |`PyLDAvis`            |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung    |
-  |`cartopy`             |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |
-  |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
-  |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
-  |`pyspellchecker`      |Website: https://pypi.org/project/pyspellchecker/                         <br>Dokumentation: https://pyspellchecker.readthedocs.io/en/latest/      |NLP               |
+  | Bibliothek           | Website                                                                                                                                           |Verwendung              |
+  |--------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+  |`torch`               |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor             |
+  |`transformers`        |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor             |
+  |`pandas`              |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                       |Datahandling            |
+  |`spacy`               |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP                     |
+  |`nltk`                |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP                     |
+  |`pyspellchecker`      |Website: https://pypi.org/project/pyspellchecker/                         <br>Dokumentation: https://pyspellchecker.readthedocs.io/en/latest/      |NLP                     |
+
+
+
+  |`gensim`              |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |NLP - Themenmodellierung|
+  |`numpy`               |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                        |
+  |`sklearn`             |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                        |
+  |`torchmetrics`        |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation              |
+  |`matplotlib`          |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |Visualisierung          |
+  |`seaborn`             |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung          |
+  |`PyLDAvis`            |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung          |
+  |`cartopy`             |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung          |
+  |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung          |
+  |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung          |
 
 
 </ul>
