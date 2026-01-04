@@ -322,6 +322,7 @@ Python in einer Version 3.8+
 
 ```python
 `pip install transformers`
+`pip install torch`
 ```
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
@@ -367,7 +368,7 @@ aufgerufen werden.[^15]<br>
   |[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |
 
   <li><ins>externe Bibliothek</ins></li><br>
-  
+
   | Bibliothek    | Website                                                                                                                                           |Verwendung        |
   |-------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
   |`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |
