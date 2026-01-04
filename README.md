@@ -366,7 +366,8 @@ aufgerufen werden.[^15]<br>
   |[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |
   |[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |
 
-  <li><ins>externe Bibliothek</ins></li>
+  <li><ins>externe Bibliothek</ins></li><br>
+  
   | Bibliothek    | Website                                                                                                                                           |Verwendung        |
   |-------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
   |`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |
