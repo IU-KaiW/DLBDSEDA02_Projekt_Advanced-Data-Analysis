@@ -65,7 +65,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 
 
 Spalten<br>
-Die Spalten lassen sich in *struktierte Informationen" und *unstrukturierte Informationen* einteilen.
+Die Spalten lassen sich in *struktierte Informationen* und *unstrukturierte Informationen* einteilen.<br>
 Strukturierte Informationen
 <ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016<br>
 `<Monat>`.`<Tag>`,`<Jahr>`<br>
