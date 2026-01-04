@@ -315,7 +315,7 @@ Als Programmiersprsche wird Python in der Version 3.9 genutzt.  Als Entwicklungs
 ### Vorbereitende Installation (engl. preparatory setup)
 
 ###### Datenvalidierung (engl. data validation)
-Die Spaltenbeschriftung der textführende Spalte muss mit "text" benannt sein.
+Die Spaltenbeschriftung der textführende Spalte muss mit "text" benannt sein, damit das Skript den Datensatz verarbeiten kann.
 <ul>
 <li>KI Detektor</li>
 Requirements Python 3.8+
@@ -334,17 +334,7 @@ Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Auf
 ```
 
 #### Voraussetzungen (engl. prerequisite setup)
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib as mpl
-import seaborn as sns
-import spacy as sp
-import nltk
-
-```    
-##### Abhängigkeiten (engl. dependencies)
+## Abhängigkeiten (engl. dependencies)
 <ul>
 <li>Script/Modul (.py)</li>
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
@@ -462,3 +452,14 @@ Formatierung
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 [^11]: [Webseite] (Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/)
 [^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
+
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+import seaborn as sns
+import spacy as sp
+import nltk
+
+```    
