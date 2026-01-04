@@ -319,6 +319,7 @@ Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss
 <ul>
 <li>KI Detektor</li>
 Python in einer Version 3.8+
+
 ```python
 `pip install transformers`
 ```
