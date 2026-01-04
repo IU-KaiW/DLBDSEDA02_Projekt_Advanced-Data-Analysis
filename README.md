@@ -344,13 +344,13 @@ installiert werden können.
 ## Abhängigkeiten (engl. dependencies)
 
 ###### Module
-Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet[^15].
+Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet.[^15]<br>
 
 ###### Packages (engl. package)
-Eine Sammlung von Modulen in einem Ordner, wird Paket genannt[^15].<br>
+Eine Sammlung von Modulen in einem Ordner, wird Paket genannt.[^15]<br>
 
 ###### Bibliotheken (engl. librarys)
-Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet[^15].<br>
+Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichne.t[^15]<br>
 <ul>
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
@@ -387,7 +387,7 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
 ## Referenzen
 
-###### Tutorials
+###### Anleitungen/Tutorials
 `gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
@@ -395,8 +395,8 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 <br>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/<br>
 
 ###### Skripte
-  IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
-  <br>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br>
+IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
+<br>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br>
 
 ###### Abschlussarbeiten
 Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
@@ -406,7 +406,7 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 <br>Blum et al., 2020 ?<br>
 
 ###### Websites
-<br>Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/<br>
+Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/<br>
 <br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
 <br>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
 
