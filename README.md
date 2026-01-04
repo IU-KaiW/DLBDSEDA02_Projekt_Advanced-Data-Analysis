@@ -315,7 +315,7 @@ Als Programmiersprsche wird Python in der Version 3.9 genutzt.  Als Entwicklungs
 ### Vorbereitende Installation (engl. preparatory setup)
 
 ###### Datenvalidierung (engl. data validation)
-Die Spaltenbeschriftung der textführende Spalte muss mit "text" benannt sein, damit das Skript den Datensatz verarbeiten kann.
+Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein, damit das Skript den Datensatz verarbeiten kann.
 <ul>
 <li>KI Detektor</li>
 Requirements Python 3.8+
@@ -324,6 +324,8 @@ Requirements Python 3.8+
 `pip install transformers`
 ```
 python AITextDetector.py
+Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
+
 </ul>
 
 ###### Laufzeitumgebung (engl. runtime environment)
@@ -333,12 +335,11 @@ Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Auf
 `pip install conda`
 ```
 
-#### Voraussetzungen (engl. prerequisite setup)
 ## Abhängigkeiten (engl. dependencies)
 ###### Script/Modul (.py)
 <ul>
 <li>Script/Modul (.py)</li>
-Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
+
 
 ###### Packages
 <li>Package ()<br>
