@@ -63,9 +63,12 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 |--------------------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<Ort>`,`<US-Bundesstaat>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
+<ul>
+  <li><ins>Spalten<</ins></li>
+  Die Spalten lassen sich in *struktierte Informationen* und *unstrukturierte Informationen* einteilen.
+  <br><br>
+</ul>
 
-Spalten<br>
-Die Spalten lassen sich in *struktierte Informationen* und *unstrukturierte Informationen* einteilen.<br><br>
 Strukturierte Informationen
 <ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016<br>
 `<Monat>`.`<Tag>`,`<Jahr>`<br>
@@ -79,7 +82,6 @@ Unstruktuierte Informationen
 wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus
 
 als Input genutzt
-
 
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
