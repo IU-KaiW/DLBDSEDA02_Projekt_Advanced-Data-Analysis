@@ -327,8 +327,6 @@ python AITextDetector.py
 Die Spaltenbeschriftung der textführende Spalte muss in "text" umgenannt werden.
 </ul>
 
-### Erstinstallation (engl. initial setup)
-
 ###### Laufzeitumgebung (engl. runtime environment)
 Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Aufgrund der Abhängigkeit von spaCy wird conda genutzt.
 
