@@ -59,11 +59,9 @@ ______________
 ###### Pipeline-Eingabe
 Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. Die Datenstruktur ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen sowie 4 Spalten mit den Bezeichnungen "author" , "posted_on" , "rating" und "text".
 
-| author                                    | posted_on                        | rating    | text      |
-|-------------------------------------------|----------------------------------|-----------|-----------|
-| "```markdown
-`<Benutzername>`
-```" of "<stadt>,<US-Bundesstaat>"| posted_on                        | rating    | text      |
+| author                                       | posted_on                        | rating    | text      |
+|----------------------------------------------|----------------------------------|-----------|-----------|
+|> Benutzername of "<Ort>,<US-Bundesstaat>"  | posted_on                        | rating    | text      |
 
 
 Header-Zeilen
