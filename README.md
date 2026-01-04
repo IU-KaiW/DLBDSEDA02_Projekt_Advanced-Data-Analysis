@@ -344,13 +344,13 @@ installiert werden können.
 ## Abhängigkeiten (engl. dependencies)
 
 ###### Module
-Ein Python Skript mit der Endung .py wird als Modul bezeichnet. 
+Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet[^15].
 
 ###### Packages (engl. package)
-Eine Sammlung von Modulen in einem Ordner, wird Paket genannt.<br>
+Eine Sammlung von Modulen in einem Ordner, wird Paket genannt[^15].<br>
 
 ###### Bibliotheken (engl. librarys)
-Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet.[^15]<br>
+Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet[^15].<br>
 <ul>
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
