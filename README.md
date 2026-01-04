@@ -342,8 +342,7 @@ installiert werden können.
 
 ## Abhängigkeiten (engl. dependencies)
 ###### Script/Modul (.py)
-<ul>
-<li>Script/Modul (.py)</li>
+<li>Module[Scripte] (.py)</li>
 
 
 ###### Packages
