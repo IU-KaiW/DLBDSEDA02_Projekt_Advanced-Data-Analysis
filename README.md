@@ -59,9 +59,10 @@ ______________
 ###### Pipeline-Eingabe
 Es wird Datensatz Nr. 05 "complaints_data.csv"[^05]: mit der Bewertung von 82 % gewählt und als Input für die NLP-Pipeline genutzt. Es handelt sich um einen Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen sowie 4 Spalten mit den Bezeichnungen "author" , "posted_on" , "rating" und "text", wobei letztere die Kundenbeschwerde in englischer Sprache enthält.
 
+Datenstruktur????
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
-Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können." (Timmermann, 2019).
+Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16](Timmermann, 2019).
 
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichung (engl. date of publication) oder Bedeutungen, Syntaktisch, lexikalisch Semantisch (wie Bedeutung).....
 
@@ -444,6 +445,8 @@ Formatierung
 [^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 [^11]: [Webseite] (Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/)
+[^16]: [Webseite] (Timmermann, T. (2019, März 7). Natural Language Processing—Einsteigen und loslegen! [Unternehmenswebseite]. codecentric AG. https://www.codecentric.de/wissens-hub/blog/natural-language-processing-basics)
+
 [^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
 [^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
 [^14]: Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
