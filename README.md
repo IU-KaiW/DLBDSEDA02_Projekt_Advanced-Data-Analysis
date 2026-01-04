@@ -383,7 +383,12 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 </ul>
 
 ###### Funktionen (engl. function)<br>
-"Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
+Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: 
+
+```python
+<paketname>.<funktionsname>(<funktionsargumente>)
+```
+[^15]<br>
 
 ## Referenzen
 
