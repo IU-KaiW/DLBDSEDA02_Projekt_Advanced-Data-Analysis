@@ -64,10 +64,13 @@ Header-Zeilen
 
 Spalten
 
-author "Alantae of Chesterfeild, MI" - Benutzername "of" Ortsangabe
-posted_on "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016
-rating "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)
-text "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, 
+<ins>author</ins> "Alantae of Chesterfeild, MI" - Benutzername "of" Ortsangabe
+
+<ins>posted_on</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016
+
+<ins>rating</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)
+
+<ins>text</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, 
 
 
 wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus <Benutzername>of<Ortsangabe, Bundesstaat>
