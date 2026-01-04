@@ -412,7 +412,8 @@ Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.<br>
 <br>library ()<br>
 Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.<br>
 <br>Frameworks ()<br>
-Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.
+Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.<br>
+
 <br>Funktionen<br>
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
 
