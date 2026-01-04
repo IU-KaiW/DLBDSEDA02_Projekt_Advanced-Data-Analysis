@@ -356,34 +356,36 @@ Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek ge
 ```
 aufgerufen werden.[^15]<br>
 
-<li><ins>Python-Standardbibliothek</ins></li><br>
-Dokumentation: https://docs.python.org/3.9/py-modindex.html
+<ul>
+  <li><ins>Python-Standardbibliothek</ins></li><br>
+  Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-|`stdlib`         | Dokumentation                                                      |Verwendung |
-|-----------------|--------------------------------------------------------------------|-----------|
-|[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |           |
-|[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |
-|[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |
+  |`stdlib`         | Dokumentation                                                      |Verwendung |
+  |-----------------|--------------------------------------------------------------------|-----------|
+  |[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |           |
+  |[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |           |
+  |[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |           |
 
+  <li><ins>externe Bibliothek</ins></li>
+  | Bibliothek    | Website                                                                                                                                           |Verwendung        |
+  |-------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+  |`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |
+  |`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor       |
+  |`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                       |Datahandling      |
+  |`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP               |
+  |`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP               |
+  |`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |Themenmodellierung|
+  |`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                  |
+  |`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                  |
+  |`torchmetrics` |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation        |
+  |`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |Visualisierung    |
+  |`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung    |
+  |`PyLDAvis`     |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung    |
+  |`cartopy`      |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |
+  |`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
+  |`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
 
-<li><ins>externe Bibliothek</ins></li>
-| Bibliothek    | Website                                                                                                                                           |Verwendung        |
-|-------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-|`torch`        |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor       |
-|`transformers` |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor       |
-|`pandas`       |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                       |Datahandling      |
-|`spacy`        |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP               |
-|`nltk`         |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP               |
-|`gensim`       |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |Themenmodellierung|
-|`numpy`        |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                  |
-|`sklearn`      |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                  |
-|`torchmetrics` |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation        |
-|`matplotlib`   |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |Visualisierung    |
-|`seaborn`      |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung    |
-|`PyLDAvis`     |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung    |
-|`cartopy`      |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |
-|`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
-|`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
+</ul>
 
 ## Referenzen
 
