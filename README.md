@@ -57,7 +57,7 @@ Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus bzw. Pipe
 ______________
 
 ###### Pipeline-Eingabe
-Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. Die Datenstruktur ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt über 1+5659 Zeilen und die 4 nachfolgenden Spalten.
+Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. Die Datenstruktur ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen ein Komma (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt. Diese sind jeweis in 4 Spalten organisiert.
 
 | author                                           | posted_on                        | rating    | text                 |
 |--------------------------------------------------|----------------------------------|-----------|----------------------|
@@ -65,7 +65,6 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 
 
 Spalten<br>
-Header-Zeilen<br>
 <ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016<br>
 `<Monat>`.`<Tag>`,`<Jahr>`<br>
 <ins>"rating"</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)<br>
