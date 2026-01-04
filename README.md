@@ -351,7 +351,7 @@ Eine Sammlung von Modulen in einem Ordner, wird Paket genannt.<br>
 
 ###### Bibliotheken (engl. librarys)
 Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt.<br>
-
+<ul>
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
@@ -380,8 +380,7 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |`cartopy`      |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |
 |`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
 |`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
-
-
+</ul>
 ###### Frameworks (engl. framework)<br>
 Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.<br><br>
 
