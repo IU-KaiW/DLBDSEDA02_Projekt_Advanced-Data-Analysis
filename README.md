@@ -341,20 +341,15 @@ oder
 installiert werden können.
 
 ## Abhängigkeiten (engl. dependencies)
-###### Script/Modul (.py)
-<li>Module[Scripte] (.py)</li>
-
+###### Module/Scripte (.py)
 
 ###### Packages
-<li>Package ()<br>
 Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.<br>
 
 ##### Bibliotheken (engl. librarys)
-<li>library ()<br>
 Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.<br>
 
 #### Bibliotheken (engl. librarys)
-<li>Bibliotheken (engl. librarys)</li><br>
 
 <ins>Python-Standardbibliothek</ins><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
