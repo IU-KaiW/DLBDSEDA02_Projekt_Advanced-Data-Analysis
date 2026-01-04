@@ -355,7 +355,7 @@ Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek ge
 <paketname>.<funktionsname>(<funktionsargumente>)
 ```
 aufgerufen werden.[^15]<br>
-<ul>
+
 <li><ins>Python-Standardbibliothek</ins></li><br>
 Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
@@ -384,7 +384,6 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 |`cartopy`      |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung    |
 |`wordcloud`    |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung    |
 |`Top2Vec`      |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung    |
-</ul>
 
 ## Referenzen
 
