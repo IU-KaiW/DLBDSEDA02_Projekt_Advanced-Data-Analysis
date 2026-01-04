@@ -63,7 +63,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 |--------------------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<Ort>`,`<US-Bundesstaat>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
+Die Spalten lassen sich in <ins>struktierte Daten (engl. stuktured data)</ins> und <ins>unstrukturierte Daten (engl. unstructured data)</ins> einteilen.
 
 <ul>
   <li><ins>struktierte Informationen</ins></li>
@@ -78,7 +78,8 @@ Strukturierte Informationen
 `<0-5>`<br>
 
 <ul>
-  <li><ins>unstruktuierte Informationen/ins></li>
+  <li><ins>unstruktuierte Informationen</ins></li>
+
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
   <br><br>
 </ul>
