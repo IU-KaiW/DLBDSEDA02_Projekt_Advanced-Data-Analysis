@@ -310,7 +310,7 @@ ______________
 ```
 
 ## Installation (engl. setup)
-Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt. Als Programmiersprsche wurde Python in der Version 3.9 genutzt. 
+Als Programmiersprsche wird Python in der Version 3.9 genutzt.  Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) gewählt.
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
@@ -318,7 +318,6 @@ Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde 
 <ul>
 <li>KI Detektor</li>
 Requirements
-Python 3.x
 
 ```python
 `pip install transformers`
@@ -330,7 +329,7 @@ Die Spaltenbeschriftung der textführende Spalte muss in "text" umgenannt werden
 
 ### Erstinstallation (engl. initial setup)
 
-#### Laufzeitumgebung (engl. runtime environment)
+###### Laufzeitumgebung (engl. runtime environment)
 Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Aufgrund der Abhängigkeit von spaCy wird conda genutzt.
 
 ```console
