@@ -339,9 +339,6 @@ Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Auf
 #### Voraussetzungen (engl. prerequisite setup)
 Python 3.8+
 
-##### Abhängigkeiten (engl. dependencies)
-
-#### Bibliotheken (engl. librarys)
 ```python
 import pandas as pd
 import numpy as np
@@ -351,13 +348,7 @@ import spacy as sp
 import nltk
 
 ```    
-
-##### Sprachverarbeitung (engl. NLP-Pipeline)
-##### Datenkonsolidierung (engl. data consolidation)
-###### Visualisierung
-###### Aggregation
-
-### Referenzen
+##### Abhängigkeiten (engl. dependencies)
 <ul>
 <li>Script/Modul (.py)</li>
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
@@ -409,6 +400,17 @@ Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zwec
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
 
 
+
+#### Bibliotheken (engl. librarys)
+
+
+##### Sprachverarbeitung (engl. NLP-Pipeline)
+##### Datenkonsolidierung (engl. data consolidation)
+###### Visualisierung
+###### Aggregation
+
+### Referenzen
+
 ##### Tutorials <ul>
 `gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
@@ -425,7 +427,6 @@ Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zwec
 ###### Abschlussarbeiten
 Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
 
-###### Artikel
 <li>Fachzeitschriften</li>
 Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
 <br>Blum et al., 2020 ?<br>
@@ -436,7 +437,7 @@ Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Comp
 <br>Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/<br>
 <br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
 
-###### Bücher
+<li>Bücher</li>
 Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.<br>
 <br>Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.<br>
 <br>Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2<br>
