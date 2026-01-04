@@ -407,14 +407,14 @@ Dokumentation: https://docs.python.org/3.9/py-modindex.html
 Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 
 Script/Modul (.py)<br>
-Package ()<br>
+<br>Package ()<br>
 Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.<br>
-library ()<br>
+<br>library ()<br>
 Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.<br>
 
 Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)<br>
 
-Frameworks ()
+<br>Frameworks ()
 Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.
 
 
