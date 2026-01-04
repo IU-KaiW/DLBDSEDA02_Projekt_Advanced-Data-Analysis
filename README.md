@@ -64,16 +64,16 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 | `<Benutzername>`of`<Ort>`,`<US-Bundesstaat>` | `<Monat>`.`<Tag>`,`<Jahr>`           | `<0-5>`   |`<Beschwerdetext>`    |
 
 
-Spalten
-Header-Zeilen
-<ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016
-`<Monat>`.`<Tag>`,`<Jahr>`
-<ins>"rating"</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)
-`<0-5>`
-<ins>"text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, 
-`<Beschwerdetext>` 
+Spalten<br>
+Header-Zeilen<br>
+<ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016<br>
+`<Monat>`.`<Tag>`,`<Jahr>`<br>
+<ins>"rating"</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)<br>
+`<0-5>`<br>
+<ins>"text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
+`<Beschwerdetext>` <br>
 
-wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus <Benutzername>of<Ortsangabe, Bundesstaat>
+wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus
 
 als Input genutzt
 
