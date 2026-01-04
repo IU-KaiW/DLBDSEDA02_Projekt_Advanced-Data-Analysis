@@ -314,14 +314,6 @@ Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde 
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
-Download des Datensatzes
-```python
-`import kagglehub
-path = kagglehub.dataset_download("yasserh/comcast-telecom-complaints")
-print("Path to dataset files:", path)
-`
-```
-
 #### Datenvalidierung (engl. data validation)
 KI Detektor
 
