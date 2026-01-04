@@ -317,9 +317,6 @@ Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde 
 ###### Datenvalidierung (engl. data validation)
 <ul>
 <li>KI Detektor</li>
-</ul>
-
-
 Requirements
 Python 3.x
 
@@ -329,6 +326,7 @@ Python 3.x
 python AITextDetector.py
 
 Die Spaltenbeschriftung der textführende Spalte muss in "text" umgenannt werden.
+</ul>
 
 ### Erstinstallation (engl. initial setup)
 
