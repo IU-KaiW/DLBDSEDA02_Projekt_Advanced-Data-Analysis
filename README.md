@@ -317,7 +317,7 @@ Als Programmiersprsche wird Python in der Version 3.9 genutzt.  Als Entwicklungs
 ###### Datenvalidierung (engl. data validation)
 <ul>
 <li>KI Detektor</li>
-Requirements
+Requirements Python 3.8+
 
 ```python
 `pip install transformers`
@@ -337,7 +337,6 @@ Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Auf
 ```
 
 #### Voraussetzungen (engl. prerequisite setup)
-Python 3.8+
 
 ```python
 import pandas as pd
@@ -358,6 +357,7 @@ Eine Sammlung von Modulen in einem Ordner, wird Paket (package) genannt.<br>
 <li>library ()<br>
 Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (library) genannt.<br>
 
+#### Bibliotheken (engl. librarys)
 <li>Bibliotheken (engl. librarys)</li><br>
 
 <ins>Python-Standardbibliothek</ins><br>
@@ -399,9 +399,6 @@ Ein framework ist eine große grundlegende Bibliothek, mit einem bestimmten Zwec
 <li>Funktionen<br>
 "Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <paketname>.<funktionsname>(<funktionsargumente>)"<br>
 
-
-
-#### Bibliotheken (engl. librarys)
 
 
 ##### Sprachverarbeitung (engl. NLP-Pipeline)
