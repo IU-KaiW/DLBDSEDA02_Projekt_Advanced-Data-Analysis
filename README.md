@@ -72,13 +72,13 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   
   Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
   
-  <ins>"posted_on"</ins> Zeitraum 2000 - 2016
+  <ins>> "posted_on"</ins> Zeitraum 2000 - 2016
   Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe im amerikanischem Format (MMMM.DD,YYYY).
 
   `<Monat>`.`<Tag>`,`<Jahr>`
 
   <ins>"rating"</ins><br>
-  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5, die Verteilung der Bewertungen im Datensatz setzt sich wie folgt zusammen [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32], was einen Überhang von Beschwerden mit niedgrigem rating zeigt.<br>
+  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5. Die Anzahl der Bewertungen pro rating im Datensatz ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang von Beschwerden mit niedgriger Bewertung.<br>
   <br><br>
 </ul>
 
