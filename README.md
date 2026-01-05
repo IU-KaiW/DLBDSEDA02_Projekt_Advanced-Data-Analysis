@@ -65,6 +65,8 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 
 Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
 
+Die enthaltenen Daten lassen sich in
+
 <ul>
   <li><ins>struktierte Daten</ins></li>
   In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen in einheitlicher (normalisierter Form) vorliegen.<br>
@@ -72,19 +74,19 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   
   Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
   
-  <ins>> "posted_on"</ins> Zeitraum 2000 - 2016
-  Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe im amerikanischem Format (MMMM.DD,YYYY).
+  > "posted_on" Zeitraum
+  Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format (MMMM.DD,YYYY).
 
   `<Monat>`.`<Tag>`,`<Jahr>`
 
   <ins>> "rating"</ins><br>
-  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5. Die Anzahl der Bewertungen pro rating im Datensatz ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang von Beschwerden mit niedgriger Bewertung.<br>
+  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang niedgriger Bewertungen bei den Beschwerden.<br>
   <br>
   <li><ins>unstruktuierte Daten</ins></li>
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
   <br>
   <br><ins>> "text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
-  
+
   `<Beschwerdetext>`wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus als Input genutzt
 </ul>
 
