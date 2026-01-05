@@ -85,12 +85,16 @@ Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstr
 </ul>
 
   <li><ins>unstruktuierte Daten</ins></li>
-  Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typische Beispiel sind Textdateien (iu., 2025, p. 15)
+  Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typische Beispiel dafür sind Texte.
   <br><br>
   <ul>
     <li><ins>> "text"</ins></li>
-    "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
-  `<Beschwerdetext>`wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus als Input genutzt
+    In der Spalte "text" befinden sich englische Beschwerdetexte in verschiedenen Längen. Sie enthalten neben Text, nummerischen Anhaben wie Preise in $, Zeit- und Datumsangaben in verschiedenen Formatierungen.Abkürzungen, Sonderzeichen <br>
+
+  `<Beschwerdetext>` 
+  
+  Großschreibungen
+  aufzählungen
   <br>  
   </ul>
 </ul>
