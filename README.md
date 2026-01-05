@@ -76,11 +76,11 @@ Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstr
   
   <li><ins>"posted_on"</ins><br>
 
-  Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`.
+  > Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`.
 
   <li><ins>"rating"</ins><br>
   
-  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedgriger Bewertungen zeigt.<br>
+  > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedgriger Bewertungen zeigt.<br>
   <br>  
 </ul>
 
