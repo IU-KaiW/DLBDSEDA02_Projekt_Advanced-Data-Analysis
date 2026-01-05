@@ -66,20 +66,30 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
 
 <ul>
-  <li><ins>struktierte Informationen</ins></li>
-  In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne Aufbereitung direkt weiterverarbeitet werden können.<br>
+  <li><ins>struktierte Daten</ins></li>
+  In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen in einheitlicher (normalisierter Form) vorliegen.<br>
   <br><ins>"author"</ins> <br>
-  Die Spalte enthält den alphanumerischen `<Benutzernamen>` des Beschwerdeverfassers sowie eine US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
+  Die Zeilen der Spalte enthalten jeweils den alphanumerischen `<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrette, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
+
   <br><ins>"posted_on"</ins> "Nov. 19, 2016" - Datum im Format M.D,Y () - Zeitraum 2000 - 2016<br>
-  <Monat>`.`<Tag>`,`<Jahr>`<br>
+  Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe in amerikanischem Datumsformat.
+
+  `<Monat>`.`<Tag>`,`<Jahr>`<br>
   
-  <br><ins>"rating"</ins> "0-5" - Bewertung (rating 0: 1560) (rating 1:3734) (rating 2: 260) (rating 3:54) (rating 4:19) (rating 5:32)<br>
-  <0-5>`<br>
+  <br><ins>"rating"</ins><br>
+  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5.
+  (rating 0: 1560)
+  (rating 1:3734)
+  (rating 2: 260)
+  (rating 3:54)
+  (rating 4:19)
+  (rating 5:32)
+  <br>
   <br><br>
 </ul>
 
 <ul>
-  <li><ins>unstruktuierte Informationen</ins></li>
+  <li><ins>unstruktuierte Daten</ins></li>
 
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
   <br><br>
