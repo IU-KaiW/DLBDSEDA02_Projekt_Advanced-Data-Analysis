@@ -71,7 +71,7 @@ Die enthaltenen Daten lassen sich in
   <li><ins>struktierte Daten</ins></li>
   In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen in einheitlicher (normalisierter Form) vorliegen.<br>
   <ul>
-  <li><ins><ins>> "author"</ins>
+  <li><ins> "author"</ins>
   
   Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
   <li><ins>"posted_on"</ins>
