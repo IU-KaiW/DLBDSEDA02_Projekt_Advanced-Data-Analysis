@@ -350,6 +350,19 @@ Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsu
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
+###### Laufzeitumgebung (engl. runtime environment)
+Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung, welche über
+
+```console
+`pip install conda`
+```
+oder 
+
+```console
+`pip install venv?`
+```
+installiert werden können.
+
 ###### Datenvalidierung (engl. data validation)
 Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein damit das Skript den Datensatz durch das externe Modul "AITextDetector.py" verarbeiten kann.
 <ul>
@@ -363,20 +376,6 @@ Python in einer Version 3.8+
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
 </ul>
-
-
-###### Laufzeitumgebung (engl. runtime environment)
-Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung, welche über
-
-```console
-`pip install conda`
-```
-oder 
-
-```console
-`pip install venv?`
-```
-installiert werden können.
 
 ## Abhängigkeiten (engl. dependencies)
 
