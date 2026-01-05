@@ -68,13 +68,11 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
 <ul>
   <li><ins>struktierte Daten</ins></li>
   In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen in einheitlicher (normalisierter Form) vorliegen.<br>
-  <br><ins>"author"</ins> <br>
+  <br><ins>"author"</ins>
   
-  Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrette, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>`
- vorliegt.
+  Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrette, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
   
-  <br>
-  <br><ins>"posted_on"</ins> Zeitraum 2000 - 2016<br>
+  <br><ins>"posted_on"</ins> Zeitraum 2000 - 2016
   Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe im amerikanischem Format (MMMM.DD,YYYY).
 
   `<Monat>`.`<Tag>`,`<Jahr>`
