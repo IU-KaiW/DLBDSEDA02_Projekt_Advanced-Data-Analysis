@@ -86,7 +86,7 @@ Die enthaltenen Daten lassen sich in
   Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>` . Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang niedgriger Bewertungen bei den Beschwerden.<br>
   <br>  
 </ul>
-<ul>
+
   <li><ins>unstruktuierte Daten</ins></li>
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
   <br><br>
@@ -95,6 +95,7 @@ Die enthaltenen Daten lassen sich in
 
   `<Beschwerdetext>`wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus als Input genutzt
   <br>  
+  </ul>
 </ul>
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
