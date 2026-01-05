@@ -78,7 +78,7 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   `<Monat>`.`<Tag>`,`<Jahr>`
 
   <br><ins>"rating"</ins><br>
-  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5, die Verteilung der Bewertungen im Datensatz setzt sich wie folgt zusammen:
+  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5, die Verteilung der Bewertungen im Datensatz setzt sich wie folgt zusammen:<br>
   (rating 0: 1560)<br>
   (rating 1: 3734)<br>
   (rating 2: 260)<br>
