@@ -503,7 +503,7 @@ import torch
 import transformers
 import pyLDAvis as
 import wordcloud as wc
-import Top2Vec as t2v
+import top2vec as t2v
 import re
 import csv
 import venv
