@@ -90,7 +90,7 @@ Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstr
   <ul>
   <li><ins>"text"</ins></li>
   
-  In der Zeilen der Spalte "text" befinden sich ein englischer `<Beschwerdetext>`. Dieser enthält neben alphabetischen Buchstaben, nummerischen Anhaben wie Preise in $, Zeit- und Datumsangaben in unterschiedlichen Formatierungen. Auch Großschreibungen, Aufzählungen und Sonderzeichen sind Teil der Beschwerdetexte, was bei der Sprachverarbeitung zu beachten ist. <br>  
+  In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Dieser enthält neben alphabetischen Zeichenketten (Wörtern), nummerischen Anhaben wie Preise in $, Zeit- und Datumsangaben in unterschiedlichen Formatierungen. Auch Großschreibungen, Aufzählungen und Sonderzeichen sind Teil der Beschwerdetexte, was bei der Sprachverarbeitung zu beachten ist. <br>  
   </ul>
 </ul>
 
@@ -98,6 +98,8 @@ Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstr
 Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16](Timmermann, 2019).
 
 Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichung (engl. date of publication) oder Bedeutungen, Syntaktisch, lexikalisch Semantisch (wie Bedeutung).....
+
+Annotationen
 
 Haupt Freatures / Sekundärfeatuers?
 Datenevrarbeitung
@@ -496,12 +498,10 @@ import seaborn as sns
 import spacy as sp
 import nltk
 import sklearn as
-import gensim
+import gensim as
 import torch
 import transformers
-import pyLDAvis
-import wordcloud
-import Top2Vec
-
-
+import pyLDAvis as
+import wordcloud as wc
+import Top2Vec as t2v
 ```    
