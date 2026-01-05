@@ -94,6 +94,8 @@ Die enthaltenen Daten lassen sich in
     <li><ins>> "text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
 
   `<Beschwerdetext>`wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus als Input genutzt
+  <br>  
+</ul>
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16](Timmermann, 2019).
