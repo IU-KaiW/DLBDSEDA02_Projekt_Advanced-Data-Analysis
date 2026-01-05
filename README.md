@@ -72,7 +72,7 @@ Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstr
   <ul>
   <li><ins> "author"</ins>
   
-  Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
+  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
   
   <li><ins>"posted_on"</ins><br>
 
@@ -80,7 +80,7 @@ Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstr
 
   <li><ins>"rating"</ins><br>
   
-  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang niedgriger Bewertungen bei den Beschwerden.<br>
+  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedgriger Bewertungen zeigt.<br>
   <br>  
 </ul>
 
