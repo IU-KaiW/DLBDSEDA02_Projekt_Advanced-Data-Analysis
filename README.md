@@ -74,7 +74,7 @@ Die enthaltenen Daten lassen sich in
   
   Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
   
-  > "posted_on" Zeitraum
+  <br><ins>>"posted_on"</ins>
   Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format (MMMM.DD,YYYY).
 
   `<Monat>`.`<Tag>`,`<Jahr>`
