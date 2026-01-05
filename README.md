@@ -88,10 +88,9 @@ Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstr
   Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typische Beispiel dafür sind Texte.
   <br><br>
   <ul>
-    <li><ins>> "text"</ins></li>
-
-    In der Zeilen der Spalte "text" befinden sich ein englischer `<Beschwerdetext>`. Dieser enthält neben alphabetischen Buchstaben, nummerischen Anhaben wie Preise in $, Zeit- und Datumsangaben in unterschiedlichen Formatierungen. Auch Sonderzeichen, Groschreibungen und Aufzählungen sind Teil der Beschwerdetexte.
-  <br>  
+  <li><ins>> "text"</ins></li>
+  
+  In der Zeilen der Spalte "text" befinden sich ein englischer `<Beschwerdetext>`. Dieser enthält neben alphabetischen Buchstaben, nummerischen Anhaben wie Preise in $, Zeit- und Datumsangaben in unterschiedlichen Formatierungen. Auch Sonderzeichen, Groschreibungen und Aufzählungen sind Teil der Beschwerdetexte. <br>  
   </ul>
 </ul>
 
