@@ -85,7 +85,7 @@ Die enthaltenen Daten lassen sich in
   
   Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>` . Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang niedgriger Bewertungen bei den Beschwerden.<br>
   <br>
-  
+
   <li><ins>unstruktuierte Daten</ins></li>
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
   <br><br>
@@ -93,7 +93,6 @@ Die enthaltenen Daten lassen sich in
     <li><ins>> "text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
 
   `<Beschwerdetext>`wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus als Input genutzt
-</ul>
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16](Timmermann, 2019).
