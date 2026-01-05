@@ -82,18 +82,15 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   <br><br>
   <li><ins>unstruktuierte Daten</ins></li>
   <ul>
-
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
-  <br><br>
-</ul>
-<ins>> "text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
+  <br>
+  <ins>> "text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
 
-`<Beschwerdetext>` <br>
-
+  `<Beschwerdetext>` <br>
 wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus
 
 als Input genutzt
-
+</ul>
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16](Timmermann, 2019).
