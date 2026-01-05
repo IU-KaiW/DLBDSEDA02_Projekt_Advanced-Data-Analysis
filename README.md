@@ -63,9 +63,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
-
-Die enthaltenen Daten lassen sich in
+Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
 
 <ul>
   <li><ins>struktierte Daten</ins></li>
@@ -91,7 +89,8 @@ Die enthaltenen Daten lassen sich in
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
   <br><br>
   <ul>
-    <li><ins>> "text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
+    <li><ins>> "text"</ins></li>
+    "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
 
   `<Beschwerdetext>`wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus als Input genutzt
   <br>  
