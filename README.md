@@ -71,14 +71,14 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   <br><ins>"author"</ins> <br>
   Die Zeilen der Spalte enthalten jeweils den alphanumerischen
   `<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrette, US-Ortsangabe welche im Format 
-  `<Ortsname , US-Bundesstaat>` vorliegt.<br>
-
+  
+`<Ortsname , US-Bundesstaat>` vorliegt.
+  
+  <br>
   <br><ins>"posted_on"</ins> Zeitraum 2000 - 2016<br>
-  Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe im amerikanischem Format (MMMM.DD,YYYY)
+  Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe im amerikanischem Format (MMMM.DD,YYYY).
 
   `<Monat>`.`<Tag>`,`<Jahr>`
-  
-  mit abgekürzer Monatsangabe.
 
   <br><ins>"rating"</ins><br>
   Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5.
