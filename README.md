@@ -95,6 +95,7 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   <br><br>
 </ul>
 <ins>"text"</ins> "" enhält $, Zeitangaben, Verschiedene Datumsformate, Unterschiedliche Längen, Zeitangaben, <br>
+
 `<Beschwerdetext>` <br>
 
 wobei letztere den Beschwerdetext in englisch enthält. Die Spalte "autor" enthält Strings, bestehend aus
