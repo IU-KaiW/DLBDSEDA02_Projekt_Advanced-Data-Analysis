@@ -63,7 +63,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-Die enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
+Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> einteilen.
 
 <ul>
   <li><ins>struktierte Daten</ins></li>
@@ -336,14 +336,6 @@ Topic Diversity:
 
 ______________
 
-## Projektstruktur
-### Ordnerstruktur
-```markdown
-├── dataset/   # gewählter Datensatz
-├── src/       # Python-Module
-├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
-└── README.md
-```
 
 ## Installation (engl. setup)
 Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wird Visual Studio Code (VSCode) genutzt.
@@ -425,6 +417,15 @@ aufgerufen werden.[^15]<br>
 
 
 </ul>
+
+## Projektstruktur
+### Ordnerstruktur
+```markdown
+├── dataset/   # gewählter Datensatz
+├── src/       # Python-Module
+├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
+└── README.md
+```
 
 ## Referenzen
 
