@@ -70,7 +70,7 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen in einheitlicher (normalisierter Form) vorliegen.<br>
   <br><ins>"author"</ins>
   
-  Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrette, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
+  Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
   
   <br><ins>"posted_on"</ins> Zeitraum 2000 - 2016
   Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe im amerikanischem Format (MMMM.DD,YYYY).
@@ -78,7 +78,7 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
   `<Monat>`.`<Tag>`,`<Jahr>`
 
   <br><ins>"rating"</ins><br>
-  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5.
+  Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5, die Verteilung der Bewertungen im Datensatz setzt sich wie folgt zusammen:
   (rating 0: 1560)<br>
   (rating 1: 3734)<br>
   (rating 2: 260)<br>
@@ -223,11 +223,11 @@ Datenevrarbeitung
             <li>Frequency Based Embedding</li>
                 BoW<br>
                 <div style="margin-left: 2em;">
-                  <code>???</code>&nbsp;<code>????</code><br></br>
+                  <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
                 </div>
                 TF-IDF<br>
                 <div style="margin-left: 2em;">
-                  <code>sklearn</code>
+                  <code>sklearn (TfidfVecrorizer)</code>
                 </div>
           </ul>
        <li>semantische Embeddings</li>
