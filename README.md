@@ -71,15 +71,15 @@ Die enthaltenen Daten lassen sich in
   <li><ins>struktierte Daten</ins></li>
   In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen in einheitlicher (normalisierter Form) vorliegen.<br>
   <ul>
-  <br><ins>> "author"</ins>
+  <li><ins><ins>> "author"</ins>
   
   Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
-  <ins>>"posted_on"</ins>
+  <li><ins>"posted_on"</ins>
   Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format (MMMM.DD,YYYY).
 
   `<Monat>`.`<Tag>`,`<Jahr>`
   
-  <ins>> "rating"</ins><br>
+ <li><ins>"rating"</ins><br>
   Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang niedgriger Bewertungen bei den Beschwerden.<br>
   <br>
   <li><ins>unstruktuierte Daten</ins></li>
