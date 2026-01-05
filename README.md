@@ -79,7 +79,7 @@ Die Spalten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte
 
   <ins>> "rating"</ins><br>
   Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala von 0-5. Die Anzahl der Bewertungen pro rating im Datensatz ist wie folgt verteilt [0=1560 ; 1=3734; 2=260; 3=54; 4=19; 5=32]. Dies zeigt einen Überhang von Beschwerden mit niedgriger Bewertung.<br>
-  <br><br>
+  <br>
   <li><ins>unstruktuierte Daten</ins></li>
   Die Spalten lassen sich in <ins>struktierte Informationen</ins> und <ins>unstrukturierte Informationen</ins> einteilen.
   <br>
