@@ -91,9 +91,6 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   <li><ins>"text"</ins></li>
   
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. <br>  
-
-
-
   </ul>
 </ul>
 
@@ -417,6 +414,8 @@ aufgerufen werden.[^15]<br>
   |`cartopy`             |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung          |
   |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung          |
   |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung          |
+  |`stanza `             |Website: https://stanfordnlp.github.io/stanza/                            <br>Dokumentation:                                                       |NLP                     |
+
 
 
 </ul>
