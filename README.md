@@ -90,7 +90,10 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   <ul>
   <li><ins>"text"</ins></li>
   
-  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Dieser enthält neben alphabetischen Zeichenketten (Wörtern), nummerischen Anhaben wie Preise in $, Zeit- und Datumsangaben in unterschiedlichen Formatierungen. Auch Großschreibungen, Aufzählungen und Sonderzeichen sind Teil der Beschwerdetexte, was bei der Sprachverarbeitung zu beachten ist. <br>  
+  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. <br>  
+
+
+
   </ul>
 </ul>
 
