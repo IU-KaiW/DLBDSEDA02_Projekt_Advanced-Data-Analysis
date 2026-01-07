@@ -37,7 +37,6 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
       <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und die Bewertung als n/a markiert. Der Datensatz fließt dann nicht in den Ergebnisvergleich ein.</i>
-    </details>
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
@@ -51,7 +50,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
-
+  </details>
 </ol>
 
 Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Schritte genutzt. Übersteigen seine Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte darauf begrenzt.<br>
