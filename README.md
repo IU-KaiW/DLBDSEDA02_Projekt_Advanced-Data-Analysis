@@ -187,8 +187,7 @@ df = pd.read.csv ('URL')
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Wörter) oder N-Gramme (Phrasen) zerlegt.
-        Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können. Dafür eignen sich statistische Informationen über die Token beziehungsweise Wörter“ (Timmermann, 2019).</i><br>
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen) wie z.B. Sätze zerlegt.</i><br>
       </li>
       <div style="margin-left: 2em;">
         <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br></br>
