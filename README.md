@@ -88,7 +88,7 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 </ul>
 
   <li><ins>unstruktuierte Daten</ins></li>
-  Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind Texte wie sie in der Spalte "text" zu finden sind.
+  Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.
   <br><br>
   <ul>
   <li><ins>"text"</ins></li>
