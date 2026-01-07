@@ -50,10 +50,13 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
+
+Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. 
+
   </details>
 </ol>
 
-Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da er eine Bewertung von 82 % erreicht. 
+
 ______________
 
 ###### Pipeline-Eingabe
