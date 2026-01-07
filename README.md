@@ -95,20 +95,15 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 </ul>
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
+Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
+
+Datenevrarbeitung
 Datensatz laden
 
 ```python
 df = pd.read.csv ('URL')
 ```
 
-Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16](Timmermann, 2019).
-
-Merkmale (engl. features) eines Textes oder Dokuments sind Informationen wie Länge (engl. length), Quelle (engl. source) und Datum der Veröffentlichung (engl. date of publication) oder Bedeutungen, Syntaktisch, lexikalisch Semantisch (wie Bedeutung).....
-
-Annotationen
-
-Haupt Freatures / Sekundärfeatuers?
-Datenevrarbeitung
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br></br>
 </div>
