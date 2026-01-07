@@ -3,6 +3,10 @@ Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch ents
 
 Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (integrierten/externen) Bibliotheken aufgeführt werden.
 
+Ablauf in Schritten
+Ablauf Projket in Phasen
+
+
 ## Konzeption
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
 
@@ -55,8 +59,6 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 
   </details>
 </ol>
-
-
 ______________
 
 ###### Datensatzbeschreibung
@@ -100,7 +102,7 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
 
-###### Datenaufnahme (engl. data import)
+###### Pipeline Eingabe (engl. Pipeline import)
 
 ```python
 df = pd.read.csv ('URL')
@@ -111,7 +113,13 @@ df = pd.read.csv ('URL')
 </div>
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
-> Durch die Datenvorverarbeiten erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Phasen in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt. spaCy [^11]
+> Während der Datenvorverarbeitung erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob die Prozesse Textbereinigung und Merkmalsextraktion einteilen lässt. spaCy [^11]
+  <div style="margin-left: 2em;">
+   <code>spaCy</code>&nbsp;<code>????</code><br></br>
+  </div>
+  
+  [^11]
+
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
@@ -216,7 +224,6 @@ df = pd.read.csv ('URL')
        Hierunter werden 
           <ul>
             <li>Frequency Based Embedding</li>
-
                 BoW<br>
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
@@ -307,9 +314,9 @@ Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
 ______________
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
-Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der die Merkmalsanalysen (engl. feature analysis) sowie die Modellevaluationen (engl. model evaluations) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
+Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
-
+EDA?
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
 
