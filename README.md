@@ -166,12 +166,6 @@ df = pd.read.csv ('URL')
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
               <div style="margin-left: 2em;">
                 <code>stdlib(.lower)</code>&nbsp;<code>????</code><br></br>
-              </div>
-              <li>Grundformreduktion (engl. inflection reduction)</li>
-              Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
-              <div style="margin-left: 2em;">
-                <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy()</code><br></br>
-              </div>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
               In der Formatnormalisierung erfolgt die Normalisierung von Schreibweisen (Datenformate oder Zahlenformaten) und Sonderformen (Emojis).
               <div style="margin-left: 2em;">
@@ -184,7 +178,6 @@ df = pd.read.csv ('URL')
                 <code>pyspellchecker</code>&nbsp;<code>????</code><br></br>
               </div>
       </ol>
-
     </ol>
   </details>
 
@@ -199,6 +192,12 @@ df = pd.read.csv ('URL')
       </li>
       <div style="margin-left: 2em;">
         <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br></br>
+      </div>
+      </div>
+       <li>Grundformreduktion (engl. inflection reduction)</li>
+        Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
+      <div style="margin-left: 2em;">
+         <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy()</code><br></br>
       </div>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
