@@ -122,6 +122,34 @@ df = pd.read.csv ('URL')
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
     <p><i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert und anschließend von Rauschen befreit.</i></p>
     <ol type="1">
+      </li>
+      <li>Rauschentfernung (engl. noise reduction)</li><br>
+        <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
+            <div style="margin-left: 2em;">
+              <code>NLTK</code>&nbsp;<code>regex</code><br></br>
+            </div>
+            <ol type="2">
+            <li><ins>Stoppworte (engl. stopwords)</ins></li>
+              <div style="margin-left: 2em;">
+                <code>NLTK(stopwords)</code>&nbsp;<code>????</code><br></br>
+              </div>
+            <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
+              <div style="margin-left: 2em;">
+                <code>regex</code>&nbsp;<code>????</code><br></br>
+              </div>
+            <li><ins>Leerzeichen (engl. white space)</ins></li>
+              <div style="margin-left: 2em;">
+                <code>regex</code>&nbsp;<code>????</code><br></br>
+              </div>
+            <li><ins>Nummern (engl. removing numbers)</ins></li>
+              <div style="margin-left: 2em;">
+                <code>regex</code>&nbsp;<code>????</code><br></br>
+              </div>
+            <li><ins>Sonderzeichen (engl. special character)</ins></li>
+              <div style="margin-left: 2em;">
+                <code>regex</code>&nbsp;<code>????</code><br></br>
+              </div>
+      </ol>
       <li>Standardisierung (engl. standardisation)<br></li>
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
           <div style="margin-left: 2em;">
@@ -156,34 +184,7 @@ df = pd.read.csv ('URL')
                 <code>pyspellchecker</code>&nbsp;<code>????</code><br></br>
               </div>
       </ol>
-      </li>
-      <li>Rauschentfernung (engl. noise reduction)</li><br>
-        <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
-            <div style="margin-left: 2em;">
-              <code>NLTK</code>&nbsp;<code>regex</code><br></br>
-            </div>
-            <ol type="2">
-            <li><ins>Stoppworte (engl. stopwords)</ins></li>
-              <div style="margin-left: 2em;">
-                <code>NLTK(stopwords)</code>&nbsp;<code>????</code><br></br>
-              </div>
-            <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
-              <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
-              </div>
-            <li><ins>Leerzeichen (engl. white space)</ins></li>
-              <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
-              </div>
-            <li><ins>Nummern (engl. removing numbers)</ins></li>
-              <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
-              </div>
-            <li><ins>Sonderzeichen (engl. special character)</ins></li>
-              <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
-              </div>
-      </ol>
+
     </ol>
   </details>
 
@@ -193,15 +194,15 @@ df = pd.read.csv ('URL')
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken oder Phrasen (n-Gramme) zerlegt.
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Wörter) oder N-Gramme (Phrasen) zerlegt.
         Merkmale (engl. features) "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können. Dafür eignen sich statistische Informationen über die Token beziehungsweise Wörter“ (Timmermann, 2019).</i><br>
       </li>
       <div style="margin-left: 2em;">
-        <code>SpaCy</code>&nbsp;<code>NLTK(word_toeknize; sent_tokenize)</code><br></br>
+        <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br></br>
       </div>
       <li>
-        Vokabularerstellung/Wortschatzaufbau (engl. Vocabulary Construction)<br>
-        <i>Im Schritt des Wortschatzaufbaus (Vocabulary Construction) wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
+        Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
+        <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
       </li>
       <div style="margin-left: 2em;">
         <code>sklearn(CountVectorizer)</code>&nbsp;<code>????</code><br></br>
