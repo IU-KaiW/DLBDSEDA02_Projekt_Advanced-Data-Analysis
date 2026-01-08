@@ -318,6 +318,9 @@ Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data 
 EDA?
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
+<div style="margin-left: 2em;">
+  <code>???</code>&nbsp;<code>???</code><br><br>
+</div>
 
 #### 🔵 Merkmalsauswertungen (engl. feature Inspections)
 >Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)
