@@ -114,8 +114,8 @@ df = pd.read.csv ('URL')
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
-  <div style="margin-left: 2em;">
-   <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
+<div style="margin-left: 2em;">
+  <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
 </div>
 <ol type="1">
   <details>
@@ -210,6 +210,10 @@ df = pd.read.csv ('URL')
 
 #### 🟡 Datenverarbeitung (engl. data processing)
 > Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden Merkmale (engl. features) durch mittels Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle gewonnen.
+<div style="margin-left: 2em;">
+  <code>???</code>&nbsp;<code>???</code><br><br>
+</div>
+
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
