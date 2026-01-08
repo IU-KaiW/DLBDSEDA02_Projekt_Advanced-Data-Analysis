@@ -319,7 +319,7 @@ EDA?
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
 <div style="margin-left: 2em;">
-  <code>???</code>&nbsp;<code>???</code><br><br>
+  <code>???</code>&nbsp;<code>???</code><br>
 </div>
 
 #### 🔵 Merkmalsauswertungen (engl. feature Inspections)
