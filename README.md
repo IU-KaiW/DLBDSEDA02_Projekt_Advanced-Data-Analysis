@@ -109,7 +109,7 @@ df = pd.read.csv ('URL')
 ```
 
 <div style="margin-left: 2em;">
-  <code>pandas</code>&nbsp;<code>????</code><br></br>
+  <code>pandas</code>&nbsp;<code>????</code><br>
 </div>
 
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
