@@ -115,7 +115,7 @@ df = pd.read.csv ('URL')
 #### 🔴 Datenvorverarbeiten (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
   <div style="margin-left: 2em;">
-   <code>spaCy</code>&nbsp;<code>NLTK</code><br>
+   <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
 </div>
 <ol type="1">
   <details>
