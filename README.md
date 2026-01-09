@@ -182,18 +182,18 @@ df = pd.read.csv ('URL')
   </details>
   <details>
     <summary>🔴 Linguistische Analyse (engl. Linguistic Processing)</summary>
-    <p><i>Durch Merkmalsextraktion wird Text im Rahmen der Merkmalsvorbereitung zur weiteren Verarbeitung präpariert.</i></p>
+    <p><i>Im Rahmen der lingusitischen Analyse erfolgt eine Merkmalsvorbereitung.</i></p>
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen) wie z.B. Sätze zerlegt.</i><br>
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt.</i><br>
       </li>
       <div style="margin-left: 2em;">
         <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br></br>
       </div>
       </div>
        <li>Grundformreduktion (engl. inflection reduction)</li>
-        Durch diesen Schritt werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
+        Durch Grundformreduktion werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
       <div style="margin-left: 2em;">
          <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy()</code><br></br>
       </div>
