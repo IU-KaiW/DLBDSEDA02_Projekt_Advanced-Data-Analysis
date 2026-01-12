@@ -1,5 +1,5 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-NLP lässt sich in drei Bereiche einteilen (Automatic speech recognition - ASR, natural language understanding - NLU und natural language generation - NLG). Das
+NLP lässt sich in drei Bereiche einteilen ASR (automatic speech recognition), NLU (natural language understanding) und NLG (natural language generation). Das Projekt befasst sich mit NLU.
 Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
 Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (integrierten/externen) Bibliotheken aufgeführt werden.
@@ -68,7 +68,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 ______________
 
 ### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
-In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.
+In der EDA werden Textdaten zunächst untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.
 
 ###### Datensatzbeschreibung
 Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Kommta (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten organisiert sind.
@@ -107,6 +107,14 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. <br>  
   </ul>
 </ul>
+
+###### Datenexploration
+Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der Bibliothek <code>pandas</code> analysiert.
+Duplikaterkennung
+Zählung
+
+
+
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
