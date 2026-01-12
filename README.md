@@ -1,4 +1,5 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
+NLP lässt sich in drei Bereiche einteilen (Automatic speech recognition - ASR, natural language understanding - NLU und natural language generation - NLG). Das
 Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
 Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (integrierten/externen) Bibliotheken aufgeführt werden.
@@ -7,11 +8,16 @@ Ablauf in Schritten
 Ablauf Projket in Phasen
 
 
+
+
+
 ## Konzeption
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
+Textlängen: 
+kurze Texte
 
 ### ⚪ Datenakquisition (engl. data acquisition)
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die NLP-Pipeline steht.</br>
@@ -98,6 +104,9 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. <br>  
   </ul>
 </ul>
+
+###### Explorative Datenanalyse
+
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
