@@ -16,9 +16,6 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
-Textlängen: 
-kurze Texte
-
 ### ⚪ Datenakquisition (engl. data acquisition)
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die NLP-Pipeline steht.</br>
 <ol>
@@ -68,7 +65,11 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 ______________
 
 ### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
-In der EDA werden Textdaten zunächst untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.
+In der EDA werden Textdaten zunächst untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen um die erkannten Besonderheiten für die Sprachverarbeitung berücksichtigen zu können.
+
+<div style="margin-left: 2em;">
+  <code>pandas</code>&nbsp;<code>????</code><br>
+</div>
 
 ###### Datensatzbeschreibung
 Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Kommta (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten organisiert sind.
@@ -109,12 +110,11 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 </ul>
 
 ###### Datenexploration
-Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der Bibliothek <code>pandas</code> analysiert.
-Duplikaterkennung
-Zählung
-
-
-
+Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der <code>pandas</code> analysiert.<br>
+Duplikaterkennung<br>
+Textlängen: <br>
+kurze Texte<br>
+Zählung<br>
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
@@ -332,7 +332,6 @@ ______________
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
 Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
-EDA?
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
 <div style="margin-left: 2em;">
@@ -467,6 +466,7 @@ IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Ler
 <br>IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.
 
 ###### Abschlussarbeiten
+Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf
 Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
 
 ###### Bücher
@@ -489,7 +489,6 @@ Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bild
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/<br>
 <br>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/<br>
-
 
 
 
