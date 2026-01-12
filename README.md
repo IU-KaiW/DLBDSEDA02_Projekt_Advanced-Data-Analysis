@@ -106,7 +106,7 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 </ul>
 
 ### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
-
+In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
