@@ -105,7 +105,7 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   </ul>
 </ul>
 
-###### Explorative Datenanalyse
+### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
 
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
