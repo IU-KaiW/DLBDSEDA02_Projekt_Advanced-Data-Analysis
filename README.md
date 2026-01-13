@@ -9,12 +9,12 @@ Ablauf Projket in Phasen
 
 
 
-
-
 ## Konzeption
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
+
+Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibiliotheken sichtbar.
 
 ### ⚪ Datenakquisition (engl. data acquisition)
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die NLP-Pipeline steht.</br>
