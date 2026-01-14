@@ -111,6 +111,7 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 
 ###### Datenexploration
 Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der <code>pandas</code> analysiert.<br>
+Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der <code>pandas</code> Bibiliothek tiefgehender analysiert.<br>
 Duplikaterkennung<br>
 Textlängen: <br>
 kurze Texte<br>
