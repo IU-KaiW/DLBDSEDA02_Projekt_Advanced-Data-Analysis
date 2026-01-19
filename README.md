@@ -123,20 +123,17 @@ Fehldaten
   <ul>
   <li><ins>"text"</ins></li>
   
-  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. Die EDA zeigte darüber hinaus, dass die Texte im Median aus 1.239,94 Zeichen bestehen. <br>  
+  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>  
+  
+  Die EDA zeigte darüber hinaus, dass die Texte im Median aus 1.239,94 Zeichen bestehen.
   </ul>
 </ul>
 
 <ul>
-  <li><ins>fehldaten Daten</ins></li> 
-  > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
-</ul>
-
-<ul>
   <li><ins>fehldaten Daten</ins></li>
-  blablabla<br>
+  Im Zuge der Datenexploration ist aufgefallen, dass sich sowohl in den strukturiert als auch den unstrukturiert vorliegenden Daten fehldende Informationen (NaNs/NaT) finden ließen, welche <br>
   <ul>
-  <li><ins>"text"</ins></li>
+  <li><ins>XXXXX</ins></li>
   
   > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
   </ul>
