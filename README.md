@@ -98,28 +98,30 @@ Fehldaten
   > Die Zeilen der Spalte "posted_on" enhalten Datumsangaben mit alphabetisch abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
   Durch eine Zeitdatenanalyse des Datensatzes wurde die (jährliche, monatliche, wöchentliche) Verteilung der Beschwerden im Datensatz im Zeitraum vom 31.07.2000 bis 22.11.2016 ermittelt.
   
-  <br>jährliche Verteilung<br>
-  Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
-  
-  <br>monatliche Verteilung <br>
-  Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
-  
-  <br>wöchentliche Verteilung<br>
-  Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von Montag (820) und Freitag (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden weniger Beschwerden zu verzeichnen sind Samstag (659) und Sonntags (564). Dieses Muster deutet auf einen organischen Ursprung des Datensatz hin.
+   Die Datenexploration 
+   <br>jährliche Verteilung<br>
+   Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
+   
+   <br>monatliche Verteilung <br>
+   
+   Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
+   
+   <br>wöchentliche Verteilung<br>
+   Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von Montag (820) und Freitag (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden weniger Beschwerden zu verzeichnen sind Samstag (659) und Sonntags (564). Dieses Muster deutet auf einen organischen Ursprung des Datensatz hin.
 
   <li><ins>"rating"</ins><br>
   
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt, was ebenfalls auf einen organischen Datensatz hindeutet, da Beschwerden grundsätzlich negativ sind.<br>
 
   Bewertungsdatenanalyse
-
-  <br>  
+</ul>
+<ul>
 
   <li><ins>unstruktuierte Daten</ins></li>
   Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.
   <br>
 
-  </ul>
+
   <li><ins>"text"</ins></li>
   
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. Die EDA zeigte darüber hinaus, dass die Texte im Median aus 1.239,94 Zeichen bestehen. <br>  
