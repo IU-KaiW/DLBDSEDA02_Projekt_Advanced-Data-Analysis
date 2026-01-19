@@ -66,17 +66,21 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 </ol>
 ______________
 
-### ⚪ Datensatzsichtung (engl. dataset inspection)
-In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese in der Sprachverarbeitung berücksichtigt werden können.
-
-mittels des selbstgeschrieben Python-Skripts "(EDA.py)" durchgeführt, um den gewählten Datensatz besser zu verstehen.
-
-#### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
-In der EDA werden Textdaten zunächst untersucht, 
+### Datensatzsichtung (engl. dataset inspection)
+In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die EDA wurde mittels des selbstgeschrieben Python-Skripts "Explorative Datenanalyse (EDA).ipynb" durchgeführt, um den gewählten Datensatz besser zu verstehen. Hierdurch wurden eine Datentrukturanalyse, sowie die Analyse von sturtutierten und untrukturierten Bestandteilen des Datensatzes durchgeführt.
 
 <div style="margin-left: 2em;">
-  <code>pandas</code>&nbsp;<code>????</code><br>
+  <code>pandas</code>&nbsp;<code>csv</code><br>
 </div>
+
+
+###### Datenexploration
+Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der <code>pandas</code> Bibiliothek tiefgehender analysiert.<br>
+Duplikaterkennung<br>
+Textlängen: <br>
+kurze Texte<br>
+Zählung<br>
+
 
 ###### Datensatzbeschreibung
 Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Kommta (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten organisiert sind.
@@ -116,16 +120,8 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   </ul>
 </ul>
 
-###### Datenexploration
-Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der <code>pandas</code> analysiert.<br>
-Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der <code>pandas</code> Bibiliothek tiefgehender analysiert.<br>
-Duplikaterkennung<br>
-Textlängen: <br>
-kurze Texte<br>
-Zählung<br>
-
-## ⚪ Datensatzaufbereitung (engl. dataset preparation)
-
+## Datensatzaufbereitung (engl. dataset preparation)
+### Datensatzakquisition (engl. dataset acquisition)
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
@@ -465,9 +461,12 @@ aufgerufen werden.[^15]<br>
 ```markdown
 ├── dataset/   # gewählter Datensatz
 ├── src/       # Python-Module
+├──────/       /Explorative Datenanalyse (EDA)
 ├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
 └── README.md
 ```
+
+
 
 ## Referenzen
 
