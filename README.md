@@ -128,7 +128,8 @@ Fehldaten
 </ul>
 
 <ul>
-  <li><ins>fehldaten Daten</ins></li>
+  <li><ins>fehldaten Daten</ins></li> 
+  > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
 </ul>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
