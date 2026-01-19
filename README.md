@@ -100,14 +100,14 @@ Fehldaten
   
    Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.201 zeigte.
 
-   <br>jährliche Verteilung<br>
+   <ins>jährliche Verteilung</ins><br>
    Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
    
-   <br>monatliche Verteilung <br>
+   <ins>monatliche Verteilung</ins><br>
    
    Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
    
-   <br>wöchentliche Verteilung<br>
+   <ins>wöchentliche Verteilung</ins><br>
    Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von Montag (820) und Freitag (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden weniger Beschwerden zu verzeichnen sind Samstag (659) und Sonntags (564). Dieses Muster deutet auf einen organischen Ursprung des Datensatz hin.
 
   <li><ins>"rating"</ins><br>
