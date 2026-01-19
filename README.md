@@ -78,6 +78,8 @@ Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimite
 
 Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.
 
+Fehldaten
+
 ###### Datenexploration
 <ul>
   <li><ins>struktierte Daten</ins></li>
@@ -86,7 +88,9 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   <ul>
   <li><ins> "author"</ins>
   
-  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. Die Datenexploration zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
+  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. 
+  
+  Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
 <br>
   
   <li><ins>"posted_on"</ins><br>
@@ -106,6 +110,9 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   <li><ins>"rating"</ins><br>
   
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt, was ebenfalls auf einen organischen Datensatz hindeutet, da Beschwerden grundsätzlich negativ sind.<br>
+
+  Bewertungsdatenanalyse
+
   <br>  
 </ul>
 
@@ -117,18 +124,10 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. Die EDA zeigte darüber hinaus, dass die Texte im Median aus 1.239,94 Zeichen bestehen. <br>  
 
+  <li><ins>fehldaten Daten</ins></li>
 
-count     5628.000000
-mean      1239.940121
-std       1760.474721
-min         35.000000
-25%        527.000000
-50%        870.000000
-75%       1498.000000
-max      93136.000000
 
-  </ul>
-</ul>
+
 
 ###### Datentypen
 ###### Datentypen
