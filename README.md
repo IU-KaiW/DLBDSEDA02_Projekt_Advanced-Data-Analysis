@@ -114,7 +114,6 @@ Fehldaten
   Bewertungsdatenanalyse
 
   <br>  
-</ul>
 
   <li><ins>unstruktuierte Daten</ins></li>
   Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.
@@ -125,7 +124,7 @@ Fehldaten
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. Die EDA zeigte darüber hinaus, dass die Texte im Median aus 1.239,94 Zeichen bestehen. <br>  
 
 <li><ins>fehldaten Daten</ins></li>
-
+</ul>
 
 
 
