@@ -114,6 +114,7 @@ Fehldaten
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt, was ebenfalls auf einen organischen Datensatz hindeutet, da Beschwerden grundsätzlich negativ sind.<br>
 
   Bewertungsdatenanalyse
+  </ul>
 </ul>
 
 <ul>
