@@ -18,7 +18,7 @@ Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibil
 
 ## ⚪ Datensatzvorverarbeitung (engl. dataset pipeline)
 
-### ⚪ Datensatzakquisition (engl. datasatzacquisition)
+### ⚪ Datensatzakquisition (engl. dataset acquisition)
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die NLP-Pipeline steht.</br>
 <ol>
     <details>
@@ -66,9 +66,9 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 </ol>
 ______________
 
-## ⚪ Datensatzsichtung (engl. dataset inspection)
+### ⚪ Datensatzsichtung (engl. dataset inspection)
 
-### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
+#### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
 In der EDA werden Textdaten zunächst untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen um die erkannten Besonderheiten für die Sprachverarbeitung berücksichtigen zu können.
 
 <div style="margin-left: 2em;">
