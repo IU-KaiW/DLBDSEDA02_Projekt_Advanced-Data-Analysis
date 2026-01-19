@@ -18,8 +18,8 @@ Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibil
 
 ## ⚪ Datensatzvorverarbeitung (engl. dataset pipeline)
 
-### ⚪ Datensatzakquisition (engl. dataset acquisition)
-In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die NLP-Pipeline steht.</br>
+### Datensatzakquisition (engl. dataset acquisition)
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, um die Eingabe für die NLP-Pipeline zu bestimmen.</br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
@@ -67,9 +67,12 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 ______________
 
 ### ⚪ Datensatzsichtung (engl. dataset inspection)
+In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese in der Sprachverarbeitung berücksichtigt werden können.
+
+mittels des selbstgeschrieben Python-Skripts "(EDA.py)" durchgeführt, um den gewählten Datensatz besser zu verstehen.
 
 #### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
-In der EDA werden Textdaten zunächst untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen um die erkannten Besonderheiten für die Sprachverarbeitung berücksichtigen zu können.
+In der EDA werden Textdaten zunächst untersucht, 
 
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br>
