@@ -96,9 +96,10 @@ Fehldaten
   <li><ins>"posted_on"</ins><br>
 
   > Die Zeilen der Spalte "posted_on" enhalten Datumsangaben mit alphabetisch abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
-  Durch eine Zeitdatenanalyse des Datensatzes wurde die (jährliche, monatliche, wöchentliche) Verteilung der Beschwerden im Datensatz im Zeitraum vom 31.07.2000 bis 22.11.2016 ermittelt.
   
-   Die Datenexploration 
+  
+   Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.201 zeigte.
+
    <br>jährliche Verteilung<br>
    Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
    
@@ -111,9 +112,9 @@ Fehldaten
 
   <li><ins>"rating"</ins><br>
   
-  > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt, was ebenfalls auf einen organischen Datensatz hindeutet, da Beschwerden grundsätzlich negativ sind.<br>
+  > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`.<br>
 
-  Bewertungsdatenanalyse
+    Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt, was ebenfalls auf einen organischen Datensatz hindeutet, da Beschwerden grundsätzlich negativ sind.
   </ul>
 </ul>
 
@@ -125,13 +126,13 @@ Fehldaten
   
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>  
   
-  Die EDA zeigte darüber hinaus, dass die Texte im Median aus 1.239,94 Zeichen bestehen.
+  Die EDA zeigte dass die Texte im Median aus 1.239,94 Zeichen bestehen.
   </ul>
 </ul>
 
 <ul>
-  <li><ins>fehldaten Daten</ins></li>
-  Im Zuge der Datenexploration ist aufgefallen, dass sich sowohl in den strukturiert als auch den unstrukturiert vorliegenden Daten fehldende Informationen (NaNs/NaT) finden ließen, welche <br>
+  <li><ins>fehlerhafte Daten</ins></li>
+  Im Zuge der Datenexploration ist aufgefallen, dass sich sowohl in den strukturiert, als auch den unstrukturiert vorliegenden Informationen (NaNs/NaTs) und Duplikate finden ließen die bereinigt werden müssen, um Verzerrungen in der Modellbildung zu vermeiden. Es wurden (XXX) fehlende Daten und (XXX) Duplikate gefunden<br>
   <ul>
   <li><ins>XXXXX</ins></li>
   
@@ -140,7 +141,6 @@ Fehldaten
 </ul>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
-### Datensatzakquisition (engl. dataset acquisition)
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
