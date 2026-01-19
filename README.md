@@ -1,22 +1,24 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-NLP lässt sich in drei Bereiche einteilen ASR (automatic speech recognition), NLU (natural language understanding) und NLG (natural language generation). Das Projekt befasst sich mit NLU.
-Ziel der Aufgabe ist es NLP-Techniken auf einen unstrukturierten, organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
+NLP (natural language processing) lässt sich in drei Bereiche einteilen ASR (automatic speech recognition), NLU (natural language understanding) und NLG (natural language generation). Dieses Projekt befasst sich mit dem Bereich NLU, dem Verständnis natürlicher Sprache. 
 
-Das zu erstellende schriftliche Konzept soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen kurz zwei Techniken zur Vektorisierung sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (integrierten/externen) Bibliotheken aufgeführt werden.
+Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den unstrukturierten Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
-Ablauf in Schritten
-Ablauf Projket in Phasen
+Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (integrierten/externen)Python-Bibliotheken aufgeführt werden.
 
 
 
 ## Konzeption
+Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
+
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
 Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibiliotheken sichtbar.
 
-### ⚪ Datenakquisition (engl. data acquisition)
+## ⚪ Datensatzvorverarbeitung (engl. dataset pipeline)
+
+### ⚪ Datensatzakquisition (engl. datasatzacquisition)
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, an dessen Ende die Eingabe (engl. input) in die NLP-Pipeline steht.</br>
 <ol>
     <details>
@@ -63,6 +65,8 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
   </details>
 </ol>
 ______________
+
+## ⚪ Datensatzsichtung (engl. dataset inspection)
 
 ### ⚪ Explorative Datenanalyse (engl. exploratory data analysis)
 In der EDA werden Textdaten zunächst untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen um die erkannten Besonderheiten für die Sprachverarbeitung berücksichtigen zu können.
@@ -116,6 +120,9 @@ Duplikaterkennung<br>
 Textlängen: <br>
 kurze Texte<br>
 Zählung<br>
+
+## ⚪ Datensatzaufbereitung (engl. dataset preparation)
+
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
