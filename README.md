@@ -76,77 +76,36 @@ Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimite
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere primär genutzt werden.
+Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.
 
+###### Datenexploration
 <ul>
   <li><ins>struktierte Daten</ins></li>
-  In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen in einheitlicher (normalisierter Form) vorliegen.<br><br>
+  In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
 
   <ul>
   <li><ins> "author"</ins>
   
-  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname , US-Bundesstaat>` vorliegt.<br>
+  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. Die Datenexploration zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
+<br>
   
   <li><ins>"posted_on"</ins><br>
 
-  > Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. Der Zeitdatenanalyse lässt sich entnehmen, dass 
-|    Bewerden     |
-|Jahr    | Anzahl |
-|--------|--------|
-| 2000   |      1 |
-| 2001   |      2 |
-| 2002   |      1 |
-| 2003   |      6 |
-| 2004   |     10 |
-| 2006   |     34 |
-| 2007   |    106 |
-| 2008   |    441 |
-| 2009   |    462 |
-| 2010   |    415 |
-| 2011   |    357 |
-| 2012   |    418 |
-| 2013   |    313 |
-| 2014   |    770 |
-| 2015   |   1477 |
-| 2016   |    846 |
-
-|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
-
-===Zeitdatenanalyse===
-Erstes Datum:   2000-07-31
-Letztes Datum:  2016-11-22
-Zeitraum:       16 Jahre, 118 Tage (5958 Tage)
-
-
-Pro Monat:
-month_name
-April        369
-August       540
-December     426
-February     476
-January      485
-July         529
-June         461
-March        441
-May          394
-November     505
-October      526
-September    507
-Name: count, dtype: int64
-
-Pro Wochentag:
-weekday
-Wednesday    993
-Tuesday      960
-Thursday     861
-Monday       820
-Friday       802
-Saturday     659
-Sunday       564
+  > Die Zeilen der Spalte "posted_on" enhalten Datumsangaben mit alphabetisch abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
+  Durch eine Zeitdatenanalyse des Datensatzes wurde die (jährliche, monatliche, wöchentliche) Verteilung der Beschwerden im Datensatz im Zeitraum vom 31.07.2000 bis 22.11.2016 ermittelt.
+  
+  jährliche Verteilung
+  Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
+  
+  monatliche Verteilung 
+  Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
+  
+  wöchentliche Verteilung
+  Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von Montag (820) und Freitag (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden weniger Beschwerden zu verzeichnen sind Samstag (659) und Sonntags (564). Dieses Muster deutet auf einen organischen Ursprung des Datensatz hin.
 
   <li><ins>"rating"</ins><br>
   
-  > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedgriger Bewertungen zeigt.<br>
+  > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`. Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt, was ebenfalls auf einen organischen Datensatz hindeutet, da Beschwerden grundsätzlich negativ sind.<br>
   <br>  
 </ul>
 
