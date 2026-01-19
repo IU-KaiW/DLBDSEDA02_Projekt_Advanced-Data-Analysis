@@ -67,20 +67,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 ______________
 
 ### Datensatzsichtung (engl. dataset inspection)
-In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die EDA wurde mittels des selbstgeschrieben Python-Skripts "Explorative Datenanalyse (EDA).ipynb" durchgeführt, um den gewählten Datensatz besser zu verstehen. Hierdurch wurden eine Datentrukturanalyse, sowie eine Analyse der sturtutierten und untrukturierten Bestandteilen des Datensatzes durchgeführt.
-
-<div style="margin-left: 2em;">
-  <code>pandas</code>&nbsp;<code>csv</code><br>
-</div>
-
-
-###### Datenexploration
-Zur Datenexploration wird Datensaz Nr. 5 kurz mittels der <code>pandas</code> Bibiliothek tiefgehender analysiert.<br>
-Duplikaterkennung<br>
-Textlängen: <br>
-kurze Texte<br>
-Zählung<br>
-
+In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die EDA wurde mittels des selbstgeschrieben Python-Skripts "Explorative Datenanalyse (EDA).ipynb" durchgeführt, um den gewählten Datensatz besser zu verstehen. Hierdurch wurden eine Datentrukturanalyse, sowie eine Analyse der sturtutierten und untrukturierten Bestandteilen des Datensatzes durchgeführt. 
 
 ###### Datensatzbeschreibung
 Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Kommta (engl. comma) nutzt (Klein, 2023, p. 261-262)[^12]. Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten organisiert sind.
@@ -102,7 +89,60 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   
   <li><ins>"posted_on"</ins><br>
 
-  > Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`.
+  > Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. Der Zeitdatenanalyse lässt sich entnehmen, dass 
+
+|Pro Jahr:     |Pro Monat:             |rating |text              |
+|--------------|--------------------------|-------|------------------|
+| 2000       1 | April        369|
+| 2001       2 | August       540|
+| 2002       1 |
+| 2003       6 |
+| 2004      10 |
+| 2006      34 |
+| 2007     106 |
+| 2008     441 |
+| 2009     462 |
+| 2010     415 |
+| 2011     357 |
+| 2012     418 |
+| 2013     313 |
+| 2014     770 |
+| 2015    1477 |
+| 2016     846 |
+
+|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
+
+===Zeitdatenanalyse===
+Erstes Datum:   2000-07-31
+Letztes Datum:  2016-11-22
+Zeitraum:       16 Jahre, 118 Tage (5958 Tage)
+
+
+Pro Monat:
+month_name
+April        369
+August       540
+December     426
+February     476
+January      485
+July         529
+June         461
+March        441
+May          394
+November     505
+October      526
+September    507
+Name: count, dtype: int64
+
+Pro Wochentag:
+weekday
+Wednesday    993
+Tuesday      960
+Thursday     861
+Monday       820
+Friday       802
+Saturday     659
+Sunday       564
 
   <li><ins>"rating"</ins><br>
   
@@ -116,9 +156,25 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   <ul>
   <li><ins>"text"</ins></li>
   
-  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. <br>  
+  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist. Die EDA zeigte darüber hinaus, dass die Texte im Median aus 1.239,94 Zeichen bestehen. <br>  
+
+
+count     5628.000000
+mean      1239.940121
+std       1760.474721
+min         35.000000
+25%        527.000000
+50%        870.000000
+75%       1498.000000
+max      93136.000000
+
   </ul>
 </ul>
+
+###### Datentypen
+###### Datentypen
+
+
 
 ## Datensatzaufbereitung (engl. dataset preparation)
 ### Datensatzakquisition (engl. dataset acquisition)
