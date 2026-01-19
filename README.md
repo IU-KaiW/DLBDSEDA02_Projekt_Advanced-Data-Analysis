@@ -132,6 +132,16 @@ Fehldaten
   > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
 </ul>
 
+<ul>
+  <li><ins>fehldaten Daten</ins></li>
+  blablabla<br>
+  <ul>
+  <li><ins>"text"</ins></li>
+  
+  > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
+  </ul>
+</ul>
+
 ## Datensatzaufbereitung (engl. dataset preparation)
 ### Datensatzakquisition (engl. dataset acquisition)
 
