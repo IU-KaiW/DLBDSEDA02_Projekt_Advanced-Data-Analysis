@@ -90,25 +90,25 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   <li><ins>"posted_on"</ins><br>
 
   > Die Zeilen der Spalte "posted_on" enhalten eine Datumsangabe mit abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. Der Zeitdatenanalyse lässt sich entnehmen, dass 
-
-|Jahr.   | Anzahl |
+|    Bewerden     |
+|Jahr    | Anzahl |
 |--------|--------|
-| 2000   |    1 |
-| 2001   |    2 |
-| 2002   |    1 |
-| 2003   |    6 |
-| 2004   |   10 |
-| 2006   |   34 |
-| 2007   |  106 |
-| 2008   |  441 |
-| 2009   |  462 |
-| 2010   |  415 |
-| 2011   |  357 |
-| 2012   |  418 |
-| 2013   |  313 |
-| 2014   |  770 |
-| 2015   | 1477 |
-| 2016   |  846 |
+| 2000   |      1 |
+| 2001   |      2 |
+| 2002   |      1 |
+| 2003   |      6 |
+| 2004   |     10 |
+| 2006   |     34 |
+| 2007   |    106 |
+| 2008   |    441 |
+| 2009   |    462 |
+| 2010   |    415 |
+| 2011   |    357 |
+| 2012   |    418 |
+| 2013   |    313 |
+| 2014   |    770 |
+| 2015   |   1477 |
+| 2016   |    846 |
 
 |`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
