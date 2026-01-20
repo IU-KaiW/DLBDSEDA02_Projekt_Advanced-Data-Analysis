@@ -104,7 +104,6 @@ Fehldaten
    Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
    
    <ins>monatliche Verteilung</ins><br>
-   
    Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
    
    <ins>wöchentliche Verteilung</ins><br>
@@ -114,7 +113,17 @@ Fehldaten
   
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`.<br>
 
-  Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt, was ebenfalls auf einen organischen Datensatz hindeutet, da Beschwerden grundsätzlich negativ sind.
+  Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt. Dies weist ebenfalls auf einen organischen Datensatz hin, da Beschwerden grundsätzlich negativ sind. 
+  
+  ===Relative Verteilung der Bewertungen===
+rating
+1    65.98%
+0    27.57%
+2     4.59%
+3     0.95%
+5     0.57%
+4     0.34%
+
   </ul>
 </ul>
 
