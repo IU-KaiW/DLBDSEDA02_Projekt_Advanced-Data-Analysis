@@ -113,17 +113,8 @@ Fehldaten
   
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`.<br>
 
-  Die Anzahl der Bewertungen nach rating ist wie folgt verteilt [rating: 0=1560; 1=3734; 2=260; 3=54; 4=19; 5=32] was einen Überhang niedriger Bewertungen zeigt. Dies weist ebenfalls auf einen organischen Datensatz hin, da Beschwerden grundsätzlich negativ sind. 
+  Die Anzahl der Bewertungen nach "rating" ist wie folgt verteilt [rating: 0=1560 (27.57%); 1=3734 (65.98%); 2=260 (4.59%); 3=54 (0.95%); 4=19 (0.34%); 5=32 (0.57%)] was einen Überhang niedriger Bewertungen zeigt. Dies weist ebenfalls auf einen organischen Datensatz hin, da Beschwerden grundsätzlich negativ sind. 
   
-  ===Relative Verteilung der Bewertungen===
-rating
-1    65.98%
-0    27.57%
-2     4.59%
-3     0.95%
-5     0.57%
-4     0.34%
-
   </ul>
 </ul>
 
@@ -141,7 +132,7 @@ rating
 
 <ul>
   <li><ins>fehlerhafte Daten</ins></li>
-  Im Zuge der Datenexploration ist aufgefallen, dass sich sowohl in den strukturiert, als auch den unstrukturiert vorliegenden Informationen (NaNs/NaTs) und Duplikate finden ließen die bereinigt werden müssen, um Verzerrungen in der Modellbildung zu vermeiden. Es wurden (XXX) fehlende Daten und (XXX) Duplikate gefunden<br>
+  Im Zuge der Datenexploration ist aufgefallen, dass sich sowohl in den unstrukturiert vorliegenden Daten 30 NaNs, nicht vorhandene Informationen befanden. die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Es wurden 30 NaNs in der Spalte 'text' und fehlende Daten und (XXX) Duplikate gefunden<br>
   <ul>
   <li><ins>XXXXX</ins></li>
   
