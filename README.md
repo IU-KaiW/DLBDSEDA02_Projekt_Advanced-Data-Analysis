@@ -114,7 +114,7 @@ Fehldaten
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`.<br>
 
   Die Anzahl der Bewertungen nach "rating" ist wie folgt verteilt [rating: 0=1560 (27.57%); 1=3734 (65.98%); 2=260 (4.59%); 3=54 (0.95%); 4=19 (0.34%); 5=32 (0.57%)] was einen Überhang niedriger Bewertungen zeigt. Dies weist ebenfalls auf einen organischen Datensatz hin, da Beschwerden grundsätzlich negativ sind. 
-  
+
   </ul>
 </ul>
 
@@ -252,7 +252,7 @@ df = pd.read.csv ('URL')
 </ol>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
-> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden Merkmale (engl. features) durch mittels Merkmalsextraktion, Merkmalsumwandlung, Merkmalskonstruktion und Merkmalsauswahl gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle gewonnen.
+> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden die Merkmale (engl. features) durch Merkmalsextraktion, Merkmalsumwandlung oder Merkmalskonstruktion gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle durch automatisches Feature Engineering gewonnen.
 <div style="margin-left: 2em;">
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
@@ -260,17 +260,22 @@ df = pd.read.csv ('URL')
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i>Vektorisierungstechniken wandeln Text in nummerische Repräsentationen sog. Embeddings um. Hierbei wird zwischen unsemantischen Embeddings (feature vektors) und semantischen Varianten (word vectors / sentence vectors) differenziert. Vektorisierungstechniken nutzen Merkmalsextraktion, um Text im Rahmen der Merkmalsaufbereitung für nachfolgende Schritte vorzubereiten.</i></p>
+    <p><i>
+    Zusammenhang Vocabular.
+    Token
+    Vektorisierungstechniken wandeln Text in nummerische Repräsentationen um, welche die Merkmale in einem n-dimensionalen Merkmalsraum, einem Vektorraum, darstellen. Hierbei wird zwischen Merkmalsvektoren (engl. feature vectors) welche die Merkmale als dünnbesetzte Vektoren und Einbettungen (engl. embeddings), welche Merkmale als dichtbesetzte Vektoren darstellen können diffrenziert. Anhand des Abstand zwischen Merkmalen im semantischen Raum kann deren Ähnlichkeit bestimmt werden. Man spricht in diesem Zusammenhang auch von unsemantischen und semantischen Embeddings. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte im Rahmen der Merkmalsaufbereitung für Modelle vorzubereiten. Man spricht je nach genutzer Methode auch von unsemantischen oder semantischen Embeddings. Dabei wird zwischen frequenzbasierten, vorhersagebasierten und kontextbezogenen Einbettungen unterschieden.</i></p>
     <ol type="1">
        <li>unsemantische Embeddings</li>
-       Hierunter werden 
+       Spannen keinen semantischen Merkmalsraum auf, sondern liefern sparse vectors
           <ul>
             <li>Frequency Based Embedding</li>
-                BoW<br>
+                Bag-of-X<br>
+                BoW: „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
+
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
                 </div>
-                TF-IDF<br>
+                TF-IDF (term frequency times invers documentfrequency)<br>
                 <div style="margin-left: 2em;">
                   <code>sklearn (TfidfVecrorizer)</code>
                 </div>
@@ -279,16 +284,16 @@ df = pd.read.csv ('URL')
        (word vectors / sentence vectors)
           <ul>
             <li>Prediction Based Word Embedding</li>
-            GloVE<br>
+            GloVE (global vectors for word vectorization)<br>
             Word2Vec<br>
             FastText<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
             <li>Contextualized Based Word Embedding</li>
-            ELMO<br>
-            BERT<br>
-            GPT<br>
+            ELMO (Embeddings from Language Models)<br>
+            BERT (Bidirectional Encoder Representations from Transformers)<br>
+            GPT  (Generative Pre-trained Transformer)<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
