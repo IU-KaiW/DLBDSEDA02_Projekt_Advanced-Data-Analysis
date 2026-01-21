@@ -1,9 +1,9 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-NLP (natural language processing) lässt sich in drei Bereiche einteilen ASR (automatic speech recognition), NLU (natural language understanding) und NLG (natural language generation). Dieses Projekt befasst sich mit dem Bereich NLU, dem Verständnis natürlicher Sprache. 
+NLP (natural language processing) lässt sich in drei Bereiche einteilen ASR (automatic speech recognition), NLU (natural language understanding) und NLG (natural language generation). Dieses Projekt befasst sich mit dem Bereich dem Verständnis natürlicher Sprache (NLU). 
 
 Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den unstrukturierten Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
-Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten (integrierten/externen)Python-Bibliotheken aufgeführt werden.
+Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt sowie die verwendeten (integrierten/externen)Python-Bibliotheken aufgeführt werden.
 
 
 
@@ -229,7 +229,9 @@ df = pd.read.csv ('URL')
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt.</i><br>
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt. BEARBEITEN
+        Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.
+        </i><br>
       </li>
       <div style="margin-left: 2em;">
         <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br></br>
@@ -242,7 +244,7 @@ df = pd.read.csv ('URL')
       </div>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
-        <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textcorpus ein endliches Vokabular erstellt, das alle einzigartigen Tokens enthält und als Basis für nachfolgende Modelle dient.</i>
+        <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textkorpus ein endliches Vokabular erstellt, das allen Token eine eindeutige Token-IDs zuweist. Das Vokabular stellt eine Menge eindeutiger Token-IDs dar.</i>
       </li>
       <div style="margin-left: 2em;">
         <code>sklearn(CountVectorizer)</code>&nbsp;<code>????</code><br></br>
@@ -261,16 +263,18 @@ df = pd.read.csv ('URL')
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
     <p><i>
-    Zusammenhang Vocabular.
-    Token
-    Vektorisierungstechniken wandeln Text in nummerische Repräsentationen um, welche die Merkmale in einem n-dimensionalen Merkmalsraum, einem Vektorraum, darstellen. Hierbei wird zwischen Merkmalsvektoren (engl. feature vectors) welche die Merkmale als dünnbesetzte Vektoren und Einbettungen (engl. embeddings), welche Merkmale als dichtbesetzte Vektoren darstellen können diffrenziert. Anhand des Abstand zwischen Merkmalen im semantischen Raum kann deren Ähnlichkeit bestimmt werden. Man spricht in diesem Zusammenhang auch von unsemantischen und semantischen Embeddings. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte im Rahmen der Merkmalsaufbereitung für Modelle vorzubereiten. Man spricht je nach genutzer Methode auch von unsemantischen oder semantischen Embeddings. Dabei wird zwischen frequenzbasierten, vorhersagebasierten und kontextbezogenen Einbettungen unterschieden.</i></p>
+  Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen (Merkmalsmatrizen) überführt, die Merkmale in einem n-dimensionalen Merkmalsraum, also einem Vektorraum, darstellen. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. Frequenzbasierte Methoden erzeugen dünnbesetzte Merkmalsvektoren basierend auf Vokabular-Positionen, während Embeddings jedem Token einen dichten Vektor im semantischen Raum zuweisen. Anhand des Abstands zwischen Merkmalen im semantischen Raum kann deren Ähnlichkeit bestimmt werden. In diesem Zusammenhang unterscheidet man daher auch zwischen unsemantischen (frequenzbasierten) und semantischen Embeddings (vorhersage- oder kontextbasierten). Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte für Modelle vorzubereiten – je nach Anwendungsfall als Bag-Vektor, Wort-Vektor, Satz-Vektor, Segment-Vektor oder Dokumenten-Vektor.
+    </i></p>
     <ol type="1">
        <li>unsemantische Embeddings</li>
-       Spannen keinen semantischen Merkmalsraum auf, sondern liefern sparse vectors
+       Spannen keinen semantischen Merkmalsraum auf, sondern liefern dünnbesetzte Vektoren (engl. sparse vektors) 
         <ul>
             <li>Frequency Based Embedding</li>
                 Bag-of-X<br>
-                BoW: „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
+                
+                BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
+                BoN: Bag-of-n-Grams
+
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
                 </div>
