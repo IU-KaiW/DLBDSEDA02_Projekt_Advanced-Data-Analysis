@@ -267,11 +267,10 @@ df = pd.read.csv ('URL')
     <ol type="1">
        <li>unsemantische Embeddings</li>
        Spannen keinen semantischen Merkmalsraum auf, sondern liefern sparse vectors
-          <ul>
+        <ul>
             <li>Frequency Based Embedding</li>
                 Bag-of-X<br>
                 BoW: „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
-
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
                 </div>
