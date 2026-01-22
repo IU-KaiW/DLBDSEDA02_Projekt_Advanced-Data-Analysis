@@ -262,19 +262,15 @@ df = pd.read.csv ('URL')
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i>
-  Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen (Merkmalsmatrizen) überführt, die Merkmale in einem n-dimensionalen Merkmalsraum, also einem Vektorraum, darstellen. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. Frequenzbasierte Methoden erzeugen dünnbesetzte Merkmalsvektoren basierend auf Vokabular-Positionen, während Embeddings jedem Token einen dichten Vektor im semantischen Raum zuweisen. Anhand des Abstands zwischen Merkmalen im semantischen Raum kann deren Ähnlichkeit bestimmt werden. In diesem Zusammenhang unterscheidet man daher auch zwischen unsemantischen (frequenzbasierten) und semantischen Embeddings (vorhersage- oder kontextbasierten). Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte für Modelle vorzubereiten – je nach Anwendungsfall als Bag-Vektor, Wort-Vektor, Satz-Vektor, Segment-Vektor oder Dokumenten-Vektor.
-    </i></p>
+    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, während Embeddings jedem Token einen dichten Vektor in einem semantischen Raum zuweisen, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall als Bag‑Vektoren, Wort‑Vektoren, Satz‑Vektoren, Segment‑Vektoren oder Dokumenten‑Vektoren für Modelle aufzubereiten.</i></p>
     <ol type="1">
        <li>unsemantische Embeddings</li>
        Spannen keinen semantischen Merkmalsraum auf, sondern liefern dünnbesetzte Vektoren (engl. sparse vektors) 
         <ul>
             <li>Frequency Based Embedding</li>
                 Bag-of-X<br>
-                
                 BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
-                BoN: Bag-of-n-Grams
-
+                BoN: Bag-of-N-Gram
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
                 </div>
@@ -284,7 +280,7 @@ df = pd.read.csv ('URL')
                 </div>
           </ul>
        <li>semantische Embeddings</li>
-       (word vectors / sentence vectors)
+       (word vectors)
           <ul>
             <li>Prediction Based Word Embedding</li>
             GloVE (global vectors for word vectorization)<br>
@@ -301,6 +297,26 @@ df = pd.read.csv ('URL')
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
           </ul>
+    (word vectors)
+          <ul>
+            <li>Prediction Based Word Embedding</li>
+            GloVE (global vectors for word vectorization)<br>
+            Word2Vec<br>
+            FastText<br>
+            <div style="margin-left: 2em;">
+              <code>???</code>&nbsp;<code>????</code><br></br>
+            </div>
+            <li>Contextualized Based Word Embedding</li>
+            ELMO (Embeddings from Language Models)<br>
+            BERT (Bidirectional Encoder Representations from Transformers)<br>
+            GPT  (Generative Pre-trained Transformer)<br>
+            <div style="margin-left: 2em;">
+              <code>Sentence Transformers (SBERT)</code>&nbsp;<code>????</code><br></br>
+            </div>
+          </ul>
+
+          
+
   </details>
   <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
