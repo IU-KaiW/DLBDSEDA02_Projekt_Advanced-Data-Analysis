@@ -269,8 +269,8 @@ df = pd.read.csv ('URL')
         <ul>
             <li>Frequency Based Embedding</li>
                 Bag-of-X<br>
-                BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
-                BoN: Bag-of-N-Gram
+                BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
+                BoN: Bag-of-N-Gram<br>
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
                 </div>
@@ -279,37 +279,27 @@ df = pd.read.csv ('URL')
                   <code>sklearn (TfidfVecrorizer)</code>
                 </div>
           </ul>
-       <li>semantische Embeddings</li>
-       (word vectors)
+            <li>semantische Embeddings</li>
+                (word vectors)
           <ul>
             <li>Prediction Based Word Embedding</li>
-            GloVE (global vectors for word vectorization)<br>
-            Word2Vec<br>
-            FastText<br>
+                GloVE (global vectors for word vectorization)<br>
+                Word2Vec<br>
+                FastText<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
             <li>Contextualized Based Word Embedding</li>
-            ELMO (Embeddings from Language Models)<br>
-            BERT (Bidirectional Encoder Representations from Transformers)<br>
-            GPT  (Generative Pre-trained Transformer)<br>
+                ELMO (Embeddings from Language Models)<br>
+                BERT (Bidirectional Encoder Representations from Transformers)<br>
+                GPT  (Generative Pre-trained Transformer)<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
           </ul>
-    (word vectors)
-          <ul>
-            <li>Prediction Based Word Embedding</li>
-            GloVE (global vectors for word vectorization)<br>
-            Word2Vec<br>
-            FastText<br>
-            <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br></br>
-            </div>
-            <li>Contextualized Based Word Embedding</li>
-            ELMO (Embeddings from Language Models)<br>
-            BERT (Bidirectional Encoder Representations from Transformers)<br>
-            GPT  (Generative Pre-trained Transformer)<br>
+                (sentence vectors)
+            <li>Contextualized Based Sentence Embedding</li>
+            SBERT Embeddings<br>
             <div style="margin-left: 2em;">
               <code>Sentence Transformers (SBERT)</code>&nbsp;<code>????</code><br></br>
             </div>
