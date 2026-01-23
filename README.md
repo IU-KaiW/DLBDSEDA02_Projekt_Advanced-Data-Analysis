@@ -5,16 +5,14 @@ Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz
 
 Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt sowie die verwendeten (integrierten/externen)Python-Bibliotheken aufgeführt werden.
 
-
+Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibiliotheken sichtbar.
 
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
-![alt text](<1 - Datensatzverarbeitung (engl. dataset pipeline).jpg>)
+
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
-
-Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibiliotheken sichtbar.
 
 ## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
@@ -142,6 +140,10 @@ Fehldaten
 </ul>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
+
+###### Fehlwertbehandlung
+###### Duplikatentfernung
+
 
 ### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
 Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
