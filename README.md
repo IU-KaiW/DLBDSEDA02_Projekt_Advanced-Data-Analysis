@@ -145,8 +145,8 @@ Fehldaten
 ###### Duplikatentfernung
 
 
-### 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
-Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die geforderte Themenmodellierung liegt auf semantischer Ebene.
+## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
+Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die Themenmodellierung liegt auf der semantischer Ebene.
 
 ###### Pipeline Eingabe (engl. pipeline input)
 
