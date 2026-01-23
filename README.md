@@ -9,14 +9,15 @@ Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit 
 
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
-
+![alt text](<1 - Datensatzverarbeitung (engl. dataset pipeline).jpg>)
 Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
 
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
 
 Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibiliotheken sichtbar.
 
-## ⚪ Datensatzvorverarbeitung (engl. dataset pipeline)
+## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
+<img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
 ### Datensatzakquisition (engl. dataset acquisition)
 In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, um die Eingabe für die NLP-Pipeline zu bestimmen.</br>
@@ -270,7 +271,6 @@ df = pd.read.csv ('URL')
             <li>Frequency Based Embedding</li>
                 Bag-of-X<br>
                 BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
-                BoN: Bag-of-N-Gram<br>
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
                 </div>
@@ -280,9 +280,11 @@ df = pd.read.csv ('URL')
                 </div>
           </ul>
             <li>semantische Embeddings</li>
+            Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors).
                 (word vectors)
           <ul>
             <li>Prediction Based Word Embedding</li>
+            (word vectors)
                 GloVE (global vectors for word vectorization)<br>
                 Word2Vec<br>
                 FastText<br>
@@ -290,18 +292,17 @@ df = pd.read.csv ('URL')
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
             <li>Contextualized Based Word Embedding</li>
+            (word vectors)
                 ELMO (Embeddings from Language Models)<br>
                 BERT (Bidirectional Encoder Representations from Transformers)<br>
                 GPT  (Generative Pre-trained Transformer)<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
-            </div>
-          </ul>
-                (sentence vectors)
-            <li>Contextualized Based Sentence Embedding</li>
-            SBERT Embeddings<br>
+              (sentence vectors)
+                SBERT Embedding (Embeddings from Language Models)<br>
+                <br>
             <div style="margin-left: 2em;">
-              <code>Sentence Transformers (SBERT)</code>&nbsp;<code>????</code><br></br>
+              <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
           </ul>
 
