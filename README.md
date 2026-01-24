@@ -67,20 +67,18 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 ### Datensatzsichtung (engl. dataset inspection)
 In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die EDA wurde mittels des selbstgeschrieben Python-Skripts "Explorative Datenanalyse (EDA).ipynb" durchgeführt, um den gewählten Datensatz besser zu verstehen. Hierdurch wurden eine Datentrukturanalyse, sowie eine Analyse der strukutierten und unstrukturierten Bestandteilen des Datensatzes durchgeführt. 
 
-<ol>
-  <details>
-    <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
-<i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer
-"Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma)
-nutzt (Klein, 2023, p. 261-262).</i>[^12]<br>
-<i>Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
-5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten
-organisiert sind</i><br>
-...
-  </details>
-</ol>
+<details>
+  <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
+  <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer
+  "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma)
+  nutzt (Klein, 2023, p. 261-262).</i>
+  <sup id="ref-12"><a href="#fn-12">[12]</a></sup><br>
+  <i>Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
+  5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten
+  organisiert sind</i>
+  ...
+</details>
 
-[^12]: Klein (2023, p. 261-262) beschreibt diese Struktur als ...
 
 
 <ol>    
