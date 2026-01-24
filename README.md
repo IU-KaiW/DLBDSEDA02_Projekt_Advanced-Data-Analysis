@@ -72,8 +72,8 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
   <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer
   "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma)
-  nutzt (Klein, 2023, p. 261-262)</i>
-  <sup id="ref-12"><a href="#fn-12">.[12]</a></sup><i> Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
+  nutzt (Klein, 2023, p. 261-262).</i>
+  <sup id="ref-12"><a href="#fn-12">[12]</a></sup><i> Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
   5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten
   organisiert sind</i><br>
 
