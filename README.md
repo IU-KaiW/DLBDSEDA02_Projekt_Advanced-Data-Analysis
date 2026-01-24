@@ -34,7 +34,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand eines extern (vortrainierten?) entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichan]</i><br><br>
+      <i>Die gesammelten Datensätze werden anhand eines extern (vortrainierten?) entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen]</i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br></br>
     </details>
@@ -139,13 +139,14 @@ Fehldaten
 </ul>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
-
+In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalisierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden sollen.
 ### Datensatzbereinigung (engl. dataset cleaning)
 ###### Fehlwertbehandlung
+Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch Listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindeslänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
 ###### Duplikatentfernung
-
+Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Models zu vermeiden. 
 ### Datensatzvalidierung (engl. dataset validation)
-
+Im Rahmen der Datensatzvalisierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt um Datenqualität und Aussagekraft zu sichern.
 
 
 ## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
