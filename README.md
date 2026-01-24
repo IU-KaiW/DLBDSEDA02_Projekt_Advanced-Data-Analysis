@@ -69,9 +69,9 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 <ol>    
     <details>
       <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
-       <p markdown="1">
-      <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Kommta (engl. comma) nutzt (Klein, 2023, p. 261-262).</i>[^12]
-      <i>Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten organisiert sind</i>
+<i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Kommta (engl. comma) nutzt (Klein, 2023, p. 261-262).
+
+[^12]<br><i>Diese sog. CSV-Datei verfügt im vorliegende Fall über eine Header und 5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten organisiert sind</i>
       
   <br><i>Die in der Datei enthaltenen Daten lassen sich in <ins>strukurierte Daten</ins> und <ins>unstrukturierte Daten </ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br></i>
 
@@ -82,21 +82,6 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br>
   </details>
 </ol>
-
-<ol>
-  <details>
-    <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
-    <i>Die Datenstruktur ...</i>
-
-[^12]
-
-    <i>Diese sog. CSV-Datei verfügt ...</i><br>
-    ...
-  </details>
-</ol>
-
-[^12]: Klein (2023, p. 261-262) beschreibt diese Struktur als ...
-
 <ol>    
     <details>
       <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
