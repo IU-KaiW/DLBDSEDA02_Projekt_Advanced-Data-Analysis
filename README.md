@@ -140,8 +140,12 @@ Fehldaten
 
 ## Datensatzaufbereitung (engl. dataset preparation)
 
+### Datensatzbereinigung (engl. dataset cleaning)
 ###### Fehlwertbehandlung
 ###### Duplikatentfernung
+
+### Datensatzvalidierung (engl. dataset validation)
+
 
 
 ## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
