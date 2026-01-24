@@ -69,6 +69,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 <ol>    
     <details>
       <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
+       <p markdown="1">
       <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Kommta (engl. comma) nutzt (Klein, 2023, p. 261-262).
       </i>
       
