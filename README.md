@@ -89,9 +89,6 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
     <details>
       <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
       <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.<br></i>
-  </details>
-</ol>
-
 <ul>
   <li><ins>struktierte Daten</ins></li>
   In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
@@ -150,6 +147,8 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
   > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
   </ul>
 </ul>
+  </details>
+</ol>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
 In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalisierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden sollen.
