@@ -76,14 +76,13 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   <sup id="ref-12"><a href="#fn-12">[12]</a></sup><br>
   <i>Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
   5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten
-  organisiert sind</i>
-  <br><i>Die in der Datei enthaltenen Daten lassen sich in <ins>strukurierte Daten</ins> und <ins>unstrukturierte Daten </ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br></i>
+  organisiert sind</i><br>
 
 |author                             |posted_on                 |rating |text              |
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br>
+<i>Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br></i>
 
 </details>
 </ol>
