@@ -77,6 +77,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
 Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.
+    </details>
 </ol>
 
 ###### Datenexploration
