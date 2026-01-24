@@ -67,6 +67,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 ### Datensatzsichtung (engl. dataset inspection)
 In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die EDA wurde mittels des selbstgeschrieben Python-Skripts "Explorative Datenanalyse (EDA).ipynb" durchgeführt, um den gewählten Datensatz besser zu verstehen. Hierdurch wurden eine Datentrukturanalyse, sowie eine Analyse der strukutierten und unstrukturierten Bestandteilen des Datensatzes durchgeführt. 
 
+<ol>   
 <details>
   <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
   <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer
@@ -78,7 +79,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   organisiert sind</i>
   ...
 </details>
-
+</ol>
 
 
 <ol>    
