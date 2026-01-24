@@ -90,7 +90,7 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
       <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
       <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.<br></i>
       <ul>
-      <li><ins>struktierte Daten</ins></li>
+      <li><ins>EDA der struktierte Daten</ins></li>
       In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
       <ul>
         <li><ins> "author"</ins>
@@ -126,7 +126,7 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 </ul>
 
 <ul>
-  <li><ins>unstruktuierte Daten</ins></li>
+  <li><ins>EDA der unstruktuierte Daten</ins></li>
   Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br>
   <ul>
   <li><ins>"text"</ins></li>
@@ -151,13 +151,24 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 
 ## Datensatzaufbereitung (engl. dataset preparation)
 In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalisierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden sollen.
-### Datensatzbereinigung (engl. dataset cleaning)
+<ol>
+    <details>
+      <summary>⚪ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
+      <i>
+      
 ###### Fehlwertbehandlung
 Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch Listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindeslänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
+
 ###### Duplikatentfernung
-Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Models zu vermeiden. 
-### Datensatzvalidierung (engl. dataset validation)
-Im Rahmen der Datensatzvalisierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt um Datenqualität und Aussagekraft zu sichern.
+Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Models zu vermeiden. </i></br>
+    </details>
+</ol>
+<ol>
+    <details>
+      <summary>⚪ Datensatzvalidierung (engl. dataset validation)</b></summary>
+      <i>Im Rahmen der Datensatzvalisierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt um Datenqualität und Aussagekraft zu sichern.</i></br>
+    </details>
+</ol>
 
 
 ## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
