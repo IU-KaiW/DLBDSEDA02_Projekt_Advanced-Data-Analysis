@@ -86,7 +86,9 @@ Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> u
 <ol>
   <details>
     <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
-    <i>Die Datenstruktur ...</i>[^12]
+    <i>Die Datenstruktur ...</i>
+
+[^12]
 
     <i>Diese sog. CSV-Datei verfügt ...</i><br>
     ...
