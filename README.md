@@ -410,15 +410,13 @@ df = pd.read.csv ('URL')
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
-Logits, Scores, Labels.
- 
-![Datennachverarbeitung](<3 - Datennachverarbeitung (engl. data post-processing).jpg>)
+Scores, Labels, Logits und .
 ______________
 ### 🔵 Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
 
 Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben wie Logits oder Token-Labels nutzbar zu machen.
-
+<img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
 Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
