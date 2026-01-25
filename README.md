@@ -299,7 +299,6 @@ df = pd.read.csv ('URL')
         <ul>
             <li>Frequency Based Embedding</li>
             Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
-            
                 Bag-of-X<br>
                 BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
                 <div style="margin-left: 2em;">
@@ -312,11 +311,7 @@ df = pd.read.csv ('URL')
           </ul>
             <li>semantische Embeddings</li>
             Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors).
-            
-            Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.
-
-
-            <br>
+            Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.<br>
             Wortvektoren (word vectors)
           <ul>
             <li>Prediction Based Word Embedding</li>
@@ -341,9 +336,6 @@ df = pd.read.csv ('URL')
               <code>???</code>&nbsp;<code>????</code><br></br>
             </div>
           </ul>
-
-          
-
   </details>
   <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
