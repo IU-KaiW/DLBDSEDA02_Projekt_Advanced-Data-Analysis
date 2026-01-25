@@ -312,7 +312,6 @@ df = pd.read.csv ('URL')
   > XX<br>  
   </ul>
 </ul>
-
     <ol type="1">
        <li>unsemantische Embeddings</li>
        Spannen keinen semantischen Merkmalsraum auf, sondern ermöglichen Modellen lediglich eine algebraische oder statistische Auswertung. 
