@@ -340,13 +340,13 @@ df = pd.read.csv ('URL')
 <ul>
   <li><ins>Satzvektoren(sentence vectors)</ins></li>
   
-  > Satzvektoren auf Satzebene<br>  
-  SBERT Embedding (Embeddings from Language Models)<br>
-                <br>
-            <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br><br>
-            </div>
-          </ul>
+  > Satzvektoren auf Satzebene<br>
+  
+SBERT Embedding (Embeddings from Language Models)<br><br>
+        <div style="margin-left: 2em;">
+      <code>???</code>&nbsp;<code>????</code><br><br>
+    </div>
+  </ul>
   </ul>
 </ul>
   </details>
