@@ -334,16 +334,16 @@ df = pd.read.csv ('URL')
       BERT (Bidirectional Encoder Representations from Transformers)<br>
       GPT  (Generative Pre-trained Transformer)<br>
       <div style="margin-left: 2em;">
-        <code>bert_token_embedding()</code>&nbsp;<code>gpt_token_embedding()</code><br><br>
+        <code>???</code>&nbsp;<code>???</code><br><br>
       </div>
     </ul>
     <li><ins>Satzvektoren (sentence vectors)</ins></li>
     
   > Satzvektoren auf Satzebene<br>
-    
-    SBERT Embedding<br><br>
+  
+  SBERT Embedding<br><br>
     <div style="margin-left: 2em;">
-      <code>sentence_transformers.encode()</code>&nbsp;<code>sbert_embedding()</code><br><br>
+      <code>???</code>&nbsp;<code>???</code><br><br>
     </div>
   </ul>
 </ul>
