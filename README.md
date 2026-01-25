@@ -336,10 +336,6 @@ df = pd.read.csv ('URL')
               <code>???</code>&nbsp;<code>????</code><br><br>
             </div>
           </ul>
-  </details>
-
-
-
 <ul>
   <li><ins>XXXXXXXXXXXXXXXXXXX</ins></li>
   XXXXX<br>
@@ -359,8 +355,11 @@ df = pd.read.csv ('URL')
   > XX<br>  
   </ul>
 </ul>
+
   </details>
-</ol>
+
+
+
 
 
 
