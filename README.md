@@ -337,6 +337,33 @@ df = pd.read.csv ('URL')
             </div>
           </ul>
   </details>
+
+
+
+<ul>
+  <li><ins>XXXXXXXXXXXXXXXXXXX</ins></li>
+  XXXXX<br>
+  <ul>
+  <li><ins>XXXXX</ins></li>
+  
+  > XXXXX
+  </ul>
+</ul>
+
+<ul>
+  <li><ins>XXXXXXXXXX</ins></li>
+  XXXX<br>
+  <ul>
+  <li><ins>XXXXX</ins></li>
+  
+  > XX<br>  
+  </ul>
+</ul>
+  </details>
+</ol>
+
+
+
   <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
     <p><i>Textanalyse kann durch Merkmalsmodellierung (engl. feature modeling) oder Merkmalserkennung (engl. feature recognition) auf syntaktischer, lexikalischer oder semantischer Ebene erfolgen. Syntaktische Analyse befasst sich mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen wie Wortarten und ihre Zusammensetzung in Phrasen (Alpar et al., 2023, p. 45). Lexikalische Analysen befassen sich mit der Bedeutung einzelner Wörter. Semantische Analysen hingehen konzentrieren sich auf die Bedeutung größerer Textstücke. Dabei geht es um das Verstehen ganzer, in natürlicher Sprache verfasster Texte (Lane et al., 2019).</i></p><!--syntaktisch: Tokenization / Part-of-Speech(POS)-Tagging-->
