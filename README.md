@@ -293,6 +293,26 @@ df = pd.read.csv ('URL')
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
     <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.</i></p>
+<ul>
+  <li><ins>XXXXXXXXXXXXXXXXXXX</ins></li>
+  XXXXX<br>
+  <ul>
+  <li><ins>XXXXX</ins></li>
+  
+  > XXXXX
+  </ul>
+</ul>
+
+<ul>
+  <li><ins>XXXXXXXXXX</ins></li>
+  XXXX<br>
+  <ul>
+  <li><ins>XXXXX</ins></li>
+  
+  > XX<br>  
+  </ul>
+</ul>
+
     <ol type="1">
        <li>unsemantische Embeddings</li>
        Spannen keinen semantischen Merkmalsraum auf, sondern ermöglichen Modellen lediglich eine algebraische oder statistische Auswertung. 
@@ -336,26 +356,6 @@ df = pd.read.csv ('URL')
               <code>???</code>&nbsp;<code>????</code><br><br>
             </div>
           </ul>
-<ul>
-  <li><ins>XXXXXXXXXXXXXXXXXXX</ins></li>
-  XXXXX<br>
-  <ul>
-  <li><ins>XXXXX</ins></li>
-  
-  > XXXXX
-  </ul>
-</ul>
-
-<ul>
-  <li><ins>XXXXXXXXXX</ins></li>
-  XXXX<br>
-  <ul>
-  <li><ins>XXXXX</ins></li>
-  
-  > XX<br>  
-  </ul>
-</ul>
-
   </details>
 
 
