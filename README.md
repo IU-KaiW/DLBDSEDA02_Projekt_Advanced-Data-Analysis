@@ -295,7 +295,7 @@ df = pd.read.csv ('URL')
     <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.</i></p>
 <ul>
   <li><ins>unsemantische Embeddings/Merkmalsvektoren (engl. feature vectors)</ins></li>
-  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Merkmalsvektoren auf Basis von Wortfrequenzen, die Modellen eine rein algebraische bzw. statistische Auswertung ermöglichen.
+  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Merkmalsvektoren auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht.
   <br>
   <ul>
   <li><ins>Frequency Based Embedding<</ins></li>
@@ -303,14 +303,14 @@ df = pd.read.csv ('URL')
   > Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
   
   Bag-of-X<br>
-                BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
-                <div style="margin-left: 2em;">
-                  <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br><br>
-                </div>
-                TF-IDF (term frequency times invers documentfrequency)<br>
-                <div style="margin-left: 2em;">
-                  <code>sklearn (TfidfVecrorizer)</code>
-                </div>
+  BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
+  <div style="margin-left: 2em;">
+  <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br><br>
+  </div>
+  TF-IDF (term frequency times invers documentfrequency)<br>
+  <div style="margin-left: 2em;">
+  <code>sklearn (TfidfVecrorizer)</code>
+  </div>
   </ul>
 </ul>
 <ul>
@@ -323,7 +323,7 @@ df = pd.read.csv ('URL')
 
   > Wortvektoren auf Wortebene<br>
   <ul>
-      <li>Prediction Based Word Embedding</li><br>
+      <li>Prediction based Word Embedding</li><br>
       GloVe (Global Vectors for Word Representation)<br>
       Word2Vec<br>
       FastText<br>
@@ -410,8 +410,9 @@ df = pd.read.csv ('URL')
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
-Logits, Scores, Labels. 
-
+Logits, Scores, Labels.
+ 
+![Datennachverarbeitung](<3 - Datennachverarbeitung (engl. data post-processing).jpg>)
 ______________
 ### 🔵 Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
