@@ -294,12 +294,14 @@ df = pd.read.csv ('URL')
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
     <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.</i></p>
 <ul>
-  <li><ins>unsemantische Embeddings<</ins></li>
+  <li><ins>unsemantische Embeddings/Merkmalsvektoren (engl. feature vectors)</ins></li>
   Spannen keinen semantischen Merkmalsraum auf, sondern ermöglichen Modellen lediglich eine algebraische oder statistische Auswertung.<br>
   <ul>
   <li><ins>Frequency Based Embedding<</ins></li>
+  
   > Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
-      Bag-of-X<br>
+  
+  Bag-of-X<br>
                 BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
                 <div style="margin-left: 2em;">
                   <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br><br>
@@ -312,24 +314,13 @@ df = pd.read.csv ('URL')
 </ul>
 
 <ul>
-  <li><ins>XXXXXXXXXX</ins></li>
-  XXXX<br>
+  <li><ins>semantische Embeddings</ins></li>
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors).<br>
   <ul>
-  <li><ins>XXXXX</ins></li>
+  <li><ins>Wortvektoren (word vectors)</ins></li>
   
-  > XX<br>  
-  </ul>
-</ul>
-
-            
-        
-          </ul>
-            <li>semantische Embeddings</li>
-            Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors).
-            Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.<br>
-            Wortvektoren (word vectors)
-          <ul>
-            <li>Prediction Based Word Embedding</li><br>
+  > Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.<br>  
+<li>Prediction Based Word Embedding</li><br>
             (word vectors)
                 GloVE (global vectors for word vectorization)<br>
                 Word2Vec<br>
@@ -351,6 +342,8 @@ df = pd.read.csv ('URL')
               <code>???</code>&nbsp;<code>????</code><br><br>
             </div>
           </ul>
+  </ul>
+</ul>
   </details>
 
 
