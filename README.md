@@ -367,7 +367,6 @@ SBERT Embedding (Embeddings from Language Models)<br><br>
       <div style="margin-left: 2em;">
         <code>word2vec()</code>&nbsp;<code>glove()</code><br><br>
       </div>
-
       <li>Contextualized Based Word Embedding (word vectors)</li>
       ELMo<br>
       BERT<br>
@@ -376,7 +375,6 @@ SBERT Embedding (Embeddings from Language Models)<br><br>
         <code>bert_token_embedding()</code>&nbsp;<code>gpt_token_embedding()</code><br><br>
       </div>
     </ul>
-
     <li><ins>Satzvektoren (sentence vectors)</ins></li>
     > Satzvektoren auf Satzebene<br>
     SBERT Embedding<br><br>
