@@ -65,7 +65,7 @@ Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt 
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die EDA wurde mittels des selbstgeschrieben Python-Skripts "Explorative Datenanalyse (EDA).ipynb" durchgeführt, um den gewählten Datensatz besser zu verstehen. Hierdurch wurden eine Datentrukturanalyse, sowie eine Analyse der strukutierten und unstrukturierten Bestandteilen des Datensatzes durchgeführt. 
+In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die Datensatzsichtung wurde mittels des selbstgeschrieben Python-Skripts "Datensatzsichtung (engl. dataset inspection).ipynb" durchgeführt, um den gewählten Datensatz zur eine Datentrukturanalyse, sowie der Analyse der strukutierten und unstrukturierten besser zu verstehen.
 
 <ol>   
 <details>
@@ -74,8 +74,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma)
   nutzt (Klein, 2023, p. 261-262).</i>
   <sup id="ref-12"><a href="#fn-12">[12]</a></sup><i> Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
-  5659 Zeilen, sprich 5660 Zeilen insgesamt, welche jeweils in 4 Spalten
-  organisiert sind</i><br>
+  5659 Zeilen, welche in 4 Spalten organisiert wurden.</i><br><br>
 
 |author                             |posted_on                 |rating |text              |
 |-----------------------------------|--------------------------|-------|------------------|
@@ -200,7 +199,7 @@ df = pd.read.csv ('URL')
       <li>Rauschentfernung (engl. noise reduction)</li><br>
         <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
             <div style="margin-left: 2em;">
-              <code>NLTK</code>&nbsp;<code>regex</code><br></br>
+              <code>NLTK</code>&nbsp;<code>regex</code><br>
             </div>
             <ol type="2">
             <li><ins>Stoppworte (engl. stopwords)</ins></li>
@@ -233,7 +232,7 @@ df = pd.read.csv ('URL')
             <li><ins>Normalisierung (engl. normalisation)</ins></li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
             <div style="margin-left: 2em;">
-              <code>stdlib</code>&nbsp;<code>????</code><br></br>
+              <code>stdlib()</code>&nbsp;<code>????</code><br></br>
             </div>
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
@@ -293,12 +292,14 @@ df = pd.read.csv ('URL')
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, während Embeddings jedem Token einen dichten Vektor in einem semantischen Raum zuweisen, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall als Bag‑Vektoren, Wort‑Vektoren, Satz‑Vektoren, Segment‑Vektoren oder Dokumenten‑Vektoren für Modelle aufzubereiten.</i></p>
+    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.</i></p>
     <ol type="1">
        <li>unsemantische Embeddings</li>
-       Spannen keinen semantischen Merkmalsraum auf, sondern liefern dünnbesetzte Vektoren (engl. sparse vektors) 
+       Spannen keinen semantischen Merkmalsraum auf, sondern ermöglichen Modellen lediglich eine algebraische oder statistische Auswertung. 
         <ul>
             <li>Frequency Based Embedding</li>
+            Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
+            
                 Bag-of-X<br>
                 BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
                 <div style="margin-left: 2em;">
@@ -311,7 +312,12 @@ df = pd.read.csv ('URL')
           </ul>
             <li>semantische Embeddings</li>
             Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors).
-                (word vectors)
+            
+            Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.
+
+
+            <br>
+            Wortvektoren (word vectors)
           <ul>
             <li>Prediction Based Word Embedding</li>
             (word vectors)
@@ -328,7 +334,7 @@ df = pd.read.csv ('URL')
                 GPT  (Generative Pre-trained Transformer)<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br></br>
-              (sentence vectors)
+              Satzvektoren(sentence vectors)
                 SBERT Embedding (Embeddings from Language Models)<br>
                 <br>
             <div style="margin-left: 2em;">
@@ -399,6 +405,11 @@ df = pd.read.csv ('URL')
 ###### Pipeline Ausgabe (engl. pipeline output)
 Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
 ______________
+### 🔵 Datennachverarbeitung (engl. data post-processing)
+Post-Processing macht Daten nutzbar.
+
+Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben wie Logits oder Token-Labels nutzbar zu machen.
+
 
 ### 🔵 Datenkonsolidierung (engl. data consolidation)
 Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
