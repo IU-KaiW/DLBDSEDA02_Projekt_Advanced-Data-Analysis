@@ -347,7 +347,7 @@ df = pd.read.csv ('URL')
             <li>Merkmalsextraktion (engl. feature extraction)</li><br>
             Latent Dirichlet Allocation (LDA) identifitiert unüberwacht durch <i>Merkmalsextraktion</i> latente Themen in einer Sammlung von Dokumenten und stellt diese basierend auf ihren Verteilungen über die Themen dar.<br>
               <div style="margin-left: 2em;">
-                <code>gensim</code>&nbsp;<code>????</code><br></br>
+                <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br>
               </div>
            <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
            Latent Semantic Analysis (LSA) identifiziert unüberwacht Themen mittels <i>Merkmalsumwandlung</i> durch eine Singulärwertzerlegung (engl. Singular Value Decomposition - SVD).<br> Die Anzahl der Themen (k) muss dabei optimal gewählt werden, weshalb Techniken wie den Silhouettenkoeffizienten (engl. silhouette score) oder Themenkohärenz (engl. topic coherence) Anwendung finden, um die Drehpunkte für die Themenextraktion zu bestimmen.
@@ -396,6 +396,8 @@ df = pd.read.csv ('URL')
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
+Logits, Scores, Labels. 
+
 ______________
 ### 🔵 Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
