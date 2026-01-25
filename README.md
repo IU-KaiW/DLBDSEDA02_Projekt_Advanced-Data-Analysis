@@ -351,7 +351,40 @@ SBERT Embedding (Embeddings from Language Models)<br><br>
 </ul>
   </details>
 
+<ul>
+  <li><ins>semantische Embeddings</ins></li>
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (dense vectors).
+  <br>
 
+  <ul>
+    <li><ins>Wortvektoren (word vectors)</ins></li>
+    > Wortvektoren auf Wortebene<br>
+    <ul>
+      <li>Prediction Based Word Embedding (word vectors)</li>
+      GloVe (Global Vectors for Word Representation)<br>
+      Word2Vec<br>
+      FastText<br>
+      <div style="margin-left: 2em;">
+        <code>word2vec()</code>&nbsp;<code>glove()</code><br><br>
+      </div>
+
+      <li>Contextualized Based Word Embedding (word vectors)</li>
+      ELMo<br>
+      BERT<br>
+      GPT<br>
+      <div style="margin-left: 2em;">
+        <code>bert_token_embedding()</code>&nbsp;<code>gpt_token_embedding()</code><br><br>
+      </div>
+    </ul>
+
+    <li><ins>Satzvektoren (sentence vectors)</ins></li>
+    > Satzvektoren auf Satzebene<br>
+    SBERT Embedding<br><br>
+    <div style="margin-left: 2em;">
+      <code>sentence_transformers.encode()</code>&nbsp;<code>sbert_embedding()</code><br><br>
+    </div>
+  </ul>
+</ul>
 
 
 
