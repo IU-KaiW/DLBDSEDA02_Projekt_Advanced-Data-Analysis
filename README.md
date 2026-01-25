@@ -18,17 +18,17 @@ Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Proz
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
 ### Datensatzakquisition (engl. dataset acquisition)
-In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, um die Eingabe für die NLP-Pipeline zu bestimmen.</br>
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, um die Eingabe für die NLP-Pipeline zu bestimmen.<br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
-      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i></br>
+      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i><br>
     </details>
 </ol>
 <ol>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
-      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i></br>
+      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i><br>
     </details>
 </ol>
 <ol>    
@@ -36,7 +36,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
       <i>Die gesammelten Datensätze werden anhand eines extern (vortrainierten?) entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen]</i><br><br>
       <div style="margin-left: 2em;">
-       <code>transformers</code>&nbsp;<code>torch</code><br></br>
+       <code>transformers</code>&nbsp;<code>torch</code><br><br>
     </details>
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
@@ -161,13 +161,13 @@ In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntniss
 Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch Listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindeslänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
 
 ###### Duplikatentfernung
-Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Models zu vermeiden. </i></br>
+Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Models zu vermeiden. </i><br>
     </details>
 </ol>
 <ol>
     <details>
       <summary>⚪ Datensatzvalidierung (engl. dataset validation)</b></summary>
-      <i>Im Rahmen der Datensatzvalisierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt um Datenqualität und Aussagekraft zu sichern.</i></br>
+      <i>Im Rahmen der Datensatzvalisierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt um Datenqualität und Aussagekraft zu sichern.</i><br>
     </details>
 </ol>
 
@@ -204,51 +204,51 @@ df = pd.read.csv ('URL')
             <ol type="2">
             <li><ins>Stoppworte (engl. stopwords)</ins></li>
               <div style="margin-left: 2em;">
-                <code>NLTK(stopwords)</code>&nbsp;<code>????</code><br></br>
+                <code>NLTK(stopwords)</code>&nbsp;<code>????</code><br><br>
               </div>
             <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br><br>
               </div>
             <li><ins>Leerzeichen (engl. white space)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br><br>
               </div>
             <li><ins>Nummern (engl. removing numbers)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br><br>
               </div>
             <li><ins>Sonderzeichen (engl. special character)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br></br>
+                <code>regex</code>&nbsp;<code>????</code><br><br>
               </div>
       </ol>
       <li>Standardisierung (engl. standardisation)<br></li>
         <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
           <div style="margin-left: 2em;">
-            <code>???</code>&nbsp;<code>????</code><br></br>
+            <code>???</code>&nbsp;<code>????</code><br><br>
           </div>
       <ol type="2">
             <li><ins>Normalisierung (engl. normalisation)</ins></li>
             Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
             <div style="margin-left: 2em;">
-              <code>stdlib()</code>&nbsp;<code>????</code><br></br>
+              <code>stdlib()</code>&nbsp;<code>????</code><br><br>
             </div>
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
               <div style="margin-left: 2em;">
-                <code>stdlib(.lower)</code>&nbsp;<code>????</code><br></br>
+                <code>stdlib(.lower)</code>&nbsp;<code>????</code><br><br>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
               In der Formatnormalisierung erfolgt die Normalisierung von Schreibweisen (Datenformate oder Zahlenformaten) und Sonderformen (Emojis).
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>???</code>&nbsp;<code>????</code><br><br>
               </div>
             </ul>
             <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins></li>
             Durch Rechtschreibkorrekrur werden Tipp bzw. Schreibfehler korrigiert.
               <div style="margin-left: 2em;">
-                <code>pyspellchecker</code>&nbsp;<code>????</code><br></br>
+                <code>pyspellchecker</code>&nbsp;<code>????</code><br><br>
               </div>
       </ol>
     </ol>
@@ -264,20 +264,20 @@ df = pd.read.csv ('URL')
         </i><br>
       </li>
       <div style="margin-left: 2em;">
-        <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br></br>
+        <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br><br>
       </div>
       </div>
        <li>Grundformreduktion (engl. inflection reduction)</li>
         Durch Grundformreduktion werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
       <div style="margin-left: 2em;">
-         <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy()</code><br></br>
+         <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy()</code><br><br>
       </div>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
         <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textkorpus ein endliches Vokabular erstellt, das allen Token eine eindeutige Token-IDs zuweist. Das Vokabular stellt eine Menge eindeutiger Token-IDs dar.</i>
       </li>
       <div style="margin-left: 2em;">
-        <code>sklearn(CountVectorizer)</code>&nbsp;<code>????</code><br></br>
+        <code>sklearn(CountVectorizer)</code>&nbsp;<code>????</code><br><br>
       </div>
     </ol>
   </details>
@@ -302,7 +302,7 @@ df = pd.read.csv ('URL')
                 Bag-of-X<br>
                 BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
                 <div style="margin-left: 2em;">
-                  <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br></br>
+                  <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br><br>
                 </div>
                 TF-IDF (term frequency times invers documentfrequency)<br>
                 <div style="margin-left: 2em;">
@@ -314,26 +314,26 @@ df = pd.read.csv ('URL')
             Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.<br>
             Wortvektoren (word vectors)
           <ul>
-            <li>Prediction Based Word Embedding</li>
+            <li>Prediction Based Word Embedding</li><br>
             (word vectors)
                 GloVE (global vectors for word vectorization)<br>
                 Word2Vec<br>
                 FastText<br>
             <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br></br>
+              <code>???</code>&nbsp;<code>????</code><br><br>
             </div>
             <li>Contextualized Based Word Embedding</li>
-            (word vectors)
+            (word vectors)<br>
                 ELMO (Embeddings from Language Models)<br>
                 BERT (Bidirectional Encoder Representations from Transformers)<br>
                 GPT  (Generative Pre-trained Transformer)<br>
             <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br></br>
-              Satzvektoren(sentence vectors)
+              <code>???</code>&nbsp;<code>????</code><br><br>
+              Satzvektoren(sentence vectors)<br>
                 SBERT Embedding (Embeddings from Language Models)<br>
                 <br>
             <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br></br>
+              <code>???</code>&nbsp;<code>????</code><br><br>
             </div>
           </ul>
   </details>
@@ -366,29 +366,29 @@ df = pd.read.csv ('URL')
             <li>regelbasiert</li>
             xxx
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>???</code>&nbsp;<code>????</code><br><br>
               </div>
             <li>lernbasiert</li>
             xxx
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>???</code>&nbsp;<code>????</code><br><br>
               </div>
           </ul>
   </details>  
   <details>
-    <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary></br>
+    <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary><br>
     In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning).
     <i>Modellauswertung (engl. model evaluation)<i>
               <ul>
             <li>Kohärenz (engl. coherence)</li>
             xxx
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>???</code>&nbsp;<code>????</code><br><br>
               </div>
             <li>Perplexität (engl. perplexity)</li>
             xxx
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br></br>
+                <code>???</code>&nbsp;<code>????</code><br><br>
               </div>
           </ul>
   </details>
@@ -421,7 +421,7 @@ Datenpräsentation  (engl. data presentation)
       <summary>🔵 Aggregation (engl. aggregation)</summary>
       <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
       <div style="margin-left: 2em;">
-        <code>???</code>&nbsp;<code>????</code><br></br>
+        <code>???</code>&nbsp;<code>????</code><br><br>
       </div>
     <ol>
     </details>
@@ -429,7 +429,7 @@ Datenpräsentation  (engl. data presentation)
       <summary>🔵 Visualisierung (engl. visualization)</summary>
       <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
       <div style="margin-left: 2em;">
-        <code>???</code>&nbsp;<code>????</code><br></br>
+        <code>???</code>&nbsp;<code>????</code><br><br>
       </div>
     </details>
   </li>
