@@ -312,80 +312,41 @@ df = pd.read.csv ('URL')
                 </div>
   </ul>
 </ul>
-
 <ul>
   <li><ins>semantische Embeddings</ins></li>
-  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors). Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.<br>
-  <ul>
-  <li><ins>Wortvektoren (word vectors)</ins></li>
-  
-  > Wortvektoren auf Wortebene<br>  
-  <ul>
-  <li>Prediction Based Word Embedding</li><br>
-            (word vectors)
-                GloVE (global vectors for word vectorization)<br>
-                Word2Vec<br>
-                FastText<br>
-            <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br><br>
-            </div>
-            <li>Contextualized Based Word Embedding</li>
-            (word vectors)<br>
-                ELMO (Embeddings from Language Models)<br>
-                BERT (Bidirectional Encoder Representations from Transformers)<br>
-                GPT  (Generative Pre-trained Transformer)<br>
-            <div style="margin-left: 2em;">
-              <code>???</code>&nbsp;<code>????</code><br><br>
-</ul>
-<ul>
-  <li><ins>Satzvektoren(sentence vectors)</ins></li>
-  
-  > Satzvektoren auf Satzebene<br>
-  
-SBERT Embedding (Embeddings from Language Models)<br><br>
-        <div style="margin-left: 2em;">
-      <code>???</code>&nbsp;<code>????</code><br><br>
-    </div>
-  </ul>
-  </ul>
-</ul>
-  </details>
-
-<ul>
-  <li><ins>semantische Embeddings</ins></li>
-  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (dense vectors).
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (dense vectors). Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.
   <br>
 
   <ul>
     <li><ins>Wortvektoren (word vectors)</ins></li>
-    > Wortvektoren auf Wortebene<br>
-    <ul>
-      <li>Prediction Based Word Embedding (word vectors)</li>
+
+  > Wortvektoren auf Wortebene<br>
+  <ul>
+      <li>Prediction Based Word Embedding</li><br>
       GloVe (Global Vectors for Word Representation)<br>
       Word2Vec<br>
       FastText<br>
       <div style="margin-left: 2em;">
         <code>word2vec()</code>&nbsp;<code>glove()</code><br><br>
       </div>
-      <li>Contextualized Based Word Embedding (word vectors)</li>
-      ELMo<br>
-      BERT<br>
-      GPT<br>
+      <li>Contextualized Based Word Embedding</li><br>
+      ELMo (Embeddings from Language Models)<br>
+      BERT (Bidirectional Encoder Representations from Transformers)<br>
+      GPT  (Generative Pre-trained Transformer)<br>
       <div style="margin-left: 2em;">
         <code>bert_token_embedding()</code>&nbsp;<code>gpt_token_embedding()</code><br><br>
       </div>
     </ul>
     <li><ins>Satzvektoren (sentence vectors)</ins></li>
-    > Satzvektoren auf Satzebene<br>
+    
+  > Satzvektoren auf Satzebene<br>
+    
     SBERT Embedding<br><br>
     <div style="margin-left: 2em;">
       <code>sentence_transformers.encode()</code>&nbsp;<code>sbert_embedding()</code><br><br>
     </div>
   </ul>
 </ul>
-
-
-
 
   <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
