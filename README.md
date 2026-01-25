@@ -320,7 +320,8 @@ df = pd.read.csv ('URL')
   <li><ins>Wortvektoren (word vectors)</ins></li>
   
   > Wortvektoren auf Wortebene<br>  
-<li>Prediction Based Word Embedding</li><br>
+  <ul>
+  <li>Prediction Based Word Embedding</li><br>
             (word vectors)
                 GloVE (global vectors for word vectorization)<br>
                 Word2Vec<br>
@@ -335,7 +336,8 @@ df = pd.read.csv ('URL')
                 GPT  (Generative Pre-trained Transformer)<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br><br>
-
+</ul>
+<ul>
   <li><ins>Satzvektoren(sentence vectors)</ins></li>
   
   > Satzvektoren auf Satzebene<br>  
