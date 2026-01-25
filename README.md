@@ -295,7 +295,8 @@ df = pd.read.csv ('URL')
     <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.</i></p>
 <ul>
   <li><ins>unsemantische Embeddings/Merkmalsvektoren (engl. feature vectors)</ins></li>
-  Spannen keinen semantischen Merkmalsraum auf, sondern ermöglichen Modellen lediglich eine algebraische oder statistische Auswertung.<br>
+  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Merkmalsvektoren auf Basis von Wortfrequenzen, die Modellen eine rein algebraische bzw. statistische Auswertung ermöglichen.
+  <br>
   <ul>
   <li><ins>Frequency Based Embedding<</ins></li>
   
@@ -313,8 +314,8 @@ df = pd.read.csv ('URL')
   </ul>
 </ul>
 <ul>
-  <li><ins>semantische Embeddings</ins></li>
-  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (dense vectors). Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.
+  <li><ins>semantische Embeddings/ (engl. feature embeddings)</ins></li>
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Bedeutungsdimension Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension.
   <br>
 
   <ul>
