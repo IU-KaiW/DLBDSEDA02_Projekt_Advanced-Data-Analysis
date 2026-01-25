@@ -326,7 +326,7 @@ df = pd.read.csv ('URL')
       <div style="margin-left: 2em;">
         <code>word2vec()</code>&nbsp;<code>glove()</code><br><br>
       </div>
-      <li>Contextualized Based Word Embedding</li><br>
+      <li>Contextualized Word Embedding</li><br>
       ELMo (Embeddings from Language Models)<br>
       BERT (Bidirectional Encoder Representations from Transformers)<br>
       GPT  (Generative Pre-trained Transformer)<br>
