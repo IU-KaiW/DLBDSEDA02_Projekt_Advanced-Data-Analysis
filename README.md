@@ -315,11 +315,11 @@ df = pd.read.csv ('URL')
 
 <ul>
   <li><ins>semantische Embeddings</ins></li>
-  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors).<br>
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vektors). Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.<br>
   <ul>
   <li><ins>Wortvektoren (word vectors)</ins></li>
   
-  > Embeddings weisen jedem Token einen dichten Vektor in einem semantischen Raum zu, in dem Abstände bzw. Ähnlichkeitsmaße zur Bestimmung der semantischen Ähnlichkeit dienen.<br>  
+  > Wortvektoren auf Wortebene<br>  
 <li>Prediction Based Word Embedding</li><br>
             (word vectors)
                 GloVE (global vectors for word vectorization)<br>
@@ -335,8 +335,11 @@ df = pd.read.csv ('URL')
                 GPT  (Generative Pre-trained Transformer)<br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br><br>
-              Satzvektoren(sentence vectors)<br>
-                SBERT Embedding (Embeddings from Language Models)<br>
+
+  <li><ins>Satzvektoren(sentence vectors)</ins></li>
+  
+  > Satzvektoren auf Satzebene<br>  
+  SBERT Embedding (Embeddings from Language Models)<br>
                 <br>
             <div style="margin-left: 2em;">
               <code>???</code>&nbsp;<code>????</code><br><br>
