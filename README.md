@@ -10,10 +10,6 @@ Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibil
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
 
-Der Grafik können die geplanten Phasen des Projekts sowie die zugeordneten Prozesse entnommen werden. 
-
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/Visualisierung.jpg" width="1200">
-
 ## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
@@ -362,7 +358,9 @@ df = pd.read.csv ('URL')
             Latent Dirichlet Allocation (LDA) identifitiert unüberwacht durch <i>Merkmalsextraktion</i> latente Themen in einer Sammlung von Dokumenten und stellt diese basierend auf ihren Verteilungen über die Themen dar.<br>
               <div style="margin-left: 2em;">
                 <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br>
-              </div>
+
+  > Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)
+  </div>
            <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
            Latent Semantic Analysis (LSA) identifiziert unüberwacht Themen mittels <i>Merkmalsumwandlung</i> durch eine Singulärwertzerlegung (engl. Singular Value Decomposition - SVD).<br> Die Anzahl der Themen (k) muss dabei optimal gewählt werden, weshalb Techniken wie den Silhouettenkoeffizienten (engl. silhouette score) oder Themenkohärenz (engl. topic coherence) Anwendung finden, um die Drehpunkte für die Themenextraktion zu bestimmen.
               <div style="margin-left: 2em;">
@@ -415,11 +413,11 @@ ______________
 ### 🔵 Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
 
-Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben wie Logits oder Token-Labels nutzbar zu machen.
+Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
 <img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
 
-### 🔵 Datenkonsolidierung (engl. data consolidation)
-Im Rahmen der Datenkonsolidierung erfolgt die Datennachverarbeitung (engl. data post-processing) in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
+### 🔵 Merkmalszusammenfassung (engl. feature aggregation)
+Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben. in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
@@ -427,8 +425,8 @@ Datenpräsentation  (engl. data presentation)
   <code>???</code>&nbsp;<code>???</code><br>
 </div>
 
-#### 🔵 Merkmalsauswertungen (engl. feature Inspections)
->Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)
+#### 🔵 Merkmalsauswertungen (engl. feature )
+
 <ol>
     <details>
       <summary>🔵 Aggregation (engl. aggregation)</summary>
@@ -450,7 +448,6 @@ Datenpräsentation  (engl. data presentation)
 
 Topic Diversity:
 `library 3`
-`library 4`
 
 ______________
 
