@@ -287,39 +287,40 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
 <ul>
   <li><ins>Merkmalsvektoren (engl. feature vectors)</ins></li>
   Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden diese Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert wird.
-  <br>
+  
   <ul>
+    <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
+    Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
     <ul>
-     <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
-  
-  > Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.  
-  <li><ins>Bag-of-X</ins><br>
-  Bei den Bag-of-X-Methoden erfolgt keine Informationsbewichtung.
-  
-   Auf Wortebene
-      BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
-    <div style="margin-left: 2em;">
-    <code>sklearn (CountVectorizer)</code><br><br>
-
-  Auf N-Gramm
-     BoN: 
-<div style="margin-left: 2em;">
-  <code>sklearn (CountVectorizer - XXX)</code><br><br>  
-</ul>
-<ul>
-  </div>
-  TF-IDF (term frequency times invers documentfrequency)<br>
-  mit Informationsbewichtung.
-  <div style="margin-left: 2em;">
-  <code>sklearn (TfidfVecrorizer)</code><br><br>
-  </div>
- </ul>
+      <li><ins>Bag-of-X</ins><br>
+        Bei den Bag-of-X-Methoden erfolgt keine Informationsbewichtung.
+        <ul>
+          <li>Auf Wortebene<br>
+            BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt¹ in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
+            <div style="margin-left: 2em;">
+              <code>sklearn (CountVectorizer)</code>
+            </div>
+          <li>Auf N-Gramm<br>
+            BoN:
+            <div style="margin-left: 2em;">
+              <code>sklearn (CountVectorizer - XXX)</code>
+            </div>
+        </ul>
+      </li>
+      <li>TF-IDF (term frequency times inverse document frequency)<br>
+        mit Informationsbewichtung.
+        <div style="margin-left: 2em;">
+          <code>sklearn (TfidfVectorizer)</code>
+        </div>
+      </li>
+    </ul>
   </ul>
 </ul>
+
 <ul>
-  <li><ins>semantische Eintebbungen / Embeddings (engl. feature embeddings)</ins></li>
+  <li><ins>semantische Einbettungen / Embeddings (engl. feature embeddings)</ins></li>
   Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.
-  <br>
+</ul>
 
   <ul>
     <li><ins>Wortvektoren (word vectors)</ins></li>
