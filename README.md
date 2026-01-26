@@ -288,9 +288,9 @@ Merkmalsgewinnung?
     </i></p>
 <ul>
   <li><ins>Merkmalsvektoren (engl. feature vectors)</ins></li>
-  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.<br>
-  
-  <ul>
+
+> Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.<br><br>
+<ul>
     <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
     Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br><br>
     <ul>
