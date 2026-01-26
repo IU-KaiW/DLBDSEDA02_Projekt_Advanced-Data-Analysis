@@ -310,7 +310,7 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
       <li>TF-IDF (term frequency times inverse document frequency)<br>
         mit Informationsbewichtung.
         <div style="margin-left: 2em;">
-          <code>sklearn (TfidfVectorizer)</code>
+          <code>sklearn (TfidfVectorizer)</code><br>
         </div>
       </li>
     </ul>
@@ -319,22 +319,22 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
 
 <ul>
   <li><ins>semantische Einbettungen / Embeddings (engl. feature embeddings)</ins></li>
-  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.<br>
 </ul>
 
   <ul>
-    <li><ins>Wortvektoren (word vectors)</ins></li>
+    <li><ins>Worteinbettungen (engl. word embeddings)</ins></li>
 
   > Wortvektoren auf Wortebene<br>
   <ul>
-      <li>Prediction based Word Embedding</li><br>
+      <li>vorhersagebasierte Wort-Einbettingen (engl. prediction based word embeddings)</li><br>
       GloVe (Global Vectors for Word Representation)<br>
       Word2Vec<br>
       FastText<br>
       <div style="margin-left: 2em;">
         <code>XXX</code>&nbsp;<code>XXX</code><br><br>
       </div>
-      <li>Contextualized Word Embedding</li><br>
+      <li>kontextbasierten Wort-Einbettungen (engl. contextualized word embeddings)</li><br>
       ELMo (Embeddings from Language Models)<br>
       BERT (Bidirectional Encoder Representations from Transformers)<br>
       GPT  (Generative Pre-trained Transformer)<br>
