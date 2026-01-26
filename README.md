@@ -294,20 +294,20 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
   
   <ul>
     <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
-    Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br>
+    Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br><br>
     <ul>
       <li><ins>Bag-of-X</ins><br>
         Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token(-sequenzen) wird eine eigene Dimension zugewiesen.
         <ul>
-          <li>Wort-Ebene<br>
+          <li>Einzeltoken<br>
             Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
             <div style="margin-left: 2em;">
               <code>sklearn (CountVectorizer)</code>
             </div>
-          <li>Auf N-Gram-Ebene<br>
+          <li>Tokensequenzen<br>
             Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergeben kann.
             <div style="margin-left: 2em;">
-              <code>sklearn (CountVectorizer(ngram_range))</code><br>
+              <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
             </div>
         </ul>
       </li>
