@@ -14,7 +14,7 @@ Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorve
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
 ### Datensatzakquisition (engl. dataset acquisition)
-In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht, anhand eines [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) bewertet und anschließend bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, um die Eingabe für die NLP-Pipeline zu bestimmen.<br>
+In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, um die Eingabe für die NLP-Pipeline zu bestimmen.<br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
@@ -30,7 +30,8 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand eines extern (vortrainierten?) entwickelten KI-Detektors auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen]</i><br><br>
+      <i>Die gesammelten Datensätze werden anhand des extern (vortrainierten?) entwickelten [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen]
+      </i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br><br>
     </details>
@@ -80,10 +81,8 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 
 </details>
 </ol>
-</details>
-</ol>
+<details>
 <ol>    
-    <details>
       <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
       <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.</i><br><br>
       <ul>
