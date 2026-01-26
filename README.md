@@ -293,8 +293,8 @@ Merkmalsgewinnung?
     <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
     Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br><br>
     <ul>
-      <li><ins>Bag-of-X</ins><br>
-        Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token(-sequenzen) wird eine eigene Dimension zugewiesen.
+      <li><ins>BoX (Bag-of-X)</ins><br>
+        Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wir eine eigene Dimension zugewiesen.
         <ul>
           <li>Einzeltoken<br>
             Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
@@ -309,7 +309,8 @@ Merkmalsgewinnung?
         </ul>
       </li>
       <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
-        mit Informationsbewichtung.
+        Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.
+          <ul>
         <div style="margin-left: 2em;">
           <code>sklearn (TfidfVectorizer)</code><br><br>
         </div>
@@ -356,7 +357,8 @@ Merkmalsgewinnung?
 </ol>
 </details>
 
-<details>
+<ol type="1">
+  <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
     <p><i>Textanalyse kann durch Merkmalsmodellierung (engl. feature modeling) oder Merkmalserkennung (engl. feature recognition) auf syntaktischer, lexikalischer oder semantischer Ebene erfolgen. Syntaktische Analyse befasst sich mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen wie Wortarten und ihre Zusammensetzung in Phrasen (Alpar et al., 2023, p. 45). Lexikalische Analysen befassen sich mit der Bedeutung einzelner Wörter. Semantische Analysen hingehen konzentrieren sich auf die Bedeutung größerer Textstücke. Dabei geht es um das Verstehen ganzer, in natürlicher Sprache verfasster Texte (Lane et al., 2019).</i></p><!--syntaktisch: Tokenization / Part-of-Speech(POS)-Tagging-->
     <ol type="1">
@@ -396,6 +398,8 @@ Merkmalsgewinnung?
               </div>
           </ul>
   </details>  
+
+<ol type="1">
   <details>
     <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary><br>
     In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning).
