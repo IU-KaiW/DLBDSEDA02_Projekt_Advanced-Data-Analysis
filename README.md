@@ -85,7 +85,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 <ol>    
     <details>
       <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
-      <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.<br></i>
+      <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.</i><br><br>
       <ul>
       <li><ins>EDA der struktierte Daten</ins></li>
       In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
@@ -102,13 +102,13 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   > Die Zeilen der Spalte "posted_on" enhalten Datumsangaben mit alphabetisch abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
   
   
-   Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.201 zeigte.
+   Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
 
-   <ins>jährliche Verteilung: </ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
+   <ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
    
-   <ins>monatliche Verteilung: </ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
+   <ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
    
-   <ins>wöchentliche Verteilung: </ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von Montag (820) und Freitag (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden weniger Beschwerden zu verzeichnen sind Samstag (659) und Sonntags (564). Dieses Muster deutet auf einen organischen Ursprung des Datensatz hin.
+   <ins>wöchentliche Verteilung:</ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von montags (820) und freitags (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden Samstag (659) und Sonntags (564) weniger Beschwerden zu verzeichnen sind. Dieses Muster deutet ebenfalls auf einen organischen Ursprung des Datensatzes hin.
 
   <li><ins>"rating"</ins><br>
   
@@ -121,7 +121,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 
 <ul>
   <li><ins>EDA der unstruktuierte Daten</ins></li>
-  Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br>
+  Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br><br>
   <ul>
   <li><ins>"text"</ins></li>
   
