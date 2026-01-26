@@ -282,10 +282,11 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Dabei wird zwischen Merkmalsvektoren (engl. feature vectors), die Merkmale als dünn besetzte Vektoren (engl. sparse vectors) repräsentieren, und Einbettungen (engl. embeddings), die Merkmale als dicht besetzte Vektoren darstellen, unterschieden. In diesem Zusammenhang unterscheidet man daher zwischen unsemantischen Embeddings, rein frequenzbasierten Vektorrepräsentationen und semantischen Embeddings, die auf vorhersage- oder kontextbasierten Verfahren beruhen. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.</i></p>
+    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.
+    </i></p>
 <ul>
   <li><ins>unsemantische Embeddings/Merkmalsvektoren (engl. feature vectors)</ins></li>
-  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Merkmalsvektoren auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht.
+  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Merkmalsvektoren (engl. sparse vectors) auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht.
   <br>
   <ul>
   <li><ins>Frequency Based Embedding</ins></li>
@@ -299,13 +300,13 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
   </div>
   TF-IDF (term frequency times invers documentfrequency)<br>
   <div style="margin-left: 2em;">
-  <code>sklearn (TfidfVecrorizer)</code><br>
+  <code>sklearn (TfidfVecrorizer)</code><br><br>
   </div>
   </ul>
 </ul>
 <ul>
   <li><ins>semantische Embeddings/ (engl. feature embeddings)</ins></li>
-  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Bedeutungsdimension Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension.
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.
   <br>
 
   <ul>
@@ -318,7 +319,7 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
       Word2Vec<br>
       FastText<br>
       <div style="margin-left: 2em;">
-        <code>word2vec()</code>&nbsp;<code>glove()</code><br><br>
+        <code>XXX</code>&nbsp;<code>XXX</code><br><br>
       </div>
       <li>Contextualized Word Embedding</li><br>
       ELMo (Embeddings from Language Models)<br>
@@ -332,10 +333,9 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
     
   > Satzvektoren auf Satzebene<br>
   <ul>
-      <li>XXX Based Sentence Embedding</li><br>
-
-  SBERT Embedding<br><br>
-    <div style="margin-left: 2em;">
+      <li>Contextualized Sentence Embedding</li><br>
+      SBERT Embedding<br><br>
+      <div style="margin-left: 2em;">
       <code>???</code>&nbsp;<code>???</code><br><br>
     </div>
   </ul>
