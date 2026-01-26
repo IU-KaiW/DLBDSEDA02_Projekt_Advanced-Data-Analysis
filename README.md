@@ -305,7 +305,7 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
               <code>sklearn (CountVectorizer)</code>
             </div>
           <li>Tokensequenzen<br>
-            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergeben kann.
+            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergibt.
             <div style="margin-left: 2em;">
               <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
             </div>
@@ -322,42 +322,40 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
 </ul>
 
 <ul>
-  <li><ins>semantische Einbettungen / Embeddings (engl. feature embeddings)</ins></li>
-  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.<br>
-</ul>
-
+  <li><ins>Merkmalseinbettungen (engl. feature embeddings)</ins></li>
+  Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so seine Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.
+  
   <ul>
     <li><ins>Worteinbettungen (engl. word embeddings)</ins></li>
-
-  > Wortvektoren auf Wortebene<br>
-  <ul>
-      <li>vorhersagebasierte Wort-Einbettingen (engl. prediction based word embeddings)</li><br>
+    Wortvektoren auf Wortebene
+    <ul>
+      <li>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</li>
       GloVe (Global Vectors for Word Representation)<br>
       Word2Vec<br>
-      FastText<br>
+      FastText
       <div style="margin-left: 2em;">
-        <code>XXX</code>&nbsp;<code>XXX</code><br><br>
+        <code>gensim</code> <code>sentence-transformers</code>
       </div>
-      <li>kontextbasierten Wort-Einbettungen (engl. contextualized word embeddings)</li><br>
+      <li>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</li>
       ELMo (Embeddings from Language Models)<br>
       BERT (Bidirectional Encoder Representations from Transformers)<br>
-      GPT  (Generative Pre-trained Transformer)<br>
+      GPT (Generative Pre-trained Transformer)
       <div style="margin-left: 2em;">
-        <code>???</code>&nbsp;<code>???</code><br><br>
+        <code>transformers</code> <code>sentence-transformers</code>
       </div>
     </ul>
     <li><ins>Satzvektoren (sentence vectors)</ins></li>
-    
-  > Satzvektoren auf Satzebene<br>
-  <ul>
-      <li>Contextualized Sentence Embedding</li><br>
-      SBERT Embedding<br><br>
+    Satzvektoren auf Satzebene
+    <ul>
+      <li>Contextualized Sentence Embedding</li>
+      SBERT Embedding
       <div style="margin-left: 2em;">
-      <code>???</code>&nbsp;<code>???</code><br><br>
-    </div>
+        <code>sentence-transformers</code>
+      </div>
+    </ul>
   </ul>
 </ul>
-</details>
+
 <details>
     <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
     <p><i>Textanalyse kann durch Merkmalsmodellierung (engl. feature modeling) oder Merkmalserkennung (engl. feature recognition) auf syntaktischer, lexikalischer oder semantischer Ebene erfolgen. Syntaktische Analyse befasst sich mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen wie Wortarten und ihre Zusammensetzung in Phrasen (Alpar et al., 2023, p. 45). Lexikalische Analysen befassen sich mit der Bedeutung einzelner Wörter. Semantische Analysen hingehen konzentrieren sich auf die Bedeutung größerer Textstücke. Dabei geht es um das Verstehen ganzer, in natürlicher Sprache verfasster Texte (Lane et al., 2019).</i></p><!--syntaktisch: Tokenization / Part-of-Speech(POS)-Tagging-->
