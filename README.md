@@ -281,10 +281,9 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
 
-- Merkmalsgewinnung?
+Merkmalsgewinnung?
 
-  <details>
-    <ol type="1">
+<details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
     <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten. „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen“ (Zheng und Casari, 2019, p. 40).
     </i></p>
