@@ -250,7 +250,6 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
       <li>
         Tokenisierung (engl. tokenization)<br>
         <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt. Klar abgegrenzte oder überlappende N-Gramme.
-        
          BEARBEITEN
         Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.
         </i><br>
