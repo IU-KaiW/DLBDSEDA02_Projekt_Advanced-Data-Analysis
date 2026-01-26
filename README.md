@@ -249,7 +249,9 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt. BEARBEITEN
+        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt. Klar abgegrenzte oder überlappende N-Gramme.
+        
+         BEARBEITEN
         Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.
         </i><br>
       </li>
@@ -279,31 +281,33 @@ Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
 
+- Merkmalsgewinnung?
+
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.
+    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten. „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen“ (Zheng und Casari, 2019, p. 40).
     </i></p>
 <ul>
   <li><ins>Merkmalsvektoren (engl. feature vectors)</ins></li>
-  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden diese Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert wird.
+  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.
   
   <ul>
     <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
-    Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
+    Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann. 
     <ul>
       <li><ins>Bag-of-X</ins><br>
-        Bei den Bag-of-X-Methoden erfolgt keine Informationsbewichtung.
+        Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token(-sequenzen) wird eine eigene Dimension zugewiesen.
         <ul>
-          <li>Auf Wortebene<br>
-            BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt¹ in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
+          <li>Wort-Ebene<br>
+            Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
             <div style="margin-left: 2em;">
               <code>sklearn (CountVectorizer)</code>
             </div>
-          <li>Auf N-Gramm<br>
-            BoN:
+          <li>Auf N-Gram-Ebene<br>
+            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergeben kann.
             <div style="margin-left: 2em;">
-              <code>sklearn (CountVectorizer - XXX)</code>
+              <code>sklearn (CountVectorizer(ngram_range))</code>
             </div>
         </ul>
       </li>
