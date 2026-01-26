@@ -166,10 +166,10 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 
 
 ## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
-Merkmale (engl. features) eines Textes "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16] Merkmale können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen, wobei die Themenmodellierung auf der semantischer Ebene verortet ist.
+Merkmale (engl. features) eines Textes "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16] Merkmale können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen, wobei die Themenmodellierung auf lezterer verortet wird.
 
 ###### Pipeline Eingabe (engl. pipeline input)
-Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
+Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
 
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br>
@@ -282,7 +282,7 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.
+    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.
     </i></p>
 <ul>
   <li><ins>Merkmalsvektoren (engl. feature vectors)</ins></li>
@@ -292,16 +292,16 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
     <ul>
      <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
   
-  > Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
-    <li><ins>Bag-of-X</ins><br>
-    ohne Informationsbewichtung.
+  > Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.  
+  <li><ins>Bag-of-X</ins><br>
+  Bei den Bag-of-X-Methoden erfolgt keine Informationsbewichtung.
   
    Auf Wortebene
       BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
     <div style="margin-left: 2em;">
     <code>sklearn (CountVectorizer)</code><br><br>
 
-     Auf N-Gramm
+  Auf N-Gramm
      BoN: 
 <div style="margin-left: 2em;">
   <code>sklearn (CountVectorizer - XXX)</code><br><br>  
