@@ -94,21 +94,19 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 
   > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. 
   
-        Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.      
+      Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.      
   <br>
   
   <li><ins>"posted_on"</ins><br>
 
-  > Die Zeilen der Spalte "posted_on" enhalten Datumsangaben mit alphabetisch abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren (2000 - 2016) im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
+  > Die Zeilen der Spalte "posted_on" enhalten Datumsangaben mit alphabetisch abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
   
   
    Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.201 zeigte.
 
-   <ins>jährliche Verteilung</ins><br>
-   Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
+   <ins>jährliche Verteilung: </ins><br> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
    
-   <ins>monatliche Verteilung</ins><br>
-   Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
+   <ins>monatliche Verteilung: </ins><br> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
    
    <ins>wöchentliche Verteilung</ins><br>
    Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von Montag (820) und Freitag (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden weniger Beschwerden zu verzeichnen sind Samstag (659) und Sonntags (564). Dieses Muster deutet auf einen organischen Ursprung des Datensatz hin.
@@ -169,13 +167,10 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 
 
 ## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
-Merkmale (engl. features) eines Textes oder Dokuments "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können (Timmermann, 2019)."[^16] Merkmale eines Textes oder Dokuments können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen. Die Themenmodellierung liegt auf der semantischer Ebene.
+Merkmale (engl. features) eines Textes "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16] Merkmale können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen, wobei die Themenmodellierung auf der semantischer Ebene verortet ist.
 
 ###### Pipeline Eingabe (engl. pipeline input)
-
-```python
-df = pd.read.csv ('URL')
-```
+Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
 
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br>
@@ -294,18 +289,18 @@ df = pd.read.csv ('URL')
   Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Merkmalsvektoren auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht.
   <br>
   <ul>
-  <li><ins>Frequency Based Embedding<</ins></li>
+  <li><ins>Frequency Based Embedding</ins></li>
   
   > Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
   
   Bag-of-X<br>
   BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
   <div style="margin-left: 2em;">
-  <code>sklearn (CountVectorizer)</code>&nbsp;<code>????</code><br><br>
+  <code>sklearn (CountVectorizer)</code><br><br>
   </div>
   TF-IDF (term frequency times invers documentfrequency)<br>
   <div style="margin-left: 2em;">
-  <code>sklearn (TfidfVecrorizer)</code>
+  <code>sklearn (TfidfVecrorizer)</code><br>
   </div>
   </ul>
 </ul>
