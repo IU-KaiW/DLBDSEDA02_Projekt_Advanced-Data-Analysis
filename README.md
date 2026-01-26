@@ -322,7 +322,7 @@ Merkmalsgewinnung?
 <ul>
   <li><ins>Merkmalseinbettungen (engl. feature embeddings)</ins></li>
   
-  > Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.<br><br>
+  > Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.<br>
   
   <ul>
     <li><ins>Worteinbettungen (engl. word embeddings)</ins></li>
@@ -349,7 +349,7 @@ Merkmalsgewinnung?
       <li>Contextualized Sentence Embedding</li>
       SBERT Embedding
       <div style="margin-left: 2em;">
-        <code>sentence-transformers</code>
+        <code>sentence-transformers</code><br>
       </div>
     </ul>
   </ul>
