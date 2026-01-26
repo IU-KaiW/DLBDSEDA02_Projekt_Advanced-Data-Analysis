@@ -282,21 +282,28 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
 <ol>
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall aus Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.
+    <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Wort-, Satz-,  Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten.
     </i></p>
 <ul>
-  <li><ins>unsemantische Embeddings/Merkmalsvektoren (engl. feature vectors)</ins></li>
-  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Merkmalsvektoren (engl. sparse vectors) auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht.
+  <li><ins>Merkmalsvektoren (engl. feature vectors)</ins></li>
+  Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Wortfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden sie als unsemantische Embeddings bezeichnet.
   <br>
   <ul>
-  <li><ins>Frequency Based Embedding</ins></li>
+  <li><ins>frequenzbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
   
   > Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen.
-  
-  Bag-of-X<br>
+  <li><ins>Bag-of-X</ins><br>
+  Auf Wortebene
   BoW: Ein Bag-of-Words „Ein Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt 1 in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)<br>
   <div style="margin-left: 2em;">
   <code>sklearn (CountVectorizer)</code><br><br>
+
+  Auf N-Gramm
+  BoN: 
+<div style="margin-left: 2em;">
+  <code>sklearn (CountVectorizer - XXX)</code><br><br>
+  
+
   </div>
   TF-IDF (term frequency times invers documentfrequency)<br>
   <div style="margin-left: 2em;">
@@ -305,7 +312,7 @@ Aufbereiteter Datensatz. "complaints_data_cleaned.csv"
   </ul>
 </ul>
 <ul>
-  <li><ins>semantische Embeddings/ (engl. feature embeddings)</ins></li>
+  <li><ins>semantische Eintebbungen / Embeddings (engl. feature embeddings)</ins></li>
   Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Embeddings weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.
   <br>
 
