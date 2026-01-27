@@ -80,10 +80,11 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 <i>Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br></i>
 </ol>
   </details>
-<details>
-    <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
-    <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.</i><br><br>
-    <ul>
+<ol>   
+  <details>
+  <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
+  <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.</i><br><br>
+  <ul>
     <li><ins>EDA der struktierte Daten</ins></li>
     In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
     <ul>
@@ -136,6 +137,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
   </ul>
 </ul>
+</ol>
   </details>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
