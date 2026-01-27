@@ -14,7 +14,7 @@ Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorve
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
 ### Datensatzakquisition (engl. dataset acquisition)
-In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipeline gesucht bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung sowie –auswahl durchlaufen, um die Eingabe für die NLP-Pipeline zu bestimmen.<br>
+In der Phase der Datenaquisition werden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um dem Korpus für die NLP-Pipeline zu bestimmen.<br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
@@ -30,7 +30,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand des extern (vortrainierten?) entwickelten [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen]
+      <i>Die gesammelten Datensätze werden anhand deines vortrainierten, extern entwickelten [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen]
       </i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br><br>
@@ -56,7 +56,7 @@ In der Phase der Datenaquisition werden Datensätze für den Input der NLP-Pipel
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
 
-Es wird Datensatz Nr. 05[^05] mit dem Dateinamen "complaints_data.csv" gewählt da dieser ein Scoring von 82 % erreicht. 
+Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Scoring von 82 % erreicht.
 
   </details>
 </ol>
@@ -143,14 +143,14 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 </ol>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
-In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalisierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden sollen.
+In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalidierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden.
 <ol>
     <details>
       <summary>⚪ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
       <i>
       
 ###### Fehlwertbehandlung
-Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch Listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindeslänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
+Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindeslänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
 
 ###### Duplikatentfernung
 Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Models zu vermeiden. </i><br>
@@ -165,6 +165,8 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 
 
 ## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
+Die Sprachverarbeitung beginnt mir dem Import der Spalte `<text>` aus dem aufbereiteten Datensatz *"complaints_data_cleaned.csv"*.
+
 Merkmale (engl. features) eines Textes "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16] Merkmale können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen, wobei die Themenmodellierung auf lezterer verortet wird.
 
 ###### Pipeline Eingabe (engl. pipeline input)
