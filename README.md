@@ -78,9 +78,8 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
 <i>Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br></i>
-
-</details>
 </ol>
+</details>
 <details>
 <ol>    
       <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
@@ -165,12 +164,12 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 
 
 ## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
-Die Sprachverarbeitung beginnt mir dem Import der Spalte `<text>` aus dem aufbereiteten Datensatz *"complaints_data_cleaned.csv"*.
+
 
 Merkmale (engl. features) eines Textes "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16] Merkmale können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen, wobei die Themenmodellierung auf lezterer verortet wird.
 
 ###### Pipeline Eingabe (engl. pipeline input)
-Aufbereiteter Datensatz. `"complaints_data_cleaned.csv"`
+Die Sprachverarbeitung beginnt mir dem Import der Spalte `<text>` aus dem aufbereiteten Datensatz *"complaints_data_cleaned.csv"*.
 
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br>
