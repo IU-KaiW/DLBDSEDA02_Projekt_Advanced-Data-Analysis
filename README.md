@@ -5,7 +5,7 @@ Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz
 
 Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt sowie die verwendeten (integrierten/externen)Python-Bibliotheken aufgeführt werden.
 
-Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibiliotheken sichtbar.
+Durch einen Klick auf ► werden Erläuterungen, Unterschritte sichtbar. Softwarebibiliotheken wurden die folgt hervorgehoben 
 
 Clustering von Beschwerden.
 
@@ -32,7 +32,7 @@ In der Phase der Datenaquisition werden Datensätze gesucht und bewertungsbasier
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand deines vortrainierten, extern entwickelten [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen]
+      <i>Die gesammelten Datensätze werden anhand deines vortrainierten, extern entwickelten [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen] BERT-base
       </i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br><br>
@@ -169,7 +169,7 @@ Die linguistische Datenverarbeitung (LDV, engl. natural language processing – 
 Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
 
 ###### Pipeline Eingabe (engl. pipeline input)
-Die Sprachverarbeitung beginnt mir dem Import der Spalte `<text>` aus dem aufbereiteten Datensatz *"complaints_data_cleaned.csv"* und wird als Korpus für die folgenden NLP-Schritte genutzt.
+Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>` welche als als Korpus für die folgenden NLP-Schritte genutzt wird. Die jeweiligen Zeilen sind die Documente. 
 
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br>
