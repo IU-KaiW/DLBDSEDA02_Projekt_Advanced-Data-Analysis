@@ -81,7 +81,6 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 </ol>
   </details>
 <details>
-<ol>    
     <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
     <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.</i><br><br>
     <ul>
@@ -138,7 +137,6 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   </ul>
 </ul>
   </details>
-</ol>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
 In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalidierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden.
