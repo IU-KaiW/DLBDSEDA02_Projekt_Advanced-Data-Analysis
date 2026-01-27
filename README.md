@@ -1,11 +1,13 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-NLP (natural language processing) lässt sich in drei Bereiche einteilen ASR (automatic speech recognition), NLU (natural language understanding) und NLG (natural language generation). Dieses Projekt befasst sich mit dem Bereich dem Verständnis natürlicher Sprache (NLU). 
+Linguistische Datenverarbeitung (LDV) (engl. natural language processing - NLP) lässt sich in drei Bereiche einteilen, die automatische Spracherkennung (automatic speech recognition - ASR), (natural language understanding - NLU) und (natural language generation - NLG). Dieses Projekt befasst sich mit dem Verständnis natürlicher Sprache (NLU). 
 
-Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den unstrukturierten Texten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
+Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit schriftlichen Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Beschwerdetexten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
 Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt sowie die verwendeten (integrierten/externen)Python-Bibliotheken aufgeführt werden.
 
 Durch einen Klick auf ► werden Erläuterungen, Unterschritte und Softwarebibiliotheken sichtbar.
+
+Clustering von Beschwerden.
 
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
@@ -161,13 +163,13 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 </ol>
 
 
-## 🟠 Sprachverarbeitung (engl. NLP-Pipeline)
+## 🟠 Datenverarbeitung (engl. data processing)
+Die linguistische Datenverarbeitung (LDV, engl. natural language processing – NLP) lässt sich in drei zentrale Bereiche unterteilen: die automatische Spracherkennung (engl. automatic speech recognition – ASR), das Verständnis natürlicher Sprache (engl. natural language understanding – NLU) sowie die natürliche Sprachgenerierung (engl. natural language generation – NLG). Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von Textinhalten.
 
-
-Merkmale (engl. features) eines Textes "sind kategorielle oder numerische Größen, anhand derer Machine-Learning-Algorithmen oder neuronale Netze […] klassifizieren können."[^16] Merkmale können Informationen auf lexikalischer, syntaktischer oder semantischer Ebene umfassen, wobei die Themenmodellierung auf lezterer verortet wird.
+Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
 
 ###### Pipeline Eingabe (engl. pipeline input)
-Die Sprachverarbeitung beginnt mir dem Import der Spalte `<text>` aus dem aufbereiteten Datensatz *"complaints_data_cleaned.csv"*.
+Die Sprachverarbeitung beginnt mir dem Import der Spalte `<text>` aus dem aufbereiteten Datensatz *"complaints_data_cleaned.csv"* und wird als Korpus für die folgenden NLP-Schritte genutzt.
 
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br>
@@ -418,6 +420,8 @@ Merkmalsgewinnung?
   </details>
 </ol>
 
+„The Gensim library provides a class that implements the four most famous coherence models: _u_mass, c_v, c_uci, cnpmi. So, let’s break them into fundamental pieces.“ (Pedro, 2022)
+
 ###### Pipeline Ausgabe (engl. pipeline output)
 Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
 Scores, Labels, Logits und .
@@ -451,6 +455,10 @@ Datenpräsentation  (engl. data presentation)
     <details>
       <summary>🔵 Visualisierung (engl. visualization)</summary>
       <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
+
+      Themenverteilungen; Top-Wörter pro Thema
+
+
       <div style="margin-left: 2em;">
         <code>???</code>&nbsp;<code>????</code><br><br>
       </div>
