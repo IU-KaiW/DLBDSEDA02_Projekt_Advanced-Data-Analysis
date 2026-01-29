@@ -192,7 +192,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
               <code>NLTK</code>&nbsp;<code>regex</code><br>
             </div>
             <ol type="2">
-            <li><ins>Stoppworte (engl. stopwords)</ins></li>
+            <li><ins>Wortbereinigung (engl. word cleaning)</ins></li>
               <div style="margin-left: 2em;">
                 <code>NLTK(stopwords)</code>&nbsp;<code>????</code><br><br>
               </div>
@@ -214,7 +214,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
               </div>
       </ol>
       <li>Standardisierung (engl. standardisation)<br></li>
-        <i>Im Rahmen der Textbereinigung werden Texte zunächst standadisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
+        <i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
           <div style="margin-left: 2em;">
             <code>???</code>&nbsp;<code>????</code><br><br>
           </div>
