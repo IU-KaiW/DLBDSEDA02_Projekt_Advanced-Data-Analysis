@@ -9,6 +9,10 @@ Durch einen Klick auf ► werden Erläuterungen, Unterschritte sichtbar. Softwar
 
 Clustering von Beschwerden.
 
+„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
+
+Bibiliotheken - Funktionen
+
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
 
@@ -189,28 +193,28 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
       <li>Rauschentfernung (engl. noise reduction)</li><br>
         <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
             <div style="margin-left: 2em;">
-              <code>NLTK</code>&nbsp;<code>regex</code><br>
+              <code>NLTK</code>&nbsp;<code>spaCy</code><br>
             </div>
             <ol type="2">
             <li><ins>Wortbereinigung (engl. word cleaning)</ins></li>
               <div style="margin-left: 2em;">
-                <code>NLTK(stopwords)</code>&nbsp;<code>????</code><br><br>
+                <code>NLTK(stopwords)</code>&nbsp;<code>spaCy</code><br><br>
               </div>
             <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br><br>
+                <code>regex</code>&nbsp;<code>spaCy</code><br><br>
               </div>
             <li><ins>Leerzeichen (engl. white space)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br><br>
+                <code>regex</code>&nbsp;<code>spaCy</code><br><br>
               </div>
             <li><ins>Nummern (engl. removing numbers)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br><br>
+                <code>regex</code>&nbsp;<code>spaCy</code><br><br>
               </div>
             <li><ins>Sonderzeichen (engl. special character)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>????</code><br><br>
+                <code>textnorm</code>&nbsp;<code>spaCy</code><br><br>
               </div>
       </ol>
       <li>Standardisierung (engl. standardisation)<br></li>
@@ -232,13 +236,13 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
               <li>Formatnormalisierungen (engl. format normalisations)</li>
               In der Formatnormalisierung erfolgt die Normalisierung von Schreibweisen (Datenformate oder Zahlenformaten) und Sonderformen (Emojis).
               <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br><br>
+                <code>SpaCy</code>&nbsp;<code>????</code><br><br>
               </div>
             </ul>
             <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins></li>
             Durch Rechtschreibkorrekrur werden Tipp bzw. Schreibfehler korrigiert.
               <div style="margin-left: 2em;">
-                <code>pyspellchecker</code>&nbsp;<code>????</code><br><br>
+                <code>pyspellchecker</code>&nbsp;<code>contextualSpellCheck</code>;<code>PyEnchant</code><br><br>
               </div>
       </ol>
     </ol>
