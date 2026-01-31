@@ -258,8 +258,9 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
 Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von zuvor bereinigten Texten zur Merkmalsvorbereitung.
   <ol type="1">
   <details>
-    <summary>🔴 lexikalische Analyse </summary>
-    <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, lemmatisiert und ein Vokabular aufgebaut.</i></p>
+    <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)
+ </summary>
+    <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
     <ol type="1">
       <li>Tokenisierung (engl. tokenization)<br>
         <i>Durch Tokenisierung wird der vorbereitete Text in Einzeltoken (Worte) oder N-Gramme (Phrasen) wie z.B. Sätze zerlegt. Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.</i><br>
@@ -279,24 +280,66 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
           <code>sklearn(CountVectorizer)</code><br><br>
         </div>
       </li>
+      <li>lexikalisches POS-Tagging<br>
+        <i>Durch lexikalisches POS-Tagging können mittels Lookup-Tabellen grammatikalische Wortfunktionen und Kategorien zu einem gegebenen Text hinzugefügt werden. Das Vokabular wird dabei mit Sprachdatenannotationen (engl. linguistic annotations) versehen.</i><br>
+        <div style="margin-left: 2em;">
+          <code>XXXX</code><br><br>
+        </div>
+      </li>
     </ol>
   </details>
 </ol>
-  <ol type="1">
   <details>
-    <summary>🔴 syntaktische Analyse </summary>
-    <p><i></i></p>
-      </ol>
+    <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing) </summary>
+    <p><i>Im Rahmen der syntaktischen Analyse werden Satzstrukturen und grammatikalische Funktionen analysiert.</i></p>
+    <ol type="1">
+      <li>syntaktischem POS-Tagging<br>
+        <i>Durch syntaktisches POS-Tagging können durch Modelle (Hidden Markov Models - HMM) grammatikalische Wortfunktionen und Kategorien durch Tags-Sets zu einem gegebenen Text hinzugefügt werden und so das Vokabular domänenspezifisch annotieren.</i><br>
+        <div style="margin-left: 2em;">
+          <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
+        </div>
+      </li>
+      <li>Flaches Parsen (engl. shallow parsing/chunking)<br>
+        <i>Beim flachen Parsen werden aufeinanderfolgende Wörter zu Satzgliedern (engl. chunks) gruppiert, ohne eine vollständige Satzstruktur zu analysieren. Dies ermöglicht eine schnelle und effiziente Extraktion von Nominalphrasen und Verbalphrasen.</i><br>
+        <div style="margin-left: 2em;">
+          <code>NLTK (ne_chunk)</code>&nbsp;<code>spaCy</code><br><br>
+        </div>
+      </li>
+      <li>Tiefes Parsen (engl. deep parsing/dependency parsing)<br>
+        <i>Beim tiefen Parsen wird die vollständige Satzstruktur durch Abhängigkeitsrelationen zwischen Wörtern analysiert. Dies ermöglicht ein tieferes Verständnis von Satzbeziehungen und grammatikalischen Strukturen.</i><br>
+        <div style="margin-left: 2em;">
+          <code>NLTK</code>&nbsp;<code>spaCy (dependency parser)</code><br><br>
+        </div>
+      </li>
     </ol>
   </details>
+</ol>
 
-<ol type="1">
   <details>
-    <summary>🔴 semnatische Analyse </summary>
-    <p><i></i></p>
-      </ol>
+    <summary>🔴 semantische Verarbeitung (engl. context processing) </summary>
+    <p><i>Im Rahmen der semantischen Analyse werden Bedeutungen und Zusammenhänge im Text analysiert.</i></p>
+    <ol type="1">
+      <li>Punkt 1 (engl. )<br>
+        <i>Beschreibung...</i><br>
+        <div style="margin-left: 2em;">
+          <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+        </div>
+      </li>
+      <li>Punkt 2 (engl. )<br>
+        <i>Beschreibung...</i><br>
+        <div style="margin-left: 2em;">
+          <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+        </div>
+      </li>
+      <li>Punkt 3 (engl. )<br>
+        <i>Beschreibung...</i><br>
+        <div style="margin-left: 2em;">
+          <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+        </div>
+      </li>
     </ol>
   </details>
+</ol>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
 > Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden die Merkmale (engl. features) durch Merkmalsextraktion, Merkmalsumwandlung oder Merkmalskonstruktion gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle durch automatisches Feature Engineering gewonnen. - Vorbereitete Merkmale
