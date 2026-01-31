@@ -223,7 +223,7 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
       </ol>
   </details>
   <details>
-    <summary>🔴 Standardisierung (engl. standardisation)<</summary>
+    <summary>🔴 Standardisierung (engl. standardisation)</summary>
     <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i></p>
           <div style="margin-left: 2em;">
             <code>???</code>&nbsp;<code>????</code><br><br>
@@ -260,11 +260,10 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
   <details>
     <summary>🔴 lexikalische Analyse </summary>
     <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
-      </ol>
     </ol>
-  </details>
-  <details>
-    <summary>🔴 </summary>
+    </details>
+    <details>
+    <summary>🔴 lexikalische Analyse </summary>
     <p><i></i></p>
     <ol type="1">
       <li>
