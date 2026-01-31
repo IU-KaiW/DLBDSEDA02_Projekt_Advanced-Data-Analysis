@@ -263,9 +263,6 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
     </ol>
     </details>
     <details>
-    <summary>🔴 lexikalische Analyse </summary>
-    <p><i></i></p>
-    <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
         <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt. Klar abgegrenzte oder überlappende N-Gramme.
