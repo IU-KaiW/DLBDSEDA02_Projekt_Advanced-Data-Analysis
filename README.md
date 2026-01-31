@@ -299,17 +299,21 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
           <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
         </div>
       </li>
-      <li>Flaches Parsen (engl. shallow parsing/chunking)<br>
-        <i>Beim flachen Parsen werden aufeinanderfolgende Wörter zu Satzgliedern (engl. chunks) gruppiert, ohne eine vollständige Satzstruktur zu analysieren. Dies ermöglicht eine schnelle und effiziente Extraktion von Nominalphrasen und Verbalphrasen.</i><br>
-        <div style="margin-left: 2em;">
-          <code>NLTK (ne_chunk)</code>&nbsp;<code>spaCy</code><br><br>
-        </div>
-      </li>
-      <li>Tiefes Parsen (engl. deep parsing/dependency parsing)<br>
-        <i>Beim tiefen Parsen wird die vollständige Satzstruktur durch Abhängigkeitsrelationen zwischen Wörtern analysiert. Dies ermöglicht ein tieferes Verständnis von Satzbeziehungen und grammatikalischen Strukturen.</i><br>
-        <div style="margin-left: 2em;">
-          <code>NLTK</code>&nbsp;<code>spaCy (dependency parser)</code><br><br>
-        </div>
+      <li>Syntaktisches Parsen (engl. syntax parsing)<br>
+        <ol type="1">
+          <li>Flaches Parsen (engl. shallow parsing/chunking)<br>
+            <i>Beim flachen Parsen werden aufeinanderfolgende Wörter zu Satzgliedern (engl. chunks) gruppiert, ohne eine vollständige Satzstruktur zu analysieren. Dies ermöglicht eine schnelle und effiziente Extraktion von Nominalphrasen und Verbalphrasen.</i><br>
+            <div style="margin-left: 2em;">
+              <code>NLTK (ne_chunk)</code>&nbsp;<code>spaCy</code><br><br>
+            </div>
+          </li>
+          <li>Tiefes Parsen (engl. deep parsing/dependency parsing)<br>
+            <i>Beim tiefen Parsen wird die vollständige Satzstruktur durch Abhängigkeitsrelationen zwischen Wörtern analysiert. Dies ermöglicht ein tieferes Verständnis von Satzbeziehungen und grammatikalischen Strukturen.</i><br>
+            <div style="margin-left: 2em;">
+              <code>NLTK</code>&nbsp;<code>spaCy (dependency parser)</code><br><br>
+            </div>
+          </li>
+        </ol>
       </li>
     </ol>
   </details>
