@@ -190,31 +190,31 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
     <p><i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert und anschließend von Rauschen befreit.</i></p>
     <ol type="1">
       </li>
-      <li>Rauschentfernung (engl. noise reduction)</li><br>
+      <li>Rauschentfernung (engl. noise reduction)</li>
         <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
             <div style="margin-left: 2em;">
-              <code>NLTK</code>&nbsp;<code>spaCy</code><br>
+              <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
             </div>
             <ol type="2">
             <li><ins>Wortbereinigung (engl. word cleaning)</ins></li>
               <div style="margin-left: 2em;">
-                <code>NLTK(stopwords)</code>&nbsp;<code>spaCy</code><br><br>
+                <code>spaCy</code>&nbsp;<code>NLTK(stopwords)</code><br><br>
               </div>
             <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>spaCy</code><br><br>
+                <code>spaCy</code>&nbsp;<code>regex</code><br><br>
               </div>
             <li><ins>Leerzeichen (engl. white space)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>spaCy</code><br><br>
+                <code>spaCy</code>&nbsp;<code>regex</code><br><br>
               </div>
             <li><ins>Nummern (engl. removing numbers)</ins></li>
               <div style="margin-left: 2em;">
-                <code>regex</code>&nbsp;<code>spaCy</code><br><br>
+                <code>spaCy</code>&nbsp;<code>regex</code><br><br>
               </div>
             <li><ins>Sonderzeichen (engl. special character)</ins></li>
               <div style="margin-left: 2em;">
-                <code>textnorm</code>&nbsp;<code>spaCy</code><br><br>
+                <code>spaCy</code>&nbsp;<code>textnorm</code><br><br>
               </div>
       </ol>
       <li>Standardisierung (engl. standardisation)<br></li>
