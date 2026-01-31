@@ -184,24 +184,23 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
   <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
 </div>
 
-#### XXX
+#### Textbereinigung (engl. text cleaning)
+Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.
+<img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
 
 <ol type="1">
   <details>
-    <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
-    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
+    <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
+    <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i></p>
     <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
       </li>
-      <li>Rauschentfernung (engl. noise reduction)</li>
-        <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
+      <li>Wortbereinigung (engl. word cleaning)</li>
+        <i>XXX</i>
             <div style="margin-left: 2em;">
-              <code>spaCy</code>&nbsp;<code>NLTK</code>&nbsp;<code>regex</code><br><br>
+              <code>spaCy</code>&nbsp;<code>NLTK(stopwords)</code><br><br>
             </div>
             <ol type="2">
-            <li><ins>Wortbereinigung (engl. word cleaning)</ins></li>
-              <div style="margin-left: 2em;">
-                <code>spaCy</code>&nbsp;<code>NLTK(stopwords)</code><br><br>
               </div>
             <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
               <div style="margin-left: 2em;">
