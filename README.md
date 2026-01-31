@@ -166,7 +166,7 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
     </details>
 </ol>
 
-## 🟠 Datenverarbeitung (engl. data processing)
+## Datenverarbeitung (engl. data processing)
 Die linguistische Datenverarbeitung (LDV, engl. natural language processing – NLP) lässt sich in drei zentrale Bereiche unterteilen: die automatische Spracherkennung (engl. automatic speech recognition – ASR), das Verständnis natürlicher Sprache (engl. natural language understanding – NLU) sowie die natürliche Sprachgenerierung (engl. natural language generation – NLG). Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von Textinhalten.
 
 Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
@@ -249,7 +249,15 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
     </ol>
   </details>
 
+
 #### Linguistische Analyse
+  <ol type="1">
+  <details>
+    <summary>🔴 lexikalische Analyse </summary>
+    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
+      </ol>
+    </ol>
+  </details>
 
   <details>
     <summary>🔴 Linguistische Analyse (engl. linguistic processing)</summary>
@@ -282,6 +290,21 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
     </ol>
   </details>
 </ol>
+  <ol type="1">
+  <details>
+    <summary>🔴 syntaktische Analyse </summary>
+    <p><i></i></p>
+      </ol>
+    </ol>
+  </details>
+
+<ol type="1">
+  <details>
+    <summary>🔴 semnatische Analyse </summary>
+    <p><i></i></p>
+      </ol>
+    </ol>
+  </details>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
 > Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden die Merkmale (engl. features) durch Merkmalsextraktion, Merkmalsumwandlung oder Merkmalskonstruktion gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle durch automatisches Feature Engineering gewonnen. - Vorbereitete Merkmale
