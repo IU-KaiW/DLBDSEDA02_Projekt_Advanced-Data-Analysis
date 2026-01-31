@@ -166,7 +166,6 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
     </details>
 </ol>
 
-
 ## 🟠 Datenverarbeitung (engl. data processing)
 Die linguistische Datenverarbeitung (LDV, engl. natural language processing – NLP) lässt sich in drei zentrale Bereiche unterteilen: die automatische Spracherkennung (engl. automatic speech recognition – ASR), das Verständnis natürlicher Sprache (engl. natural language understanding – NLU) sowie die natürliche Sprachgenerierung (engl. natural language generation – NLG). Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von Textinhalten.
 
@@ -179,11 +178,14 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
   <code>pandas</code>&nbsp;<code>????</code><br>
 </div>
 
-#### 🔴 Datenvorverarbeiten (engl. data pre-processing)
+### Datenvorverarbeiten (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
 <div style="margin-left: 2em;">
   <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
 </div>
+
+#### XXX
+
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
@@ -246,6 +248,9 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
       </ol>
     </ol>
   </details>
+
+#### Linguistische Analyse
+
   <details>
     <summary>🔴 Linguistische Analyse (engl. linguistic processing)</summary>
     <p><i>Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer lexikalischen, eine 
