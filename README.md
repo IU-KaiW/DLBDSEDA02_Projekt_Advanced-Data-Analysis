@@ -281,7 +281,7 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
         </div>
       </li>
       <li>lexikalisches POS-Tagging<br>
-        <i>Durch lexikalisches POS-Tagging können mittels Lookup-Tabellen grammatikalische Wortfunktionen und Kategorien zu einem gegebenen Text hinzugefügt werden. Das Vokabular wird dabei mit Sprachdatenannotationen (engl. linguistic annotations) versehen.</i><br>
+        <i>Durch lexikalisches Part-of-Speech Tagging können mittels Lookup-Tabellen grammatikalische Wortfunktionen und Kategorien zu einem gegebenen Text hinzugefügt werden. Das Vokabular wird dabei mit Sprachdatenannotationen (engl. linguistic annotations) versehen.</i><br>
         <div style="margin-left: 2em;">
           <code>XXXX</code><br><br>
         </div>
@@ -330,19 +330,19 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
         </div>
         <ol type="1">
           <li>Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
-            <i>Beschreibung...</i><br>
+            <i>Bei der der Erkennung benannter Entitäten werden Wörter in einem unstrukturierten Text als Kategorien klassifiziert (Namen, Orte, Zeit, Datum, Organisationen, Mengen).</i><br>
             <div style="margin-left: 2em;">
-              <code>spaCy</code>&nbsp;<code>Library2</code><br><br>
+              <code>spaCy</code><br><br>
             </div>
           </li>
-          <li>Auflösung von Koreferenzen (engl. Coreference Resolution - CR)<br>
-            <i>Beschreibung...</i><br>
+          <li>Koreferenzauflösung (engl. Coreference Resolution - CR)<br>
+            <i>Koreferenzauflösung  ist eine Methode die es Modellen ermöglicht, Referenzen auf dieselbe Entität oder dasselbe Konzept innerhalb eines Textes zu erkennen. Durch diese Technik können KI-Systeme besser verstehen, auf wen oder was sich Pronomen, Namen oder Nominalphrasen in einem Satz oder Absatz beziehen.</i><br>
             <div style="margin-left: 2em;">
               <code>Library1</code>&nbsp;<code>Library2</code><br><br>
             </div>
           </li>
-          <li>Analyse von Beziehungen (engl. Relationship Extraction - RE)<br>
-            <i>Beschreibung...</i><br>
+          <li>Beziehungsextraktion (engl. Relationship Extraction - RE)<br>
+            <i>Die Beziehungsextraktion identifiziert Beziehungen zwischen benannten Objekten in einem Text, beispielsweise zwischen Vater und Sohn oder zwischen Mutter und Tochter, ect.</i><br>
             <div style="margin-left: 2em;">
               <code>Library1</code>&nbsp;<code>Library2</code><br><br>
             </div>
