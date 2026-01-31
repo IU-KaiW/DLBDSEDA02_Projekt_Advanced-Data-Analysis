@@ -259,31 +259,26 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
   <ol type="1">
   <details>
     <summary>🔴 lexikalische Analyse </summary>
-    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
-    </ol>
-      <ul>
-        Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt. Klar abgegrenzte oder überlappende N-Gramme.
-         BEARBEITEN
-        Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.
-        </i><br>
-      </ul>
-      <div style="margin-left: 2em;">
-        <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br><br>
-      </div>
-      </div>
-       <li>Grundformreduktion (engl. inflection reduction)</li>
-        Durch Grundformreduktion werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
-      <div style="margin-left: 2em;">
-         <code>spaCy</code>&nbsp;<code>NLTK (WordNetLemmatizer)</code><br><br>
-      </div>
-      <ul>
-        Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
-        <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textkorpus ein endliches Vokabular erstellt, das allen Token eine eindeutige Token-IDs zuweist. Das Vokabular stellt eine Menge eindeutiger Token-IDs dar.</i>
-      </ul>
-      <div style="margin-left: 2em;">
-        <code>sklearn(CountVectorizer)</code><br><br>
-      </div>
+    <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, lemmatisiert und ein Vokabular aufgebaut.</i></p>
+    <ol type="1">
+      <li>Tokenisierung (engl. tokenization)<br>
+        <i>Durch Tokenisierung wird der vorbereitete Text in Einzeltoken (Worte) oder N-Gramme (Phrasen) wie z.B. Sätze zerlegt. Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.</i><br>
+        <div style="margin-left: 2em;">
+          <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br><br>
+        </div>
+      </li>
+      <li>Grundformreduktion (engl. inflection reduction)<br>
+        <i>Durch Grundformreduktion werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.</i><br>
+        <div style="margin-left: 2em;">
+          <code>spaCy</code>&nbsp;<code>NLTK (WordNetLemmatizer)</code><br><br>
+        </div>
+      </li>
+      <li>Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
+        <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textkorpus ein endliches Vokabular erstellt, das allen Token eine eindeutige Token-ID zuweist. Das Vokabular stellt eine Menge eindeutiger Token-IDs dar.</i><br>
+        <div style="margin-left: 2em;">
+          <code>sklearn(CountVectorizer)</code><br><br>
+        </div>
+      </li>
     </ol>
   </details>
 </ol>
