@@ -221,6 +221,7 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
                 <code>spaCy</code>&nbsp;<code>regex</code><br><br>
               </div>
       </ol>
+  </details>
   <details>
     <summary>🔴 Standardisierung (engl. standardisation)<</summary>
     <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i></p>
@@ -247,12 +248,14 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
               <div style="margin-left: 2em;">
                 <code>pyspellchecker</code>&nbsp;<code>contextualSpellCheck</code>&nbsp;<code>PyEnchant</code><br><br>
               </div>
+    </details>
       </ol>
     </ol>
-  </details>
+
 
 
 #### Linguistische Analyse
+Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von zuvor bereinigten Texten zur Merkmalsvorbereitung.
   <ol type="1">
   <details>
     <summary>🔴 lexikalische Analyse </summary>
@@ -260,11 +263,9 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
       </ol>
     </ol>
   </details>
-
   <details>
-    <summary>🔴 Linguistische Analyse (engl. linguistic processing)</summary>
-    <p><i>Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer lexikalischen, eine 
-    syntaktische und/oder semantische Verarbeitung von zuvor bereinigten Texten zur Merkmalsvorbereitung.</i></p>
+    <summary>🔴 </summary>
+    <p><i></i></p>
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
