@@ -261,15 +261,14 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
     <summary>🔴 lexikalische Analyse </summary>
     <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
     </ol>
-    </details>
     <details>
-      <li>
+      <ul>
         Tokenisierung (engl. tokenization)<br>
         <i>Durch Tokenisierung wird der vorbereitet Text in Einzeltoken (Worte) oder N-Gramme (Phrasen - engl. chunks?) wie z.B. Sätze zerlegt. Klar abgegrenzte oder überlappende N-Gramme.
          BEARBEITEN
         Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.
         </i><br>
-      </li>
+      </ul>
       <div style="margin-left: 2em;">
         <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br><br>
       </div>
