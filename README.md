@@ -202,6 +202,7 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
             </div>
             <ol type="2">
               </div>
+      <li>Zeichenbereinigung ()</li>
             <li><ins>Satzzeichen (engl. punctuation marks)</ins></li>
               <div style="margin-left: 2em;">
                 <code>spaCy</code>&nbsp;<code>regex</code><br><br>
@@ -210,17 +211,19 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
               <div style="margin-left: 2em;">
                 <code>spaCy</code>&nbsp;<code>regex</code><br><br>
               </div>
-            <li><ins>Nummern (engl. removing numbers)</ins></li>
-              <div style="margin-left: 2em;">
-                <code>spaCy</code>&nbsp;<code>regex</code><br><br>
-              </div>
             <li><ins>Sonderzeichen (engl. special character)</ins></li>
               <div style="margin-left: 2em;">
                 <code>spaCy</code>&nbsp;<code>textnorm</code><br><br>
               </div>
+        <li>Nummernbereinigung (engl. numbers cleaning)</li>
+            <li><ins>Nummern (engl. removing numbers)</ins></li>
+              <div style="margin-left: 2em;">
+                <code>spaCy</code>&nbsp;<code>regex</code><br><br>
+              </div>
       </ol>
-      <li>Standardisierung (engl. standardisation)<br></li>
-        <i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
+  <details>
+    <summary>🔴 Standardisierung (engl. standardisation)<</summary>
+    <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i></p>
           <div style="margin-left: 2em;">
             <code>???</code>&nbsp;<code>????</code><br><br>
           </div>
