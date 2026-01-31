@@ -187,7 +187,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
-    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und Standardisiert.</i></p>
+    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
     <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
       </li>
@@ -219,29 +219,27 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
               </div>
       </ol>
       <li>Standardisierung (engl. standardisation)<br></li>
-        <i>Durch Standardisierung werden relevante Token vereinheitlicht, um sie analysieren zu können. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
+        <i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
           <div style="margin-left: 2em;">
             <code>???</code>&nbsp;<code>????</code><br><br>
           </div>
       <ol type="2">
             <li><ins>Normalisierung (engl. normalisation)</ins></li>
-            Durch die Normalisierung wird Text .... Sie setzt sich zusammen aus: 
-            <div style="margin-left: 2em;">
-              <code>stdlib()</code>&nbsp;<code>????</code><br><br>
+            Durch die Normalisierung wird Text in ein einheitliches Format, besser zu analysierendes Format gebracht.
             </div>
             <ul>
               <li>Kasusumwandlung (engl. case conversion)</li>
               In diesem Schritt erfolgt eine konsequente Kleinschreibung (engl. lowercasing) aller Wörter.
               <div style="margin-left: 2em;">
-                <code>stdlib(.lower)</code>&nbsp;<code>????</code><br><br>
+                <code>spaCy</code>&nbsp;<code>stdlib(.lower)</code><br><br>
               <li>Formatnormalisierungen (engl. format normalisations)</li>
               In der Formatnormalisierung erfolgt die Normalisierung von Schreibweisen (Datenformate oder Zahlenformaten) und Sonderformen (Emojis).
               <div style="margin-left: 2em;">
-                <code>SpaCy</code>&nbsp;<code>????</code><br><br>
+                <code>datetime</code><br><br>
               </div>
             </ul>
             <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins></li>
-            Durch Rechtschreibkorrekrur werden Tipp bzw. Schreibfehler korrigiert.
+            Durch Rechtschreibkorrekrur werden Schreib- und Tippfehler korrigiert, um eine linguistisch korrekte Analyse gewährleisten.
               <div style="margin-left: 2em;">
                 <code>pyspellchecker</code>&nbsp;<code>contextualSpellCheck</code>&nbsp;<code>PyEnchant</code><br><br>
               </div>
@@ -250,7 +248,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
   </details>
   <details>
     <summary>🔴 Linguistische Analyse (engl. linguistic processing)</summary>
-    <p><i>Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben der lexikalischen eine 
+    <p><i>Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer lexikalischen, eine 
     syntaktische und/oder semantische Verarbeitung von zuvor bereinigten Texten zur Merkmalsvorbereitung.</i></p>
     <ol type="1">
       <li>
@@ -286,7 +284,8 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
 
-Merkmalsgewinnung?
+Merkmalsgewinnung/generierung
+
 <ol type="1">
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
