@@ -188,6 +188,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
     <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und Standardisiert.</i></p>
+    <img src="/Users/kaiweber/Documents/GitHub/DLBDSEDA02_Projekt_Advanced-Data-Analysis/docs/2 - Textbereinigung (engl. text cleaning).jpg" width="1200">
     <ol type="1">
       </li>
       <li>Rauschentfernung (engl. noise reduction)</li>
@@ -249,8 +250,8 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
   </details>
   <details>
     <summary>🔴 Linguistische Analyse (engl. linguistic processing)</summary>
-    <p><i>Im Rahmen der lingusitischen Analyse erfolgen je nach Anwendungsfall neben einer lexikalisch die 
-    syntaktische Verarbeitung und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.</i></p>
+    <p><i>Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben der lexikalischen eine 
+    syntaktische und/oder semantische Verarbeitung von zuvor bereinigten Texten zur Merkmalsvorbereitung.</i></p>
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
@@ -280,7 +281,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
 </ol>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
-> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden die Merkmale (engl. features) durch Merkmalsextraktion, Merkmalsumwandlung oder Merkmalskonstruktion gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle durch automatisches Feature Engineering gewonnen.
+> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden die Merkmale (engl. features) durch Merkmalsextraktion, Merkmalsumwandlung oder Merkmalskonstruktion gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle durch automatisches Feature Engineering gewonnen. - Vorbereitete Merkmale
 <div style="margin-left: 2em;">
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
