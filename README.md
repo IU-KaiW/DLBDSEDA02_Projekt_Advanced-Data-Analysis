@@ -187,13 +187,13 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
 <ol type="1">
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
-    <p><i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert und anschließend von Rauschen befreit.</i></p>
+    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und Standardisiert.</i></p>
     <ol type="1">
       </li>
       <li>Rauschentfernung (engl. noise reduction)</li>
         <i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i>
             <div style="margin-left: 2em;">
-              <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
+              <code>spaCy</code>&nbsp;<code>NLTK</code>&nbsp;<code>regex</code><br><br>
             </div>
             <ol type="2">
             <li><ins>Wortbereinigung (engl. word cleaning)</ins></li>
@@ -218,7 +218,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
               </div>
       </ol>
       <li>Standardisierung (engl. standardisation)<br></li>
-        <i>Im Rahmen der Textbereinigung werden Texte zunächst standardisiert, um inhaltlich relevanten Tokens zu vereinheitlichen. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
+        <i>Durch Standardisierung werden relevante Token vereinheitlicht, um sie analysieren zu können. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren, leicht unterschiedlichen Varianten auftreten.</i>
           <div style="margin-left: 2em;">
             <code>???</code>&nbsp;<code>????</code><br><br>
           </div>
@@ -242,14 +242,15 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
             <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins></li>
             Durch Rechtschreibkorrekrur werden Tipp bzw. Schreibfehler korrigiert.
               <div style="margin-left: 2em;">
-                <code>pyspellchecker</code>&nbsp;<code>contextualSpellCheck</code>;<code>PyEnchant</code><br><br>
+                <code>pyspellchecker</code>&nbsp;<code>contextualSpellCheck</code>&nbsp;<code>PyEnchant</code><br><br>
               </div>
       </ol>
     </ol>
   </details>
   <details>
-    <summary>🔴 Linguistische Analyse (engl. Linguistic Processing)</summary>
-    <p><i>Im Rahmen der lingusitischen Analyse erfolgt eine Merkmalsvorbereitung.</i></p>
+    <summary>🔴 Linguistische Analyse (engl. linguistic processing)</summary>
+    <p><i>Im Rahmen der lingusitischen Analyse erfolgen je nach Anwendungsfall neben einer lexikalisch die 
+    syntaktische Verarbeitung und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.</i></p>
     <ol type="1">
       <li>
         Tokenisierung (engl. tokenization)<br>
@@ -265,14 +266,14 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
        <li>Grundformreduktion (engl. inflection reduction)</li>
         Durch Grundformreduktion werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.
       <div style="margin-left: 2em;">
-         <code>NLTK (WordNetLemmatizer)</code>&nbsp;<code>spaCy()</code><br><br>
+         <code>spaCy</code>&nbsp;<code>NLTK (WordNetLemmatizer)</code><br><br>
       </div>
       <li>
         Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
         <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textkorpus ein endliches Vokabular erstellt, das allen Token eine eindeutige Token-IDs zuweist. Das Vokabular stellt eine Menge eindeutiger Token-IDs dar.</i>
       </li>
       <div style="margin-left: 2em;">
-        <code>sklearn(CountVectorizer)</code>&nbsp;<code>????</code><br><br>
+        <code>sklearn(CountVectorizer)</code><br><br>
       </div>
     </ol>
   </details>
