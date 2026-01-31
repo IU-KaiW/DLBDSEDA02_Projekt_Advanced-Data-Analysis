@@ -293,13 +293,13 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
     <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing) </summary>
     <p><i>Im Rahmen der syntaktischen Analyse werden Satzstrukturen und grammatikalische Funktionen analysiert.</i></p>
     <ol type="1">
-      <li>syntaktischem POS-Tagging<br>
-        <i>Durch syntaktisches POS-Tagging können durch Modelle (Hidden Markov Models - HMM) grammatikalische Wortfunktionen und Kategorien durch Tags-Sets zu einem gegebenen Text hinzugefügt werden und so das Vokabular domänenspezifisch annotieren.</i><br>
+      <li>syntaktisches POS-Tagging<br>
+        <i>Durch Wortart-Tagging (engl. Part-of-Speech Tagging) können durch Modelle (Hidden Markov Models - HMM) grammatikalische Wortfunktionen und Kategorien durch Tags-Sets zu einem gegebenen Text hinzugefügt werden und so das Vokabular sprach-/domänenspezifisch annotieren.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
         </div>
       </li>
-      <li>Syntaktisches Parsen (engl. syntax parsing)<br>
+      <li>syntaktisches Parsen (engl. syntax parsing)<br>
         <ol type="1">
           <li>Flaches Parsen (engl. shallow parsing/chunking)<br>
             <i>Beim flachen Parsen werden aufeinanderfolgende Wörter zu Satzgliedern (engl. chunks) gruppiert, ohne eine vollständige Satzstruktur zu analysieren. Dies ermöglicht eine schnelle und effiziente Extraktion von Nominalphrasen und Verbalphrasen.</i><br>
@@ -320,26 +320,34 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
 </ol>
 
   <details>
-    <summary>🔴 semantische Verarbeitung (engl. context processing) </summary>
-    <p><i>Im Rahmen der semantischen Analyse werden Bedeutungen und Zusammenhänge im Text analysiert.</i></p>
+    <summary>🔴 semantische Verarbeitung (engl. semantic processing) </summary>
+    <p><i>Im Rahmen der semantischen Verarbeitung werden Bedeutungen und Zusammenhänge im Text analysiert. </i></p>
     <ol type="1">
-      <li>Punkt 1 (engl. )<br>
-        <i>Beschreibung...</i><br>
+      <li>semantisches Parsen (engl. semantic parsing)<br>
+        <i>Durch semantisches Parsen werden Bedeutungsstrukturen extrahiert, um tieferes Textverständnis zu ermöglichen.</i><br>
         <div style="margin-left: 2em;">
-          <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+          <code>spaCy</code><br><br>
         </div>
-      </li>
-      <li>Punkt 2 (engl. )<br>
-        <i>Beschreibung...</i><br>
-        <div style="margin-left: 2em;">
-          <code>Library1</code>&nbsp;<code>Library2</code><br><br>
-        </div>
-      </li>
-      <li>Punkt 3 (engl. )<br>
-        <i>Beschreibung...</i><br>
-        <div style="margin-left: 2em;">
-          <code>Library1</code>&nbsp;<code>Library2</code><br><br>
-        </div>
+        <ol type="1">
+          <li>Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
+            <i>Beschreibung...</i><br>
+            <div style="margin-left: 2em;">
+              <code>spaCy</code>&nbsp;<code>Library2</code><br><br>
+            </div>
+          </li>
+          <li>Auflösung von Koreferenzen (engl. Coreference Resolution - CR)<br>
+            <i>Beschreibung...</i><br>
+            <div style="margin-left: 2em;">
+              <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+            </div>
+          </li>
+          <li>Analyse von Beziehungen (engl. Relationship Extraction - RE)<br>
+            <i>Beschreibung...</i><br>
+            <div style="margin-left: 2em;">
+              <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+            </div>
+          </li>
+        </ol>
       </li>
     </ol>
   </details>
