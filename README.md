@@ -188,7 +188,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
   <details>
     <summary>🔴 Textbereinigung (engl. text cleaning)</summary>
     <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und Standardisiert.</i></p>
-    <img src="/Users/kaiweber/Documents/GitHub/DLBDSEDA02_Projekt_Advanced-Data-Analysis/docs/2 - Textbereinigung (engl. text cleaning).jpg" width="1200">
+    <img src="/Users/kaiweber/Documents/GitHub/DLBDSEDA02_Projekt_Advanced-Data-Analysis/docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
       </li>
       <li>Rauschentfernung (engl. noise reduction)</li>
