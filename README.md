@@ -371,16 +371,16 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
           <ul>
           <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
           Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br><br>
-            <ul>
+          <ul>
             <li><ins>BoX (Bag-of-X)</ins><br>
             Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wir eine eigene Dimension zugewiesen.
               <ul>
-              <li>Einzeltoken<br>
+              <li>BoX auf Einzeltoken<br>
               Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
               <div style="margin-left: 2em;">
                 <code>sklearn (CountVectorizer)</code>
               </div>
-            <li>Tokensequenzen<br>
+            <li>BoX auf Tokensequenzen<br>
             Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergibt.
               <div style="margin-left: 2em;">
                 <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
@@ -388,9 +388,10 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
               </ul>
           </ul>
       </li>
-      <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
-        Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.
           <ul>
+            <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
+            Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.
+          </ul>
           <li><ins>TF-IDF auf Einzeltoken</ins></li>
             <div style="margin-left: 2em;">
               <code>sklearn (TfidfVectorizer)</code>
@@ -403,6 +404,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
       </li>
     </ul>
   </ul>
+</ol>
           <ins>Worteinbettungen (engl. word embeddings)</ins><br>
           <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.</i></p>
           <ul>
