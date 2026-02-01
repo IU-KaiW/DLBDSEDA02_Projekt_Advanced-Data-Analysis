@@ -7,13 +7,13 @@ Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit 
 
 Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die verwendeten Softwarebibliotheken werden in folgender Form hervorgehoben: 
 
-Bibiliotheken - Funktionen
-
 <div style="margin-left: 2em;">
   <code>Bibliothek 1</code>&nbsp;<code>Bibliotek 2</code><br>
 </div>
 
-Clustering von Beschwerden.
+Bibiliotheken - Funktionen
+
+- Clustering von Beschwerden.
 
 „Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
 
@@ -356,10 +356,21 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
 </ol>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
-> Datenverarbeitung kann mit oder ohne Merkmalsaufbereitung (engl. feature engineering) erfolgen. Bei Datenverarbeitung mit Merkmalsaufbereitung werden die Merkmale (engl. features) durch Merkmalsextraktion, Merkmalsumwandlung oder Merkmalskonstruktion gewonnen. Bei Datenverarbeitung ohne Merkmalsaufbereitung werden Merkmale direkt aus Rohtexten mittels trainierter Modelle durch automatisches Feature Engineering gewonnen. - Vorbereitete Merkmale
+> Im Rahmen der Datenverarbeitung erfolgen Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection) für nachfolgende Schritte.
+
+**Merkmalsgenerierung** (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen.
+
+Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden.
+
+**Merkmalsauswahl** (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
+
+ - Vorbereitete Merkmale
+
 <div style="margin-left: 2em;">
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
+
+
 
 Merkmalsgewinnung/generierung
 
@@ -442,7 +453,7 @@ Merkmalsgewinnung/generierung
 
 <ol type="1">
   <details>
-    <summary>🟡 Text Analyse (engl. Text Analytics)</summary>
+    <summary>🟡 Merkmalsanalyse ? Text Analyse (engl. Text Analytics)</summary>
     <p><i>Textanalyse kann durch Merkmalsmodellierung (engl. feature modeling) oder Merkmalserkennung (engl. feature recognition) auf syntaktischer, lexikalischer oder semantischer Ebene erfolgen. Syntaktische Analyse befasst sich mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen wie Wortarten und ihre Zusammensetzung in Phrasen (Alpar et al., 2023, p. 45). Lexikalische Analysen befassen sich mit der Bedeutung einzelner Wörter. Semantische Analysen hingehen konzentrieren sich auf die Bedeutung größerer Textstücke. Dabei geht es um das Verstehen ganzer, in natürlicher Sprache verfasster Texte (Lane et al., 2019).</i></p><!--syntaktisch: Tokenization / Part-of-Speech(POS)-Tagging-->
     <ol type="1">
        <li>🟡 Merkmalsmodellierung (engl. feature modeling)</li>
@@ -515,7 +526,12 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
 <img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
 
 ### 🔵 Merkmalszusammenfassung (engl. feature aggregation)
-Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben. in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
+Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben, in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
+
+**Merkmalsanalyse** untersucht und beschreibt die in der Merkmalsaufbereitung erstellten Merkmale. Während die **Merkmalsaufbereitung** (Phase Datenverarbeitung) konstruktiv arbeitet und Merkmale schafft, arbeitet die **Merkmalsanalyse** (Phase Datennachverarbeitung) analytisch und interpretiert diese Merkmale für Entscheidungsträger.
+
+- **Merkmalsanalyse (engl. feature analysis)**: Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden. Merkmalsanalyse basiert auf Merkmalsbeschreibungen und erfolgt typischerweise in der Datennachverarbeitung.
+
 
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
@@ -641,11 +657,17 @@ aufgerufen werden.[^15]<br>
 ### Ordnerstruktur
 ```markdown
 ├── dataset/   # gewählter Datensatz
+├─────────────── / complaints_data.csv
+├─────────────── / complaints_data_cleaned.csv
 ├── src/       # Python-Module
-├─────────────── / Explorative Datenanalyse (EDA)
-├─────────────── / NLP-Pipeline
-├─────────────── / Datennachverarbeitung
+├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
+├─────────────── / Datenverarbeitung (engl. data processing)
+├─────────────── / Datennachverarbeitung (engl. data post-processing)
 ├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
+├─────────────── / 1 -
+├─────────────── / 2 - 
+├─────────────── / 3 - 
+├─────────────── / X - 
 └── README.md
 ```
 
