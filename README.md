@@ -366,7 +366,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
         <details>
           <summary>🟡 Vektorisierung (engl. vectorization)</summary>
           <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>    
-<ol type="1">
+          
   <li><ins>Merkmalsvektoren (engl. feature vectors)</ins><br>
     <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.</i></p>
 <ul>
