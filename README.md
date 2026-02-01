@@ -259,7 +259,6 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
 #### Linguistische Analyse
 Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
 <ol type="1">
-  <li>
     <details>
       <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
       <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
@@ -290,8 +289,6 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
         </li>
       </ol>
     </details>
-  </li>
-  <li>
     <details>
       <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing)</summary>
       <p><i>Im Rahmen der syntaktischen Analyse werden Satzstrukturen und grammatikalische Funktionen analysiert.</i></p>
@@ -320,8 +317,6 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
         </li>
       </ol>
     </details>
-  </li>
-  <li>
     <details>
       <summary>🔴 semantische Verarbeitung (engl. semantic processing)</summary>
       <p><i>Im Rahmen der semantischen Verarbeitung werden Bedeutungen und Zusammenhänge im Text analysiert.</i></p>
@@ -354,7 +349,6 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
         </li>
       </ol>
     </details>
-  </li>
 </ol>
 
 ### 🟡 Datenvorbereitung (engl. data preparation)
