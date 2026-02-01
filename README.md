@@ -442,7 +442,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
         </details>
         </li>
     </ol>
-  </details>
+</details>
 
 
 #### Merkmalsauswahl (engl. feature selection)
