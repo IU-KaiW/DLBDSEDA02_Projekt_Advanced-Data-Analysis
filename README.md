@@ -363,14 +363,12 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
     <summary>🟡 Merkmalsgenerierung (engl. feature generation/featurization)</summary>
     <p><i>Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen. Unstrukturierte Daten werden durch Merkmalskodierung (engl. feature encoding) in numerische oder kategorische Repräsentationen überführt, die Machine-Learning-Modelle nutzen können.</i></p>
     <ol type="1">
-      <li>
         <details>
           <summary>🟡 Vektorisierung (engl. vectorization)</summary>
           <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>    
-<ul>
-  <li><ins>Merkmalsvektoren (engl. feature vectors)</ins></li>
-
-> Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.<br><br>
+<ol type="1">
+  <li><ins>Merkmalsvektoren (engl. feature vectors)</ins><br>
+    <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.</i></p>
 <ul>
     <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
     Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br><br>
@@ -399,46 +397,38 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
       </li>
     </ul>
   </ul>
-</ul>
-
-<ul>
-  <li><ins>Merkmalseinbettungen (engl. feature embeddings)</ins></li>
-  
-  > Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.<br>
-  
-  <ul>
-    <li><ins>Worteinbettungen (engl. word embeddings)</ins></li>
-    Wortvektoren auf Wortebene
+  <li><ins>Worteinbettungen (engl. word embeddings)</ins><br>
+    <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.</i></p>
     <ul>
-      <li>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</li>
-      GloVe (Global Vectors for Word Representation)<br>
-      Word2Vec<br>
-      FastText
-      <div style="margin-left: 2em;">
-        <code>gensim</code> <code>sentence-transformers</code><br>
-      </div>
-      <li>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</li>
-      ELMo (Embeddings from Language Models)<br>
-      BERT (Bidirectional Encoder Representations from Transformers)<br>
-      GPT (Generative Pre-trained Transformer)
-      <div style="margin-left: 2em;">
-        <code>transformers</code> <code>sentence-transformers</code><br>
-      </div>
+      <li>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)<br>
+        GloVe (Global Vectors for Word Representation)<br>
+        Word2Vec<br>
+        FastText
+        <div style="margin-left: 2em;">
+          <code>gensim</code> <code>sentence-transformers</code><br>
+        </div>
+      </li>
+      <li>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)<br>
+        ELMo (Embeddings from Language Models)<br>
+        BERT (Bidirectional Encoder Representations from Transformers)<br>
+        GPT (Generative Pre-trained Transformer)
+        <div style="margin-left: 2em;">
+          <code>transformers</code> <code>sentence-transformers</code><br>
+        </div>
+      </li>
+      <li>Satzvektoren (sentence vectors)<br>
+        Satzvektoren auf Satzebene
+        <ul>
+          <li>Contextualized Sentence Embedding</li>
+          <li>SBERT Embedding</li>
+        </ul>
+        <div style="margin-left: 2em;">
+          <code>sentence-transformers</code><br>
+        </div>
+      </li>
     </ul>
-    <li><ins>Satzvektoren (sentence vectors)</ins></li>
-    Satzvektoren auf Satzebene
-    <ul>
-      <li>Contextualized Sentence Embedding</li>
-      SBERT Embedding
-      <div style="margin-left: 2em;">
-        <code>sentence-transformers</code><br>
-      </div>
-    </ul>
-  </ul>
-        </details>
-        </li>
-    </ol>
-  </details>
+  </li>
+</ol>
   <details>
     <summary>🟡 Merkmalsauswahl (engl. feature selection)</summary>
  <p><i>XXXXX</i></p>
