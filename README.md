@@ -429,6 +429,10 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
     </ul>
   </li>
 </ol>
+        </details>
+        </li>
+    </ol>
+  </details>
   <details>
     <summary>🟡 Merkmalsauswahl (engl. feature selection)</summary>
  <p><i>XXXXX</i></p>
