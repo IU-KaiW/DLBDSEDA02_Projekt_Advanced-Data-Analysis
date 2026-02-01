@@ -444,12 +444,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
         </li>
     </ol>
   </details>
-  <details>
-    <summary>🟡 Merkmalsauswahl (engl. feature selection)</summary>
- <p><i>XXXXX</i></p>
-    <ol type="1">
-       <li>🟡 XXX</li>
-</details>  
+
+
+#### Merkmalsauswahl (engl. feature selection)
 
 Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen“ (Zheng und Casari, 2019, p. 40).
