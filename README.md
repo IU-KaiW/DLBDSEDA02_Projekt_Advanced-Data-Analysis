@@ -482,11 +482,11 @@ abstrakte (latente) Features.
         <summary>🟡  Merkmalsextraktion (engl. feature extraction)</summary>
         <ul>
           <li><ins>Latent Dirichlet Allocation (LDA) </ins></li>
-          Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.<br>
-        <div style="margin-left: 2em;">
-          <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
-        </div>
-        <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+          Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.<br><br>
+          <div style="margin-left: 2em;">
+            <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
+          </div>
+          <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
         </li>
         </ul>
       </details>
@@ -494,12 +494,12 @@ abstrakte (latente) Features.
         <summary>🟡 Merkmalsumwandlung (engl. feature transformation)</summary>        
         <ul>
           <li><ins>Latent Semantic Analysis (LSA)</ins></li>
-          Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.<br>
+          Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.<br><br>
+          <div style="margin-left: 2em;">
+           <code>sklearn (TruncatedSVD)</code><br><br>
+          </div>
+          <p><b>Evaluation-Metriken:</b> Silhouettenkoeffizient, Themenkohärenz (Topic Coherence), Perplexity</p>
         </ul>
-        <div style="margin-left: 2em;">
-          <code>sklearn (TruncatedSVD)</code><br><br>
-        </div>
-        <p><b>Evaluation-Metriken:</b> Silhouettenkoeffizient, Themenkohärenz (Topic Coherence), Perplexity</p>
         </li>
       </details>
     </ol>
