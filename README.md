@@ -406,10 +406,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
             </li>
           </ul>
       </li>
-    </ul>
-</ul>
-
-          <ins>Worteinbettungen (engl. word embeddings)</ins><br>
+          <li><ins>Worteinbettungen (engl. word embeddings)</ins><br>
           <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.</i></p>
           <ul>
           <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
@@ -439,8 +436,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
               <code>sentence-transformers</code><br>
             </div>
     </ul>
-  </li>
-</ol>
+      </li>
         </details>
         </li>
     </ol>
