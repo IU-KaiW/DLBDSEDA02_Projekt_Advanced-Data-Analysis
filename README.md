@@ -366,27 +366,27 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
         <details>
           <summary>🟡 Vektorisierung (engl. vectorization)</summary>
           <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>    
-          
-  <li><ins>Merkmalsvektoren (engl. feature vectors)</ins><br>
-    <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.</i></p>
-<ul>
-    <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
-    Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br><br>
-    <ul>
-      <li><ins>BoX (Bag-of-X)</ins><br>
-        Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wir eine eigene Dimension zugewiesen.
-        <ul>
-          <li>Einzeltoken<br>
-            Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
-            <div style="margin-left: 2em;">
-              <code>sklearn (CountVectorizer)</code>
-            </div>
-          <li>Tokensequenzen<br>
+          <ins>Merkmalsvektoren (engl. feature vectors)</ins><br>
+          <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische Embeddings bezeichnet, wobei zwischen Methoden mit und ohne Informationsgewichtung differenziert werden muss.</i></p>
+          <ul>
+          <li><ins>häufigkeitsbasierte Einbettungen (engl. frequency based embeddings)</ins></li>
+          Frequenzbasierte Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, was gewichtet oder ungewichtet erfolgen kann.<br><br>
+            <ul>
+            <li><ins>BoX (Bag-of-X)</ins><br>
+            Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wir eine eigene Dimension zugewiesen.
+              <ul>
+              <li>Einzeltoken<br>
+              Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
+              <div style="margin-left: 2em;">
+                <code>sklearn (CountVectorizer)</code>
+              </div>
+            <li>Tokensequenzen<br>
             Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergibt.
-            <div style="margin-left: 2em;">
-              <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
-            </div>
-        </ul>
+              <div style="margin-left: 2em;">
+                <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
+              </div>
+              </ul>
+          </ul>
       </li>
       <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
         Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.
