@@ -440,9 +440,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
     </ul>
       </li>
         </details>
-        </li>
     </ol>
   </details>
+</ol>
 
 #### Merkmalsauswahl (engl. feature selection)
 
