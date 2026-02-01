@@ -400,7 +400,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
   <li><ins>Worteinbettungen (engl. word embeddings)</ins><br>
     <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.</i></p>
     <ul>
-      <li>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)<br>
+      <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins><br>
         GloVe (Global Vectors for Word Representation)<br>
         Word2Vec<br>
         FastText
@@ -408,7 +408,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
           <code>gensim</code> <code>sentence-transformers</code><br>
         </div>
       </li>
-      <li>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)<br>
+      <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins><br>
         ELMo (Embeddings from Language Models)<br>
         BERT (Bidirectional Encoder Representations from Transformers)<br>
         GPT (Generative Pre-trained Transformer)
@@ -416,7 +416,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
           <code>transformers</code> <code>sentence-transformers</code><br>
         </div>
       </li>
-      <li>Satzvektoren (sentence vectors)<br>
+      <li><ins>Satzvektoren (engl. sentence vectors)</ins><br>
         Satzvektoren auf Satzebene
         <ul>
           <li>Contextualized Sentence Embedding</li>
