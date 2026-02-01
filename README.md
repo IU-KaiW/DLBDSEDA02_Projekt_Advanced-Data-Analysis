@@ -480,7 +480,10 @@ abstrakte (latente) Features.
     <ol type="1">
       <details>
         <summary>🟡  Merkmalsextraktion (engl. feature extraction)</summary>
-        <li><p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.</i></p>
+        <ul>
+          <li><ins>BoX (Bag-of-X)</ins></li>
+          Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.<br>
+        </ul>
         <div style="margin-left: 2em;">
           <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
         </div>
@@ -544,6 +547,7 @@ Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
 </ol>
 
 ###### Pipeline Ausgabe (engl. pipeline output)
+
 Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
 Scores, Labels, Logits und .
 ______________
