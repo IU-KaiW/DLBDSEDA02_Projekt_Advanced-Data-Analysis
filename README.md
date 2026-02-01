@@ -351,7 +351,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
     </details>
 </ol>
 
-### 🟡 Datenvorbereitung (engl. data preparation)
+### Datenvorbereitung (engl. data preparation)
 > Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt. Dies erfolgt durch  Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection). <br> Merkmalsgenerierung (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden. <br> Merkmalsauswahl (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
 
 <div style="margin-left: 2em;">
@@ -361,10 +361,12 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
 <ol type="1">
   <details>
     <summary>🟡 Merkmalsgenerierung (engl. feature generation/featurization)</summary>
-    Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen. Unstrukturierte Daten werden durch Merkmalskodierung (engl. feature encoding) in numerische oder kategorische Repräsentationen überführt, die Machine-Learning-Modelle nutzen können.
-    <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.
-    </i></p>    
+    <p><i>Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen. Unstrukturierte Daten werden durch Merkmalskodierung (engl. feature encoding) in numerische oder kategorische Repräsentationen überführt, die Machine-Learning-Modelle nutzen können.</i></p>
+    <ol type="1">
+      <li>
+        <details>
+          <summary>🟡 Vektorisierung (engl. vectorization)</summary>
+          <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>    
 <ul>
   <li><ins>Merkmalsvektoren (engl. feature vectors)</ins></li>
 
@@ -433,10 +435,11 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
       </div>
     </ul>
   </ul>
-</ul>
-</ol>
-</details>
-<details>
+        </details>
+        </li>
+    </ol>
+  </details>
+  <details>
     <summary>🟡 Merkmalsauswahl (engl. feature selection)</summary>
  <p><i>XXXXX</i></p>
     <ol type="1">
