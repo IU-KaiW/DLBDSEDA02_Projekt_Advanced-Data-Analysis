@@ -12,6 +12,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 </div>
 
 Bibiliotheken - Funktionen
+<paketname>.<funktionsname>(<funktionsargumente>)
 
 - Clustering von Beschwerden.
 
@@ -194,7 +195,6 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
   <details>
     <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
     <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i></p>
-    <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
       </li>
       <li>Wortbereinigung (engl. word cleaning)</li>
@@ -355,7 +355,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
   </details>
 </ol>
 
-#### 🟡 Datenverarbeitung (engl. data processing)
+#### 🟡 Datenvorbereitung (engl. data preparation)
 > Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt. Dies erfolgt durch  Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection). <br> Merkmalsgenerierung (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden. <br> Merkmalsauswahl (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
 
 
@@ -366,6 +366,10 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
 
 <ol type="1">
   <details>
+    <summary>🟡 Merkmalsgenerierung (engl. feature generation/featurization)</summary>
+    
+    Merkmalskodierung (engl. feature encoding)
+
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
     <p><i> Die eindeutigen Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten. „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen“ (Zheng und Casari, 2019, p. 40).
     </i></p>
@@ -440,6 +444,12 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
 </ul>
 </ol>
 </details>
+
+Merkmalsauswahl (engl. feature selection)
+
+
+ Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
+
 
 <ol type="1">
   <details>
