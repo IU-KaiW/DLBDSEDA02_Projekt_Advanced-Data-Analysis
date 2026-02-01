@@ -184,11 +184,11 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
 ### Datenvorverarbeiten (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
 <div style="margin-left: 2em;">
-  <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
+  <code>spaCy</code>&nbsp;<code>NLTK</code><br>
 </div>
 
 #### Textbereinigung (engl. text cleaning)
-Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.
+Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.<br>
 <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
 
 <ol type="1">
@@ -258,101 +258,103 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
 
 #### Linguistische Analyse
 Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
-  <ol type="1">
-  <details>
-    <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)
- </summary>
-    <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
-    <ol type="1">
-      <li>Tokenisierung (engl. tokenization)<br>
-        <i>Durch Tokenisierung wird der vorbereitete Text in Einzeltoken (Worte) oder N-Gramme (Phrasen) wie z.B. Sätze zerlegt. Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.</i><br>
-        <div style="margin-left: 2em;">
-          <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br><br>
-        </div>
-      </li>
-      <li>Grundformreduktion (engl. inflection reduction)<br>
-        <i>Durch Grundformreduktion werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.</i><br>
-        <div style="margin-left: 2em;">
-          <code>spaCy</code>&nbsp;<code>NLTK (WordNetLemmatizer)</code><br><br>
-        </div>
-      </li>
-      <li>Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
-        <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textkorpus ein endliches Vokabular erstellt, das allen Token eine eindeutige Token-ID zuweist. Das Vokabular stellt eine Menge eindeutiger Token-IDs dar.</i><br>
-        <div style="margin-left: 2em;">
-          <code>sklearn(CountVectorizer)</code><br><br>
-        </div>
-      </li>
-      <li>lexikalisches POS-Tagging<br>
-        <i>Durch lexikalisches Part-of-Speech Tagging können mittels Lookup-Tabellen grammatikalische Wortfunktionen und Kategorien zu einem gegebenen Text hinzugefügt werden. Das Vokabular wird dabei mit Sprachdatenannotationen (engl. linguistic annotations) versehen.</i><br>
-        <div style="margin-left: 2em;">
-          <code>XXXX</code><br><br>
-        </div>
-      </li>
-    </ol>
-  </details>
-</ol>
-  <details>
-    <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing) </summary>
-    <p><i>Im Rahmen der syntaktischen Analyse werden Satzstrukturen und grammatikalische Funktionen analysiert.</i></p>
-    <ol type="1">
-      <li>syntaktisches POS-Tagging<br>
-        <i>Durch Wortart-Tagging (engl. Part-of-Speech Tagging) können durch Modelle (Hidden Markov Models - HMM) grammatikalische Wortfunktionen und Kategorien durch Tags-Sets zu einem gegebenen Text hinzugefügt werden und so das Vokabular sprach-/domänenspezifisch annotieren.</i><br>
-        <div style="margin-left: 2em;">
-          <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
-        </div>
-      </li>
-      <li>syntaktisches Parsen (engl. syntax parsing)<br>
-        <ol type="1">
-          <li>Flaches Parsen (engl. shallow parsing/chunking)<br>
-            <i>Beim flachen Parsen werden aufeinanderfolgende Wörter zu Satzgliedern (engl. chunks) gruppiert, ohne eine vollständige Satzstruktur zu analysieren. Dies ermöglicht eine schnelle und effiziente Extraktion von Nominalphrasen und Verbalphrasen.</i><br>
-            <div style="margin-left: 2em;">
-              <code>NLTK (ne_chunk)</code>&nbsp;<code>spaCy</code><br><br>
-            </div>
-          </li>
-          <li>Tiefes Parsen (engl. deep parsing/dependency parsing)<br>
-            <i>Beim tiefen Parsen wird die vollständige Satzstruktur durch Abhängigkeitsrelationen zwischen Wörtern analysiert. Dies ermöglicht ein tieferes Verständnis von Satzbeziehungen und grammatikalischen Strukturen.</i><br>
-            <div style="margin-left: 2em;">
-              <code>NLTK</code>&nbsp;<code>spaCy (dependency parser)</code><br><br>
-            </div>
-          </li>
-        </ol>
-      </li>
-    </ol>
-  </details>
-</ol>
-
-  <details>
-    <summary>🔴 semantische Verarbeitung (engl. semantic processing) </summary>
-    <p><i>Im Rahmen der semantischen Verarbeitung werden Bedeutungen und Zusammenhänge im Text analysiert. </i></p>
-    <ol type="1">
-      <li>semantisches Parsen (engl. semantic parsing)<br>
-        <i>Durch semantisches Parsen werden Bedeutungsstrukturen extrahiert, um tieferes Textverständnis zu ermöglichen.</i><br>
-        <div style="margin-left: 2em;">
-          <code>spaCy</code><br><br>
-        </div>
-        <ol type="1">
-          <li>Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
-            <i>Bei der der Erkennung benannter Entitäten werden Wörter in einem unstrukturierten Text als Kategorien klassifiziert (Namen, Orte, Zeit, Datum, Organisationen, Mengen).</i><br>
-            <div style="margin-left: 2em;">
-              <code>spaCy</code><br><br>
-            </div>
-          </li>
-          <li>Koreferenzauflösung (engl. Coreference Resolution - CR)<br>
-            <i>Koreferenzauflösung  ist eine Methode die es Modellen ermöglicht, Referenzen auf dieselbe Entität oder dasselbe Konzept innerhalb eines Textes zu erkennen. Durch diese Technik können KI-Systeme besser verstehen, auf wen oder was sich Pronomen, Namen oder Nominalphrasen in einem Satz oder Absatz beziehen.</i><br>
-            <div style="margin-left: 2em;">
-              <code>Library1</code>&nbsp;<code>Library2</code><br><br>
-            </div>
-          </li>
-          <li>Beziehungsextraktion (engl. Relationship Extraction - RE)<br>
-            <i>Die Beziehungsextraktion identifiziert Beziehungen zwischen benannten Objekten in einem Text, beispielsweise zwischen Vater und Sohn oder zwischen Mutter und Tochter, ect.</i><br>
-            <div style="margin-left: 2em;">
-              <code>Library1</code>&nbsp;<code>Library2</code><br><br>
-            </div>
-          </li>
-        </ol>
-      </li>
-    </ol>
-  </details>
+<ol type="1">
+  <li>
+    <details>
+      <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
+      <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
+      <ol type="1">
+        <li>Tokenisierung (engl. tokenization)<br>
+          <i>Durch Tokenisierung wird der vorbereitete Text in Einzeltoken (Worte) oder N-Gramme (Phrasen) wie z.B. Sätze zerlegt. Tokenisierung zerlegt Text in Token (Wörter, Subwörter oder Zeichen), aus denen das Vokabular als Menge eindeutiger Token-IDs entsteht.</i><br>
+          <div style="margin-left: 2em;">
+            <code>SpaCy</code>&nbsp;<code>NLTK(word_tokenize; sent_tokenize)</code><br><br>
+          </div>
+        </li>
+        <li>Grundformreduktion (engl. inflection reduction)<br>
+          <i>Durch Grundformreduktion werden Wörter auf ihre Grundformen reduziert. Da Lemmatisierung (engl. lemmatization) genauer als Stammformreduktion (engl. stemming) ist, wird diese eingesetzt.</i><br>
+          <div style="margin-left: 2em;">
+            <code>spaCy</code>&nbsp;<code>NLTK (WordNetLemmatizer)</code><br><br>
+          </div>
+        </li>
+        <li>Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
+          <i>Im Schritt des Wortschatzaufbaus wird aus dem tokenisierten Textkorpus ein endliches Vokabular erstellt, das allen Token eine eindeutige Token-ID zuweist. Das Vokabular stellt eine Menge eindeutiger Token-IDs dar.</i><br>
+          <div style="margin-left: 2em;">
+            <code>sklearn(CountVectorizer)</code><br><br>
+          </div>
+        </li>
+        <li>lexikalisches POS-Tagging<br>
+          <i>Durch lexikalisches Part-of-Speech Tagging können mittels Lookup-Tabellen grammatikalische Wortfunktionen und Kategorien zu einem gegebenen Text hinzugefügt werden. Das Vokabular wird dabei mit Sprachdatenannotationen (engl. linguistic annotations) versehen.</i><br>
+          <div style="margin-left: 2em;">
+            <code>XXXX</code><br><br>
+          </div>
+        </li>
+      </ol>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing)</summary>
+      <p><i>Im Rahmen der syntaktischen Analyse werden Satzstrukturen und grammatikalische Funktionen analysiert.</i></p>
+      <ol type="1">
+        <li>syntaktisches POS-Tagging<br>
+          <i>Durch Wortart-Tagging (engl. Part-of-Speech Tagging) können durch Modelle (Hidden Markov Models - HMM) grammatikalische Wortfunktionen und Kategorien durch Tags-Sets zu einem gegebenen Text hinzugefügt werden und so das Vokabular sprach-/domänenspezifisch annotieren.</i><br>
+          <div style="margin-left: 2em;">
+            <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
+          </div>
+        </li>
+        <li>syntaktisches Parsen (engl. syntax parsing)<br>
+          <ol type="1">
+            <li>Flaches Parsen (engl. shallow parsing/chunking)<br>
+              <i>Beim flachen Parsen werden aufeinanderfolgende Wörter zu Satzgliedern (engl. chunks) gruppiert, ohne eine vollständige Satzstruktur zu analysieren. Dies ermöglicht eine schnelle und effiziente Extraktion von Nominalphrasen und Verbalphrasen.</i><br>
+              <div style="margin-left: 2em;">
+                <code>NLTK (ne_chunk)</code>&nbsp;<code>spaCy</code><br><br>
+              </div>
+            </li>
+            <li>Tiefes Parsen (engl. deep parsing/dependency parsing)<br>
+              <i>Beim tiefen Parsen wird die vollständige Satzstruktur durch Abhängigkeitsrelationen zwischen Wörtern analysiert. Dies ermöglicht ein tieferes Verständnis von Satzbeziehungen und grammatikalischen Strukturen.</i><br>
+              <div style="margin-left: 2em;">
+                <code>NLTK</code>&nbsp;<code>spaCy (dependency parser)</code><br><br>
+              </div>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>🔴 semantische Verarbeitung (engl. semantic processing)</summary>
+      <p><i>Im Rahmen der semantischen Verarbeitung werden Bedeutungen und Zusammenhänge im Text analysiert.</i></p>
+      <ol type="1">
+        <li>semantisches Parsen (engl. semantic parsing)<br>
+          <i>Durch semantisches Parsen werden Bedeutungsstrukturen extrahiert, um tieferes Textverständnis zu ermöglichen.</i><br>
+          <div style="margin-left: 2em;">
+            <code>spaCy</code><br><br>
+          </div>
+          <ol type="1">
+            <li>Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
+              <i>Bei der der Erkennung benannter Entitäten werden Wörter in einem unstrukturierten Text als Kategorien klassifiziert (Namen, Orte, Zeit, Datum, Organisationen, Mengen).</i><br>
+              <div style="margin-left: 2em;">
+                <code>spaCy</code><br><br>
+              </div>
+            </li>
+            <li>Koreferenzauflösung (engl. Coreference Resolution - CR)<br>
+              <i>Koreferenzauflösung ist eine Methode die es Modellen ermöglicht, Referenzen auf dieselbe Entität oder dasselbe Konzept innerhalb eines Textes zu erkennen. Durch diese Technik können KI-Systeme besser verstehen, auf wen oder was sich Pronomen, Namen oder Nominalphrasen in einem Satz oder Absatz beziehen.</i><br>
+              <div style="margin-left: 2em;">
+                <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+              </div>
+            </li>
+            <li>Beziehungsextraktion (engl. Relationship Extraction - RE)<br>
+              <i>Die Beziehungsextraktion identifiziert Beziehungen zwischen benannten Objekten in einem Text, beispielsweise zwischen Vater und Sohn oder zwischen Mutter und Tochter, ect.</i><br>
+              <div style="margin-left: 2em;">
+                <code>Library1</code>&nbsp;<code>Library2</code><br><br>
+              </div>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </details>
+  </li>
 </ol>
 
 ### 🟡 Datenvorbereitung (engl. data preparation)
