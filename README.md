@@ -377,17 +377,17 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           <ul>
             <li><ins>BoX auf Einzeltoken</ins><br>
             Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
-              <ul>
-              <div style="margin-left: 2em;">
-                <code>sklearn (CountVectorizer)</code>
-              </div>
-            <li>BoX auf Tokensequenzen<br>
+            <div style="margin-left: 2em;">
+              <code>sklearn (CountVectorizer)</code>
+            </div>
+            <li><ins>BoX auf Tokensequenzen</ins><br>
             Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergibt.
-              <div style="margin-left: 2em;">
-                <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
-              </div>
-              </ul>
+            <div style="margin-left: 2em;">
+              <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
+            </div>
           </ul>
+          </ul>
+        </details>
     </ol> 
       </li>
           <ul>
