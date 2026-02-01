@@ -481,18 +481,21 @@ abstrakte (latente) Features.
       <details>
         <summary>🟡  Merkmalsextraktion (engl. feature extraction)</summary>
         <ul>
-          <li><ins>BoX (Bag-of-X)</ins></li>
+          <li><ins>Latent Dirichlet Allocation (LDA) </ins></li>
           Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.<br>
-        </ul>
         <div style="margin-left: 2em;">
           <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
         </div>
         <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
         </li>
+        </ul>
       </details>
       <details>
-        <summary>🟡 Merkmalsumwandlung (engl. feature transformation)</summary>
-        <li><p><i>Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.</i></p></li>
+        <summary>🟡 Merkmalsumwandlung (engl. feature transformation)</summary>        
+        <ul>
+          <li><ins>Latent Semantic Analysis (LSA)</ins></li>
+          Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.<br>
+        </ul>
         <div style="margin-left: 2em;">
           <code>sklearn (TruncatedSVD)</code><br><br>
         </div>
