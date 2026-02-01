@@ -375,11 +375,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           <li><ins>BoX (Bag-of-X)</ins></li>
           Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wir eine eigene Dimension zugewiesen.<br><br>
           <ul>
-            <li><ins>VVVV</ins><br>
-            XXXX
+            <li><ins>BoX auf Einzeltoken</ins><br>
+            Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
               <ul>
-              <li>BoX auf Einzeltoken<br>
-              Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
               <div style="margin-left: 2em;">
                 <code>sklearn (CountVectorizer)</code>
               </div>
@@ -390,6 +388,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
               </div>
               </ul>
           </ul>
+    </ol> 
       </li>
           <ul>
             <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
