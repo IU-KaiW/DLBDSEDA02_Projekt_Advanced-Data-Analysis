@@ -411,7 +411,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
       <ol type="1">
         <details>
           <summary>🟡 Merkmalseinbettungen (engl. feature embeddings)</summary>
-          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren. Worteinbettungen = / Satzeinbettungen = Entstehung duch Modelle? 
+          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren. Worteinbettungen = / Satzeinbettungen = Entstehung duch vortrainierte Modelle.
           Semi-explizite Features sind ein Mittelding zwischen explizit und latent. Sie entstehen vor allem bei Word Embeddings (Word2Vec, GloVe, FastText, BERT, ELMo):
           </i></p>
           <ul>
@@ -467,11 +467,11 @@ Merkmalsraum
 Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen" (Zheng und Casari, 2019, p. 40).
 
-explizite, semi-explizite und abstrakte(latente) Features.
+
 
 #### Merkmalslernen (engl. feature learning / representation learning)
-
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings erlernt.</i></p>
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt.</i></p>
+abstrakte (latente) Features.
 
 <ol type="1">
   <details>
@@ -479,27 +479,47 @@ explizite, semi-explizite und abstrakte(latente) Features.
     <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert.</i></p>
     <ol type="1">
       <details>
-        <summary>🟡 Merkmalsextraktion (engl. feature extraction) – LDA</summary>
-        <p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.</i></p>
+        <summary>🟡  Merkmalsextraktion (engl. feature extraction)</summary>
+        <li><p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.</i></p>
         <div style="margin-left: 2em;">
           <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
         </div>
         <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+        </li>
       </details>
       <details>
-        <summary>🟡 Merkmalsumwandlung (engl. feature transformation) – LSA</summary>
-        <p><i>Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.</i></p>
+        <summary>🟡 Merkmalsumwandlung (engl. feature transformation)</summary>
+        <li><p><i>Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.</i></p></li>
         <div style="margin-left: 2em;">
           <code>sklearn (TruncatedSVD)</code><br><br>
         </div>
         <p><b>Evaluation-Metriken:</b> Silhouettenkoeffizient, Themenkohärenz (Topic Coherence), Perplexity</p>
+        </li>
       </details>
     </ol>
   </details>
 </ol>
 
-#### Merkmalsanalyse (engl. feature analysis)
+#### Modellbewertung ()
+Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
+    <i>Modellauswertung (engl. model evaluation)<i>
+              <ul>
+            <li>Kohärenz (engl. coherence)</li>
+            „The Gensim library provides a class that implements the four most famous coherence models: _u_mass, c_v, c_uci, cnpmi. So, let’s break them into fundamental pieces.“ (Pedro, 2022)
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br><br>
+              </div>
+            <li>Perplexität (engl. perplexity)</li>
+            xxx
+              <div style="margin-left: 2em;">
+                <code>???</code>&nbsp;<code>????</code><br><br>
+              </div>
+          </ul>
+  </details>
+</ol>
 
+
+#### Merkmalsanalyse (engl. feature analysis)
 <p><i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i></p>
 
 <ol type="1">
@@ -522,25 +542,6 @@ explizite, semi-explizite und abstrakte(latente) Features.
     </ol>
   </details>
 </ol>
-
-#### Modellbildung
-    <i>Modellauswertung (engl. model evaluation)<i>
-              <ul>
-            <li>Kohärenz (engl. coherence)</li>
-            xxx
-              <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br><br>
-              </div>
-            <li>Perplexität (engl. perplexity)</li>
-            xxx
-              <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br><br>
-              </div>
-          </ul>
-  </details>
-</ol>
-
-„The Gensim library provides a class that implements the four most famous coherence models: _u_mass, c_v, c_uci, cnpmi. So, let’s break them into fundamental pieces.“ (Pedro, 2022)
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
