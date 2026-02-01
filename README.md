@@ -354,6 +354,8 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
 ### Datenvorbereitung (engl. data preparation)
 > Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt. Dies erfolgt durch  Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection). <br> Merkmalsgenerierung (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden. <br> Merkmalsauswahl (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
 
+feature - explizite / Abstrakte
+
 <div style="margin-left: 2em;">
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
@@ -364,7 +366,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
 <ol type="1">
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>
+    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (enfl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen. - explizite Features</i></p>
     <ol type="1">
         <details>
           <summary>🟡 Merkmalsvektoren (engl. feature vectors)</summary>
@@ -409,7 +411,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
       <ol type="1">
         <details>
           <summary>🟡 Merkmalseinbettungen (engl. feature embeddings)</summary>
-          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren. Worteinbettungen = / Satzeinbettungen =</i></p>
+          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren. Worteinbettungen = / Satzeinbettungen = Entstehung duch Modelle? 
+          Semi-explizite Features sind ein Mittelding zwischen explizit und latent. Sie entstehen vor allem bei Word Embeddings (Word2Vec, GloVe, FastText, BERT, ELMo):
+          </i></p>
           <ul>
           <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
             <ul>
@@ -429,7 +433,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             <div style="margin-left: 2em;">
               <code>transformers</code> <code>sentence-transformers</code><br>
             </div>
-          <li><ins>Satzvektoren (engl. sentence vectors)</ins></li>
+          <li><ins>Satz-Einbettungen (engl. sentence embeddings)</ins></li>
             <ul>
               <li>Contextualized Sentence Embedding</li>
               <li>SBERT Embedding</li>
@@ -444,57 +448,82 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
   </details>
 </ol>
 
+Merkmalsraum
+
 #### Merkmalsauswahl (engl. feature selection)
+<p><i>Merkmalsauswahl ist ein komplementärer Prozess zur Merkmalsgenerierung. Nach der Erzeugung von Features werden die relevantesten Merkmale aus dem bestehenden Merkmalsraum ausgewählt, um Redundanz zu reduzieren, Overfitting zu vermeiden und die Modellleistung zu optimieren.</i></p>
 
-Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
-„Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen“ (Zheng und Casari, 2019, p. 40).
+**Bekannte Techniken:**
+<ul>
+  <li><ins>Filtermethoden</ins> – wählen Features basierend auf statistischen Eigenschaften (z.B. Korrelation, Chi-Quadrat)</li>
+  <li><ins>Wrapper-Methoden</ins> – evaluieren Feature-Subsets durch Modelltraining</li>
+  <li><ins>Eingebettete Methoden</ins> – wählen Features während des Modelltrainings aus (z.B. Lasso, Tree-based)</li>
+</ul>
+
+<div style="margin-left: 2em;">
+  <code>sklearn (SelectKBest, SelectPercentile, RFE)</code><br><br>
+</div> 
+
+Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
+„Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen" (Zheng und Casari, 2019, p. 40).
+
+explizite, semi-explizite und abstrakte(latente) Features.
+
+#### Merkmalslernen (engl. feature learning / representation learning)
+
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings erlernt.</i></p>
 
 <ol type="1">
   <details>
-    <summary>🟡 Merkmalsanalyse ? Text Analyse (engl. Text Analytics)</summary>
-    <p><i>Textanalyse kann durch Merkmalsmodellierung (engl. feature modeling) oder Merkmalserkennung (engl. feature recognition) auf syntaktischer, lexikalischer oder semantischer Ebene erfolgen. Syntaktische Analyse befasst sich mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen wie Wortarten und ihre Zusammensetzung in Phrasen (Alpar et al., 2023, p. 45). Lexikalische Analysen befassen sich mit der Bedeutung einzelner Wörter. Semantische Analysen hingehen konzentrieren sich auf die Bedeutung größerer Textstücke. Dabei geht es um das Verstehen ganzer, in natürlicher Sprache verfasster Texte (Lane et al., 2019).</i></p><!--syntaktisch: Tokenization / Part-of-Speech(POS)-Tagging-->
+    <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
+    <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert.</i></p>
     <ol type="1">
-       <li>🟡 Merkmalsmodellierung (engl. feature modeling)</li>
-              Unter Merkmalsmodellierung versteht man die inhaltliche Strukturierung und Deutung von Text. Sie legt fest, wie Merkmale für die Textanalyse genutzt werden können. Über Themenmodellierung (engl. topic modeling) können Themen unüberwacht (engl. unsuperviced) mittels Merkmalsextraktion (engl. feature extraction) oder Merkmalsumwandlung (engl. feature transformation) identifiziert werden.<br><br>
-          <ul>
-            <li>Merkmalsextraktion (engl. feature extraction)</li><br>
-            Latent Dirichlet Allocation (LDA) identifitiert unüberwacht durch <i>Merkmalsextraktion</i> latente Themen in einer Sammlung von Dokumenten und stellt diese basierend auf ihren Verteilungen über die Themen dar.<br>
-              <div style="margin-left: 2em;">
-                <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br>
+      <details>
+        <summary>🟡 Merkmalsextraktion (engl. feature extraction) – LDA</summary>
+        <p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.</i></p>
+        <div style="margin-left: 2em;">
+          <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
+        </div>
+        <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+      </details>
+      <details>
+        <summary>🟡 Merkmalsumwandlung (engl. feature transformation) – LSA</summary>
+        <p><i>Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.</i></p>
+        <div style="margin-left: 2em;">
+          <code>sklearn (TruncatedSVD)</code><br><br>
+        </div>
+        <p><b>Evaluation-Metriken:</b> Silhouettenkoeffizient, Themenkohärenz (Topic Coherence), Perplexity</p>
+      </details>
+    </ol>
+  </details>
+</ol>
 
-  > Themenverteilungen; Top-Wörter pro Thema; 𝛼 (Alpha) – Themenmischung pro Dokument; β (Beta) – Wortverteilung in Themen; K<sup>T</sup> (n × k)
-  </div>
-           <li>Merkmalsumwandlung (engl. feature transformation)<br></i></li>
-           Latent Semantic Analysis (LSA) identifiziert unüberwacht Themen mittels <i>Merkmalsumwandlung</i> durch eine Singulärwertzerlegung (engl. Singular Value Decomposition - SVD).<br> Die Anzahl der Themen (k) muss dabei optimal gewählt werden, weshalb Techniken wie den Silhouettenkoeffizienten (engl. silhouette score) oder Themenkohärenz (engl. topic coherence) Anwendung finden, um die Drehpunkte für die Themenextraktion zu bestimmen.
-              <div style="margin-left: 2em;">
-                <code>sklearn</code><br>
-              </div><br>
-            <li>Merkmalsauswahl (engl. feature selection)<br>
-            <i>Zum Ende werden die besten Merkmale ausgewählt.</i>
-              <div style="margin-left: 2em;">
-                <code>???</code>
-              </div><br>
-          </ul>
-       <li>🟡 Merkmalserkennung (engl. feature recognition)</li>
-              Unter Merkmalserkennung 
-          <ul>
-            <li>regelbasiert</li>
-            xxx
-              <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br><br>
-              </div>
-            <li>lernbasiert</li>
-            xxx
-              <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br><br>
-              </div>
-          </ul>
-  </details>  
+#### Merkmalsanalyse (engl. feature analysis)
+
+<p><i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i></p>
 
 <ol type="1">
   <details>
-    <summary>🟡 Merkmalslernen (engl. feature learning / representation learning)</summary><br>
-    In der Datenverarbeitung beginnt die Merkmalsaufbereitung (engl. feature engineering) und das Merkmalslernen (engl. feature learning / representation learning).
+    <summary>🟡 Merkmalserkennung (engl. feature recognition) – Pattern-Erkennung</summary>
+    <p><i>Merkmalserkennung identifiziert spezifische Muster, Anomalien oder Strukturen in bereits erzeugten oder gelernten Features durch regelbasierte oder lernbasierte Verfahren.</i></p>
+    <ol type="1">
+      <li><ins>Regelbasierte Erkennung</ins><br>
+      <i>Verwendung von vordefinierten Regeln und Heuristiken zur Mustererkennung.</i>
+        <div style="margin-left: 2em;">
+          <code>NLTK (pattern matching)</code>&nbsp;<code>regex</code><br><br>
+        </div>
+      </li>
+      <li><ins>Lernbasierte Erkennung</ins><br>
+      <i>Verwendung von trainierten Modellen zur automatischen Mustererkennung und Klassifikation.</i>
+        <div style="margin-left: 2em;">
+          <code>sklearn (Clustering, Classification)</code>&nbsp;<code>K-Means, DBSCAN</code><br><br>
+        </div>
+      </li>
+    </ol>
+  </details>
+</ol>
+
+#### Modellbildung
     <i>Modellauswertung (engl. model evaluation)<i>
               <ul>
             <li>Kohärenz (engl. coherence)</li>
