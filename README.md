@@ -181,7 +181,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"comp
 </div>
 
 ### Datenvorverarbeiten (engl. data pre-processing)
-> Während der Datenvorverarbeitung erfolgt eine *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
+> Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
 <div style="margin-left: 2em;">
   <code>spaCy</code>&nbsp;<code>NLTK</code><br><br>
 </div>
@@ -257,7 +257,7 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
 
 
 #### Linguistische Analyse
-Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von zuvor bereinigten Texten zur Merkmalsvorbereitung.
+Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
   <ol type="1">
   <details>
     <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)
@@ -356,23 +356,13 @@ Im Rahmen der lingusitischen Analyse erfolgt je nach Anwendungsfall neben einer 
 </ol>
 
 #### 🟡 Datenverarbeitung (engl. data processing)
-> Im Rahmen der Datenverarbeitung erfolgen Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection) für nachfolgende Schritte.
+> Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt. Dies erfolgt durch  Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection). <br> Merkmalsgenerierung (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden. <br> Merkmalsauswahl (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
 
-**Merkmalsgenerierung** (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen.
-
-Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden.
-
-**Merkmalsauswahl** (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
-
- - Vorbereitete Merkmale
 
 <div style="margin-left: 2em;">
   <code>???</code>&nbsp;<code>???</code><br><br>
 </div>
 
-
-
-Merkmalsgewinnung/generierung
 
 <ol type="1">
   <details>
