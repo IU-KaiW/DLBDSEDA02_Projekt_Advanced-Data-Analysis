@@ -391,9 +391,15 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
       <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
         Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.
           <ul>
-        <div style="margin-left: 2em;">
-          <code>sklearn (TfidfVectorizer)</code><br><br>
-        </div>
+          <li><ins>TF-IDF auf Einzeltoken</ins></li>
+            <div style="margin-left: 2em;">
+              <code>sklearn (TfidfVectorizer)</code>
+            </div>
+          <li><ins>TF-IDF auf Tokensequenzen</ins></li>
+            <div style="margin-left: 2em;">
+              <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
+            </div>
+          </ul>
       </li>
     </ul>
   </ul>
