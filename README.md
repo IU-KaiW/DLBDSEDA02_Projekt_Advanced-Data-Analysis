@@ -391,20 +391,24 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
           <ul>
             <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
             Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.
-          </ul>
-          <li><ins>TF-IDF auf Einzeltoken</ins></li>
-            <div style="margin-left: 2em;">
-              <code>sklearn (TfidfVectorizer)</code>
-            </div>
-          <li><ins>TF-IDF auf Tokensequenzen</ins></li>
-            <div style="margin-left: 2em;">
-              <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
-            </div>
+              <ul>
+              <li><ins>TF-IDF auf Einzeltoken</ins><br>
+              Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.
+              <div style="margin-left: 2em;">
+                <code>sklearn (TfidfVectorizer)</code>
+              </div>
+              <li><ins>TF-IDF auf Tokensequenzen</ins><br>
+              Wird die TF-IDF-Methode mit einer Folge von n-Token durchgeführt, werden Wort-Paare oder längere Phrasen gewichtet, um ihre Relevanz auszudrücken.
+              <div style="margin-left: 2em;">
+                <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
+              </div>
+              </ul>
+            </li>
           </ul>
       </li>
     </ul>
-  </ul>
-</ol>
+</ul>
+
           <ins>Worteinbettungen (engl. word embeddings)</ins><br>
           <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.</i></p>
           <ul>
