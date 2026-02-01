@@ -387,8 +387,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             </div>
           </ul>
           </ul>
-        </details>
-    </ol> 
       </li>
           <ul>
             <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
@@ -408,9 +406,12 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             </li>
           </ul>
       </li>
+        </details>
+    </ol> 
       <ol type="1">
         <details>
           <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
+
           <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Token einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren.</i></p>
           <ul>
           <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
