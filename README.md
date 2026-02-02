@@ -619,8 +619,9 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
               <code>sklearn (TruncatedSVD)</code><br><br>
             </div>
             <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
-          </details>
-
+        </details>
+  </ol>
+  
 
 #### Modellbewertung ()
 Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
