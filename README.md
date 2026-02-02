@@ -531,8 +531,8 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
             </ol>
           </details>
         </ol>
-      </details>
       Output: Interpretierbare Themen 
+  </details>
   <details>
         <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
         <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
