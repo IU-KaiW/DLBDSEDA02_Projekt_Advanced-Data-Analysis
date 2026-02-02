@@ -452,6 +452,11 @@ Merkmalsraum
 
 #### Merkmalsauswahl (engl. feature selection)
 <p><i>Merkmalsauswahl ist ein komplementärer Prozess zur Merkmalsgenerierung. Nach der Erzeugung von Features werden die relevantesten Merkmale aus dem bestehenden Merkmalsraum ausgewählt, um Redundanz zu reduzieren, Overfitting zu vermeiden und die Modellleistung zu optimieren.</i></p>
+      <ol type="1">
+        <details>
+          <summary>🟡 Filtermethoden</summary>
+        </details>
+      </ol>
 
 **Bekannte Techniken:**
 <ul>
