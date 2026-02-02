@@ -474,7 +474,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 
 #### Merkmalslernen (engl. feature learning / representation learning)
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Merkmalslernen lässt sich in zwei Ansätze unterteilen: Abstraktion und Projektion</i></p>
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
 
 <ol type="1">
   <details>
@@ -487,7 +487,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert.</i></p>
         <ol type="1">
           <details>
-            <summary>🟡 Latent Dirichlet Allocation (LDA)</summary>
+            <summary>🟡 LDA (Latent Dirichlet Allocation)</summary>
             <p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA ist eine probabilistische Merkmalsabstraktion, die interpretierbare Themen erzeugt.</i></p>
             <div style="margin-left: 2em;">
               <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
@@ -495,7 +495,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
             <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
           </details>
           <details>
-            <summary>🟡 Non-Negative Matrix Factorization (NMF)</summary>
+            <summary>🟡 NMF (Non-Negative Matrix Factorization)</summary>
             <p><i>Non-Negative Matrix Factorization (NMF) zerlegt die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten. Jedes Dokument ist eine Kombination von Basistopics, ähnlich LDA, aber deterministisch statt probabilistisch.</i></p>
             <div style="margin-left: 2em;">
               <code>sklearn (NMF)</code><br><br>
@@ -560,23 +560,15 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         <p><i>Lineare Projektionen reduzieren Dimensionen durch orthogonale Transformationen, die Varianzrichtungen im Datenraum erfassen.</i></p>
         <ol type="1">
           <details>
-            <summary>🟡 Principal Component Analysis (PCA)</summary>
+            <summary>🟡 PCA (Principal Component Analysis)</summary>
             <p><i>PCA findet die Hauptkomponenten (Richtungen maximaler Varianz) in den Daten und projiziert Features auf diese Achsen.
               PCA-Modell (Hauptkomponentenanalyse)
-        „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
+              „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
             </i></p>
             <div style="margin-left: 2em;">
               <code>sklearn (PCA)</code><br><br>
             </div>
             <p><b>Output:</b> K Hauptkomponenten, Varianzanteil pro Komponente</p>
-          </details>
-          <details>
-            <summary>🟡 Latent Semantic Analysis (LSA) – Hybrid</summary>
-            <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion.</i></p>
-            <div style="margin-left: 2em;">
-              <code>sklearn (TruncatedSVD)</code><br><br>
-            </div>
-            <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
           </details>
         </ol>
       </details>
@@ -600,7 +592,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         </i></p>
         <ol type="1">
           <details>
-            <summary>🟡 t-distributed Stochastic Neighbor Embedding (t-SNE)</summary>
+            <summary>🟡 t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
             <p><i>t-SNE projiziert hochdimensionale Daten auf 2-3 Dimensionen und bewahrt dabei lokale Nachbarschaften. Ideal zur Visualisierung von Clustern und Gruppen.</i></p>
             <div style="margin-left: 2em;">
               <code>sklearn (TSNE)</code><br><br>
@@ -608,7 +600,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
             <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
           </details>
           <details>
-            <summary>🟡 Uniform Manifold Approximation and Projection (UMAP)</summary>
+            <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
             <p><i>UMAP ist eine moderne Alternative zu t-SNE, die schneller und skalierbarer ist. Es bewahrt sowohl lokale als auch globale Strukturen besser.</i></p>
             <div style="margin-left: 2em;">
               <code>umap-learn</code><br><br>
@@ -619,6 +611,16 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
       </details>
     </ol>
   </details>
+ <ol type="1">
+      <details>
+        <summary>🟡 Hybride Projektionen</summary>
+        <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion.</i></p>
+            <div style="margin-left: 2em;">
+              <code>sklearn (TruncatedSVD)</code><br><br>
+            </div>
+            <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
+          </details>
+
 
 #### Modellbewertung ()
 Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
