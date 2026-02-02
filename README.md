@@ -481,7 +481,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 <ol type="1">
   <details>
-      <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
+      <summary>🟡 Topicmodelle/Themenmodellierung (engl. topic modeling)</summary>
         <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
     <ol type="1">
       <details>
@@ -532,6 +532,66 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
           </details>
         </ol>
       </details>
+      Output: Interpretierbare Themen
+<ol type="1">
+  <details>
+    <summary>🟡 Dimensionsreduktion </summary>
+    <p><i>Dimensionsreduktion transformiert hochdimensionale Features auf neue mathematische Achsen für Visualisierung und Datenanalyse. Die neuen Dimensionen sind nicht semantisch interpretierbar, aber nützlich zur Erkennung von Mustern und Struktur in den Daten. 
+    Merkmalsprojektion transformiert hochdimensionale Features auf neue mathematische Achsen. Die neuen Dimensionen sind mathematische Kombinationen der originalen Features, nicht semantisch interpretierbar, aber nützlich für Visualisierung oder Dimensionsreduktion.</i></p>
+    <b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
+    <ol type="1">
+      <details>
+        <summary>🟡 Lineare Projektionen</summary>
+        <p><i>Lineare Projektionen reduzieren Dimensionen durch orthogonale Transformationen, die Varianzrichtungen im Datenraum erfassen.</i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 PCA (Principal Component Analysis)</summary>
+            <p><i>PCA findet die Hauptkomponenten (Richtungen maximaler Varianz) in den Daten und projiziert Features auf diese Achsen.
+              PCA-Modell (Hauptkomponentenanalyse)
+              „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
+            </i></p>
+            <div style="margin-left: 2em;">
+              <code>sklearn (PCA)</code><br><br>
+            </div>
+            <p><b>Output:</b> K Hauptkomponenten, Varianzanteil pro Komponente</p>
+          </details>
+        </ol>
+      </details>
+      <details>
+        <summary>🟡 Nichtlineare Projektionen</summary>
+        <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.
+        UMAP (Uniform Manifold Approximation and Projection)
+        „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
+        T-SNE (t-distributed Stochastic Neighbor Embedding)
+        „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
+        nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung
+        „Eigene Embedding Spaces erstellen & visualisieren 
+        </i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
+            <p><i>t-SNE projiziert hochdimensionale Daten auf 2-3 Dimensionen und bewahrt dabei lokale Nachbarschaften. Ideal zur Visualisierung von Clustern und Gruppen.</i></p>
+            <div style="margin-left: 2em;">
+              <code>sklearn (TSNE)</code><br><br>
+            </div>
+            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
+          </details>
+          <details>
+            <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
+            <p><i>UMAP ist eine moderne Alternative zu t-SNE, die schneller und skalierbarer ist. Es bewahrt sowohl lokale als auch globale Strukturen besser.
+            </i></p>
+            <div style="margin-left: 2em;">
+              <code>umap-learn</code><br><br>
+            </div>
+            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
+          </details>
+        </ol>
+      </details>
+    </ol>
+  </details>
+  Output: Neue mathematische Achsen (nicht interpretierbar)
+</ol>
+
       <details>
         <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
         <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
@@ -566,72 +626,6 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
   </details>
 </ol>
 
-<ol type="1">
-  <details>
-    <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
-    <p><i>Merkmalsprojektion transformiert hochdimensionale Features auf neue mathematische Achsen. Die neuen Dimensionen sind mathematische Kombinationen der originalen Features, nicht semantisch interpretierbar, aber nützlich für Visualisierung oder Dimensionsreduktion.</i></p>
-    <b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
-    <ol type="1">
-      <details>
-        <summary>🟡 Lineare Projektionen</summary>
-        <p><i>Lineare Projektionen reduzieren Dimensionen durch orthogonale Transformationen, die Varianzrichtungen im Datenraum erfassen.</i></p>
-        <ol type="1">
-          <details>
-            <summary>🟡 PCA (Principal Component Analysis)</summary>
-            <p><i>PCA findet die Hauptkomponenten (Richtungen maximaler Varianz) in den Daten und projiziert Features auf diese Achsen.
-              PCA-Modell (Hauptkomponentenanalyse)
-              „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
-            </i></p>
-            <div style="margin-left: 2em;">
-              <code>sklearn (PCA)</code><br><br>
-            </div>
-            <p><b>Output:</b> K Hauptkomponenten, Varianzanteil pro Komponente</p>
-          </details>
-        </ol>
-      </details>
-      <details>
-        <summary>🟡 Nichtlineare Projektionen</summary>
-        <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.
-        UMAP (Uniform Manifold Approximation and Projection)
-        „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
-        T-SNE (t-distributed Stochastic Neighbor Embedding)
-        „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
-        nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung
-        „Eigene Embedding Spaces erstellen & visualisieren  
-        Zur Visualisierung bietet sich die t-SNE-Plot-Implementierung in sklearn an:  
-        from sklearn.manifold import TSNE  
-        import matplotlib.pyplot as plt  
-        tsne = TSNE(n_components=2, random_state=42)  
-        points_2d = tsne.fit_transform(embeddings)  
-        plt.scatter(points_2d[:,0], points_2d[:,1])  
-        plt.title("Embedding Space Visualisierung")  
-        plt.show()“ (Wehner, 2026)
-        </i></p>
-        <ol type="1">
-          <details>
-            <summary>🟡 t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
-            <p><i>t-SNE projiziert hochdimensionale Daten auf 2-3 Dimensionen und bewahrt dabei lokale Nachbarschaften. Ideal zur Visualisierung von Clustern und Gruppen.</i></p>
-            <div style="margin-left: 2em;">
-              <code>sklearn (TSNE)</code><br><br>
-            </div>
-            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
-          </details>
-          <details>
-            <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
-            <p><i>UMAP ist eine moderne Alternative zu t-SNE, die schneller und skalierbarer ist. Es bewahrt sowohl lokale als auch globale Strukturen besser.
-            </i></p>
-            <div style="margin-left: 2em;">
-              <code>umap-learn</code><br><br>
-            </div>
-            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
-          </details>
-        </ol>
-      </details>
-    </ol>
-  </details>
-</ol>
-
-
   
 
 #### Modellbewertung ()
@@ -651,6 +645,26 @@ Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
           </ul>
   </details>
 </ol>
+
+
+
+###### Pipeline Ausgabe (engl. pipeline output)
+
+Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
+Scores, Labels, Logits und .
+______________
+### 🔵 Datennachverarbeitung (engl. data post-processing)
+Post-Processing macht Daten nutzbar.
+
+Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
+<img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
+
+### 🔵 Merkmalszusammenfassung (engl. feature aggregation)
+Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben, in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
+
+**Merkmalsanalyse** untersucht und beschreibt die in der Merkmalsaufbereitung erstellten Merkmale. Während die **Merkmalsaufbereitung** (Phase Datenverarbeitung) konstruktiv arbeitet und Merkmale schafft, arbeitet die **Merkmalsanalyse** (Phase Datennachverarbeitung) analytisch und interpretiert diese Merkmale für Entscheidungsträger.
+
+- **Merkmalsanalyse (engl. feature analysis)**: Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden. Merkmalsanalyse basiert auf Merkmalsbeschreibungen und erfolgt typischerweise in der Datennachverarbeitung.
 
 
 #### Merkmalsanalyse (engl. feature analysis)
@@ -686,24 +700,7 @@ Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
   </details>
 </ol>
 
-###### Pipeline Ausgabe (engl. pipeline output)
-
-Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
-Scores, Labels, Logits und .
-______________
-### 🔵 Datennachverarbeitung (engl. data post-processing)
-Post-Processing macht Daten nutzbar.
-
-Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
-<img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
-
-### 🔵 Merkmalszusammenfassung (engl. feature aggregation)
-Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben, in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
-
-**Merkmalsanalyse** untersucht und beschreibt die in der Merkmalsaufbereitung erstellten Merkmale. Während die **Merkmalsaufbereitung** (Phase Datenverarbeitung) konstruktiv arbeitet und Merkmale schafft, arbeitet die **Merkmalsanalyse** (Phase Datennachverarbeitung) analytisch und interpretiert diese Merkmale für Entscheidungsträger.
-
-- **Merkmalsanalyse (engl. feature analysis)**: Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden. Merkmalsanalyse basiert auf Merkmalsbeschreibungen und erfolgt typischerweise in der Datennachverarbeitung.
-
+merkmalsinterpretation
 
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
