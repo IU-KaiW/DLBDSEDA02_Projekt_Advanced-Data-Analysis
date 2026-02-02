@@ -473,6 +473,8 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen" (Zheng und Casari, 2019, p. 40).
 
 
+#### Modellbildung (engl. model training/building)
+
 #### Merkmalslernen (engl. feature learning / representation learning)
 <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
 
@@ -501,6 +503,14 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
               <code>sklearn (NMF)</code><br><br>
             </div>
             <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
+          </details>
+          <details>
+            <summary>🟡 BERTopic</summary>
+            <p><i></i></p>
+            <div style="margin-left: 2em;">
+              <code></code><br><br>
+            </div>
+            <p><b>Output:</b> </p>
           </details>
         </ol>
       </details>
@@ -532,22 +542,26 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
               <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
             </div>
           </details>
-          <details>
-            <summary>🟡 Satz-Einbettungen (engl. sentence embeddings)</summary>
-            <p><i>Satzeinbettungen repräsentieren ganze Sätze oder Dokumente als einzelne dichte Vektoren.</i></p>
-            <ul>
-              <li>Sentence-BERT (SBERT)</li>
-              <li>Contextualized Sentence Embeddings</li>
-            </ul>
-            <div style="margin-left: 2em;">
-              <code>sentence-transformers</code><br><br>
-            </div>
-          </details>
         </ol>
       </details>
     </ol>
   </details>
 </ol>
+<ol type="1">
+  <details>
+    <summary>🟡 Hybride Methoden (engl. hybrid methods)</summary>
+    <p><i>Hybride Methoden kombinieren Aspekte von Merkmalsabstraktion und Merkmalsprojektion. Sie führen semantische Transformationen durch, funktionieren aber gleichzeitig als mathematische Projektionen, was sie an der Grenze zwischen beiden Ansätzen positioniert.</i></p>
+    <ol type="1">
+      <details>
+        <summary>🟡 Latent Semantic Analysis (LSA)</summary>
+        <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion und erzeugt gleichzeitig interpretierbare latente Konzepte.</i></p>
+        <div style="margin-left: 2em;">
+          <code>sklearn (TruncatedSVD)</code><br><br>
+        </div>
+        <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
+      </details>
+    </ol>
+  </details>
 
 <ol type="1">
   <details>
@@ -613,22 +627,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
   </details>
 </ol>
 
-<ol type="1">
-  <details>
-    <summary>🟡 Hybride Methoden (engl. hybrid methods)</summary>
-    <p><i>Hybride Methoden kombinieren Aspekte von Merkmalsabstraktion und Merkmalsprojektion. Sie führen semantische Transformationen durch, funktionieren aber gleichzeitig als mathematische Projektionen, was sie an der Grenze zwischen beiden Ansätzen positioniert.</i></p>
-    
-    <ol type="1">
-      <details>
-        <summary>🟡 Latent Semantic Analysis (LSA)</summary>
-        <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion und erzeugt gleichzeitig interpretierbare latente Konzepte.</i></p>
-        <div style="margin-left: 2em;">
-          <code>sklearn (TruncatedSVD)</code><br><br>
-        </div>
-        <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
-      </details>
-    </ol>
-  </details>
+
   
 
 #### Modellbewertung ()
@@ -666,6 +665,15 @@ Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
       </li>
       <li><ins>Lernbasierte Erkennung</ins><br>
       <i>Verwendung von trainierten Modellen zur automatischen Mustererkennung und Klassifikation.</i>
+        <ol type="1">
+          <details>
+            <summary>🟡 KeyBERT (Keyword/Term Extraction)</summary>
+            <p><i>KeyBERT extrahiert automatisch interpretierbare Schlüsselwörter aus Dokumenten durch semantische Ähnlichkeit von BERT-Embeddings und ermöglicht so die schnelle Identifikation dominanter Begriffe in Textsammlungen.</i></p>
+            <div style="margin-left: 2em;">
+              <code>keybert</code>&nbsp;<code>sentence-transformers</code><br><br>
+            </div>
+          </details>
+        </ol>
         <div style="margin-left: 2em;">
           <code>sklearn (Clustering, Classification)</code>&nbsp;<code>K-Means, DBSCAN</code><br><br>
         </div>
