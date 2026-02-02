@@ -420,6 +420,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
               <li>GloVe (Global Vectors for Word Representation)</li>
               <li>Word2Vec</li>
               <li>FastText</li>
+              - sind STATISCHE EMBEDDINGS „übersetzen jedes Wort zu einem festen Vektor – unabhängig vom Kontext, in dem es steht.“ (Wehner, 2026)„Das Training erfolgt auf riesigen Textkorpora. Die Modelle lernen, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen“ (Wehner, 2026)vSprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden hier noch nicht abgebildet.“ (Wehner, 2026)
             </ul>
             <div style="margin-left: 2em;">
               <code>gensim</code> <code>sentence-transformers</code><br>
@@ -428,6 +429,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             <ul>
               <li>ELMo (Embeddings from Language Models)</li>
               <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+              „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)„Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)
               <li>GPT (Generative Pre-trained Transformer)</li>
             </ul>
             <div style="margin-left: 2em;">
@@ -471,56 +473,152 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen" (Zheng und Casari, 2019, p. 40).
 
 
-
 #### Merkmalslernen (engl. feature learning / representation learning)
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale (Mappings) aus den vorhandenen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt.</i></p>
-abstrakte (latente) Features.
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Merkmalslernen lässt sich in zwei Ansätze unterteilen:</i></p>
 
-Modell lernt ein Mapping
-
-Merkmalslernen = das generelle Konzept (Modelle lernen Features)
-
+<ul>
+  <li><b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings)</li>
+  <li><b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
+</ul>
 
 <ol type="1">
   <details>
-    <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
-    <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert.</i></p>
+    <summary>🟡 Merkmalsabstraktion (engl. feature abstraction)</summary>
+    <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.</i></p>
     <ol type="1">
       <details>
-        <summary>🟡  Merkmalsextraktion (engl. feature extraction)</summary>
-        <ul>
-          <li><ins>Latent Dirichlet Allocation (LDA) </ins></li>
-          Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert.<br><br>
-          <div style="margin-left: 2em;">
-            <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
-          </div>
-          <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
-        </li>
-        </ul>
+        <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
+        <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert.</i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 Latent Dirichlet Allocation (LDA)</summary>
+            <p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA ist eine probabilistische Merkmalsabstraktion, die interpretierbare Themen erzeugt.</i></p>
+            <div style="margin-left: 2em;">
+              <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
+            </div>
+            <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+          </details>
+          <details>
+            <summary>🟡 Non-Negative Matrix Factorization (NMF)</summary>
+            <p><i>Non-Negative Matrix Factorization (NMF) zerlegt die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten. Jedes Dokument ist eine Kombination von Basistopics, ähnlich LDA, aber deterministisch statt probabilistisch.</i></p>
+            <div style="margin-left: 2em;">
+              <code>sklearn (NMF)</code><br><br>
+            </div>
+            <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
+          </details>
+        </ol>
       </details>
       <details>
-        <summary>🟡 Merkmalsumwandlung (engl. feature transformation)</summary>        
-        <ul>
-          <li><ins>Latent Semantic Analysis (LSA)</ins></li>
-          Latent Semantic Analysis (LSA) transformiert die Merkmalsmatrix durch Singulärwertzerlegung (SVD), um versteckte semantische Dimensionen zu identifizieren. Die Anzahl der Themen (k) muss optimal gewählt werden.<br><br>
-          <div style="margin-left: 2em;">
-           <code>sklearn (TruncatedSVD)</code><br><br>
-          </div>
-          <p><b>Evaluation-Metriken:</b> Silhouettenkoeffizient, Themenkohärenz (Topic Coherence), Perplexity</p>
-        </ul>
-        </li>
+        <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
+        <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 Vorhersagebasierte Wort-Einbettungen</summary>
+            <p><i>Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.</i></p>
+            <ul>
+              <li>Word2Vec (Skip-gram, CBOW)</li>
+              <li>GloVe (Global Vectors for Word Representation)</li>
+              <li>FastText</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>gensim</code>&nbsp;<code>sentence-transformers</code><br><br>
+            </div>
+          </details>
+          <details>
+            <summary>🟡 Kontextbasierte Wort-Einbettungen</summary>
+            <p><i>Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.</i></p>
+            <ul>
+              <li>ELMo (Embeddings from Language Models)</li>
+              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+              <li>GPT (Generative Pre-trained Transformer)</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
+            </div>
+          </details>
+          <details>
+            <summary>🟡 Satz-Einbettungen (engl. sentence embeddings)</summary>
+            <p><i>Satzeinbettungen repräsentieren ganze Sätze oder Dokumente als einzelne dichte Vektoren.</i></p>
+            <ul>
+              <li>Sentence-BERT (SBERT)</li>
+              <li>Contextualized Sentence Embeddings</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>sentence-transformers</code><br><br>
+            </div>
+          </details>
+        </ol>
+      </details>
+    </ol>
+  </details>
+</ol>
+
+<ol type="1">
+  <details>
+    <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
+    <p><i>Merkmalsprojektion transformiert hochdimensionale Features auf neue mathematische Achsen. Die neuen Dimensionen sind mathematische Kombinationen der originalen Features, nicht semantisch interpretierbar, aber nützlich für Visualisierung oder Dimensionsreduktion.</i></p>
+    
+    <ol type="1">
+      <details>
+        <summary>🟡 Lineare Projektionen</summary>
+        <p><i>Lineare Projektionen reduzieren Dimensionen durch orthogonale Transformationen, die Varianzrichtungen im Datenraum erfassen.</i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 Principal Component Analysis (PCA)</summary>
+            <p><i>PCA findet die Hauptkomponenten (Richtungen maximaler Varianz) in den Daten und projiziert Features auf diese Achsen.</i></p>
+            <div style="margin-left: 2em;">
+              <code>sklearn (PCA)</code><br><br>
+            </div>
+            <p><b>Output:</b> K Hauptkomponenten, Varianzanteil pro Komponente</p>
+          </details>
+          <details>
+            <summary>🟡 Latent Semantic Analysis (LSA) – Hybrid</summary>
+            <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion.</i></p>
+            <div style="margin-left: 2em;">
+              <code>sklearn (TruncatedSVD)</code><br><br>
+            </div>
+            <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
+          </details>
+        </ol>
       </details>
       <details>
+        <summary>🟡 Nichtlineare Projektionen</summary>
+        <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.</i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 t-distributed Stochastic Neighbor Embedding (t-SNE)</summary>
+            <p><i>t-SNE projiziert hochdimensionale Daten auf 2-3 Dimensionen und bewahrt dabei lokale Nachbarschaften. Ideal zur Visualisierung von Clustern und Gruppen.</i></p>
+            <div style="margin-left: 2em;">
+              <code>sklearn (TSNE)</code><br><br>
+            </div>
+            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
+          </details>
+          <details>
+            <summary>🟡 Uniform Manifold Approximation and Projection (UMAP)</summary>
+            <p><i>UMAP ist eine moderne Alternative zu t-SNE, die schneller und skalierbarer ist. Es bewahrt sowohl lokale als auch globale Strukturen besser.</i></p>
+            <div style="margin-left: 2em;">
+              <code>umap-learn</code><br><br>
+            </div>
+            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
+          </details>
+        </ol>
+      </details>
+    </ol>
+  </details>
+<ol type="1">
+  <details>
     <summary>🟡 Andere Repräsentationen</summary>
     <p><i>XXXXX</i></p>
     <ol type="1">
       <details>
         <summary>🟡 Lineare Transformationen (PCA)</summary>
+        PCA-Modell (Hauptkomponentenanalyse)
+        „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
         <ul>
           <li><ins>Lcccc</ins></li>
           XXXXX<br><br>
           <div style="margin-left: 2em;">
-            <code>XXXXX</code>&nbsp;<code>cccc</code><br><br>
+            <code>sklearn (PCA)</code>&nbsp;<code>cccc</code><br><br>
           </div>
           <p><b>CCCCC</p>
         </li>
@@ -529,8 +627,22 @@ Merkmalslernen = das generelle Konzept (Modelle lernen Features)
       </details>
       <details>
         <summary>🟡 Nichtlineare Transformationen (T-SNE, UMAP)</summary>
+        UMAP (Uniform Manifold Approximation and Projection)
+        „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
+        T-SNE (t-distributed Stochastic Neighbor Embedding)
+        „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
+        nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung
+        „Eigene Embedding Spaces erstellen & visualisieren  
+        Zur Visualisierung bietet sich die t-SNE-Plot-Implementierung in sklearn an:  
+        from sklearn.manifold import TSNE  
+        import matplotlib.pyplot as plt  
+        tsne = TSNE(n_components=2, random_state=42)  
+        points_2d = tsne.fit_transform(embeddings)  
+        plt.scatter(points_2d[:,0], points_2d[:,1])  
+        plt.title("Embedding Space Visualisierung")  
+        plt.show()“ (Wehner, 2026)
         <ul>
-          <li><ins>T-SNE,</ins></li>
+          <li><ins>sklearn (T-SNE),</ins></li>
           XXXXX<br><br>
           <div style="margin-left: 2em;">
             <code>XXXXX</code>&nbsp;<code>cccc</code><br><br>
@@ -540,7 +652,6 @@ Merkmalslernen = das generelle Konzept (Modelle lernen Features)
         </ul>
     </ol>
   </details>
-</ol>
 
 #### Modellbewertung ()
 Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
