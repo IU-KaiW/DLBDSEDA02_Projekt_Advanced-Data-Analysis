@@ -532,8 +532,39 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
           </details>
         </ol>
       </details>
-      Output: Interpretierbare Themen
-
+      Output: Interpretierbare Themen 
+  <details>
+        <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
+        <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 Vorhersagebasierte Wort-Einbettungen</summary>
+            <p><i>Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.</i></p>
+            <ul>
+              <li>Word2Vec (Skip-gram, CBOW)</li>
+              <li>GloVe (Global Vectors for Word Representation)</li>
+              <li>FastText</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>gensim</code>&nbsp;<code>sentence-transformers</code><br><br>
+            </div>
+          </details>
+          <details>
+            <summary>🟡 Kontextbasierte Wort-Einbettungen</summary>
+            <p><i>Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.</i></p>
+            <ul>
+              <li>ELMo (Embeddings from Language Models)</li>
+              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+              <li>GPT (Generative Pre-trained Transformer)</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
+            </div>
+          </details>
+        </ol>
+      </details>
+    </ol>
+  </details>
 <ol type="1">
   <details>
     <summary>🟡 Dimensionsreduktion </summary>
@@ -590,38 +621,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
       </details>
     </ol>
   </details>
-  Output: Neue mathematische Achsen (nicht interpretierbar)</ol>      <details>
-        <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
-        <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
-        <ol type="1"> Test 1
-          <details>
-            <summary>🟡 Vorhersagebasierte Wort-Einbettungen</summary>
-            <p><i>Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.</i></p>
-            <ul>
-              <li>Word2Vec (Skip-gram, CBOW)</li>
-              <li>GloVe (Global Vectors for Word Representation)</li>
-              <li>FastText</li>
-            </ul>
-            <div style="margin-left: 2em;">
-              <code>gensim</code>&nbsp;<code>sentence-transformers</code><br><br>
-            </div>
-          </details>
-          <details>
-            <summary>🟡 Kontextbasierte Wort-Einbettungen</summary>
-            <p><i>Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.</i></p>
-            <ul>
-              <li>ELMo (Embeddings from Language Models)</li>
-              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
-              <li>GPT (Generative Pre-trained Transformer)</li>
-            </ul>
-            <div style="margin-left: 2em;">
-              <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
-            </div>
-          </details>
-        </ol>
-      </details>
-    </ol>
-  </details>
+  Output: Neue mathematische Achsen (nicht interpretierbar)</ol>     
 </ol>
 
   
