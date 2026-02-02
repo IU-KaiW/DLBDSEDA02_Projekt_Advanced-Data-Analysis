@@ -479,7 +479,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 #### Merkmalslernen (engl. feature learning / representation learning)
 <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
-
+unüberwacht, Clustering.
 <ol type="1">
   <details>
       <summary>🟡 Themenmodellemodelle/Themenmodellierung (engl. topic modeling)</summary>
@@ -619,43 +619,56 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
   
 #### Modellabstimung (engl. model calibration)
-Hyperparameter, 
-##### Modellbewertung ()
-Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
-    <i>Modellauswertung (engl. model evaluation)<i>
-              <ul>
-            <li>Kohärenz (engl. coherence)</li>
-            „The Gensim library provides a class that implements the four most famous coherence models: _u_mass, c_v, c_uci, cnpmi. So, let’s break them into fundamental pieces.“ (Pedro, 2022)
-Coherence Score (Hauptmetrik)
-u_mass, c_v, c_uci, c_npmi (verschiedene Berechnungsmethoden)
-Bewertet: Semantische Konsistenz der Top-Wörter pro Thema
-Höher = besser
-              <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br><br>
-              </div>
-            <li>Perplexität (engl. perplexity)</li>
-            xxx
-              <div style="margin-left: 2em;">
-                <code>???</code>&nbsp;<code>????</code><br><br>
-              </div>
-          </ul>
+Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren wie Grid Search oder Random Search.
+
+##### Modellbewertung (engl. model evaluation)
+Modellbewertungen erfolgen durch **intrinsische oder extrinsische Metriken**, abhängig vom ML-Aufgabentyp:
+
+- **Extrinsische Metriken**: Für überwachtes Lernen – vergleichen Modellvorhersagen mit bekannter Ground Truth
+- **Intrinsische Metriken**: Für unüberwachtes Lernen – bewerten innere Struktur der Lösung ohne externe Labels
+
+
+<ol type="1">
+  <details>
+    <summary>🟡 Intrinsische Metriken</summary>
+    <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
+    <ol type="1">
+      <details>
+        <summary>🟡 Coherence Score (Kohärenz)</summary>
+        <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
+        <ul>
+          <li><b>u_mass</b>: Interne Kohärenz</li>
+          <li><b>c_v</b>: Externe Konsistenz (empfohlen)</li>
+          <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
+        </ul>
+        <div style="margin-left: 2em;">
+          <code>gensim.models.CoherenceModel</code><br>
+          <b>Bereich:</b> -1 bis 1 (höher = besser)
+        </div>
+      </details>
+      <details>
+        <summary>🟡 Perplexity (Verwirrung)</summary>
+        <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin.</i></p>
+        <div style="margin-left: 2em;">
+          <code>gensim</code>&nbsp;<code>torchmetrics</code><br>
+          <b>Bereich:</b> 0 bis ∞ (niedriger = besser)
+        </div>
+      </details>
+      <details>
+        <summary>🟡 Topic Diversity</summary>
+        <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
+      </details>
+    </ol>
+  </details>
+  <details>
+    <summary>🟡 Extrinsische Metriken</summary>
+    <p><i>Bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks (z.B. Klassifikation, Named Entity Recognition).</i></p>
+    <ul>
+      <li>Accuracy, Precision, Recall, F1-Score</li>
+      <li>GLUE/SuperGLUE Benchmarks (für Sprachmodelle)</li>
+    </ul>
   </details>
 </ol>
-
-Evaluation (engl. evaluation)
-
-Modellanalysen (engl. model analysis)
-Modelanalysen prüfen interne Nutzung von Features und ermöglichen Optimierungen.
-
-Metriken (engl. metrics)
-
-Perplexität (engl. Perplexity)
-Fremdmodell - torchmetrics
-
-Kohärenz (engl. Coherence)
-Diese Methode misst, wie sinnvoll und konsistent die entdeckten Themen sind. Ein kohärentes Thema besteht aus Wörtern, die häufig zusammen in einem Kontext vorkommen und semantisch sinnvoll sind. Kohärenz wird oft genutzt, um die menschliche Interpretationsfähigkeit der Themen zu bewerten. 
-
-(iu. - DLBDSEDA01_D - Synthea)
 
 
 
