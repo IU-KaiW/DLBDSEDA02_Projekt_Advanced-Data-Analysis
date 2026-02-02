@@ -474,6 +474,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 
 #### Modellbildung (engl. model training/building)
+<p><i>Modellbildung ist der Prozess, in dem die Merkmalslernen-Modelle mit den vorbereiteten Daten trainiert werden. Dabei werden die Modellparameter iterativ optimiert, um optimale Features zu lernen. Der Trainingsprozess umfasst die Festlegung von Hyperparametern (z.B. Anzahl der Themen K, Lernrate, Iterationen), die Initialisierung des Modells und die iterative Anpassung der Parameter bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.</i></p>
 
 #### Merkmalslernen (engl. feature learning / representation learning)
 <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
@@ -486,31 +487,51 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
     <ol type="1">
       <details>
         <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
-        <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert.</i></p>
+        <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
         <ol type="1">
           <details>
-            <summary>🟡 LDA (Latent Dirichlet Allocation)</summary>
-            <p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA ist eine probabilistische Merkmalsabstraktion, die interpretierbare Themen erzeugt.</i></p>
-            <div style="margin-left: 2em;">
-              <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
-            </div>
-            <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+            <summary>🟡 Abstraktion-basierte Modelle</summary>
+            <p><i>Abstraktion-basierte Topic-Modelle erzeugen neue interpretierbare Konzepte direkt aus Merkmalsmatrizen oder Embeddings. Sie transformieren die Input-Features semantisch und ergeben neue Bedeutungsdimensionen.</i></p>
+            <ol type="1">
+              <details>
+                <summary>🟡 LDA (Latent Dirichlet Allocation)</summary>
+                <p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA ist eine probabilistische Merkmalsabstraktion, die interpretierbare Themen erzeugt.</i></p>
+                <div style="margin-left: 2em;">
+                  <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
+                </div>
+                <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+              </details>
+              <details>
+                <summary>🟡 NMF (Non-Negative Matrix Factorization)</summary>
+                <p><i>Non-Negative Matrix Factorization (NMF) zerlegt die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten. Jedes Dokument ist eine Kombination von Basistopics, ähnlich LDA, aber deterministisch statt probabilistisch.</i></p>
+                <div style="margin-left: 2em;">
+                  <code>sklearn (NMF)</code><br><br>
+                </div>
+                <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
+              </details>
+              <details>
+                <summary>🟡 BERTopic</summary>
+                <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.</i></p>
+                <div style="margin-left: 2em;">
+                  <code>bertopic</code>&nbsp;<code>sentence-transformers</code>&nbsp;<code>umap-learn</code><br><br>
+                </div>
+                <p><b>Output:</b> Topic-Label pro Dokument, Wort-Gewichte pro Topic, Cluster-Visualisierung</p>
+              </details>
+            </ol>
           </details>
           <details>
-            <summary>🟡 NMF (Non-Negative Matrix Factorization)</summary>
-            <p><i>Non-Negative Matrix Factorization (NMF) zerlegt die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten. Jedes Dokument ist eine Kombination von Basistopics, ähnlich LDA, aber deterministisch statt probabilistisch.</i></p>
-            <div style="margin-left: 2em;">
-              <code>sklearn (NMF)</code><br><br>
-            </div>
-            <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
-          </details>
-          <details>
-            <summary>🟡 BERTopic</summary>
-            <p><i></i></p>
-            <div style="margin-left: 2em;">
-              <code></code><br><br>
-            </div>
-            <p><b>Output:</b> </p>
+            <summary>🟡 Projektion-basierte Modelle</summary>
+            <p><i>Projektion-basierte Topic-Modelle nutzen mathematische Projektionen (wie SVD), um neue Dimensionen aus der Merkmalsmatrix zu extrahieren. Obwohl sie durch mathematische Transformationen arbeiten, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren.</i></p>
+            <ol type="1">
+              <details>
+                <summary>🟡 LSA (Latent Semantic Analysis)</summary>
+                <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA erzeugt interpretierbare Themen ähnlich LDA und NMF, funktioniert aber durch mathematische Projektion. Dies macht LSA effektiv und effizient für Topic Modeling bei Textsammlungen.</i></p>
+                <div style="margin-left: 2em;">
+                  <code>sklearn (TruncatedSVD)</code><br><br>
+                </div>
+                <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
+              </details>
+            </ol>
           </details>
         </ol>
       </details>
@@ -547,21 +568,6 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
     </ol>
   </details>
 </ol>
-<ol type="1">
-  <details>
-    <summary>🟡 Hybride Methoden (engl. hybrid methods)</summary>
-    <p><i>Hybride Methoden kombinieren Aspekte von Merkmalsabstraktion und Merkmalsprojektion. Sie führen semantische Transformationen durch, funktionieren aber gleichzeitig als mathematische Projektionen, was sie an der Grenze zwischen beiden Ansätzen positioniert.</i></p>
-    <ol type="1">
-      <details>
-        <summary>🟡 Latent Semantic Analysis (LSA)</summary>
-        <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion und erzeugt gleichzeitig interpretierbare latente Konzepte.</i></p>
-        <div style="margin-left: 2em;">
-          <code>sklearn (TruncatedSVD)</code><br><br>
-        </div>
-        <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
-      </details>
-    </ol>
-  </details>
 
 <ol type="1">
   <details>
@@ -615,7 +621,8 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
           </details>
           <details>
             <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
-            <p><i>UMAP ist eine moderne Alternative zu t-SNE, die schneller und skalierbarer ist. Es bewahrt sowohl lokale als auch globale Strukturen besser.</i></p>
+            <p><i>UMAP ist eine moderne Alternative zu t-SNE, die schneller und skalierbarer ist. Es bewahrt sowohl lokale als auch globale Strukturen besser.
+            </i></p>
             <div style="margin-left: 2em;">
               <code>umap-learn</code><br><br>
             </div>
