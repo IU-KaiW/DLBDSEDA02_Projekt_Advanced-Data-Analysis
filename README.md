@@ -474,17 +474,13 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 
 #### Merkmalslernen (engl. feature learning / representation learning)
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Merkmalslernen lässt sich in zwei Ansätze unterteilen:</i></p>
-
-<ul>
-  <li><b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings)</li>
-  <li><b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
-</ul>
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Merkmalslernen lässt sich in zwei Ansätze unterteilen: Abstraktion und Projektion</i></p>
 
 <ol type="1">
   <details>
     <summary>🟡 Merkmalsabstraktion (engl. feature abstraction)</summary>
     <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.</i></p>
+  <li><b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings)</li>
     <ol type="1">
       <details>
         <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
@@ -557,7 +553,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
   <details>
     <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
     <p><i>Merkmalsprojektion transformiert hochdimensionale Features auf neue mathematische Achsen. Die neuen Dimensionen sind mathematische Kombinationen der originalen Features, nicht semantisch interpretierbar, aber nützlich für Visualisierung oder Dimensionsreduktion.</i></p>
-    
+      <li><b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
     <ol type="1">
       <details>
         <summary>🟡 Lineare Projektionen</summary>
@@ -565,7 +561,10 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         <ol type="1">
           <details>
             <summary>🟡 Principal Component Analysis (PCA)</summary>
-            <p><i>PCA findet die Hauptkomponenten (Richtungen maximaler Varianz) in den Daten und projiziert Features auf diese Achsen.</i></p>
+            <p><i>PCA findet die Hauptkomponenten (Richtungen maximaler Varianz) in den Daten und projiziert Features auf diese Achsen.
+              PCA-Modell (Hauptkomponentenanalyse)
+        „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
+            </i></p>
             <div style="margin-left: 2em;">
               <code>sklearn (PCA)</code><br><br>
             </div>
@@ -583,7 +582,22 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
       </details>
       <details>
         <summary>🟡 Nichtlineare Projektionen</summary>
-        <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.</i></p>
+        <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.
+        UMAP (Uniform Manifold Approximation and Projection)
+        „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
+        T-SNE (t-distributed Stochastic Neighbor Embedding)
+        „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
+        nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung
+        „Eigene Embedding Spaces erstellen & visualisieren  
+        Zur Visualisierung bietet sich die t-SNE-Plot-Implementierung in sklearn an:  
+        from sklearn.manifold import TSNE  
+        import matplotlib.pyplot as plt  
+        tsne = TSNE(n_components=2, random_state=42)  
+        points_2d = tsne.fit_transform(embeddings)  
+        plt.scatter(points_2d[:,0], points_2d[:,1])  
+        plt.title("Embedding Space Visualisierung")  
+        plt.show()“ (Wehner, 2026)
+        </i></p>
         <ol type="1">
           <details>
             <summary>🟡 t-distributed Stochastic Neighbor Embedding (t-SNE)</summary>
@@ -603,53 +617,6 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
           </details>
         </ol>
       </details>
-    </ol>
-  </details>
-<ol type="1">
-  <details>
-    <summary>🟡 Andere Repräsentationen</summary>
-    <p><i>XXXXX</i></p>
-    <ol type="1">
-      <details>
-        <summary>🟡 Lineare Transformationen (PCA)</summary>
-        PCA-Modell (Hauptkomponentenanalyse)
-        „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
-        <ul>
-          <li><ins>Lcccc</ins></li>
-          XXXXX<br><br>
-          <div style="margin-left: 2em;">
-            <code>sklearn (PCA)</code>&nbsp;<code>cccc</code><br><br>
-          </div>
-          <p><b>CCCCC</p>
-        </li>
-        </ul>
-    </ol>
-      </details>
-      <details>
-        <summary>🟡 Nichtlineare Transformationen (T-SNE, UMAP)</summary>
-        UMAP (Uniform Manifold Approximation and Projection)
-        „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
-        T-SNE (t-distributed Stochastic Neighbor Embedding)
-        „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
-        nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung
-        „Eigene Embedding Spaces erstellen & visualisieren  
-        Zur Visualisierung bietet sich die t-SNE-Plot-Implementierung in sklearn an:  
-        from sklearn.manifold import TSNE  
-        import matplotlib.pyplot as plt  
-        tsne = TSNE(n_components=2, random_state=42)  
-        points_2d = tsne.fit_transform(embeddings)  
-        plt.scatter(points_2d[:,0], points_2d[:,1])  
-        plt.title("Embedding Space Visualisierung")  
-        plt.show()“ (Wehner, 2026)
-        <ul>
-          <li><ins>sklearn (T-SNE),</ins></li>
-          XXXXX<br><br>
-          <div style="margin-left: 2em;">
-            <code>XXXXX</code>&nbsp;<code>cccc</code><br><br>
-          </div>
-          <p><b>CCCCC</p>
-        </li>
-        </ul>
     </ol>
   </details>
 
