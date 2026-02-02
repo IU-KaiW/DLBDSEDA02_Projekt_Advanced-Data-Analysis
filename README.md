@@ -415,6 +415,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           Semi-explizite Features sind ein Mittelding zwischen explizit und latent. Sie entstehen vor allem bei Word Embeddings (Word2Vec, GloVe, FastText, BERT, ELMo):
           </i></p>
           <ul>
+          <li><ins>Wort-Einbettungen (engl. word embeddings)</ins></li>
           <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
             <ul>
               <li>GloVe (Global Vectors for Word Representation)</li>
@@ -481,7 +482,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 <ol type="1">
   <details>
-      <summary>🟡 Topicmodelle/Themenmodellierung (engl. topic modeling)</summary>
+      <summary>🟡 Themenmodellemodelle/Themenmodellierung (engl. topic modeling)</summary>
         <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
     <ol type="1">
       <details>
@@ -567,10 +568,8 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
   </details>
 <ol type="1">
   <details>
-    <summary>🟡 Dimensionsreduktion </summary>
-    <p><i>Dimensionsreduktion transformiert hochdimensionale Features auf neue mathematische Achsen für Visualisierung und Datenanalyse. Die neuen Dimensionen sind nicht semantisch interpretierbar, aber nützlich zur Erkennung von Mustern und Struktur in den Daten. 
-    Merkmalsprojektion transformiert hochdimensionale Features auf neue mathematische Achsen. Die neuen Dimensionen sind mathematische Kombinationen der originalen Features, nicht semantisch interpretierbar, aber nützlich für Visualisierung oder Dimensionsreduktion.</i></p>
-    <b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
+    <summary>🟡 Dimensionsreduktion (engl. dimensionality reduction)</summary>
+    <p><i>Transformiert hochdimensionale Features auf neue mathematische Achsen für Visualisierung und Datenanalyse. Die neuen Dimensionen sind nicht semantisch interpretierbar, aber nützlich zur Strukturerkennung.</i></p>
     <ol type="1">
       <details>
         <summary>🟡 Lineare Projektionen</summary>
@@ -578,16 +577,12 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         <ol type="1">
           <details>
             <summary>🟡 PCA (Principal Component Analysis)</summary>
-            <p><i>PCA findet die Hauptkomponenten (Richtungen maximaler Varianz) in den Daten und projiziert Features auf diese Achsen.
-              PCA-Modell (Hauptkomponentenanalyse)
-              „Die PCA-Projektion (links) zeigt eine dichte Cloud, die sich um den Ursprung dreht, mit vielen Überschneidungen zwischen den verschiedenfarbigen Punkten. Genau das erwarten wir von PCA – sie erfasst die Richtungen der maximalen Varianz in den Daten, schafft es aber nicht, die verschiedenen Personen effektiv voneinander zu trennen. Wir können sehen, dass Gesichter von verschiedenen Leuten (unterschiedliche Farben) komplett durcheinander sind, sodass es fast unmöglich ist, bestimmte Gruppen zu erkennen.“ (Thevapalan, 2025)
-            </i></p>
-            <div style="margin-left: 2em;">
-              <code>sklearn (PCA)</code><br><br>
-            </div>
-            <p><b>Output:</b> K Hauptkomponenten, Varianzanteil pro Komponente</p>
-          </details>
-        </ol>
+          <p><i>Findet Hauptkomponenten (Richtungen maximaler Varianz) und projiziert Features darauf.</i></p>
+          <div style="margin-left: 2em;">
+            <code>sklearn (PCA)</code><br>
+            <b>Output:</b> K Komponenten, Varianzanteil pro Komponente
+          </div>
+        </details>
       </details>
       <details>
         <summary>🟡 Nichtlineare Projektionen</summary>
@@ -602,37 +597,39 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         <ol type="1">
           <details>
             <summary>🟡 t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
-            <p><i>t-SNE projiziert hochdimensionale Daten auf 2-3 Dimensionen und bewahrt dabei lokale Nachbarschaften. Ideal zur Visualisierung von Clustern und Gruppen.</i></p>
+            <p><i>Projiziert auf 2-3 Dimensionen, bewahrt lokale Nachbarschaften. Ideal für Cluster-Visualisierung.</i></p>
             <div style="margin-left: 2em;">
-              <code>sklearn (TSNE)</code><br><br>
+              <code>sklearn (TSNE)</code><br>
+              <b>Output:</b> 2-3D Koordinaten
             </div>
-            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
           </details>
           <details>
             <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
-            <p><i>UMAP ist eine moderne Alternative zu t-SNE, die schneller und skalierbarer ist. Es bewahrt sowohl lokale als auch globale Strukturen besser.
-            </i></p>
+            <p><i>Moderne Alternative zu t-SNE, schneller und skalierbarer. Bewahrt lokale und globale Strukturen.</i></p>
             <div style="margin-left: 2em;">
-              <code>umap-learn</code><br><br>
+              <code>umap-learn</code><br>
+              <b>Output:</b> 2-3D Koordinaten
             </div>
-            <p><b>Output:</b> 2-3D Koordinaten pro Datenpunkt zur Visualisierung</p>
           </details>
         </ol>
       </details>
     </ol>
-  Output: Neue mathematische Achsen (nicht interpretierbar)
   </details>
-</ol>     
 </ol>
 
   
-
-#### Modellbewertung ()
+#### Modellabstimung (engl. model calibration)
+Hyperparameter, 
+##### Modellbewertung ()
 Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
     <i>Modellauswertung (engl. model evaluation)<i>
               <ul>
             <li>Kohärenz (engl. coherence)</li>
             „The Gensim library provides a class that implements the four most famous coherence models: _u_mass, c_v, c_uci, cnpmi. So, let’s break them into fundamental pieces.“ (Pedro, 2022)
+Coherence Score (Hauptmetrik)
+u_mass, c_v, c_uci, c_npmi (verschiedene Berechnungsmethoden)
+Bewertet: Semantische Konsistenz der Top-Wörter pro Thema
+Höher = besser
               <div style="margin-left: 2em;">
                 <code>???</code>&nbsp;<code>????</code><br><br>
               </div>
@@ -644,6 +641,21 @@ Kohärenz/Perplexity (bewertet die Features) bewertung der erzeuugten Features.
           </ul>
   </details>
 </ol>
+
+Evaluation (engl. evaluation)
+
+Modellanalysen (engl. model analysis)
+Modelanalysen prüfen interne Nutzung von Features und ermöglichen Optimierungen.
+
+Metriken (engl. metrics)
+
+Perplexität (engl. Perplexity)
+Fremdmodell - torchmetrics
+
+Kohärenz (engl. Coherence)
+Diese Methode misst, wie sinnvoll und konsistent die entdeckten Themen sind. Ein kohärentes Thema besteht aus Wörtern, die häufig zusammen in einem Kontext vorkommen und semantisch sinnvoll sind. Kohärenz wird oft genutzt, um die menschliche Interpretationsfähigkeit der Themen zu bewerten. 
+
+(iu. - DLBDSEDA01_D - Synthea)
 
 
 
@@ -731,6 +743,9 @@ Datenpräsentation  (engl. data presentation)
     </details>
   </li>
 </ol>
+
+BERTopic-Integrierte Visualisierung
+
 
 Topic Diversity:
 `library 3`
