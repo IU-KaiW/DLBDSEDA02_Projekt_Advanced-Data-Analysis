@@ -477,6 +477,11 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 ### Modellbildung (engl. model training/building)
 <p><i>Modellbildung ist der Prozess, in dem die Merkmalslernen-Modelle mit den vorbereiteten Daten trainiert werden. Dabei werden die Modellparameter iterativ optimiert, um optimale Features zu lernen. Der Trainingsprozess umfasst die Festlegung von Hyperparametern (z.B. Anzahl der Themen K, Lernrate, Iterationen), die Initialisierung des Modells und die iterative Anpassung der Parameter bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.</i></p>
 
+Modellbildung (Modeling): Hier werden lineare Modelle oder neuronale Modelle trainiert, unter Nutzung von Modellparametern (Gewichte) und Hyperparametern (Lernrate, Batchgröße)
+
+Modellparameter / Hyperparameter.
+Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren wie Grid Search oder Random Search.
+
 #### Merkmalslernen (engl. feature learning / representation learning)
 <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
 unüberwacht, Clustering.
@@ -620,7 +625,7 @@ Die Durch das verarbeiteten Daten fließen in die Datennachverarbeitung (engl. d
 Scores, Labels, Logits und .
 
 ### Modellabstimung (engl. model calibration)
-Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren wie Grid Search oder Random Search.
+Anpassung der Modellbildung
 
 ##### Modellbewertung (engl. model evaluation)
 Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intrinsische oder extrinsische Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.
@@ -677,13 +682,13 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
 ### 🔵 Merkmalszusammenfassung (engl. feature aggregation)
 Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben, in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
+#### Merkmalsanalyse (engl. feature analysis)
+<p><i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i></p>
+
 **Merkmalsanalyse** untersucht und beschreibt die in der Merkmalsaufbereitung erstellten Merkmale. Während die **Merkmalsaufbereitung** (Phase Datenverarbeitung) konstruktiv arbeitet und Merkmale schafft, arbeitet die **Merkmalsanalyse** (Phase Datennachverarbeitung) analytisch und interpretiert diese Merkmale für Entscheidungsträger.
 
 - **Merkmalsanalyse (engl. feature analysis)**: Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden. Merkmalsanalyse basiert auf Merkmalsbeschreibungen und erfolgt typischerweise in der Datennachverarbeitung.
 
-
-#### Merkmalsanalyse (engl. feature analysis)
-<p><i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i></p>
 
 <ol type="1">
   <details>
@@ -715,7 +720,6 @@ Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausg
   </details>
 </ol>
 
-merkmalsinterpretation
 
 Datenauswertung (engl. data analysis)
 Datenpräsentation  (engl. data presentation)
@@ -737,10 +741,8 @@ Datenpräsentation  (engl. data presentation)
     <details>
       <summary>🔵 Visualisierung (engl. visualization)</summary>
       <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
-
       Themenverteilungen; Top-Wörter pro Thema
-
-
+      BERTopic-Integrierte Visualisierung
       <div style="margin-left: 2em;">
         <code>???</code>&nbsp;<code>????</code><br><br>
       </div>
@@ -748,11 +750,11 @@ Datenpräsentation  (engl. data presentation)
   </li>
 </ol>
 
-BERTopic-Integrierte Visualisierung
 
 
-Topic Diversity:
-`library 3`
+
+#### 🔵 Datenverständnis (engl. data understanding)
+Dateninterpretation / domänenspezifische Interpretation
 
 ______________
 
