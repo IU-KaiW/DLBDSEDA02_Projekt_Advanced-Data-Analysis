@@ -673,16 +673,19 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
 </ol>
 
 ______________
-### 🔵 Datennachverarbeitung (engl. data post-processing)
+### Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
 
 Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
 <img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
 
-### 🔵 Merkmalszusammenfassung (engl. feature aggregation)
+#### 🔵 Merkmalszusammenfassung (engl. (feature) aggregation)
 Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben, in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
-#### Merkmalsanalyse (engl. feature analysis)
+alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.
+
+
+#### 🔵 Merkmalsanalyse (engl. feature analysis)
 <p><i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i></p>
 
 **Merkmalsanalyse** untersucht und beschreibt die in der Merkmalsaufbereitung erstellten Merkmale. Während die **Merkmalsaufbereitung** (Phase Datenverarbeitung) konstruktiv arbeitet und Merkmale schafft, arbeitet die **Merkmalsanalyse** (Phase Datennachverarbeitung) analytisch und interpretiert diese Merkmale für Entscheidungsträger.
@@ -692,7 +695,7 @@ Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausg
 
 <ol type="1">
   <details>
-    <summary>🟡 Merkmalserkennung (engl. feature recognition) – Pattern-Erkennung</summary>
+    <summary>🔵 Merkmalserkennung (engl. feature recognition) – Pattern-Erkennung</summary>
     <p><i>Merkmalserkennung identifiziert spezifische Muster, Anomalien oder Strukturen in bereits erzeugten oder gelernten Features durch regelbasierte oder lernbasierte Verfahren.</i></p>
     <ol type="1">
       <li><ins>Regelbasierte Erkennung</ins><br>
@@ -722,38 +725,22 @@ Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausg
 
 
 Datenauswertung (engl. data analysis)
-Datenpräsentation  (engl. data presentation)
 <div style="margin-left: 2em;">
   <code>???</code>&nbsp;<code>???</code><br>
 </div>
 
 #### 🔵 Merkmalsauswertungen (engl. feature )
-
-<ol>
-    <details>
-      <summary>🔵 Aggregation (engl. aggregation)</summary>
-      <p><i>alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.</i></p>
-      <div style="margin-left: 2em;">
-        <code>???</code>&nbsp;<code>????</code><br><br>
-      </div>
-    <ol>
-    </details>
-    <details>
-      <summary>🔵 Visualisierung (engl. visualization)</summary>
+Datenpräsentation  (engl. data presentation)
+🔵 Visualisierung (engl. visualization)
       <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
       Themenverteilungen; Top-Wörter pro Thema
       BERTopic-Integrierte Visualisierung
       <div style="margin-left: 2em;">
-        <code>???</code>&nbsp;<code>????</code><br><br>
+        <code>PyLDAvis</code>&nbsp;<code>BERTopic</code><br><br>
       </div>
-    </details>
-  </li>
-</ol>
 
 
-
-
-#### 🔵 Datenverständnis (engl. data understanding)
+### Datenverständnis (engl. data understanding)
 Dateninterpretation / domänenspezifische Interpretation
 
 ______________
