@@ -533,6 +533,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         </ol>
       </details>
       Output: Interpretierbare Themen
+
 <ol type="1">
   <details>
     <summary>🟡 Dimensionsreduktion </summary>
@@ -589,13 +590,10 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
       </details>
     </ol>
   </details>
-  Output: Neue mathematische Achsen (nicht interpretierbar)
-</ol>
-
-      <details>
+  Output: Neue mathematische Achsen (nicht interpretierbar)</ol>      <details>
         <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
         <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
-        <ol type="1">
+        <ol type="1"> Test 1
           <details>
             <summary>🟡 Vorhersagebasierte Wort-Einbettungen</summary>
             <p><i>Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.</i></p>
