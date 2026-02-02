@@ -448,8 +448,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
   </details>
 </ol>
 
-Merkmalsraum
-
 #### Merkmalsauswahl (engl. feature selection)
 <p><i>Merkmalsauswahl ist ein komplementärer Prozess zur Merkmalsgenerierung. Nach der Erzeugung von Features werden die relevantesten Merkmale aus dem bestehenden Merkmalsraum ausgewählt, um Redundanz zu reduzieren, Overfitting zu vermeiden und die Modellleistung zu optimieren.</i></p>
       <ol type="1">
@@ -475,8 +473,13 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 
 #### Merkmalslernen (engl. feature learning / representation learning)
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt.</i></p>
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale (Mappings) aus den vorhandenen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt.</i></p>
 abstrakte (latente) Features.
+
+Modell lernt ein Mapping
+
+Merkmalslernen = das generelle Konzept (Modelle lernen Features)
+
 
 <ol type="1">
   <details>
@@ -507,6 +510,34 @@ abstrakte (latente) Features.
         </ul>
         </li>
       </details>
+      <details>
+    <summary>🟡 Andere Repräsentationen</summary>
+    <p><i>XXXXX</i></p>
+    <ol type="1">
+      <details>
+        <summary>🟡 Lineare Transformationen (PCA)</summary>
+        <ul>
+          <li><ins>Lcccc</ins></li>
+          XXXXX<br><br>
+          <div style="margin-left: 2em;">
+            <code>XXXXX</code>&nbsp;<code>cccc</code><br><br>
+          </div>
+          <p><b>CCCCC</p>
+        </li>
+        </ul>
+    </ol>
+      </details>
+      <details>
+        <summary>🟡 Nichtlineare Transformationen (T-SNE, UMAP)</summary>
+        <ul>
+          <li><ins>T-SNE,</ins></li>
+          XXXXX<br><br>
+          <div style="margin-left: 2em;">
+            <code>XXXXX</code>&nbsp;<code>cccc</code><br><br>
+          </div>
+          <p><b>CCCCC</p>
+        </li>
+        </ul>
     </ol>
   </details>
 </ol>
