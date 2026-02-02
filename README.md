@@ -620,8 +620,9 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
         </ol>
       </details>
     </ol>
+  Output: Neue mathematische Achsen (nicht interpretierbar)
   </details>
-  Output: Neue mathematische Achsen (nicht interpretierbar)</ol>     
+</ol>     
 </ol>
 
   
