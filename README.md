@@ -480,7 +480,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
   <details>
     <summary>🟡 Merkmalsabstraktion (engl. feature abstraction)</summary>
     <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.</i></p>
-  <li><b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings)</li>
+    <b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings)</li>
     <ol type="1">
       <details>
         <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
@@ -553,7 +553,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
   <details>
     <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
     <p><i>Merkmalsprojektion transformiert hochdimensionale Features auf neue mathematische Achsen. Die neuen Dimensionen sind mathematische Kombinationen der originalen Features, nicht semantisch interpretierbar, aber nützlich für Visualisierung oder Dimensionsreduktion.</i></p>
-      <li><b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
+    <b>Merkmalsprojektion:</b> Modelle transformieren Features auf neue mathematische Achsen (z.B. PCA, T-SNE)</li>
     <ol type="1">
       <details>
         <summary>🟡 Lineare Projektionen</summary>
