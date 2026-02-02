@@ -481,33 +481,25 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 
 <ol type="1">
   <details>
-    <summary>🟡 Merkmalsabstraktion (engl. feature abstraction)</summary>
-    <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.</i></p>
-    <b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings)</li>
+      <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
+        <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
     <ol type="1">
       <details>
-        <summary>🟡 Themenmodellierung (engl. topic modeling)</summary>
-        <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
+        <summary>🟡 Merkmalsabstraktion (engl. feature abstraction)</summary>
+        <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.</i></p>
+        <b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings)</li>
         <ol type="1">
           <details>
-            <summary>🟡 Abstraktion-basierte Modelle</summary>
-            <p><i>Abstraktion-basierte Topic-Modelle erzeugen neue interpretierbare Konzepte direkt aus Merkmalsmatrizen oder Embeddings. Sie transformieren die Input-Features semantisch und ergeben neue Bedeutungsdimensionen.</i></p>
+            <summary>🟡 Abstraktion-basiert (semantische Konzepte)</summary>
+            <p><i>Abstraktion-basierte Topic-Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren semantische Themen durch komplexe statistische oder neuronale Prozesse.</i></p>
             <ol type="1">
               <details>
                 <summary>🟡 LDA (Latent Dirichlet Allocation)</summary>
-                <p><i>Latent Dirichlet Allocation (LDA) extrahiert direkt latente Themen aus der Merkmalsmatrix, indem es wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA ist eine probabilistische Merkmalsabstraktion, die interpretierbare Themen erzeugt.</i></p>
+                <p><i>Latent Dirichlet Allocation (LDA) ist ein probabilistisches Modell, das latente Themen aus der Merkmalsmatrix durch wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA erzeugt interpretierbare Themen mit probabilistischen Zuordnungen zu Dokumenten und Wörtern.</i></p>
                 <div style="margin-left: 2em;">
                   <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
                 </div>
                 <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
-              </details>
-              <details>
-                <summary>🟡 NMF (Non-Negative Matrix Factorization)</summary>
-                <p><i>Non-Negative Matrix Factorization (NMF) zerlegt die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten. Jedes Dokument ist eine Kombination von Basistopics, ähnlich LDA, aber deterministisch statt probabilistisch.</i></p>
-                <div style="margin-left: 2em;">
-                  <code>sklearn (NMF)</code><br><br>
-                </div>
-                <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
               </details>
               <details>
                 <summary>🟡 BERTopic</summary>
@@ -520,12 +512,20 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
             </ol>
           </details>
           <details>
-            <summary>🟡 Projektion-basierte Modelle</summary>
-            <p><i>Projektion-basierte Topic-Modelle nutzen mathematische Projektionen (wie SVD), um neue Dimensionen aus der Merkmalsmatrix zu extrahieren. Obwohl sie durch mathematische Transformationen arbeiten, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren.</i></p>
+            <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
+            <p><i>Projektion-basierte Topic-Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren.</i></p>
             <ol type="1">
               <details>
+                <summary>🟡 NMF (Non-Negative Matrix Factorization)</summary>
+                <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>
+                <div style="margin-left: 2em;">
+                  <code>sklearn (NMF)</code><br><br>
+                </div>
+                <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
+              </details>
+              <details>
                 <summary>🟡 LSA (Latent Semantic Analysis)</summary>
-                <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA erzeugt interpretierbare Themen ähnlich LDA und NMF, funktioniert aber durch mathematische Projektion. Dies macht LSA effektiv und effizient für Topic Modeling bei Textsammlungen.</i></p>
+                <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
                 <div style="margin-left: 2em;">
                   <code>sklearn (TruncatedSVD)</code><br><br>
                 </div>
