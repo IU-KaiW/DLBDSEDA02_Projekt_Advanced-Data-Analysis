@@ -611,16 +611,24 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
       </details>
     </ol>
   </details>
- <ol type="1">
+</ol>
+
+<ol type="1">
+  <details>
+    <summary>🟡 Hybride Methoden (engl. hybrid methods)</summary>
+    <p><i>Hybride Methoden kombinieren Aspekte von Merkmalsabstraktion und Merkmalsprojektion. Sie führen semantische Transformationen durch, funktionieren aber gleichzeitig als mathematische Projektionen, was sie an der Grenze zwischen beiden Ansätzen positioniert.</i></p>
+    
+    <ol type="1">
       <details>
-        <summary>🟡 Hybride Projektionen</summary>
-        <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion.</i></p>
-            <div style="margin-left: 2em;">
-              <code>sklearn (TruncatedSVD)</code><br><br>
-            </div>
-            <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
-        </details>
-  </ol>
+        <summary>🟡 Latent Semantic Analysis (LSA)</summary>
+        <p><i>LSA kombiniert Aspekte von Merkmalsabstraktion und -projektion: Durch Singulärwertzerlegung (SVD) werden semantische Dimensionen extrahiert. LSA wird oft für Topic Modeling eingesetzt, funktioniert aber als mathematische Projektion und erzeugt gleichzeitig interpretierbare latente Konzepte.</i></p>
+        <div style="margin-left: 2em;">
+          <code>sklearn (TruncatedSVD)</code><br><br>
+        </div>
+        <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
+      </details>
+    </ol>
+  </details>
   
 
 #### Modellbewertung ()
