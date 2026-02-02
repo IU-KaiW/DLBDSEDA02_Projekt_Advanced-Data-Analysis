@@ -474,7 +474,7 @@ Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen" (Zheng und Casari, 2019, p. 40).
 
 
-#### Modellbildung (engl. model training/building)
+### Modellbildung (engl. model training/building)
 <p><i>Modellbildung ist der Prozess, in dem die Merkmalslernen-Modelle mit den vorbereiteten Daten trainiert werden. Dabei werden die Modellparameter iterativ optimiert, um optimale Features zu lernen. Der Trainingsprozess umfasst die Festlegung von Hyperparametern (z.B. Anzahl der Themen K, Lernrate, Iterationen), die Initialisierung des Modells und die iterative Anpassung der Parameter bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.</i></p>
 
 #### Merkmalslernen (engl. feature learning / representation learning)
@@ -587,17 +587,13 @@ unüberwacht, Clustering.
       <details>
         <summary>🟡 Nichtlineare Projektionen</summary>
         <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.
-        UMAP (Uniform Manifold Approximation and Projection)
-        „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
-        T-SNE (t-distributed Stochastic Neighbor Embedding)
-        „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
-        nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung
-        „Eigene Embedding Spaces erstellen & visualisieren 
         </i></p>
         <ol type="1">
           <details>
             <summary>🟡 t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
             <p><i>Projiziert auf 2-3 Dimensionen, bewahrt lokale Nachbarschaften. Ideal für Cluster-Visualisierung.</i></p>
+            T-SNE (t-distributed Stochastic Neighbor Embedding) „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
+            nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung „Eigene Embedding Spaces erstellen & visualisieren
             <div style="margin-left: 2em;">
               <code>sklearn (TSNE)</code><br>
               <b>Output:</b> 2-3D Koordinaten
@@ -606,6 +602,7 @@ unüberwacht, Clustering.
           <details>
             <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
             <p><i>Moderne Alternative zu t-SNE, schneller und skalierbarer. Bewahrt lokale und globale Strukturen.</i></p>
+            UMAP (Uniform Manifold Approximation and Projection) „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
             <div style="margin-left: 2em;">
               <code>umap-learn</code><br>
               <b>Output:</b> 2-3D Koordinaten
@@ -621,8 +618,8 @@ unüberwacht, Clustering.
 
 Die Durch das verarbeiteten Daten fließen in die Datennachverarbeitung (engl. data post-processing) ein.
 Scores, Labels, Logits und .
-  
-#### Modellabstimung (engl. model calibration)
+
+### Modellabstimung (engl. model calibration)
 Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren wie Grid Search oder Random Search.
 
 ##### Modellbewertung (engl. model evaluation)
