@@ -370,7 +370,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
     <ol type="1">
         <details>
           <summary>🟡 Merkmalsvektoren (engl. feature vectors)</summary>
-          <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden mit und ohne Informationsgewichtung diffrenziert wird.
+          <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden mit und ohne Informationsgewichtung diffrenziert wird.</i></p>
           <ul>
           <li><ins>BoX (Bag-of-X)</ins></li>
           Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wird eine eigene Dimension zugewiesen.<br>
@@ -455,20 +455,20 @@ Merkmalsraum
       <ol type="1">
         <details>
           <summary>🟡 Filtermethoden</summary>
+          <p><i>wählen Features basierend auf statistischen Eigenschaften (z.B. Korrelation, Chi-Quadrat)</i></p>
         </details>
+        <details>
+          <summary>🟡 Wrapper-Methoden</summary>
+          <p><i>evaluieren Feature-Subsets durch Modelltraining</i></p>
+        </details>
+        <details>
+          <summary>🟡 Eingebettete Methoden</summary>
+          <p><i>wählen Features während des Modelltrainings aus (z.B. Lasso, Tree-based)</i></p>
+        </details>
+        <div style="margin-left: 2em;">
+          <code>sklearn (SelectKBest, SelectPercentile, RFE)</code><br><br>
+        </div> 
       </ol>
-
-**Bekannte Techniken:**
-<ul>
-  <li><ins>Filtermethoden</ins> – wählen Features basierend auf statistischen Eigenschaften (z.B. Korrelation, Chi-Quadrat)</li>
-  <li><ins>Wrapper-Methoden</ins> – evaluieren Feature-Subsets durch Modelltraining</li>
-  <li><ins>Eingebettete Methoden</ins> – wählen Features während des Modelltrainings aus (z.B. Lasso, Tree-based)</li>
-</ul>
-
-<div style="margin-left: 2em;">
-  <code>sklearn (SelectKBest, SelectPercentile, RFE)</code><br><br>
-</div> 
-
 Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
 „Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen" (Zheng und Casari, 2019, p. 40).
 
