@@ -617,16 +617,16 @@ unüberwacht, Clustering.
   </details>
 </ol>
 
+###### Pipeline Ausgabe (engl. pipeline output)
+
+Die Durch das verarbeiteten Daten fließen in die Datennachverarbeitung (engl. data post-processing) ein.
+Scores, Labels, Logits und .
   
 #### Modellabstimung (engl. model calibration)
 Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren wie Grid Search oder Random Search.
 
 ##### Modellbewertung (engl. model evaluation)
-Modellbewertungen erfolgen durch **intrinsische oder extrinsische Metriken**, abhängig vom ML-Aufgabentyp:
-
-- **Extrinsische Metriken**: Für überwachtes Lernen – vergleichen Modellvorhersagen mit bekannter Ground Truth
-- **Intrinsische Metriken**: Für unüberwachtes Lernen – bewerten innere Struktur der Lösung ohne externe Labels
-
+Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intrinsische oder extrinsische Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.
 
 <ol type="1">
   <details>
@@ -634,7 +634,7 @@ Modellbewertungen erfolgen durch **intrinsische oder extrinsische Metriken**, ab
     <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
     <ol type="1">
       <details>
-        <summary>🟡 Coherence Score (Kohärenz)</summary>
+        <summary>🟡 Kohärenz (engl. coherence)</summary>
         <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
         <ul>
           <li><b>u_mass</b>: Interne Kohärenz</li>
@@ -647,7 +647,7 @@ Modellbewertungen erfolgen durch **intrinsische oder extrinsische Metriken**, ab
         </div>
       </details>
       <details>
-        <summary>🟡 Perplexity (Verwirrung)</summary>
+        <summary>🟡 Verwirrung (engl. perplexity)</summary>
         <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin.</i></p>
         <div style="margin-left: 2em;">
           <code>gensim</code>&nbsp;<code>torchmetrics</code><br>
@@ -655,7 +655,7 @@ Modellbewertungen erfolgen durch **intrinsische oder extrinsische Metriken**, ab
         </div>
       </details>
       <details>
-        <summary>🟡 Topic Diversity</summary>
+        <summary>🟡 Themenvielfalt (engl. topic diversity)</summary>
         <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
       </details>
     </ol>
@@ -670,12 +670,6 @@ Modellbewertungen erfolgen durch **intrinsische oder extrinsische Metriken**, ab
   </details>
 </ol>
 
-
-
-###### Pipeline Ausgabe (engl. pipeline output)
-
-Die verarbeiteten Daten fließen in die Datenkonsolidierung ein.
-Scores, Labels, Logits und .
 ______________
 ### 🔵 Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
