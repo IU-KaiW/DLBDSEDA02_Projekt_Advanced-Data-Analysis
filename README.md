@@ -16,7 +16,23 @@ Bibiliotheken - Funktionen
 
 - Clustering von Beschwerden.
 
-„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
+## Projektstruktur
+### Ordnerstruktur
+```markdown
+├── dataset/   # gewählter Datensatz
+├─────────────── / complaints_data.csv
+├─────────────── / complaints_data_cleaned.csv
+├── src/       # Python-Module
+├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
+├─────────────── / Datenverarbeitung (engl. data processing)
+├─────────────── / Datennachverarbeitung (engl. data post-processing)
+├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
+├─────────────── / 1 -
+├─────────────── / 2 - 
+├─────────────── / 3 - 
+├─────────────── / X - 
+└── README.md
+```
 
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
@@ -482,6 +498,9 @@ Modellbildung (Modeling): Hier werden lineare Modelle oder neuronale Modelle tra
 Modellparameter / Hyperparameter.
 Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren wie Grid Search oder Random Search.
 
+
+„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
+
 #### Merkmalslernen (engl. feature learning / representation learning)
 <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
 unüberwacht, Clustering.
@@ -829,23 +848,6 @@ aufgerufen werden.[^15]<br>
 
 </ul>
 
-## Projektstruktur
-### Ordnerstruktur
-```markdown
-├── dataset/   # gewählter Datensatz
-├─────────────── / complaints_data.csv
-├─────────────── / complaints_data_cleaned.csv
-├── src/       # Python-Module
-├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
-├─────────────── / Datenverarbeitung (engl. data processing)
-├─────────────── / Datennachverarbeitung (engl. data post-processing)
-├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
-├─────────────── / 1 -
-├─────────────── / 2 - 
-├─────────────── / 3 - 
-├─────────────── / X - 
-└── README.md
-```
 
 
 
@@ -911,23 +913,4 @@ Formatierung
 [^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
 [^14]: Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 [^15]: Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib as mpl
-import seaborn as sns
-import spacy as sp
-import nltk 
-import sklearn as
-import gensim as
-import torch 
-import transformers
-import pyLDAvis as
-import wordcloud as wc 
-import top2vec as t2v 
-import re
-import csv
-import venv
-```
 
