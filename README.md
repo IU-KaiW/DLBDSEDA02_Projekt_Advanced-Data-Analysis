@@ -41,20 +41,14 @@ Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsu
 ### Vorbereitende Installation (engl. preparatory setup)
 
 ###### Laufzeitumgebung (engl. runtime environment)
-Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung, welche über
+Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Für die bestmögliche Kompatibilität habe ich mich für einen hybriden Ansatz entschieden. 
+Hybrid-Ansatz: Große wissenschaftliche Pakete via conda, spezialisierte via pip
+mit PyTorch und spaCy habe ich mich für "conda" entschieden.
 
 ```console
-`pip install conda`
-```
-oder 
-
-```console
-`pip install venv?`
-```
-installiert werden können.
-
 `conda env create -f environment.yml
 conda activate ada-project`
+```
 
 
 ###### Datenvalidierung (engl. data validation)
