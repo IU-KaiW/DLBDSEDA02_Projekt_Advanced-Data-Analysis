@@ -36,7 +36,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 ```
 
 ## Installation (engl. setup)
-Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wird Visual Studio Code (VSCode) genutzt.
+Als Programmiersprache wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wird Visual Studio Code (VSCode) genutzt.
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
@@ -586,7 +586,7 @@ unüberwacht, Clustering.
                 <div style="margin-left: 2em;">
                   <code>sklearn (TruncatedSVD)</code><br><br>
                 </div>
-                <p><b>Output:</b> K latente Dimensionen, Singular Values, K LSA-Komponenten</p>
+                <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
               </details>
             </ol>
           </details>
@@ -594,8 +594,8 @@ unüberwacht, Clustering.
       Output: Interpretierbare Themen 
   </details>
   <details>
-        <summary>🟡 Einbettungen</summary>
-        <p><i>Wort, Satz, X EInbettungen</i></p>
+        <summary>🟡 Einbettungen (engl. embeddings)</summary>
+        <p><i>Wort, Satz, X Einbettungen</i></p>
         <ol type="1">
           <details>
             <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
@@ -604,21 +604,23 @@ unüberwacht, Clustering.
               <li>Vorhersagebasierte Wort-Einbettungen</li>
               Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.
               Word2Vec (Skip-gram, CBOW); GloVe (Global Vectors for Word Representation), FastText
-              <li>Kontextbasierte Wort-Einbettungen</li>
+              <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
               Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.
-              <li>ELMo (Embeddings from Language Models); BERT (Bidirectional Encoder Representations from Transformers), GPT (Generative Pre-trained Transformer)</li>
+              <li>ELMo (Embeddings from Language Models); BERT (Bidirectional Encoder Representations from Transformers)</li>
+              <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
+              Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
+              <li>GPT (Generative Pre-trained Transformer)</li>
             </ul>
             <div style="margin-left: 2em;">
               <code>gensim</code>&nbsp;<code>sentence-transformers</code><br><br>
             </div>
           </details>
           <details>
-            <summary>🟡 Satzeinbettungen</summary>
+            <summary>🟡 Satzeinbettungen (engl. sentence embeddings)</summary>
             <p><i>xxx</i></p>
             <ul>
-              <li>xxx</li>
-              <li>xxx</li>
-              <li>xxx</li>
+              <li><b>Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)</li>
+              <li><b>Autoregressive/Generative Modelle:</b> GPT (Generative Pre-trained Transformer)</li>
             </ul>
             <div style="margin-left: 2em;">
               <code>xxx</code>&nbsp;<code>xxx</code><br><br>
