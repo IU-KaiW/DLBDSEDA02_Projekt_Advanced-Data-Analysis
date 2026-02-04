@@ -53,6 +53,10 @@ oder
 ```
 installiert werden können.
 
+`conda env create -f environment.yml
+conda activate ada-project`
+
+
 ###### Datenvalidierung (engl. data validation)
 Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein damit das Skript den Datensatz durch das externe Modul "AITextDetector.py" verarbeiten kann.
 <ul>
