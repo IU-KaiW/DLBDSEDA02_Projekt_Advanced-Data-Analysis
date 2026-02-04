@@ -12,9 +12,9 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 </div>
 
 Bibiliotheken - Funktionen
-<div style="margin-left: 2em;">
-  <code><paketname>.<funktionsname>(<funktionsargumente>)</code>&nbsp;
-</div>
+
+`<paketname>.<funktionsname>(<funktionsargumente>)`
+
 
 - Clustering von Beschwerden.
 
