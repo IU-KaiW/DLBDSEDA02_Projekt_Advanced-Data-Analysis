@@ -12,7 +12,9 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 </div>
 
 Bibiliotheken - Funktionen
-<paketname>.<funktionsname>(<funktionsargumente>)
+<div style="margin-left: 2em;">
+  <code><paketname>.<funktionsname>(<funktionsargumente>)</code>&nbsp;
+</div>
 
 - Clustering von Beschwerden.
 
@@ -22,11 +24,11 @@ Bibiliotheken - Funktionen
 ├── dataset/   # gewählter Datensatz
 ├─────────────── / complaints_data.csv
 ├─────────────── / complaints_data_cleaned.csv
-├── src/       # Python-Module
+├── src/       # Python-Skripte
 ├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
 ├─────────────── / Datenverarbeitung (engl. data processing)
 ├─────────────── / Datennachverarbeitung (engl. data post-processing)
-├── docs/      # Übersichten (Datensatzauswertungen, Pipeline, Installation)
+├── docs/      # Übersichten (Datensatzauswertungen, Pipeline)
 ├─────────────── / 1 -
 ├─────────────── / 2 - 
 ├─────────────── / 3 - 
