@@ -677,11 +677,6 @@ unüberwacht, Clustering.
   </details>
 </ol>
 
-###### Pipeline Ausgabe (engl. pipeline output)
-
-Die Durch das verarbeiteten Daten fließen in die Datennachverarbeitung (engl. data post-processing) ein.
-Scores, Labels, Logits und .
-
 ### Modellabstimung (engl. model calibration)
 Anpassung der Modellbildung
 
@@ -730,6 +725,9 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
   </details>
 </ol>
 
+###### Pipeline Ausgabe (engl. pipeline output)
+
+Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Labels oder Logits die Datennachverarbeitung (engl. data post-processing) ein.
 ______________
 ### Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
