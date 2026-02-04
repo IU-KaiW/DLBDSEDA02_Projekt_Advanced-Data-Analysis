@@ -11,7 +11,6 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
   <code>Bibliothek 1</code>&nbsp;<code>Bibliotek 2</code><br>
 </div>
 
-Bibiliotheken - Funktionen
 
 `<paketname>.<funktionsname>(<funktionsargumente>)`
 
@@ -534,6 +533,9 @@ Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität d
 
 „Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
 
+Overfitting
+Um overfitting zu vermeiden wird der Datensatz für das Training auf xxx Zeilen begrenzt.
+
 #### Merkmalslernen (engl. feature learning / representation learning)
 <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
 unüberwacht, Clustering.
@@ -623,6 +625,39 @@ unüberwacht, Clustering.
       </details>
     </ol>
   </details>
+  <details>
+        <summary>🟡 Einbettungen</summary>
+        <p><i>Wort, Satz, X EInbettungen</i></p>
+        <ol type="1">
+          <details>
+            <summary>🟡 Worteinbettungen</summary>
+            <p><i></i></p>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>xx</code>&nbsp;<code>xxx</code><br><br>
+            </div>
+          </details>
+          <details>
+            <summary>🟡 Satzeinbettungen</summary>
+            <p><i>xxx</i></p>
+            <ul>
+              <li>xxx</li>
+              <li>xxx</li>
+              <li>xxx</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>xxx</code>&nbsp;<code>xxx</code><br><br>
+            </div>
+          </details>
+        </ol>
+      </details>
+    </ol>
+  </details>
+
 <ol type="1">
   <details>
     <summary>🟡 Dimensionsreduktion (engl. dimensionality reduction)</summary>
