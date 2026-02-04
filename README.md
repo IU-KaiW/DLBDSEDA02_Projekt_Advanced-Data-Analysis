@@ -27,7 +27,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 ├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
 ├─────────────── / Datenverarbeitung (engl. data processing)
 ├─────────────── / Datennachverarbeitung (engl. data post-processing)
-├── docs/      # Übersichten (Datensatzauswertungen, Pipeline)
+├── docs/      # Übersichten (Arbeitsunterlagen, Datensatzauswertungen, Pipeline)
 ├─────────────── / 1 -
 ├─────────────── / 2 - 
 ├─────────────── / 3 - 
@@ -65,6 +65,7 @@ Python in einer Version 3.8+
 ```
 Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
+_________________________________________________________________________________________________________________________________________________________
 
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzvorverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
@@ -218,6 +219,8 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
       <i>Im Rahmen der Datensatzvalisierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt um Datenqualität und Aussagekraft zu sichern.</i><br>
     </details>
 </ol>
+
+_________________________________________________________________________________________________________________________________________________________
 
 ## Datenverarbeitung (engl. data processing)
 Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
