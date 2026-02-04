@@ -34,8 +34,39 @@ Bibiliotheken - Funktionen
 └── README.md
 ```
 
+## Installation (engl. setup)
+Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wird Visual Studio Code (VSCode) genutzt.
+
+### Vorbereitende Installation (engl. preparatory setup)
+
+###### Laufzeitumgebung (engl. runtime environment)
+Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung, welche über
+
+```console
+`pip install conda`
+```
+oder 
+
+```console
+`pip install venv?`
+```
+installiert werden können.
+
+###### Datenvalidierung (engl. data validation)
+Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein damit das Skript den Datensatz durch das externe Modul "AITextDetector.py" verarbeiten kann.
+<ul>
+<li><ins>KI Detektor</ins></li>
+Python in einer Version 3.8+
+
+```python
+`pip install transformers`
+`pip install torch`
+```
+Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
+
+
 ## Konzeption
-Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datenvorverarbeitung (engl. data pipeline), Sprachdatenverarbeitung (engl. NLP-Pipeline) sowie die Datennachverarbeitung (engl. data post-processing).
+Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzvorverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
 
 ## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
@@ -763,37 +794,6 @@ Datenpräsentation  (engl. data presentation)
 Dateninterpretation / domänenspezifische Interpretation
 
 ______________
-
-
-## Installation (engl. setup)
-Als Programmiersprsche wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wird Visual Studio Code (VSCode) genutzt.
-
-### Vorbereitende Installation (engl. preparatory setup)
-
-###### Laufzeitumgebung (engl. runtime environment)
-Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung, welche über
-
-```console
-`pip install conda`
-```
-oder 
-
-```console
-`pip install venv?`
-```
-installiert werden können.
-
-###### Datenvalidierung (engl. data validation)
-Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein damit das Skript den Datensatz durch das externe Modul "AITextDetector.py" verarbeiten kann.
-<ul>
-<li><ins>KI Detektor</ins></li>
-Python in einer Version 3.8+
-
-```python
-`pip install transformers`
-`pip install torch`
-```
-Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
 </ul>
 
