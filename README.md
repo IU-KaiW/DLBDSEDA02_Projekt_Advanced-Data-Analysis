@@ -474,7 +474,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <li>FastText</li>
               </ul>
             <div style="margin-left: 2em;">
-              <code>gensim</code> <code>sentence-transformers</code><br>
+              <code>gensim</code> <code>XXX</code><br>
             </div>
                 <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
                 sind dynamische Worteinbettungen.
@@ -500,7 +500,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </ul>
                 </ul>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
-                </ul>
+                <ul>
                 <li>SBERT (Sentence Transformers Embedding)</li>
                   <div style="margin-left: 2em;">
                     <code>sentence-transformers</code><br>
@@ -508,7 +508,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <li>USE Embeddings (Universal Sentence Encoder)</li>
               </ul>
               </ul>
-
                 <div style="margin-left: 2em;">
                   <code>XXX</code>&nbsp;<code>XXX</code>&nbsp;<code>XXX</code><br><br>
                 </div>
