@@ -499,7 +499,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <p><i>Satzeinbettungen weisen jedem Satz einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Sätzen.</i></p>
                 <ul>
                 <li><ins>vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</ins></li>
-                <i>sind STATISCHE EMBEDDINGS auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
+                <i>vorhersagebasierte Satzeinbettungen sind statische Einbettungen auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
                 <ul>
                 <li>SkipThought Embeddings
                   <div style="margin-left: 2em;">
@@ -508,7 +508,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </li>
                 </ul>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
-                <i>sind Satzeinbettungen, die durch Transformer-basierte oder RNN-basierte Modelle erzeugt werden und Satzebenen-Semantik erfassen.</i>
+                <i>kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i>
                 <ul>
                   <li>SBERT (Sentence-BERT)
                     <div style="margin-left: 2em;">
@@ -517,7 +517,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                   </li>
                   <li>ELMo Sentence Embedding
                     <div style="margin-left: 2em;">
-                      <code>transformers</code>&nbsp;<code>tensorflow-hub</code><br><br>
+                      <code>transformers</code>&nbsp;<code>XXX</code><br><br>
                     </div>
                   </li>
                   <li>USE Embedding (Universal Sentence Encoder)
