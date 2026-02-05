@@ -467,7 +467,8 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
                 <ul>
                 <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
-                vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Wehner, 2026).
+                
+  > vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Wehner, 2026).
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                   <div style="margin-left: 2em;">
