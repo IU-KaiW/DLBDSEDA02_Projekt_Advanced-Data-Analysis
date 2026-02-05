@@ -494,23 +494,25 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <p><i>Satzeinbettungen weisen jedem Satz einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Sätzen.</i></p>
                 <ul>
                 <li><ins>vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</ins></li>
+                <i>sind STATISCHE EMBEDDINGS auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
                 <ul>
                 <li>SkipThought Embeddings</li>
                 <li>USE Embeddings (Universal Sentence Encoder)</li>
                 </ul>
-                </ul>
-                <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
-                <ul>
-                <li>SBERT (Sentence Transformers Embedding)</li>
-                  <div style="margin-left: 2em;">
-                    <code>sentence-transformers</code><br>
-                  </div>
-                <li>USE Embeddings (Universal Sentence Encoder)</li>
-              </ul>
-              </ul>
                 <div style="margin-left: 2em;">
-                  <code>XXX</code>&nbsp;<code>XXX</code>&nbsp;<code>XXX</code><br><br>
+                  <code>tensorflow-hub</code>&nbsp;<code>gensim</code><br>
                 </div>
+                <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
+                <i>sind Satzeinbettungen, die durch Transformer-basierte oder RNN-basierte Modelle erzeugt werden und Satzebenen-Semantik erfassen.</i>
+                <ul>
+                  <li>SBERT (Sentence-BERT)</li>
+                  <li>ELMo Sentence Embeddings</li>
+                  <li>Universal Sentence Encoder (USE)</li>
+                </ul>
+                <div style="margin-left: 2em;">
+                  <code>sentence-transformers</code>&nbsp;<code>tensorflow-hub</code><br><br>
+                </div>
+                </ul>
               </details>
             </ol>
     </ul>
