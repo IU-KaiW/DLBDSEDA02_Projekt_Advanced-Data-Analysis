@@ -491,12 +491,15 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
               </details>
               <details>
                 <summary>🟡 <b>Satzeinbettungen </b>(engl. sentence embeddings)</summary>
-                <p><i>BXXXXX</i></p>
+                <p><i>Satzeinbettungen weisen jedem Satz einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Sätzen. Alle Satzeinbettungen sind kontextbasiert (dynamisch) und entstehen durch neuronale Architekturen, die Satzebenen-Semantik in Abhängigkeit vom Satzkontext erfassen.</i></p>
                 <ul>
-              <li>Contextualized Sentence Embedding</li>
-                <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
-                <li>SBERT Embedding</li>
-                <li>ELMo (Embeddings from Language Models)</li>
+                <ul>
+                <li><ins>vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</ins></li>
+                <li>SkipThought Embeddings</li>
+                <li>USE Embeddings (Universal Sentence Encoder)</li>
+                <li><ins>kontextbasierte Satzeinbettunge (engl. contextualized sentence embeddings)</ins></li>
+                <li>SBERT (Sentence Transformers Embedding)</li>
+                <li>USE Embeddings (Universal Sentence Encoder)</li>
                 <li>GPT (Generative Pre-trained Transformer)</li>
               </ul>
             <div style="margin-left: 2em;">
