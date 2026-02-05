@@ -459,36 +459,41 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
       <ol type="1">
         <details>
           <summary>🟡 Merkmalseinbettungen (engl. feature embeddings)</summary>
-          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so die Bedeutungsdimension mittels vorhersage- oder kontextbasierten Verfahren. Worteinbettungen = / Satzeinbettungen = Entstehung duch vortrainierte Modelle.
-          Semi-explizite Features sind ein Mittelding zwischen explizit und latent. Sie entstehen vor allem bei Word Embeddings (Word2Vec, GloVe, FastText, BERT, ELMo):
+          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen (engl. embeddings) weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so statisch oder dynamisch die Bedeutungsdimension mittels vorhersage- oder kontextbasierter Verfahren anhand vortrainierter Modelle auf Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene. Hierdurch werden semi-explizite Merkmale generiert, welche zwischen expliziten und latenten Merkmalen eingeordnet werden müssen.
           </i></p>
           <ul>
-          <li><ins><b>Wort-Einbettungen</b>(engl. word embeddings)</ins></li>
+          <li><ins><b>Worteinbettungen </b>(engl. word embeddings)</ins></li>
+          "Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern."
           <ul>
             <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
+             sind STATISCHE EMBEDDINGS „übersetzen jedes Wort zu einem festen Vektor – unabhängig vom Kontext, in dem es steht.“ (Wehner, 2026)„Das Training erfolgt auf riesigen Textkorpora. Die Modelle lernen, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen“ (Wehner, 2026) Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden hier noch nicht abgebildet.“ (Wehner, 2026)
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                 <li>Word2Vec</li>
                 <li>FastText</li>
-              - sind STATISCHE EMBEDDINGS „übersetzen jedes Wort zu einem festen Vektor – unabhängig vom Kontext, in dem es steht.“ (Wehner, 2026)„Das Training erfolgt auf riesigen Textkorpora. Die Modelle lernen, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen“ (Wehner, 2026)vSprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden hier noch nicht abgebildet.“ (Wehner, 2026)
               </ul>
             <div style="margin-left: 2em;">
               <code>gensim</code> <code>sentence-transformers</code><br>
             </div>
           <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
+          sind dynamische Worteinbet
             <ul>
-              <li>ELMo (Embeddings from Language Models)</li>
               <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
-              „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)„Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)
+              „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)<br>
+              „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)<br>
+              <li>ELMo (Embeddings from Language Models)</li>
               <li>GPT (Generative Pre-trained Transformer)</li>
             </ul>
             <div style="margin-left: 2em;">
               <code>transformers</code> <code>sentence-transformers</code><br>
             </div>
-          <li><ins>Satz-Einbettungen (engl. sentence embeddings)</ins></li>
+          <li><ins><b>Satzeinbettungen </b>(engl. sentence embeddings)</ins></li>
             <ul>
               <li>Contextualized Sentence Embedding</li>
+              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
               <li>SBERT Embedding</li>
+              <li>ELMo (Embeddings from Language Models)</li>
+              <li>GPT (Generative Pre-trained Transformer)</li>
             </ul>
             <div style="margin-left: 2em;">
               <code>sentence-transformers</code><br>
@@ -800,7 +805,7 @@ Datenpräsentation  (engl. data presentation)
       Themenverteilungen; Top-Wörter pro Thema
       BERTopic-Integrierte Visualisierung
       <div style="margin-left: 2em;">
-        <code>PyLDAvis</code>&nbsp;<code>BERTopic</code><br><br>
+        <code>PyLDAvis</code>&nbsp;<code>BERTopic</code>&nbsp;<code>ploty</code><br><br>
       </div>
 
 
@@ -873,7 +878,7 @@ IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Ler
 <br>IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.
 
 ###### Abschlussarbeiten
-Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf
+Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf<br>
 Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
 
 ###### Bücher
