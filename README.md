@@ -497,21 +497,21 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <i>sind STATISCHE EMBEDDINGS auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
                 <ul>
                 <li>SkipThought Embeddings</li>
-                <li>USE Embeddings (Universal Sentence Encoder)</li>
                 </ul>
                 <div style="margin-left: 2em;">
-                  <code>tensorflow-hub</code>&nbsp;<code>gensim</code><br>
+                  <code>XXX</code>&nbsp;<code>gensim</code><br>
                 </div>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
                 <i>sind Satzeinbettungen, die durch Transformer-basierte oder RNN-basierte Modelle erzeugt werden und Satzebenen-Semantik erfassen.</i>
                 <ul>
-                  <li>SBERT (Sentence-BERT)</li>
-                  <li>ELMo Sentence Embeddings</li>
-                  <li>Universal Sentence Encoder (USE)</li>
+                  <li>SBERT (Sentence-BERT)
+                    <div style="margin-left: 2em;">
+                      <code>sentence-transformers</code>&nbsp;<code>XXX</code><br><br>
+                    </div>
+                  </li>
+                  <li>ELMo Sentence Embedding</li>
+                  <li>USE Embedding (Universal Sentence Encoder)</li>
                 </ul>
-                <div style="margin-left: 2em;">
-                  <code>sentence-transformers</code>&nbsp;<code>tensorflow-hub</code><br><br>
-                </div>
                 </ul>
               </details>
             </ol>
