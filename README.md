@@ -461,12 +461,12 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           <summary>🟡 Merkmalseinbettungen (engl. feature embeddings)</summary>
           <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen (engl. embeddings) weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so statisch oder dynamisch die Bedeutungsdimension mittels vorhersage- oder kontextbasierter Verfahren anhand vortrainierter Modelle auf Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene. Hierdurch werden semi-explizite Merkmale generiert, welche zwischen expliziten und latenten Merkmalen eingeordnet werden müssen.
           </i></p>
-          <ul>
-          <li><ins><b>Worteinbettungen </b>(engl. word embeddings)</ins></li>
-          "Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern."
-          <ul>
-            <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
-             sind STATISCHE EMBEDDINGS „übersetzen jedes Wort zu einem festen Vektor – unabhängig vom Kontext, in dem es steht.“ (Wehner, 2026)„Das Training erfolgt auf riesigen Textkorpora. Die Modelle lernen, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen“ (Wehner, 2026) Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden hier noch nicht abgebildet.“ (Wehner, 2026)
+          <ol type="1">
+              <details>
+                <summary>🟡 <ins><b>Worteinbettungen </b>(engl. word embeddings)</ins></summary>
+                <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
+                <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
+                sind STATISCHE EMBEDDINGS „übersetzen jedes Wort zu einem festen Vektor – unabhängig vom Kontext, in dem es steht.“ (Wehner, 2026)„Das Training erfolgt auf riesigen Textkorpora. Die Modelle lernen, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen“ (Wehner, 2026) Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden hier noch nicht abgebildet.“ (Wehner, 2026)
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                 <li>Word2Vec</li>
@@ -475,20 +475,23 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             <div style="margin-left: 2em;">
               <code>gensim</code> <code>sentence-transformers</code><br>
             </div>
-          <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
-          sind dynamische Worteinbet
-            <ul>
-              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
-              „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)<br>
-              „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)<br>
+                <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
+                sind dynamische Worteinbettungen.
+              <ul>
+                <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+                „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)<br>
+                „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)<br>
               <li>ELMo (Embeddings from Language Models)</li>
               <li>GPT (Generative Pre-trained Transformer)</li>
-            </ul>
-            <div style="margin-left: 2em;">
-              <code>transformers</code> <code>sentence-transformers</code><br>
-            </div>
-          <li><ins><b>Satzeinbettungen </b>(engl. sentence embeddings)</ins></li>
-            <ul>
+              </ul>
+                <div style="margin-left: 2em;">
+                  <code>transformers</code> <code>sentence-transformers</code><br>
+                </div>
+              </details>
+              <details>
+                <summary>🟡 <b>Satzeinbettungen </b>(engl. sentence embeddings)</summary>
+                <p><i>BXXXXX</i></p>
+                <ul>
               <li>Contextualized Sentence Embedding</li>
               <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
               <li>SBERT Embedding</li>
@@ -498,6 +501,11 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             <div style="margin-left: 2em;">
               <code>sentence-transformers</code><br>
             </div>
+                <div style="margin-left: 2em;">
+                  <code>XXX</code>&nbsp;<code>XXX</code>&nbsp;<code>XXX</code><br><br>
+                </div>
+              </details>
+            </ol>
     </ul>
       </li>
         </details>
