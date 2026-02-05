@@ -485,9 +485,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <li>ELMo (Embeddings from Language Models)</li>
                 <li>GPT (Generative Pre-trained Transformer)</li>
                 </ul>
-                <div style="margin-left: 2em;">
-                  <code>transformers</code> <code>sentence-transformers</code><br>
-                </div>
+                    <div style="margin-left: 2em;">
+                      <code>transformers</code> <code>sentence-transformers</code><br>
+                    </div>
               </details>
               <details>
                 <summary>🟡 <b>Satzeinbettungen </b>(engl. sentence embeddings)</summary>
@@ -498,9 +498,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <ul>
                 <li>SkipThought Embeddings</li>
                 </ul>
-                <div style="margin-left: 2em;">
-                  <code>XXX</code>&nbsp;<code>gensim</code><br>
-                </div>
+                    <div style="margin-left: 2em;">
+                      <code>XXX</code>&nbsp;<code>gensim</code><br>
+                    </div>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
                 <i>sind Satzeinbettungen, die durch Transformer-basierte oder RNN-basierte Modelle erzeugt werden und Satzebenen-Semantik erfassen.</i>
                 <ul>
