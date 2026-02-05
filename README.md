@@ -478,20 +478,20 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             </div>
                 <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
                 sind dynamische Worteinbettungen.
-              <ul>
+                <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
                 „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)<br>
                 „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)<br>
                 <li>ELMo (Embeddings from Language Models)</li>
                 <li>GPT (Generative Pre-trained Transformer)</li>
-              </ul>
+                </ul>
                 <div style="margin-left: 2em;">
                   <code>transformers</code> <code>sentence-transformers</code><br>
                 </div>
               </details>
               <details>
                 <summary>🟡 <b>Satzeinbettungen </b>(engl. sentence embeddings)</summary>
-                <p><i>Satzeinbettungen weisen jedem Satz einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Sätzen. Alle Satzeinbettungen sind kontextbasiert (dynamisch) und entstehen durch neuronale Architekturen, die Satzebenen-Semantik in Abhängigkeit vom Satzkontext erfassen.</i></p>
+                <p><i>Satzeinbettungen weisen jedem Satz einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Sätzen.</i></p>
                 <ul>
                 <li><ins>vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</ins></li>
                 <ul>
@@ -499,15 +499,16 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <li>USE Embeddings (Universal Sentence Encoder)</li>
                 </ul>
                 </ul>
-                <li><ins>kontextbasierte Satzeinbettunge (engl. contextualized sentence embeddings)</ins></li>
+                <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
                 </ul>
                 <li>SBERT (Sentence Transformers Embedding)</li>
+                  <div style="margin-left: 2em;">
+                    <code>sentence-transformers</code><br>
+                  </div>
                 <li>USE Embeddings (Universal Sentence Encoder)</li>
               </ul>
               </ul>
-            <div style="margin-left: 2em;">
-              <code>sentence-transformers</code><br>
-            </div>
+
                 <div style="margin-left: 2em;">
                   <code>XXX</code>&nbsp;<code>XXX</code>&nbsp;<code>XXX</code><br><br>
                 </div>
