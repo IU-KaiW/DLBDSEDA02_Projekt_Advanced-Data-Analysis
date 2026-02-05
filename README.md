@@ -470,7 +470,13 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 sind STATISCHE EMBEDDINGS „übersetzen jedes Wort zu einem festen Vektor – unabhängig vom Kontext, in dem es steht.“ (Wehner, 2026)„Das Training erfolgt auf riesigen Textkorpora. Die Modelle lernen, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen“ (Wehner, 2026) Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden hier noch nicht abgebildet.“ (Wehner, 2026)
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
+                  <div style="margin-left: 2em;">
+                    <code>XXX</code>&nbsp;<code>XXX</code><br><br>
+                  </div>
                 <li>Word2Vec</li>
+                  <div style="margin-left: 2em;">
+                    <code>XXX</code>&nbsp;<code>XXX</code><br><br>
+                  </div>
                 <li>FastText
                   <div style="margin-left: 2em;">
                     <code>gensim</code>&nbsp;<code>XXX</code><br><br>
@@ -481,9 +487,10 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 sind dynamische Worteinbettungen.
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
-                  <div style="margin-left: 0.5em;">
                     „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026)<br>
                     „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
+                  <div style="margin-left: 2em;">
+                    <code>XXX</code>&nbsp;<code>XXX</code><br><br>
                   </div>
                 </li>
                 <li>ELMo (Embeddings from Language Models)</li>
