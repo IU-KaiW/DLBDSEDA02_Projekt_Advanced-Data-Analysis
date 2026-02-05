@@ -463,7 +463,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           Semi-explizite Features sind ein Mittelding zwischen explizit und latent. Sie entstehen vor allem bei Word Embeddings (Word2Vec, GloVe, FastText, BERT, ELMo):
           </i></p>
           <ul>
-          <li><ins><br>Wort-Einbettungen</br>(engl. word embeddings)</ins></li>
+          <li><ins><b>Wort-Einbettungen</b>(engl. word embeddings)</ins></li>
           <ul>
             <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
               <ul>
