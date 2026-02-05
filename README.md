@@ -606,7 +606,8 @@ unüberwacht, Clustering.
               Word2Vec (Skip-gram, CBOW); GloVe (Global Vectors for Word Representation), FastText
               <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
               Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.
-              <li>ELMo (Embeddings from Language Models); BERT (Bidirectional Encoder Representations from Transformers)</li>
+              <li>ELMo (Embeddings from Language Models)<li>
+              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
               <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
               Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
               <li>GPT (Generative Pre-trained Transformer)</li>
@@ -617,10 +618,14 @@ unüberwacht, Clustering.
           </details>
           <details>
             <summary>🟡 Satzeinbettungen (engl. sentence embeddings)</summary>
-            <p><i>xxx</i></p>
+            <p><i>Kontextbasierte Satz-Einbettungen</i></p>
             <ul>
               <li><b>Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)</li>
-              <li><b>Autoregressive/Generative Modelle:</b> GPT (Generative Pre-trained Transformer)</li>
+              <li><b>Unidirektional Kontextmodelle:</b> GPT (Generative Pre-trained Transformer)</li>
+            </ul>
+             <p><i>Vorhersagebasierte Satz-Einbettungen</i></p>
+            <ul>
+              <li><b>ccc</b> XXX</li>
             </ul>
             <div style="margin-left: 2em;">
               <code>xxx</code>&nbsp;<code>xxx</code><br><br>
