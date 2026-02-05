@@ -463,7 +463,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           </i></p>
           <ol type="1">
               <details>
-                <summary>🟡 <ins><b>Worteinbettungen </b>(engl. word embeddings)</ins></summary>
+                <summary>🟡 <b>Worteinbettungen </b>(engl. word embeddings)</summary>
                 <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
                 <ul>
                 <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
@@ -475,11 +475,11 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                   </div>
                 <li>Word2Vec</li>
                   <div style="margin-left: 2em;">
-                    <code>gensim</code>
+                    <code>gensim</code><br><br>
                   </div>
                 <li>FastText
                   <div style="margin-left: 2em;">
-                    <code>gensim</code>
+                    <code>gensim</code><br><br>
                   </div>
                 </li>
               </ul>
@@ -487,7 +487,8 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 sind dynamische Worteinbettungen.
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
-                    „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026)<br>
+
+  > „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026)<br>
                     „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
                   <div style="margin-left: 2em;">
                     <code>XXX</code>&nbsp;<code>XXX</code><br><br>
