@@ -471,23 +471,28 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                 <li>Word2Vec</li>
-                <li>FastText</li>
+                <li>FastText
+                  <div style="margin-left: 2em;">
+                    <code>gensim</code>&nbsp;<code>XXX</code><br><br>
+                  </div>
+                </li>
               </ul>
-            <div style="margin-left: 2em;">
-              <code>gensim</code> <code>XXX</code><br>
-            </div>
                 <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
                 sind dynamische Worteinbettungen.
                 <ul>
-                <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
-                „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)<br>
-                „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)<br>
+                <li>BERT (Bidirectional Encoder Representations from Transformers)
+                  <div style="margin-left: 0.5em;">
+                    „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026)<br>
+                    „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
+                  </div>
+                </li>
                 <li>ELMo (Embeddings from Language Models)</li>
-                <li>GPT (Generative Pre-trained Transformer)</li>
+                <li>GPT (Generative Pre-trained Transformer)
+                  <div style="margin-left: 2em;">
+                    <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
+                  </div>
+                </li>
                 </ul>
-                    <div style="margin-left: 2em;">
-                      <code>transformers</code> <code>sentence-transformers</code><br>
-                    </div>
               </details>
               <details>
                 <summary>🟡 <b>Satzeinbettungen </b>(engl. sentence embeddings)</summary>
@@ -496,11 +501,12 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <li><ins>vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</ins></li>
                 <i>sind STATISCHE EMBEDDINGS auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
                 <ul>
-                <li>SkipThought Embeddings</li>
+                <li>SkipThought Embeddings
+                  <div style="margin-left: 2em;">
+                    <code>XXX</code>&nbsp;<code>gensim</code><br><br>
+                  </div>
+                </li>
                 </ul>
-                    <div style="margin-left: 2em;">
-                      <code>XXX</code>&nbsp;<code>gensim</code><br>
-                    </div>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
                 <i>sind Satzeinbettungen, die durch Transformer-basierte oder RNN-basierte Modelle erzeugt werden und Satzebenen-Semantik erfassen.</i>
                 <ul>
@@ -509,8 +515,16 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                       <code>sentence-transformers</code>&nbsp;<code>XXX</code><br><br>
                     </div>
                   </li>
-                  <li>ELMo Sentence Embedding</li>
-                  <li>USE Embedding (Universal Sentence Encoder)</li>
+                  <li>ELMo Sentence Embedding
+                    <div style="margin-left: 2em;">
+                      <code>transformers</code>&nbsp;<code>tensorflow-hub</code><br><br>
+                    </div>
+                  </li>
+                  <li>USE Embedding (Universal Sentence Encoder)
+                    <div style="margin-left: 2em;">
+                      <code>tensorflow-hub</code><br><br>
+                    </div>
+                  </li>
                 </ul>
                 </ul>
               </details>
