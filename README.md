@@ -468,13 +468,11 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <ul>
                 <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
                 sind STATISCHE EMBEDDINGS „übersetzen jedes Wort zu einem festen Vektor – unabhängig vom Kontext, in dem es steht.“ (Wehner, 2026)„Das Training erfolgt auf riesigen Textkorpora. Die Modelle lernen, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen“ (Wehner, 2026) Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden hier noch nicht abgebildet.“ (Wehner, 2026)
-                </ul>
-                  <ul>
-                    <li>GloVe (Global Vectors for Word Representation)</li>
-                    <li>Word2Vec</li>
-                    <li>FastText</li>
-                  </ul>
-                </ul>
+              <ul>
+                <li>GloVe (Global Vectors for Word Representation)</li>
+                <li>Word2Vec</li>
+                <li>FastText</li>
+              </ul>
             <div style="margin-left: 2em;">
               <code>gensim</code> <code>sentence-transformers</code><br>
             </div>
@@ -484,8 +482,8 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
                 „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt.“ (Wehner, 2026)<br>
                 „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext.“ (Wehner, 2026)<br>
-              <li>ELMo (Embeddings from Language Models)</li>
-              <li>GPT (Generative Pre-trained Transformer)</li>
+                <li>ELMo (Embeddings from Language Models)</li>
+                <li>GPT (Generative Pre-trained Transformer)</li>
               </ul>
                 <div style="margin-left: 2em;">
                   <code>transformers</code> <code>sentence-transformers</code><br>
@@ -496,11 +494,11 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <p><i>BXXXXX</i></p>
                 <ul>
               <li>Contextualized Sentence Embedding</li>
-              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
-              <li>SBERT Embedding</li>
-              <li>ELMo (Embeddings from Language Models)</li>
-              <li>GPT (Generative Pre-trained Transformer)</li>
-            </ul>
+                <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+                <li>SBERT Embedding</li>
+                <li>ELMo (Embeddings from Language Models)</li>
+                <li>GPT (Generative Pre-trained Transformer)</li>
+              </ul>
             <div style="margin-left: 2em;">
               <code>sentence-transformers</code><br>
             </div>
