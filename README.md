@@ -459,7 +459,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
       <ol type="1">
         <details>
           <summary>🟡 Merkmalseinbettungen (engl. feature embeddings)</summary>
-          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen (engl. embeddings) weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so statisch oder dynamisch die Bedeutungsdimension mittels vorhersage- oder kontextbasierter Verfahren anhand vortrainierter Modelle auf Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene. Hierdurch werden semi-explizite Merkmale generiert, welche zwischen expliziten und latenten Merkmalen eingeordnet werden müssen.
+          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen (engl. embeddings) weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so statisch oder dynamisch die Bedeutungsdimension mittels vorhersage- oder kontextbasierter Verfahren anhand vortrainierter Modelle auf Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene. Hierdurch werden semi-explizite Merkmale generiert, welche zwischen expliziten und latenten Merkmalen einzuordnen sind. Kontextmodelle: 
           </i></p>
           <ol type="1">
               <details>
@@ -467,8 +467,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
                 <ul>
                 <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
-                
-  > vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Wehner, 2026).
+                vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Wehner, 2026).
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                   <div style="margin-left: 2em;">
@@ -486,11 +485,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
               </ul>
                 <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
                 sind dynamische Worteinbettungen.
+                „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026) „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
-
-  > „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026)<br>
-                    „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
                   <div style="margin-left: 2em;">
                     <code>XXX</code>&nbsp;<code>XXX</code><br><br>
                   </div>
@@ -548,6 +545,48 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
     </ol>
   </details>
 </ol>
+
+        <ol type="1">
+          <details>
+            <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
+            <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
+            <ul>
+              <li>Vorhersagebasierte Wort-Einbettungen</li>
+              Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.
+              Word2Vec (Skip-gram, CBOW); GloVe (Global Vectors for Word Representation), FastText
+              <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
+              Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.
+              <li>ELMo (Embeddings from Language Models)<li>
+              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+              <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
+              Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
+              <li>GPT (Generative Pre-trained Transformer)</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>gensim</code>&nbsp;<code>sentence-transformers</code><br><br>
+            </div>
+          </details>
+          <details>
+            <summary>🟡 Satzeinbettungen (engl. sentence embeddings)</summary>
+            <p><i>Kontextbasierte Satz-Einbettungen</i></p>
+            <ul>
+              <li><b>Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)</li>
+              <li><b>Unidirektional Kontextmodelle:</b> GPT (Generative Pre-trained Transformer)</li>
+            </ul>
+             <p><i>Vorhersagebasierte Satz-Einbettungen</i></p>
+            <ul>
+              <li><b>ccc</b> XXX</li>
+            </ul>
+            <div style="margin-left: 2em;">
+              <code>xxx</code>&nbsp;<code>xxx</code><br><br>
+            </div>
+          </details>
+        </ol>
+      </details>
+    </ol>
+  </details>
+
+
 
 #### Merkmalsauswahl (engl. feature selection)
 <p><i>Merkmalsauswahl ist ein komplementärer Prozess zur Merkmalsgenerierung. Nach der Erzeugung von Features werden die relevantesten Merkmale aus dem bestehenden Merkmalsraum ausgewählt, um Redundanz zu reduzieren, Overfitting zu vermeiden und die Modellleistung zu optimieren.</i></p>
@@ -645,46 +684,7 @@ unüberwacht, Clustering.
   </details>
   <details>
         <summary>🟡 Einbettungen (engl. embeddings)</summary>
-        <p><i>Wort, Satz, X Einbettungen</i></p>
-        <ol type="1">
-          <details>
-            <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
-            <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
-            <ul>
-              <li>Vorhersagebasierte Wort-Einbettungen</li>
-              Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.
-              Word2Vec (Skip-gram, CBOW); GloVe (Global Vectors for Word Representation), FastText
-              <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
-              Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.
-              <li>ELMo (Embeddings from Language Models)<li>
-              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
-              <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
-              Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
-              <li>GPT (Generative Pre-trained Transformer)</li>
-            </ul>
-            <div style="margin-left: 2em;">
-              <code>gensim</code>&nbsp;<code>sentence-transformers</code><br><br>
-            </div>
-          </details>
-          <details>
-            <summary>🟡 Satzeinbettungen (engl. sentence embeddings)</summary>
-            <p><i>Kontextbasierte Satz-Einbettungen</i></p>
-            <ul>
-              <li><b>Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)</li>
-              <li><b>Unidirektional Kontextmodelle:</b> GPT (Generative Pre-trained Transformer)</li>
-            </ul>
-             <p><i>Vorhersagebasierte Satz-Einbettungen</i></p>
-            <ul>
-              <li><b>ccc</b> XXX</li>
-            </ul>
-            <div style="margin-left: 2em;">
-              <code>xxx</code>&nbsp;<code>xxx</code><br><br>
-            </div>
-          </details>
-        </ol>
-      </details>
-    </ol>
-  </details>
+        <p><i>Siehe oben...... Wort, Satz, X Einbettungen</i></p>
 
 <ol type="1">
   <details>
