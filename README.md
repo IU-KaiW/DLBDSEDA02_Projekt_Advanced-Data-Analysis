@@ -420,8 +420,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           <summary>🟡 Merkmalsvektoren (engl. feature vectors)</summary>
           <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden mit und ohne Informationsgewichtung diffrenziert wird.</i></p>
           <ul>
-          <li><ins>BoX (Bag-of-X)</ins></li>
-          Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wird eine eigene Dimension zugewiesen.<br>
+          <details>
+            <summary>🟡 <b>BoX (Bag-of-X)</b></summary>
+            <p><i>Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wird eine eigene Dimension zugewiesen.</i></p>
           <ul>
             <li><ins>BoX auf Einzeltoken</ins><br>
             Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
@@ -433,12 +434,11 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
             <div style="margin-left: 2em;">
               <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
             </div>
-          </ul>
-          </ul>
-      </li>
-          <ul>
-            <li><ins>TF-IDF (term frequency times inverse document frequency)</ins><br>
-            Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.
+            </ul>
+          </details>
+          <details>
+            <summary>🟡 <b>TF-IDF (term frequency times inverse document frequency)</b></summary>
+            <p><i>Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.</i></p>
               <ul>
               <li><ins>TF-IDF auf Einzeltoken</ins><br>
               Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.
@@ -451,10 +451,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
               </div>
               </ul>
-            </li>
-          </ul>
-      </li>
-        </details>
+          </details>
 </ol> 
       <ol type="1">
         <details>
