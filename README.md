@@ -641,9 +641,10 @@ unüberwacht, Clustering.
             <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
             <p><i>Projektion-basierte Topic-Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren.</i></p>
             <ol type="1">
-            Wortraumbasierte Topicmodelle
               <details>
-                <summary>🟡 NMF (Non-Negative Matrix Factorization)</summary>
+                <summary>🟡 wortraumbasierte Topicmodelle</summary>
+              <details>
+                <summary>NMF (Non-Negative Matrix Factorization)</summary>
                 <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>
                 <div style="margin-left: 2em;">
                   <code>sklearn (NMF)</code><br><br>
@@ -651,7 +652,7 @@ unüberwacht, Clustering.
                 <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
               </details>
               <details>
-                <summary>🟡 LSA (Latent Semantic Analysis)</summary>
+                <summary>LSA (Latent Semantic Analysis)</summary>
                 <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
                 <div style="margin-left: 2em;">
                   <code>sklearn (TruncatedSVD)</code><br><br>
@@ -663,10 +664,9 @@ unüberwacht, Clustering.
         </ol>
       Output: Interpretierbare Themen 
   </details>
-
-        
+  <details>
         <summary>🟡 kontextraumbasierte Themenmodelle </summary>
-        
+  </details>
 
 <ol type="1">
   <details>
