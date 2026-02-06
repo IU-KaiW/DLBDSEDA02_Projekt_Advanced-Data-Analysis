@@ -597,8 +597,9 @@ Overfitting
 Um overfitting zu vermeiden wird der Datensatz für das Training auf xxx Zeilen begrenzt.
 
 #### Merkmalslernen (engl. feature learning / representation learning)
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen dabei entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen so entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
 unüberwacht, Clustering.
+
 <ol type="1">
   <details>
       <summary>🟡 Themenmodellemodelle/Themenmodellierung (engl. topic modeling)</summary>
@@ -618,6 +619,7 @@ unüberwacht, Clustering.
                 </div>
                 <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
               </details>
+              Kontextvektorbasierte Topicmodelle
               <details>
                 <summary>🟡 BERTopic</summary>
                 <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.</i></p>
@@ -632,6 +634,7 @@ unüberwacht, Clustering.
             <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
             <p><i>Projektion-basierte Topic-Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren.</i></p>
             <ol type="1">
+            Wortraumbasierte Topicmodelle
               <details>
                 <summary>🟡 NMF (Non-Negative Matrix Factorization)</summary>
                 <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>
@@ -653,9 +656,10 @@ unüberwacht, Clustering.
         </ol>
       Output: Interpretierbare Themen 
   </details>
-  <details>
-        <summary>🟡 Einbettungen (engl. embeddings)</summary>
-        <p><i>Siehe oben...... Wort, Satz, X Einbettungen</i></p>
+          <summary>🟡 Wortraumbasierte Topicmodelle </summary>
+        <p><i> Diskreter Wort-Feature-Raum. Jedes Wort ist eine Dimension, aufgerufen durch häufigkeitsbasierte Vektoren (engl. frequency vectors).</i></p>
+        <summary>🟡 kontextvektorbasierte Themenmodelle </summary>
+        <p><i>Kontinuierlicher semantischer Raum</i></p>
 
 <ol type="1">
   <details>
