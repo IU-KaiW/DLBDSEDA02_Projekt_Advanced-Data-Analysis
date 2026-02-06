@@ -669,8 +669,6 @@ unüberwacht, Clustering.
           </details>
       Output: Interpretierbare Themen 
   </details>
-
-<ol type="1">
   <details>
     <summary>🟡 Dimensionsreduktion (engl. dimensionality reduction)</summary>
     <p><i>Transformiert hochdimensionale Features auf neue mathematische Achsen für Visualisierung und Datenanalyse. Die neuen Dimensionen sind nicht semantisch interpretierbar, aber nützlich zur Strukturerkennung.</i></p>
