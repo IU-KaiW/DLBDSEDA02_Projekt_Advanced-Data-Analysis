@@ -643,28 +643,30 @@ unüberwacht, Clustering.
             <ol type="1">
               <details>
                 <summary>🟡 wortraumbasierte Topicmodelle</summary>
-              <details>
-                <summary>NMF (Non-Negative Matrix Factorization)</summary>
-                <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>
-                <div style="margin-left: 2em;">
-                  <code>sklearn (NMF)</code><br><br>
-                </div>
-                <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
+                <p><i>Diskreter Wort-Feature-Raum. Merkmalsprojektion basiert auf algebraischen Verfahren der Matrixfaktorisierung auf Häufigkeitsvektoren.</i></p>
+                <details>
+                  <summary>NMF (Non-Negative Matrix Factorization)</summary>
+                  <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>
+                  <div style="margin-left: 2em;">
+                    <code>sklearn (NMF)</code><br><br>
+                  </div>
+                  <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
+                </details>
+                <details>
+                  <summary>LSA (Latent Semantic Analysis)</summary>
+                  <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
+                  <div style="margin-left: 2em;">
+                    <code>sklearn (TruncatedSVD)</code><br><br>
+                  </div>
+                  <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
+                </details>
               </details>
               <details>
-                <summary>LSA (Latent Semantic Analysis)</summary>
-                <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
-                <div style="margin-left: 2em;">
-                  <code>sklearn (TruncatedSVD)</code><br><br>
-                </div>
-                <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
+                <summary>🟡 kontextraumbasierte Topicmodelle</summary>
+                <p><i>Kontextraumbasierte Modelle arbeiten typischerweise mit Merkmalsabstraktion, nicht mit Merkmalsprojektion. Die Matrixfaktorisierung ist für wortraumbasierte Verfahren charakteristisch.</i></p>
               </details>
             </ol>
-            </details>
-              <details>
-                <summary>🟡 kontextraumbasierte Themenmodelle </summary>
-              </details>
-        </ol>
+          </details>
       Output: Interpretierbare Themen 
   </details>
 
