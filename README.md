@@ -503,11 +503,12 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                   <div style="margin-left: 2em;">
                     <code>tensorflow</code>&nbsp;<code>tensorflow_hub</code><br><br>
                   </div>
-                  <ul>
-                  <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
-                  Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
-                  </ul>
-                  <li>GPT (Generative Pre-trained Transformer)</li>
+                </li>
+                </ul>
+                <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
+                Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
+                <ul>
+                <li>GPT (Generative Pre-trained Transformer)</li>
                   <div style="margin-left: 2em;">
                     <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
                   </div>
