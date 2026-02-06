@@ -491,7 +491,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026) „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
                 <ul>
                 <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
-                Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen. ---- Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)
+                Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen. ---- Bidirektionale Kontextmodelle:</b> ELMo, BERT
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
                   <div style="margin-left: 2em;">
@@ -505,9 +505,8 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                   </div>
                 </li>
                 </ul>
-                <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
+                <li>Kontextbasierte Wort-Einbettungen (Unidirektional)</li>
                 Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
-                <li><b>Unidirektional Kontextmodelle:</b> GPT (Generative Pre-trained Transformer)</li>
                 <ul>
                 <li>GPT (Generative Pre-trained Transformer)</li>
                   <div style="margin-left: 2em;">
@@ -525,6 +524,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <i>vorhersagebasierte Satzeinbettungen sind statische Einbettungen auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
                 <ul>
                 <li>SkipThought Embeddings
+                Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert tyischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.
                   <div style="margin-left: 2em;">
                     <code>XXX</code>&nbsp;<code>gensim</code><br><br>
                   </div>
@@ -532,9 +532,8 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </ul>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
                 <i>kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i>
+                <li>Kontextbasierte Satzeinbettungen (bidirektional)</li>
               <ul>
-              <li><b>Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)</li>
-                            </ul>
                 <ul>
                   <li>SBERT (Sentence-BERT)
                     <div style="margin-left: 2em;">
