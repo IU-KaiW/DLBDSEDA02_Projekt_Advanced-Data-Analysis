@@ -614,16 +614,16 @@ unüberwacht, Clustering.
               <details>
                 <summary>🟡 wortraumbasierte Topicmodelle</summary>
                 <p><i> Diskreter Wort-Feature-Raum. Jedes Wort ist eine Dimension, aufgerufen durch einen Merkmalsvektor (engl. feature vector), siehe oben.</i></p>
-                <ul>LDA (Latent Dirichlet Allocation)</ul>
+                <li><ins>LDA (Latent Dirichlet Allocation)</li></ins>
                 <p><i>Latent Dirichlet Allocation (LDA) ist ein probabilistisches Modell, das latente Themen aus der Merkmalsmatrix durch wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA erzeugt interpretierbare Themen mit probabilistischen Zuordnungen zu Dokumenten und Wörtern.</i></p>
                 <div style="margin-left: 2em;">
                   <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
                 </div>
                 <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
               </details>
-              <p><i>Kontinuierlicher semantischer Raum. Jedes Wort ist , aufgerufen durch Merkmalseinbettung (engl. feature embedding), siehe oben. </i></p>
               <details>
                 <summary>🟡 kontextraumbasierte Themenmodelle </summary>
+                <p><i>Kontinuierlicher semantischer Raum. Jedes Wort ist , aufgerufen durch Merkmalseinbettung (engl. feature embedding), siehe oben. </i></p>
                 <ul>
                 <li><ins>BERTopic</li></ins>
                 <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.</i></p>
