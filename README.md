@@ -580,18 +580,34 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
 
 
 ### Modellbildung (engl. model training/building)
-<p><i>Modellbildung ist der Prozess, in dem die Merkmalslernen-Modelle mit den vorbereiteten Daten trainiert werden. Dabei werden die Modellparameter iterativ optimiert, um optimale Features zu lernen. Der Trainingsprozess umfasst die Festlegung von Hyperparametern (z.B. Anzahl der Themen K, Lernrate, Iterationen), die Initialisierung des Modells und die iterative Anpassung der Parameter bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.</i></p>
+Modellbildung umfasst das konfigurieren nicht-neuronaler (algeraischer oder probalistischer) oder das Training neuronaler Modelle (Transformer/LSTM/RNN)
+
+linearer oder neuronaler Modelle mit Features, unter Optimierung von Hyperparametern und Modellparametern (Gewichte).
+
+Beide Ansätze umfassen: Hyperparameter-Festlegung vor dem Training, Modellinitialisierung, iterative oder direkte Parameteroptimierung und Konvergenz-Überprüfung. Um Overfitting zu vermeiden, kann der Trainingsdatensatz begrenzt oder Regularisierung angewendet werden.
+
+<p><i>Modellbildung ist der Prozess, in dem [Modelle] mit vorbereiteten Daten trainiert werden. Dabei werden die Modellparameter (Gewichte) iterativ optimiert, um optimale Features zu lernen. Der Trainingsprozess umfasst die Festlegung von Hyperparametern (z.B. Anzahl der Themen K, Lernrate, Iterationen), die Initialisierung des Modells und die iterative Anpassung der Parameter bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.</i></p>
 
 Modellbildung (Modeling): Hier werden lineare Modelle oder neuronale Modelle trainiert, unter Nutzung von Modellparametern (Gewichte) und Hyperparametern (Lernrate, Batchgröße)
 
-Modellparameter / Hyperparameter.
-Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren wie Grid Search oder Random Search.
-
-
 „Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
 
+nicht-neuronale Modelle
+
+Modellparameter / Hyperparameter.
+Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
+
+„Modellparameter sind die gelernten Werte innerhalb eines maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. generierten Text oder eine vorhergesagte Klassifizierung, abbildet.“ (IBM Deutschland GmbH, 2025)
+„Gewichtungen sind die grundlegenden Bedienelemente oder Einstellungen für ein Modell und bestimmen, wie ein Modell neue Daten bewertet und Vorhersagen trifft.“ (IBM Deutschland GmbH, 2025)
 Overfitting
 Um overfitting zu vermeiden wird der Datensatz für das Training auf xxx Zeilen begrenzt.
+
+- spezifische AUfe zu erfüllen? (NER, ect.)
+„Die Modellparameter sind modellintern und werden vom Modell über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte während des Trainings. Parameter steuern, wie ein Modell auf ungesehene Daten reagiert.“ (IBM Deutschland GmbH, 2025)
+„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings, wie z. B. die Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses.“ (IBM Deutschland GmbH, 2025)
+„Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. die Anzahl der Entscheidungsbäume in einem Random Forest, der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz.“ (IBM Deutschland GmbH, 2025)
+
+
 
 #### Merkmalslernen (engl. feature learning / representation learning)
 <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen so entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
