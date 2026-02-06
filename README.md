@@ -660,12 +660,12 @@ unüberwacht, Clustering.
                 <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
               </details>
             </ol>
-          </details>
+            </details>
+              <details>
+                <summary>🟡 kontextraumbasierte Themenmodelle </summary>
+              </details>
         </ol>
       Output: Interpretierbare Themen 
-  </details>
-  <details>
-        <summary>🟡 kontextraumbasierte Themenmodelle </summary>
   </details>
 
 <ol type="1">
