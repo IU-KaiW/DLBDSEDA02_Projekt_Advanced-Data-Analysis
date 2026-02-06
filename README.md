@@ -414,7 +414,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
 <ol type="1">
   <details>
     <summary>🟡 Vektorisierung (engl. vectorization)</summary>
-    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (enfl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen. - explizite Features</i></p>
+    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen. - explizite Features</i></p>
     <ol type="1">
         <details>
           <summary>🟡 Merkmalsvektoren (engl. feature vectors)</summary>
@@ -578,8 +578,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           <code>sklearn (SelectKBest, SelectPercentile, RFE)</code><br><br>
         </div> 
       </ol>
-Repräsenationen: Merkmalsvektoren / Merkmalsmatrix (numerische Daten)
-„Ein Vektor ist nichts weiter als eine Sammlung von n Zahlen" (Zheng und Casari, 2019, p. 40).
 
 
 ### Modellbildung (engl. model training/building)
@@ -667,14 +665,14 @@ unüberwacht, Clustering.
               </details>
             </ol>
           </details>
-      Output: Interpretierbare Themen 
+      Output: semantisch interpretierbare Themen 
   </details>
   <details>
     <summary>🟡 Dimensionsreduktion (engl. dimensionality reduction)</summary>
     <p><i>Transformiert hochdimensionale Features auf neue mathematische Achsen für Visualisierung und Datenanalyse. Die neuen Dimensionen sind nicht semantisch interpretierbar, aber nützlich zur Strukturerkennung.</i></p>
     <ol type="1">
       <details>
-        <summary>🟡 Lineare Projektionen</summary>
+        <summary>🟡 Lineare Projektionen (engl. linear projections)</summary>
         <p><i>Lineare Projektionen reduzieren Dimensionen durch orthogonale Transformationen, die Varianzrichtungen im Datenraum erfassen.</i></p>
         <ol type="1">
           <details>
@@ -687,7 +685,7 @@ unüberwacht, Clustering.
         </details>
       </details>
       <details>
-        <summary>🟡 Nichtlineare Projektionen</summary>
+        <summary>🟡 Nichtlineare Projektionen (engl. non-linear projections)</summary>
         <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.
         </i></p>
         <ol type="1">
@@ -709,6 +707,7 @@ unüberwacht, Clustering.
               <code>umap-learn</code><br>
               <b>Output:</b> 2-3D Koordinaten
             </div>
+            Output: Visualisierbar, aber nicht semantisch interpretierbar
           </details>
         </ol>
       </details>
