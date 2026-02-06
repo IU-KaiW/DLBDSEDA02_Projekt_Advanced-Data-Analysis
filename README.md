@@ -491,7 +491,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026) „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
                 <ul>
                 <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
-                Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.
+                Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen. ---- Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
                   <div style="margin-left: 2em;">
@@ -507,6 +507,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </ul>
                 <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
                 Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
+                <li><b>Unidirektional Kontextmodelle:</b> GPT (Generative Pre-trained Transformer)</li>
                 <ul>
                 <li>GPT (Generative Pre-trained Transformer)</li>
                   <div style="margin-left: 2em;">
@@ -531,17 +532,14 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </ul>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
                 <i>kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i>
+              <ul>
+              <li><b>Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)</li>
+                            </ul>
                 <ul>
                   <li>SBERT (Sentence-BERT)
                     <div style="margin-left: 2em;">
                       <code>sentence-transformers</code>&nbsp;<code>XXX</code><br><br>
                     </div>
-                  </li>
-                  <li>ELMo Sentence Embedding
-                    <div style="margin-left: 2em;">
-                      <code>transformers</code>&nbsp;<code>XXX</code><br><br>
-                    </div>
-                  </li>
                   <li>USE Embedding (Universal Sentence Encoder)
                     <div style="margin-left: 2em;">
                       <code>tensorflow-hub</code><br><br>
@@ -557,24 +555,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
     </ol>
   </details>
 </ol>
-            <summary>🟡 Satzeinbettungen (engl. sentence embeddings)</summary>
-            <p><i>Kontextbasierte Satz-Einbettungen</i></p>
-            <ul>
-              <li><b>Bidirektionale Kontextmodelle:</b> ELMo, BERT, SBERT (Sentence-BERT)</li>
-              <li><b>Unidirektional Kontextmodelle:</b> GPT (Generative Pre-trained Transformer)</li>
-            </ul>
-             <p><i>Vorhersagebasierte Satz-Einbettungen</i></p>
-            <ul>
-              <li><b>ccc</b> XXX</li>
-            </ul>
-            <div style="margin-left: 2em;">
-              <code>xxx</code>&nbsp;<code>xxx</code><br><br>
-            </div>
-          </details>
-        </ol>
-      </details>
-    </ol>
-  </details>
 
 
 
