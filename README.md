@@ -550,6 +550,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </ul>
               </details>
             </ol>
+          </ol>
     </ul>
       </li>
         </details>
