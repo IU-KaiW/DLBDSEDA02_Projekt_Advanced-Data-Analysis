@@ -612,16 +612,19 @@ unüberwacht, Clustering.
         Abstraktion-basiert (semantische Konzepte); Abstraktion-basierte Topic-Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren semantische Themen durch komplexe statistische oder neuronale Prozesse.</i></p>
             <ol type="1">
               <details>
-                <summary>🟡 LDA (Latent Dirichlet Allocation)</summary>
+                <summary>🟡 wortraumbasierte Topicmodelle</summary>
+                <p><i> Diskreter Wort-Feature-Raum. Jedes Wort ist eine Dimension, aufgerufen durch einen Merkmalsvektor (engl. feature vector), siehe oben.</i></p>
+                <li>🟡 LDA (Latent Dirichlet Allocation)</li>
                 <p><i>Latent Dirichlet Allocation (LDA) ist ein probabilistisches Modell, das latente Themen aus der Merkmalsmatrix durch wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA erzeugt interpretierbare Themen mit probabilistischen Zuordnungen zu Dokumenten und Wörtern.</i></p>
                 <div style="margin-left: 2em;">
                   <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
                 </div>
                 <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
               </details>
-              Kontextvektorbasierte Topicmodelle
+              <p><i>Kontinuierlicher semantischer Raum. Jedes Wort ist , aufgerufen durch Merkmalseinbettung (engl. feature embedding), siehe oben. </i></p>
               <details>
-                <summary>🟡 BERTopic</summary>
+                <summary>🟡 kontextraumbasierte Themenmodelle </summary>
+                <li>🟡 BERTopic</li>
                 <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.</i></p>
                 <div style="margin-left: 2em;">
                   <code>bertopic</code>&nbsp;<code>sentence-transformers</code>&nbsp;<code>umap-learn</code><br><br>
@@ -656,10 +659,10 @@ unüberwacht, Clustering.
         </ol>
       Output: Interpretierbare Themen 
   </details>
-          <summary>🟡 Wortraumbasierte Topicmodelle </summary>
-        <p><i> Diskreter Wort-Feature-Raum. Jedes Wort ist eine Dimension, aufgerufen durch häufigkeitsbasierte Vektoren (engl. frequency vectors).</i></p>
-        <summary>🟡 kontextvektorbasierte Themenmodelle </summary>
-        <p><i>Kontinuierlicher semantischer Raum</i></p>
+
+        
+        <summary>🟡 kontextraumbasierte Themenmodelle </summary>
+        
 
 <ol type="1">
   <details>
