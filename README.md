@@ -532,21 +532,23 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </ul>
                 <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
                 <i>kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i>
-                <li>Unidirektionale Satzeinbettungen (Unidirektionale)</li>
-                Grundsätzlich wären auch unidirektionale Kontextmodelle auf Satzebene möglich – beispielsweise indem man GPT-basierte Modelle für Satzrepräsentationen nutzt. Solche Modelle würden den Kontext von links nach rechts verarbeiten und Sätze als ganze Einheiten einbetten können.
-                <li>Kontextbasierte Satzeinbettungen (bidirektional)</li>
-              <ul>
+                <ul>
+                <li><ins>Unidirektionale Satzeinbettungen (unidirektional)</ins></li>
+                <i>Grundsätzlich wären auch unidirektionale Kontextmodelle auf Satzebene möglich – beispielsweise indem man GPT-basierte Modelle für Satzrepräsentationen nutzt. Solche Modelle würden den Kontext von links nach rechts verarbeiten und Sätze als ganze Einheiten einbetten können.</i></li>
+                <li><ins>Bidirektionale Kontextmodelle (bidirektional)</ins></li>
                 <ul>
                   <li>SBERT (Sentence-BERT)
                     <div style="margin-left: 2em;">
                       <code>sentence-transformers</code>&nbsp;<code>XXX</code><br><br>
                     </div>
+                  </li>
                   <li>USE Embedding (Universal Sentence Encoder)
                     <div style="margin-left: 2em;">
                       <code>tensorflow-hub</code><br><br>
                     </div>
                   </li>
                 </ul>
+                </li>
                 </ul>
               </details>
             </ol>
