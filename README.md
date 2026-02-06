@@ -484,10 +484,9 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </li>
               </ul>
                 <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
-                sind dynamische Worteinbettungen.
-                „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026) „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
+                Bei kontextbasierte Wort-Einbettungen handelt es sich um dynamische Worteinbettungen bei denen jedes „Wort, jede Phrase, jeder Satz [...] situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext [bekommen]." Semantische und syntaktische Unterschiede können so erstmals maschinell berücksichtigt werden. (Wehner, 2026)<br>
                 <ul>
-                <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
+                <li>bidirektionale kontextbasierte Wort-Einbettungen</li>
                 Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen. ---- Bidirektionale Kontextmodelle:</b> ELMo, BERT
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
@@ -502,7 +501,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                   </div>
                 </li>
                 </ul>
-                <li>Kontextbasierte Wort-Einbettungen (Unidirektional)</li>
+                <li>unidirektionale kontextbasierte Wort-Einbettungen</li>
                 Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
                 <ul>
                 <li>GPT (Generative Pre-trained Transformer)</li>
@@ -723,7 +722,7 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
 
 <ol type="1">
   <details>
-    <summary>🟡 Intrinsische Metriken</summary>
+    <summary>🟡 Intrinsische Metriken (engl. intrinsic metrics)</summary>
     <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
     <ol type="1">
       <details>
@@ -754,7 +753,7 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
     </ol>
   </details>
   <details>
-    <summary>🟡 Extrinsische Metriken</summary>
+    <summary>🟡 Extrinsische Metriken (engl. extrinsic metrics)</summary>
     <p><i>Bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks (z.B. Klassifikation, Named Entity Recognition).</i></p>
     <ul>
       <li>Accuracy, Precision, Recall, F1-Score</li>
