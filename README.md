@@ -491,8 +491,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 „Semantische und syntaktische Unterschiede werden so erstmals maschinell berücksichtigt." (Wehner, 2026) „Jedes Wort, jede Phrase, jeder Satz bekommt situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext." (Wehner, 2026)<br>
                 <li>Kontextbasierte Wort-Einbettungen (Bidirektional)</li>
                 Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen.
-              <li>ELMo (Embeddings from Language Models)<li>
-              <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
                   <div style="margin-left: 2em;">
@@ -500,14 +498,13 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                   </div>
                 </li>
                 <li>ELMo (Embeddings from Language Models)</li>
-               bi-directional LSTM Network.
+                bi-directional LSTM Network.
                   <div style="margin-left: 2em;">
                     <code>tensorflow</code>&nbsp;<code>tensorflow_hub</code><br><br>
                   </div>
                   <li>Kontextbasierte Wort-Einbettungen (Autoregressive)</li>
-              Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
-              <li>GPT (Generative Pre-trained Transformer)</li>
-                <li>GPT (Generative Pre-trained Transformer)
+                  Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
+                  <li>GPT (Generative Pre-trained Transformer)</li>
                   <div style="margin-left: 2em;">
                     <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
                   </div>
