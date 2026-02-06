@@ -843,22 +843,15 @@ ______________
 </ul>
 
 ## Abhängigkeiten (engl. dependencies)
+Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. librarys) genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet. Viele Funktionen sind Bestandteil von Bibliotheken und können über: 
 
-###### Module
-Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet.[^15]<br>
-
-###### Packages (engl. package)
-Eine Sammlung von Modulen in einem Ordner, wird Paket genannt.[^15]<br>
-
-###### Bibliotheken (engl. librarys)
-Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet. Viele Funktionen sind Bestandteil von Bibliotheken und können über: 
 ```python
 <paketname>.<funktionsname>(<funktionsargumente>)
 ```
 aufgerufen werden.[^15]<br>
 
-<ul>
-  <li><ins>Python-Standardbibliothek</ins></li><br>
+###### Standardbibliothek
+
   Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
   |`stdlib`         | Dokumentation                                                      |Verwendung      |
@@ -867,7 +860,7 @@ aufgerufen werden.[^15]<br>
   |[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |Datahandling    |
   |[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |Laufzeitumgebung|
 
-  <li><ins>externe Bibliothek</ins></li><br>
+###### externe Bibliothek
 
   | Bibliothek           | Website                                                                                                                                           |Verwendung              |
   |--------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
@@ -888,10 +881,6 @@ aufgerufen werden.[^15]<br>
   |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung          |
   |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung          |
   |`stanza `             |Website: https://stanfordnlp.github.io/stanza/                            <br>Dokumentation:                                                       |NLP                     |
-
-
-
-</ul>
 
 
 
