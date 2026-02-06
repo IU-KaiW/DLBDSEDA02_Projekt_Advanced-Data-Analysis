@@ -614,12 +614,14 @@ unüberwacht, Clustering.
               <details>
                 <summary>🟡 wortraumbasierte Topicmodelle</summary>
                 <p><i> Diskreter Wort-Feature-Raum. Jedes Wort ist eine Dimension, aufgerufen durch einen Merkmalsvektor (engl. feature vector), siehe oben.</i></p>
+                <ul>
                 <li><ins>LDA (Latent Dirichlet Allocation)</li></ins>
                 <p><i>Latent Dirichlet Allocation (LDA) ist ein probabilistisches Modell, das latente Themen aus der Merkmalsmatrix durch wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA erzeugt interpretierbare Themen mit probabilistischen Zuordnungen zu Dokumenten und Wörtern.</i></p>
                 <div style="margin-left: 2em;">
                   <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
                 </div>
                 <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+                </ul>
               </details>
               <details>
                 <summary>🟡 kontextraumbasierte Themenmodelle </summary>
