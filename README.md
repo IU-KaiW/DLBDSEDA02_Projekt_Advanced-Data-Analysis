@@ -134,7 +134,10 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-<i>Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird.<br></i>
+<i>Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird. 
+
+„Strukturierte Daten sind hochgradig organisiert und folgen dabei klar definierten Strukturen.“ (Hebing und Manhembué, 2024, p. 37)
+<br></i>
 </ol>
   </details>
 <ol>   
@@ -467,7 +470,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
                 Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.
               Word2Vec (Skip-gram, CBOW); GloVe (Global Vectors for Word Representation), FastText
-                vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Wehner, 2026).
+                vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Wehner, 2026).„Nichtkontextuelle Einbettungen“ (Papp et al., 2022, p. 329)
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                   <div style="margin-left: 2em;">
@@ -579,34 +582,58 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
       </ol>
 
 
-### Modellbildung (engl. model training/building)
-Modellbildung umfasst das konfigurieren nicht-neuronaler (algeraischer oder probalistischer) oder das Training neuronaler Modelle (Transformer/LSTM/RNN)
+### Modellbildung (engl. model building)
+Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden.
 
-linearer oder neuronaler Modelle mit Features, unter Optimierung von Hyperparametern und Modellparametern (Gewichte).
+1. Modellkonfiguration 
+In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich. (wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz) (IBM Deutschland GmbH, 2025)
+Hyperparametern (Lernrate, Batchgröße)
+Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
 
-Beide Ansätze umfassen: Hyperparameter-Festlegung vor dem Training, Modellinitialisierung, iterative oder direkte Parameteroptimierung und Konvergenz-Überprüfung. Um Overfitting zu vermeiden, kann der Trainingsdatensatz begrenzt oder Regularisierung angewendet werden.
+2. Modellinitialisierung
+Bei der Modelinitialisierung werden Modellparameter für den Lernprozess des Modells festlegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
+
+3. Modeltraining 
+Im Modelltraining werden die Modellparameter vom Modell über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder Clusterung abbildet. (IBM Deutschland GmbH, 2025)
+
+Parameteroptimierung = Training - Durch Algorithmen
+
+iterative Parameteroptimierung oder 
+
+direkte Parameteroptimierung
+
+
+Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie Clustering (Topic Modeling) oder Klassifikation (Sentiment Analysis) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Vorhersagen/???/???) transformiert
+
+
+
+
+nicht-neuronale Modellarchitekturen
+(z.B. algebraisch, linear, probabilistisch)
+
+neuronale Modellarchitekturen
+(z.B. Transformer, LSTM)
+
+(Latent Features: Unsichtbare, modellgelernte Repräsentationen.)
+
 
 <p><i>Modellbildung ist der Prozess, in dem [Modelle] mit vorbereiteten Daten trainiert werden. Dabei werden die Modellparameter (Gewichte) iterativ optimiert, um optimale Features zu lernen. Der Trainingsprozess umfasst die Festlegung von Hyperparametern (z.B. Anzahl der Themen K, Lernrate, Iterationen), die Initialisierung des Modells und die iterative Anpassung der Parameter bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.</i></p>
 
-Modellbildung (Modeling): Hier werden lineare Modelle oder neuronale Modelle trainiert, unter Nutzung von Modellparametern (Gewichte) und Hyperparametern (Lernrate, Batchgröße)
 
-„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
 
-nicht-neuronale Modelle
 
-Modellparameter / Hyperparameter.
-Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
 
-„Modellparameter sind die gelernten Werte innerhalb eines maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. generierten Text oder eine vorhergesagte Klassifizierung, abbildet.“ (IBM Deutschland GmbH, 2025)
-„Gewichtungen sind die grundlegenden Bedienelemente oder Einstellungen für ein Modell und bestimmen, wie ein Modell neue Daten bewertet und Vorhersagen trifft.“ (IBM Deutschland GmbH, 2025)
+
 Overfitting
 Um overfitting zu vermeiden wird der Datensatz für das Training auf xxx Zeilen begrenzt.
 
-- spezifische AUfe zu erfüllen? (NER, ect.)
-„Die Modellparameter sind modellintern und werden vom Modell über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte während des Trainings. Parameter steuern, wie ein Modell auf ungesehene Daten reagiert.“ (IBM Deutschland GmbH, 2025)
-„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings, wie z. B. die Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses.“ (IBM Deutschland GmbH, 2025)
-„Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. die Anzahl der Entscheidungsbäume in einem Random Forest, der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz.“ (IBM Deutschland GmbH, 2025)
 
+
+
+
+
+Iteratives Training: Wiederholte Optimierung über mehrere Epochen der Trainingsdaten
+Validierung: Continuous Monitoring zur Vermeidung von Überanpassung (Overfitting)
 
 
 #### Merkmalslernen (engl. feature learning / representation learning)
@@ -615,7 +642,7 @@ unüberwacht, Clustering.
 
 <ol type="1">
   <details>
-      <summary>🟡 Themenmodellemodelle/Themenmodellierung (engl. topic modeling)</summary>
+      <summary>🟡 Themenmodelle/Themenmodellierung (engl. topic modeling)</summary>
         <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
     <ol type="1">
       <details>
