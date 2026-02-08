@@ -579,11 +579,12 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
         <div style="margin-left: 2em;">
           <code>sklearn (SelectKBest, SelectPercentile, RFE)</code><br><br>
         </div> 
+        Output: Feature-Subset
       </ol>
 
-
 ### Modellbildung (engl. model building)
-Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden.
+Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen.
+Die Modellarchitekturen können dabei nicht-neuronale (z.B. algebraisch, linear, probabilistisch) oder neuronale Strukturen (z.B. Transformer, LSTM, RNN) ausgelegt sein.
 
 1. Modellkonfiguration 
 In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich. (wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz) (IBM Deutschland GmbH, 2025)
@@ -594,50 +595,12 @@ Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität d
 Bei der Modelinitialisierung werden Modellparameter für den Lernprozess des Modells festlegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
 
 3. Modeltraining 
-Im Modelltraining werden die Modellparameter vom Modell über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder Clusterung abbildet. (IBM Deutschland GmbH, 2025)
+Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
 
-Parameteroptimierung = Training - Durch Algorithmen
-
-iterative Parameteroptimierung oder 
-
-direkte Parameteroptimierung
-
-
-Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie Clustering (Topic Modeling) oder Klassifikation (Sentiment Analysis) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Vorhersagen/???/???) transformiert
-
-
-
-
-nicht-neuronale Modellarchitekturen
-(z.B. algebraisch, linear, probabilistisch)
-
-neuronale Modellarchitekturen
-(z.B. Transformer, LSTM)
-
-(Latent Features: Unsichtbare, modellgelernte Repräsentationen.)
-
-
-<p><i>Modellbildung ist der Prozess, in dem [Modelle] mit vorbereiteten Daten trainiert werden. Dabei werden die Modellparameter (Gewichte) iterativ optimiert, um optimale Features zu lernen. Der Trainingsprozess umfasst die Festlegung von Hyperparametern (z.B. Anzahl der Themen K, Lernrate, Iterationen), die Initialisierung des Modells und die iterative Anpassung der Parameter bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.</i></p>
-
-
-
-
-
-
-Overfitting
-Um overfitting zu vermeiden wird der Datensatz für das Training auf xxx Zeilen begrenzt.
-
-
-
-
-
-
-Iteratives Training: Wiederholte Optimierung über mehrere Epochen der Trainingsdaten
-Validierung: Continuous Monitoring zur Vermeidung von Überanpassung (Overfitting)
-
+Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
 
 #### Merkmalslernen (engl. feature learning / representation learning)
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht von Menschen definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen so entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
+<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht manuell definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen so entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
 unüberwacht, Clustering.
 
 <ol type="1">
