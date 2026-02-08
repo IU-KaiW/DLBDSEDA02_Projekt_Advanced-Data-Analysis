@@ -559,10 +559,10 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
   </details>
 </ol>
 
-
-
 #### Merkmalsauswahl (engl. feature selection)
 <p><i>Merkmalsauswahl ist ein komplementärer Prozess zur Merkmalsgenerierung. Nach der Erzeugung von Features werden die relevantesten Merkmale aus dem bestehenden Merkmalsraum ausgewählt, um Redundanz zu reduzieren, Overfitting zu vermeiden und die Modellleistung zu optimieren.</i></p>
+
+implizite und explizite feature selection
       <ol type="1">
         <details>
           <summary>🟡 Filtermethoden</summary>
@@ -771,6 +771,9 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
 ###### Pipeline Ausgabe (engl. pipeline output)
 
 Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Labels oder Logits die Datennachverarbeitung (engl. data post-processing) ein.
+
+Input oder Outputfeatures in die Datennachvereibeitung ein
+
 ______________
 ### Datennachverarbeitung (engl. data post-processing)
 Post-Processing macht Daten nutzbar.
