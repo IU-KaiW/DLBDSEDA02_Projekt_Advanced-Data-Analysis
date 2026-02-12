@@ -27,7 +27,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 ├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
 ├─────────────── / Datenverarbeitung (engl. data processing)
 ├─────────────── / Datennachverarbeitung (engl. data post-processing)
-├── docs/      # Übersichten (Arbeitsunterlagen, Datensatzauswertungen, Pipeline)
+├── docs/      # Übersichten (Arbeitsunterlagen, Datensatzauswertungen)
 ├─────────────── / 1 -
 ├─────────────── / 2 - 
 ├─────────────── / 3 - 
@@ -36,13 +36,13 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 ```
 
 ## Installation (engl. setup)
-Als Programmiersprache wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wird Visual Studio Code (VSCode) genutzt.
+Als Programmiersprache wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) verwendet.
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
 ###### Laufzeitumgebung (engl. runtime environment)
 Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Für die bestmögliche Kompatibilität habe ich mich für einen hybriden Virtualisierungsansatz entschieden. 
-Große wissenschaftliche Pakete wie PyTorch und spaCy werden dabei via conda, spezialisierte via pip installiert.
+Große wissenschaftliche Pakete wie PyTorch und spaCy werden dabei via "conda", spezialisierte via "pip" installiert.
 
 ```console
 conda env create -f environment.yml
