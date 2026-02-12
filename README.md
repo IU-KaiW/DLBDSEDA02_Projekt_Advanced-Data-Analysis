@@ -855,9 +855,7 @@ aufgerufen werden.[^15]<br>
 
 ###### Standardbibliothek
 
-  Dokumentation: https://docs.python.org/3.9/py-modindex.html
-
-  |`stdlib`              | Website                                                                                                                                              |Verwendung           |
+  |`stdlib`              | Website: https://docs.python.org/3.9/py-modindex.html                                                                                                |Verwendung           |
   |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
   |[`re`]                |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |NLP                  |
   |[`csv`]               |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling         |
