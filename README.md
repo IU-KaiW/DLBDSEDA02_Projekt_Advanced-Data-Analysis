@@ -3,9 +3,9 @@ Die linguistische Datenverarbeitung (LDV, engl. natural language processing – 
 
 Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Beschwerdetexten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
-Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten Python-Bibliotheken kurz aufgeführt werden.
+Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten Python-Bibliotheken aufgeführt werden.
 
-Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die verwendeten Softwarebibliotheken werden in folgender Form hervorgehoben: 
+Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die verwendeten Softwarebibliotheken wurden in folgender Form hervorgehoben: 
 
 <div style="margin-left: 2em;">
   <code>Bibliothek 1</code>&nbsp;<code>Bibliotek 2</code><br>
@@ -104,10 +104,10 @@ In der Phase der Datenakquisition werden Datensätze gesucht und bewertungsbasie
 |----|------------------------------------|-----------|-----------|---------------------------|
 | 01 | Consumer_Complaints.csv            | n/a       | 59,40  MB |[^01] &nbsp; Kaggle        |
 | 02 | rows.csv                           | n/a       | 176    MB |[^02] &nbsp; Kaggle        |
-| 03 | Consumer_Complaints.csv            | 13,5 %    | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
+| 03 | Consumer_Complaints.csv            | 13,50 %   | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
 | 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbsp; Kaggle        |
-| 05 | complaints_data.csv                | 82 %      | 7,20   MB |[^05] &nbsp; GitHub        |
-| 06 | user_complaints                    | 0,69 %    | 229,0  kB |[^06] &nbsp; GitHub        |
+| 05 | complaints_data.csv                | 82,00 %   | 7,20   MB |[^05] &nbsp; GitHub        |
+| 06 | user_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub        |
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
