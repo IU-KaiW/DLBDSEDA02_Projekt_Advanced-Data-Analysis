@@ -857,11 +857,11 @@ aufgerufen werden.[^15]<br>
 
   Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-  |`stdlib`              | Dokumentation                                                                                                                                                   |Verwendung      |
-  |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-  |[`re`]                |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re               |NLP             |
-  |[`csv`]               |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv             |Datahandling    |
-  |[`venv`]              |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/venv.html#module-venv           |Laufzeitumgebung|
+  |`stdlib`              | Website                                                                                                                                              |Verwendung           |
+  |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
+  |[`re`]                |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |NLP                  |
+  |[`csv`]               |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling         |
+  |[`venv`]              |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/venv.html#module-venv|Laufzeitumgebung     |
 
 ###### externe Bibliothek
 
