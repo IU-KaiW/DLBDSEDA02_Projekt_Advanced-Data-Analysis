@@ -405,7 +405,7 @@ Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer
 ### Datenvorbereitung (engl. data preparation)
 > Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt. Dies erfolgt durch  Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection). <br> Merkmalsgenerierung (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden. <br> Merkmalsauswahl (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
 
-feature - explizite / Abstrakte
+feature - explizite / abstrakte
 
 <div style="margin-left: 2em;">
   <code>???</code>&nbsp;<code>???</code><br><br>
@@ -857,11 +857,11 @@ aufgerufen werden.[^15]<br>
 
   Dokumentation: https://docs.python.org/3.9/py-modindex.html
 
-  |`stdlib`         | Dokumentation                                                      |Verwendung      |
-  |-----------------|--------------------------------------------------------------------|----------------|
-  |[`re`]           |https://docs.python.org/3.9/library/re.html#module-re               |NLP             |
-  |[`csv`]          |https://docs.python.org/3.9/library/csv.html#module-csv             |Datahandling    |
-  |[`venv`]         |https://docs.python.org/3.9/library/venv.html#module-venv           |Laufzeitumgebung|
+  |`stdlib`              | Dokumentation                                                                                                                                                   |Verwendung      |
+  |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+  |[`re`]                |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re               |NLP             |
+  |[`csv`]               |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv             |Datahandling    |
+  |[`venv`]              |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/venv.html#module-venv           |Laufzeitumgebung|
 
 ###### externe Bibliothek
 
@@ -897,7 +897,7 @@ IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Ler
 
 ###### Abschlussarbeiten
 Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf<br>
-Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
+<br>Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
 
 ###### Bücher
 Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.<br>
