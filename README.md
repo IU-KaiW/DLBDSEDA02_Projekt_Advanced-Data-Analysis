@@ -25,6 +25,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 ├─────────────── / complaints_data_cleaned.csv
 ├── src/       # Python-Skripte
 ├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
+├─────────────── / Datenverarbeitung (engl. data pre-processing)
 ├─────────────── / Datenverarbeitung (engl. data processing)
 ├─────────────── / Datennachverarbeitung (engl. data post-processing)
 ├── docs/      # Übersichten (Arbeitsunterlagen, Datensatzauswertungen)
@@ -36,31 +37,10 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 ```
 
 ## Installation (engl. setup)
-Als Programmiersprache wird Python in der Version 3.9 genutzt. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) verwendet.
+Als Programmiersprache wird Python in der Version 3.9 verwendet. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt.
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
-###### Laufzeitumgebung (engl. runtime environment)
-Als virtuelle Umgebungen stehen in Python "venv" und "conda" zur Verfügung. Für die bestmögliche Kompatibilität habe ich mich für einen hybriden Virtualisierungsansatz entschieden. 
-Große wissenschaftliche Pakete wie PyTorch und spaCy werden dabei via "conda", spezialisierte via "pip" installiert.
-
-```console
-conda env create -f environment.yml
-conda activate ada-project
-```
-
-
-###### Datenvalidierung (engl. data validation)
-Die Spaltenbeschriftung der textführende Spalte des gewählten Datensatzes muss mit "text" benannt sein damit das Skript den Datensatz durch das externe Modul "AITextDetector.py" verarbeiten kann.
-<ul>
-<li><ins>KI Detektor</ins></li>
-Python in einer Version 3.8+
-
-```python
-`pip install transformers`
-`pip install torch`
-```
-Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br><br>
 
 _________________________________________________________________________________________________________________________________________________________
 
@@ -926,6 +906,9 @@ aufgerufen werden.[^15]<br>
 
 ## Referenzen
 
+###### Software
+Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
+
 ###### Skripte
 IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
 <br>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br>
@@ -955,8 +938,6 @@ Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bild
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/<br>
 <br>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/<br>
-
-
 
 
 
