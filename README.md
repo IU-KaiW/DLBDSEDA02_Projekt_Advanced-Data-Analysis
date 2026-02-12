@@ -65,7 +65,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 _________________________________________________________________________________________________________________________________________________________
 
 ## Konzeption
-Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzvorverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
+Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
 
 ## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
