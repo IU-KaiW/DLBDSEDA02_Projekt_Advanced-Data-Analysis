@@ -48,7 +48,8 @@ ________________________________________________________________________________
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
 
 ## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
-<img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
+<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/1%20-%20Datensatzverarbeitung%20(engl.%20dataset%20pipeline).jpg" width="1200">
+
 
 ### Datensatzakquisition (engl. dataset acquisition)
 In der Phase der Datenakquisition werden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vierstufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um den Korpus für die NLP-Pipeline zu bestimmen.<br>
