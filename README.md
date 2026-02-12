@@ -758,13 +758,51 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
   </details>
   <details>
     <summary>🟡 Extrinsische Metriken (engl. extrinsic metrics)</summary>
-    <p><i>Bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks (z.B. Klassifikation, Named Entity Recognition).</i></p>
+    <p><i>Bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks (z.B. Klassifikation, Named Entity Recognition, ect.).</i></p>
     <ul>
-      <li>Accuracy, Precision, Recall, F1-Score</li>
-      <li>GLUE/SuperGLUE Benchmarks (für Sprachmodelle)</li>
+      <ol type="1">
+        <details>
+          <summary>🟡 Klassifikationsmetriken</summary>
+          <p><i>Bewerten die Modellleistung bei überwachten Aufgaben durch Vergleich von Vorhersagen mit bekannten Labels.</i></p>
+          <ul>
+            <li><b>Accuracy</b>: Anteil korrekt klassifizierter Instanzen</li>
+            <li><b>Precision</b>: Anteil relevanter unter den als positiv klassifizierten Instanzen</li>
+            <li><b>Recall</b>: Anteil erkannter relevanter Instanzen</li>
+            <li><b>F1-Score</b>: Harmonisches Mittel aus Precision und Recall</li>
+          </ul>
+          <div style="margin-left: 2em;">
+            <code>sklearn.metrics</code><br>
+          </div>
+        </details>
+        <details>
+          <summary>🟡 Clustering-Metriken</summary>
+          <p><i>Bewerten Clustering-Ergebnisse durch Vergleich mit bekannten Referenzlabels. Relevant für Topic Modeling, wenn gelabelte Daten zur Validierung vorliegen.</i></p>
+          <ul>
+            <li><b>Adjusted Rand Index (ARI)</b>: Paarweise Übereinstimmung, zufallsbereinigt</li>
+            <li><b>Normalized Mutual Information (NMI)</b>: Informationstheoretische Übereinstimmung</li>
+            <li><b>V-Measure</b>: Harmonisches Mittel aus Homogeneity und Completeness</li>
+            <li><b>Homogeneity</b>: XXX</li>
+            <li><b>Completeness</b>: XXX</li>
+            <li><b>Purity</b>: Anteil dominanter Labels pro Cluster</li>
+          </ul>
+          <div style="margin-left: 2em;">
+            <code>sklearn.metrics (adjusted_rand_score, normalized_mutual_info_score, v_measure_score)</code><br>
+          </div>
+        </details>
+        <details>
+          <summary>🟡 Benchmark-Suiten (für Sprachmodelle)</summary>
+          <p><i>Standardisierte Evaluierungsrahmen, die mehrere NLU-Aufgaben bündeln, um Sprachmodelle vergleichbar zu bewerten.</i></p>
+          <ul>
+            <li><b>GLUE</b>: General Language Understanding Evaluation – 9 Aufgaben (z.B. Sentiment, Textähnlichkeit, Inferenz)</li>
+            <li><b>SuperGLUE</b>: Erweiterung von GLUE mit anspruchsvolleren Aufgaben (z.B. kausales Schließen, Wortsinn-Disambiguierung)</li>
+          </ul>
+        </details>
+      </ol>
     </ul>
   </details>
 </ol>
+
+
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 
@@ -855,7 +893,7 @@ aufgerufen werden.[^15]<br>
 
 ###### Standardbibliothek
 
-  |`stdlib`              | Website: https://docs.python.org/3.9/py-modindex.html                                                                                                |Verwendung           |
+  |`stdlib`              | Website                                                                                                                                              |Verwendung           |
   |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
   |[`re`]                |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |NLP                  |
   |[`csv`]               |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling         |
@@ -863,25 +901,25 @@ aufgerufen werden.[^15]<br>
 
 ###### externe Bibliothek
 
-  | Bibliothek           | Website                                                                                                                                           |Verwendung              |
-  |--------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
-  |`torch`               |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html       |KI-Detektor             |
-  |`transformers`        |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                       |KI-Detektor             |
-  |`pandas`              |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                       |Datahandling            |
-  |`spacy`               |Website: https://spacy.io                                                 <br>Dokumentation:                                                       |NLP                     |
-  |`nltk`                |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                  |NLP                     |
-  |`pyspellchecker`      |Website: https://pypi.org/project/pyspellchecker/                         <br>Dokumentation: https://pyspellchecker.readthedocs.io/en/latest/      |NLP                     |
-  |`gensim`              |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                       |NLP - Themenmodellierung|
-  |`numpy`               |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                        |                        |
-  |`sklearn`             |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                       |                        |
-  |`torchmetrics`        |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.       |Evaluation              |
-  |`matplotlib`          |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html              |Visualisierung          |
-  |`seaborn`             |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html              |Visualisierung          |
-  |`PyLDAvis`            |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/            |Visualisierung          |
-  |`cartopy`             |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                |Visualisierung          |
-  |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                |Visualisierung          |
-  |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html |Visualisierung          |
-  |`stanza `             |Website: https://stanfordnlp.github.io/stanza/                            <br>Dokumentation:                                                       |NLP                     |
+  | Bibliothek           | Website                                                                                                                                              |Verwendung              |
+  |--------------------- |------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+  |`torch`               |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html          |KI-Detektor             |
+  |`transformers`        |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                          |KI-Detektor             |
+  |`pandas`              |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                          |Datahandling            |
+  |`spacy`               |Website: https://spacy.io                                                 <br>Dokumentation:                                                          |NLP                     |
+  |`nltk`                |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                     |NLP                     |
+  |`pyspellchecker`      |Website: https://pypi.org/project/pyspellchecker/                         <br>Dokumentation: https://pyspellchecker.readthedocs.io/en/latest/         |NLP                     |
+  |`gensim`              |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                          |NLP - Themenmodellierung|
+  |`numpy`               |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                           |                        |
+  |`sklearn`             |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                          |                        |
+  |`torchmetrics`        |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.          |Evaluation              |
+  |`matplotlib`          |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html                 |Visualisierung          |
+  |`seaborn`             |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html                 |Visualisierung          |
+  |`PyLDAvis`            |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/               |Visualisierung          |
+  |`cartopy`             |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                   |Visualisierung          |
+  |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                   |Visualisierung          |
+  |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html.   |Visualisierung          |
+  |`stanza `             |Website: https://stanfordnlp.github.io/stanza/                            <br>Dokumentation:                                                          |NLP                     |
 
 
 
