@@ -71,7 +71,7 @@ Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzv
 <img src="1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
 ### Datensatzakquisition (engl. dataset acquisition)
-In der Phase der Datenaquisition werden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vier stufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um dem Korpus für die NLP-Pipeline zu bestimmen.<br>
+In der Phase der Datenakquisition werden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vierstufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um den Korpus für die NLP-Pipeline zu bestimmen.<br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
@@ -119,7 +119,7 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die Datensatzsichtung wurde mittels des selbstgeschrieben Python-Skripts "Datensatzsichtung (engl. dataset inspection).ipynb" durchgeführt, um den gewählten Datensatz zur eine Datentrukturanalyse, sowie der Analyse der strukutierten und unstrukturierten besser zu verstehen.
+In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die Datensatzsichtung wurde mittels des selbstgeschriebenen Python-Skripts "Datensatzsichtung (engl. dataset inspection).ipynb" durchgeführt, um den gewählten Datensatz zu einer Datenstrukturanalyse sowie der Analyse der strukturierten und unstrukturierten Daten besser zu verstehen.
 
 <ol>   
   <details>
@@ -134,7 +134,7 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-<i>Die in der Datei enthaltenen Daten lassen sich in <ins>struktierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird. 
+<i>Die in der Datei enthaltenen Daten lassen sich in <ins>strukturierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird. 
 
 „Strukturierte Daten sind hochgradig organisiert und folgen dabei klar definierten Strukturen.“ (Hebing und Manhembué, 2024, p. 37)
 <br></i>
@@ -145,26 +145,26 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
   <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.</i><br><br>
   <ul>
-    <li><ins>EDA der struktierte Daten</ins></li>
+    <li><ins>EDA der strukturierten Daten</ins></li>
     In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
     <ul>
         <li><ins> "author"</ins>
 
-  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrente, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. 
+  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrennte, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. 
   
 
   Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.<br>
         <li><ins>"posted_on"</ins><br>
 
-  > Die Zeilen der Spalte "posted_on" enhalten Datumsangaben mit alphabetisch abgekürzer Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
+  > Die Zeilen der Spalte "posted_on" enthalten Datumsangaben mit alphabetisch abgekürzter Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
   
    Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
 
-   <ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgten sind. 
+   <ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgt sind. 
    
-   <ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und wie wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
+   <ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
    
-   <ins>wöchentliche Verteilung:</ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von montags (820) und freitags (802) abgesezt wurden, wohingegen an den Tagen der Wochenenden Samstag (659) und Sonntags (564) weniger Beschwerden zu verzeichnen sind. Dieses Muster deutet ebenfalls auf einen organischen Ursprung des Datensatzes hin.
+   <ins>wöchentliche Verteilung:</ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von montags (820) und freitags (802) abgesetzt wurden, wohingegen an den Tagen der Wochenenden Samstag (659) und Sonntag (564) weniger Beschwerden zu verzeichnen sind. Dieses Muster deutet ebenfalls auf einen organischen Ursprung des Datensatzes hin.
 
   <li><ins>"rating"</ins><br>
   
@@ -176,12 +176,12 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
 </ul>
 
 <ul>
-  <li><ins>EDA der unstruktuierte Daten</ins></li>
+  <li><ins>EDA der unstrukturierten Daten</ins></li>
   Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br><br>
   <ul>
   <li><ins>"text"</ins></li>
   
-  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, ect.) die konkateniert Sätze bilden die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>  
+  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) die konkateniert Sätze bilden, die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>  
   
   Die EDA zeigte dass die Texte im Median aus 1.239,94 Zeichen bestehen.
   </ul>
@@ -200,23 +200,23 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   </details>
 
 ## Datensatzaufbereitung (engl. dataset preparation)
-In der Phase der Datensatzbereinigung werden die in der EDA gewonnen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalidierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden.
+In der Phase der Datensatzbereinigung werden die in der EDA gewonnenen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalidierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden.
 <ol>
     <details>
       <summary>⚪ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
       <i>
       
 ###### Fehlwertbehandlung
-Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindeslänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
+Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
 
 ###### Duplikatentfernung
-Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Models zu vermeiden. </i><br>
+Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Modells zu vermeiden. </i><br>
     </details>
 </ol>
 <ol>
     <details>
       <summary>⚪ Datensatzvalidierung (engl. dataset validation)</b></summary>
-      <i>Im Rahmen der Datensatzvalisierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt um Datenqualität und Aussagekraft zu sichern.</i><br>
+      <i>Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.</i><br>
     </details>
 </ol>
 
@@ -226,13 +226,13 @@ ________________________________________________________________________________
 Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
 
 ###### Pipeline Eingabe (engl. pipeline input)
-Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatz *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>` welche als als Korpus für die folgenden NLP-Schritte genutzt wird. Die Zeilen des Datensatzes werden auch als Dokumente bezeichnet. 
+Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Zeilen des Datensatzes werden auch als Dokumente bezeichnet. 
 
 <div style="margin-left: 2em;">
   <code>pandas</code>&nbsp;<code>????</code><br>
 </div>
 
-### Datenvorverarbeiten (engl. data pre-processing)
+### Datenvorverarbeitung (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
 <div style="margin-left: 2em;">
   <code>spaCy</code>&nbsp;<code>NLTK</code><br>
@@ -277,7 +277,7 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
   </details>
   <details>
     <summary>🔴 Standardisierung (engl. standardisation)</summary>
-    <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte nicht in mehreren leicht unterschiedlichen Varianten auftreten.</i></p>
+    <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte in mehreren leicht unterschiedlichen Varianten auftreten.</i></p>
           <div style="margin-left: 2em;">
             <code>???</code>&nbsp;<code>????</code><br><br>
           </div>
@@ -297,7 +297,7 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
               </div>
             </ul>
             <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins></li>
-            Durch Rechtschreibkorrekrur werden Schreib- und Tippfehler korrigiert, um eine linguistisch korrekte Analyse gewährleisten.
+            Durch Rechtschreibkorrektur werden Schreib- und Tippfehler korrigiert, um eine linguistisch korrekte Analyse zu gewährleisten.
               <div style="margin-left: 2em;">
                 <code>pyspellchecker</code>&nbsp;<code>contextualSpellCheck</code>&nbsp;<code>PyEnchant</code><br><br>
               </div>
@@ -308,7 +308,7 @@ Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisie
 
 
 #### Linguistische Analyse
-Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
+Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
 <ol type="1">
     <details>
       <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
@@ -379,7 +379,7 @@ Im Rahmen der lingusitischen Analyse erfolgt, je nach Anwendungsfall neben einer
           </div>
           <ol type="1">
             <li>Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
-              <i>Bei der der Erkennung benannter Entitäten werden Wörter in einem unstrukturierten Text als Kategorien klassifiziert (Namen, Orte, Zeit, Datum, Organisationen, Mengen).</i><br>
+              <i>Bei der Erkennung benannter Entitäten werden Wörter in einem unstrukturierten Text als Kategorien klassifiziert (Namen, Orte, Zeit, Datum, Organisationen, Mengen).</i><br>
               <div style="margin-left: 2em;">
                 <code>spaCy</code><br><br>
               </div>
@@ -433,7 +433,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
               <code>sklearn (CountVectorizer)</code>
             </div>
             <li><ins>BoX auf Tokensequenzen</ins><br>
-            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzten Merkmalsraum ergibt.
+            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzter Merkmalsraum ergibt.
             <div style="margin-left: 2em;">
               <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
             </div>
@@ -467,16 +467,14 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <summary>🟡 <b>Worteinbettungen </b>(engl. word embeddings)</summary>
                 <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
                 <ul>
-                <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
-                Diese Embeddings werden durch Vorhersage von Wörtern basierend auf ihrem Kontext trainiert.
-              Word2Vec (Skip-gram, CBOW); GloVe (Global Vectors for Word Representation), FastText
-                vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Wehner, 2026).„Nichtkontextuelle Einbettungen“ (Papp et al., 2022, p. 329)
+                <li><ins>nichtkontextuelle / vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
+                nichtkontextuelle sprich vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                   <div style="margin-left: 2em;">
                     <code>gensim</code>&nbsp;<code>glove-python</code><br><br>
                   </div>
-                <li>Word2Vec</li>
+                <li>Word2Vec (Skip-gram, CBOW)</li>
                   <div style="margin-left: 2em;">
                     <code>gensim</code><br><br>
                   </div>
@@ -523,7 +521,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 <i>vorhersagebasierte Satzeinbettungen sind statische Einbettungen auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
                 <ul>
                 <li>SkipThought Embeddings
-                Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert tyischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.
+                Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert typischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.
                   <div style="margin-left: 2em;">
                     <code>XXX</code>&nbsp;<code>gensim</code><br><br>
                   </div>
@@ -584,17 +582,17 @@ implizite und explizite feature selection
 
 ### Modellbildung (engl. model building)
 Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen.
-Die Modellarchitekturen können dabei nicht-neuronale (z.B. algebraisch, linear, probabilistisch) oder neuronale Strukturen (z.B. Transformer, LSTM, RNN) ausgelegt sein.
+Die Modellarchitekturen können dabei als nicht-neuronale (z.B. algebraische, lineare, probabilistische) oder neuronale Strukturen (z.B. Transformer, LSTM) ausgelegt sein.
 
-1. Modellkonfiguration 
+1. Modellkonfiguration<br>
 In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich. (wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz) (IBM Deutschland GmbH, 2025)
 Hyperparametern (Lernrate, Batchgröße)
 Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
 
-2. Modellinitialisierung
-Bei der Modelinitialisierung werden Modellparameter für den Lernprozess des Modells festlegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
+2. Modellinitialisierung<br>
+Bei der Modellinitialisierung werden Modellparameter für den Lernprozess des Modells festgelegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
 
-3. Modeltraining 
+3. Modelltraining<br>
 Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
 
 Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
@@ -720,12 +718,12 @@ unüberwacht, Clustering.
   </details>
 </ol>
 
-### Modellabstimung (engl. model calibration)
+### Modellabstimmung (engl. model calibration)
 Anpassung der Modellbildung
 
 ##### Modellbewertung (engl. model evaluation)
 Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intrinsische oder extrinsische Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.
-
+„Intrinsic and extrinsic evaluators are distinct measures where intrinsic evaluators capture inherent properties and extrinsic evaluators assess performance in external contexts.“ (“Intrinsic and Extrinsic Evaluators”)
 <ol type="1">
   <details>
     <summary>🟡 Intrinsische Metriken (engl. intrinsic metrics)</summary>
@@ -736,7 +734,7 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
         <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
         <ul>
           <li><b>u_mass</b>: Interne Kohärenz</li>
-          <li><b>c_v</b>: Externe Konsistenz (empfohlen)</li>
+          <li><b>c_v</b>: Externe Konsistenz (wird genutzt)</li>
           <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
         </ul>
         <div style="margin-left: 2em;">
@@ -772,12 +770,10 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
 
 Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Labels oder Logits die Datennachverarbeitung (engl. data post-processing) ein.
 
-Input oder Outputfeatures in die Datennachvereibeitung ein
+Input oder Outputfeatures in die Datennachvereitung ein
 
 ______________
 ### Datennachverarbeitung (engl. data post-processing)
-Post-Processing macht Daten nutzbar.
-
 Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
 <img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
 
@@ -838,7 +834,7 @@ Datenpräsentation  (engl. data presentation)
       Themenverteilungen; Top-Wörter pro Thema
       BERTopic-Integrierte Visualisierung
       <div style="margin-left: 2em;">
-        <code>PyLDAvis</code>&nbsp;<code>BERTopic</code>&nbsp;<code>ploty</code><br><br>
+        <code>PyLDAvis</code>&nbsp;<code>BERTopic</code>&nbsp;<code>plotly</code><br><br>
       </div>
 
 
@@ -915,7 +911,7 @@ Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet alloca
 ###### Websites
 Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/<br>
 <br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
-<br>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
+<br>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
 
 ###### Anleitungen/Tutorials
 `gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
