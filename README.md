@@ -38,6 +38,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 
 ## Installation (engl. setup)
 Als Programmiersprache wird Python in der Version 3.9 verwendet. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt.
+Die einzelnen Phasen des Projekts sind einzeln lauffähig. 
 
 ### Vorbereitende Installation (engl. preparatory setup)
 
