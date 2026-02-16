@@ -795,7 +795,7 @@ Input oder Outputfeatures in die Datennachvereitung ein
 ______________
 ### Datennachverarbeitung (engl. data post-processing)
 Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
-<img src="3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
+<img src="![Datennachverarbeitung](<docs/3 - Datennachverarbeitung (engl. data post-processing).jpg>) " width="1200">
 
 #### 🔵 Merkmalszusammenfassung (engl. (feature) aggregation)
 Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben, in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
