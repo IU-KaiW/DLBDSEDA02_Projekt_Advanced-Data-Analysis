@@ -37,11 +37,17 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 ```
 
 ## Installation (engl. setup)
-Als Programmiersprache wird Python in der Version 3.9 verwendet. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt.
+Als Programmiersprache wird Python in der Version 3.12 verwendet. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt.
 Die einzelnen Phasen des Projekts sind einzeln lauffähig. 
 
 ### Vorbereitende Installation (engl. preparatory setup)
+Die Einrichtung einer Virtuellen Umgebung erfolgte mittels conda
 
+```console
+conda create -n ada_env python=3.12
+conda activate ada_env
+conda install ipykernel
+```
 
 _________________________________________________________________________________________________________________________________________________________
 
