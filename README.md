@@ -5,16 +5,6 @@ Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz
 
 Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten Python-Bibliotheken aufgeführt werden.
 
-Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die verwendeten Softwarebibliotheken wurden in folgender Form hervorgehoben: 
-
-<div style="margin-left: 2em;">
-  <code>Bibliothek 1</code>&nbsp;<code>Bibliotek 2</code><br>
-</div>
-
-
-`<paketname>.<funktionsname>(<funktionsargumente>)`
-
-
 - Clustering von Beschwerden.
 
 ## Projektstruktur
@@ -53,6 +43,15 @@ ________________________________________________________________________________
 
 ## Konzeption
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
+
+Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die verwendeten Softwarebibliotheken wurden in folgender Form hervorgehoben: 
+
+<div style="margin-left: 2em;">
+  <code>Bibliothek 1</code>&nbsp;<code>Bibliotek 2</code><br>
+</div>
+
+
+`<paketname>.<funktionsname>(<funktionsargumente>)`
 
 ## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/1%20-%20Datensatzverarbeitung%20(engl.%20dataset%20pipeline).jpg" width="1200">
