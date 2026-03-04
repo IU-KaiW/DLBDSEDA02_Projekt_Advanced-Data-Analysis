@@ -469,7 +469,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
                 </li>
               </ul>
                 <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
-                Bei kontextbasierte Wort-Einbettungen handelt es sich um dynamische Worteinbettungen bei denen jedes „Wort, jede Phrase, jeder Satz [...] situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext [bekommen]." Semantische und syntaktische Unterschiede können so erstmals maschinell berücksichtigt werden. (Wehner, 2026)<br>
+                Bei kontextbasierte Wort-Einbettungen handelt es sich um dynamische Worteinbettungen bei denen jedes „Wort, jede Phrase, jeder Satz [...] situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext [bekommen]" (Wehner, 2026). Semantische und syntaktische Unterschiede können so erstmals maschinell berücksichtigt werden.<br>
                 <ul>
                 <li>bidirektionale kontextbasierte Wort-Einbettungen</li>
                 Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen. ---- Bidirektionale Kontextmodelle:</b> ELMo, BERT
