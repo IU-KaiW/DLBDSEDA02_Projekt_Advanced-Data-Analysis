@@ -5,30 +5,10 @@ Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz
 
 Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten Python-Bibliotheken aufgeführt werden.
 
-- Clustering von Beschwerden.
-
-## Projektstruktur
-### Ordnerstruktur
-```markdown
-├── dataset/   # gewählter Datensatz
-├─────────────── / complaints_data.csv
-├─────────────── / complaints_data_cleaned.csv
-├── src/       # Python-Skripte
-├─────────────── / Datensatzvorverarbeitung (engl. dataset pipeline)
-├─────────────── / Datenverarbeitung (engl. data pre-processing)
-├─────────────── / Datenverarbeitung (engl. data processing)
-├─────────────── / Datennachverarbeitung (engl. data post-processing)
-├── docs/      # Übersichten (Arbeitsunterlagen, Datensatzauswertungen)
-├─────────────── / 1 -
-├─────────────── / 2 - 
-├─────────────── / 3 - 
-├─────────────── / X - 
-└── README.md
-```
+Konzept Umsetzung
 
 ## Installation (engl. setup)
-Als Programmiersprache wird Python in der Version 3.12 verwendet. Als Entwicklungsumgebung (engl. integrated development environment - IDE) wurde Visual Studio Code (VSCode) genutzt.
-Die einzelnen Phasen des Projekts sind einzeln lauffähig. 
+Als Entwicklungsumgebung wird Microsoft Visual Studio Code (VSCode) genutzt.
 
 ### Vorbereitende Installation (engl. preparatory setup)
 Die Einrichtung einer Virtuellen Umgebung erfolgte mittels conda
@@ -38,13 +18,30 @@ conda create -n ada_env python=3.12
 conda activate ada_env
 conda install ipykernel
 ```
+Als Programmiersprache wird Python in der Version 3.12 verwendet. 
 
+
+## Projektstruktur
+### Ordnerstruktur
+```markdown
+├── datasets/  # Datensatz
+├─────────────── / complaints_data.csv
+├─────────────── / complaints_data_cleaned.csv
+├── src/       # Python-Skripte
+├─────────────── / Projekt_Advanced_Data-Analysis.ipynb
+├── docs/      # Übersichten (Arbeitsunterlagen, Datensatzauswertungen)
+├─────────────── / 1 -
+├─────────────── / 2 - 
+├─────────────── / 3 - 
+├─────────────── / X - 
+└── README.md
+```
 _________________________________________________________________________________________________________________________________________________________
 
-## Konzeption
+## Konzeptionelle Überlegungen
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
 
-Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die verwendeten Softwarebibliotheken wurden in folgender Form hervorgehoben: 
+Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die mögliche Softwarebibliotheken wurden in folgender Form hervorgehoben: 
 
 <div style="margin-left: 2em;">
   <code>Bibliothek 1</code>&nbsp;<code>Bibliotek 2</code><br>
@@ -106,14 +103,14 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese zur Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können. Die Datensatzsichtung wurde mittels des selbstgeschriebenen Python-Skripts "Datensatzsichtung (engl. dataset inspection).ipynb" durchgeführt, um den gewählten Datensatz zu einer Datenstrukturanalyse sowie der Analyse der strukturierten und unstrukturierten Daten besser zu verstehen.
+In der Phase der Datensatzsichtung werden eine Datenstrukturanalyse sowie eine explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese in der Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können.
 
 <ol>   
   <details>
   <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
-  <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer
-  "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma)
-  nutzt (Klein, 2023, p. 261-262).</i>
+  Bei der Datenstrukturanalyse wird die Strukturierung eines Datensatzes erkundet, um einen Überblick über den Aufbau des Datensatzes zu erhalten.
+
+  <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma) nutzt (Klein, 2023, p. 261-262).</i>
   <sup id="ref-12"><a href="#fn-12">[12]</a></sup><i> Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
   5659 Zeilen, welche in 4 Spalten organisiert wurden.</i><br><br>
 
@@ -170,17 +167,17 @@ In der Phase der Datensatzsichtung wird eine Explorative Datenanalyse (engl. exp
   
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) die konkateniert Sätze bilden, die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>  
   
-  Die EDA zeigte dass die Texte im Median aus 1.239,94 Zeichen bestehen.
+  Die EDA zeigte, dass die Texte im Median aus 864 Zeichen bestehen.
   </ul>
 </ul>
 
 <ul>
   <li><ins>fehlerhafte Daten</ins></li>
-  Im Zuge der Datenexploration ist aufgefallen, dass sich sowohl in den unstrukturiert vorliegenden Daten 30 NaNs, nicht vorhandene Informationen befanden. die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Es wurden 30 NaNs in der Spalte 'text' und fehlende Daten und (XXX) Duplikate gefunden<br>
+  Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte (NaNs) in der Spalte 'text' vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit <code>duplicated(keep=False)</code>).<br>
   <ul>
-  <li><ins>XXXXX</ins></li>
+  <li><ins>Fehlwert- und Duplikatbefund</ins></li>
   
-  > Die Analyse fehlender Daten zeigte, dass der Datensatz <br>  
+  > Die Analyse fehlender Daten zeigte keine Fehlwerte in den strukturierten Spalten 'author', 'posted_on' und 'rating', aber 30 Fehlwerte in der Spalte 'text'. Die Duplikatanalyse zeigte 1 doppelte Zeile.<br>  
   </ul>
 </ul>
 </ol>
@@ -884,32 +881,26 @@ aufgerufen werden.[^15]<br>
   |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
   |[`re`]                |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |NLP                  |
   |[`csv`]               |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling         |
-  |[`venv`]              |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/venv.html#module-venv|Laufzeitumgebung     |
 
-###### externe Bibliothek
+###### externe Bibliotheken
 
-  | Bibliothek           | Website                                                                                                                                              |Verwendung              |
-  |--------------------- |------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
-  |`torch`               |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html          |KI-Detektor             |
-  |`transformers`        |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                          |KI-Detektor             |
-  |`pandas`              |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                          |Datahandling            |
-  |`spacy`               |Website: https://spacy.io                                                 <br>Dokumentation:                                                          |NLP                     |
-  |`nltk`                |Website: https://github.com/nltk                                          <br>Dokumentation: https://www.nltk.org                                     |NLP                     |
-  |`pyspellchecker`      |Website: https://pypi.org/project/pyspellchecker/                         <br>Dokumentation: https://pyspellchecker.readthedocs.io/en/latest/         |NLP                     |
-  |`gensim`              |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation:                                                          |NLP - Themenmodellierung|
-  |`numpy`               |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                           |                        |
-  |`sklearn`             |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation:                                                          |                        |
-  |`torchmetrics`        |Website: https://pypi.org/project/torchmetrics/                           <br>Dokumentation: https://lightning.ai/docs/torchmetrics/stable/.          |Evaluation              |
-  |`matplotlib`          |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html                 |Visualisierung          |
-  |`seaborn`             |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html                 |Visualisierung          |
-  |`PyLDAvis`            |Website: https://pypi.org/project/pyLDAvis/                               <br>Dokumentation: https://pyldavis.readthedocs.io/en/latest/               |Visualisierung          |
-  |`cartopy`             |Website: https://github.com/SciTools                                      <br>Dokumentation: https://cartopy.readthedocs.io/stable/                   |Visualisierung          |
-  |`wordcloud`           |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                   |Visualisierung          |
-  |`Top2Vec`             |Website: https://pypi.org/project/top2vec/                                <br>Dokumentation: https://top2vec.readthedocs.io/en/stable/Top2Vec.html.   |Visualisierung          |
-  |`stanza `             |Website: https://stanfordnlp.github.io/stanza/                            <br>Dokumentation:                                                          |NLP                     |
-
-
-
+  | Bibliothek             | Website                                                                                                                                              |Verwendung              |
+  |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+  |`torch`                 |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html          |KI-Detektor             |
+  |`transformers`          |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                          |KI-Detektor             |
+  |`pandas`                |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                          |Datahandling            |
+  |`numpy`                 |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                           |Datahandling            |
+  |`spacy`                 |Website: https://spacy.io                                                 <br>Dokumentation: https://spacy.io/api/doc/                                |NLP                     |
+  |`sentence-transformers` |Website: https://huggingface.co/sentence-transformers                     <br>Dokumentation: https://www.sbert.net/index.html                         |NLP - Vektorisierung    |
+  |`gensim`                |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation: https://radimrehurek.com/gensim/apiref.html#api-reference|NLP - Themenmodellierung|
+  |`bertopic`              |Website: https://maartengr.github.io/BERTopic/index.html                  <br>Dokumentation: https://maartengr.github.io/BERTopic/index.html#common   |NLP - Themenmodellierung|
+  |`sklearn`               |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation: https://scikit-learn.org/stable/user_guide.html          |NLP - Vektorisierung    |
+  |`matplotlib`            |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html                 |Visualisierung          |
+  |`seaborn`               |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html                 |Visualisierung          |
+  |`wordcloud`             |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                   |Visualisierung          |
+  |`plotly`                |Website: https://plotly.com/python/                                       <br>Dokumentation: https://docs.plotly.com                                  |Visualisierung          |
+  |`ipython`               |Website: https://ipython.org                                              <br>Dokumentation: https://ipython.readthedocs.io/en/stable/index.html      |Visualisierung          |
+  |`scipy`                 |Website: https://scipy.org                                                <br>Dokumentation: https://docs.scipy.org/doc/scipy/                        |Visualisierung          |
 
 ## Referenzen
 
@@ -949,15 +940,6 @@ Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.c
 
 
 
-
-Formatierung
-🟥🟨🟦🟫⬜🟧🟩🟪◼️◻️🔶🔸🔘
-:red_square:
-<br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
-
-🟣🟢🟠🔴🔵🟡🟤⚫
-
-
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
 [^03]: [Datensatz03] (https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
@@ -976,3 +958,10 @@ Formatierung
 [^14]: Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 [^15]: Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
 
+
+Formatierung
+🟥🟨🟦🟫⬜🟧🟩🟪◼️◻️🔶🔸🔘
+:red_square:
+<br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
+
+🟣🟢🟠🔴🔵🟡🟤⚫
