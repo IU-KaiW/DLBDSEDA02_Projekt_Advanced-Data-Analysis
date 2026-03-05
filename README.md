@@ -1,5 +1,5 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Beschwerdetexten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
+Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Beschwerdetexten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger einer örtlichen Stadtverwaltung aufbereitet werden.<br>
 
 Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten Python-Bibliotheken aufgeführt werden.
 
@@ -8,9 +8,9 @@ Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von 
 Konzept Umsetzung
 
 ## Installation (engl. setup)
-Als Entwicklungsumgebung wurde Microsoft Visual Studio Code (VSCode) genutzt.
+Als Entwicklungsumgebung wurde Microsoft Visual Studio Code (VSCode) genutzt, dabei wird Python in der Version 3.12 verwendet. 
 
-### Vorbereitende Installation (engl. preparatory setup)
+
 Die Einrichtung einer Virtuellen Umgebung erfolgte mittels conda
 
 ```console
@@ -18,8 +18,6 @@ conda create -n ada_env python=3.12
 conda activate ada_env
 conda install ipykernel
 ```
-Als Programmiersprache wird Python in der Version 3.12 verwendet. 
-
 
 ## Projektstruktur
 ### Ordnerstruktur
@@ -38,13 +36,13 @@ Als Programmiersprache wird Python in der Version 3.12 verwendet.
 ```
 _________________________________________________________________________________________________________________________________________________________
 
-## Konzeptionelle Überlegungen
+## Konzept
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
 
 Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die mögliche Softwarebibliotheken wurden in folgender Form hervorgehoben: 
 
 <div style="margin-left: 2em;">
-  <code>Bibliothek 1</code>&nbsp;<code>Bibliotek 2</code><br>
+  <code><paketname>.<funktionsname>(<funktionsargumente>)</code>
 </div>
 
 
@@ -408,22 +406,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
           <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden mit und ohne Informationsgewichtung diffrenziert wird.</i></p>
           <ul>
           <details>
-            <summary>🟡 <b>BoX (Bag-of-X)</b></summary>
-            <p><i>Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wird eine eigene Dimension zugewiesen.</i></p>
-          <ul>
-            <li><ins>BoX auf Einzeltoken</ins><br>
-            Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum.“ (Zheng und Casari, 2019, p. 41)
-            <div style="margin-left: 2em;">
-              <code>sklearn (CountVectorizer)</code>
-            </div>
-            <li><ins>BoX auf Tokensequenzen</ins><br>
-            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzter Merkmalsraum ergibt.
-            <div style="margin-left: 2em;">
-              <code>sklearn (CountVectorizer(ngram_range))</code><br><br>
-            </div>
-            </ul>
-          </details>
-          <details>
             <summary>🟡 <b>TF-IDF (term frequency times inverse document frequency)</b></summary>
             <p><i>Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.</i></p>
               <ul>
@@ -431,12 +413,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
               Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.
               <div style="margin-left: 2em;">
                 <code>sklearn (TfidfVectorizer)</code>
-              </div>
-              <li><ins>TF-IDF auf Tokensequenzen</ins><br>
-              Wird die TF-IDF-Methode mit einer Folge von n-Token durchgeführt, werden Wort-Paare oder längere Phrasen gewichtet, um ihre Relevanz auszudrücken.
-              <div style="margin-left: 2em;">
-                <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
-              </div>
               </ul>
           </details>
 </ol> 
@@ -540,29 +516,6 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
     </ol>
   </details>
 </ol>
-
-#### Merkmalsauswahl (engl. feature selection)
-<p><i>Merkmalsauswahl ist ein komplementärer Prozess zur Merkmalsgenerierung. Nach der Erzeugung von Features werden die relevantesten Merkmale aus dem bestehenden Merkmalsraum ausgewählt, um Redundanz zu reduzieren, Overfitting zu vermeiden und die Modellleistung zu optimieren.</i></p>
-
-implizite und explizite feature selection
-      <ol type="1">
-        <details>
-          <summary>🟡 Filtermethoden</summary>
-          <p><i>wählen Features basierend auf statistischen Eigenschaften (z.B. Korrelation, Chi-Quadrat)</i></p>
-        </details>
-        <details>
-          <summary>🟡 Wrapper-Methoden</summary>
-          <p><i>evaluieren Feature-Subsets durch Modelltraining</i></p>
-        </details>
-        <details>
-          <summary>🟡 Eingebettete Methoden</summary>
-          <p><i>wählen Features während des Modelltrainings aus (z.B. Lasso, Tree-based)</i></p>
-        </details>
-        <div style="margin-left: 2em;">
-          <code>sklearn (SelectKBest, SelectPercentile, RFE)</code><br><br>
-        </div> 
-        Output: Feature-Subset
-      </ol>
 
 ### Modellbildung (engl. model building)
 Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen.
@@ -726,63 +679,10 @@ Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intr
           <b>Bereich:</b> -1 bis 1 (höher = besser)
         </div>
       </details>
-      <details>
-        <summary>🟡 Verwirrung (engl. perplexity)</summary>
-        <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin.</i></p>
-        <div style="margin-left: 2em;">
-          <code>gensim</code>&nbsp;<code>torchmetrics</code><br>
-          <b>Bereich:</b> 0 bis ∞ (niedriger = besser)
-        </div>
-      </details>
-      <details>
         <summary>🟡 Themenvielfalt (engl. topic diversity)</summary>
         <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
       </details>
     </ol>
-  </details>
-  <details>
-    <summary>🟡 Extrinsische Metriken (engl. extrinsic metrics)</summary>
-    <p><i>Bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks (z.B. Klassifikation, Named Entity Recognition, ect.).</i></p>
-    <ul>
-      <ol type="1">
-        <details>
-          <summary>🟡 Klassifikationsmetriken</summary>
-          <p><i>Bewerten die Modellleistung bei überwachten Aufgaben durch Vergleich von Vorhersagen mit bekannten Labels.</i></p>
-          <ul>
-            <li><b>Accuracy</b>: Anteil korrekt klassifizierter Instanzen</li>
-            <li><b>Precision</b>: Anteil relevanter unter den als positiv klassifizierten Instanzen</li>
-            <li><b>Recall</b>: Anteil erkannter relevanter Instanzen</li>
-            <li><b>F1-Score</b>: Harmonisches Mittel aus Precision und Recall</li>
-          </ul>
-          <div style="margin-left: 2em;">
-            <code>sklearn.metrics</code><br>
-          </div>
-        </details>
-        <details>
-          <summary>🟡 Clustering-Metriken</summary>
-          <p><i>Bewerten Clustering-Ergebnisse durch Vergleich mit bekannten Referenzlabels. Relevant für Topic Modeling, wenn gelabelte Daten zur Validierung vorliegen.</i></p>
-          <ul>
-            <li><b>Adjusted Rand Index (ARI)</b>: Paarweise Übereinstimmung, zufallsbereinigt</li>
-            <li><b>Normalized Mutual Information (NMI)</b>: Informationstheoretische Übereinstimmung</li>
-            <li><b>V-Measure</b>: Harmonisches Mittel aus Homogeneity und Completeness</li>
-            <li><b>Homogeneity</b>: XXX</li>
-            <li><b>Completeness</b>: XXX</li>
-            <li><b>Purity</b>: Anteil dominanter Labels pro Cluster</li>
-          </ul>
-          <div style="margin-left: 2em;">
-            <code>sklearn.metrics (adjusted_rand_score, normalized_mutual_info_score, v_measure_score)</code><br>
-          </div>
-        </details>
-        <details>
-          <summary>🟡 Benchmark-Suiten (für Sprachmodelle)</summary>
-          <p><i>Standardisierte Evaluierungsrahmen, die mehrere NLU-Aufgaben bündeln, um Sprachmodelle vergleichbar zu bewerten.</i></p>
-          <ul>
-            <li><b>GLUE</b>: General Language Understanding Evaluation – 9 Aufgaben (z.B. Sentiment, Textähnlichkeit, Inferenz)</li>
-            <li><b>SuperGLUE</b>: Erweiterung von GLUE mit anspruchsvolleren Aufgaben (z.B. kausales Schließen, Wortsinn-Disambiguierung)</li>
-          </ul>
-        </details>
-      </ol>
-    </ul>
   </details>
 </ol>
 
@@ -856,7 +756,7 @@ Datenpräsentation  (engl. data presentation)
       Themenverteilungen; Top-Wörter pro Thema
       BERTopic-Integrierte Visualisierung
       <div style="margin-left: 2em;">
-        <code>PyLDAvis</code>&nbsp;<code>BERTopic</code>&nbsp;<code>plotly</code><br><br>
+        <code></code>&nbsp;<code>BERTopic</code>&nbsp;<code>plotly</code><br><br>
       </div>
 
 
