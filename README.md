@@ -70,17 +70,17 @@ In der Phase der Datenakquisition wurden Datensätze gesucht und bewertungsbasie
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze wurden anhand eines extern entwickelten und vortrainierten [KI-Detektor](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft. Das Programm nutzt ein vortrainiertes Modell zur Sentimentanalyse, um Texte hinsichtlich eines vermuteten organischen (menschlichen) oder synthetischen (KI-basierten) Ursprungs durch Label (REAL / FAKE / ERROR) zu klassifizieren. Während der Anwendung zeigte sich, dass nicht alle Datensätze verarbeitet werden konnten. Dies ist plausibel auf lange Beschwerdetexte (>512 Tokens) in Verbindung mit begrenzten Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern), welches durch das verwendete Embedding genutzt wird, zurückzuführen. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) anschloeßend über eine Tabellenkalkulationsprogramm ausgewertet.</i><br><br>
+      <i>Die gesammelten Datensätze wurden anhand eines extern entwickelten und vortrainierten KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft. Das Programm nutzt dabei ein vortrainiertes Modell zur Sentimentanalyse, um Texte hinsichtlich eines vermuteten organischen (menschlichen) oder synthetischen (KI-basierten) Ursprungs durch Label (REAL / FAKE / ERROR) zu klassifizieren. Während der Anwendung zeigte sich, dass nicht alle Datensätze verarbeitet werden konnten. Dies ist plausibel auf lange Beschwerdetexte (>512 Tokens) in Verbindung mit begrenzten Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welches durch das verwendete Embedding genutzt wird. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über eine Tabellenkalkulationsprogramm ausgewertet.</i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br><br>
     </details>
     <details>
       <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
-      <i>Durch eine Häufigkeitsauswertung der Label wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen die die Formel:</i><br>
+      <i>Durch eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wurde der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über die Formel:</i><br>
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <br>
-      <br><i>ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Kann ein Datensatz nicht in angemessener Zeit (30 min.) durch das Modell verarbeitet werden, wird die Prüfung abgebrochen und die Bewertung als n/a markiert. Der Datensatz fließt dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wird als Korpus für die nachfolgenden Schritte genutzt. Übersteigen seine Instanzen die Schwelle von 2000, wird der Datensatz für die folgenden Verarbeitungschritte darauf begrenzt.<br><br></i>
+      <br><i>ermittelt. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.<br><br></i>
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
@@ -101,7 +101,7 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-In der Phase der Datensatzsichtung wird eine explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen. Hierzu werden die Datenstruktur und der Dateninhalt des Datensatzes untersucht, damit hierdurch gewonnen Erkenntisse in für die Datensatzaufbereitung (engl. dataset preparation) genutzt und in  anschließenden Phasen berücksichtigt werden .
+In der Phase der Datensatzsichtung wird der ausgewählte Datensatz einer explorativen Datenanalyse (engl. exploratory data analysis - EDA) unterzogen, um strukturelle Merkmale, Muster und potenzielle Qualitätsprobleme systematisch zu identifizieren. Zu diesem Zweck werden sowohl die Datenstruktur als auch der Dateninhalt analysiert, sodass die gewonnene Erkenntnisse in die Datensatzaufbereitung (engl. dataset preparation) überführt und den nachgelagerten Prozessphasen methodisch berücksichtigt werden können.
 
 <ol>   
   <details>
