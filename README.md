@@ -41,7 +41,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 
 `<paketname>.<funktionsname>(<funktionsargumente>)`
 
-## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
+## ⬜ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/1%20-%20Datensatzverarbeitung%20(engl.%20dataset%20pipeline).jpg" width="1200">
 
 
@@ -49,25 +49,25 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 > In der Phase der Datenakquisition wurden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vierstufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um den Korpus für die NLP-Pipeline zu bestimmen.<br>
 <ol>
     <details>
-      <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
+      <summary>⬜ Datensatzrecherche (engl. dataset research)</b></summary>
       <i>Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i><br>
     </details>
 </ol>
 <ol>
     <details>
-      <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
+      <summary>⬜ Datensatzsammlung (engl. dataset collection)</summary>
       <i>Offensichtlich synthetisch erzeugte Datensätze wurden ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i><br>
     </details>
 </ol>
 <ol>    
     <details>
-      <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
+      <summary>⬜ Datensatzprüfung (engl. dataset check)</summary>
       <i>Die gesammelten Datensätze wurden anhand eines extern entwickelten und vortrainierten KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft. Das Programm nutzt dabei ein vortrainiertes Modell zur Sentimentanalyse, um Texte hinsichtlich eines vermuteten organischen (menschlichen) oder synthetischen (KI-basierten) Ursprungs durch Label (REAL / FAKE / ERROR) zu klassifizieren. Während der Anwendung zeigte sich, dass nicht alle Datensätze verarbeitet werden konnten. Dies ist plausibel auf lange Beschwerdetexte (>512 Tokens) in Verbindung mit begrenzten Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welches durch das verwendete Embedding genutzt wird. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über eine Tabellenkalkulationsprogramm ausgewertet.</i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br><br>
     </details>
     <details>
-      <summary>⚪ Datensatzauswahl (engl. dataset selection)</summary>
+      <summary>⬜ Datensatzauswahl (engl. dataset selection)</summary>
       <i>Durch eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wurde der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über die Formel:</i><br>
       <br>
       $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
@@ -97,7 +97,7 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 
 <ol>   
   <details>
-  <summary>⚪ Datenstrukturanalyse (engl. data structure analysis)</summary>
+  <summary>⬜ Datenstrukturanalyse (engl. data structure analysis)</summary>
   Bei der Datenstrukturanalyse wird die Strukturierung eines Datensatzes erkundet, um einen Überblick über den Aufbau des Datensatzes zu erhalten.
 
   <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma) nutzt (Klein, 2023, p. 261-262).</i>
@@ -116,7 +116,7 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
   </details>
 <ol>   
   <details>
-  <summary>⚪ Dateninhaltsanalyse (engl. data content analysis)</summary>
+  <summary>⬜ Dateninhaltsanalyse (engl. data content analysis)</summary>
   <i></i><br><br>
   <ul>
     <li><ins>EDA der strukturierten Daten</ins></li>
@@ -177,7 +177,7 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 > In der Phase der Datensatzbereinigung werden die in der EDA gewonnenen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalidierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden.
 <ol>
     <details>
-      <summary>⚪ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
+      <summary>⬜ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
       <i>
       
 ###### Fehlwertbehandlung
@@ -189,7 +189,7 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 </ol>
 <ol>
     <details>
-      <summary>⚪ Datensatzvalidierung (engl. dataset validation)</b></summary>
+      <summary>⬜ Datensatzvalidierung (engl. dataset validation)</b></summary>
       <i>Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.</i><br>
     </details>
 </ol>
@@ -212,122 +212,173 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <code>spaCy</code>
 </div>
 
-#### Textbereinigung (engl. text cleaning)
-Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.<br>
-<img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
 
 <ol type="1">
   <details>
-    <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
-    <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i></p>
+    <summary>🟥 Textbereinigung (engl. text cleaning)</summary>
+    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
+    <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
-      <li><ins>Wortbereinigung (engl. word cleaning)</ins><br>
-        Stoppworte werden beim Token-Filtering entfernt.
-        <div style="margin-left: 2em;">
-          <code>spaCy (token.is_stop)</code><br><br>
-        </div>
+        <details>
+          <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
+          <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i></p>
+          <ul>
+          <details>
+            <summary>🔴 <b>Wortbereinigung (engl. word cleaning)</b></summary>
+            <p><i>Wortfilter</i></p>
+              <ul>
+              <li><ins>Stoppworte</ins><br>
+              Stoppworte werden beim Token-Filtering entfernt.
+             <div style="margin-left: 2em;">
+                <code>spaCy (token.is_stop)</code><br><br>
+              </div>
+              </ul>
+              <ul>
+              <li><ins>Pronomenfilter (projektspezifisch)</ins><br>
+              XXXX
+             <div style="margin-left: 2em;">
+                <code>spaCy (token.pos_ != "PRON")</code><br><br>
+              </div>
+              </ul>
+              <ul>
+              <li><ins>Weitere projektspezifische Wortfilter</ins><br>
+              Einzelne domänenspezifische Tokens werden ausgeschlossen.
+             <div style="margin-left: 2em;">
+                <code>stdlib(.lower)</code>&nbsp;<code>spaCy (token.text)</code><br><br>
+              </div>
+              </ul>
+              </ul>
+          </details>
+          <details>
+          <summary>🔴 Zeichenbereinigung (engl. character cleaning)</summary>
+          <p><i>Satzzeichen werden beim Token-Filtering entfernt.</i></p>
+          </i></p>
+              <div style="margin-left: 2em;">
+                <code>spaCy (token.is_punct)</code><br><br>
+              </div>
+            <ol type="1">
+              <details>
+                <summary>🔴 <b>Satzzeichen </b>(engl. word embeddings)</summary>
+                <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
+                <ul>
+                <li><ins>nichtkontextuelle / vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
+                nichtkontextuelle sprich vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).
+              <details>
+                <summary>🟡 <b>xxx </b>(xxx</summary>
+                <p><i>xxx</i></p>
+                <ul>
+                <li><ins>xxx</i>
+                <ul>
+                <li>xxx
+                  <div style="margin-left: 2em;">
+                    <code>x</code><br><br>
+                  </div>
+                </li>
+                </ul>
+                <li><ins>xxx</ins></li>
+                <i>xxx</i>
+                <ul>
+                <li><ins>xxx</ins></li>
+                <i>xxx</ins></li>
+                <ul>
+                  <li>x
+                    <div style="margin-left: 2em;">
+                      <code>x</code>&nbsp;<code>x</code><br><br>
+                    </div>
+                  </li>
+                  <li>x
+                    <div style="margin-left: 2em;">
+                      <code>x</code><br><br>
+                    </div>
+                  </li>
+                </ul>
+                </li>
+                </ul>
+              </details>
+            </ol>
+          </ol>
+    </ul>
       </li>
-      <li><ins>Zeichenbereinigung (engl. character cleaning)</ins><br>
-        <ul>
-          <li><ins>Satzzeichen (engl. punctuation marks)</ins><br>
-            Satzzeichen werden beim Token-Filtering entfernt.
-            <div style="margin-left: 2em;">
-              <code>spaCy (token.is_punct)</code><br><br>
-            </div>
-          </li>
-          <li><ins>Nummernbereinigung (engl. numbers cleaning)</ins><br>
-            Numerische Tokens werden beim Token-Filtering entfernt.
-            <div style="margin-left: 2em;">
-              <code>spaCy (token.like_num)</code><br><br>
-            </div>
-          </li>
-          <li><ins>Pronomenfilter (projektspezifisch)</ins><br>
-            Pronomen werden zusätzlich entfernt.
-            <div style="margin-left: 2em;">
-              <code>spaCy (token.pos_ != "PRON")</code><br><br>
-            </div>
-          </li>
-          <li><ins>Weitere projektspezifische Wortfilter</ins><br>
-            Einzelne domänenspezifische Tokens werden ausgeschlossen.
-            <div style="margin-left: 2em;">
-              <code>stdlib(.lower)</code>&nbsp;<code>spaCy (token.text)</code><br><br>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ol>
-  </details>
-  <details>
-    <summary>🔴 Standardisierung (engl. standardisation)</summary>
-    <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte in mehreren leicht unterschiedlichen Varianten auftreten.</i></p>
-    <ol type="1">
-      <li><ins>Normalisierung (engl. normalisation)</ins><br>
-        Die Texte werden in ein konsistentes Token-Format überführt.
-        <ul>
-          <li><ins>Kasusumwandlung (engl. case conversion)</ins><br>
-            Tokens werden in Kleinschreibung überführt.
-            <div style="margin-left: 2em;">
-              <code>spaCy (token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
-            </div>
-          </li>
-          <li><ins>Lemmatisierung (engl. lemmatization)</ins><br>
-            Tokens werden auf ihre Grundform reduziert.
-            <div style="margin-left: 2em;">
-              <code>spaCy (token.lemma_)</code><br><br>
-            </div>
-          </li>
-          <li><ins>Batch-Verarbeitung der Dokumente</ins><br>
-            Die Verarbeitung erfolgt effizient über Dokument-Batches.
-            <div style="margin-left: 2em;">
-              <code>spaCy (nlp.pipe)</code><br><br>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <li><ins>Rechtschreibfehlerkorrektur (engl. spelling correction)</ins><br>
-        Im Text-Cleaning der Beschwerden nicht umgesetzt.
-        <div style="margin-left: 2em;">
-          <code>nicht umgesetzt im Notebook</code><br><br>
-        </div>
-      </li>
+        </details>
     </ol>
   </details>
 </ol>
-
-
-
-#### Linguistische Analyse
-Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
+</ol> 
 <ol type="1">
+  <details>
+          <summary>🔴 Standardisierung (engl. standardisation)</summary>
+          <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte in mehreren leicht unterschiedlichen Varianten auftreten.</i></p>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><ins>🔴 Normalisierung (engl. normalisation)</ins><br>
+              Die Texte werden in ein konsistentes Token-Format überführt.
+              <ul>
+                <li><ins>🔴 Kasusumwandlung (engl. case conversion)</ins><br>
+                  Tokens werden in Kleinschreibung überführt.
+                  <div style="margin-left: 2em;">
+                    <code>spaCy (token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
+                  </div>
+                </li>
+                <li><ins>🔴 Lemmatisierung (engl. lemmatization)</ins><br>
+                  Tokens werden auf ihre Grundform reduziert.
+                  <div style="margin-left: 2em;">
+                    <code>spaCy (token.lemma_)</code><br><br>
+                  </div>
+                </li>
+                <li><ins>🔴 Batch-Verarbeitung der Dokumente</ins><br>
+                  Die Verarbeitung erfolgt effizient über Dokument-Batches.
+                  <div style="margin-left: 2em;">
+                    <code>spaCy (nlp.pipe)</code><br><br>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li><ins>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</ins><br>
+              Im Text-Cleaning der Beschwerden nicht umgesetzt.
+              <div style="margin-left: 2em;">
+                <code>nicht umgesetzt im Notebook</code><br><br>
+              </div>
+            </li>
+          </ul>
+        </details>
+
+</ol>
+</ol>
+
+
+<ol type="1">
+  <details>
+    <summary>🟥 Linguistische Analyse</summary>
+    Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
+<ul style="list-style: none; padding-left: 0;">
   <details>
     <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
     <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
-    <ol type="1">
-      <li>Tokenisierung (engl. tokenization)<br>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>🔴 Tokenisierung (engl. tokenization)<br>
         <i>Die Beschwerden werden mit spaCy tokenisiert und im Batch verarbeitet.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy (nlp.pipe)</code><br><br>
         </div>
       </li>
-      <li>Grundformreduktion (engl. inflection reduction)<br>
+      <li>🔴 Grundformreduktion (engl. inflection reduction)<br>
         <i>Die Tokens werden lemmatisiert und in Kleinschreibung überführt.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy (token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
         </div>
       </li>
-      <li>Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
+      <li>🔴 Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
         <i>Aus den bereinigten Texten wird ein Vokabular mit Token-IDs aufgebaut.</i><br>
         <div style="margin-left: 2em;">
           <code>sklearn (CountVectorizer)</code><br><br>
         </div>
       </li>
-      <li>lexikalisches POS-Tagging (für Filterregeln)<br>
+      <li>🔴 lexikalisches POS-Tagging (für Filterregeln)<br>
         <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy (token.pos_)</code><br><br>
         </div>
       </li>
-    </ol>
+    </ul>
   </details>
   <details>
     <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing)</summary>
@@ -339,24 +390,25 @@ Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer
   <details>
     <summary>🔴 semantische Verarbeitung (engl. semantic processing)</summary>
     <p><i>Im Notebook nicht als eigener spaCy-NLP-Schritt (z. B. NER/Coreference/Relation Extraction) umgesetzt.</i></p>
-    <ol type="1">
-      <li>Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt im Notebook</code><br><br>
         </div>
       </li>
-      <li>Koreferenzauflösung (engl. Coreference Resolution - CR)<br>
+      <li>🔴 Koreferenzauflösung (engl. Coreference Resolution - CR)<br>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt im Notebook</code><br><br>
         </div>
       </li>
-      <li>Beziehungsextraktion (engl. Relationship Extraction - RE)<br>
+      <li>🔴 Beziehungsextraktion (engl. Relationship Extraction - RE)<br>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt im Notebook</code><br><br>
         </div>
       </li>
-    </ol>
+    </ul>
   </details>
+</ul>
 </ol>
 
 ### Datenvorbereitung (engl. data preparation)
@@ -373,7 +425,7 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
 
 <ol type="1">
   <details>
-    <summary>🟡 Vektorisierung (engl. vectorization)</summary>
+    <summary>🟨 Vektorisierung (engl. vectorization)</summary>
     <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen. - explizite Features</i></p>
     <ol type="1">
         <details>
