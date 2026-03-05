@@ -8,8 +8,14 @@ Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von 
 Konzept Umsetzung
 
 ## Installation (engl. setup)
-Als Entwicklungsumgebung wurde Microsoft Visual Studio Code (VSCode) genutzt, dabei wird Python in der Version 3.12 verwendet. 
+Projekt extern
+Zur Prüfung der Datensätze wurde vortrainierter KI-Detektor gemäß Herstellerdokumentation eingesetzt. 
 
+Projekt intern
+
+## Installation (engl. setup)
+
+Als Entwicklungsumgebung wurde Microsoft Visual Studio Code (VSCode) genutzt, dabei wird Python in der Version 3.12 verwendet. 
 
 Die Einrichtung einer Virtuellen Umgebung erfolgte mittels conda
 
@@ -41,11 +47,6 @@ Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzv
 
 Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die mögliche Softwarebibliotheken wurden in folgender Form hervorgehoben: 
 
-<div style="margin-left: 2em;">
-  <code><paketname>.<funktionsname>(<funktionsargumente>)</code>
-</div>
-
-
 `<paketname>.<funktionsname>(<funktionsargumente>)`
 
 ## ⚪ Datensatzverarbeitung (engl. dataset pipeline)
@@ -53,24 +54,23 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 
 
 ### Datensatzakquisition (engl. dataset acquisition)
-In der Phase der Datenakquisition werden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vierstufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um den Korpus für die NLP-Pipeline zu bestimmen.<br>
+In der Phase der Datenakquisition wurden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vierstufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um den Korpus für die NLP-Pipeline zu bestimmen.<br>
 <ol>
     <details>
       <summary>⚪ Datensatzrecherche (engl. dataset research)</b></summary>
-      <i>Es wird eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i><br>
+      <i>Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i><br>
     </details>
 </ol>
 <ol>
     <details>
       <summary>⚪ Datensatzsammlung (engl. dataset collection)</summary>
-      <i>Offensichtlich synthetisch erzeugte Datensätze werden ignoriert. Datenquellen mit vermutetem organischen Ursprung werden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i><br>
+      <i>Offensichtlich synthetisch erzeugte Datensätze wurden ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i><br>
     </details>
 </ol>
 <ol>    
     <details>
       <summary>⚪ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze werden anhand deines vortrainierten, extern entwickelten [KI-Detektors](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft und mit Labels (REAL / FAKE / ERROR) getaggt. [genutze Technik - BERT ? Beschränkung der Zeichen] BERT-base
-      </i><br><br>
+      <i>Die gesammelten Datensätze wurden anhand eines extern entwickelten und vortrainierten [KI-Detektor](https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft. Das Programm nutzt ein vortrainiertes Modell zur Sentimentanalyse, um Texte hinsichtlich eines vermuteten organischen (menschlichen) oder synthetischen (KI-basierten) Ursprungs durch Label (REAL / FAKE / ERROR) zu klassifizieren. Während der Anwendung zeigte sich, dass nicht alle Datensätze verarbeitet werden konnten. Dies ist plausibel auf lange Beschwerdetexte (>512 Tokens) in Verbindung mit begrenzten Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern), welches durch das verwendete Embedding genutzt wird, zurückzuführen. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) anschloeßend über eine Tabellenkalkulationsprogramm ausgewertet.</i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br><br>
     </details>
