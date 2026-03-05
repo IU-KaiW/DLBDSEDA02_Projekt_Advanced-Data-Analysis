@@ -1,14 +1,14 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-Die linguistische Datenverarbeitung (LDV, engl. natural language processing – NLP) lässt sich in drei zentrale Bereiche unterteilen: die automatische Spracherkennung (engl. automatic speech recognition – ASR), das Verständnis natürlicher Sprache (engl. natural language understanding – NLU) sowie die natürliche Sprachgenerierung (engl. natural language generation – NLG). Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von Textinhalten.
-
 Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Beschwerdetexten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger (einer örtlichen Stadtverwaltung) aufbereitet werden.<br>
 
 Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten Python-Bibliotheken aufgeführt werden.
 
+Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von Textinhalten.
+
 Konzept Umsetzung
 
 ## Installation (engl. setup)
-Als Entwicklungsumgebung wird Microsoft Visual Studio Code (VSCode) genutzt.
+Als Entwicklungsumgebung wurde Microsoft Visual Studio Code (VSCode) genutzt.
 
 ### Vorbereitende Installation (engl. preparatory setup)
 Die Einrichtung einer Virtuellen Umgebung erfolgte mittels conda
@@ -103,7 +103,7 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-In der Phase der Datensatzsichtung werden eine Datenstrukturanalyse sowie eine explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen, damit diese in der Datensatzaufbereitung (engl. dataset preparation) und in den anschließenden Phasen berücksichtigt werden können.
+In der Phase der Datensatzsichtung wird eine explorative Datenanalyse (engl. exploratory data analysis) durchgeführt, um Muster, Qualitätsprobleme und Strukturen des Datensatzes zu erkennen. Hierzu werden die Datenstruktur und der Dateninhalt des Datensatzes untersucht, damit hierdurch gewonnen Erkenntisse in für die Datensatzaufbereitung (engl. dataset preparation) genutzt und in  anschließenden Phasen berücksichtigt werden .
 
 <ol>   
   <details>
@@ -126,8 +126,8 @@ In der Phase der Datensatzsichtung werden eine Datenstrukturanalyse sowie eine e
   </details>
 <ol>   
   <details>
-  <summary>⚪ Explorative Datenanalyse (engl. exploratory data analysis)</summary>
-  <i>In der EDA werden Textdaten untersucht, um Muster, Qualitätsprobleme und Strukturen zu erkennen.</i><br><br>
+  <summary>⚪ Dateninhaltsanalyse (engl. data content analysis)</summary>
+  <i></i><br><br>
   <ul>
     <li><ins>EDA der strukturierten Daten</ins></li>
     In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
