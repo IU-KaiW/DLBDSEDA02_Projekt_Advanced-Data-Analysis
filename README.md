@@ -8,22 +8,21 @@ Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von 
 Konzept Umsetzung
 
 ## Installation (engl. setup)
-Projekt extern
-Zur Prüfung der Datensätze wurde vortrainierter KI-Detektor gemäß Herstellerdokumentation eingesetzt. 
+### Projekt extern
+Zur Datensatzprüfung wurde ein externer, vortrainierter KI-Detektor gemäß der Herstellerdokumentation eingesetzt. 
 
-Projekt intern
-
-## Installation (engl. setup)
-
-Als Entwicklungsumgebung wurde Microsoft Visual Studio Code (VSCode) genutzt, dabei wird Python in der Version 3.12 verwendet. 
-
-Die Einrichtung einer Virtuellen Umgebung erfolgte mittels conda
+### Projekt intern
+Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer conda-basierten Python-Umgebung eingerichtet. Für eine reproduzierbare Ausführung wird empfohlen, die Umgebung direkt aus der Datei `environment.yml` zu erstellen:
 
 ```console
-conda create -n ada_env python=3.12
-conda activate ada_env
-conda install ipykernel
+conda env create -f environment.yml
+conda activate Projekt_Advanced-Data-Analysis
+python -m spacy download en_core_web_sm
+python -m ipykernel install --user --name Projekt_Advanced-Data-Analysis --display-name "Python (Projekt ADA)"
 ```
+
+Anschließend ist in VSCode der Kernel `Python (Projekt ADA)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
+
 
 ## Projektstruktur
 ### Ordnerstruktur
