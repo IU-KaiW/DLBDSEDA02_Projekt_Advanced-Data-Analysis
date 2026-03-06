@@ -196,7 +196,7 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 
 _________________________________________________________________________________________________________________________________________________________
 
-## 🟨 Datenverarbeitung (engl. data processing)
+## 🟧 Datenverarbeitung (engl. data processing)
 > Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
 
 ###### Pipeline Eingabe (engl. pipeline input)
@@ -206,8 +206,8 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <code>pandas</code>
 </div>
 
-### Datenvorverarbeitung (engl. data pre-processing)
-> Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textbereinigung (engl. text cleaning) und Merkmalsextraktion unterteilen lässt. 
+### 🟥 Datenvorverarbeitung (engl. data pre-processing)
+> Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt. 
 <div style="margin-left: 2em;">
   <code>spaCy</code>
 </div>
@@ -215,8 +215,8 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 
 <ol type="1">
   <details>
-    <summary>🟥 Textbereinigung (engl. text cleaning)</summary>
-    <p><i>Im Rahmen der Textbereinigung werden Texte von Rauschen befreit und standardisiert.</i></p>
+    <summary>🟥 <b>textuelle Vorverarbeitung</b> (engl. text pre-processing)</summary>
+    <p><i>In der textuelle Vorverarbeitung erfolgt eine Textbereinigung (engl. text cleaning) welche durch Rauschentfernung (engl. noise reduction) und Standardisierung (engl. standardisation) anhand eines Filterblocks aus Standard- und Individualfiltern realisiert wird, um sprachspezifische Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Emoijs, Schreibfehler und Pronomen zu filtern.</i></p>
     <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
         <details>
@@ -224,10 +224,10 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i></p>
           <ul>
           <details>
-            <summary>🔴 <b>Wortbereinigung (engl. word cleaning)</b></summary>
+            <summary>🔴 Wortbereinigung (engl. word cleaning)</b></summary>
             <p><i>Wortfilter</i></p>
               <ul>
-              <li><ins>Stoppworte</ins><br>
+              <li><ins>Stoppworte</ins></li><br>
               Stoppworte werden beim Token-Filtering entfernt.
              <div style="margin-left: 2em;">
                 <code>spaCy (token.is_stop)</code><br><br>
@@ -244,26 +244,25 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <li><ins>Weitere projektspezifische Wortfilter</ins><br>
               Einzelne domänenspezifische Tokens werden ausgeschlossen.
              <div style="margin-left: 2em;">
-                <code>stdlib(.lower)</code>&nbsp;<code>spaCy (token.text)</code><br><br>
+                <code></code>&nbsp;<code>spaCy (token.text)</code><br><br>
               </div>
               </ul>
           </details>
           <details>
           <summary>🔴 Zeichenbereinigung (engl. character cleaning)</summary>
           <p><i>Satzzeichen werden beim Token-Filtering entfernt.</i></p>
-          </i></p>
               <div style="margin-left: 2em;">
                 <code>spaCy (token.is_punct)</code><br><br>
               </div>
             <ol type="1">
               <details>
-                <summary>🔴 <b>Satzzeichen </b>(engl. word embeddings)</summary>
+                <summary>🔴 Satzzeichen (engl. word embeddings)</summary>
                 <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
                 <ul>
-                <li><ins>nichtkontextuelle / vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
-                nichtkontextuelle sprich vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).
+                <li><ins>xxxx</ins></li>
+                nxxx
               <details>
-                <summary>🟡 <b>xxx </b>(xxx</summary>
+                <summary>🟡 <b>xxx </b>(xxx)</summary>
                 <p><i>xxx</i></p>
                 <ul>
                 <li><ins>xxx</i>
@@ -278,7 +277,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <i>xxx</i>
                 <ul>
                 <li><ins>xxx</ins></li>
-                <i>xxx</ins></li>
+                <i>xxx</ins></i>
                 <ul>
                   <li>x
                     <div style="margin-left: 2em;">
@@ -295,20 +294,13 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 </ul>
               </details>
             </ol>
-          </ol>
     </ul>
       </li>
         </details>
-    </ol>
-  </details>
-</ol>
-</ol> 
-<ol type="1">
-  <details>
+        <details>
           <summary>🔴 Standardisierung (engl. standardisation)</summary>
           <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte in mehreren leicht unterschiedlichen Varianten auftreten.</i></p>
-          <ul style="list-style: none; padding-left: 0;">
-            <li><ins>🔴 Normalisierung (engl. normalisation)</ins><br>
+            <ins>🔴 Normalisierung (engl. normalisation)</ins><br>
               Die Texte werden in ein konsistentes Token-Format überführt.
               <ul>
                 <li><ins>🔴 Kasusumwandlung (engl. case conversion)</ins><br>
@@ -331,24 +323,23 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 </li>
               </ul>
             </li>
-            <li><ins>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</ins><br>
+              <ins>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</ins><br>
               Im Text-Cleaning der Beschwerden nicht umgesetzt.
-              <div style="margin-left: 2em;">
+                <div style="margin-left: 2em;">
                 <code>nicht umgesetzt im Notebook</code><br><br>
               </div>
             </li>
           </ul>
         </details>
-
 </ol>
 </ol>
 
 
 <ol type="1">
   <details>
-    <summary>🟥 Linguistische Analyse</summary>
+    <summary>🟥 <b> linguistische Vorverarbeitung</b> (engl. linguistic processing)</summary>
     Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
-<ul style="list-style: none; padding-left: 0;">
+<ul>
   <details>
     <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
     <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
@@ -362,7 +353,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
       <li>🔴 Grundformreduktion (engl. inflection reduction)<br>
         <i>Die Tokens werden lemmatisiert und in Kleinschreibung überführt.</i><br>
         <div style="margin-left: 2em;">
-          <code>spaCy (token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
+          <code>spaCy (token.lemma_)</code><br><br>
         </div>
       </li>
       <li>🔴 Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
@@ -389,7 +380,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 semantische Verarbeitung (engl. semantic processing)</summary>
     <p><i>Im Notebook nicht als eigener spaCy-NLP-Schritt (z. B. NER/Coreference/Relation Extraction) umgesetzt.</i></p>
-    <ul style="list-style: none; padding-left: 0;">
+    <ul>
       <li>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt im Notebook</code><br><br>
@@ -410,23 +401,21 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 </ul>
 </ol>
 
-### Datenvorbereitung (engl. data preparation)
-> Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt. Dies erfolgt durch  Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection). <br> Merkmalsgenerierung (engl. feature generation) bezeichnet in der NLP-Pipeline den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten in numerische oder kategorische Repräsentationen um, die syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch durch trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden. <br> Merkmalsauswahl (engl. feature selection) ist ein komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
-
-feature - explizite / abstrakte
-
-<div style="margin-left: 2em;">
-  <code>sklearn (CountVectorizer, TfidfVectorizer)</code>&nbsp;<code>sentence-transformers</code><br><br>
-</div>
-
-#### Merkmalsgenerierung (engl. feature generation/featurization)
-Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen. Unstrukturierte Daten werden durch Merkmalskodierung (engl. feature encoding) in numerische oder kategorische Repräsentationen überführt, die Machine-Learning-Modelle nutzen können.
-
+### 🟨 Datenvorbereitung (engl. data preparation)
+> Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt, was durch   Merkmalsgenerierung (engl. feature generation/featurization) und/oder Merkmalsauswahl (engl. feature selection) erfolgt.<br> 
+<ol type="1">
+  <details>
+    <summary>🟨 <b> Merkmalsgenerierung </b> (engl. feature generation/featurization)</summary>
+   Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch Merkmalskodierung (engl. feature encoding) in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden.
+<ul>
 <ol type="1">
   <details>
     <summary>🟨 Vektorisierung (engl. vectorization)</summary>
     <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen. - explizite Features</i></p>
-    <ol type="1">
+<div style="margin-left: 2em;">
+  <code>sklearn (CountVectorizer, TfidfVectorizer)</code>&nbsp;<code>sentence-transformers</code><br><br>
+</div>
+<ol type="1">
         <details>
           <summary>🟡 Merkmalsvektoren (engl. feature vectors)</summary>
           <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden mit und ohne Informationsgewichtung diffrenziert wird.</i></p>
@@ -543,19 +532,22 @@ Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text
   </details>
 </ol>
 
-### Modellbildung (engl. model building)
+#### 🟨 Merkmalsauswahl (engl. feature selection)
+Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
+
+### 🟧 Modellbildung (engl. model building)
 Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen.
 Die Modellarchitekturen können dabei als nicht-neuronale (z.B. algebraische, lineare, probabilistische) oder neuronale Strukturen (z.B. Transformer, LSTM) ausgelegt sein.
 
-1. Modellkonfiguration<br>
+🟧 Modellkonfiguration<br>
 In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich. (wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz) (IBM Deutschland GmbH, 2025)
 Hyperparametern (Lernrate, Batchgröße)
 Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
 
-2. Modellinitialisierung<br>
+🟧 Modellinitialisierung<br>
 Bei der Modellinitialisierung werden Modellparameter für den Lernprozess des Modells festgelegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
 
-3. Modelltraining<br>
+🟧 Modelltraining<br>
 Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
 
 Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
@@ -721,7 +713,7 @@ Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Lab
 Input oder Outputfeatures in die Datennachvereitung ein
 
 ______________
-### Datennachverarbeitung (engl. data post-processing)
+### 🟦 Datennachverarbeitung (engl. data post-processing)
 Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
 <img src="docs/3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
 
