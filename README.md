@@ -731,7 +731,7 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
   <details>
     <summary>🟦 Datenauswertung (engl. data evaluation)</summary>
     <p><i>Die Datenauswertung setzt sich aus der Datenzusammenfassung und der Datenanalyse zusammen.
-    Merkmalsauswertungen (engl. feature ) / Modellauswertung. 
+    Merkmalsanalyse - Merkmalsauswertungen (engl. feature analysen) / Modellanalysen - Modellauswertung. 
     </i></p>
     <img src="docs/3 - Datenauswertung (engl. data evaluation).jpg" width="1200">
     <ol type="1">
@@ -749,11 +749,6 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
         </details>
         <details> 
         <summary>Ausgaben-Aggregation (engl. output-aggregation)</summary>
-        <div style="margin-left: 2em;">
-        <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code></code><br><br>
-      </div>
-      Themenverteilungen; Top-Wörter pro Thema
-      BERTopic-Integrierte Visualisierung
       </details>
   </details>
       <details>
@@ -766,11 +761,9 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
       </details>
       <details>
       <summary>🔵 Modellanalyse (engl. model analysis)</summary>
-<div style="margin-left: 2em;">
-  <code>gensim.models.CoherenceModel</code><br>
-</div>
-
-
+      <div style="margin-left: 2em;">
+        <code>gensim.models.CoherenceModel</code><br>
+      </div>
     </ol>
 </ol>
 
@@ -790,6 +783,11 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
         <summary>🔵 Merkmalsdarstellungen (engl. feature visualizations)</summary>
         <p><i>Die Darstellung von Merkmalen kann über textuelle, grafische oder hybride Darstellungsformen erfolgen.</i></p>
       </details>
+        <div style="margin-left: 2em;">
+          <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code></code><br><br>
+        </div>
+      Themenverteilungen; Top-Wörter pro Thema
+      BERTopic-Integrierte Visualisierung
       <details>
       <summary>🔵 Modelldarstellung (engl. model visualizations)</summary>
       <p><i>XXXX</i></p>
