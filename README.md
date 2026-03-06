@@ -197,7 +197,7 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 _________________________________________________________________________________________________________________________________________________________
 
 ## 🟧 Datenverarbeitung (engl. data processing)
-> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
+> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. Die Datenverarbeitung
 
 ###### Pipeline Eingabe (engl. pipeline input)
 Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Zeilen des Datensatzes werden auch als Dokumente bezeichnet. 
@@ -402,16 +402,15 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 </ol>
 
 ### 🟨 Datenvorbereitung (engl. data preparation)
-> Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt, was durch   Merkmalsgenerierung (engl. feature generation/featurization) und/oder Merkmalsauswahl (engl. feature selection) erfolgt.<br> 
+> Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt, was durch   Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection) erfolgt.<br> 
 <ol type="1">
   <details>
     <summary>🟨 <b> Merkmalsgenerierung </b> (engl. feature generation/featurization)</summary>
-   Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch Merkmalskodierung (engl. feature encoding) in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden.
-<ul>
+   Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch Merkmalskodierung (engl. feature encoding)' in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden.
 <ol type="1">
   <details>
     <summary>🟨 Vektorisierung (engl. vectorization)</summary>
-    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen. - explizite Features</i></p>
+    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>
 <div style="margin-left: 2em;">
   <code>sklearn (CountVectorizer, TfidfVectorizer)</code>&nbsp;<code>sentence-transformers</code><br><br>
 </div>
@@ -421,7 +420,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden mit und ohne Informationsgewichtung diffrenziert wird.</i></p>
           <ul>
           <details>
-            <summary>🟡 <b>TF-IDF (term frequency times inverse document frequency)</b></summary>
+            <summary>🟡 TF-IDF (term frequency times inverse document frequency)</b></summary>
             <p><i>Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.</i></p>
               <ul>
               <li><ins>TF-IDF auf Einzeltoken</ins><br>
@@ -530,26 +529,39 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
         </details>
     </ol>
   </details>
+  </details>
 </ol>
 
-#### 🟨 Merkmalsauswahl (engl. feature selection)
-Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden. <br>
+<ol type="1">
+  <details>
+    <summary>🟨 <b> Merkmalsauswahl </b> (engl. feature selection)</summary>
+   Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden
+<ul>
+</ol>
+
 
 ### 🟧 Modellbildung (engl. model building)
-Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen.
+> Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen.
 Die Modellarchitekturen können dabei als nicht-neuronale (z.B. algebraische, lineare, probabilistische) oder neuronale Strukturen (z.B. Transformer, LSTM) ausgelegt sein.
 
-🟧 Modellkonfiguration<br>
-In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich. (wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz) (IBM Deutschland GmbH, 2025)
-Hyperparametern (Lernrate, Batchgröße)
-Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
-
-🟧 Modellinitialisierung<br>
-Bei der Modellinitialisierung werden Modellparameter für den Lernprozess des Modells festgelegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
-
-🟧 Modelltraining<br>
-Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
-
+<ol type="1">
+  <details>
+    <summary>🟧 <b> Modellkonfiguration </b> xxx</summary>
+    In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
+    
+    Hyperparametern (Lernrate, Batchgröße)
+    Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
+  </details>
+  <details>
+    <summary>🟧 <b> Modellinitialisierung< </b> xxx</summary>
+    Bei der Modellinitialisierung werden Modellparameter für den Lernprozess des Modells festgelegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
+  </details>
+  <details>
+    <summary>🟧 <b> Modelltraining</b> xxx</summary>
+    Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
+  </details>
+<ul>
+</ol>
 Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
 
 #### Merkmalslernen (engl. feature learning / representation learning)
@@ -660,7 +672,7 @@ unüberwacht, Clustering.
           <details>
             <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
             <p><i>Moderne Alternative zu t-SNE, schneller und skalierbarer. Bewahrt lokale und globale Strukturen.</i></p>
-            UMAP (Uniform Manifold Approximation and Projection) „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen.“ (Thevapalan, 2025)
+            UMAP (Uniform Manifold Approximation and Projection) „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen“ (Thevapalan, 2025).
             <div style="margin-left: 2em;">
               <code>umap-learn</code><br>
               <b>Output:</b> 2-3D Koordinaten
@@ -715,68 +727,76 @@ Input oder Outputfeatures in die Datennachvereitung ein
 ______________
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
 Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
-<img src="docs/3 - Datennachverarbeitung (engl. data post-processing).jpg" width="1200">
+<ol type="1">
+  <details>
+    <summary>🟦 Datenauswertung (engl. data evaluation)</summary>
+    <p><i>Die Datenauswertung setzt sich aus der Datenzusammenfassung und der Datenanalyse zusammen.
+    Merkmalsauswertungen (engl. feature ) / Modellauswertung. 
+    </i></p>
+    <img src="docs/3 - Datenauswertung (engl. data evaluation).jpg" width="1200">
+    <ol type="1">
+      <details>
+        <summary>🔵 Datenzusammenfassung (engl. data aggregation)</summary>
+        <p><i>Die Datenzusammenfassung ist der Datenanalyse vorgelagert. Hierbei werden Modelleingaben (engl. input features), modellinterne Merkmale (engl. intermediate features) oder Modellausgaben (engl. output features) ein- oder mehrdimensional aggregiert. Eine Aggregation kann modellintern oder extern durch unterschiedliche Aggregationsstrategien erfolgen.
+        Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.
+        </i></p>
+        <ul>
+        <details> 
+        <summary>Eingaben-Aggregation (engl. input-aggregation)</summary>
+        </details>
+        <details> 
+        <summary>Modellinterne-Aggregation (engl. Intermediate aggregation)</summary>
+        </details>
+        <details> 
+        <summary>Ausgaben-Aggregation (engl. output-aggregation)</summary>
+        <div style="margin-left: 2em;">
+        <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code></code><br><br>
+      </div>
+      Themenverteilungen; Top-Wörter pro Thema
+      BERTopic-Integrierte Visualisierung
+      </details>
+  </details>
+      <details>
+        <summary>🔵 Datenanalyse (engl. data analysis)</summary>
+        <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder die merkmals-verarbeitenden Modelle gewonnen.</i></p>
+        <summary> 🔵 Merkmalsanalyse (engl. feature analysis)</summary>
+        <i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i>
+        -Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden. Merkmalsanalyse basiert auf Merkmalsbeschreibungen und erfolgt typischerweise in der Datennachverarbeitung.
+        <ul>
+      </details>
+      <details>
+      <summary>🔵 Modellanalyse (engl. model analysis)</summary>
+<div style="margin-left: 2em;">
+  <code>gensim.models.CoherenceModel</code><br>
+</div>
 
-#### 🔵 Merkmalszusammenfassung (engl. (feature) aggregation)
-Im Rahmen der Merkmalszusammenfassung erfolgt eine Konsolidierung der Modellausgaben, in der Merkmalsanalysen (engl. feature analysis) durchgeführt und letztlich als Datenpräsentation (engl. data presentation) aufbereitet werden.
 
-alphanumerische Darstellungen - Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.
-
-
-#### 🔵 Merkmalsanalyse (engl. feature analysis)
-<p><i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i></p>
-
-**Merkmalsanalyse** untersucht und beschreibt die in der Merkmalsaufbereitung erstellten Merkmale. Während die **Merkmalsaufbereitung** (Phase Datenverarbeitung) konstruktiv arbeitet und Merkmale schafft, arbeitet die **Merkmalsanalyse** (Phase Datennachverarbeitung) analytisch und interpretiert diese Merkmale für Entscheidungsträger.
-
-- **Merkmalsanalyse (engl. feature analysis)**: Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden. Merkmalsanalyse basiert auf Merkmalsbeschreibungen und erfolgt typischerweise in der Datennachverarbeitung.
+    </ol>
+</ol>
 
 
 <ol type="1">
   <details>
-    <summary>🔵 Merkmalserkennung (engl. feature recognition) – Pattern-Erkennung</summary>
-    <p><i>Merkmalserkennung identifiziert spezifische Muster, Anomalien oder Strukturen in bereits erzeugten oder gelernten Features durch regelbasierte oder lernbasierte Verfahren.</i></p>
-    <ol type="1">
-      <li><ins>Regelbasierte Erkennung</ins><br>
-      <i>Verwendung von vordefinierten Regeln und Heuristiken zur Mustererkennung.</i>
-        <div style="margin-left: 2em;">
-          <code>NLTK (pattern matching)</code>&nbsp;<code>regex</code><br><br>
-        </div>
-      </li>
-      <li><ins>Lernbasierte Erkennung</ins><br>
-      <i>Verwendung von trainierten Modellen zur automatischen Mustererkennung und Klassifikation.</i>
-        <ol type="1">
-          <details>
-            <summary>🟡 KeyBERT (Keyword/Term Extraction)</summary>
-            <p><i>KeyBERT extrahiert automatisch interpretierbare Schlüsselwörter aus Dokumenten durch semantische Ähnlichkeit von BERT-Embeddings und ermöglicht so die schnelle Identifikation dominanter Begriffe in Textsammlungen.</i></p>
-            <div style="margin-left: 2em;">
-              <code>keybert</code>&nbsp;<code>sentence-transformers</code><br><br>
-            </div>
-          </details>
-        </ol>
-        <div style="margin-left: 2em;">
-          <code>sklearn (Clustering, Classification)</code>&nbsp;<code>K-Means, DBSCAN</code><br><br>
-        </div>
-      </li>
-    </ol>
-  </details>
-</ol>
-
-
-Datenauswertung (engl. data analysis)
-<div style="margin-left: 2em;">
-  <code>pandas</code>&nbsp;<code>gensim.models.CoherenceModel</code><br>
-</div>
-
-#### 🔵 Merkmalsauswertungen (engl. feature )
-Datenpräsentation  (engl. data presentation)
-🔵 Visualisierung (engl. visualization)
-      <p><i>grafische Darstellung - Visualisierung stellt die aggregierten Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
-      Themenverteilungen; Top-Wörter pro Thema
-      BERTopic-Integrierte Visualisierung
+    <summary>🟦 Datenkommunikation (engl. data communication)</summary>
+    <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.</i></p>
+    <img src="docs/3 - Datenkommunikation (engl. data communication).jpg" width="1200">
+          <p><i>Visualisierung stellt aggregierte Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
       <div style="margin-left: 2em;">
-        <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code>plotly</code><br><br>
+        <code>plotly</code><br><br>
       </div>
-
+    <ul> 
+    <ol type="1">
+      <details>
+        <summary>🔵 Merkmalsdarstellungen (engl. feature visualizations)</summary>
+        <p><i>Die Darstellung von Merkmalen kann über textuelle, grafische oder hybride Darstellungsformen erfolgen.</i></p>
+      </details>
+      <details>
+      <summary>🔵 Modelldarstellung (engl. model visualizations)</summary>
+      <p><i>XXXX</i></p>
+      </detail>
+    </ul> 
+    </ol>
+</ol>
 
 ### Datenverständnis (engl. data understanding)
 Dateninterpretation / domänenspezifische Interpretation
