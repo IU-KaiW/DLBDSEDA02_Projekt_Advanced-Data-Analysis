@@ -688,36 +688,6 @@ unüberwacht, Clustering.
 ### Modellabstimmung (engl. model calibration)
 Anpassung der Modellbildung
 
-##### Modellbewertung (engl. model evaluation)
-Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intrinsische oder extrinsische Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.
-„Intrinsic and extrinsic evaluators are distinct measures where intrinsic evaluators capture inherent properties and extrinsic evaluators assess performance in external contexts.“ (“Intrinsic and Extrinsic Evaluators”)
-<ol type="1">
-  <details>
-    <summary>🟡 Intrinsische Metriken (engl. intrinsic metrics)</summary>
-    <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
-    <ol type="1">
-      <details>
-        <summary>🟡 Kohärenz (engl. coherence)</summary>
-        <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
-        <ul>
-          <li><b>u_mass</b>: Interne Kohärenz</li>
-          <li><b>c_v</b>: Externe Konsistenz (wird genutzt)</li>
-          <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
-        </ul>
-        <div style="margin-left: 2em;">
-          <code>gensim.models.CoherenceModel</code><br>
-          <b>Bereich:</b> -1 bis 1 (höher = besser)
-        </div>
-      </details>
-        <summary>🟡 Themenvielfalt (engl. topic diversity)</summary>
-        <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
-      </details>
-    </ol>
-  </details>
-</ol>
-
-
-
 ###### Pipeline Ausgabe (engl. pipeline output)
 
 Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Labels oder Logits die Datennachverarbeitung (engl. data post-processing) ein.
@@ -737,8 +707,7 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
     <ol type="1">
       <details>
         <summary>🔵 Datenzusammenfassung (engl. data aggregation)</summary>
-        <p><i>Die Datenzusammenfassung ist der Datenanalyse vorgelagert. Hierbei werden Modelleingaben (engl. input features), modellinterne Merkmale (engl. intermediate features) oder Modellausgaben (engl. output features) ein- oder mehrdimensional aggregiert. Eine Aggregation kann modellintern oder extern durch unterschiedliche Aggregationsstrategien erfolgen.
-        Aggregation reduziert die Datenmenge durch mathematische Operationen wie Summe, Mittelwert, Zählung oder Maximum über Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum). In NLP könnte dies die Häufigkeitsverteilung von n-Grammen pro Domäne oder die durchschnittliche Embedding-Distanz pro Klasse bedeuten. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente. Aggregation fasst Rohdaten zu kompakteren Zusammenfassungen zusammen.
+        <p><i>Die Datenzusammenfassung ist der Datenanalyse vorgelagert und fasst Daten zu kompakteren Zusammenfassungen zusammen. Dabei werden Modelleingaben (engl. input features), modellinterne Merkmale (engl. intermediate features) oder Modellausgaben (engl. output features) ein- oder mehrdimensional zusammengefasst. Die Aggregation kann dabei modellintern oder modellextern anhand unterschiedlicher Aggregationsstrategien erfolgen, wodurch die Datenmenge durch mathematische Operationen oder Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum) reduziert wird. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.
         </i></p>
         <ul>
         <details> 
@@ -754,20 +723,59 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
       <details>
         <summary>🔵 Datenanalyse (engl. data analysis)</summary>
         <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder die merkmals-verarbeitenden Modelle gewonnen.</i></p>
-        <summary> 🔵 Merkmalsanalyse (engl. feature analysis)</summary>
-        <i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i>
-        -Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden. Merkmalsanalyse basiert auf Merkmalsbeschreibungen und erfolgt typischerweise in der Datennachverarbeitung.
         <ul>
+        <details> 
+        <summary>🔵 Merkmalsanalyse (engl. feature analysis)</summary>
+        <i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i>
+        -Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden.
+        Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intrinsische oder extrinsische Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.
+        „Intrinsic and extrinsic evaluators are distinct measures where intrinsic evaluators capture inherent properties and extrinsic evaluators assess performance in external contexts.“ (“Intrinsic and Extrinsic Evaluators”)
       </details>
       <details>
       <summary>🔵 Modellanalyse (engl. model analysis)</summary>
-      <div style="margin-left: 2em;">
-        <code>gensim.models.CoherenceModel</code><br>
-      </div>
+      <p><i>Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell die Eingabemerkmale transformiert hat. Sie bewertet Modelle, weshalb sie auch als Modellbewertung (engl. model evaluation) bezeichnet wird und besteht aus der Modellqualitätsmessung und der Modellvalidierung.</i></p>
+      <ul>
+      <li><ins>Modellqualitätsmessung (engl. model quality assessment/model scoring)</li></ins>
+      <p><i>Die Modellqualitätsmessung erfolgt durch Metriken, hierbei wird zwischen intrinsischen und extrinsischen Metriken unterschieden. <i></p>
+      <details>
+    <summary>🔘 Intrinsische Metriken (engl. intrinsic metrics)</summary>
+    <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
+    <ol type="1">
+      <details>
+        <summary>🔘 Kohärenz (engl. coherence)</summary>
+        <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
+        <ul>
+          <li><b>u_mass</b>: Interne Kohärenz</li>
+          <li><b>c_v</b>: Externe Konsistenz (wird genutzt)</li>
+          <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
+        </ul>
+        <div style="margin-left: 2em;">
+        <code>gensim.models.CoherenceModel</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
+        </div>
+        <div style="margin-left: 2em;">
+          <code>gensim.models.CoherenceModel</code><br>
+          <b>Bereich:</b> -1 bis 1 (höher = besser)
+        </div>
+      </details>
+      <details>
+        <summary>🔘 Themenvielfalt (engl. topic diversity)</summary>
+        <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
+      </details>
     </ol>
+  </details>
 </ol>
 
-
+        <li><ins>Modellvalidierung (engl. model validation)</li></ins>
+      <p><i>Bei der Modellvalidierung wird überprüft, ob das Modell zuverlässig und generalisierbar ist – also ob die gemessene Qualität belastbar ist. Hierbei kann zwischen zwischen einer </i></p>
+      <div style="margin-left: 2em;">
+        <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
+      </div>
+        <p><b>Output:</b> XXXXX</p>
+      </ul>
+      </details>
+      </details>
+    </ol>
+</ol>
 <ol type="1">
   <details>
     <summary>🟦 Datenkommunikation (engl. data communication)</summary>
@@ -775,19 +783,19 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
     <img src="docs/3 - Datenkommunikation (engl. data communication).jpg" width="1200">
           <p><i>Visualisierung stellt aggregierte Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
       <div style="margin-left: 2em;">
-        <code>plotly</code><br><br>
-      </div>
-    <ul> 
+        <code>plotly</code>&nbsp;<code>matplotlib</code><br><br>
+      </div> 
     <ol type="1">
       <details>
         <summary>🔵 Merkmalsdarstellungen (engl. feature visualizations)</summary>
-        <p><i>Die Darstellung von Merkmalen kann über textuelle, grafische oder hybride Darstellungsformen erfolgen.</i></p>
+        <p><i>Die Darstellung von Merkmalen kann über textuelle, grafische oder hybride Darstellungsformen erfolgen.
+          - Themenverteilungen; Top-Wörter pro Thema
+          - BERTopic-Integrierte Visualisierung
+        </i></p>
       </details>
         <div style="margin-left: 2em;">
-          <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code></code><br><br>
+          <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code>print() / display / </code><br><br>
         </div>
-      Themenverteilungen; Top-Wörter pro Thema
-      BERTopic-Integrierte Visualisierung
       <details>
       <summary>🔵 Modelldarstellung (engl. model visualizations)</summary>
       <p><i>XXXX</i></p>
@@ -796,7 +804,7 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
     </ol>
 </ol>
 
-### Datenverständnis (engl. data understanding)
+### 🟩 Datenverständnis (engl. data understanding)
 Dateninterpretation / domänenspezifische Interpretation
 
 ______________
