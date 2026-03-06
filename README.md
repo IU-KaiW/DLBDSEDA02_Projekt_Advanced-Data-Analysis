@@ -173,7 +173,7 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 </ol>
   </details>
 
-## Datensatzaufbereitung (engl. dataset preparation)
+### Datensatzaufbereitung (engl. dataset preparation)
 > In der Phase der Datensatzbereinigung werden die in der EDA gewonnenen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalidierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden.
 <ol>
     <details>
@@ -196,7 +196,7 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
 
 _________________________________________________________________________________________________________________________________________________________
 
-## Datenverarbeitung (engl. data processing)
+## 🟨 Datenverarbeitung (engl. data processing)
 > Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. 
 
 ###### Pipeline Eingabe (engl. pipeline input)
@@ -246,7 +246,6 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
              <div style="margin-left: 2em;">
                 <code>stdlib(.lower)</code>&nbsp;<code>spaCy (token.text)</code><br><br>
               </div>
-              </ul>
               </ul>
           </details>
           <details>
