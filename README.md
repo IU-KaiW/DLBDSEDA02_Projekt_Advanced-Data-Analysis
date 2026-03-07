@@ -42,7 +42,7 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
 `<paketname>.<funktionsname>(<funktionsargumente>)`
 
 ## ⬜ Datensatzverarbeitung (engl. dataset pipeline)
-<img src="https://github.com/IU-KaiW/DLBDSEDA02_Projekt_Advanced-Data-Analysis/blob/main/docs/1%20-%20Datensatzverarbeitung%20(engl.%20dataset%20pipeline).jpg" width="1200">
+<img src="docs/1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
 
 ### Datensatzakquisition (engl. dataset acquisition)
@@ -707,8 +707,7 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
     <ol type="1">
       <details>
         <summary>🔵 Datenzusammenfassung (engl. data aggregation)</summary>
-        <p><i>Die Datenzusammenfassung ist der Datenanalyse vorgelagert und fasst Daten zu kompakteren Zusammenfassungen zusammen. Dabei werden Modelleingaben (engl. input features), modellinterne Merkmale (engl. intermediate features) oder Modellausgaben (engl. output features) ein- oder mehrdimensional zusammengefasst. Die Aggregation kann dabei modellintern oder modellextern anhand unterschiedlicher Aggregationsstrategien erfolgen, wodurch die Datenmenge durch mathematische Operationen oder Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum) reduziert wird. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.
-        </i></p>
+        <p><i>Die Datenzusammenfassung ist der Datenanalyse vorgelagert und fasst Daten zu kompakteren Zusammenfassungen zusammen. Dabei werden Modelleingaben (engl. input features), modellinterne Merkmale (engl. intermediate features) oder Modellausgaben (engl. output features) ein- oder mehrdimensional zusammengefasst. Die Aggregation kann dabei modellintern oder modellextern anhand unterschiedlicher Aggregationsstrategien erfolgen, wodurch die Datenmenge durch mathematische Operationen oder Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum) reduziert wird. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.</i></p>
         <ul>
         <details> 
         <summary>Eingaben-Aggregation (engl. input-aggregation)</summary>
@@ -736,7 +735,7 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
       <p><i>Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell die Eingabemerkmale transformiert hat. Sie bewertet Modelle, weshalb sie auch als Modellbewertung (engl. model evaluation) bezeichnet wird und besteht aus der Modellqualitätsmessung und der Modellvalidierung.</i></p>
       <ul>
       <li><ins>Modellqualitätsmessung (engl. model quality assessment/model scoring)</li></ins>
-      <p><i>Die Modellqualitätsmessung erfolgt durch Metriken, hierbei wird zwischen intrinsischen und extrinsischen Metriken unterschieden. <i></p>
+      <p><i>Die Modellqualitätsmessung erfolgt durch Metriken, hierbei wird zwischen intrinsischen und extrinsischen Metriken unterschieden.</i></p>
       <details>
     <summary>🔘 Intrinsische Metriken (engl. intrinsic metrics)</summary>
     <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
@@ -750,9 +749,6 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
           <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
         </ul>
         <div style="margin-left: 2em;">
-        <code>gensim.models.CoherenceModel</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
-        </div>
-        <div style="margin-left: 2em;">
           <code>gensim.models.CoherenceModel</code><br>
           <b>Bereich:</b> -1 bis 1 (höher = besser)
         </div>
@@ -763,14 +759,11 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
       </details>
     </ol>
   </details>
-</ol>
-
         <li><ins>Modellvalidierung (engl. model validation)</li></ins>
-      <p><i>Bei der Modellvalidierung wird überprüft, ob das Modell zuverlässig und generalisierbar ist – also ob die gemessene Qualität belastbar ist. Hierbei kann zwischen zwischen einer </i></p>
+      <p><i>Bei der Modellvalidierung wird überprüft, ob das Modell zuverlässig und generalisierbar ist – also ob die gemessene Qualität belastbar ist. Hierbei kann zwischen quantitativer und qualitativer Validierung unterschieden werden. </i></p>
       <div style="margin-left: 2em;">
         <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
       </div>
-        <p><b>Output:</b> XXXXX</p>
       </ul>
       </details>
       </details>
@@ -779,27 +772,26 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
 <ol type="1">
   <details>
     <summary>🟦 Datenkommunikation (engl. data communication)</summary>
-    <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.</i></p>
+    <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.
+    Visualisierung stellt aggregierte Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
+    <div style="margin-left: 2em;">
+      <code>plotly</code>&nbsp;<code>matplotlib</code><br><br>
+    </div> 
     <img src="docs/3 - Datenkommunikation (engl. data communication).jpg" width="1200">
-          <p><i>Visualisierung stellt aggregierte Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
-      <div style="margin-left: 2em;">
-        <code>plotly</code>&nbsp;<code>matplotlib</code><br><br>
-      </div> 
     <ol type="1">
       <details>
         <summary>🔵 Merkmalsdarstellungen (engl. feature visualizations)</summary>
         <p><i>Die Darstellung von Merkmalen kann über textuelle, grafische oder hybride Darstellungsformen erfolgen.
           - Themenverteilungen; Top-Wörter pro Thema
-          - BERTopic-Integrierte Visualisierung
-        </i></p>
-      </details>
+          - BERTopic-Integrierte Visualisierung</i></p>
         <div style="margin-left: 2em;">
           <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code>print() / display / </code><br><br>
         </div>
+      </details>
       <details>
       <summary>🔵 Modelldarstellung (engl. model visualizations)</summary>
       <p><i>XXXX</i></p>
-      </detail>
+      </details>
     </ul> 
     </ol>
 </ol>
@@ -881,6 +873,7 @@ Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.c
 <br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
 <br>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/<br>
 <br>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/<br>
+Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/choropleth-maps/
 
 
 
