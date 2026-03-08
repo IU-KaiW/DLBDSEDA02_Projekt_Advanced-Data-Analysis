@@ -194,17 +194,25 @@ Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Ve
     </details>
 </ol>
 
+###### Datensatz-Pipeline Ausgabe (engl. dataset pipeline output)
+Der so aufbereiteten Datensatzes wird als *"complaints_data_cleaned.csv"* exportiert, welcher als Korpus für die nachfolgenden NLP-Schritte genutzt wird. Die Instanzen des Datensatzes (Zeilen) werden auch als Dokumente bezeichnet. 
 _________________________________________________________________________________________________________________________________________________________
 
-## 🟧 Datenverarbeitung (engl. data processing)
-> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Features als Brücke zwischen rohem Text und algorithmischer Verarbeitung: Sie extrahieren relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene. Die Datenverarbeitung
-
-###### Pipeline Eingabe (engl. pipeline input)
+## 🟧 Linguistische Datenverarbeitung - LDV (engl. NLP-Pipeline)
+###### NLP-Pipeline Eingabe (engl. pipeline input)
 Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Zeilen des Datensatzes werden auch als Dokumente bezeichnet. 
 
 <div style="margin-left: 2em;">
   <code>pandas</code>
 </div>
+
+> Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understandung - NLU) befasst. Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und 
+
+
+relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
+
+## Upstream-Aufgaben (engl. upstream tasks)
+> Als Upstream tasks werden in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
 
 ### 🟥 Datenvorverarbeitung (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt. 
@@ -374,7 +382,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
     <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing)</summary>
     <p><i>Im Notebook nicht als eigener Verarbeitungsschritt umgesetzt.</i></p>
     <div style="margin-left: 2em;">
-      <code>nicht umgesetzt im Notebook</code><br><br>
+      <code>nicht umgesetzt</code><br><br>
     </div>
   </details>
   <details>
@@ -383,17 +391,17 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
     <ul>
       <li>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
         <div style="margin-left: 2em;">
-          <code>nicht umgesetzt im Notebook</code><br><br>
+          <code>nicht umgesetzt</code><br><br>
         </div>
       </li>
       <li>🔴 Koreferenzauflösung (engl. Coreference Resolution - CR)<br>
         <div style="margin-left: 2em;">
-          <code>nicht umgesetzt im Notebook</code><br><br>
+          <code>nicht umgesetzt</code><br><br>
         </div>
       </li>
       <li>🔴 Beziehungsextraktion (engl. Relationship Extraction - RE)<br>
         <div style="margin-left: 2em;">
-          <code>nicht umgesetzt im Notebook</code><br><br>
+          <code>nicht umgesetzt</code><br><br>
         </div>
       </li>
     </ul>
@@ -402,11 +410,16 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 </ol>
 
 ### 🟨 Datenvorbereitung (engl. data preparation)
-> Im Rahmen der Datenverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt, was durch   Merkmalsgenerierung (engl. feature generation/featurization) und Merkmalsauswahl (engl. feature selection) erfolgt.<br> 
+> Im Rahmen der Datenvorverarbeitung werden Merkmale (engl. features) erzeugt und ausgewählt, was durch *Merkmalsgenerierung (engl. feature generation/featurization)* und *Merkmalsauswahl (engl. feature selection)* erfolgt.<br> 
 <ol type="1">
   <details>
     <summary>🟨 <b> Merkmalsgenerierung </b> (engl. feature generation/featurization)</summary>
    Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch Merkmalskodierung (engl. feature encoding)' in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden.
+
+   - Feature Engineering
+   „Der Prozess, bei dem Domänenwissen über die Daten genutzt wird, um Merkmale zu erstellen, die maschinelle Lernalgorithmen funktionsfähig machen, wird als Feature Engineering bezeichnet (übersetzt: Shekhar, 2018).“ (iu., DLMDSEDE01 -  2022, p. 132)
+
+   - Feauture Learning
 <ol type="1">
   <details>
     <summary>🟨 Vektorisierung (engl. vectorization)</summary>
@@ -539,48 +552,43 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 <ul>
 </ol>
 
+## Downstream-Aufgaben (engl. downstream tasks)
+> Als Downstream tasks werden in NLP-Pipelines spezifische, anwendungsorientierte Aufgaben, die auf den Ergebnissen grundlegender (upstream) Verarbeitungsschritte aufbauen, bezeichnet. Sie stellen die "Endprodukte" dar, bei denen Modelle an reale Probleme angepasst werden, um direkt nutzbaren Output zu liefern.
 
-### 🟧 Modellbildung (engl. model building)
-> Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen.
-Die Modellarchitekturen können dabei als nicht-neuronale (z.B. algebraische, lineare, probabilistische) oder neuronale Strukturen (z.B. Transformer, LSTM) ausgelegt sein.
-
+### 🟧 Datenverarbeitung (engl. data processing)
+> Im Rahmen der Datenverarbeitung werden ML-Algorithmen auf die vorverarbeiteten Daten angewendet, um an den Anwendungsfall passende Lösungsverfahren (Hauptverfahren: Regeression [], Klassifikation [] oder Clustering [] / unterstützende Verfahren: Dimensonsreduktion [PCA, UMAP, t-SNE, HDBSCAN]) durchzuführen. Als Algorithmus wird dabei das Lernverfahren bezeichnet, als Modell eine parametrisierte Instanz des Algorithmus. 
 <ol type="1">
   <details>
-    <summary>🟧 <b> Modellkonfiguration </b> xxx</summary>
-    In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
+    <summary>🟧 <b> Modellentwicklung</b> (engl. model development)</summary>
+    Das Modell ist also eine mathematische Funktion die Eingabedaten (engl. input-features) in Ausgabedaten (engl. output-features [Klassifikationen / Vorhersagen / Cluster]) transformiert. Als Modellentwicklung wird der Prozess zur Erstellung eines für die Aufgabe geeigneten Modells bezeichnet. Sie umfasst Modellauswahl, Modellbildung die Evaluation sowie die iterative Optimierung und Validierung.
     
-    Hyperparametern (Lernrate, Batchgröße)
-    Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
-  </details>
-  <details>
-    <summary>🟧 <b> Modellinitialisierung< </b> xxx</summary>
-    Bei der Modellinitialisierung werden Modellparameter für den Lernprozess des Modells festgelegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
-  </details>
-  <details>
-    <summary>🟧 <b> Modelltraining</b> xxx</summary>
-    Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
-  </details>
-<ul>
-</ol>
-Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
+    Im Rahmen der Modellentwicklung werden Themenmodelle (engl. topic models) wie LDA, NMF oder BERTopic entwickelt und trainiert, um die NLP-Aufgabe der unüberwachten Themenextraktion zu lösen.
+    - Modellierung (engl. modeling)
+    - Merkmalsmodellierung (engl. feature modeling)
+    - - Topic Modelling
 
-#### Merkmalslernen (engl. feature learning / representation learning)
-<p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht manuell definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen so entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
-unüberwacht, Clustering.
+        Das Modell verkörpert die vom Algorithmus gelernten Parameter
+Der Algorithmus ist wiederverwendbar, das Modell ist spezifisch für den Trainingsdatensatz.
+
+  <ol type="1">
+  <details>
+    <summary>🟠<b> Modellauswahl</b> (engl. model selection) Wahl des Algorithmus (z.B. LDA vs. NMF)</summary>
+    Als Modellauswahl wird die Wahl einer geeigneten Modellarchitektur bezeichnet. Modellarchitekturen können dabei als nicht-neuronale (z.B. algebraische, lineare, probabilistische) oder neuronale Strukturen (z.B. Transformer, LSTM) ausgelegt sein. Die Modellauswahl definiert die algorithmische und strukturelle Grundlage des Verfahrens, während die Modellentwicklung diese Auswahl durch Konfiguration, Training, Abstimmung und Validierung in ein belastbares, aufgabenspezifisches Modell überführt.
+
 
 <ol type="1">
   <details>
-      <summary>🟡 Themenmodelle/Themenmodellierung (engl. topic modeling)</summary>
+      <summary>🟠 Themenmodelle/Themenmodellierung (engl. topic modeling)</summary>
         <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
     <ol type="1">
       <details>
-        <summary>🟡 Merkmalsabstraktion (engl. feature abstraction)</summary>
+        <summary>🟠 Merkmalsabstraktion (engl. feature abstraction)</summary>
         <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.
         <b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings).
         Abstraktion-basiert (semantische Konzepte); Abstraktion-basierte Topic-Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren semantische Themen durch komplexe statistische oder neuronale Prozesse.</i></p>
             <ol type="1">
               <details>
-                <summary>🟡 wortraumbasierte Topicmodelle</summary>
+                <summary>🟠 wortraumbasierte Topicmodelle</summary>
                 <p><i> Diskreter Wort-Feature-Raum. Jedes Wort ist eine Dimension, aufgerufen durch einen Merkmalsvektor (engl. feature vector), siehe oben.</i></p>
                 <ul>
                 <li><ins>LDA (Latent Dirichlet Allocation)</li></ins>
@@ -592,7 +600,7 @@ unüberwacht, Clustering.
                 </ul>
               </details>
               <details>
-                <summary>🟡 kontextraumbasierte Themenmodelle </summary>
+                <summary>🟠 kontextraumbasierte Themenmodelle </summary>
                 <p><i>Kontinuierlicher semantischer Raum. Jedes Wort ist , aufgerufen durch Merkmalseinbettung (engl. feature embedding), siehe oben. </i></p>
                 <ul>
                 <li><ins>BERTopic</li></ins>
@@ -606,11 +614,11 @@ unüberwacht, Clustering.
             </ol>
           </details>
           <details>
-            <summary>🟡 Merkmalsprojektion (engl. feature projection)</summary>
+            <summary>🟠 Merkmalsprojektion (engl. feature projection)</summary>
             <p><i>Projektion-basierte Topic-Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren.</i></p>
             <ol type="1">
               <details>
-                <summary>🟡 wortraumbasierte Topicmodelle</summary>
+                <summary>🟠 wortraumbasierte Topicmodelle</summary>
                 <p><i>Diskreter Wort-Feature-Raum. Merkmalsprojektion basiert auf algebraischen Verfahren der Matrixfaktorisierung auf Häufigkeitsvektoren.</i></p>
                 <ul>
                 <li><ins>NMF (Non-Negative Matrix Factorization)</ins></li>
@@ -630,7 +638,7 @@ unüberwacht, Clustering.
                 </ul>
               </details>
               <details>
-                <summary>🟡 kontextraumbasierte Topicmodelle</summary>
+                <summary>🟠 kontextraumbasierte Topicmodelle</summary>
                 <p><i>Kontextraumbasierte Modelle arbeiten typischerweise mit Merkmalsabstraktion, nicht mit Merkmalsprojektion. Die Matrixfaktorisierung ist für wortraumbasierte Verfahren charakteristisch.</i></p>
               </details>
             </ol>
@@ -684,16 +692,74 @@ unüberwacht, Clustering.
     </ol>
   </details>
 </ol>
+  </details>
+  <details>
+    <summary>🟠<b> Modellbildung</b> (engl. model building / model training) Ausführung des Algorithmus → trainiertes Modell</summary>
 
-### Modellabstimmung (engl. model calibration)
-Anpassung der Modellbildung
+> Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen. 
+Hierbei werden Hyperparameter und Modellparameter 
+
+Modellparameter
+Hyperparameter
+„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
+    <ul>
+  <details>
+    <summary>🟠<b> Modellkonfiguration </b> (engl. model configuration)</summary>
+    In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
+    
+    Hyperparametern (Lernrate, Batchgröße)
+    Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
+  </details>
+  <details>
+    <summary>🟠 <b> Modellinitialisierung </b> (engl. model initialization)</summary>
+    Bei der Modellinitialisierung werden Modellparameter für den Lernprozess des Modells festgelegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
+  </details>
+  <details>
+    <summary>🟠 <b> Modelltraining</b> (engl. model training)</summary>
+    Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
+    
+    #### Merkmalslernen (engl. feature learning / representation learning)
+    Merkmalslernen erfolgt während des Modelltrainings auf Basis der in der Konfigurationsphase festgelegten Modellarchitektur und der in der Initialisierungsphase gesetzten Parameterstartswerte.
+    
+    <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht manuell definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen so entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
+    unüberwacht, Clustering.
+    
+    Merkmalslernen (feature learning) ist das automatische Extrahieren optimaler Merkmalsrepräsentationen während des Lernprozesses.
+
+    Der Algorithmus selbst bleibt unverändert – nur die Parameter des Modells werden angepasst/gelernt.
+
+
+  </details>
+  </details>
+</ul>
+  <details>
+    <summary>🟠 <b> Modellabstimmung</b> (engl. model calibration) Optimierung der Algorithmus-Hyperparameter für besseres Modell</summary>
+    Anpassung der Modellbildung
+    - Hyperparameteroptimierung (engl. hyperparameter optimization – HPO)
+    
+    Das Ergebnis ist eine optimierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
+    
+    „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., 2025, p. 41)
+  </details>
+</ol>
+</details>
+<details>
+    <summary>🟧 <b> Modelltests</b> (engl. model test)</summary>
+  </details>
+  <details>
+    <summary>🟧 <b> Modellbereitstellung</b> (engl. model deployment)</summary>
+  </details>
+</ol>
+Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
+
+Algorithmus 
+
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 
 Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Labels oder Logits die Datennachverarbeitung (engl. data post-processing) ein.
 
 Input oder Outputfeatures in die Datennachvereitung ein
-
 ______________
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
 Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
