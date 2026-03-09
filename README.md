@@ -70,9 +70,9 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die 
       <summary>⬜ Datensatzauswahl (engl. dataset selection)</summary>
       <i>Durch eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wurde der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über die Formel:</i><br>
       <br>
-      $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
-      <br>
-      <br><i>ermittelt. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.<br><br></i>
+
+$$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
+<br><i>ermittelt. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.<br><br></i>
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
@@ -548,42 +548,49 @@ relevante linguistische Informationen auf lexikalischer, syntaktischer oder sema
 <ol type="1">
   <details>
     <summary>🟨 <b> Merkmalsauswahl </b> (engl. feature selection)</summary>
-   Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden
-<ul>
+   Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden.
 </ol>
 
 ## Downstream-Aufgaben (engl. downstream tasks)
 > Als Downstream tasks werden in NLP-Pipelines spezifische, anwendungsorientierte Aufgaben, die auf den Ergebnissen grundlegender (upstream) Verarbeitungsschritte aufbauen, bezeichnet. Sie stellen die "Endprodukte" dar, bei denen Modelle an reale Probleme angepasst werden, um direkt nutzbaren Output zu liefern.
 
 ### 🟧 Datenverarbeitung (engl. data processing)
-> Im Rahmen der Datenverarbeitung werden ML-Algorithmen auf die vorverarbeiteten Daten angewendet, um an den Anwendungsfall passende Lösungsverfahren (Hauptverfahren: Regeression [], Klassifikation [] oder Clustering [] / unterstützende Verfahren: Dimensonsreduktion [PCA, UMAP, t-SNE, HDBSCAN]) durchzuführen. Als Algorithmus wird dabei das Lernverfahren bezeichnet, als Modell eine parametrisierte Instanz des Algorithmus. 
+> Im Rahmen der Datenverarbeitung erfolgt eine *Modellierung (engl. modeling)*, sprich die Entwicklung mathematischer oder statistischer Funktionen (z.B. Machine-Learning-Modelle), die Muster in Daten erfassen und nutzbar machen. Man spricht in diesem Zusammenhang auch vom *Merkmalsmodellierung (engl. feature modeling)*. Sie bezeichnet den Prozess der systematischen Konstruktion und Optimierung von Merkmalen in einem formalisierten mathematischen, sprich deterministischen oder probabilistischen Rahmen. Ziel ist es, rohe, unstrukturierte oder hochdimensionale Daten in eine kompakte, diskriminative oder interpretierbare numerische Repräsentation zu überführen, welche die wesentlichen Informationen bewahrt oder verstärkt. Dabei werden werden ML-Algorithmen auf die vorverarbeiteten Daten angewendet, die eingesetzten Kernverfahren umfassen *überwachtes Lernen (engl. supervised learning)* – Regression, Klassifikation oder *unüberwachtes Lernen (engl. unsupervised learning)* – Clustering. Als Algorithmus wird das Lernverfahren bezeichnet, als Modell eine parametrisierte Instanz des Algorithmus.
 <ol type="1">
   <details>
     <summary>🟧 <b> Modellentwicklung</b> (engl. model development)</summary>
-    Das Modell ist also eine mathematische Funktion die Eingabedaten (engl. input-features) in Ausgabedaten (engl. output-features [Klassifikationen / Vorhersagen / Cluster]) transformiert. Als Modellentwicklung wird der Prozess zur Erstellung eines für die Aufgabe geeigneten Modells bezeichnet. Sie umfasst Modellauswahl, Modellbildung die Evaluation sowie die iterative Optimierung und Validierung.
     
-    Im Rahmen der Modellentwicklung werden Themenmodelle (engl. topic models) wie LDA, NMF oder BERTopic entwickelt und trainiert, um die NLP-Aufgabe der unüberwachten Themenextraktion zu lösen.
-    - Modellierung (engl. modeling)
-    - Merkmalsmodellierung (engl. feature modeling)
-    - - Topic Modelling
-
-        Das Modell verkörpert die vom Algorithmus gelernten Parameter
-Der Algorithmus ist wiederverwendbar, das Modell ist spezifisch für den Trainingsdatensatz.
-
+  > Ein Modell ist also ein Lösungsverfahren (mathematische Funktion) das die Eingabedaten (engl. input-features) in Ausgabedaten (engl. output-features – Vorhersagen / Klassifikationen / Cluster) transformiert. Als Modellentwicklung wird der Prozess zur Erstellung eines für eine Aufgabe geeigneten Modells bezeichnet und umfasst die Modellauswahl und Modellbildung. 
+  
   <ol type="1">
   <details>
-    <summary>🟠<b> Modellauswahl</b> (engl. model selection) Wahl des Algorithmus (z.B. LDA vs. NMF)</summary>
-    Als Modellauswahl wird die Wahl einer geeigneten Modellarchitektur bezeichnet. Modellarchitekturen können dabei als nicht-neuronale (z.B. algebraische, lineare, probabilistische) oder neuronale Strukturen (z.B. Transformer, LSTM) ausgelegt sein. Die Modellauswahl definiert die algorithmische und strukturelle Grundlage des Verfahrens, während die Modellentwicklung diese Auswahl durch Konfiguration, Training, Abstimmung und Validierung in ein belastbares, aufgabenspezifisches Modell überführt.
+    <summary>🟠<b> Modellauswahl</b> (engl. model selection)</summary>
+    Die Modellauswahl definiert die algorithmische und strukturelle Grundlage des ML-Lösungsverfahrens. Hierin wird ein geeigneter Algorithmus, sprich eine geeignete Modellarchitektur festgelegt. Modellarchitekturen können dabei nicht-neuronale (z.B. algebraische, lineare, probabilistische) oder neuronale Strukturen (z.B. Transformer, LSTM) sein und müssen zur Aufgabe passen.
 
-
+###### Kernverfahren
 <ol type="1">
   <details>
-      <summary>🟠 Themenmodelle/Themenmodellierung (engl. topic modeling)</summary>
-        <p><i>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch mathematische Modelle aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Topic-Modelle unterscheiden sich je nachdem, ob sie auf Merkmalsabstraktion oder Merkmalsprojektion basieren.</i></p>
-    <ol type="1">
-      <details>
+      <summary>🟠 Regression (engl. regression)</summary>
+
+> Regression ist ein überwachtes Lernverfahren, das eine Funktion $f: X \rightarrow \mathbb{R}^k$ schätzt, um aus Merkmalsvektoren kontinuierliche Zielgrößen vorherzusagen, indem ein geeigneter Verlust zwischen beobachteten und modellierten Werten minimiert wird.
+  </details>
+  <details>
+      <summary>🟠 Klassifikation (engl. classification)</summary>
+      
+> Klassifikation ist ein überwachtes Lernverfahren, bei dem Eingaben diskreten Klassen zugeordnet werden; formal wird eine Entscheidungsfunktion $f: X \rightarrow {1,\dots,C}$ oder eine Klassenwahrscheinlichkeitsverteilung $P(Y\mid X)$ gelernt.
+  </details>
+  <details>
+      <summary>🟠 Gruppenbildung (engl. clustering)</summary>
+
+> Clustering ist ein unüberwachtes Lernverfahren zur Strukturentdeckung in unlabeled Daten, bei dem Objekte anhand eines Ähnlichkeits- oder Distanzmaßes so in Gruppen (Cluster) partitioniert werden, dass die Intra-Cluster-Ähnlichkeit hoch und die Inter-Cluster-Ähnlichkeit gering ist.
+
+<ul>
+<summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
+<p>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch Themenmodelle (engl. topic models) aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Daher wird zwischen Themenmodellen zwischen abstraktions- und projektionsbasierten Themenmodellen unterscheiden.</p>
+ <ol type="1">
+  <details>
         <summary>🟠 Merkmalsabstraktion (engl. feature abstraction)</summary>
-        <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.
+        <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.    welche Themenmodelle entwickelt und trainiert werden, um die NLP-Aufgabe der unüberwachten Themenextraktion zu lösen.
         <b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings).
         Abstraktion-basiert (semantische Konzepte); Abstraktion-basierte Topic-Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren semantische Themen durch komplexe statistische oder neuronale Prozesse.</i></p>
             <ol type="1">
@@ -604,7 +611,9 @@ Der Algorithmus ist wiederverwendbar, das Modell ist spezifisch für den Trainin
                 <p><i>Kontinuierlicher semantischer Raum. Jedes Wort ist , aufgerufen durch Merkmalseinbettung (engl. feature embedding), siehe oben. </i></p>
                 <ul>
                 <li><ins>BERTopic</li></ins>
-                <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.</i></p>
+                <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.
+                Kontextraumbasierte Modelle arbeiten typischerweise mit Merkmalsabstraktion, nicht mit Merkmalsprojektion. Die Matrixfaktorisierung ist für wortraumbasierte Verfahren charakteristisch.
+                </i></p>
                 <div style="margin-left: 2em;">
                   <code>bertopic</code>&nbsp;<code>sentence-transformers</code>&nbsp;<code>umap-learn</code><br><br>
                 </div>
@@ -637,24 +646,25 @@ Der Algorithmus ist wiederverwendbar, das Modell ist spezifisch für den Trainin
                 <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
                 </ul>
               </details>
-              <details>
-                <summary>🟠 kontextraumbasierte Topicmodelle</summary>
-                <p><i>Kontextraumbasierte Modelle arbeiten typischerweise mit Merkmalsabstraktion, nicht mit Merkmalsprojektion. Die Matrixfaktorisierung ist für wortraumbasierte Verfahren charakteristisch.</i></p>
-              </details>
             </ol>
           </details>
       Output: semantisch interpretierbare Themen 
-  </details>
+</details>
+</ul>
+ </ol>
+
+  ###### Unterstützungsverfahren
+<ul>
   <details>
-    <summary>🟡 Dimensionsreduktion (engl. dimensionality reduction)</summary>
+    <summary>⚫ Dimensionsreduktion (engl. dimensionality reduction)</summary>
     <p><i>Transformiert hochdimensionale Features auf neue mathematische Achsen für Visualisierung und Datenanalyse. Die neuen Dimensionen sind nicht semantisch interpretierbar, aber nützlich zur Strukturerkennung.</i></p>
     <ol type="1">
       <details>
-        <summary>🟡 Lineare Projektionen (engl. linear projections)</summary>
+        <summary>⚫ Lineare Projektionen (engl. linear projections)</summary>
         <p><i>Lineare Projektionen reduzieren Dimensionen durch orthogonale Transformationen, die Varianzrichtungen im Datenraum erfassen.</i></p>
         <ol type="1">
           <details>
-            <summary>🟡 PCA (Principal Component Analysis)</summary>
+            <summary>⚫ PCA (Principal Component Analysis)</summary>
           <p><i>Findet Hauptkomponenten (Richtungen maximaler Varianz) und projiziert Features darauf.</i></p>
           <div style="margin-left: 2em;">
             <code>sklearn (PCA)</code><br>
@@ -663,12 +673,12 @@ Der Algorithmus ist wiederverwendbar, das Modell ist spezifisch für den Trainin
         </details>
       </details>
       <details>
-        <summary>🟡 Nichtlineare Projektionen (engl. non-linear projections)</summary>
+        <summary>⚫ Nichtlineare Projektionen (engl. non-linear projections)</summary>
         <p><i>Nichtlineare Projektionen bewahren lokale oder globale Strukturen in den Daten besser, sind aber rechnerisch aufwendiger. Sie werden hauptsächlich für Visualisierung verwendet.
         </i></p>
         <ol type="1">
           <details>
-            <summary>🟡 t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
+            <summary>⚫ t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
             <p><i>Projiziert auf 2-3 Dimensionen, bewahrt lokale Nachbarschaften. Ideal für Cluster-Visualisierung.</i></p>
             T-SNE (t-distributed Stochastic Neighbor Embedding) „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
             nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung „Eigene Embedding Spaces erstellen & visualisieren
@@ -678,7 +688,7 @@ Der Algorithmus ist wiederverwendbar, das Modell ist spezifisch für den Trainin
             </div>
           </details>
           <details>
-            <summary>🟡 UMAP (Uniform Manifold Approximation and Projection)</summary>
+            <summary>⚫ UMAP (Uniform Manifold Approximation and Projection)</summary>
             <p><i>Moderne Alternative zu t-SNE, schneller und skalierbarer. Bewahrt lokale und globale Strukturen.</i></p>
             UMAP (Uniform Manifold Approximation and Projection) „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen“ (Thevapalan, 2025).
             <div style="margin-left: 2em;">
@@ -691,8 +701,7 @@ Der Algorithmus ist wiederverwendbar, das Modell ist spezifisch für den Trainin
       </details>
     </ol>
   </details>
-</ol>
-  </details>
+</details>
   <details>
     <summary>🟠<b> Modellbildung</b> (engl. model building / model training) Ausführung des Algorithmus → trainiertes Modell</summary>
 
@@ -745,6 +754,7 @@ Hyperparameter
 </details>
 <details>
     <summary>🟧 <b> Modelltests</b> (engl. model test)</summary>
+    Evaluation?
   </details>
   <details>
     <summary>🟧 <b> Modellbereitstellung</b> (engl. model deployment)</summary>
@@ -966,5 +976,5 @@ Formatierung
 🟥🟨🟦🟫⬜🟧🟩🟪◼️◻️🔶🔸🔘
 :red_square:
 <br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
-
+⚪
 🟣🟢🟠🔴🔵🟡🟤⚫
