@@ -582,76 +582,75 @@ relevante linguistische Informationen auf lexikalischer, syntaktischer oder sema
   <details>
       <summary>🟠 Gruppenbildung (engl. clustering)</summary>
 
-> Clustering ist ein unüberwachtes Lernverfahren zur Strukturentdeckung in unlabeled Daten, bei dem Objekte anhand eines Ähnlichkeits- oder Distanzmaßes so in Gruppen (Cluster) partitioniert werden, dass die Intra-Cluster-Ähnlichkeit hoch und die Inter-Cluster-Ähnlichkeit gering ist.
+> Clustering ist ein unüberwachtes Lernverfahren zur Strukturentdeckung in ungelabelten Daten, bei dem Objekte anhand eines Ähnlichkeits- oder Distanzmaßes so in Gruppen (Cluster) partitioniert werden, dass die Intra-Cluster-Ähnlichkeit hoch und die Inter-Cluster-Ähnlichkeit gering ist.
 
 <ul>
 <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
-<p>Themenmodellierung identifiziert unüberwacht latente abstrakte Themen in Textsammlungen. Diese neuen Merkmale (Themen) sind nicht explizit im Text vorhanden, sondern werden durch Themenmodelle (engl. topic models) aus den bestehenden Merkmalen automatisch extrahiert oder transformiert. Daher wird zwischen Themenmodellen zwischen abstraktions- und projektionsbasierten Themenmodellen unterscheiden.</p>
+
+> Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation latenter semantischer Strukturen in Textsammlungen. Durch Themenmodelle (engl. topic models) werden aus bestehenden Merkmalen automatisch neue, interpretierbare Themendimensionen extrahiert oder transformiert, die nicht explizit im Text vorhanden sind. Die methodische Differenzierung erfolgt nach dem verwendeten Modellierungsverfahren: Abstraktionsbasierte Ansätze extrahieren Themen durch probabilistische oder semantische Prozesse, während projektionsbasierte Ansätze algebraische Matrixfaktorisierungsverfahren nutzen.
+
+**Merkmalsabstraktion (engl. feature abstraction):** Abstraktionsbasierte Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue semantisch interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren Themen durch komplexe statistische oder neuronale Prozesse und erzeugen Features, die nicht nur mathematische Transformationen, sondern bedeutungstragende Repräsentationen darstellen.
+
+**Merkmalsprojektion (engl. feature projection):** Projektionsbasierte Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie deterministische mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren. Diese algebraischen Verfahren operieren typischerweise auf frequenzbasierten Repräsentationen.
+
  <ol type="1">
-  <details>
+    <details>
+      <summary>🟠 Wortraum Themenmodelle (engl. word-space topic models)</summary>
+      <p>Wortraumbasierte Modelle operieren auf frequenzbasierten Eingabe-Repräsentation (z.B. BoW, TF-IDF). Sie nutzen einen diskreten Wort-Merkmals-Raum. Jedes Wort ist eine Dimension, die vom Modell über einen Merkmalsvektor (engl. feature vector) aufgerufen wird, da diese meist hochdimensional sind werden sie auch als dünnbesetzte Vektoren (engl. sparse vektors) bezeichnet (siehe oben).</p>
+    <ul>
+    <details>
         <summary>🟠 Merkmalsabstraktion (engl. feature abstraction)</summary>
-        <p><i>Merkmalsabstraktion bedeutet, dass Modelle neue Konzepte oder Bedeutungen direkt aus den Daten herausfinden und als neue Features repräsentieren. Die neuen Features sind semantisch interpretierbar und nicht nur mathematische Transformationen.    welche Themenmodelle entwickelt und trainiert werden, um die NLP-Aufgabe der unüberwachten Themenextraktion zu lösen.
-        <b>Merkmalsabstraktion:</b> Modelle extrahieren neue interpretierbare Konzepte aus Features (z.B. Themen, Embeddings).
-        Abstraktion-basiert (semantische Konzepte); Abstraktion-basierte Topic-Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren semantische Themen durch komplexe statistische oder neuronale Prozesse.</i></p>
-            <ol type="1">
-              <details>
-                <summary>🟠 wortraumbasierte Topicmodelle</summary>
-                <p><i> Diskreter Wort-Feature-Raum. Jedes Wort ist eine Dimension, aufgerufen durch einen Merkmalsvektor (engl. feature vector), siehe oben.</i></p>
-                <ul>
-                <li><ins>LDA (Latent Dirichlet Allocation)</li></ins>
-                <p><i>Latent Dirichlet Allocation (LDA) ist ein probabilistisches Modell, das latente Themen aus der Merkmalsmatrix durch wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA erzeugt interpretierbare Themen mit probabilistischen Zuordnungen zu Dokumenten und Wörtern.</i></p>
-                <div style="margin-left: 2em;">
-                  <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
-                </div>
-                <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
-                </ul>
-              </details>
-              <details>
-                <summary>🟠 kontextraumbasierte Themenmodelle </summary>
-                <p><i>Kontinuierlicher semantischer Raum. Jedes Wort ist , aufgerufen durch Merkmalseinbettung (engl. feature embedding), siehe oben. </i></p>
-                <ul>
-                <li><ins>BERTopic</li></ins>
-                <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.
-                Kontextraumbasierte Modelle arbeiten typischerweise mit Merkmalsabstraktion, nicht mit Merkmalsprojektion. Die Matrixfaktorisierung ist für wortraumbasierte Verfahren charakteristisch.
-                </i></p>
-                <div style="margin-left: 2em;">
-                  <code>bertopic</code>&nbsp;<code>sentence-transformers</code>&nbsp;<code>umap-learn</code><br><br>
-                </div>
-                <p><b>Output:</b> Topic-Label pro Dokument, Wort-Gewichte pro Topic, Cluster-Visualisierung</p>
-                </ul>
-              </details>
-            </ol>
-          </details>
-          <details>
-            <summary>🟠 Merkmalsprojektion (engl. feature projection)</summary>
-            <p><i>Projektion-basierte Topic-Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren.</i></p>
-            <ol type="1">
-              <details>
-                <summary>🟠 wortraumbasierte Topicmodelle</summary>
-                <p><i>Diskreter Wort-Feature-Raum. Merkmalsprojektion basiert auf algebraischen Verfahren der Matrixfaktorisierung auf Häufigkeitsvektoren.</i></p>
-                <ul>
-                <li><ins>NMF (Non-Negative Matrix Factorization)</ins></li>
-                <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>
-                <div style="margin-left: 2em;">
-                  <code>sklearn (NMF)</code><br><br>
-                </div>
-                <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
-                </ul>
-                <ul>
-                <li><ins>LSA (Latent Semantic Analysis)</ins></li>
-                <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
-                <div style="margin-left: 2em;">
-                  <code>sklearn (TruncatedSVD)</code><br><br>
-                </div>
-                <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
-                </ul>
-              </details>
-            </ol>
-          </details>
-      Output: semantisch interpretierbare Themen 
+        <ul>
+        <li><ins>LDA (Latent Dirichlet Allocation)</li></ins>
+        <p><i>Latent Dirichlet Allocation (LDA) ist ein probabilistisches Modell, das latente Themen aus der Merkmalsmatrix durch wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA erzeugt interpretierbare Themen mit probabilistischen Zuordnungen zu Dokumenten und Wörtern.</i></p>
+          <div style="margin-left: 2em;">
+            <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
+          </div>
+          <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
+      </ul>
+    </details>
+    <details>
+        <summary>🟠 Merkmalsprojektion (engl. feature projection)</summary>
+    <ul>
+    <li><ins>NMF (Non-Negative Matrix Factorization)</ins></li>
+    <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>  
+        <div style="margin-left: 2em;">
+          <code>sklearn (NMF)</code><br><br>
+        </div>
+        <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
+  </ul>
+  <ul>
+  <li><ins>LSA (Latent Semantic Analysis)</ins></li>
+  <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
+    <div style="margin-left: 2em;">
+      <code>sklearn (TruncatedSVD)</code><br><br>
+    </div>
+  <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
+</ul>
+</details>
+    </ul>
+    </details>
+    <details>
+      <summary>🟠 Kontextraum Themenmodelle (engl. context-space topic models)</summary>
+      <p><i>Kontextraumbasierte Modelle operieren auf semantischen Merkmalseinbettungen (engl. feature embeddings - z.B. BERT-Embeddings), die einen kontinuierlichen semantischen Raum bilden. Jedes Wort ist als dichter Vektor repräsentiert, siehe oben.</i></p>
+    <ul>
+    <details>
+        <summary>🟠 Merkmalsabstraktion (engl. feature abstraction)</summary>
+        <ul>
+        <li><ins>BERTopic</li></ins>
+        <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.</i></p>
+        <div style="margin-left: 2em;">
+          <code>bertopic</code>&nbsp;<code>sentence-transformers</code>&nbsp;<code>umap-learn</code><br><br>
+        </div>
+        <p><b>Output:</b> Topic-Label pro Dokument, Wort-Gewichte pro Topic, Cluster-Visualisierung</p>
+        </ul>
+    </details>
+    </ul>
+    </details>
+</ol>
 </details>
 </ul>
- </ol>
+</ol>
 
   ###### Unterstützungsverfahren
 <ul>
