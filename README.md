@@ -585,13 +585,14 @@ relevante linguistische Informationen auf lexikalischer, syntaktischer oder sema
 > Clustering ist ein unüberwachtes Lernverfahren zur Strukturentdeckung in ungelabelten Daten, bei dem Objekte anhand eines Ähnlichkeits- oder Distanzmaßes so in Gruppen (Cluster) partitioniert werden, dass die Intra-Cluster-Ähnlichkeit hoch und die Inter-Cluster-Ähnlichkeit gering ist.
 
 <ul>
-<summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
+  <details>
+    <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
 
-> Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation latenter semantischer Strukturen in Textsammlungen. Durch Themenmodelle (engl. topic models) werden aus bestehenden Merkmalen automatisch neue, interpretierbare Themendimensionen extrahiert oder transformiert, die nicht explizit im Text vorhanden sind. Die methodische Differenzierung erfolgt nach dem verwendeten Modellierungsverfahren: Abstraktionsbasierte Ansätze extrahieren Themen durch probabilistische oder semantische Prozesse, während projektionsbasierte Ansätze algebraische Matrixfaktorisierungsverfahren nutzen.
+Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation latenter semantischer Strukturen in Textsammlungen. Durch Themenmodelle (engl. topic models) werden aus bestehenden Merkmalen automatisch neue, interpretierbare Themendimensionen extrahiert oder transformiert, die nicht explizit im Text vorhanden sind. Die methodische Differenzierung erfolgt nach dem verwendeten Modellierungsverfahren: Abstraktionsbasierte Ansätze extrahieren Themen durch probabilistische oder semantische Prozesse, während projektionsbasierte Ansätze algebraische Matrixfaktorisierungsverfahren nutzen.
 
-**Merkmalsabstraktion (engl. feature abstraction):** Abstraktionsbasierte Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue semantisch interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren Themen durch komplexe statistische oder neuronale Prozesse und erzeugen Features, die nicht nur mathematische Transformationen, sondern bedeutungstragende Repräsentationen darstellen.
+> **Merkmalsabstraktion (engl. feature abstraction):** Abstraktionsbasierte Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue semantisch interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren Themen durch komplexe statistische oder neuronale Prozesse und erzeugen Features, die nicht nur mathematische Transformationen, sondern bedeutungstragende Repräsentationen darstellen.
 
-**Merkmalsprojektion (engl. feature projection):** Projektionsbasierte Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie deterministische mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren. Diese algebraischen Verfahren operieren typischerweise auf frequenzbasierten Repräsentationen.
+> **Merkmalsprojektion (engl. feature projection):** Projektionsbasierte Modelle nutzen algebraische Matrixfaktorisierungstechniken, um die Merkmalsmatrix in Faktoren zu zerlegen. Obwohl sie deterministische mathematische Transformationen verwenden, erzeugen sie dennoch interpretierbare latente Konzepte, die als Themen fungieren. Diese algebraischen Verfahren operieren typischerweise auf frequenzbasierten Repräsentationen.
 
  <ol type="1">
     <details>
@@ -648,12 +649,12 @@ relevante linguistische Informationen auf lexikalischer, syntaktischer oder sema
     </ul>
     </details>
 </ol>
-</details>
+  </details>
 </ul>
 </ol>
 
-  ###### Unterstützungsverfahren
-<ul>
+###### Unterstützungsverfahren
+<ol type="1">
   <details>
     <summary>⚫ Dimensionsreduktion (engl. dimensionality reduction)</summary>
     <p><i>Transformiert hochdimensionale Features auf neue mathematische Achsen für Visualisierung und Datenanalyse. Die neuen Dimensionen sind nicht semantisch interpretierbar, aber nützlich zur Strukturerkennung.</i></p>
@@ -700,17 +701,14 @@ relevante linguistische Informationen auf lexikalischer, syntaktischer oder sema
       </details>
     </ol>
   </details>
-</details>
+</ol>
+  </details>
   <details>
     <summary>🟠<b> Modellbildung</b> (engl. model building / model training) Ausführung des Algorithmus → trainiertes Modell</summary>
 
-> Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen. 
-Hierbei werden Hyperparameter und Modellparameter 
-
-Modellparameter
-Hyperparameter
-„Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025)
-    <ul>
+> Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen. Dazu werden Hyperparameter und Modellparameter bestimmt. "Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025). Modellparameter sind jene Parameter, die 
+    
+<ul>
   <details>
     <summary>🟠<b> Modellkonfiguration </b> (engl. model configuration)</summary>
     In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
@@ -750,8 +748,8 @@ Hyperparameter
     „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., 2025, p. 41)
   </details>
 </ol>
-</details>
-<details>
+  </details>
+  <details>
     <summary>🟧 <b> Modelltests</b> (engl. model test)</summary>
     Evaluation?
   </details>
@@ -888,31 +886,31 @@ aufgerufen werden.[^15]<br>
 
 ###### Standardbibliothek
 
-  |`stdlib`              | Website                                                                                                                                              |Verwendung           |
-  |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-  |[`re`]                |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |NLP                  |
-  |[`csv`]               |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling         |
+  |Bibliothek<br>`stdlib`     | Website                                                                                                                                               |Verwendung              |
+  |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+  |[`re`]                  |Website: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                   <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re     |NLP                     |
+  |[`csv`]                 |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv   |Datahandling            |
 
 ###### externe Bibliotheken
 
-  | Bibliothek             | Website                                                                                                                                              |Verwendung              |
-  |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
-  |`torch`                 |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html          |KI-Detektor             |
-  |`transformers`          |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                          |KI-Detektor             |
-  |`pandas`                |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                          |Datahandling            |
-  |`numpy`                 |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                           |Datahandling            |
-  |`spacy`                 |Website: https://spacy.io                                                 <br>Dokumentation: https://spacy.io/api/doc/                                |NLP                     |
-  |`sentence-transformers` |Website: https://huggingface.co/sentence-transformers                     <br>Dokumentation: https://www.sbert.net/index.html                         |NLP - Vektorisierung    |
-  |`gensim`                |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation: https://radimrehurek.com/gensim/apiref.html#api-reference|NLP - Themenmodellierung|
-  |`bertopic`              |Website: https://maartengr.github.io/BERTopic/index.html                  <br>Dokumentation: https://maartengr.github.io/BERTopic/index.html#common   |NLP - Themenmodellierung|
-  |`sklearn`               |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation: https://scikit-learn.org/stable/user_guide.html          |NLP - Vektorisierung    |
-  |`matplotlib`            |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html                 |Visualisierung          |
-  |`seaborn`               |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html                 |Visualisierung          |
-  |`wordcloud`             |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                   |Visualisierung          |
-  |`plotly`                |Website: https://plotly.com/python/                                       <br>Dokumentation: https://docs.plotly.com                                  |Visualisierung          |
-  |`ipython`               |Website: https://ipython.org                                              <br>Dokumentation: https://ipython.readthedocs.io/en/stable/index.html      |Visualisierung          |
-  |`scipy`                 |Website: https://scipy.org                                                <br>Dokumentation: https://docs.scipy.org/doc/scipy/                        |Visualisierung          |
-
+  | Bibliothek              | Website                                                                                                                                              |Verwendung              |
+  |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+  |[`torch`]                |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html          |KI-Detektor             |
+  |[`transformers`]         |Website: https://pypi.org/project/transformers/                           <br>Dokumentation:                                                          |KI-Detektor             |
+  |[`pandas`]               |Website: https://pandas.pydata.org                                        <br>Dokumentation: https://pandas.pydata.org/docs/                          |Datahandling            |
+  |[`numpy`]                |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                           |Datahandling            |
+  |[`spacy`]                |Website: https://spacy.io                                                 <br>Dokumentation: https://spacy.io/api/doc/                                |NLP                     |
+  |[`sentence-transformers`]|Website: https://huggingface.co/sentence-transformers                     <br>Dokumentation: https://www.sbert.net/index.html                         |NLP - Vektorisierung    |
+  |[`gensim`]               |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation: https://radimrehurek.com/gensim/apiref.html#api-reference|NLP - Themenmodellierung|
+  |[`bertopic`]             |Website: https://maartengr.github.io/BERTopic/index.html                  <br>Dokumentation: https://maartengr.github.io/BERTopic/index.html#common   |NLP - Themenmodellierung|
+  |[`sklearn`]              |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation: https://scikit-learn.org/stable/user_guide.html          |NLP - Vektorisierung    |
+  |[`matplotlib`]           |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html                 |Visualisierung          |
+  |[`seaborn`]              |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html                 |Visualisierung          |
+  |[`wordcloud`]            |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                   |Visualisierung          |
+  |[`plotly`]               |Website: https://plotly.com/python/                                       <br>Dokumentation: https://docs.plotly.com                                  |Visualisierung          |
+  |[`ipython`]              |Website: https://ipython.org                                              <br>Dokumentation: https://ipython.readthedocs.io/en/stable/index.html      |Visualisierung          |
+  |[`scipy`]                |Website: https://scipy.org                                                <br>Dokumentation: https://docs.scipy.org/doc/scipy/                        |Visualisierung          |
+  
 ## Referenzen
 
 ###### Software
