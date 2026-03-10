@@ -37,9 +37,7 @@ ________________________________________________________________________________
 ## Konzept
 Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
 
-Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. Die mögliche Softwarebibliotheken wurden in folgender Form hervorgehoben: 
-
-`<paketname>.<funktionsname>(<funktionsargumente>)`
+Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. 
 
 ## ⬜ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="docs/1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
@@ -597,7 +595,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
  <ol type="1">
     <details>
       <summary>🟠 Wortraum Themenmodelle (engl. word-space topic models)</summary>
-      <p>Wortraumbasierte Modelle operieren auf frequenzbasierten Eingabe-Repräsentation (z.B. BoW, TF-IDF). Sie nutzen einen diskreten Wort-Merkmals-Raum. Jedes Wort ist eine Dimension, die vom Modell über einen Merkmalsvektor (engl. feature vector) aufgerufen wird, da diese meist hochdimensional sind werden sie auch als dünnbesetzte Vektoren (engl. sparse vektors) bezeichnet (siehe oben).</p>
+      <p><i>Wortraumbasierte Modelle operieren auf frequenzbasierten Eingabe-Repräsentation (z.B. BoW, TF-IDF). Sie nutzen einen diskreten Wort-Merkmals-Raum. Jedes Wort ist eine Dimension, die vom Modell über einen Merkmalsvektor (engl. feature vector) aufgerufen wird, da diese meist hochdimensional sind werden sie auch als dünnbesetzte Vektoren (engl. sparse vektors) bezeichnet (siehe oben).</i></p>
     <ul>
     <details>
         <summary>🟠 Merkmalsabstraktion (engl. feature abstraction)</summary>
@@ -704,48 +702,72 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 </ol>
   </details>
   <details>
-    <summary>🟠<b> Modellbildung</b> (engl. model building / model training) Ausführung des Algorithmus → trainiertes Modell</summary>
-
-> Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen. Dazu werden Hyperparameter und Modellparameter bestimmt. "Die Hyperparameter eines Modells liegen außerhalb des Modells und werden vor dem Training durch die Abstimmung der Hyperparameter festgelegt. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings“ (IBM Deutschland GmbH, 2025). Modellparameter sind jene Parameter, die 
-    
+    <summary>🟠<b> Modellbildung</b> (engl. model building)</summary>
+     Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen. Dazu werden nicht-adaptive Konfigurationseinstellungen, sog. Hyperparameter und adaptive Einstellungen die Modellparameter bestimmt.
 <ul>
   <details>
     <summary>🟠<b> Modellkonfiguration </b> (engl. model configuration)</summary>
-    In der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen und „vor dem Training durch die Abstimmung festgelegt werden. Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
-    
-    Hyperparametern (Lernrate, Batchgröße)
-    Hyperparameter bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren.
+
+  > Bei der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen. Sie bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren, Hyperparameter werden vor dem Training durch Abstimmung festgelegt (IBM Deutschland GmbH, 2025). Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
+  
   </details>
   <details>
     <summary>🟠 <b> Modellinitialisierung </b> (engl. model initialization)</summary>
-    Bei der Modellinitialisierung werden Modellparameter für den Lernprozess des Modells festgelegt. Bei Modellparametern handelt es sich um modellintern, adaptive Einstellungen, die bei der Initialisierung, je nach Initialisierungsstrategie, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
+
+> In der Modellinitialisierung werden Modellparameter, modellinterne, adaptive Einstellungen für den Lernprozess des Modells mit Startwerten versehen. Je nach Initialisierungsstrategie können diese, mit zufälligen oder heuristisch begründeten Startwerten versehen werden.
   </details>
   <details>
     <summary>🟠 <b> Modelltraining</b> (engl. model training)</summary>
-    Im Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen.
-    
-    #### Merkmalslernen (engl. feature learning / representation learning)
-    Merkmalslernen erfolgt während des Modelltrainings auf Basis der in der Konfigurationsphase festgelegten Modellarchitektur und der in der Initialisierungsphase gesetzten Parameterstartswerte.
-    
-    <p><i>Merkmalslernen ist ein automatisierter Prozess, bei dem ein Modell selbst neue informative Merkmale aus den vorhandenen oder rohen Features lernt und entdeckt. Im Gegensatz zu manuellem Feature Engineering werden die Merkmale nicht manuell definiert, sondern vom Modell während des Trainings durch Algorithmen erlernt. Dabei wird eine Merkmalsumwandlung (engl. feature transformation) durch Modelle durchgeführt. Neuen Features entstehen so entweder durch semantische Abstraktion (neue interpretierbare Konzepte), Merkmalsabstraktion (engl. feature abstraction) oder mathematische Projektion (neue Achsen), Merkmalsprojektion (engl. feature projection).</i></p>
-    unüberwacht, Clustering.
-    
-    Merkmalslernen (feature learning) ist das automatische Extrahieren optimaler Merkmalsrepräsentationen während des Lernprozesses.
 
-    Der Algorithmus selbst bleibt unverändert – nur die Parameter des Modells werden angepasst/gelernt.
+> Beim Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell auf ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen. Je nachdem, ob und wie das Modell Eingaberepräsentationen verarbeitet, lassen sich zwei Hauptkategorien innerhalb des Modelltraining unterscheiden:<br>
 
+<ul>
+  <details>
+    <summary>🟠 mit Merkmalsnutzung (engl. feature utilization)</summary>
 
+> Bei der Merkmalsnutzung wird das Modelltraining mit fester Eingaberepräsentation durchgeführt. Die Eingaberepräsentationen bleiben während des gesamten Trainings unverändert, nur modellspezifische Parameter werden angepasst. Im Normalfall werden die Eingaberepräsentationen durch feste Kodierungsverfahren wie BoW oder TF-IDF direkt aus dem Projektkorpus erzeugt. Eine Sonderform liegt vor, wenn die festen Eingaberepräsentationen aus vortrainierten, im aktuellen Lernprozess eingefrorenen Encodern stammen und deren erzeugte Embeddings lediglich weiterverwendet werden.
+
+> Innerhalb der Merkmalsnutzung kann nochmals zwischen zwei Untertypen unterschieden werden:
+
+- *ohne Merkmalsprojektion:* Das Modell lernt Verteilungen oder Zuordnungen direkt im originalen Merkmalsraum, ohne diesen algebraisch zu transformieren. Der Merkmalsraum selbst bleibt unverändert. (z. B. LDA; BERTopic bei Nutzung fester SBERT-Embeddings als Eingaberepräsentation)<br><br>
+
+> Im vorliegenden Anwendungsfall wurde SBERT als vortrainierter und eingefrorener Encoder zur Erzeugung fester Satz-Embeddings genutzt.
+
+- *mit Merkmalsprojektion:* Das Modell projiziert die festen Eingabemerkmale algebraisch in einen neuen latenten Raum. Die Eingaberepräsentationen bleiben fest, der Merkmalsraum wird jedoch durch Matrixfaktorisierung transformiert. (z. B. NMF, LSA/TruncatedSVD)<br><br>
+</details>
+<details>
+    <summary>🟠 mit Merkmalslernen (engl. feature learning)</summary>
+
+> Bei Merkmalslernen wird das Modelltraining mit gelernten Repräsentationen durchgeführt. Daher spricht man in diesem Zusammenhang auch von Repräsentationslernen (engl. representation learning). Merkmalslernen tritt in überwachten, unüberwachten und selbstüberwachten Settings auf. Die Eingaberepräsentationen werden während des Trainings datengetrieben mitoptimiert, sodass Repräsentationsparameter und Modellparameter gemeinsam angepasst werden. Die gelernten Repräsentationen sind dabei stets relativ zur Zielfunktion, den Daten und den Evaluationsmetriken zu bewerten. (z. B. BERT Fine-Tuning)<br>
+</details>
   </details>
   </details>
 </ul>
   <details>
-    <summary>🟠 <b> Modellabstimmung</b> (engl. model calibration) Optimierung der Algorithmus-Hyperparameter für besseres Modell</summary>
-    Anpassung der Modellbildung
-    - Hyperparameteroptimierung (engl. hyperparameter optimization – HPO)
-    
-    Das Ergebnis ist eine optimierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
-    
-    „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., 2025, p. 41)
+    <summary>🟠 <b> Modellabstimmung</b> (engl. model calibration)</summary>
+    Bei der Modellabstimmung werden Algorithmus-Hyperparameter durch systematische Suchverfahren – wie Rastersuche (engl. grid search), Zufallssuche (engl. random search) oder bayesianische Optimierung (engl. Bayesian optimization) – iterativ optimiert, um die Modellperformance hinsichtlich einer definierten Zielfunktion zu maximieren, ohne dabei auf die Trainingsdaten zurückzugreifen, was als Hyperparameteroptimierung (engl. hyperparameter optimization – HPO) bezeichnet wird.<br><br>
+    Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.
+    <ul>
+    <details>
+    <summary>🟠<b> Regression </b> dddd</summary>
+
+  > XXXXX
+  
+  </details>
+  <details>
+    <summary>🟠<b> Klassifizierungsaufgabe </b> dddd</summary>
+
+  > „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., DLBDSEAIS01-01_D - 2025, p. 41)
+  
+  </details>
+
+  <details>
+    <summary>🟠<b> Clustering </b> dddd</summary>
+
+  > XXXXX Topicmodeling: Coherence Score / Topic diversity
+  
+  </details>
+
   </details>
 </ol>
   </details>
@@ -760,7 +782,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
 
 Algorithmus 
-
+    Das Ergebnis ist eine optimierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 
@@ -884,15 +906,6 @@ Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung 
 ```
 aufgerufen werden.[^15]<br>
 
-###### Standardbibliothek
-
-  |Bibliothek<br>`stdlib`     | Website                                                                                                                                               |Verwendung              |
-  |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
-  |[`re`]                  |Website: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                   <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re     |NLP                     |
-  |[`csv`]                 |                                                                          <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv   |Datahandling            |
-
-###### externe Bibliotheken
-
   | Bibliothek              | Website                                                                                                                                              |Verwendung              |
   |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
   |[`torch`]                |Website: https://pypi.org/project/torch/                                  <br>Dokumentation: https://docs.pytorch.org/docs/stable/index.html          |KI-Detektor             |
@@ -910,7 +923,8 @@ aufgerufen werden.[^15]<br>
   |[`plotly`]               |Website: https://plotly.com/python/                                       <br>Dokumentation: https://docs.plotly.com                                  |Visualisierung          |
   |[`ipython`]              |Website: https://ipython.org                                              <br>Dokumentation: https://ipython.readthedocs.io/en/stable/index.html      |Visualisierung          |
   |[`scipy`]                |Website: https://scipy.org                                                <br>Dokumentation: https://docs.scipy.org/doc/scipy/                        |Visualisierung          |
-  
+  |[`stdlib - re`]          |Website:                                                                  <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |Datahandling            |
+  |[`stdlib - csv`]         |Website:                                                                  <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling            |
 ## Referenzen
 
 ###### Software
@@ -919,6 +933,7 @@ Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/
 ###### Skripte
 IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
 <br>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br>
+<br>IU Internationale Hochschule. (2025). Artificial Intelligence (K. Schaaff, Übers.) [Lernskript]. 001-2025-0805 (DLBDSEAIS01-01_D).<br>
 <br>IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.
 
 ###### Abschlussarbeiten
