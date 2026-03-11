@@ -204,10 +204,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <code>pandas</code>
 </div>
 
-> Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understandung - NLU) befasst. Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und 
-
-
-relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
+> Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understandung - NLU) befasst. Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
 
 ## Upstream-Aufgaben (engl. upstream tasks)
 > Als Upstream tasks werden in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
@@ -741,44 +738,38 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 > Bei Merkmalslernen wird das Modelltraining mit gelernten Repräsentationen durchgeführt. Daher spricht man in diesem Zusammenhang auch von Repräsentationslernen (engl. representation learning). Merkmalslernen tritt in überwachten, unüberwachten und selbstüberwachten Settings auf. Die Eingaberepräsentationen werden während des Trainings datengetrieben mitoptimiert, sodass Repräsentationsparameter und Modellparameter gemeinsam angepasst werden. Die gelernten Repräsentationen sind dabei stets relativ zur Zielfunktion, den Daten und den Evaluationsmetriken zu bewerten. (z. B. BERT Fine-Tuning)<br>
 </details>
   </details>
-  </details>
 </ul>
+  </details>
+  </ol>
+  </details>
   <details>
-    <summary>🟠 <b> Modellabstimmung</b> (engl. model calibration)</summary>
-    Bei der Modellabstimmung werden Algorithmus-Hyperparameter durch systematische Suchverfahren – wie Rastersuche (engl. grid search), Zufallssuche (engl. random search) oder bayesianische Optimierung (engl. Bayesian optimization) – iterativ optimiert, um die Modellperformance hinsichtlich einer definierten Zielfunktion zu maximieren, ohne dabei auf die Trainingsdaten zurückzugreifen, was als Hyperparameteroptimierung (engl. hyperparameter optimization – HPO) bezeichnet wird.<br><br>
-    Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.
-    <ul>
+    <summary>🟧<b> Modellabstimmung</b> (engl. model calibration)</summary>
+
+> Bei der Modellabstimmung werden Algorithmus-Hyperparameter durch manuelle Suche (engl. search) oder systematische Suchverfahren wie Rastersuche (engl. grid search), Zufallssuche (engl. random search) oder bayesianische Optimierung (engl. Bayesian optimization) – iterativ optimiert, um die Modellperformance hinsichtlich einer definierten Zielfunktion (Metrik - siehe unten) zu maximieren, ohne dabei auf die Trainingsdaten zurückzugreifen, was als Hyperparameteroptimierung (engl. hyperparameter optimization – HPO) bezeichnet wird.<br>
+    
+  <ul>
     <details>
-    <summary>🟠<b> Regression </b> dddd</summary>
-
+    <summary>🟠 Manuelle Suche (engl. search)</summary>
+    
   > XXXXX
-  
   </details>
   <details>
-    <summary>🟠<b> Klassifizierungsaufgabe </b> dddd</summary>
-
-  > „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., DLBDSEAIS01-01_D - 2025, p. 41)
-  
+    <summary>🟠 Rastersuche (engl. grid search)</summary>
+    Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.
   </details>
-
   <details>
-    <summary>🟠<b> Clustering </b> dddd</summary>
-
-  > XXXXX Topicmodeling: Coherence Score / Topic diversity
-  
+    <summary>🟠 Zufallssuche (engl. random search)</summary>
   </details>
-
+  <details>
+    <summary>🟠 Bayesianische Optimierung</b> (engl. bayesian optimization)</summary>
+  </details>
+  </ul>
+  </details>
+  <details>
+    <summary>🟧<b> Modellbereitstellung</b> (engl. model deployment)</summary>
   </details>
 </ol>
-  </details>
-  <details>
-    <summary>🟧 <b> Modelltests</b> (engl. model test)</summary>
-    Evaluation?
-  </details>
-  <details>
-    <summary>🟧 <b> Modellbereitstellung</b> (engl. model deployment)</summary>
-  </details>
-</ol>
+
 Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
 
 Algorithmus 
@@ -816,7 +807,7 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
   </details>
       <details>
         <summary>🔵 Datenanalyse (engl. data analysis)</summary>
-        <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder die merkmals-verarbeitenden Modelle gewonnen.</i></p>
+        <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder die merkmalsverarbeitenden Modelle gewonnen.</i></p>
         <ul>
         <details> 
         <summary>🔵 Merkmalsanalyse (engl. feature analysis)</summary>
@@ -831,6 +822,9 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
       <ul>
       <li><ins>Modellqualitätsmessung (engl. model quality assessment/model scoring)</li></ins>
       <p><i>Die Modellqualitätsmessung erfolgt durch Metriken, hierbei wird zwischen intrinsischen und extrinsischen Metriken unterschieden.</i></p>
+  
+  > „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., DLBDSEAIS01-01_D - 2025, p. 41)
+  > XXXXX Topicmodeling: Coherence Score / Topic diversity
       <details>
     <summary>🔘 Intrinsische Metriken (engl. intrinsic metrics)</summary>
     <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
