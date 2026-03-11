@@ -1,41 +1,18 @@
 # Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-Ziel der Aufgabe ist es NLP-Techniken auf einem organisch entstandenen Datensatz mit Beschwerden anzuwenden und so die am häufigsten angesprochenen Themen aus den Beschwerdetexten zu extrahieren. Die hierdurch gewonnenen Informationen sollen im Anschluss für Entscheidungsträger einer örtlichen Stadtverwaltung aufbereitet werden.<br>
+Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understandung - NLU) befasst. Ziel des Hochschulprojekts ist es NLP-Techniken auf einen organisch entstandenen Datensatz anzuwenden und so eine Analyse und Interpretation des Textinhalts durchzuführen. 
 
-Das schriftliche Konzept hierzu soll die Schritte der NLP-Datenverarbeitung mit Python darlegen. Dabei sollen zwei Techniken zur Vektorisierung der Beschwerdetexte sowie zwei Ansätze zur Extraktion von Themen aus dem Datensatz genannt und die verwendeten Python-Bibliotheken aufgeführt werden.
+Der ausgearbeitet Lösungsansatz fokussiert sich auf Verarbeitung von englischsprachigen Kundenbeschwerden (engl. customer complaints) mit dem Ziel, die am häufigsten angesprochenen Themen systematisch zu extrahieren und visuell für Entscheidungsträger einer örtlichen Stadtverwaltung adressatengerecht aufzubereiten.
 
-Dieses Projekt fokussiert sich auf NLU, also die Analyse und Interpretation von Textinhalten.
+## Konzeptionelle Überlegungen
+Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergäzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
 
-Konzept Umsetzung
+Die ausgearbeitete Konzeption lässt sich grob in 3 Hauptphasen einteilen: 
 
-## Installation (engl. setup)
-Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (`conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
+⬜ Datensatzverarbeitung (engl. dataset pipeline)
 
-```console
-conda env create -f environment.yml
-conda activate Projekt_Advanced-Data-Analysis
-```
+🟧 Datenverarbeitung (engl. data processing)
 
-Anschließend ist in VSCode der Kernel `ada_env (Python)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
-
-## Projektstruktur
-### Ordnerstruktur
-```markdown
-├── datasets/  # Datensatz
-├─────────────── / complaints_data.csv
-├─────────────── / complaints_data_cleaned.csv
-├── src/       # Python-Skripte
-├─────────────── / Projekt_Advanced_Data_Analysis.ipynb
-├── docs/      # Arbeitsunterlagen (Datensatzauswertungen, Übersichten)
-├─────────────── / 1 - Datenauswertung
-├─────────────── / 2 - 
-├─────────────── / 3 - 
-├─────────────── / X - 
-└── README.md
-```
-_________________________________________________________________________________________________________________________________________________________
-
-## Konzept
-Die ausgearbeitete Konzeption lässt sich grob in 3 Phasen einteilen. Datensatzverarbeitung (engl. dataset pipeline), Datenverarbeitung (engl. data processing) und Datennachverarbeitung (engl. data post-processing).
+🟦 Datennachverarbeitung (engl. data post-processing).
 
 Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. 
 
@@ -115,11 +92,11 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 <ol>   
   <details>
   <summary>⬜ Dateninhaltsanalyse (engl. data content analysis)</summary>
-  <i></i><br><br>
+  <i>Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse auf den Textinhalt ausgeweitet.</i><br><br>
   <ul>
-    <li><ins>EDA der strukturierten Daten</ins></li>
-    In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.<br><br>
-    <ul>
+      <details>
+        <summary>⚪ EDA der strukturierten Daten</summary>
+        <i>In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.</i>
         <li><ins> "author"</ins>
 
   > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrennte, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. 
@@ -146,9 +123,9 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 
   </ul>
 </ul>
-
 <ul>
-  <li><ins>EDA der unstrukturierten Daten</ins></li>
+<details>
+        <summary>⚪ EDA der unstrukturierten Daten</summary>
   Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br><br>
   <ul>
   <li><ins>"text"</ins></li>
@@ -158,7 +135,10 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
   Die EDA zeigte, dass die Texte im Median aus 864 Zeichen bestehen.
   </ul>
 </ul>
-
+</ul>
+<details>
+        <summary>⚪ Fehlwertanalyse (engl. missing value analysis)</summary>
+  <br>Nummernfehlwerte (engl. number errors) , Textfehlwerte (engl. text errors)<br>
 <ul>
   <li><ins>fehlerhafte Daten</ins></li>
   Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte (NaNs) in der Spalte 'text' vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit <code>duplicated(keep=False)</code>).<br>
@@ -167,22 +147,36 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
   
   > Die Analyse fehlender Daten zeigte keine Fehlwerte in den strukturierten Spalten 'author', 'posted_on' und 'rating', aber 30 Fehlwerte in der Spalte 'text'. Die Duplikatanalyse zeigte 1 doppelte Zeile.<br>  
   </ul>
+</details>
 </ul>
 </ol>
   </details>
+  </details>
+</details> 
 
 ### Datensatzaufbereitung (engl. dataset preparation)
-> In der Phase der Datensatzbereinigung werden die in der EDA gewonnenen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Hierzu wird eine Datenbereinigung sowie eine Datenvalidierung durchgeführt, wodurch diejenigen Daten bestimmt werden, die weiter verarbeitet werden.
-<ol>
+> In der Phase der Datensatzaufbereitung werden die bei der Datensatzsichtung gewonnenen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Dazu werden eine Datenbereinigung und Datenvalidierung durchgeführt, wodurch jene Daten bestimmt werden, die weiter verarbeitet werden.
+<ol type="1">
     <details>
       <summary>⬜ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
-      <i>
-      
-###### Fehlwertbehandlung
-Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.
-
-###### Duplikatentfernung
-Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des NLP-Modells zu vermeiden. </i><br>
+      Durch die Datensatzbereinigung wird der Datensatz von Fehlwerten und Duplikaten befreit.
+      <ul>
+      <details>
+        <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
+        <i>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</i>
+          <div style="margin-left: 2em;">
+            <code>XXX</code><br>
+          </div>
+      </details>
+          <details>
+            <summary>⚪ Duplikatentfernung (engl. duplicate removal)</summary>
+          <p><i>Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des Modells zu vermeiden.</i></p>
+          <div style="margin-left: 2em;">
+            <code>XXX</code><br>
+          </div>
+      </ul>
+        </details>
+      </details>
     </details>
 </ol>
 <ol>
@@ -204,7 +198,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <code>pandas</code>
 </div>
 
-> Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understandung - NLU) befasst. Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
+> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
 
 ## Upstream-Aufgaben (engl. upstream tasks)
 > Als Upstream tasks werden in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
@@ -298,7 +292,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <ins>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</ins><br>
               Im Text-Cleaning der Beschwerden nicht umgesetzt.
                 <div style="margin-left: 2em;">
-                <code>nicht umgesetzt im Notebook</code><br><br>
+                <code>nicht umgesetzt</code><br><br>
               </div>
             </li>
           </ul>
@@ -314,8 +308,9 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 <ul>
   <details>
     <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
-    <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
-    <ul style="list-style: none; padding-left: 0;">
+
+> „Die lexikalische Analyse ist ein wichtiger erster Schritt in der natürlichen Sprachverarbeitung, die Rohtext in strukturierte, verständliche Einheiten verwandelt. Durch Tokenisierung, Lexemidentifizierung und Part-of-Speech-Tagging bereitet sie den Text auf die komplexere Analyse vor und ermöglicht es Systemen, die Bedeutung, den Satzbau und den Kontext zu interpretieren.“ (Luigi’s Box, s.r.o., 2016)
+<ul style="list-style: none; padding-left: 0;">
     <ol type="1">
   <details>
     <summary>🔴 Tokenisierung (engl. tokenization)</summary>
@@ -340,7 +335,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   </details>
   <details>
     <summary>🔴 lexikalisches POS-Tagging (für Filterregeln)</summary>
-        <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br>
+    <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy (token.pos_)</code><br><br>
         </div>
@@ -348,14 +343,29 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   </details>
   <details>
     <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing)</summary>
-    <p><i>Im Notebook nicht als eigener Verarbeitungsschritt umgesetzt.</i></p>
+    <p><i>Die syntaktische Verarbeitung befasst sich "mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen (iu. - DLBDSEAIS01_D - Skript - S. 62). „Bei der Syntaxanalyse werden Wortarten (Part-of-Speech Tagging) und ihre Zusammensetzung in Phrasen bestimmt (z. B. können ein Artikel und ein Substantiv eine Nominalphrase bilden).“ (Alpar et al., 2023, p. 45)</i></p>
     <div style="margin-left: 2em;">
       <code>nicht umgesetzt</code><br><br>
     </div>
+     <ul>
+
   </details>
+      <details>
+        <summary>🔴 Kontextsensitives POS-Tagging</summary>
+        <div style="margin-left: 2em;">
+          <code>nicht umgesetzt</code><br><br>
+        </div>
+      </details>
+      <details>
+        <summary>🔴 syntaktisches Parsen (engl. syntax parsing)</summary>
+        <div style="margin-left: 2em;">
+          <code>nicht umgesetzt</code><br><br>
+        </div>
+      </details>
+
   <details>
     <summary>🔴 semantische Verarbeitung (engl. semantic processing)</summary>
-    <p><i>Im Notebook nicht als eigener spaCy-NLP-Schritt (z. B. NER/Coreference/Relation Extraction) umgesetzt.</i></p>
+    <p><i>XXX</i></p>
     <ul>
       <details>
         <summary>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)</summary>
@@ -481,7 +491,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <li>SkipThought Embeddings
                 Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert typischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.
                   <div style="margin-left: 2em;">
-                    <code>nicht umgesetzt im Notebook</code><br><br>
+                    <code>nicht umgesetzt</code><br><br>
                   </div>
                 </li>
                 </ul>
@@ -740,6 +750,8 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
     <summary>🟠 Bayesianische Optimierung</b> (engl. bayesian optimization)</summary>
   </details>
   </ul>
+ 
+ > Das Ergebnis  der Modellabstimmung ist ein trainiertes und optimiertes Modell, das je nach Aufgabenstellung eine Regression, Klassifikation (im NLP z. B. Sentiment Analysis) oder Clustering (im NLP z. B. Topic Modeling) durchführt, indem es Eingabedaten in Vorhersagen, Klassenzuordnungen oder Clusterstrukturen überführt.
   </details>
   <details>
     <summary>🟧<b> Modellbereitstellung</b> (engl. model deployment)</summary>
@@ -754,16 +766,15 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
             <li>🟠 Rohwerte (engl. logits)<br>
             <li>🟠 Bewertungen (engl. scores)<br>
             <li>🟠 Klassenbezeichnungen (engl. labels)<br>
-            <li>🟠 Themenzuordnungen (engl. topic assignments)<br>Clusterzuordnungen
+            <li>🟠 Clusterzuordnungen<br>
+            Themenzuordnungen (engl. topic assignments)<br>
             Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema/Topic bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten und weichen (probalistischen) Zuordnungen diffenziert werden.
             </ul>
     Modell verarbeitet neue Daten und erzeugt rohe Ausgaben.
   </details>
 </ol>
 
-Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
-
-###### Pipeline Ausgabe (engl. pipeline output)
+###### NLP-Pipeline Ausgabe (engl. pipeline output)
 
 Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Labels oder Logits die Datennachverarbeitung (engl. data post-processing) ein.
 
@@ -934,6 +945,34 @@ ______________
 
 > Das Datenverständnis bildet den letzten Schritt, in welchem die gewonnenen Analyseergebnisse domänenspezifisch interpretiert, eingeordnet und in belastbare Handlungsempfehlungen überführt werden.
 ______________
+
+## Installation (engl. setup)
+Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (`conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
+
+```console
+conda env create -f environment.yml
+conda activate Projekt_Advanced-Data-Analysis
+```
+
+Anschließend ist in VSCode der Kernel `ada_env (Python)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
+
+## Projektstruktur
+### Ordnerstruktur
+```markdown
+├── datasets/  # Datensatz
+├─────────────── / complaints_data.csv
+├─────────────── / complaints_data_cleaned.csv
+├── src/       # Python-Skripte
+├─────────────── / Projekt_Advanced_Data_Analysis.ipynb
+├── docs/      # Arbeitsunterlagen (Datensatzauswertungen, Übersichten)
+├─────────────── / 1 - Datenauswertung
+├─────────────── / 2 - 
+├─────────────── / 3 - 
+├─────────────── / X - 
+└── README.md
+```
+_________________________________________________________________________________________________________________________________________________________
+
 ## Abhängigkeiten (engl. dependencies)
 Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. librarys) genannt. [^15]<br>
 
