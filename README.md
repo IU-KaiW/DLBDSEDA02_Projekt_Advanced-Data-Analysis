@@ -260,41 +260,10 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
             <ol type="1">
               <details>
                 <summary>🔴 Satzzeichen (engl. word embeddings)</summary>
-                <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
+                <p><i>XXXXX</i></p>
                 <ul>
                 <li><ins>xxxx</ins></li>
                 nxxx
-              <details>
-                <summary>🟡 <b>xxx </b>(xxx)</summary>
-                <p><i>xxx</i></p>
-                <ul>
-                <li><ins>xxx</i>
-                <ul>
-                <li>xxx
-                  <div style="margin-left: 2em;">
-                    <code>x</code><br><br>
-                  </div>
-                </li>
-                </ul>
-                <li><ins>xxx</ins></li>
-                <i>xxx</i>
-                <ul>
-                <li><ins>xxx</ins></li>
-                <i>xxx</ins></i>
-                <ul>
-                  <li>x
-                    <div style="margin-left: 2em;">
-                      <code>x</code>&nbsp;<code>x</code><br><br>
-                    </div>
-                  </li>
-                  <li>x
-                    <div style="margin-left: 2em;">
-                      <code>x</code><br><br>
-                    </div>
-                  </li>
-                </ul>
-                </li>
-                </ul>
               </details>
             </ol>
     </ul>
@@ -347,31 +316,35 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
     <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
     <p><i>Im Rahmen der lexikalischen Analyse werden Texte tokenisiert, Token auf ihre Grundform reduziert und ein Vokabular aufgebaut.</i></p>
     <ul style="list-style: none; padding-left: 0;">
-      <li>🔴 Tokenisierung (engl. tokenization)<br>
+    <ol type="1">
+  <details>
+    <summary>🔴 Tokenisierung (engl. tokenization)</summary>
         <i>Die Beschwerden werden mit spaCy tokenisiert und im Batch verarbeitet.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy (nlp.pipe)</code><br><br>
         </div>
-      </li>
-      <li>🔴 Grundformreduktion (engl. inflection reduction)<br>
+  </details>
+  <details>
+    <summary>🔴 Grundformreduktion (engl. inflection reduction)</summary>
         <i>Die Tokens werden lemmatisiert und in Kleinschreibung überführt.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy (token.lemma_)</code><br><br>
         </div>
-      </li>
-      <li>🔴 Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)<br>
+  </details>
+  <details>
+    <summary>🔴 Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)</summary>
         <i>Aus den bereinigten Texten wird ein Vokabular mit Token-IDs aufgebaut.</i><br>
         <div style="margin-left: 2em;">
           <code>sklearn (CountVectorizer)</code><br><br>
         </div>
-      </li>
-      <li>🔴 lexikalisches POS-Tagging (für Filterregeln)<br>
+  </details>
+  <details>
+    <summary>🔴 lexikalisches POS-Tagging (für Filterregeln)</summary>
         <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br>
         <div style="margin-left: 2em;">
           <code>spaCy (token.pos_)</code><br><br>
         </div>
-      </li>
-    </ul>
+  </details>
   </details>
   <details>
     <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing)</summary>
@@ -384,21 +357,24 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
     <summary>🔴 semantische Verarbeitung (engl. semantic processing)</summary>
     <p><i>Im Notebook nicht als eigener spaCy-NLP-Schritt (z. B. NER/Coreference/Relation Extraction) umgesetzt.</i></p>
     <ul>
-      <li>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)<br>
+      <details>
+        <summary>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)</summary>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt</code><br><br>
         </div>
-      </li>
-      <li>🔴 Koreferenzauflösung (engl. Coreference Resolution - CR)<br>
+      </details>
+      <details>
+        <summary>🔴 Koreferenzauflösung (engl. Coreference Resolution - CR)</summary>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt</code><br><br>
         </div>
-      </li>
-      <li>🔴 Beziehungsextraktion (engl. Relationship Extraction - RE)<br>
+      </details>
+      <details>
+        <summary>🔴 Beziehungsextraktion (engl. Relationship Extraction - RE)</summary>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt</code><br><br>
         </div>
-      </li>
+      </details>
     </ul>
   </details>
 </ul>
@@ -553,7 +529,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 > Im Rahmen der Datenverarbeitung erfolgt eine *Modellierung (engl. modeling)*, sprich die Entwicklung mathematischer oder statistischer Funktionen (z.B. Machine-Learning-Modelle), die Muster in Daten erfassen und nutzbar machen. Man spricht in diesem Zusammenhang auch vom *Merkmalsmodellierung (engl. feature modeling)*. Sie bezeichnet den Prozess der systematischen Konstruktion und Optimierung von Merkmalen in einem formalisierten mathematischen, sprich deterministischen oder probabilistischen Rahmen. Ziel ist es, rohe, unstrukturierte oder hochdimensionale Daten in eine kompakte, diskriminative oder interpretierbare numerische Repräsentation zu überführen, welche die wesentlichen Informationen bewahrt oder verstärkt. Dabei werden werden ML-Algorithmen auf die vorverarbeiteten Daten angewendet, die eingesetzten Kernverfahren umfassen *überwachtes Lernen (engl. supervised learning)* – Regression, Klassifikation oder *unüberwachtes Lernen (engl. unsupervised learning)* – Clustering. Als Algorithmus wird das Lernverfahren bezeichnet, als Modell eine parametrisierte Instanz des Algorithmus.
 <ol type="1">
   <details>
-    <summary>🟧 <b> Modellentwicklung</b> (engl. model development)</summary>
+    <summary>🟧<b> Modellentwicklung</b> (engl. model development)</summary>
     
   > Ein Modell ist also ein Lösungsverfahren (mathematische Funktion) das die Eingabedaten (engl. input-features) in Ausgabedaten (engl. output-features – Vorhersagen / Klassifikationen / Cluster) transformiert. Als Modellentwicklung wird der Prozess zur Erstellung eines für eine Aufgabe geeigneten Modells bezeichnet und umfasst die Modellauswahl und Modellbildung. 
   
@@ -767,13 +743,25 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   <details>
     <summary>🟧<b> Modellbereitstellung</b> (engl. model deployment)</summary>
+    Modellbereitstellung bezeichnet die technische Verfügbarmachung eines trainierten Modells, sodass es in einer Zielumgebung zuverlässig für Inferenz auf neuen Daten genutzt werden kann.
+  </details>
+  <details>
+    <summary>🟧<b> Modellanwendung</b> (engl. model inference)</summary>
+    Anwendung des trainierten Modells auf ungesehene Eingabedaten zur Erzeugung von Modellausgaben, die anschließend in die Datennachverarbeitung überführt werden.
+    <br><ins>Modellausgaben (engl. output features)</ins>:
+    <ul>
+            <ul>
+            <li>🟠 Rohwerte (engl. logits)<br>
+            <li>🟠 Bewertungen (engl. scores)<br>
+            <li>🟠 Klassenbezeichnungen (engl. labels)<br>
+            <li>🟠 Themenzuordnungen (engl. topic assignments)<br>Clusterzuordnungen
+            Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema/Topic bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten und weichen (probalistischen) Zuordnungen diffenziert werden.
+            </ul>
+    Modell verarbeitet neue Daten und erzeugt rohe Ausgaben.
   </details>
 </ol>
 
 Das Ergebnis ist eine trainierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
-
-Algorithmus 
-    Das Ergebnis ist eine optimierte mathematische Funktion (das Modell), die spezifische NLP-Aufgaben wie eine Klassifikation (z.B. in der Sentiment Analysis) oder ein Clustering (z.B. im Topic Modeling) erfüllt, indem sie die Eingabedaten (Features) in Ausgabedaten (Klassifikationen/Cluster/Vorhersagen ect.) transformiert.
 
 ###### Pipeline Ausgabe (engl. pipeline output)
 
@@ -782,10 +770,11 @@ Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Lab
 Input oder Outputfeatures in die Datennachvereitung ein
 ______________
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
-Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
+> Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
+
 <ol type="1">
   <details>
-    <summary>🟦 Datenauswertung (engl. data evaluation)</summary>
+    <summary>🟦<b> Datenauswertung</b>  (engl. data evaluation)</summary>
     <p><i>Die Datenauswertung setzt sich aus der Datenzusammenfassung und der Datenanalyse zusammen.
     Merkmalsanalyse - Merkmalsauswertungen (engl. feature analysen) / Modellanalysen - Modellauswertung. 
     </i></p>
@@ -804,7 +793,7 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
         <details> 
         <summary>Ausgaben-Aggregation (engl. output-aggregation)</summary>
       </details>
-  </details>
+    </details>
       <details>
         <summary>🔵 Datenanalyse (engl. data analysis)</summary>
         <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder die merkmalsverarbeitenden Modelle gewonnen.</i></p>
@@ -814,53 +803,108 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
         <i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i>
         -Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden.
         Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intrinsische oder extrinsische Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.
-        „Intrinsic and extrinsic evaluators are distinct measures where intrinsic evaluators capture inherent properties and extrinsic evaluators assess performance in external contexts.“ (“Intrinsic and Extrinsic Evaluators”)
+        „Intrinsic and extrinsic evaluators are distinct measures where intrinsic evaluators capture inherent properties and extrinsic evaluators assess performance in external contexts.“ (“Intrinsic and Extrinsic Evaluators”)</i>
       </details>
       <details>
-      <summary>🔵 Modellanalyse (engl. model analysis)</summary>
-      <p><i>Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell die Eingabemerkmale transformiert hat. Sie bewertet Modelle, weshalb sie auch als Modellbewertung (engl. model evaluation) bezeichnet wird und besteht aus der Modellqualitätsmessung und der Modellvalidierung.</i></p>
-      <ul>
-      <li><ins>Modellqualitätsmessung (engl. model quality assessment/model scoring)</li></ins>
-      <p><i>Die Modellqualitätsmessung erfolgt durch Metriken, hierbei wird zwischen intrinsischen und extrinsischen Metriken unterschieden.</i></p>
-  
-  > „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., DLBDSEAIS01-01_D - 2025, p. 41)
-  > XXXXX Topicmodeling: Coherence Score / Topic diversity
-      <details>
-    <summary>🔘 Intrinsische Metriken (engl. intrinsic metrics)</summary>
-    <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
+        <summary>🔵 Modellanalyse (engl. model analysis)</summary>
+        <p><i>Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell die Eingabemerkmale transformiert hat. Sie bewertet Modelle, weshalb sie auch als Modellbewertung (engl. model evaluation) bezeichnet wird und besteht aus der Modellqualitätsmessung und der Modellvalidierung.</i></p>
+        <ul>
+        <details>
+          <summary>🔵 Modellqualitätsmessung (engl. model quality assessment)</summary>
+          <p><i>Durch die Modellqualitätsmessung erfolgt eine Modellbewertung (engl. model scoring) durch Metriken. Dabei wird zwischen intrinsischen und extrinsischen Metriken unterschieden.</i></p>
+          <ul>
+          <details>
+        <summary>🔵 Intrinsische Metriken (engl. intrinsic metrics)</summary>
+          <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
+
+> XXXXX Topicmodeling: Coherence Score / Topic diversity              
+  <ol type="1">
+            <details>
+              <summary>🔘 Kohärenz (engl. coherence)</summary>
+                <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
+                  <ul>
+                    <li><b>u_mass</b>: Interne Kohärenz</li>
+                    <li><b>c_v</b>: Externe Konsistenz (wird genutzt)</li>
+                    <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
+                  </ul>
+              <div style="margin-left: 2em;">
+                <code>gensim.models.CoherenceModel</code><br>
+              <b>Bereich:</b> -1 bis 1 (höher = besser)
+              </div>
+              </details>
+              <details>
+                <summary>🔘 Themenvielfalt (engl. topic diversity)</summary>
+                <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
+                <b>Bereich:</b> X bis X (X = X)
+              </details>
+              <details>
+                <summary>🟡 Verwirrung (engl. perplexity)</summary>
+                <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin.</i></p>
+                <div style="margin-left: 2em;">
+                  <code>gensim</code>&nbsp;<code>torchmetrics</code><br>
+                <b>Bereich:</b> 0 bis ∞ (niedriger = besser)
+                </div>
+              </details>
+      </details>
+  <details>
+    <summary>🔘 Extrinsische Metriken (engl. extrinsic metrics)</summary>
+    <p><i>Bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks (z.B. Klassifikation, Named Entity Recognition, ect.).</i></p>
     <ol type="1">
       <details>
-        <summary>🔘 Kohärenz (engl. coherence)</summary>
-        <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
-        <ul>
-          <li><b>u_mass</b>: Interne Kohärenz</li>
-          <li><b>c_v</b>: Externe Konsistenz (wird genutzt)</li>
-          <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
+        <summary>🟡 Klassifikationsmetriken</summary>
+        <p><i>Bewerten die Modellleistung bei überwachten Aufgaben durch Vergleich von Vorhersagen mit bekannten Labels.</i></p>
+
+  > „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., DLBDSEAIS01-01_D - 2025, p. 41)
+  <ul>
+          <li><b>Accuracy</b>: Anteil korrekt klassifizierter Instanzen</li>
+          <li><b>Precision</b>: Anteil relevanter unter den als positiv klassifizierten Instanzen</li>
+          <li><b>Recall</b>: Anteil erkannter relevanter Instanzen</li>
+          <li><b>F1-Score</b>: Harmonisches Mittel aus Precision und Recall</li>
         </ul>
         <div style="margin-left: 2em;">
-          <code>gensim.models.CoherenceModel</code><br>
-          <b>Bereich:</b> -1 bis 1 (höher = besser)
+          <code>sklearn.metrics</code><br>
         </div>
       </details>
       <details>
-        <summary>🔘 Themenvielfalt (engl. topic diversity)</summary>
-        <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
+        <summary>🔵 Clustering-Metriken</summary>
+        <p><i>Bewerten Clustering-Ergebnisse durch Vergleich mit bekannten Referenzlabels. Relevant für Topic Modeling, wenn gelabelte Daten zur Validierung vorliegen.</i></p>
+        <ul>
+          <li><b>ARI (Adjusted Rand Index)</b>: Paarweise Übereinstimmung, zufallsbereinigt</li>
+          <li><b>NMI (Normalized Mutual Information)</b>: Informationstheoretische Übereinstimmung</li>
+          <li><b>V-Measure</b>: Harmonisches Mittel aus Homogeneity und Completeness</li>
+          <li><b>(engl. homogeneity)</b>: XXX</li>
+          <li><b>(engl. completeness)</b>: XXX</li>
+          <li><b>(engl. purity)</b>: Anteil dominanter Labels pro Cluster</li>
+
+  </ul>
+        <div style="margin-left: 2em;">
+          <code>sklearn.metrics (adjusted_rand_score, normalized_mutual_info_score, v_measure_score)</code><br>
+        </div>
       </details>
+      <details>
+        <summary>🔵 Benchmark-Suiten (für Sprachmodelle)</summary>
+        <p><i>Standardisierte Evaluierungsrahmen, die mehrere NLU-Aufgaben bündeln, um Sprachmodelle vergleichbar zu bewerten.</i></p>
+        <ul>
+          <li><b>GLUE</b>: General Language Understanding Evaluation – 9 Aufgaben (z.B. Sentiment, Textähnlichkeit, Inferenz)</li>
+          <li><b>SuperGLUE</b>: Erweiterung von GLUE mit anspruchsvolleren Aufgaben (z.B. kausales Schließen, Wortsinn-Disambiguierung)</li>
+        </ul>
+      </details>
+    </ol>
+  </ul>
+</details>
+<details>
+  <summary>🔵 Modellvalidierung (engl. model validation)</summary>
+  <p><i>Bei der Modellvalidierung wird überprüft, ob das Modell zuverlässig und generalisierbar ist – also ob die gemessene Qualität belastbar ist. Hierbei kann zwischen quantitativer und qualitativer Validierung unterschieden werden.</i></p>
+  <div style="margin-left: 2em;">
+    <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
+  </div>
+</details>
+</ul>
+</details>
     </ol>
   </details>
-        <li><ins>Modellvalidierung (engl. model validation)</li></ins>
-      <p><i>Bei der Modellvalidierung wird überprüft, ob das Modell zuverlässig und generalisierbar ist – also ob die gemessene Qualität belastbar ist. Hierbei kann zwischen quantitativer und qualitativer Validierung unterschieden werden. </i></p>
-      <div style="margin-left: 2em;">
-        <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
-      </div>
-      </ul>
-      </details>
-      </details>
-    </ol>
-</ol>
-<ol type="1">
   <details>
-    <summary>🟦 Datenkommunikation (engl. data communication)</summary>
+    <summary>🟦<b> Datenkommunikation</b> (engl. data communication)</summary>
     <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.
     Visualisierung stellt aggregierte Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
     <div style="margin-left: 2em;">
@@ -879,26 +923,19 @@ Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung
       </details>
       <details>
       <summary>🔵 Modelldarstellung (engl. model visualizations)</summary>
-      <p><i>XXXX</i></p>
+      <p><i>Bei der Modelldarstellung werden Parameter und Ergebnissen in textueller und visueller Form vorgenommen, um Funktionsweise, Qualität und Grenzen des Modells nachvollziehbar zu machen. Die Darstellung von Metriken erfolgt dabei tabellarisch und grafisch, um Modellgüte, Vergleichbarkeit und Optimierungspotenziale transparent zu bewerten.</i></p>
       </details>
-    </ul> 
     </ol>
+  </details>
 </ol>
-
-### 🟩 Datenverständnis (engl. data understanding)
-Dateninterpretation / domänenspezifische Interpretation
-
-______________
-
 </ul>
 
-## Abhängigkeiten (engl. dependencies)
-Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. librarys) genannt. Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet. Viele Funktionen sind Bestandteil von Bibliotheken und können über: 
+### 🟩 Datenverständnis (engl. data understanding)
 
-```python
-<paketname>.<funktionsname>(<funktionsargumente>)
-```
-aufgerufen werden.[^15]<br>
+> Das Datenverständnis bildet den letzten Schritt, in welchem die gewonnenen Analyseergebnisse domänenspezifisch interpretiert, eingeordnet und in belastbare Handlungsempfehlungen überführt werden.
+______________
+## Abhängigkeiten (engl. dependencies)
+Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. librarys) genannt. [^15]<br>
 
   | Bibliothek              | Website                                                                                                                                              |Verwendung              |
   |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
@@ -908,17 +945,26 @@ aufgerufen werden.[^15]<br>
   |[`numpy`]                |Website: https://numpy.org                                                <br>Dokumentation: https://numpy.org/doc/stable/.                           |Datahandling            |
   |[`spacy`]                |Website: https://spacy.io                                                 <br>Dokumentation: https://spacy.io/api/doc/                                |NLP                     |
   |[`sentence-transformers`]|Website: https://huggingface.co/sentence-transformers                     <br>Dokumentation: https://www.sbert.net/index.html                         |NLP - Vektorisierung    |
+  |[`sklearn`]              |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation: https://scikit-learn.org/stable/user_guide.html          |NLP - Vektorisierung    |
   |[`gensim`]               |Website: https://pypi.org/project/gensim/                                 <br>Dokumentation: https://radimrehurek.com/gensim/apiref.html#api-reference|NLP - Themenmodellierung|
   |[`bertopic`]             |Website: https://maartengr.github.io/BERTopic/index.html                  <br>Dokumentation: https://maartengr.github.io/BERTopic/index.html#common   |NLP - Themenmodellierung|
-  |[`sklearn`]              |Website: https://scikit-learn.org/stable/index.html                       <br>Dokumentation: https://scikit-learn.org/stable/user_guide.html          |NLP - Vektorisierung    |
   |[`matplotlib`]           |Website: https://matplotlib.org                                           <br>Dokumentation: https://matplotlib.org/stable/index.html                 |Visualisierung          |
   |[`seaborn`]              |Website: https://seaborn.pydata.org                                       <br>Dokumentation: https://seaborn.pydata.org/tutorial.html                 |Visualisierung          |
   |[`wordcloud`]            |Website: https://pypi.org/project/wordcloud/                              <br>Dokumentation: https://amueller.github.io/word_cloud/                   |Visualisierung          |
   |[`plotly`]               |Website: https://plotly.com/python/                                       <br>Dokumentation: https://docs.plotly.com                                  |Visualisierung          |
   |[`ipython`]              |Website: https://ipython.org                                              <br>Dokumentation: https://ipython.readthedocs.io/en/stable/index.html      |Visualisierung          |
   |[`scipy`]                |Website: https://scipy.org                                                <br>Dokumentation: https://docs.scipy.org/doc/scipy/                        |Visualisierung          |
-  |[`stdlib - re`]          |Website:                                                                  <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |Datahandling            |
-  |[`stdlib - csv`]         |Website:                                                                  <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling            |
+  |[`stdlib - re`]          |Website: https://www.python.org                                           <br>Dokumentation: https://docs.python.org/3.9/library/re.html#module-re    |Datahandling            |
+  |[`stdlib - csv`]         |Website: https://www.python.org                                           <br>Dokumentation: https://docs.python.org/3.9/library/csv.html#module-csv  |Datahandling            |
+
+Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vielen aufeinander aufbauenden oder voneinander abhängenden Paketen bezeichnet. Viele Funktionen sind Bestandteil von Bibliotheken und können über: 
+
+```python
+<paketname>.<funktionsname>(<funktionsargumente>)
+```
+
+aufgerufen werden.[^15]<br>
+
 ## Referenzen
 
 ###### Software
