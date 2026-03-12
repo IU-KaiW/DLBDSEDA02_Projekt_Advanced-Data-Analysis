@@ -23,27 +23,31 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar.
 ### Datensatzakquisition (engl. dataset acquisition)
 > In der Phase der Datenakquisition wurden Datensätze gesucht und bewertungsbasiert ausgewählt. Hierzu wird ein trichterförmiger, vierstufiger Prozess bestehend aus Datensatzrecherche, –sammlung, –prüfung und –auswahl durchlaufen, um den Korpus für die NLP-Pipeline zu bestimmen.<br>
 <ol>
-    <details>
-      <summary>⬜ Datensatzrecherche (engl. dataset research)</b></summary>
-      <i>Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i><br>
-    </details>
+<details>
+  <summary>⬜ Datensatzrecherche (engl. dataset research)</summary>
+  Im Rahmen der Datensatzrecherche werden geeignete Datensätze auf einschlägigen Datenportalen recherchiert und nach definierten Kriterien vorausgewählt.<br><br>
+  <i><ins>Anwendungsfall:</ins> Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i>
+</details>
 </ol>
 <ol>
     <details>
       <summary>⬜ Datensatzsammlung (engl. dataset collection)</summary>
-      <i>Offensichtlich synthetisch erzeugte Datensätze wurden ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i><br>
+      Im Rahmen der Datensatzsammlung werden Datensätze mit vermutetem organischen Ursprung von geeigneten Quellen bezogen und lokal gespeichert.<br><br>
+      <i><ins>Anwendungsfall:</ins> Offensichtlich synthetisch erzeugte Datensätze wurden ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i><br>
     </details>
 </ol>
 <ol>    
     <details>
       <summary>⬜ Datensatzprüfung (engl. dataset check)</summary>
-      <i>Die gesammelten Datensätze wurden anhand eines extern entwickelten und vortrainierten KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft. Das Programm nutzt dabei ein vortrainiertes Modell zur Sentimentanalyse, um Texte hinsichtlich eines vermuteten organischen (menschlichen) oder synthetischen (KI-basierten) Ursprungs durch Label (REAL / FAKE / ERROR) zu klassifizieren. Während der Anwendung zeigte sich, dass nicht alle Datensätze verarbeitet werden konnten. Dies ist plausibel auf lange Beschwerdetexte (>512 Tokens) in Verbindung mit begrenzten Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welches durch das verwendete Embedding genutzt wird. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über eine Tabellenkalkulationsprogramm ausgewertet.</i><br><br>
+      Im Rahmen der Datensatzprüfung werden die gesammelten Datensätze hinsichtlich ihres Ursprungs (organisch oder synthetisch) bewertet, um die Eignung für die Analyse sicherzustellen.<br><br>
+      <i><ins>Anwendungsfall:</ins> Die gesammelten Datensätze wurden anhand eines extern entwickelten und vortrainierten KI-Detektors (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft. Das Programm nutzt dabei ein vortrainiertes Modell zur Sentimentanalyse, um Texte hinsichtlich eines vermuteten organischen (menschlichen) oder synthetischen (KI-basierten) Ursprungs durch Label (REAL / FAKE / ERROR) zu klassifizieren. Während der Anwendung zeigte sich, dass nicht alle Datensätze verarbeitet werden konnten. Dies ist plausibel auf lange Beschwerdetexte (>512 Tokens) in Verbindung mit begrenzten Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welches durch das verwendete Embedding genutzt wird. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über ein Tabellenkalkulationsprogramm ausgewertet.</i><br><br>
       <div style="margin-left: 2em;">
        <code>transformers</code>&nbsp;<code>torch</code><br><br>
     </details>
     <details>
       <summary>⬜ Datensatzauswahl (engl. dataset selection)</summary>
-      <i>Durch eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wurde der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über die Formel:</i><br>
+      Im Rahmen der Datensatzauswahl wird anhand eines definierten Bewertungskriteriums der am besten geeignete Datensatz aus der geprüften Sammlung ausgewählt.<br><br>
+      <i><ins>Anwendungsfall:</ins> Durch eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wurde der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über die Formel:</i><br>
       <br>
 
 $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
@@ -73,37 +77,49 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 <ol>   
   <details>
   <summary>⬜ Datenstrukturanalyse (engl. data structure analysis)</summary>
-  Bei der Datenstrukturanalyse wird die Strukturierung eines Datensatzes erkundet, um einen Überblick über den Aufbau des Datensatzes zu erhalten.
+Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich seines technischen Formats und seines inhaltlichen Schemasuntersucht.
+ <ul>
+    <details>
+      <summary>⚪ Datenformatsanalyse (engl. data format analysis)</summary>
+      Bei der Datenformatanalyse wird die technische Hülle des Datensatzes untersucht.<br>Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich seines technischen Formats und seines inhaltlichen Schemas systematisch untersucht.<br><br>
+        <i>Das Datenformat des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma) nutzt (Klein, 2023, p. 261-262).</i>
+        <sup id="ref-12"><a href="#fn-12">[12]</a></sup><i> Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und 5659 Zeilen, welche in 4 Spalten organisiert wurden.</i><br><br>
+    </details>
+  </ul>
 
-  <i>Die Datenstruktur des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma) nutzt (Klein, 2023, p. 261-262).</i>
-  <sup id="ref-12"><a href="#fn-12">[12]</a></sup><i> Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und
-  5659 Zeilen, welche in 4 Spalten organisiert wurden.</i><br><br>
-
+   <ul>
+    <details>
+      <summary>⚪ Datenschemanalyse (engl. data schema analysis)</summary>
+      Bei der Datenschemanalyse wird die inhaltliche Struktur der Spalten analysiert
+      <i>Prüft die inhaltliche Struktur der Spalten.</i>
 |author                             |posted_on                 |rating |text              |
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
 <i>Die in der Datei enthaltenen Daten lassen sich in <ins>strukturierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird. 
-
-„Strukturierte Daten sind hochgradig organisiert und folgen dabei klar definierten Strukturen.“ (Hebing und Manhembué, 2024, p. 37)
 <br></i>
+</details>
+</ul>
 </ol>
   </details>
 <ol>   
   <details>
   <summary>⬜ Dateninhaltsanalyse (engl. data content analysis)</summary>
-  <i>Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse auf den Textinhalt ausgeweitet.</i><br><br>
+  <i>Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse auf den Textinhalt ausgeweitet.</i><br>
+  
+  <br>
   <ul>
-      <details>
-        <summary>⚪ EDA der strukturierten Daten</summary>
-        <i>In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.</i>
-        <li><ins> "author"</ins>
-
+    <details>
+      <summary>⚪ Analyse der strukturierten Daten (engl. analysis of structured data)</summary>
+      <i>In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.</i>
+      <ul>
+      <li><ins>"author""</ins></li>
+        
   > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrennte, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. 
   
+    Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
 
-  Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.<br>
-        <li><ins>"posted_on"</ins><br>
+  <li><ins>"posted_on"</ins></li>
 
   > Die Zeilen der Spalte "posted_on" enthalten Datumsangaben mit alphabetisch abgekürzter Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
   
@@ -114,18 +130,19 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
    <ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
    
    <ins>wöchentliche Verteilung:</ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von montags (820) und freitags (802) abgesetzt wurden, wohingegen an den Tagen der Wochenenden Samstag (659) und Sonntag (564) weniger Beschwerden zu verzeichnen sind. Dieses Muster deutet ebenfalls auf einen organischen Ursprung des Datensatzes hin.
-
-  <li><ins>"rating"</ins><br>
+  </ul>
+    <ul>
+      <li><ins>"rating"</ins></li>
   
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`.<br>
 
   Die Anzahl der Bewertungen nach "rating" ist wie folgt verteilt [rating: 0=1560 (27.57%); 1=3734 (65.98%); 2=260 (4.59%); 3=54 (0.95%); 4=19 (0.34%); 5=32 (0.57%)] was einen Überhang niedriger Bewertungen zeigt. Dies weist ebenfalls auf einen organischen Datensatz hin, da Beschwerden grundsätzlich negativ sind. 
-
-  </ul>
+</ul>
+</ul>
 </ul>
 <ul>
 <details>
-        <summary>⚪ EDA der unstrukturierten Daten</summary>
+  <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
   Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br><br>
   <ul>
   <li><ins>"text"</ins></li>
@@ -133,26 +150,31 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
   > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) die konkateniert Sätze bilden, die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>  
   
   Die EDA zeigte, dass die Texte im Median aus 864 Zeichen bestehen.
-  </ul>
 </ul>
-</ul>
+</details>
 <details>
-        <summary>⚪ Fehlwertanalyse (engl. missing value analysis)</summary>
-  <br>Nummernfehlwerte (engl. number errors) , Textfehlwerte (engl. text errors)<br>
-<ul>
-  <li><ins>fehlerhafte Daten</ins></li>
-  Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte (NaNs) in der Spalte 'text' vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit <code>duplicated(keep=False)</code>).<br>
+  <summary>⚪ Fehlwerterkennung (engl. missing value detection)</summary>
+   Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte (NaNs) in der Spalte 'text' vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit <code>duplicated(keep=False)</code>).<br>
   <ul>
-  <li><ins>Fehlwert- und Duplikatbefund</ins></li>
-  
-  > Die Analyse fehlender Daten zeigte keine Fehlwerte in den strukturierten Spalten 'author', 'posted_on' und 'rating', aber 30 Fehlwerte in der Spalte 'text'. Die Duplikatanalyse zeigte 1 doppelte Zeile.<br>  
+  <li><ins>Nummernfehlwerte (engl. number errors)</ins></li>
+  NaNs (Not a Number)
+  </ul>
+    <ul>
+  <li><ins>Textfehlwerte (engl. text errors)</ins></li>
+  NaTs (Not a Text)
+
+  > Die Analyse fehlender Daten zeigte keine Fehlwerte in den strukturierten Spalten 'author', 'posted_on' und 'rating', aber 30 Fehlwerte in der Spalte 'text'.
   </ul>
 </details>
-</ul>
+<details>
+  <summary>⚪ Duplikaterkennung (engl. duplicate detection)</summary>
+ Die Duplikatanalyse zeigte 1 doppelte Zeile.<br>
+</details>
 </ol>
   </details>
   </details>
 </details> 
+</ul>
 
 ### Datensatzaufbereitung (engl. dataset preparation)
 > In der Phase der Datensatzaufbereitung werden die bei der Datensatzsichtung gewonnenen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Dazu werden eine Datenbereinigung und Datenvalidierung durchgeführt, wodurch jene Daten bestimmt werden, die weiter verarbeitet werden.
@@ -348,13 +370,12 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
       <code>nicht umgesetzt</code><br><br>
     </div>
      <ul>
-
-  </details>
       <details>
         <summary>🔴 Kontextsensitives POS-Tagging</summary>
         <div style="margin-left: 2em;">
           <code>nicht umgesetzt</code><br><br>
         </div>
+        </ul>
       </details>
       <details>
         <summary>🔴 syntaktisches Parsen (engl. syntax parsing)</summary>
