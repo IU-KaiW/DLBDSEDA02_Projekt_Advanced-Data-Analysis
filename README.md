@@ -32,8 +32,8 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar.
 <ol>
     <details>
       <summary>⬜ Datensatzsammlung (engl. dataset collection)</summary>
-      Im Rahmen der Datensatzsammlung werden Datensätze mit vermutetem organischen Ursprung von geeigneten Quellen bezogen und lokal gespeichert.<br><br>
-      <i><ins>Anwendungsfall:</ins> Offensichtlich synthetisch erzeugte Datensätze wurden ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal gespeichert.</i><br>
+      Im Rahmen der Datensatzsammlung werden Datensätze von geeigneten Quellen bezogen und gespeichert.<br><br>
+      <i><ins>Anwendungsfall:</ins> Offensichtlich synthetisch erzeugte Datensätze wurden bei der Datensammlung ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal abgespeichert.</i><br>
     </details>
 </ol>
 <ol>    
@@ -46,12 +46,11 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar.
     </details>
     <details>
       <summary>⬜ Datensatzauswahl (engl. dataset selection)</summary>
-      Im Rahmen der Datensatzauswahl wird anhand eines definierten Bewertungskriteriums der am besten geeignete Datensatz aus der geprüften Sammlung ausgewählt.<br><br>
-      <i><ins>Anwendungsfall:</ins> Durch eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wurde der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über die Formel:</i><br>
-      <br>
+      Über eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über folgende Formel ermittelt:<br>
 
 $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
-<br><i>ermittelt. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.<br><br></i>
+
+<i><ins>Anwendungsfall:</ins> Die verarbeitbaren Datensätze wurden anschließend anhand der Klassifikationslabel (REAL / FAKE / ERROR) mit einem Tabellenkalkulationsprogramm ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.</i><br>
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
@@ -66,8 +65,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
 
-Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Scoring von 82 % erreicht.
-
+<i>Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser das höchste Scoring mit 82 % erreicht.</i>
   </details>
 </ol>
 
@@ -77,13 +75,13 @@ Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser ein Sco
 <ol>   
   <details>
   <summary>⬜ Datenstrukturanalyse (engl. data structure analysis)</summary>
-Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich seines technischen Formats und seines inhaltlichen Schemasuntersucht.
+Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich seines technischen Formats und seines inhaltlichen Schemas untersucht.
  <ul>
     <details>
       <summary>⚪ Datenformatsanalyse (engl. data format analysis)</summary>
-      Bei der Datenformatanalyse wird die technische Hülle des Datensatzes untersucht.<br>Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich seines technischen Formats und seines inhaltlichen Schemas systematisch untersucht.<br><br>
-        <i>Das Datenformat des gewählten Datensatzes ist ein Spezialfall einer "Delimiter Separated Value"-Datei welche als Trennzeichen Komma (engl. comma) nutzt (Klein, 2023, p. 261-262).</i>
-        <sup id="ref-12"><a href="#fn-12">[12]</a></sup><i> Diese sog. CSV-Datei verfügt im vorliegenden Fall über eine Header und 5659 Zeilen, welche in 4 Spalten organisiert wurden.</i><br><br>
+      Bei der Datenformatanalyse wird die technische Hülle eines Datensatzes untersucht.<br><br>
+
+  <i><ins>Anwendungsfall:</ins> Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal abgespeichert.</i><br>
     </details>
   </ul>
 
@@ -91,7 +89,9 @@ Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich se
     <details>
       <summary>⚪ Datenschemanalyse (engl. data schema analysis)</summary>
       Bei der Datenschemanalyse wird die inhaltliche Struktur der Spalten analysiert
-      <i>Prüft die inhaltliche Struktur der Spalten.</i>
+      <i><ins>Anwendungsfall:</ins> Der gewählte Datensatz </i><br>
+  
+
 |author                             |posted_on                 |rating |text              |
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
