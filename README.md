@@ -39,18 +39,40 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar.
 <ol>    
     <details>
       <summary>⬜ Datensatzprüfung (engl. dataset check)</summary>
-      Im Rahmen der Datensatzprüfung werden die gesammelten Datensätze hinsichtlich ihres Ursprungs (organisch oder synthetisch) bewertet, um die Eignung für die Analyse sicherzustellen.<br><br>
-      <i><ins>Anwendungsfall:</ins> Die gesammelten Datensätze wurden anhand eines extern entwickelten und vortrainierten KI-Detektors (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) auf synthetisch erzeugte Instanzen (engl. samples) geprüft. Das Programm nutzt dabei ein vortrainiertes Modell zur Sentimentanalyse, um Texte hinsichtlich eines vermuteten organischen (menschlichen) oder synthetischen (KI-basierten) Ursprungs durch Label (REAL / FAKE / ERROR) zu klassifizieren. Während der Anwendung zeigte sich, dass nicht alle Datensätze verarbeitet werden konnten. Dies ist plausibel auf lange Beschwerdetexte (>512 Tokens) in Verbindung mit begrenzten Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welches durch das verwendete Embedding genutzt wird. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über ein Tabellenkalkulationsprogramm ausgewertet.</i><br><br>
-      <div style="margin-left: 2em;">
-       <code>transformers</code>&nbsp;<code>torch</code><br><br>
+      Bei einer Datensatzprüfung werden Ursprung und Authentizität eines Datensatzes überprüft, um eine angemessene Datenqualität für den Anwendungsfall sicherzustellen.
+       <ul>
+  <details>
+      <details>
+      <summary>⚪ Datenursprungsprüfung (engl. data provenance check)</summary>
+      Ursprungsprüfung ist der Prozess der Verifizierung und Dokumentation, unter welchen Bedingungen und aus welcher Quelle Daten entstanden sind. Sie prüft die Herkunft, den Kontext und die Verlässlichkeit von Datenquellen, um Transparenz über die Entstehungsgeschichte der Daten zu schaffen.<br><br>
+      <i><ins>Anwendungsfall:</ins> Auf die Datenursprungsprüfung wurde aufgrund des Projektumfangs verzichtet.</
+      </details>
+  <details>
+      <summary>⚪ Datenauthentizitätsprüfung (engl. data authenticity check)</summary>
+      Datenauthentizität beschreibt den Grad, zu dem Daten organisch entstanden sind und nicht manipuliert oder künstlich generiert wurden. Im Kontext von Textdaten bezieht sich Authentizität darauf, ob ein Text von einem Menschen verfasst wurde oder durch ein Computersystem (z.B. Sprachmodell) generiert wurde.
+      <ul>
+      <details>
+      <summary>⚪ KI-Detektoren (engl. AI-detectors)</summary>
+
+  > Eine Prüfung auf Datenauthenzität kann über KI-Detektoren erfolgen.<br>
+
+  <i><ins>Anwendungsfall:</ins> Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwerndet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Spachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Emgedding verwendet.</i><br>
+        <div style="margin-left: 2em;">
+          <code>transformers</code>&nbsp;<code>torch</code><br>
+        </details>
+      </details>
+    </details>
+       <i><ins>Anwendungsfall:</ins></i>  
     </details>
     <details>
       <summary>⬜ Datensatzauswahl (engl. dataset selection)</summary>
-      Über eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über folgende Formel ermittelt:<br>
+      Über eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationramm wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über folgenl ermittelt:<br>
 
 $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
-<i><ins>Anwendungsfall:</ins> Die verarbeitbaren Datensätze wurden anschließend anhand der Klassifikationslabel (REAL / FAKE / ERROR) mit einem Tabellenkalkulationsprogramm ausgewertet. Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.</i><br>
+  Die  durch den KI-Detektor verarbeitbaren Datensatzinstanzen (Zeilen) wurden anhand ihrer Label REAL, FAKE und ERROR in einem Tabellenkalkulationsprogramm durch eine Häufigkeitsauswertung ausgewertet. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über folgende eine Tabellenkalkulationsprogramm ausgewertet.
+
+<i><ins>Anwendungsfall:</ins> Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.</i><br>
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
@@ -59,7 +81,8 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 | 03 | Consumer_Complaints.csv            | 13,50 %   | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
 | 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbsp; Kaggle        |
 | 05 | complaints_data.csv                | 82,00 %   | 7,20   MB |[^05] &nbsp; GitHub        |
-| 06 | user_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub        |
+| 0e</ol>
+r_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub        |
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
@@ -70,26 +93,20 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-> In der Phase der Datensatzsichtung wird der ausgewählte Datensatz einer explorativen Datenanalyse (engl. exploratory data analysis - EDA) unterzogen, um strukturelle Merkmale, Muster und potenzielle Qualitätsprobleme systematisch zu identifizieren. Zu diesem Zweck werden sowohl die Datenstruktur als auch der Dateninhalt analysiert, sodass die gewonnene Erkenntnisse in die Datensatzaufbereitung (engl. dataset preparation) überführt und den nachgelagerten Prozessphasen methodisch berücksichtigt werden können.
+> In der Phase der Datensatzsichtung wird der ausgewählte Datensatz einer explorativen Datenanalyse (engl. exploratory data analysis - EDA) unterzogen, um strukturelle Merkmale, Muster und potenzielle ualitätsprobleme systematisch zu identifizieren. Zu diesem Zweck werden sowohl die Datenstruktur als auch der Dateninhalt analysiert, sodass die gewonnene Erkenntnisse in die Datensatzaufbereitung (engl. dataset preparation) überführt und den nachgelagerten Prozessphasen methodisch berücksichtigt werden können.
 
 <ol>   
   <details>
   <summary>⬜ Datenstrukturanalyse (engl. data structure analysis)</summary>
-Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich seines technischen Formats und seines inhaltlichen Schemas untersucht.
+  Durch die Datenstrukturanalyse wird deDie  eines Datensatzesuntersuchtsichtlich seines technischen Formats . inhaltlichen Schemas untersucht.
  <ul>
     <details>
-      <summary>⚪ Datenformatsanalyse (engl. data format analysis)</summary>
-      Bei der Datenformatanalyse wird die technische Hülle eines Datensatzes untersucht.<br><br>
+      besteht aus vier Spalten. Die darin enthaltene Informationen lassen sich in <ins>strukturierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt werden. Strukturierte Daten fließen in die finale Datenpräsentation, im Rahmen der Merkmalsdarstellung ein.
+  
+  <summary>⚪ Datenformatsanalyse (engl. data format analysis)</summary>
+  Bei der Datenformatanalyse wird die technische Hülle eines Datensatzes untersucht.<br><br>
 
-  <i><ins>Anwendungsfall:</ins> Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal abgespeichert.</i><br>
-    </details>
-  </ul>
-
-   <ul>
-    <details>
-      <summary>⚪ Datenschemanalyse (engl. data schema analysis)</summary>
-      Bei der Datenschemanalyse wird die inhaltliche Struktur der Spalten analysiert
-      <i><ins>Anwendungsfall:</ins> Der gewählte Datensatz </i><br>
+  <i><ins>Anwendungsfall:</ins> Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder pchemase wird die inhaltliche Struktur der Spalten analysiert
   
 
 |author                             |posted_on                 |rating |text              |
