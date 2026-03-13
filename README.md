@@ -41,8 +41,8 @@ Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar.
 <ol>    
     <details>
       <summary>⬜ Datensatzprüfung (engl. dataset check)</summary>
-      Bei einer Datensatzprüfung werden Ursprung und Authentizität eines Datensatzes überprüft, um eine angemessene Datenqualität für den Anwendungsfall sicherzustellen.
-       <ul>
+      Bei einer Datensatzprüfung werden Ursprung und Authentizität eines Datensatzes überprüft, um eine angemessene Datenqualität für den Anwendungsfall sicherzustellen.<br><br>
+      <ul>
       <details>
       <summary>⚪ Datenursprungsprüfung (engl. data provenance check)</summary>
       Ursprungsprüfung ist der Prozess der Verifizierung und Dokumentation, unter welchen Bedingungen und aus welcher Quelle Daten entstanden sind. Sie prüft die Herkunft, den Kontext und die Verlässlichkeit von Datenquellen, um Transparenz über die Entstehungsgeschichte der Daten zu schaffen.<br><br>
@@ -119,11 +119,11 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 <ol>
   <details>
     <summary>⬜ Dateninhaltsanalyse (engl. data content analysis)</summary>
-    <i>Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse der Datensatzspalten durchgeführt um Verteilungen, Muster, Auffälligkeiten und potenzielle Qualitätsprobleme sichtbar zu machen. Dabei wird zwischen Erkundung und Erkennung differenziert.</i><br>
+    Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse der Datensatzspalten durchgeführt um Verteilungen, Muster, Auffälligkeiten und potenzielle Qualitätsprobleme sichtbar zu machen. Dabei wird zwischen Datenerkundung und Datenerkennung differenziert.<br><br>
     <ul>
       <details>
       <summary>⚪ Datenerkundung (engl. data exploration)</summary>
-      (deskriptive Analyse von Inhalten und Verteilungen)<br>
+      Im Rahmen der Datenerkundung erfolgt eine deskriptive Analyse von Inhalten und Verteilungen.<br><br>
       <ul>
         <details>
           <summary>⚪ Analyse der strukturierten Daten (engl. analysis of structured data)</summary>
@@ -160,14 +160,14 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         </details>
         <details>
           <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
-          Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br><br>
+          Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprch Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
           <ul>
+            <i><ins>Anwendungsfall:</ins> In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englische Kundenbeschwerden.</i><br><br>
             <details>
               <summary>"text"</summary>
-
-  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) die konkateniert Sätze bilden, die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>
-
-  Die EDA zeigte, dass die Texte im Median aus 864 Zeichen bestehen.
+          <ul>
+          Die Kundenbeschwerden (engl. customer complaints) enthalten Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen was in der linguistische Datenverarbeitung zu beachten ist. Die durchgeführte Textlängenanalyse (engl. text length analysis) zeigt, dass die durchschnittliche Beschwerdelänge im Median 864 Zeichen aufweist und dabei im Schnitt aus XXX Sätzen besteht.
+          <br>
             </details>
           </ul>
         </details>
@@ -175,22 +175,29 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       </details>
       <details>
       <summary>⚪ Datenerkennung (engl. data detection)</summary>
-      In der Datenerkennung erfolgt die Identifikation konkreter Datenprobleme wie Fehlwerte und Duplikate.
+      In der Datenerkennung erfolgt die Identifikation konkreter Datenprobleme wie Fehlwerte und Duplikate.<br><br>
       <ul>
       <details>
       <summary>⚪ Fehlwerterkennung (engl. missing value detection)</summary>
+      In der Fehlererkennung wird zwischen Nummernfehlerten und Textfehlwerten differenziert.
       Binäre erkennung.
-      Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte (NaNs) in der Spalte 'text' vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit <code>duplicated(keep=False)</code>).<br>
+      <br><br>
       <ul>
         <details>
-          <summary>Nummernfehlwerte (engl. number errors)<summary>
-          NaNs (Not a Number)
+          <summary>Nummernfehlwerte (engl. number errors)</summary>
+          Nummernfehlwerte sind 
+          NaNs (Not a Number)<br><br>
+          <i><ins>Anwendungsfall:</ins> XXXX</i><br>
         </details>
       </ul>
       <details>
         <ul>
-        <summary>Textfehlwerte (engl. text errors)<summary>
-          NaTs (Not a Text)
+        <summary>Textfehlwerte (engl. text errors)</summary>
+          NaTs (Not a Text)<br><br>
+        <i><ins>Anwendungsfall:</ins> Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit 
+        Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte in der Spalte 'text' (NaTs) vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden.<br>
+        <code>duplicated(keep=False)</code>).
+        </i><br>
   > Die Analyse fehlender Daten zeigte keine Fehlwerte in den strukturierten Spalten 'author', 'posted_on' und 'rating', aber 30 Fehlwerte in der Spalte 'text'.
   
   </ul>
@@ -211,18 +218,18 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 <ol type="1">
     <details>
       <summary>⬜ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
-      Durch die Datensatzbereinigung wird der Datensatz von Fehlwerten und Duplikaten befreit.
+      Durch die Datensatzbereinigung wird der Datensatz von Fehlwerten und Duplikaten befreit, um Verzerrungen in einer späteren Modellbildung zu vermeiden.<br>
       <ul>
       <details>
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
-        <i>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</i>
+        <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</p>
           <div style="margin-left: 2em;">
             <code>XXX</code><br>
           </div>
       </details>
           <details>
             <summary>⚪ Duplikatentfernung (engl. duplicate removal)</summary>
-          <p><i>Durch die Duplikatentfernung werden doppelte Zeilen im Datensatz entfernt, um Verzerrungen des Modells zu vermeiden.</i></p>
+          <p><i>Durch die Duplikatentfernung werden doppelte Instanzen (Zeilen) aus dem Datensatz entfernt.</i></p>
           <div style="margin-left: 2em;">
             <code>XXX</code><br>
           </div>
@@ -234,7 +241,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 <ol>
     <details>
       <summary>⬜ Datensatzvalidierung (engl. dataset validation)</b></summary>
-      <i>Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.</i><br>
+      Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.<br>
     </details>
 </ol>
 
