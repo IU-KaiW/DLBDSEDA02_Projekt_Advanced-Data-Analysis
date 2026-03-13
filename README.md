@@ -7,14 +7,16 @@ Der ausgearbeitet Lösungsansatz fokussiert sich auf Verarbeitung von englischsp
 Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergäzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
 
 Die ausgearbeitete Konzeption lässt sich grob in 3 Hauptphasen einteilen: 
+  <ul>
+  
+  ⬜ Datensatzverarbeitung (engl. dataset pipeline)
+  
+  🟧 Datenverarbeitung (engl. data processing)
 
-⬜ Datensatzverarbeitung (engl. dataset pipeline)
+  🟦 Datennachverarbeitung (engl. data post-processing).
+  </ul>
 
-🟧 Datenverarbeitung (engl. data processing)
-
-🟦 Datennachverarbeitung (engl. data post-processing).
-
-Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar. 
+Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar. 
 
 ## ⬜ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="docs/1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
@@ -41,32 +43,28 @@ Durch einen Klick auf ► werden Erläuterungen und Unterschritte sichtbar.
       <summary>⬜ Datensatzprüfung (engl. dataset check)</summary>
       Bei einer Datensatzprüfung werden Ursprung und Authentizität eines Datensatzes überprüft, um eine angemessene Datenqualität für den Anwendungsfall sicherzustellen.
        <ul>
-  <details>
       <details>
       <summary>⚪ Datenursprungsprüfung (engl. data provenance check)</summary>
       Ursprungsprüfung ist der Prozess der Verifizierung und Dokumentation, unter welchen Bedingungen und aus welcher Quelle Daten entstanden sind. Sie prüft die Herkunft, den Kontext und die Verlässlichkeit von Datenquellen, um Transparenz über die Entstehungsgeschichte der Daten zu schaffen.<br><br>
-      <i><ins>Anwendungsfall:</ins> Auf die Datenursprungsprüfung wurde aufgrund des Projektumfangs verzichtet.</
+      <i><ins>Anwendungsfall:</ins> Auf die Datenursprungsprüfung wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
-  <details>
+      <details>
       <summary>⚪ Datenauthentizitätsprüfung (engl. data authenticity check)</summary>
-      Datenauthentizität beschreibt den Grad, zu dem Daten organisch entstanden sind und nicht manipuliert oder künstlich generiert wurden. Im Kontext von Textdaten bezieht sich Authentizität darauf, ob ein Text von einem Menschen verfasst wurde oder durch ein Computersystem (z.B. Sprachmodell) generiert wurde.
+      Datenauthentizität beschreibt den Grad, zu dem Daten organisch entstanden sind und nicht manipuliert oder künstlich generiert wurden. Im Kontext von Textdaten bezieht sich Authentizität darauf, ob ein Text von einem Menschen verfasst wurde oder durch ein Computersystem (z.B. Sprachmodell) generiert wurde.<br>
       <ul>
       <details>
       <summary>⚪ KI-Detektoren (engl. AI-detectors)</summary>
-
-  > Eine Prüfung auf Datenauthenzität kann über KI-Detektoren erfolgen.<br>
-
+      Eine Prüfung auf Datenauthenzität kann über KI-Detektoren erfolgen.<br><br>
   <i><ins>Anwendungsfall:</ins> Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwerndet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Spachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Emgedding verwendet.</i><br>
         <div style="margin-left: 2em;">
           <code>transformers</code>&nbsp;<code>torch</code><br>
         </details>
+      </ul>
       </details>
-    </details>
-       <i><ins>Anwendungsfall:</ins></i>  
     </details>
     <details>
       <summary>⬜ Datensatzauswahl (engl. dataset selection)</summary>
-      Über eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationramm wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über folgenl ermittelt:<br>
+      Über eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationramm wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über folgende Formel ermittelt:<br>
 
 $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
@@ -81,8 +79,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 | 03 | Consumer_Complaints.csv            | 13,50 %   | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
 | 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbsp; Kaggle        |
 | 05 | complaints_data.csv                | 82,00 %   | 7,20   MB |[^05] &nbsp; GitHub        |
-| 0e</ol>
-r_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub        |
+| 06 | user_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub        |
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
@@ -98,100 +95,116 @@ r_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub    
 <ol>   
   <details>
   <summary>⬜ Datenstrukturanalyse (engl. data structure analysis)</summary>
-  Durch die Datenstrukturanalyse wird deDie  eines Datensatzesuntersuchtsichtlich seines technischen Formats . inhaltlichen Schemas untersucht.
- <ul>
-    <details>
-      besteht aus vier Spalten. Die darin enthaltene Informationen lassen sich in <ins>strukturierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt werden. Strukturierte Daten fließen in die finale Datenpräsentation, im Rahmen der Merkmalsdarstellung ein.
-  
+  Durch die Datenstrukturanalyse wird der Aufbau eines Datensatzes hinsichtlich seines technischen Formats und seines inhaltlichen Schemas untersucht.<br><br>
+  <ul>
+  <details>
   <summary>⚪ Datenformatsanalyse (engl. data format analysis)</summary>
-  Bei der Datenformatanalyse wird die technische Hülle eines Datensatzes untersucht.<br><br>
+  Bei der Datenformatanalyse wird die technische Hülle eines Datensatzes, sprich sein Speicherformat untersucht.<br>
 
-  <i><ins>Anwendungsfall:</ins> Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder pchemase wird die inhaltliche Struktur der Spalten analysiert
-  
+  <br><i><ins>Anwendungsfall:</ins> Der gewählte Datensatz liegt im CSV-Format vor, einem tabellarischen Speicherformat mit kommagetrennten Werten (Klein, 2023, p. 261).</i><br><br>
+  </details>
+  <details>
+  <summary>⚪ Datenschemaanalyse (engl. data schema analysis)</summary>
+  Bei der Datenschemanalyse wird die inhaltliche Struktur der Spalten analysiert.<br><br>
+  <i><ins>Anwendungsfall:</ins> Der gewählte Datensatz besteht aus vier Spalten. Die darin enthaltene Informationen lassen sich in strukturierte Informationen ("author", "posted_on", "rating"), die ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter) Form vorliegen und unstrukturierte ("text") Informationen unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt werden.</i><br><br>
 
 |author                             |posted_on                 |rating |text              |
 |-----------------------------------|--------------------------|-------|------------------|
 |`<Benutzername>`of`<US-Ortsangabe>`|`<Monat>`.`<Tag>`,`<Jahr>`|`<0-5>`|`<Beschwerdetext>`|
 
-<i>Die in der Datei enthaltenen Daten lassen sich in <ins>strukturierte Daten</ins> und <ins>unstrukturierte Daten</ins> unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt wird. 
-<br></i>
 </details>
 </ul>
 </ol>
   </details>
-<ol>   
+<ol>
   <details>
-  <summary>⬜ Dateninhaltsanalyse (engl. data content analysis)</summary>
-  <i>Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse auf den Textinhalt ausgeweitet.</i><br>
-  
-  <br>
-  <ul>
-    <details>
-      <summary>⚪ Analyse der strukturierten Daten (engl. analysis of structured data)</summary>
-      <i>In strukturierter Form liegen die Spalten "author", "posted_on" und "rating" vor. Diesen Informationen ist gemein, dass sie ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter Form) vorliegen.</i>
-      <ul>
-      <li><ins>"author""</ins></li>
-        
-  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrennte, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt. 
-  
-    Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
-
-  <li><ins>"posted_on"</ins></li>
-
-  > Die Zeilen der Spalte "posted_on" enthalten Datumsangaben mit alphabetisch abgekürzter Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format `<Monat>`.`<Tag>`,`<Jahr>`. 
-  
-   Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
-
-   <ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgt sind. 
-   
-   <ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt. 
-   
-   <ins>wöchentliche Verteilung:</ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von montags (820) und freitags (802) abgesetzt wurden, wohingegen an den Tagen der Wochenenden Samstag (659) und Sonntag (564) weniger Beschwerden zu verzeichnen sind. Dieses Muster deutet ebenfalls auf einen organischen Ursprung des Datensatzes hin.
-  </ul>
+    <summary>⬜ Dateninhaltsanalyse (engl. data content analysis)</summary>
+    <i>Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse der Datensatzspalten durchgeführt um Verteilungen, Muster, Auffälligkeiten und potenzielle Qualitätsprobleme sichtbar zu machen. Dabei wird zwischen Erkundung und Erkennung differenziert.</i><br>
     <ul>
-      <li><ins>"rating"</ins></li>
-  
+      <details>
+      <summary>⚪ Datenerkundung (engl. data exploration)</summary>
+      (deskriptive Analyse von Inhalten und Verteilungen)<br>
+      <ul>
+        <details>
+          <summary>⚪ Analyse der strukturierten Daten (engl. analysis of structured data)</summary>
+          Im Rahmen der Analyse strukturierter Daten werden strukturierte Spalteninhalte systematisch auf Merkmale, Verteilungen und Muster hin untersucht.<br><br>
+          <i><ins>Anwendungsfall:</ins> Im vorliegenden Datensatz wurden Verteilungen in Ortsdaten (engl. location data), Zeitdaten (engl. time data) und Bewertungen (engl. rating data) aus den Spalten "author", "posted_on" und "rating" untersucht, um Muster zu erkennen.</i><br><br>
+          <ul>
+            <details>
+              <summary>"author"</summary>
+
+  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrennte, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt.<br>
+
+  Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
+            </details>
+            <details>
+              <summary>"posted_on"</summary>
+
+  > Die Zeilen der Spalte "posted_on" enthalten Datumsangaben mit alphabetisch abgekürzter Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format "Monat, Tag, Jahr".<br>
+
+  Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
+            <ul>
+              <li><ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgt sind. <br>
+              <li><ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt.<br>
+              <li><ins>wöchentliche Verteilung:</ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von montags (820) und freitags (802) abgesetzt wurden, wohingegen an den Tagen der Wochenenden Samstag (659) und Sonntag (564) weniger Beschwerden zu verzeichnen sind. Dieses Muster deutet ebenfalls auf einen organischen Ursprung des Datensatzes hin.<br>
+            </ul>
+            </details>
+            <details>
+              <summary>"rating"</summary>
+
   > Die Zeilen der Spalte "rating" enthalten Bewertungen auf einer Skala `<0-5>`.<br>
 
-  Die Anzahl der Bewertungen nach "rating" ist wie folgt verteilt [rating: 0=1560 (27.57%); 1=3734 (65.98%); 2=260 (4.59%); 3=54 (0.95%); 4=19 (0.34%); 5=32 (0.57%)] was einen Überhang niedriger Bewertungen zeigt. Dies weist ebenfalls auf einen organischen Datensatz hin, da Beschwerden grundsätzlich negativ sind. 
-</ul>
-</ul>
-</ul>
-<ul>
-<details>
-  <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
-  Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br><br>
-  <ul>
-  <li><ins>"text"</ins></li>
-  
-  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) die konkateniert Sätze bilden, die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>  
-  
-  Die EDA zeigte, dass die Texte im Median aus 864 Zeichen bestehen.
-</ul>
-</details>
-<details>
-  <summary>⚪ Fehlwerterkennung (engl. missing value detection)</summary>
-   Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte (NaNs) in der Spalte 'text' vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit <code>duplicated(keep=False)</code>).<br>
-  <ul>
-  <li><ins>Nummernfehlwerte (engl. number errors)</ins></li>
-  NaNs (Not a Number)
-  </ul>
-    <ul>
-  <li><ins>Textfehlwerte (engl. text errors)</ins></li>
-  NaTs (Not a Text)
+  Die Anzahl der Bewertungen nach "rating" ist wie folgt verteilt [rating: 0=1560 (27.57%); 1=3734 (65.98%); 2=260 (4.59%); 3=54 (0.95%); 4=19 (0.34%); 5=32 (0.57%)] was einen Überhang niedriger Bewertungen zeigt. Dies weist ebenfalls auf einen organischen Datensatz hin, da Beschwerden grundsätzlich negativ sind.
+            </details>
+          </ul>
+        </details>
+        <details>
+          <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
+          Unstrukturierte Daten sind Informationen, die in einer nicht identifizierbaren Datenstruktur vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte wie sie in der Spalte "text" vorhanden sind.<br><br>
+          <ul>
+            <details>
+              <summary>"text"</summary>
 
+  > In den Zeilen der Spalte "text" befindet sich ein englischer `<Beschwerdetext>`. Er besteht aus Wörtern (Zeichenketten, sprich Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) die konkateniert Sätze bilden, die Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen enthalten was bei der Sprachverarbeitung zu beachten ist.<br>
+
+  Die EDA zeigte, dass die Texte im Median aus 864 Zeichen bestehen.
+            </details>
+          </ul>
+        </details>
+      </ul>
+      </details>
+      <details>
+      <summary>⚪ Datenerkennung (engl. data detection)</summary>
+      In der Datenerkennung erfolgt die Identifikation konkreter Datenprobleme wie Fehlwerte und Duplikate.
+      <ul>
+      <details>
+      <summary>⚪ Fehlwerterkennung (engl. missing value detection)</summary>
+      Binäre erkennung.
+      Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte (NaNs) in der Spalte 'text' vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden. Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit <code>duplicated(keep=False)</code>).<br>
+      <ul>
+        <details>
+          <summary>Nummernfehlwerte (engl. number errors)<summary>
+          NaNs (Not a Number)
+        </details>
+      </ul>
+      <details>
+        <ul>
+        <summary>Textfehlwerte (engl. text errors)<summary>
+          NaTs (Not a Text)
   > Die Analyse fehlender Daten zeigte keine Fehlwerte in den strukturierten Spalten 'author', 'posted_on' und 'rating', aber 30 Fehlwerte in der Spalte 'text'.
+  
   </ul>
-</details>
-<details>
-  <summary>⚪ Duplikaterkennung (engl. duplicate detection)</summary>
- Die Duplikatanalyse zeigte 1 doppelte Zeile.<br>
-</details>
+      </details>
+      </details>
+      <details>
+        <summary>⚪ Duplikaterkennung (engl. duplicate detection)</summary>
+        Die Duplikatanalyse zeigte 1 doppelte Zeile.<br>
+      </details>
+    </ul>
+    </ul>
+  </details>
+  </details>
 </ol>
-  </details>
-  </details>
-</details> 
-</ul>
 
 ### Datensatzaufbereitung (engl. dataset preparation)
 > In der Phase der Datensatzaufbereitung werden die bei der Datensatzsichtung gewonnenen Erkenntnisse genutzt, um den Datensatz für den Anwendungsfall vorzubereiten. Dazu werden eine Datenbereinigung und Datenvalidierung durchgeführt, wodurch jene Daten bestimmt werden, die weiter verarbeitet werden.
@@ -226,12 +239,12 @@ r_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub    
 </ol>
 
 ###### Datensatz-Pipeline Ausgabe (engl. dataset pipeline output)
-Der so aufbereiteten Datensatzes wird als *"complaints_data_cleaned.csv"* exportiert, welcher als Korpus für die nachfolgenden NLP-Schritte genutzt wird. Die Instanzen des Datensatzes (Zeilen) werden auch als Dokumente bezeichnet. 
+Der so aufbereiteten Datensatzes wird als *"complaints_data_cleaned.csv"* exportiert, welcher als Korpus für die nachfolgenden NLP-Schritte genutzt wird.
 _________________________________________________________________________________________________________________________________________________________
 
 ## 🟧 Linguistische Datenverarbeitung - LDV (engl. NLP-Pipeline)
 ###### NLP-Pipeline Eingabe (engl. pipeline input)
-Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Zeilen des Datensatzes werden auch als Dokumente bezeichnet. 
+Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Datensatzinstanzen (Zeilen) werden als Dokumente bezeichnet. 
 
 <div style="margin-left: 2em;">
   <code>pandas</code>
@@ -240,7 +253,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 > Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
 
 ## Upstream-Aufgaben (engl. upstream tasks)
-> Als Upstream tasks werden in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
+> Als Upstream tasks in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
 
 ### 🟥 Datenvorverarbeitung (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt. 
