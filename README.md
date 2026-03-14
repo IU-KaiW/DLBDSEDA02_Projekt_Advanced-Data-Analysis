@@ -266,13 +266,14 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🟥 <b>textuelle Vorverarbeitung</b> (engl. text pre-processing)</summary>
 
-> In der textuelle Vorverarbeitung erfolgt eine Textbereinigung (engl. text cleaning) welche durch Rauschentfernung (engl. noise reduction) und Standardisierung (engl. standardisation) anhand eines Filterblocks aus Standard- und Individualfiltern realisiert wird, um sprachspezifische Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Emoijs, Schreibfehler und Pronomen zu filtern.<br>
+> In der textuellen Vorverarbeitung erfolgt eine Textbereinigung (engl. text cleaning) was über Rauschentfernung (engl. noise reduction) und Standardisierung (engl. standardisation) umgesetzt wird.<br>
 
   <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
         <details>
           <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
-          <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i></p>
+          <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen. Dies erfolgt über Standard- und Individualfilter, um sprachspezifische Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Schreibfehler, Emoijs, ect. zu entfernen.
+          </i></p>
           <div><code>spaCy</code></div>
           <br>
           <ul>
@@ -286,7 +287,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <ol type="1">
                 <details>
                   <summary>🔴 Stopworte (engl. stopwords)</summary>
-                  <p><i>Stoppwörter sind häufige Funktionswörter (z. B. „the", „is", „and"), die kaum semantischen Gehalt tragen und daher vor der Modellierung aus dem Korpus entfernt werden.</i></p>
+                  <p><i>>Stoppwörter sind häufige Funktionswörter (z. B. „the", „is", „and"), die kaum semantischen Gehalt tragen und daher vor der Modellierung aus dem Korpus entfernt werden.</i></p>
                   <i><ins>Anwendungsfall:</ins> Stoppworte werden beim Token-Filtering entfernt.</i><br>
                   <div>
                     <code>spaCy(token.is_stop)</code><br><br>
@@ -358,8 +359,10 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           <ul>
           <details>
             <summary>🔴 Normalisierung (engl. normalisation)</summary>
-            <p><i>Die Texte werden in ein konsistentes Token-Format überführt.</i></p>
-            <ol type="1">
+
+> Die Texte werden in ein konsistentes Token-Format überführt.
+    
+  <ol type="1">
               <details>
                 <summary>🔴 Kasusumwandlung (engl. case conversion)</summary>
                 <p><i>Tokens werden in Kleinschreibung überführt.</i></p>
@@ -380,8 +383,10 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           </details>
           <details>
             <summary>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</summary>
-            <p><i>Rechtschreibfehler werden im Text-Cleaning dieses Projekts nicht automatisiert korrigiert.</i></p>
-            <i><ins>Anwendungsfall:</ins> Im Text-Cleaning der Beschwerden nicht umgesetzt.</i><br>
+
+> Durch Rechtschreibkorrekturen können Tippfehler und Schreibfehler reduziert werden, um diee Konsistenz von Texten zu verbessern
+
+  <i><ins>Anwendungsfall:</ins> Auf eine Rechtschreibkorrektur wurde in diesem Projekt verzichtet.</i><br>
           </details>
         </details>
         </ul>
@@ -483,18 +488,14 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 <ol type="1">
   <details>
     <summary>🟨 <b> Merkmalsgenerierung </b> (engl. feature generation/featurization)</summary>
-   Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch Merkmalskodierung (engl. feature encoding)' in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von Merkmalsaufbereitung (engl. feature engineering) gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von Merkmalslernen (engl. feature learning / representation learning), wobei Merkmale direkt aus Rohtexten gewonnen werden.
 
-   - Feature Engineering
-   „Der Prozess, bei dem Domänenwissen über die Daten genutzt wird, um Merkmale zu erstellen, die maschinelle Lernalgorithmen funktionsfähig machen, wird als Feature Engineering bezeichnet (übersetzt: Shekhar, 2018).“ (iu., DLMDSEDE01 -  2022, p. 132)
-
-   - Feauture Learning
+> Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch *Merkmalskodierung (engl. feature encoding)*in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von *Merkmalsaufbereitung (engl. feature engineering)* gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von *Merkmalslernen (engl. feature learning / representation learning)*, wobei Merkmale direkt aus Rohtexten gewonnen werden.
 <ol type="1">
   <details>
     <summary>🟨 Vektorisierung (engl. vectorization)</summary>
     <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>
 <div style="margin-left: 2em;">
-  <code>sklearn (CountVectorizer, TfidfVectorizer)</code>&nbsp;<code>sentence-transformers</code><br><br>
+  <code>sklearn (CountVectorizer)</code>&nbsp;<code>sentence-transformers</code><br><br>
 </div>
 <ol type="1">
         <details>
@@ -508,7 +509,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <li><ins>TF-IDF auf Einzeltoken</ins><br>
               Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.
               <div style="margin-left: 2em;">
-                <code>sklearn (TfidfVectorizer)</code>
+                <code>sklearn(TfidfVectorizer)</code>
               </ul>
           </details>
 </ol> 
@@ -1039,7 +1040,7 @@ ______________
         <p><i>Die Darstellung von Merkmalen kann über textuelle, grafische oder hybride Darstellungsformen erfolgen.
           - Themenverteilungen; Top-Wörter pro Thema
           - BERTopic-Integrierte Visualisierung</i></p>
-        <div style="margin-left: 2em;">
+        <div>
           <code>wordcloud</code>&nbsp;<code>BERTopic</code>&nbsp;<code>print() / display / </code><br><br>
         </div>
       </details>
