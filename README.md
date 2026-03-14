@@ -162,11 +162,11 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
           <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
           Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprch Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
           <ul>
-            <i><ins>Anwendungsfall:</ins> In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englische Kundenbeschwerden.</i><br><br>
+            <i><ins>Anwendungsfall:</ins> In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englischsprachige Kundenbeschwerden (engl. customer complaints).</i><br><br>
             <details>
               <summary>"text"</summary>
           <ul>
-          Die Kundenbeschwerden (engl. customer complaints) enthalten Zeit- und Datumsangaben in unterschiedlichen Formatierungen, Großschreibungen, Aufzählungen und Sonderzeichen was in der linguistische Datenverarbeitung zu beachten ist. Die durchgeführte Textlängenanalyse (engl. text length analysis) zeigt, dass die durchschnittliche Beschwerdelänge im Median 864 Zeichen aufweist und dabei im Schnitt aus XXX Sätzen besteht.
+          Die Kundenbeschwerden enthalten Zeit- und Datumsangaben in unterschiedlichen Formaten, Großschreibungen, Aufzählungen und Sonderzeichen was in der der Phase linguistische Datenverarbeitung zu beachten ist. Die durchgeführte Textlängenanalyse (engl. text length analysis) zeigt, dass die durchschnittliche Beschwerdelänge im Median 864 Zeichen aufweist und dabei im Schnitt aus 11 Sätzen besteht.
           <br>
             </details>
           </ul>
@@ -175,38 +175,29 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       </details>
       <details>
       <summary>⚪ Datenerkennung (engl. data detection)</summary>
-      In der Datenerkennung erfolgt die Identifikation konkreter Datenprobleme wie Fehlwerte und Duplikate.<br><br>
+      In der Datenerkennung erfolgt eine Identifikation konkreter Datenprobleme wie Fehlwerte und Duplikate.<br><br>
       <ul>
       <details>
       <summary>⚪ Fehlwerterkennung (engl. missing value detection)</summary>
-      In der Fehlererkennung wird zwischen Nummernfehlerten und Textfehlwerten differenziert.
-      Binäre erkennung.
-      <br><br>
+      Bei der Fehlwerterkennung wird zwischen numerischen und textuellen Fehlwerten unterschieden; die Erkennung erfolgte binär, also als vorhanden oder fehlend.<br><br>
       <ul>
         <details>
           <summary>Nummernfehlwerte (engl. number errors)</summary>
-          Nummernfehlwerte sind 
-          NaNs (Not a Number)<br><br>
-          <i><ins>Anwendungsfall:</ins> XXXX</i><br>
+          Bei einem Nummernfehlwert (engl. Not a Number - NaNs) handelt es sich um einen nicht vorhandenen numerischen Wert im Datensatz.<br><br>
+          <i><ins>Anwendungsfall:</ins> Die Analyse fehlender Daten zeigte keine Fehlwerte in der nummerischen Spalte 'rating'</i><br>
         </details>
-      </ul>
       <details>
-        <ul>
         <summary>Textfehlwerte (engl. text errors)</summary>
-          NaTs (Not a Text)<br><br>
-        <i><ins>Anwendungsfall:</ins> Zudem wurde 1 Duplikat erkannt (bzw. 2 Zeilen in der Paarbetrachtung mit 
-        Im Zuge der Datenexploration ist aufgefallen, dass in den unstrukturierten Daten 30 fehlende Werte in der Spalte 'text' (NaTs) vorliegen, die bereinigt werden müssen, um Verzerrungen in der späteren Modellbildung zu vermeiden.<br>
-        <code>duplicated(keep=False)</code>).
-        </i><br>
-  > Die Analyse fehlender Daten zeigte keine Fehlwerte in den strukturierten Spalten 'author', 'posted_on' und 'rating', aber 30 Fehlwerte in der Spalte 'text'.
-  
-  </ul>
+        Bei einem Textfehlwerten (engl. Not a Text - NaTs) handelt es sich um einen nicht vorhandenen textuellen Wert im Datensatz.<br><br>
+        <i><ins>Anwendungsfall:</ins> Die Untersuchung strukturiert vorliegenden, textuellen Spalten 'author' und 'posted_on' zeigte keine Fehlwerte. Es wurden jedoch 30 NaTs in unstrukturiert vorliegenden Spalte 'text' festgestellt welche bereinigt werden müssen, um Verzerrungen im NLP-Modell zu vermeiden.</i><br>
       </details>
       </details>
       <details>
         <summary>⚪ Duplikaterkennung (engl. duplicate detection)</summary>
-        Die Duplikatanalyse zeigte 1 doppelte Zeile.<br>
+        Im Rahmen der Duplikaterkennung werden redundante Dateninstanzen auf Zeilen- oder Attributebene identifiziert, wobei die Einordnung als Duplikat stets kontextabhängig erfolgt, da nicht jede wiederholte Ausprägung eines einzelnen Wertes bereits eine redundante Beobachtung darstellt.<br><br>
+        <i><ins>Anwendungsfall:</ins> Die Duplikatanalyse zeigte 1 doppelte Datensatzinstanz.</i>
       </details>
+    </ul>
     </ul>
     </ul>
   </details>
@@ -218,7 +209,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 <ol type="1">
     <details>
       <summary>⬜ Datensatzbereinigung (engl. dataset cleaning)</b></summary>
-      Durch die Datensatzbereinigung wird der Datensatz von Fehlwerten und Duplikaten befreit, um Verzerrungen in einer späteren Modellbildung zu vermeiden.<br>
+      Durch die Datensatzbereinigung wird der Datensatz von Fehlwerten und Duplikaten befreit, um Verzerrungen in einer späteren Modellbildung zu vermeiden. <br><br>
       <ul>
       <details>
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
@@ -229,9 +220,10 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       </details>
           <details>
             <summary>⚪ Duplikatentfernung (engl. duplicate removal)</summary>
-          <p><i>Durch die Duplikatentfernung werden doppelte Instanzen (Zeilen) aus dem Datensatz entfernt.</i></p>
+          <p>Durch die Duplikatentfernung werden doppelte Instanzen (Zeilen) aus dem Datensatz entfernt.</p>
+          <i><ins>Anwendungsfall:</ins> XXX </i><br>
           <div style="margin-left: 2em;">
-            <code>XXX</code><br>
+                <code>duplicated(keep=False)</code>
           </div>
       </ul>
         </details>
@@ -242,6 +234,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
     <details>
       <summary>⬜ Datensatzvalidierung (engl. dataset validation)</b></summary>
       Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.<br>
+      <i><ins>Anwendungsfall:</ins> XXX </i><br>
     </details>
 </ol>
 
@@ -252,196 +245,232 @@ ________________________________________________________________________________
 ## 🟧 Linguistische Datenverarbeitung - LDV (engl. NLP-Pipeline)
 ###### NLP-Pipeline Eingabe (engl. pipeline input)
 Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Datensatzinstanzen (Zeilen) werden als Dokumente bezeichnet. 
-
-<div style="margin-left: 2em;">
+<div>
   <code>pandas</code>
 </div>
+<br>
 
 > Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
 
 ## Upstream-Aufgaben (engl. upstream tasks)
-> Als Upstream tasks in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
+> Als Upstream-Aufgaben in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
 
 ### 🟥 Datenvorverarbeitung (engl. data pre-processing)
-> Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt. 
-<div style="margin-left: 2em;">
+> Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt.<br>
+<div style="margin-left: 1em;">
   <code>spaCy</code>
 </div>
-
-
+<br>
 <ol type="1">
   <details>
     <summary>🟥 <b>textuelle Vorverarbeitung</b> (engl. text pre-processing)</summary>
-    <p><i>In der textuelle Vorverarbeitung erfolgt eine Textbereinigung (engl. text cleaning) welche durch Rauschentfernung (engl. noise reduction) und Standardisierung (engl. standardisation) anhand eines Filterblocks aus Standard- und Individualfiltern realisiert wird, um sprachspezifische Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Emoijs, Schreibfehler und Pronomen zu filtern.</i></p>
-    <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
+
+> In der textuelle Vorverarbeitung erfolgt eine Textbereinigung (engl. text cleaning) welche durch Rauschentfernung (engl. noise reduction) und Standardisierung (engl. standardisation) anhand eines Filterblocks aus Standard- und Individualfiltern realisiert wird, um sprachspezifische Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Emoijs, Schreibfehler und Pronomen zu filtern.<br>
+
+  <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
         <details>
           <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
           <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen.</i></p>
+          <div><code>spaCy</code></div>
+          <br>
           <ul>
           <details>
             <summary>🔴 Wortbereinigung (engl. word cleaning)</b></summary>
             <p><i>Wortfilter</i></p>
-              <ul>
-              <li><ins>Stoppworte</ins></li><br>
-              Stoppworte werden beim Token-Filtering entfernt.
-             <div style="margin-left: 2em;">
-                <code>spaCy (token.is_stop)</code><br><br>
-              </div>
-              </ul>
-              <ul>
-              <li><ins>Pronomenfilter (projektspezifisch)</ins><br>
-              XXXX
-             <div style="margin-left: 2em;">
-                <code>spaCy (token.pos_ != "PRON")</code><br><br>
-              </div>
-              </ul>
-              <ul>
-              <li><ins>Weitere projektspezifische Wortfilter</ins><br>
-              Einzelne domänenspezifische Tokens werden ausgeschlossen.
-             <div style="margin-left: 2em;">
-                <code></code>&nbsp;<code>spaCy (token.text)</code><br><br>
-              </div>
-              </ul>
+            <ul>
+              <details>
+                <summary> unspezifische Filter</summary>
+                <p><i>XXXXX</i></p>
+                <ol type="1">
+                <details>
+                  <summary>🔴 Stopworte (engl. stopwords)</summary>
+                  <p><i>Stoppwörter sind häufige Funktionswörter (z. B. „the", „is", „and"), die kaum semantischen Gehalt tragen und daher vor der Modellierung aus dem Korpus entfernt werden.</i></p>
+                  <i><ins>Anwendungsfall:</ins> Stoppworte werden beim Token-Filtering entfernt.</i><br>
+                  <div>
+                    <code>spaCy(token.is_stop)</code><br><br>
+                  </div>
+                </details>
+                </ol>
+              </details>
+              <details>
+                <summary> spezifische Filter</summary>
+                <p><i>projektspezifisch Filter</i></p>
+                <ol type="1">
+                <details>
+                  <summary>🔴 Pronomenfilter</summary>
+                  <p><i>XXXXX</i></p>
+                  <i><ins>Anwendungsfall:</ins> XXX</i><br>
+                  <div>
+                    <code>spaCy(token.pos_ != "PRON")</code><br><br>
+                  </div>
+                </details>
+                <details>
+                  <summary>🔴 domänenspezifische Wortfilter</summary>
+                  <p><i>Einzelne domänenspezifische Tokens werden ausgeschlossen.</i></p>
+                  <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                  <div>
+                    <code>spaCy(token.text)</code><br>
+                  </div>
+                </details>
+                </ol>
+              </details>
+            </ul>
           </details>
           <details>
           <summary>🔴 Zeichenbereinigung (engl. character cleaning)</summary>
-          <p><i>Satzzeichen werden beim Token-Filtering entfernt.</i></p>
-              <div style="margin-left: 2em;">
-                <code>spaCy (token.is_punct)</code><br><br>
-              </div>
+          <p><i>XXXXX</i></p>
             <ol type="1">
               <details>
-                <summary>🔴 Satzzeichen (engl. word embeddings)</summary>
+                <summary>🔴 Satzzeichen (engl. punctuation marks)</summary>
                 <p><i>XXXXX</i></p>
+                <i><ins>Anwendungsfall:</ins> Satzzeichen werden beim Token-Filtering entfernt.</i><br>
+                <div>
+                <code>spaCy(token.is_punct)</code><br>
+              </div>
+              </details>
+              <details>
+                <summary>🔴 Leerzeichen (engl. white spaces)</summary>
+                <p><i>XXXXX</i></p>
+                <i><ins>Anwendungsfall:</ins> XXX </i><br>
                 <ul>
-                <li><ins>xxxx</ins></li>
-                nxxx
+              </details>
+              <details>
+                <summary>🔴 Sonderzeichen (engl. special character)</summary>
+                <p><i>XXXXX</i></p>
+                <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                <ul>
               </details>
             </ol>
+          </details>
+          <details>
+          <summary>🔴 Nummernbereinigung (engl. numbers cleaning)</summary>
+          <p><i>XXXXX</i></p>
+          <i><ins>Anwendungsfall:</ins> XXX </i><br>
+          </details> 
     </ul>
       </li>
         </details>
         <details>
           <summary>🔴 Standardisierung (engl. standardisation)</summary>
           <p><i>Durch Standardisierung werden relevante Token vereinheitlicht. Hierdurch wird vermieden, dass gleiche Inhalte in mehreren leicht unterschiedlichen Varianten auftreten.</i></p>
-            <ins>🔴 Normalisierung (engl. normalisation)</ins><br>
-              Die Texte werden in ein konsistentes Token-Format überführt.
-              <ul>
-                <li><ins>🔴 Kasusumwandlung (engl. case conversion)</ins><br>
-                  Tokens werden in Kleinschreibung überführt.
-                  <div style="margin-left: 2em;">
-                    <code>spaCy (token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
-                  </div>
-                </li>
-                <li><ins>🔴 Lemmatisierung (engl. lemmatization)</ins><br>
-                  Tokens werden auf ihre Grundform reduziert.
-                  <div style="margin-left: 2em;">
-                    <code>spaCy (token.lemma_)</code><br><br>
-                  </div>
-                </li>
-                <li><ins>🔴 Batch-Verarbeitung der Dokumente</ins><br>
-                  Die Verarbeitung erfolgt effizient über Dokument-Batches.
-                  <div style="margin-left: 2em;">
-                    <code>spaCy (nlp.pipe)</code><br><br>
-                  </div>
-                </li>
-              </ul>
-            </li>
-              <ins>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</ins><br>
-              Im Text-Cleaning der Beschwerden nicht umgesetzt.
-                <div style="margin-left: 2em;">
-                <code>nicht umgesetzt</code><br><br>
-              </div>
-            </li>
-          </ul>
+          <ul>
+          <details>
+            <summary>🔴 Normalisierung (engl. normalisation)</summary>
+            <p><i>Die Texte werden in ein konsistentes Token-Format überführt.</i></p>
+            <ol type="1">
+              <details>
+                <summary>🔴 Kasusumwandlung (engl. case conversion)</summary>
+                <p><i>Tokens werden in Kleinschreibung überführt.</i></p>
+                <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                <div>
+                  <code>spaCy(token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
+                </div>
+              </details>
+              <details>
+                <summary>🔴 Lemmatisierung (engl. lemmatization)</summary>
+                <p><i>Tokens werden auf ihre Grundform reduziert.</i></p>
+                <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                <div>
+                  <code>spaCy(token.lemma_)</code><br><br>
+                </div>
+              </details>
+            </ol>
+          </details>
+          <details>
+            <summary>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</summary>
+            <p><i>Rechtschreibfehler werden im Text-Cleaning dieses Projekts nicht automatisiert korrigiert.</i></p>
+            <i><ins>Anwendungsfall:</ins> Im Text-Cleaning der Beschwerden nicht umgesetzt.</i><br>
+          </details>
         </details>
+        </ul>
 </ol>
 </ol>
 
 
 <ol type="1">
   <details>
-    <summary>🟥 <b> linguistische Vorverarbeitung</b> (engl. linguistic processing)</summary>
-    Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
+    <summary>🟥 <b> linguistische Vorverarbeitung</b> (engl. linguistic pre-processing)</summary>
+
+> Im Rahmen der linguistischen Analyse erfolgt, je nach Anwendungsfall neben einer lexikalischen, eine syntaktische und/oder semantische Verarbeitung von bereinigten Texten zur Merkmalsvorbereitung.
+
 <ul>
   <details>
-    <summary>🔴 lexikalische Verarbeitung (engl. lexical processing)</summary>
+    <summary>🔴 lexikalische Vorverarbeitung (engl. lexical pre-processing)</summary>
 
-> „Die lexikalische Analyse ist ein wichtiger erster Schritt in der natürlichen Sprachverarbeitung, die Rohtext in strukturierte, verständliche Einheiten verwandelt. Durch Tokenisierung, Lexemidentifizierung und Part-of-Speech-Tagging bereitet sie den Text auf die komplexere Analyse vor und ermöglicht es Systemen, die Bedeutung, den Satzbau und den Kontext zu interpretieren.“ (Luigi’s Box, s.r.o., 2016)
-<ul style="list-style: none; padding-left: 0;">
-    <ol type="1">
+> „Die lexikalische Analyse ist ein wichtiger erster Schritt in der natürlichen Sprachverarbeitung, die Rohtext in strukturierte, verständliche Einheiten verwandelt. Durch Tokenisierung, Lexemidentifizierung und Part-of-Speech-Tagging bereitet sie den Text auf die komplexere Analyse vor und ermöglicht es Systemen, die Bedeutung, den Satzbau und den Kontext zu interpretieren“ (Luigi’s Box, s.r.o., 2016).
+
+  <ol type="1">
   <details>
     <summary>🔴 Tokenisierung (engl. tokenization)</summary>
-        <i>Die Beschwerden werden mit spaCy tokenisiert und im Batch verarbeitet.</i><br>
-        <div style="margin-left: 2em;">
-          <code>spaCy (nlp.pipe)</code><br><br>
+        <i>Die Beschwerden werden mit spaCy tokenisiert und im Batch verarbeitet.</i><br><br>
+        <i><ins>Anwendungsfall:</ins> Stoppworte werden beim Token-Filtering entfernt.</i><br>
+        <div>
+          <code>spaCy(nlp.pipe)</code><br><br>
         </div>
   </details>
   <details>
     <summary>🔴 Grundformreduktion (engl. inflection reduction)</summary>
-        <i>Die Tokens werden lemmatisiert und in Kleinschreibung überführt.</i><br>
-        <div style="margin-left: 2em;">
-          <code>spaCy (token.lemma_)</code><br><br>
+        <i>Die Tokens werden lemmatisiert und in Kleinschreibung überführt.</i><br><br>
+        <i><ins>Anwendungsfall:</ins> XXX </i><br>
+        <div>
+          <code>spaCy(token.lemma_)</code><br><br>
         </div>
   </details>
   <details>
     <summary>🔴 Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)</summary>
-        <i>Aus den bereinigten Texten wird ein Vokabular mit Token-IDs aufgebaut.</i><br>
-        <div style="margin-left: 2em;">
-          <code>sklearn (CountVectorizer)</code><br><br>
+        <i>Aus den bereinigten Texten wird ein Vokabular mit Token-IDs aufgebaut.</i><br><br>
+        <i><ins>Anwendungsfall:</ins> XXX </i><br>
+        <div>
+          <code>sklearn(CountVectorizer)</code><br><br>
         </div>
   </details>
   <details>
-    <summary>🔴 lexikalisches POS-Tagging (für Filterregeln)</summary>
-    <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br>
-        <div style="margin-left: 2em;">
-          <code>spaCy (token.pos_)</code><br><br>
+    <summary>🔴 lexikalisches POS-Tagging (nicht kontextsensitiv)</summary>
+    <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br><br>
+    <i><ins>Anwendungsfall:</ins> XXX </i><br>
+        <div>
+          <code>spaCy(token.pos_)</code><br><br>
         </div>
   </details>
   </details>
   <details>
-    <summary>🔴 syntaktische Verarbeitung (engl. syntactic processing)</summary>
-    <p><i>Die syntaktische Verarbeitung befasst sich "mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen (iu. - DLBDSEAIS01_D - Skript - S. 62). „Bei der Syntaxanalyse werden Wortarten (Part-of-Speech Tagging) und ihre Zusammensetzung in Phrasen bestimmt (z. B. können ein Artikel und ein Substantiv eine Nominalphrase bilden).“ (Alpar et al., 2023, p. 45)</i></p>
-    <div style="margin-left: 2em;">
-      <code>nicht umgesetzt</code><br><br>
-    </div>
-     <ul>
+    <summary>🔴 syntaktische Vorverarbeitung (engl. syntactic pre-processing)</summary>
+
+  > Die syntaktische Vorverarbeitung befasst sich "mit den Merkmalen der Sprache wie Kategorien, Wortgrenzen und grammatikalischen Funktionen (iu. - DLBDSEAIS01_D - Skript - S. 62). „Bei der Syntaxanalyse werden Wortarten (Part-of-Speech Tagging) und ihre Zusammensetzung in Phrasen bestimmt (z. B. können ein Artikel und ein Substantiv eine Nominalphrase bilden).“ (Alpar et al., 2023, p. 45)
+  
+  <ul>
       <details>
-        <summary>🔴 Kontextsensitives POS-Tagging</summary>
-        <div style="margin-left: 2em;">
-          <code>nicht umgesetzt</code><br><br>
-        </div>
-        </ul>
+        <summary>🔴 syntaktisches POS-Tagging (kontextsensitiv)</summary>
+      <i>XXX</i><br><br>
+  <i><ins>Anwendungsfall:</ins> XXX </i><br>
       </details>
       <details>
         <summary>🔴 syntaktisches Parsen (engl. syntax parsing)</summary>
-        <div style="margin-left: 2em;">
-          <code>nicht umgesetzt</code><br><br>
-        </div>
+    <i>XXX</i><br><br>
+  <i><ins>Anwendungsfall:</ins> XXX </i><br>
       </details>
-
+      </ul>
+  </details>
   <details>
-    <summary>🔴 semantische Verarbeitung (engl. semantic processing)</summary>
-    <p><i>XXX</i></p>
-    <ul>
+    <summary>🔴 semantische Vorverarbeitung (engl. semantic pre-processing)</summary>
+
+> XXX
+  <ul>
       <details>
         <summary>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)</summary>
-        <div style="margin-left: 2em;">
-          <code>nicht umgesetzt</code><br><br>
-        </div>
+        <p><i>XXX</i></p>
+        <i><ins>Anwendungsfall:</ins> Auf NER wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
       <details>
         <summary>🔴 Koreferenzauflösung (engl. Coreference Resolution - CR)</summary>
-        <div style="margin-left: 2em;">
-          <code>nicht umgesetzt</code><br><br>
-        </div>
+        <p><i>XXX</i></p>
+        <i><ins>Anwendungsfall:</ins> Auf CR wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
       <details>
         <summary>🔴 Beziehungsextraktion (engl. Relationship Extraction - RE)</summary>
-        <div style="margin-left: 2em;">
-          <code>nicht umgesetzt</code><br><br>
-        </div>
+        <p><i>XXX</i></p>
+        <i><ins>Anwendungsfall:</ins> Auf RE wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
     </ul>
   </details>
@@ -588,10 +617,11 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🟨 <b> Merkmalsauswahl </b> (engl. feature selection)</summary>
    Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden.
+  </details>
 </ol>
 
 ## Downstream-Aufgaben (engl. downstream tasks)
-> Als Downstream tasks werden in NLP-Pipelines spezifische, anwendungsorientierte Aufgaben, die auf den Ergebnissen grundlegender (upstream) Verarbeitungsschritte aufbauen, bezeichnet. Sie stellen die "Endprodukte" dar, bei denen Modelle an reale Probleme angepasst werden, um direkt nutzbaren Output zu liefern.
+> Als Downstream-Aufgaben werden in NLP-Pipelines spezifische, anwendungsorientierte Aufgaben, die auf den Ergebnissen grundlegender (Upstream-Aufgaben) Verarbeitungsschritte aufbauen, bezeichnet. Sie stellen die "Endprodukte" dar, bei denen Modelle an reale Probleme angepasst werden, um direkt nutzbaren Output zu liefern.
 
 ### 🟧 Datenverarbeitung (engl. data processing)
 > Im Rahmen der Datenverarbeitung erfolgt eine *Modellierung (engl. modeling)*, sprich die Entwicklung mathematischer oder statistischer Funktionen (z.B. Machine-Learning-Modelle), die Muster in Daten erfassen und nutzbar machen. Man spricht in diesem Zusammenhang auch vom *Merkmalsmodellierung (engl. feature modeling)*. Sie bezeichnet den Prozess der systematischen Konstruktion und Optimierung von Merkmalen in einem formalisierten mathematischen, sprich deterministischen oder probabilistischen Rahmen. Ziel ist es, rohe, unstrukturierte oder hochdimensionale Daten in eine kompakte, diskriminative oder interpretierbare numerische Repräsentation zu überführen, welche die wesentlichen Informationen bewahrt oder verstärkt. Dabei werden werden ML-Algorithmen auf die vorverarbeiteten Daten angewendet, die eingesetzten Kernverfahren umfassen *überwachtes Lernen (engl. supervised learning)* – Regression, Klassifikation oder *unüberwachtes Lernen (engl. unsupervised learning)* – Clustering. Als Algorithmus wird das Lernverfahren bezeichnet, als Modell eine parametrisierte Instanz des Algorithmus.
@@ -643,7 +673,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
         <ul>
         <li><ins>LDA (Latent Dirichlet Allocation)</li></ins>
         <p><i>Latent Dirichlet Allocation (LDA) ist ein probabilistisches Modell, das latente Themen aus der Merkmalsmatrix durch wahrscheinlichkeitsbasierte Themen-Wort-Verteilungen identifiziert. LDA erzeugt interpretierbare Themen mit probabilistischen Zuordnungen zu Dokumenten und Wörtern.</i></p>
-          <div style="margin-left: 2em;">
+          <div>
             <code>gensim</code>&nbsp;<code>sklearn (LatentDirichletAllocation)</code><br><br>
           </div>
           <p><b>Output:</b> Themenmischung pro Dokument (α), Wort-Gewichte pro Thema (β), K latente Themen</p>
@@ -654,7 +684,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
     <ul>
     <li><ins>NMF (Non-Negative Matrix Factorization)</ins></li>
     <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>  
-        <div style="margin-left: 2em;">
+        <div>
           <code>sklearn (NMF)</code><br><br>
         </div>
         <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
@@ -662,7 +692,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <ul>
   <li><ins>LSA (Latent Semantic Analysis)</ins></li>
   <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
-    <div style="margin-left: 2em;">
+    <div>
       <code>sklearn (TruncatedSVD)</code><br><br>
     </div>
   <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
@@ -679,7 +709,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
         <ul>
         <li><ins>BERTopic</li></ins>
         <p><i>BERTopic ist eine moderne Erweiterung klassischer Topic-Modeling-Methoden, die vortrainierte BERT-Embeddings mit Dimensionsreduktion (UMAP) und Clustering (HDBSCAN) kombiniert. Sie erzeugt interpretierbare und semantisch kohärente Themen direkt aus Embeddings, ohne dass eine separate Merkmalsmatrix nötig ist, und ist besonders effektiv bei großen Textsammlungen.</i></p>
-        <div style="margin-left: 2em;">
+        <div>
           <code>bertopic</code>&nbsp;<code>sentence-transformers</code>&nbsp;<code>umap-learn</code><br><br>
         </div>
         <p><b>Output:</b> Topic-Label pro Dokument, Wort-Gewichte pro Topic, Cluster-Visualisierung</p>
@@ -744,7 +774,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   <details>
     <summary>🟠<b> Modellbildung</b> (engl. model building)</summary>
-     Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen. Dazu werden nicht-adaptive Konfigurationseinstellungen, sog. Hyperparameter und adaptive Einstellungen die Modellparameter bestimmt.
+     Modellbildung ist der Prozess, bei dem Modellarchitekturen durch Konfiguration, Initialisierung und Training optimiert werden, um optimale Features zu lernen. Dazu werden nicht-adaptive Konfigurationseinstellungen, sog. Hyperparameter und adaptive Einstellungen die Modellparameter bestimmt.<br><br>
 <ul>
   <details>
     <summary>🟠<b> Modellkonfiguration </b> (engl. model configuration)</summary>
@@ -799,13 +829,18 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   <details>
     <summary>🟠 Rastersuche (engl. grid search)</summary>
-    Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.
+  
+  > Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.
   </details>
   <details>
     <summary>🟠 Zufallssuche (engl. random search)</summary>
+
+> XXX
   </details>
   <details>
     <summary>🟠 Bayesianische Optimierung</b> (engl. bayesian optimization)</summary>
+    
+> XXX
   </details>
   </ul>
  
