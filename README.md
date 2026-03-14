@@ -214,16 +214,17 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <details>
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
         <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</p>
+        <i><ins>Anwendungsfall:</ins> XXX </i><br>
           <div style="margin-left: 2em;">
             <code>XXX</code><br>
           </div>
       </details>
           <details>
             <summary>⚪ Duplikatentfernung (engl. duplicate removal)</summary>
-          <p>Durch die Duplikatentfernung werden doppelte Instanzen (Zeilen) aus dem Datensatz entfernt.</p>
+          <p>Durch die Duplikatentfernung werden doppelte Instanzen (Zeilen) aus dem Datensatz entfernt.</p><br>
           <i><ins>Anwendungsfall:</ins> XXX </i><br>
-          <div style="margin-left: 2em;">
-                <code>duplicated(keep=False)</code>
+          <div>
+              <code>duplicated(keep=False)</code>
           </div>
       </ul>
         </details>
@@ -685,7 +686,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
     <li><ins>NMF (Non-Negative Matrix Factorization)</ins></li>
     <p><i>Non-Negative Matrix Factorization (NMF) ist ein algebraisches Verfahren, das die Merkmalsmatrix in zwei Faktormatrizen mit nicht-negativen Werten zerlegt. Im Gegensatz zu probabilistischen Modellen wie LDA erzeugt NMF deterministische Topic-Zuordnungen, die direkt aus der Matrixfaktorisierung hervorgehen.</i></p>  
         <div>
-          <code>sklearn (NMF)</code><br><br>
+          <code>sklearn(NMF)</code><br><br>
         </div>
         <p><b>Output:</b> Topic-Gewichte pro Dokument, Wort-Gewichte pro Topic, K Themen</p>
   </ul>
@@ -693,7 +694,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <li><ins>LSA (Latent Semantic Analysis)</ins></li>
   <p><i>Latent Semantic Analysis (LSA) nutzt Singulärwertzerlegung (SVD), um latente semantische Dimensionen aus der Merkmalsmatrix zu extrahieren. LSA ist ein algebraisches Verfahren der Matrixfaktorisierung, das effektiv und effizient interpretierbare Themen für Topic Modeling erzeugt.</i></p>
     <div>
-      <code>sklearn (TruncatedSVD)</code><br><br>
+      <code>sklearn(TruncatedSVD)</code><br><br>
     </div>
   <p><b>Output:</b> k latente Dimensionen, Singular Values, LSA-Komponenten</p>
 </ul>
@@ -839,7 +840,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   <details>
     <summary>🟠 Bayesianische Optimierung</b> (engl. bayesian optimization)</summary>
-    
+
 > XXX
   </details>
   </ul>
@@ -848,22 +849,39 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   <details>
     <summary>🟧<b> Modellbereitstellung</b> (engl. model deployment)</summary>
-    Modellbereitstellung bezeichnet die technische Verfügbarmachung eines trainierten Modells, sodass es in einer Zielumgebung zuverlässig für Inferenz auf neuen Daten genutzt werden kann.
+
+> Modellbereitstellung bezeichnet die technische Verfügbarmachung eines trainierten Modells, sodass es in einer Zielumgebung zuverlässig für Inferenz auf neuen Daten genutzt werden kann.
   </details>
   <details>
     <summary>🟧<b> Modellanwendung</b> (engl. model inference)</summary>
-    Anwendung des trainierten Modells auf ungesehene Eingabedaten zur Erzeugung von Modellausgaben, die anschließend in die Datennachverarbeitung überführt werden.
-    <br><ins>Modellausgaben (engl. output features)</ins>:
-    <ul>
+
+> Anwendung des trainierten Modells auf ungesehene Eingabedaten zur Erzeugung von Modellausgaben, die anschließend in die Datennachverarbeitung überführt werden.<br>
+  <br><ins>Modellausgaben (engl. output features)</ins>:<br>
+  Modell verarbeitet neue Daten und erzeugt rohe Ausgaben.
             <ul>
-            <li>🟠 Rohwerte (engl. logits)<br>
-            <li>🟠 Bewertungen (engl. scores)<br>
-            <li>🟠 Klassenbezeichnungen (engl. labels)<br>
-            <li>🟠 Clusterzuordnungen<br>
-            Themenzuordnungen (engl. topic assignments)<br>
-            Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema/Topic bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten und weichen (probalistischen) Zuordnungen diffenziert werden.
+              <details>
+                <summary> Rohwerte (engl. logits)</summary>
+                <p><i>XXXXX</i></p>
+              </details>
+              <details>
+                <summary> Bewertungen (engl. scores)</summary>
+                <p><i>XXXXX</i></p>
+              </details>
+              <details>
+                <summary> Klassenbezeichnungen (engl. labels)</summary>
+                <p><i>XXXXX</i></p>
+              </details>
+              <details>
+                <summary><span style="color:white">Clusterzuordnungen (engl. cluster assignments)</span></summary>
+                <p><i>XXXXX</i></p>
+              </details>
+              <ul>
+              <details>
+                <summary><span style="color:white">🟠 Themenzuordnungen (engl. topic assignments)</summary>
+                <span style="color:white">Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema/Topic bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten und weichen (probalistischen) Zuordnungen diffenziert werden.
+              </details>
             </ul>
-    Modell verarbeitet neue Daten und erzeugt rohe Ausgaben.
+            </ul>
   </details>
 </ol>
 
@@ -981,7 +999,7 @@ ______________
           <li><b>(engl. purity)</b>: Anteil dominanter Labels pro Cluster</li>
 
   </ul>
-        <div style="margin-left: 2em;">
+        <div>
           <code>sklearn.metrics (adjusted_rand_score, normalized_mutual_info_score, v_measure_score)</code><br>
         </div>
       </details>
@@ -999,7 +1017,7 @@ ______________
 <details>
   <summary>🔵 Modellvalidierung (engl. model validation)</summary>
   <p><i>Bei der Modellvalidierung wird überprüft, ob das Modell zuverlässig und generalisierbar ist – also ob die gemessene Qualität belastbar ist. Hierbei kann zwischen quantitativer und qualitativer Validierung unterschieden werden.</i></p>
-  <div style="margin-left: 2em;">
+  <div>
     <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
   </div>
 </details>
@@ -1011,7 +1029,7 @@ ______________
     <summary>🟦<b> Datenkommunikation</b> (engl. data communication)</summary>
     <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.
     Visualisierung stellt aggregierte Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
-    <div style="margin-left: 2em;">
+    <div>
       <code>plotly</code>&nbsp;<code>matplotlib</code><br><br>
     </div> 
     <img src="docs/3 - Datenkommunikation (engl. data communication).jpg" width="1200">
