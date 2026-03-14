@@ -493,50 +493,80 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 <ol type="1">
   <details>
     <summary>🟨 Vektorisierung (engl. vectorization)</summary>
-    <p><i>Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.</i></p>
-<div style="margin-left: 2em;">
-  <code>sklearn (CountVectorizer)</code>&nbsp;<code>sentence-transformers</code><br><br>
-</div>
+
+> Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.
+
 <ol type="1">
         <details>
           <summary>🟡 Merkmalsvektoren (engl. feature vectors)</summary>
-          <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden mit und ohne Informationsgewichtung diffrenziert wird.</i></p>
+          <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden ohne und mit Informationsgewichtung diffrenziert wird.</i></p>
           <ul>
-          <details>
-            <summary>🟡 TF-IDF (term frequency times inverse document frequency)</b></summary>
+
+###### ohne Informationsgewichtung
+    
+  <details>
+            <summary>🟡 BoX (Bag-of-X)</summary>
+            <p><i>Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wird eine eigene Dimension zugewiesen.</i></p>
+            <ul>
+            <li><ins>BoX auf Einzeltoken</ins><br>
+            Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum“ (Zheng und Casari, 2019, p. 41).
+            <div>
+              <code>sklearn (CountVectorizer)</code>
+            </div><br>
+            <li><ins>BoX auf Tokensequenzen</ins><br>
+            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzter Merkmalsraum ergibt.
+            <div>
+              <code>sklearn (CountVectorizer(ngram_range))</code><br>
+            </div>
+            </ul>
+          </details>
+
+###### mit Informationsgewichtung
+      
+  <details>
+            <summary>🟡 TF-IDF (Term Frequency times Inverse Document Frequency)</summary>
             <p><i>Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.</i></p>
               <ul>
               <li><ins>TF-IDF auf Einzeltoken</ins><br>
               Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.
-              <div style="margin-left: 2em;">
-                <code>sklearn(TfidfVectorizer)</code>
+              <div>
+                <code>sklearn (TfidfVectorizer)</code><br><br>
+              </div>
+              <i><ins>Anwendungsfall:</ins> Diese Technik wurde im vorliegenden Projekt genutzt.</i><br><br>
+              <li><ins>TF-IDF auf Tokensequenzen</ins><br>
+              Wird die TF-IDF-Methode mit einer Folge von n-Token durchgeführt, werden Wort-Paare oder längere Phrasen gewichtet, um ihre Relevanz auszudrücken.
+              <div>
+                <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
+              </div>
               </ul>
           </details>
 </ol> 
       <ol type="1">
         <details>
           <summary>🟡 Merkmalseinbettungen (engl. feature embeddings)</summary>
-          <p><i>Spannen einen semantischen Merkmalsraum auf und liefern dichtbesetzte Vektoren (engl. dense vectors), was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen (engl. embeddings) weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so statisch oder dynamisch die Bedeutungsdimension mittels vorhersage- oder kontextbasierter Verfahren anhand vortrainierter Modelle auf Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene. Hierdurch werden semi-explizite Merkmale generiert, welche zwischen expliziten und latenten Merkmalen einzuordnen sind. Kontextmodelle: 
-          <p><i>Worteinbettungen sind dichte Vektoren, die semantische Bedeutungen von Wörtern oder Sätzen repräsentieren. Sie entstehen durch das Training von Modellen auf Textdaten und erfassen semantische und syntaktische Beziehungen.</i></p>
-          </i></p>
-          <ol type="1">
+
+> Spannen einen semantischen Merkmalsraum auf und liefern *dichtbesetzte Vektoren (engl. dense vectors)*, was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen (engl. embeddings) weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so statisch oder dynamisch die Bedeutungsdimension mittels vorhersage- oder kontextbasierter Verfahren anhand vortrainierter Modelle auf Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene. Hierdurch werden semi-explizite Merkmale generiert, welche zwischen expliziten und latenten Merkmalen einzuordnen sind. Kontextmodelle: 
+         
+<ol type="1">
               <details>
-                <summary>🟡 <b>Worteinbettungen </b>(engl. word embeddings)</summary>
+                <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
                 <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
                 <ul>
-                <li><ins>nichtkontextuelle / vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
+                
+###### nichtkontextuelle / vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)
+  <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
                 nichtkontextuelle sprich vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).
               <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
-                  <div style="margin-left: 2em;">
+                  <div>
                     <code>gensim</code>&nbsp;<code>glove-python</code><br><br>
                   </div>
                 <li>Word2Vec (Skip-gram, CBOW)</li>
-                  <div style="margin-left: 2em;">
+                  <div>
                     <code>gensim</code><br><br>
                   </div>
                 <li>FastText
-                  <div style="margin-left: 2em;">
+                  <div>
                     <code>gensim</code><br><br>
                   </div>
                 </li>
@@ -548,13 +578,13 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen. ---- Bidirektionale Kontextmodelle:</b> ELMo, BERT
                 <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)
-                  <div style="margin-left: 2em;">
+                  <div>
                     <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
                   </div>
                 </li>
                 <li>ELMo (Embeddings from Language Models)</li>
                 bi-directional LSTM Network.
-                  <div style="margin-left: 2em;">
+                  <div>
                     <code>tensorflow</code>&nbsp;<code>tensorflow_hub</code><br><br>
                   </div>
                 </li>
@@ -563,7 +593,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
                 <ul>
                 <li>GPT (Generative Pre-trained Transformer)</li>
-                  <div style="margin-left: 2em;">
+                  <div>
                     <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
                   </div>
                 </li>
@@ -571,7 +601,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 </ul>
               </details>
               <details>
-                <summary>🟡 <b>Satzeinbettungen </b>(engl. sentence embeddings)</summary>
+                <summary>🟡 Satzeinbettungen (engl. sentence embeddings)</summary>
                 <p><i>Satzeinbettungen weisen jedem Satz einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Sätzen.</i></p>
                 <ul>
                 <li><ins>vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</ins></li>
@@ -579,7 +609,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <ul>
                 <li>SkipThought Embeddings
                 Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert typischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.
-                  <div style="margin-left: 2em;">
+                  <div>
                     <code>nicht umgesetzt</code><br><br>
                   </div>
                 </li>
@@ -592,12 +622,12 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <li><ins>Bidirektionale Kontextmodelle (bidirektional)</ins></li>
                 <ul>
                   <li>SBERT (Sentence-BERT)
-                    <div style="margin-left: 2em;">
+                    <div>
                       <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
                     </div>
                   </li>
                   <li>USE Embedding (Universal Sentence Encoder)
-                    <div style="margin-left: 2em;">
+                    <div>
                       <code>tensorflow-hub</code><br><br>
                     </div>
                   </li>
@@ -618,7 +648,8 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 <ol type="1">
   <details>
     <summary>🟨 <b> Merkmalsauswahl </b> (engl. feature selection)</summary>
-   Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden.
+
+> Merkmalsauswahl ist ein zur Merkmalsgenerierung komplementärer Prozess, der aus einer großen Menge von erzeugten Merkmalen die relevantesten auswählt. Dies reduziert Dimensionalität, verbessert Modellperformance und verringert Rechenaufwand, indem irrelevante oder redundante Merkmale entfernt werden.
   </details>
 </ol>
 
@@ -803,8 +834,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 > Innerhalb der Merkmalsnutzung kann nochmals zwischen zwei Untertypen unterschieden werden:
 
 - *ohne Merkmalsprojektion:* Das Modell lernt Verteilungen oder Zuordnungen direkt im originalen Merkmalsraum, ohne diesen algebraisch zu transformieren. Der Merkmalsraum selbst bleibt unverändert. (z. B. LDA; BERTopic bei Nutzung fester SBERT-Embeddings als Eingaberepräsentation)<br><br>
-
-> Im vorliegenden Anwendungsfall wurde SBERT als vortrainierter und eingefrorener Encoder zur Erzeugung fester Satz-Embeddings genutzt.
+<i><ins>Anwendungsfall:</ins> Im vorliegenden Anwendungsfall wurde SBERT als vortrainierter und eingefrorener Encoder zur Erzeugung fester Satz-Embeddings genutzt.</i><br>
 
 - *mit Merkmalsprojektion:* Das Modell projiziert die festen Eingabemerkmale algebraisch in einen neuen latenten Raum. Die Eingaberepräsentationen bleiben fest, der Merkmalsraum wird jedoch durch Matrixfaktorisierung transformiert. (z. B. NMF, LSA/TruncatedSVD)<br><br>
 </details>
@@ -831,8 +861,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   <details>
     <summary>🟠 Rastersuche (engl. grid search)</summary>
-  
-  > Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.
+  <i><ins>Anwendungsfall:</ins> Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.</i><br>
   </details>
   <details>
     <summary>🟠 Zufallssuche (engl. random search)</summary>
@@ -1064,6 +1093,7 @@ Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lo
 ```console
 conda env create -f environment.yml
 conda activate Projekt_Advanced-Data-Analysis
+conda install ipykernel
 ```
 
 Anschließend ist in VSCode der Kernel `ada_env (Python)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
