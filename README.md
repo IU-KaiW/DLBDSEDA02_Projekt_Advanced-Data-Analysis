@@ -28,14 +28,14 @@ Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar.
 <details>
   <summary>⬜ Datensatzrecherche (engl. dataset research)</summary>
   Im Rahmen der Datensatzrecherche werden geeignete Datensätze auf einschlägigen Datenportalen recherchiert und nach definierten Kriterien vorausgewählt.<br><br>
-  <i><ins>Anwendungsfall:</ins> Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i>
+  <i><ins>Anwendungsfall</ins>: Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i>
 </details>
 </ol>
 <ol>
     <details>
       <summary>⬜ Datensatzsammlung (engl. dataset collection)</summary>
       Im Rahmen der Datensatzsammlung werden Datensätze von geeigneten Quellen bezogen und gespeichert.<br><br>
-      <i><ins>Anwendungsfall:</ins> Offensichtlich synthetisch erzeugte Datensätze wurden bei der Datensammlung ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal abgespeichert.</i><br>
+      <i><ins>Anwendungsfall</ins>: Offensichtlich synthetisch erzeugte Datensätze wurden bei der Datensammlung ignoriert. Datenquellen mit vermutetem organischen Ursprung wurden im CSV-Datenformat manuell oder per API heruntergeladen und lokal abgespeichert.</i><br>
     </details>
 </ol>
 <ol>    
@@ -46,7 +46,7 @@ Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar.
       <details>
       <summary>⚪ Datenursprungsprüfung (engl. data provenance check)</summary>
       Ursprungsprüfung ist der Prozess der Verifizierung und Dokumentation, unter welchen Bedingungen und aus welcher Quelle Daten entstanden sind. Sie prüft die Herkunft, den Kontext und die Verlässlichkeit von Datenquellen, um Transparenz über die Entstehungsgeschichte der Daten zu schaffen.<br><br>
-      <i><ins>Anwendungsfall:</ins> Auf die Datenursprungsprüfung wurde aufgrund des Projektumfangs verzichtet.</i><br>
+      <i><ins>Anwendungsfall</ins>: Auf die Datenursprungsprüfung wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
       <details>
       <summary>⚪ Datenauthentizitätsprüfung (engl. data authenticity check)</summary>
@@ -55,7 +55,7 @@ Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar.
       <details>
       <summary>⚪ KI-Detektoren (engl. AI-detectors)</summary>
       Eine Prüfung auf Datenauthenzität kann über KI-Detektoren erfolgen.<br><br>
-  <i><ins>Anwendungsfall:</ins> Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwerndet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Spachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Emgedding verwendet.</i><br>
+  <i><ins>Anwendungsfall</ins>: Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwerndet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Spachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Emgedding verwendet.</i><br>
         <div style="margin-left: 2em;">
           <code>transformers</code>&nbsp;<code>torch</code><br>
         </details>
@@ -70,7 +70,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
   Die  durch den KI-Detektor verarbeitbaren Datensatzinstanzen (Zeilen) wurden anhand ihrer Label REAL, FAKE und ERROR in einem Tabellenkalkulationsprogramm durch eine Häufigkeitsauswertung ausgewertet. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über folgende eine Tabellenkalkulationsprogramm ausgewertet.
 
-<i><ins>Anwendungsfall:</ins> Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.</i><br>
+<i><ins>Anwendungsfall</ins>: Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.</i><br>
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
@@ -101,12 +101,12 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
   <summary>⚪ Datenformatsanalyse (engl. data format analysis)</summary>
   Bei der Datenformatanalyse wird die technische Hülle eines Datensatzes, sprich sein Speicherformat untersucht.<br>
 
-  <br><i><ins>Anwendungsfall:</ins> Der gewählte Datensatz liegt im CSV-Format vor, einem tabellarischen Speicherformat mit kommagetrennten Werten (Klein, 2023, p. 261).</i><br><br>
+  <br><i><ins>Anwendungsfall</ins>: Der gewählte Datensatz liegt im CSV-Format vor, einem tabellarischen Speicherformat mit kommagetrennten Werten (Klein, 2023, p. 261).</i><br><br>
   </details>
   <details>
   <summary>⚪ Datenschemaanalyse (engl. data schema analysis)</summary>
   Bei der Datenschemanalyse wird die inhaltliche Struktur der Spalten analysiert.<br><br>
-  <i><ins>Anwendungsfall:</ins> Der gewählte Datensatz besteht aus vier Spalten. Die darin enthaltene Informationen lassen sich in strukturierte Informationen ("author", "posted_on", "rating"), die ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter) Form vorliegen und unstrukturierte ("text") Informationen unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt werden.</i><br><br>
+  <i><ins>Anwendungsfall</ins>: Der gewählte Datensatz besteht aus vier Spalten. Die darin enthaltene Informationen lassen sich in strukturierte Informationen ("author", "posted_on", "rating"), die ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter) Form vorliegen und unstrukturierte ("text") Informationen unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt werden.</i><br><br>
 
 |author                             |posted_on                 |rating |text              |
 |-----------------------------------|--------------------------|-------|------------------|
@@ -128,7 +128,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         <details>
           <summary>⚪ Analyse der strukturierten Daten (engl. analysis of structured data)</summary>
           Im Rahmen der Analyse strukturierter Daten werden strukturierte Spalteninhalte systematisch auf Merkmale, Verteilungen und Muster hin untersucht.<br><br>
-          <i><ins>Anwendungsfall:</ins> Im vorliegenden Datensatz wurden Verteilungen in Ortsdaten (engl. location data), Zeitdaten (engl. time data) und Bewertungen (engl. rating data) aus den Spalten "author", "posted_on" und "rating" untersucht, um Muster zu erkennen.</i><br><br>
+          <i><ins>Anwendungsfall</ins>: Im vorliegenden Datensatz wurden Verteilungen in Ortsdaten (engl. location data), Zeitdaten (engl. time data) und Bewertungen (engl. rating data) aus den Spalten "author", "posted_on" und "rating" untersucht, um Muster zu erkennen.</i><br><br>
           <ul>
             <details>
               <summary>"author"</summary>
@@ -162,7 +162,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
           <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
 > Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprch Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
           <ul>
-            <i><ins>Anwendungsfall:</ins> In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englischsprachige Kundenbeschwerden (engl. customer complaints).</i><br><br>
+            <i><ins>Anwendungsfall</ins>: In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englischsprachige Kundenbeschwerden (engl. customer complaints).</i><br><br>
             <details>
               <summary>"text"</summary>
           <ul>
@@ -184,18 +184,18 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         <details>
           <summary>Nummernfehlwerte (engl. number errors)</summary>
           Bei einem Nummernfehlwert (engl. Not a Number - NaNs) handelt es sich um einen nicht vorhandenen numerischen Wert im Datensatz.<br><br>
-          <i><ins>Anwendungsfall:</ins> Die Analyse fehlender Daten zeigte keine Fehlwerte in der nummerischen Spalte 'rating'</i><br>
+          <i><ins>Anwendungsfall</ins>: Die Analyse fehlender Daten zeigte keine Fehlwerte in der nummerischen Spalte 'rating'</i><br>
         </details>
       <details>
         <summary>Textfehlwerte (engl. text errors)</summary>
         Bei einem Textfehlwerten (engl. Not a Text - NaTs) handelt es sich um einen nicht vorhandenen textuellen Wert im Datensatz.<br><br>
-        <i><ins>Anwendungsfall:</ins> Die Untersuchung strukturiert vorliegenden, textuellen Spalten 'author' und 'posted_on' zeigte keine Fehlwerte. Es wurden jedoch 30 NaTs in unstrukturiert vorliegenden Spalte 'text' festgestellt welche bereinigt werden müssen, um Verzerrungen im NLP-Modell zu vermeiden.</i><br>
+        <i><ins>Anwendungsfall</ins>: Die Untersuchung strukturiert vorliegenden, textuellen Spalten 'author' und 'posted_on' zeigte keine Fehlwerte. Es wurden jedoch 30 NaTs in unstrukturiert vorliegenden Spalte 'text' festgestellt welche bereinigt werden müssen, um Verzerrungen im NLP-Modell zu vermeiden.</i><br>
       </details>
       </details>
       <details>
         <summary>⚪ Duplikaterkennung (engl. duplicate detection)</summary>
         Im Rahmen der Duplikaterkennung werden redundante Dateninstanzen auf Zeilen- oder Attributebene identifiziert, wobei die Einordnung als Duplikat stets kontextabhängig erfolgt, da nicht jede wiederholte Ausprägung eines einzelnen Wertes bereits eine redundante Beobachtung darstellt.<br><br>
-        <i><ins>Anwendungsfall:</ins> Die Duplikatanalyse zeigte 1 doppelte Datensatzinstanz.</i>
+        <i><ins>Anwendungsfall</ins>: Die Duplikatanalyse zeigte 1 doppelte Datensatzinstanz.</i>
       </details>
     </ul>
     </ul>
@@ -214,7 +214,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <details>
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
         <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</p>
-        <i><ins>Anwendungsfall:</ins> XXX </i><br>
+        <i><ins>Anwendungsfall</ins>: XXX </i><br>
           <div>
             <code>XXX</code><br>
           </div>
@@ -222,7 +222,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
           <details>
             <summary>⚪ Duplikatentfernung (engl. duplicate removal)</summary>
           <p>Durch die Duplikatentfernung werden doppelte Instanzen (Zeilen) aus dem Datensatz entfernt.</p><br>
-          <i><ins>Anwendungsfall:</ins> XXX </i><br>
+          <i><ins>Anwendungsfall</ins>: XXX </i><br>
           <div>
               <code>duplicated(keep=False)</code>
           </div>
@@ -235,7 +235,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
     <details>
       <summary>⬜ Datensatzvalidierung (engl. dataset validation)</b></summary>
       Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.<br><br>
-      <i><ins>Anwendungsfall:</ins> XXX </i><br>
+      <i><ins>Anwendungsfall</ins>: XXX </i><br>
     </details>
 </ol>
 
@@ -288,7 +288,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <details>
                   <summary>🔴 Stopworte (engl. stopwords)</summary>
                   <p><i>>Stoppwörter sind häufige Funktionswörter (z. B. „the", „is", „and"), die kaum semantischen Gehalt tragen und daher vor der Modellierung aus dem Korpus entfernt werden.</i></p>
-                  <i><ins>Anwendungsfall:</ins> Stoppworte werden beim Token-Filtering entfernt.</i><br>
+                  <i><ins>Anwendungsfall</ins>: Stoppworte werden beim Token-Filtering entfernt.</i><br>
                   <div>
                     <code>spaCy(token.is_stop)</code><br><br>
                   </div>
@@ -302,7 +302,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <details>
                   <summary>🔴 Pronomenfilter</summary>
                   <p><i>XXXXX</i></p>
-                  <i><ins>Anwendungsfall:</ins> XXX</i><br>
+                  <i><ins>Anwendungsfall</ins>: XXX</i><br>
                   <div>
                     <code>spaCy(token.pos_ != "PRON")</code><br><br>
                   </div>
@@ -310,7 +310,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <details>
                   <summary>🔴 domänenspezifische Wortfilter</summary>
                   <p><i>Einzelne domänenspezifische Tokens werden ausgeschlossen.</i></p>
-                  <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                  <i><ins>Anwendungsfall</ins>: XXX </i><br>
                   <div>
                     <code>spaCy(token.text)</code><br>
                   </div>
@@ -326,7 +326,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Satzzeichen (engl. punctuation marks)</summary>
                 <p><i>XXXXX</i></p>
-                <i><ins>Anwendungsfall:</ins> Satzzeichen werden beim Token-Filtering entfernt.</i><br>
+                <i><ins>Anwendungsfall</ins>: Satzzeichen werden beim Token-Filtering entfernt.</i><br>
                 <div>
                 <code>spaCy(token.is_punct)</code><br>
               </div>
@@ -334,13 +334,13 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Leerzeichen (engl. white spaces)</summary>
                 <p><i>XXXXX</i></p>
-                <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                <i><ins>Anwendungsfall</ins>: XXX </i><br>
                 <ul>
               </details>
               <details>
                 <summary>🔴 Sonderzeichen (engl. special character)</summary>
                 <p><i>XXXXX</i></p>
-                <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                <i><ins>Anwendungsfall</ins>: XXX </i><br>
                 <ul>
               </details>
             </ol>
@@ -348,7 +348,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           <details>
           <summary>🔴 Nummernbereinigung (engl. numbers cleaning)</summary>
           <p><i>XXXXX</i></p>
-          <i><ins>Anwendungsfall:</ins> XXX </i><br>
+          <i><ins>Anwendungsfall</ins>: XXX </i><br>
           </details> 
     </ul>
       </li>
@@ -366,7 +366,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Kasusumwandlung (engl. case conversion)</summary>
                 <p><i>Tokens werden in Kleinschreibung überführt.</i></p>
-                <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                <i><ins>Anwendungsfall</ins>: XXX </i><br>
                 <div>
                   <code>spaCy(token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
                 </div>
@@ -374,7 +374,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Lemmatisierung (engl. lemmatization)</summary>
                 <p><i>Tokens werden auf ihre Grundform reduziert.</i></p>
-                <i><ins>Anwendungsfall:</ins> XXX </i><br>
+                <i><ins>Anwendungsfall</ins>: XXX </i><br>
                 <div>
                   <code>spaCy(token.lemma_)</code><br><br>
                 </div>
@@ -386,7 +386,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 
 > Durch Rechtschreibkorrekturen können Tippfehler und Schreibfehler reduziert werden, um diee Konsistenz von Texten zu verbessern
 
-  <i><ins>Anwendungsfall:</ins> Auf eine Rechtschreibkorrektur wurde in diesem Projekt verzichtet.</i><br>
+  <i><ins>Anwendungsfall</ins>: Auf eine Rechtschreibkorrektur wurde in diesem Projekt verzichtet.</i><br>
           </details>
         </details>
         </ul>
@@ -410,7 +410,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 Tokenisierung (engl. tokenization)</summary>
         <i>Die Beschwerden werden mit spaCy tokenisiert und im Batch verarbeitet.</i><br><br>
-        <i><ins>Anwendungsfall:</ins> Stoppworte werden beim Token-Filtering entfernt.</i><br>
+        <i><ins>Anwendungsfall</ins>: Stoppworte werden beim Token-Filtering entfernt.</i><br>
         <div>
           <code>spaCy(nlp.pipe)</code><br><br>
         </div>
@@ -418,7 +418,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 Grundformreduktion (engl. inflection reduction)</summary>
         <i>Die Tokens werden lemmatisiert und in Kleinschreibung überführt.</i><br><br>
-        <i><ins>Anwendungsfall:</ins> XXX </i><br>
+        <i><ins>Anwendungsfall</ins>: XXX </i><br>
         <div>
           <code>spaCy(token.lemma_)</code><br><br>
         </div>
@@ -426,7 +426,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)</summary>
         <i>Aus den bereinigten Texten wird ein Vokabular mit Token-IDs aufgebaut.</i><br><br>
-        <i><ins>Anwendungsfall:</ins> XXX </i><br>
+        <i><ins>Anwendungsfall</ins>: XXX </i><br>
         <div>
           <code>sklearn(CountVectorizer)</code><br><br>
         </div>
@@ -434,7 +434,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 lexikalisches POS-Tagging (nicht kontextsensitiv)</summary>
     <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br><br>
-    <i><ins>Anwendungsfall:</ins> XXX </i><br>
+    <i><ins>Anwendungsfall</ins>: XXX </i><br>
         <div>
           <code>spaCy(token.pos_)</code><br><br>
         </div>
@@ -449,12 +449,12 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
       <details>
         <summary>🔴 syntaktisches POS-Tagging (kontextsensitiv)</summary>
       <i>XXX</i><br><br>
-  <i><ins>Anwendungsfall:</ins> XXX </i><br>
+  <i><ins>Anwendungsfall</ins>: XXX </i><br>
       </details>
       <details>
         <summary>🔴 syntaktisches Parsen (engl. syntax parsing)</summary>
     <i>XXX</i><br><br>
-  <i><ins>Anwendungsfall:</ins> XXX </i><br>
+  <i><ins>Anwendungsfall</ins>: XXX </i><br>
       </details>
       </ul>
   </details>
@@ -466,17 +466,17 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
       <details>
         <summary>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)</summary>
         <p><i>XXX</i></p>
-        <i><ins>Anwendungsfall:</ins> Auf NER wurde aufgrund des Projektumfangs verzichtet.</i><br>
+        <i><ins>Anwendungsfall</ins>: Auf NER wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
       <details>
         <summary>🔴 Koreferenzauflösung (engl. Coreference Resolution - CR)</summary>
         <p><i>XXX</i></p>
-        <i><ins>Anwendungsfall:</ins> Auf CR wurde aufgrund des Projektumfangs verzichtet.</i><br>
+        <i><ins>Anwendungsfall</ins>: Auf CR wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
       <details>
         <summary>🔴 Beziehungsextraktion (engl. Relationship Extraction - RE)</summary>
         <p><i>XXX</i></p>
-        <i><ins>Anwendungsfall:</ins> Auf RE wurde aufgrund des Projektumfangs verzichtet.</i><br>
+        <i><ins>Anwendungsfall</ins>: Auf RE wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
     </ul>
   </details>
@@ -529,7 +529,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <ul>
               <li><ins>TF-IDF auf Einzeltoken</ins></li>
               <p><i>Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.</i></p>
-              <i><ins>Anwendungsfall:</ins> Diese Technik wurde im vorliegenden Projekt genutzt.</i><br>
+              <i><ins>Anwendungsfall</ins>: Diese Technik wurde im vorliegenden Projekt genutzt.</i><br>
               <div>
                 <code>sklearn (TfidfVectorizer)</code><br><br>
               </div>
@@ -608,7 +608,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 </li>
                 <li>ELMo (Embeddings from Language Models)</li>
                 <p><i>ELMo verwendet ein bidirektionales LSTM-Kontextmodell auf Wortebene und erzeugt dynamische Einbettungen, deren Bedeutung aus dem vorangehenden und nachfolgenden Kontext eines Wortes berechnet wird.</i></p>
-                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
+                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i>
                   <div>
                     <code>tensorflow</code>&nbsp;<code>tensorflow_hub</code><br><br>
                   </div>
@@ -623,33 +623,40 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <ul>
                   <details>
                     <summary>🟡 vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</summary>
-                    <p><i>vorhersagebasierte Satzeinbettungen sind statische Einbettungen auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i></p>
-                    <ul>
+
+  > vorhersagebasierte Satzeinbettungen sind statische Einbettungen auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.
+  <ul>
                       <li>SkipThought Embeddings</li>
                       <p><i>Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert typischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.</p></i>
-                        <div>
-                          <code>nicht umgesetzt</code><br><br>
-                        </div>
+                      <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt nicht genutzt.</i><br><br>
                       </li>
                     </ul>
                   </details>
                   <details>
                     <summary>🟡 kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</summary>
-                    <p><i>kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i></p>
-                    <ul>
-                      <li><ins>unidirektionale Satzeinbettungen (unidirektional)</ins></li>
-                      <p><i>Grundsätzlich wären auch unidirektionale Kontextmodelle auf Satzebene möglich – beispielsweise indem man GPT-basierte Modelle für Satzrepräsentationen nutzt. Solche Modelle würden den Kontext von links nach rechts verarbeiten und Sätze als ganze Einheiten einbetten können.</i></p>
-                      <li><ins>bidirektionale Kontextmodelle (bidirektional)</ins></li>
-                      <ul>
-                        <li>SBERT (Sentence-BERT)
-                          <p><i>SBERT erzeugt bidirektionale Satz-Einbettungen, indem BERT so angepasst wird, dass semantische Ähnlichkeiten zwischen ganzen Sätzen effizient vergleichbar werden.</i></p>
-                          <div>
-                            <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
-                          </div>
-                          <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt wird diese Form des Embedding von BERTopic-Modell verwendet.</i><br><br>
-                        </li>
-                        <li>USE Embedding (Universal Sentence Encoder)
+                    
+  > kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i></p>
+  <ul>
+  
+  ###### unidirektionale Satzeinbettungen (unidirektional)
+  > Grundsätzlich sind unidirektionale Kontextmodelle auf Satzebene möglich, aber nicht besonders verbreitet.</i></p>
+  <ul>
+                        <li>GPT (Generative Pre-trained Transformer)</li>
+                        <p><i>indem man GPT-basierte Modelle für Satzrepräsentationen nutzt. Solche Modelle würden den Kontext von links nach rechts verarbeiten und Sätze als ganze Einheiten einbetten können.</i></p>
+  </ul>     
+
+  ###### bidirektionale Kontextmodelle (bidirektional)
+  > Bidirektionale Satzeinbettungen werden durch Transformer-basierte Modelle erzeugt, die den vollständigen Satzkontext – links und rechts eines Tokens – gleichzeitig verarbeiten und so semantisch reichhaltige Satzrepräsentationen erzeugen.
+  <ul>
+                        <li>SBERT Embedding (Sentence-BERT)</li>
+                        <p><i>SBERT erzeugt bidirektionale Satz-Einbettungen, indem BERT so angepasst wird, dass semantische Ähnlichkeiten zwischen ganzen Sätzen effizient vergleichbar werden.</i></p>
+                        <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt wird diese Form des Embedding von BERTopic-Modell verwendet.</i><br>
+                        <div>
+                          <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
+                        </div>
+                        <li>USE Embedding (Universal Sentence Encoder)</li>
                           <p><i>USE erzeugt bidirektionale Satz-Einbettungen für ganze Aussagen und ist auf die semantische Repräsentation und Vergleichbarkeit von Saetzen optimiert.</i></p>
+                        <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt nicht genutzt.</i><br>
                           <div>
                             <code>tensorflow-hub</code><br><br>
                           </div>
@@ -858,7 +865,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 > Innerhalb der Merkmalsnutzung kann nochmals zwischen zwei Untertypen unterschieden werden:
 
 - *ohne Merkmalsprojektion:* Das Modell lernt Verteilungen oder Zuordnungen direkt im originalen Merkmalsraum, ohne diesen algebraisch zu transformieren. Der Merkmalsraum selbst bleibt unverändert. (z. B. LDA; BERTopic bei Nutzung fester SBERT-Embeddings als Eingaberepräsentation)<br><br>
-<i><ins>Anwendungsfall:</ins> Im vorliegenden Anwendungsfall wurde SBERT als vortrainierter und eingefrorener Encoder zur Erzeugung fester Satz-Embeddings genutzt.</i><br>
+<i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wurde SBERT als vortrainierter und eingefrorener Encoder zur Erzeugung fester Satz-Embeddings genutzt.</i><br>
 
 - *mit Merkmalsprojektion:* Das Modell projiziert die festen Eingabemerkmale algebraisch in einen neuen latenten Raum. Die Eingaberepräsentationen bleiben fest, der Merkmalsraum wird jedoch durch Matrixfaktorisierung transformiert. (z. B. NMF, LSA/TruncatedSVD)<br><br>
 </details>
@@ -885,7 +892,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   <details>
     <summary>🟠 Rastersuche (engl. grid search)</summary>
-  <i><ins>Anwendungsfall:</ins> Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.</i><br>
+  <i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.</i><br>
   </details>
   <details>
     <summary>🟠 Zufallssuche (engl. random search)</summary>
@@ -928,11 +935,11 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
               <details>
                 <summary><span style="color:white">Clusterzuordnungen (engl. cluster assignments)</span></summary>
                 <p><i>XXXXX</i></p>
-              </details>
               <ul>
               <details>
                 <summary><span style="color:white">🟠 Themenzuordnungen (engl. topic assignments)</summary>
                 <span style="color:white">Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema/Topic bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten und weichen (probalistischen) Zuordnungen diffenziert werden.
+              </details>
               </details>
             </ul>
             </ul>
