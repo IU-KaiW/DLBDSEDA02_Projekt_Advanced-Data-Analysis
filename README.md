@@ -706,11 +706,15 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
       <summary>🟠 Regression (engl. regression)</summary>
 
 > Regression ist ein überwachtes Lernverfahren, das eine Funktion $f: X \rightarrow \mathbb{R}^k$ schätzt, um aus Merkmalsvektoren kontinuierliche Zielgrößen vorherzusagen, indem ein geeigneter Verlust zwischen beobachteten und modellierten Werten minimiert wird.
+
+  <i><ins>Anwendungsfall</ins>: Erfolgt im Projekt nicht.</i><br>
   </details>
   <details>
       <summary>🟠 Klassifikation (engl. classification)</summary>
       
 > Klassifikation ist ein überwachtes Lernverfahren, bei dem Eingaben diskreten Klassen zugeordnet werden; formal wird eine Entscheidungsfunktion $f: X \rightarrow {1,\dots,C}$ oder eine Klassenwahrscheinlichkeitsverteilung $P(Y\mid X)$ gelernt.
+  
+  <i><ins>Anwendungsfall</ins>: Erfolgt im Projekt in der Datensatzauswahl durch den KI-Detektor.</i><br>
   </details>
   <details>
       <summary>🟠 Gruppenbildung (engl. clustering)</summary>
@@ -882,27 +886,32 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <details>
     <summary>🟧<b> Modellabstimmung</b> (engl. model calibration)</summary>
 
-> Bei der Modellabstimmung werden Algorithmus-Hyperparameter durch manuelle Suche (engl. search) oder systematische Suchverfahren wie Rastersuche (engl. grid search), Zufallssuche (engl. random search) oder bayesianische Optimierung (engl. Bayesian optimization) – iterativ optimiert, um die Modellperformance hinsichtlich einer definierten Zielfunktion (Metrik - siehe unten) zu maximieren, ohne dabei auf die Trainingsdaten zurückzugreifen, was als Hyperparameteroptimierung (engl. hyperparameter optimization – HPO) bezeichnet wird.<br>
+> Bei der Modellabstimmung werden Algorithmus-Hyperparameter durch manuelle Suche oder systematische Suchverfahren wie Rastersuche, Zufallssuche oder bayesianische Optimierung – iterativ optimiert, um die Modellperformance hinsichtlich einer Metrik (siehe unten), einer definierten Zielfunktion zu maximieren, was als Hyperparameteroptimierung (engl. hyperparameter optimization – HPO) bezeichnet wird.<br>
     
   <ul>
     <details>
     <summary>🟠 Manuelle Suche (engl. search)</summary>
     
-  > XXXXX
+  > XXXXX<br>
+  <i><ins>Anwendungsfall</ins>: XXX</i><br>
   </details>
   <details>
     <summary>🟠 Rastersuche (engl. grid search)</summary>
-  <i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wurde Rastersuche (engl. grid search) genutzt.</i><br>
+  
+  > XXXXX<br>
+  <i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wird Rastersuche (engl. grid search) genutzt.</i><br>
   </details>
   <details>
     <summary>🟠 Zufallssuche (engl. random search)</summary>
 
-> XXX
+> XXX<br>
+  <i><ins>Anwendungsfall</ins>: XXX</i><br>
   </details>
   <details>
     <summary>🟠 Bayesianische Optimierung</b> (engl. bayesian optimization)</summary>
 
-> XXX
+> XXX<br>
+  <i><ins>Anwendungsfall</ins>: XXX</i><br>
   </details>
   </ul>
  
@@ -953,7 +962,7 @@ Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Lab
 Input oder Outputfeatures in die Datennachvereitung ein
 ______________
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
-> Datennachverarbeitung (engl. post-processing) erfolgt nach der Modellausführung (Inference), um rohe Modellausgaben nutzbar zu machen.
+> In der Datennachverarbeitung werden Informationen aus Datensatz, Merkmalsanalyse und Modellanalyse ausgewertet und adressatengerecht kommuniziert.
 
 <ol type="1">
   <details>
@@ -968,119 +977,193 @@ ______________
         <p><i>Die Datenzusammenfassung ist der Datenanalyse vorgelagert und fasst Daten zu kompakteren Zusammenfassungen zusammen. Dabei werden Modelleingaben (engl. input features), modellinterne Merkmale (engl. intermediate features) oder Modellausgaben (engl. output features) ein- oder mehrdimensional zusammengefasst. Die Aggregation kann dabei modellintern oder modellextern anhand unterschiedlicher Aggregationsstrategien erfolgen, wodurch die Datenmenge durch mathematische Operationen oder Gruppierungen (z. B. nach Token-Typ, Dokument oder Zeitraum) reduziert wird. Sie erfolgt vor der Visualisierung, um Überladung zu vermeiden, und ist rein datenverarbeitend ohne grafische Elemente.</i></p>
         <ul>
         <details> 
-        <summary>Eingaben-Aggregation (engl. input-aggregation)</summary>
+        <summary>🔵 Eingaben-Aggregation (engl. input-aggregation)</summary>
         </details>
         <details> 
-        <summary>Modellinterne-Aggregation (engl. Intermediate aggregation)</summary>
+        <summary>🔵 Modellinterne-Aggregation (engl. Intermediate aggregation)</summary>
         </details>
         <details> 
-        <summary>Ausgaben-Aggregation (engl. output-aggregation)</summary>
+        <summary>🔵 Ausgaben-Aggregation (engl. output-aggregation)</summary>
       </details>
     </details>
-      <details>
+    </ol>
+  <ol type="1">
+  <details>
         <summary>🔵 Datenanalyse (engl. data analysis)</summary>
         <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder die merkmalsverarbeitenden Modelle gewonnen.</i></p>
         <ul>
-        <details> 
+  <details> 
         <summary>🔵 Merkmalsanalyse (engl. feature analysis)</summary>
-        <i>Merkmalsanalyse ist der analytische Prozess, bei dem bereits erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und interpretiert werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.</i>
-        -Der analytische Prozess, bei dem bereits erstellte oder vorhandene Merkmale untersucht, beschrieben und bewertet werden.
-        Abhängig vom ML-Aufgabentyp erfolgt eine Modellbewertungen entweder anhand intrinsische oder extrinsische Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.
-        „Intrinsic and extrinsic evaluators are distinct measures where intrinsic evaluators capture inherent properties and extrinsic evaluators assess performance in external contexts.“ (“Intrinsic and Extrinsic Evaluators”)</i>
-      </details>
-      <details>
+
+> Merkmalsanalyse ist der analytische Prozess, bei dem erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und bewertet werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.
+  </details>
+  <details>
         <summary>🔵 Modellanalyse (engl. model analysis)</summary>
-        <p><i>Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell die Eingabemerkmale transformiert hat. Sie bewertet Modelle, weshalb sie auch als Modellbewertung (engl. model evaluation) bezeichnet wird und besteht aus der Modellqualitätsmessung und der Modellvalidierung.</i></p>
-        <ul>
+
+  > Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell Eingabemerkmale transformiert. Sie wird als  Modellbewertung (engl. model scoring) bezeichnet und umfasst die Modellqualitätsmessung und die Modellvalidierung.
+  <ul>
         <details>
           <summary>🔵 Modellqualitätsmessung (engl. model quality assessment)</summary>
-          <p><i>Durch die Modellqualitätsmessung erfolgt eine Modellbewertung (engl. model scoring) durch Metriken. Dabei wird zwischen intrinsischen und extrinsischen Metriken unterschieden.</i></p>
+          <p><i>Durch die Modellqualitätsmessung erfolgt eine Modellbewertung (engl. model scoring) durch Metriken. Dabei erfolgt, abhängig vom ML-Aufgabentyp, die Bewertung anhand intrinsischer oder extrinsischer Metriken. Extrinsische Metriken werden bei überwachten Lernaufgaben, intrinsische Metriken bei unüberwachten Lernaufgaben verwendet.</i></p>
           <ul>
-          <details>
-        <summary>🔵 Intrinsische Metriken (engl. intrinsic metrics)</summary>
-          <p><i>Bewerten die Qualität gelernter Features basierend auf innerer Struktur, ohne externe Referenzen zu benötigen.</i></p>
 
-> XXXXX Topicmodeling: Coherence Score / Topic diversity              
+###### Intrinsische Metriken (engl. intrinsic metrics)
+> Intrinsische Metriken erfassen inhärente Eigenschaften (Emergent Mind, 2025). Sie bewerten die Qualität gelernter Features basierend auf innerer Struktur des Modells.
   <ol type="1">
             <details>
               <summary>🔘 Kohärenz (engl. coherence)</summary>
-                <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin.</i></p>
+                <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin. XXXX Bereich: 0 bis 1 (höher = besser)</i></p>
                   <ul>
                     <li><b>u_mass</b>: Interne Kohärenz</li>
-                    <li><b>c_v</b>: Externe Konsistenz (wird genutzt)</li>
-                    <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li>
+                    <li><b>c_v</b>: Externe Konsistenz</li>
+                    <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li><br>
                   </ul>
-              <div style="margin-left: 2em;">
+              <i><ins>Anwendungsfall</ins>: Im Projekt wird die Kohärenz über das Standard-Maße „c_v“, welches einen konsensbasierten Vektorraum-Ansatz zur Messung der Wort-Ähnlichkeit innerhalb der Themen nutzt, ermittelt.</i><br>
+              <div>
                 <code>gensim.models.CoherenceModel</code><br>
-              <b>Bereich:</b> -1 bis 1 (höher = besser)
               </div>
               </details>
               <details>
                 <summary>🔘 Themenvielfalt (engl. topic diversity)</summary>
-                <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen.</i></p>
-                <b>Bereich:</b> X bis X (X = X)
+                <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen. <b>Bereich:</b> X bis X (X = X) </i></p>
+                <i><ins>Anwendungsfall</ins>: Im Projekt wird die Themenvielfal berechnet.</i><br>
               </details>
               <details>
-                <summary>🟡 Verwirrung (engl. perplexity)</summary>
-                <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin.</i></p>
-                <div style="margin-left: 2em;">
+                <summary>🔘 Verwirrung (engl. perplexity)</summary>
+                <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin.... XXX Bereich: 0 bis ∞ (niedriger = besser)</i></p>
+                <i><ins>Anwendungsfall</ins>: XXX</i><br>
+                <div>
                   <code>gensim</code>&nbsp;<code>torchmetrics</code><br>
-                <b>Bereich:</b> 0 bis ∞ (niedriger = besser)
                 </div>
               </details>
-      </details>
-  <details>
-    <summary>🔘 Extrinsische Metriken (engl. extrinsic metrics)</summary>
-    <p><i>Bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks (z.B. Klassifikation, Named Entity Recognition, ect.).</i></p>
-    <ol type="1">
-      <details>
-        <summary>🟡 Klassifikationsmetriken</summary>
-        <p><i>Bewerten die Modellleistung bei überwachten Aufgaben durch Vergleich von Vorhersagen mit bekannten Labels.</i></p>
-
-  > „Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert. Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet.“ (iu., DLBDSEAIS01-01_D - 2025, p. 41)
-  <ul>
-          <li><b>Accuracy</b>: Anteil korrekt klassifizierter Instanzen</li>
-          <li><b>Precision</b>: Anteil relevanter unter den als positiv klassifizierten Instanzen</li>
-          <li><b>Recall</b>: Anteil erkannter relevanter Instanzen</li>
-          <li><b>F1-Score</b>: Harmonisches Mittel aus Precision und Recall</li>
+  </ol>
+              
+###### Extrinsische Metriken (engl. extrinsic metrics)
+> Extrinsische Metriken bewerten die Leistung in externen Kontexten (Emergent Mind, 2025). Sie bewerten Modellleistung durch Vergleich mit bekannten Labels in Downstream-Tasks.
+Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhanden sein, um zu beurteilen, wie gut ein Algorithmus im Vergleich zu anderen Systemen funktioniert(iu., DLBDSEAIS01-01_D - 2025, p. 41).
+  <ol type="1">
+        <details>
+        <summary>🔘 Regressions-Metriken (engl. regression metrics)</summary>
+        <p><i>Bewerten die Abweichung zwischen vorhergesagten und tatsächlichen kontinuierlichen Zielwerten.</i></p>
+        <ul>
+          <li><b>MAE (Mean Absolute Error)</b>: Durchschnittlicher absoluter Fehler – robust gegenüber Ausreißern.<br>
+          Berechnung: \(MAE = \frac{1}{n}\sum_{i=1}^n |y_i - \hat{y}_i|\)</li>
+          <div><code>sklearn.metrics (mean_absolute_error)</code><br></div>
+          <li><b>MSE (Mean Squared Error)</b>: Durchschnittlicher quadratischer Fehler – bestraft große Abweichungen stärker.<br>
+          Berechnung: \(MSE = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2\)</li>
+          <div><code>sklearn.metrics (mean_squared_error)</code><br></div>
+          <li><b>RMSE (Root Mean Squared Error)</b>: Wurzel des MSE – gleiche Einheit wie die Zielgröße.<br>
+          Berechnung: \(RMSE = \sqrt{MSE}\)</li>
+          <div><code>sklearn.metrics (root_mean_squared_error)</code><br></div>
+          <li><b>R² (Bestimmtheitsmaß, engl. coefficient of determination)</b>: Anteil der durch das Modell erklärten Varianz; 1 = perfekte Vorhersage.<br>
+          Berechnung: \(R^2 = 1 - \frac{\sum(y_i-\hat{y}_i)^2}{\sum(y_i-\bar{y})^2}\)</li>
+          <div><code>sklearn.metrics (r2_score)</code><br></div>
         </ul>
-        <div style="margin-left: 2em;">
-          <code>sklearn.metrics</code><br>
-        </div>
+        </details>
+      <details>
+        <summary>🔘 Klassifikations-Metriken (engl. classification metrics)</summary>
+
+> „Bei einer binären Klassifizierungsaufgabe werden üblicherweise Accuracy (Genauigkeit), Precision (Relevanz), Recall (Trefferquote) und der F-Score für diesen Zweck verwendet" (iu., DLBDSEAIS01-01_D - 2025, p. 41).
+  <ul>
+    <li><b>Genauigkeit (engl. Accuracy)</b>: Anteil korrekt klassifizierter Instanzen<br>
+    Berechnung: (Accuracy = \frac{TP+TN}{TP+TN+FP+FN}\)</li>
+    <div>
+      <code>sklearn.metrics (accuracy_score)</code><br>
+    </div>
+    <li><b>Relevanz (engl. Precision)</b>: Anteil relevanter unter den als positiv klassifizierten Instanzen<br>
+    Berechnung: \(Precision = \frac{TP}{TP+FP}\)</li>
+    <div>
+      <code>sklearn.metrics (precision_score)</code><br>
+    </div>
+    <li><b>Trefferquote (engl. Recall)</b>: Anteil erkannter relevanter Instanzen<br>
+    Berechnung: \(Recall = \frac{TP}{TP+FN}\)</li>
+    <div>
+      <code>sklearn.metrics (recall_score)</code><br>
+    </div>
+    <li><b>F-Score</b>: Harmonisches Mittel aus Precision und Recall<br>
+    Berechnung: \(F1 = 2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}\)</li>
+    <div>
+      <code>sklearn.metrics (f1_score)</code><br>
+    </div>
+  </ul>
       </details>
       <details>
-        <summary>🔵 Clustering-Metriken</summary>
+        <summary>🔘 Clustering-Metriken (engl. clustering metrics)</summary>
         <p><i>Bewerten Clustering-Ergebnisse durch Vergleich mit bekannten Referenzlabels. Relevant für Topic Modeling, wenn gelabelte Daten zur Validierung vorliegen.</i></p>
         <ul>
           <li><b>ARI (Adjusted Rand Index)</b>: Paarweise Übereinstimmung, zufallsbereinigt</li>
-          <li><b>NMI (Normalized Mutual Information)</b>: Informationstheoretische Übereinstimmung</li>
-          <li><b>V-Measure</b>: Harmonisches Mittel aus Homogeneity und Completeness</li>
-          <li><b>(engl. homogeneity)</b>: XXX</li>
-          <li><b>(engl. completeness)</b>: XXX</li>
-          <li><b>(engl. purity)</b>: Anteil dominanter Labels pro Cluster</li>
+  
+  > „Das Rand-Index berechnet ein Ähnlichkeitsmaß zwischen zwei Clustern, indem es alle Musterpaare berücksichtigt und Paare zählt, die in den vorhergesagten und wahren Clusterings demselben oder unterschiedlichen Clustern zugeordnet sind“ (Alhuda, 2022, p. 34).
+  <div>
+    <code>sklearn.metrics (adjusted_rand_score)</code><br>
+  </div>
+          <li><b>NMI (Normalized Mutual Information)</b>:</li>
 
-  </ul>
-        <div>
-          <code>sklearn.metrics (adjusted_rand_score, normalized_mutual_info_score, v_measure_score)</code><br>
-        </div>
-      </details>
-      <details>
-        <summary>🔵 Benchmark-Suiten (für Sprachmodelle)</summary>
-        <p><i>Standardisierte Evaluierungsrahmen, die mehrere NLU-Aufgaben bündeln, um Sprachmodelle vergleichbar zu bewerten.</i></p>
-        <ul>
-          <li><b>GLUE</b>: General Language Understanding Evaluation – 9 Aufgaben (z.B. Sentiment, Textähnlichkeit, Inferenz)</li>
-          <li><b>SuperGLUE</b>: Erweiterung von GLUE mit anspruchsvolleren Aufgaben (z.B. kausales Schließen, Wortsinn-Disambiguierung)</li>
+> Informationstheoretische Übereinstimmung
+  <div>
+     <code>sklearn.metrics (normalized_mutual_info_score)</code><br>
+  </div>
+          <li><b>V-Maß (engl. V-Measure) </b>: Harmonisches Mittel aus Homogeneity und Completeness</li>
+
+  > „Das V-measure ist ein entropie-basiertes Maß, das explizit misst, wie erfolgreich die Kriterien Homogeneity und Completeness erfüllt wurden. Das V-Maß wird als harmonischer Mittelwert unterschiedlicher Homogeneity- und Completeness-Bewertungen berechnet“ (Alhuda, 2022, p. 36).
+  <div>
+   <code>sklearn.metrics (v_measure_score)</code><br>
+  </div>
+
+  <li><b>Homogenität (engl. homogeneity)</b>:</li> 
+  
+  > „Ein Clustering-Ergebnis erfüllt Homogeneity, wenn alle seine Cluster nur Datenpunkte enthalten, die Mitglieder einer einzigen Klasse sind“ (Alhuda, 2022, p. 35).
+   <div>
+   <code>sklearn.metrics (homogeneity_score)</code><br>
+  </div>
+
+  <li><b>Vollständigkeit (engl. completeness)</b>:</li>
+ 
+  > XXX
+   <div>
+   <code>sklearn.metrics (completeness_score)</code><br>
+  </div>
+
+  <li><b>Reinheit (engl. purity)</b>:</li>
+  
+  > Anteil dominanter Labels pro Cluster
+
+  <li><b>Silhouetten Koeffizient (engl. silhouette score)</b>: 
+  
+  > „Der Silhouetten Koeffizient (SK) versucht eine Aussage über die Kompaktheit und die Separation zu treffen, sowohl für einzelne Punkte, als auch für Cluster“ (Tschechlov, 2017, p. 40).
+  <div>
+   <code>sklearn.metrics (silhouette_score)</code><br>
+  </div>
         </ul>
       </details>
-    </ol>
+      <details>
+        <summary>🔘 Benchmark-Suiten (für Sprachmodelle)</summary>
+        <p><i>Standardisierte Evaluierungsrahmen, die mehrere NLU-Aufgaben bündeln, um Sprachmodelle vergleichbar zu bewerten.</i></p>
+        <ul>
+          <li><b>GLUE (General Language Understanding Evaluation)</b>: 
+
+  > 9 Aufgaben (z.B. Sentiment, Textähnlichkeit, Inferenz)</li>
+        
+  <li><b>SuperGLUE (Super General Language Understanding Evaluation)</b>: 
+
+  > Erweiterung von GLUE mit anspruchsvolleren Aufgaben (z.B. kausales Schließen, Wortsinn-Disambiguierung)</li>
   </ul>
+ </details>
+</ol>
+</ul>
 </details>
 <details>
   <summary>🔵 Modellvalidierung (engl. model validation)</summary>
   <p><i>Bei der Modellvalidierung wird überprüft, ob das Modell zuverlässig und generalisierbar ist – also ob die gemessene Qualität belastbar ist. Hierbei kann zwischen quantitativer und qualitativer Validierung unterschieden werden.</i></p>
+
+###### quantitavive Modellvalidierung (engl. quantitative model validation)
+> Bei der quantitativen Modellvalidierung wird die Modellqualität objektiv und metrikbasiert bewertet; die Auswertung erfolgt automatisiert.
   <div>
-    <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br><br>
+    <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br>
   </div>
+  
+###### qualitative Modellvalidierung (engl. qualitative model validation)
+> Bei der qualitativen Modellvalidierung wird die Modellqualität subjektiv bewertet; die Auswertung erfolgt manuell.
 </details>
 </ul>
 </details>
@@ -1119,7 +1202,7 @@ ______________
 ______________
 
 ## Installation (engl. setup)
-Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (`conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
+Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
 
 ```console
 conda env create -f environment.yml
@@ -1127,7 +1210,7 @@ conda activate Projekt_Advanced-Data-Analysis
 conda install ipykernel
 ```
 
-Anschließend ist in VSCode der Kernel `ada_env (Python)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
+Anschließend ist in VSCode der Kernel `ada_env (Python 3.12.9)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
 
 ## Projektstruktur
 ### Ordnerstruktur
@@ -1206,6 +1289,7 @@ Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bild
 <br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
 <br>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
 Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.com/choijin/NLP_Topic_Modeling (Ursprünglich erschienen 2023)
+Emergent Mind. (2025, September 6). Intrinsic and Extrinsic Evaluators [Wissensplattform]. Emergent Mind. https://www.emergentmind.com/topics/intrinsic-and-extrinsic-evaluators
 
 ###### Anleitungen/Tutorials
 `gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
@@ -1214,8 +1298,6 @@ Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.c
 <br>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/<br>
 <br>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/<br>
 Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/choropleth-maps/
-
-
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
