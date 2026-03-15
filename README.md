@@ -50,7 +50,7 @@ Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar.
       </details>
       <details>
       <summary>⚪ Datenauthentizitätsprüfung (engl. data authenticity check)</summary>
-      Datenauthentizität beschreibt den Grad, zu dem Daten organisch entstanden sind und nicht manipuliert oder künstlich generiert wurden. Im Kontext von Textdaten bezieht sich Authentizität darauf, ob ein Text von einem Menschen verfasst wurde oder durch ein Computersystem (z.B. Sprachmodell) generiert wurde.<br>
+      Datenauthentizität beschreibt den Grad, zu dem Daten organisch entstanden sind und nicht manipuliert oder künstlich generiert wurden. Im Kontext von Textdaten bezieht sich Authentizität darauf, ob ein Text von einem Menschen verfasst wurde oder durch ein Computersystem (z.B. Sprachmodell) generiert wurde.<br><br>
       <ul>
       <details>
       <summary>⚪ KI-Detektoren (engl. AI-detectors)</summary>
@@ -160,7 +160,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         </details>
         <details>
           <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
-          Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprch Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
+> Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprch Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
           <ul>
             <i><ins>Anwendungsfall:</ins> In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englischsprachige Kundenbeschwerden (engl. customer complaints).</i><br><br>
             <details>
@@ -215,7 +215,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
         <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</p>
         <i><ins>Anwendungsfall:</ins> XXX </i><br>
-          <div style="margin-left: 2em;">
+          <div>
             <code>XXX</code><br>
           </div>
       </details>
@@ -234,7 +234,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 <ol>
     <details>
       <summary>⬜ Datensatzvalidierung (engl. dataset validation)</b></summary>
-      Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.<br>
+      Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.<br><br>
       <i><ins>Anwendungsfall:</ins> XXX </i><br>
     </details>
 </ol>
@@ -489,12 +489,12 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🟨 <b> Merkmalsgenerierung </b> (engl. feature generation/featurization)</summary>
 
-> Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch *Merkmalskodierung (engl. feature encoding)*in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von *Merkmalsaufbereitung (engl. feature engineering)* gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von *Merkmalslernen (engl. feature learning / representation learning)*, wobei Merkmale direkt aus Rohtexten gewonnen werden.
+> Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch *Merkmalskodierung (engl. feature encoding)* in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von *Merkmalsaufbereitung (engl. feature engineering)* gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von *Merkmalslernen (engl. feature learning / representation learning)*, wobei Merkmale direkt aus Rohtexten gewonnen werden.
 <ol type="1">
   <details>
     <summary>🟨 Vektorisierung (engl. vectorization)</summary>
 
-> Als Vektorisierung wird die Merkmalskodierung (engl. feature encoding) von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen Merkmalsraum (engl. feature space) dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte je nach Anwendungsfall auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten, um lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.
+> Als Vektorisierung wird die Merkmalskodierung von Textdaten bezeichnet. Die Token (Wörter, Subwörter oder Zeichen) aus dem Vokabular werden durch Vektorisierungstechniken in numerische Repräsentationen überführt, die als Merkmalsvektoren in einem n‑dimensionalen *Merkmalsraum (engl. feature space)* dargestellt und zu Merkmalsmatrizen zusammengefasst werden. Vektorisierungstechniken nutzen Merkmalsextraktion, um Texte anwendungsfallabhängig auf Silben,- Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene für Modelle aufzubereiten und damit lexikalische, syntaktische oder kontextuelle Aspekte eines Textes einzufangen.
 
 <ol type="1">
         <details>
@@ -508,13 +508,13 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
             <summary>🟡 BoX (Bag-of-X)</summary>
             <p><i>Bei den Bag-of-X-Methoden erfolgt keine Informationsgewichtung, Token oder Tokensequenzen wird eine eigene Dimension zugewiesen.</i></p>
             <ul>
-            <li><ins>BoX auf Einzeltoken</ins><br>
-            Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum“ (Zheng und Casari, 2019, p. 41).
+            <li><ins>BoX auf Einzeltoken</ins></li>
+            <p><i>Wird die Methode auf Wortebene durchgeführt, wird sie als Bag-of-Words (BoW) bezeichnet. Der „Bag-of-Words-Vektor hat für jedes Wort eine eigene Dimension. Wenn das Vokabular n Wörter umfasst, wird ein Dokument zu einem Punkt (Dokumentenvektor) in einem n-dimensionalen Raum“ (Zheng und Casari, 2019, p. 41).</p></i>
             <div>
               <code>sklearn (CountVectorizer)</code>
             </div><br>
-            <li><ins>BoX auf Tokensequenzen</ins><br>
-            Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzter Merkmalsraum ergibt.
+            <li><ins>BoX auf Tokensequenzen</ins></li>
+            <p><i>Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzter Merkmalsraum ergibt.</p></i>
             <div>
               <code>sklearn (CountVectorizer(ngram_range))</code><br>
             </div>
@@ -527,14 +527,15 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
             <summary>🟡 TF-IDF (Term Frequency times Inverse Document Frequency)</summary>
             <p><i>Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.</i></p>
               <ul>
-              <li><ins>TF-IDF auf Einzeltoken</ins><br>
-              Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.
+              <li><ins>TF-IDF auf Einzeltoken</ins></li>
+              <p><i>Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.</i></p>
+              <i><ins>Anwendungsfall:</ins> Diese Technik wurde im vorliegenden Projekt genutzt.</i><br>
               <div>
                 <code>sklearn (TfidfVectorizer)</code><br><br>
               </div>
-              <i><ins>Anwendungsfall:</ins> Diese Technik wurde im vorliegenden Projekt genutzt.</i><br><br>
-              <li><ins>TF-IDF auf Tokensequenzen</ins><br>
-              Wird die TF-IDF-Methode mit einer Folge von n-Token durchgeführt, werden Wort-Paare oder längere Phrasen gewichtet, um ihre Relevanz auszudrücken.
+              <li><ins>TF-IDF auf Tokensequenzen</ins></li>
+              <p><i>Wird die TF-IDF-Methode mit einer Folge von n-Token durchgeführt, werden Wort-Paare oder längere Phrasen gewichtet, um ihre Relevanz auszudrücken.</i></p>
+              <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
               <div>
                 <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
               </div>
@@ -548,91 +549,114 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 > Spannen einen semantischen Merkmalsraum auf und liefern *dichtbesetzte Vektoren (engl. dense vectors)*, was Modellen eine Auswertung von semantischen Ähnlichkeiten über Abstände bzw. Ähnlichkeitsmaße ermöglicht. Einbettungen (engl. embeddings) weisen jedem Merkmal einen dichten Vektor im semantischen Raum zu und erfassen so statisch oder dynamisch die Bedeutungsdimension mittels vorhersage- oder kontextbasierter Verfahren anhand vortrainierter Modelle auf Wort-, Satz-, Segment‑ oder Dokumenten‑Ebene. Hierdurch werden semi-explizite Merkmale generiert, welche zwischen expliziten und latenten Merkmalen einzuordnen sind. Kontextmodelle: 
          
 <ol type="1">
-              <details>
-                <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
-                <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
-                <ul>
-                
-###### nichtkontextuelle / vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)
-  <li><ins>vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)</ins></li>
-                nichtkontextuelle sprich vorhersagebasierte Wort-Einbettungen sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).
-              <ul>
+      <details>
+        <summary>🟡 Worteinbettungen (engl. word embeddings)</summary>
+        <p><i>Worteinbettungen weisen jedem Wort einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Wörtern.</i></p>
+        <ul>
+      <details>
+        <summary>🟡 statische Wort-Einbettungen (engl. )</summary>
+
+> nichtkontextuelle sprich *vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)* sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).       
+  <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
+                <p><i>GloVe erzeugt statische Worteinbettungen, indem globale Worthäufigkeiten und gemeinsame Auftretensmuster in einer Wort-Kookkurrenzmatrix modelliert werden.</i></p>
+                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>gensim</code>&nbsp;<code>glove-python</code><br><br>
                   </div>
-                <li>Word2Vec (Skip-gram, CBOW)</li>
+                <li>Word2Vec</li>
+                <p><i>Word2Vec erzeugt statische Worteinbettungen, indem es Wörter über lokale Nachbarschaften im Satzkontext über die Trainingsvariante Skip-gram oder CBOW lernt.</i></p>
+                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>gensim</code><br><br>
                   </div>
-                <li>FastText
+                <li>FastText</li>
+                <p><i>FastText erweitert statische Worteinbettungen um Subwortinformationen, indem auch Zeichen-n-Gramme in die Berechnung der Wortvektoren einbezogen werden.</i></p>
+                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>gensim</code><br><br>
                   </div>
-                </li>
               </ul>
-                <li><ins>kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings)</ins></li>
-                Bei kontextbasierte Wort-Einbettungen handelt es sich um dynamische Worteinbettungen bei denen jedes „Wort, jede Phrase, jeder Satz [...] situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext [bekommen]" (Wehner, 2026). Semantische und syntaktische Unterschiede können so erstmals maschinell berücksichtigt werden.<br>
-                <ul>
-                <li>bidirektionale kontextbasierte Wort-Einbettungen</li>
-                Diese Embeddings werden durch große Sprachmodelle erzeugt, die Kontext bidirektional nutzen. ---- Bidirektionale Kontextmodelle:</b> ELMo, BERT
-                <ul>
-                <li>BERT (Bidirectional Encoder Representations from Transformers)
-                  <div>
-                    <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
-                  </div>
-                </li>
-                <li>ELMo (Embeddings from Language Models)</li>
-                bi-directional LSTM Network.
-                  <div>
-                    <code>tensorflow</code>&nbsp;<code>tensorflow_hub</code><br><br>
-                  </div>
-                </li>
-                </ul>
+        </details>
+        <details>
+          <summary>🟡 dynamische Wort-Einbettungen (engl. )</summary>
+
+> Bei kontextbasierte Wort-Einbettungen (engl. contextualized word embeddings) handelt es sich um dynamische Worteinbettungen bei denen jedes „Wort, jede Phrase, jeder Satz [...] situativ angepasste Embedding-Vektoren – in Abhängigkeit vom umgebenden Kontext [bekommen]" Semantische und syntaktische Unterschiede können so maschinell berücksichtigt werden (Wehner, 2026).<br>
+<ul>
                 <li>unidirektionale kontextbasierte Wort-Einbettungen</li>
-                Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
-                <ul>
+
+  > Diese Embeddings werden durch generative Sprachmodelle erzeugt, die Kontext von links nach rechts (unidirektional) nutzen.
+  <ul>
                 <li>GPT (Generative Pre-trained Transformer)</li>
+                <p><i>GPT verwendet ein unidirektionales Kontextmodell auf Wortebene und erzeugt kontextabhängige Einbettungen, bei denen die Bedeutung eines Tokens aus den vorhergehenden Wörtern im Satzverlauf abgeleitet wird.</i></p>
+                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
                   </div>
                 </li>
                 </ul>
+                <li>bidirektionale kontextbasierte Wort-Einbettungen</li>
+                
+  > Diese Embeddings werden durch große Sprachmodelle (engl. Large Language Models - LLMs) erzeugt, die Kontext bidirektional nutzen.
+  <ul>
+                <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+                <p><i>BERT verwendet ein bidirektionales Kontextmodell auf Wortebene und erzeugt dadurch kontextabhängige Einbettungen, bei denen die Bedeutung eines Wortes aus seinem linken und rechten Kontext abgeleitet wird.</i></p>
+                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
+                  <div>
+                    <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
+                  </div>
+                </li>
+                <li>ELMo (Embeddings from Language Models)</li>
+                <p><i>ELMo verwendet ein bidirektionales LSTM-Kontextmodell auf Wortebene und erzeugt dynamische Einbettungen, deren Bedeutung aus dem vorangehenden und nachfolgenden Kontext eines Wortes berechnet wird.</i></p>
+                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
+                  <div>
+                    <code>tensorflow</code>&nbsp;<code>tensorflow_hub</code><br><br>
+                  </div>
+                </li>
                 </ul>
-              </details>
+                </ul>
+            </details>
+          </details>
               <details>
                 <summary>🟡 Satzeinbettungen (engl. sentence embeddings)</summary>
                 <p><i>Satzeinbettungen weisen jedem Satz einen dichten Vektor im semantischen Raum zu und ermöglichen hierdurch Modellen eine Auswertung von semantischen Ähnlichkeiten zwischen Sätzen.</i></p>
                 <ul>
-                <li><ins>vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</ins></li>
-                <i>vorhersagebasierte Satzeinbettungen sind statische Einbettungen auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i>
-                <ul>
-                <li>SkipThought Embeddings
-                Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert typischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.
-                  <div>
-                    <code>nicht umgesetzt</code><br><br>
-                  </div>
-                </li>
-                </ul>
-                <li><ins>kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</ins></li>
-                <i>kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i>
-                <ul>
-                <li><ins>Unidirektionale Satzeinbettungen (unidirektional)</ins></li>
-                <i>Grundsätzlich wären auch unidirektionale Kontextmodelle auf Satzebene möglich – beispielsweise indem man GPT-basierte Modelle für Satzrepräsentationen nutzt. Solche Modelle würden den Kontext von links nach rechts verarbeiten und Sätze als ganze Einheiten einbetten können.</i></li>
-                <li><ins>Bidirektionale Kontextmodelle (bidirektional)</ins></li>
-                <ul>
-                  <li>SBERT (Sentence-BERT)
-                    <div>
-                      <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
-                    </div>
-                  </li>
-                  <li>USE Embedding (Universal Sentence Encoder)
-                    <div>
-                      <code>tensorflow-hub</code><br><br>
-                    </div>
-                  </li>
-                </ul>
-                </li>
+                  <details>
+                    <summary>🟡 vorhersagebasierte Satzeinbettungen (engl. prediction based sentence embeddings)</summary>
+                    <p><i>vorhersagebasierte Satzeinbettungen sind statische Einbettungen auf Satzebene und nutzen Encoder-Decoder-Architekturen oder ähnliche Verfahren, um Sätze in feste Vektoren zu übersetzen.</i></p>
+                    <ul>
+                      <li>SkipThought Embeddings</li>
+                      <p><i>Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert typischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.</p></i>
+                        <div>
+                          <code>nicht umgesetzt</code><br><br>
+                        </div>
+                      </li>
+                    </ul>
+                  </details>
+                  <details>
+                    <summary>🟡 kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</summary>
+                    <p><i>kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i></p>
+                    <ul>
+                      <li><ins>unidirektionale Satzeinbettungen (unidirektional)</ins></li>
+                      <p><i>Grundsätzlich wären auch unidirektionale Kontextmodelle auf Satzebene möglich – beispielsweise indem man GPT-basierte Modelle für Satzrepräsentationen nutzt. Solche Modelle würden den Kontext von links nach rechts verarbeiten und Sätze als ganze Einheiten einbetten können.</i></p>
+                      <li><ins>bidirektionale Kontextmodelle (bidirektional)</ins></li>
+                      <ul>
+                        <li>SBERT (Sentence-BERT)
+                          <p><i>SBERT erzeugt bidirektionale Satz-Einbettungen, indem BERT so angepasst wird, dass semantische Ähnlichkeiten zwischen ganzen Sätzen effizient vergleichbar werden.</i></p>
+                          <div>
+                            <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
+                          </div>
+                          <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt wird diese Form des Embedding von BERTopic-Modell verwendet.</i><br><br>
+                        </li>
+                        <li>USE Embedding (Universal Sentence Encoder)
+                          <p><i>USE erzeugt bidirektionale Satz-Einbettungen für ganze Aussagen und ist auf die semantische Repräsentation und Vergleichbarkeit von Saetzen optimiert.</i></p>
+                          <div>
+                            <code>tensorflow-hub</code><br><br>
+                          </div>
+                        </li>
+                      </ul>
+                    </ul>
+                  </details>
                 </ul>
               </details>
             </ol>
@@ -768,7 +792,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
           <details>
             <summary>⚫ PCA (Principal Component Analysis)</summary>
           <p><i>Findet Hauptkomponenten (Richtungen maximaler Varianz) und projiziert Features darauf.</i></p>
-          <div style="margin-left: 2em;">
+          <div>
             <code>sklearn (PCA)</code><br>
             <b>Output:</b> K Komponenten, Varianzanteil pro Komponente
           </div>
@@ -784,7 +808,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
             <p><i>Projiziert auf 2-3 Dimensionen, bewahrt lokale Nachbarschaften. Ideal für Cluster-Visualisierung.</i></p>
             T-SNE (t-distributed Stochastic Neighbor Embedding) „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
             nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung „Eigene Embedding Spaces erstellen & visualisieren
-            <div style="margin-left: 2em;">
+            <div>
               <code>sklearn (TSNE)</code><br>
               <b>Output:</b> 2-3D Koordinaten
             </div>
@@ -793,7 +817,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
             <summary>⚫ UMAP (Uniform Manifold Approximation and Projection)</summary>
             <p><i>Moderne Alternative zu t-SNE, schneller und skalierbarer. Bewahrt lokale und globale Strukturen.</i></p>
             UMAP (Uniform Manifold Approximation and Projection) „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen“ (Thevapalan, 2025).
-            <div style="margin-left: 2em;">
+            <div>
               <code>umap-learn</code><br>
               <b>Output:</b> 2-3D Koordinaten
             </div>
