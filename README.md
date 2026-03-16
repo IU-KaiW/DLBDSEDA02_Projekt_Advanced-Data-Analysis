@@ -2,22 +2,35 @@
 Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understandung - NLU) befasst. Ziel des Hochschulprojekts ist es NLP-Techniken auf einen organisch entstandenen Datensatz anzuwenden und so eine Analyse und Interpretation des Textinhalts durchzuführen. 
 
 Der ausgearbeitet Lösungsansatz fokussiert sich auf Verarbeitung von englischsprachigen Kundenbeschwerden (engl. customer complaints) mit dem Ziel, die am häufigsten angesprochenen Themen systematisch zu extrahieren und visuell für Entscheidungsträger einer örtlichen Stadtverwaltung adressatengerecht aufzubereiten.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+## Installation (engl. setup)
+Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
 
+```console
+conda env create -f environment.yml
+conda activate Projekt_Advanced-Data-Analysis
+conda install ipykernel
+```
+
+Anschließend ist in VSCode der Kernel `ada_env (Python 3.12.9)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Konzeptionelle Überlegungen
 Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergäzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
 
-Die ausgearbeitete Konzeption lässt sich grob in 3 Hauptphasen einteilen: 
+Die ausgearbeitete Konzeption lässt sich grob in 4 Hauptphasen einteilen: 
   <ul>
   
   ⬜ Datensatzverarbeitung (engl. dataset pipeline)
   
   🟧 Datenverarbeitung (engl. data processing)
 
-  🟦 Datennachverarbeitung (engl. data post-processing).
+  🟦 Datennachverarbeitung (engl. data post-processing)
+
+  🟩 Datenverständnis (engl. data understanding)
   </ul>
 
 Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar. 
-
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## ⬜ Datensatzverarbeitung (engl. dataset pipeline)
 <img src="docs/1 - Datensatzverarbeitung (engl. dataset pipeline).jpg" width="1200">
 
@@ -56,7 +69,7 @@ Durch einen Klick auf ► werden Unterschritte und Erläuterungen sichtbar.
       <summary>⚪ KI-Detektoren (engl. AI-detectors)</summary>
       Eine Prüfung auf Datenauthenzität kann über KI-Detektoren erfolgen.<br><br>
   <i><ins>Anwendungsfall</ins>: Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwerndet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Spachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Emgedding verwendet.</i><br>
-        <div style="margin-left: 2em;">
+        <div>
           <code>transformers</code>&nbsp;<code>torch</code><br>
         </details>
       </ul>
@@ -78,14 +91,14 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 | 02 | rows.csv                           | n/a       | 176    MB |[^02] &nbsp; Kaggle        |
 | 03 | Consumer_Complaints.csv            | 13,50 %   | 107,0  MB |[^03] &nbsp; Kaggle/GovData|
 | 04 | complaints_processed.csv           | 64,72 %   | 19,8   MB |[^04] &nbsp; Kaggle        |
-| 05 | complaints_data.csv                | 82,00 %   | 7,20   MB |[^05] &nbsp; GitHub        |
+| 05 | complaints_data.csv                | 82,63 %   | 7,20   MB |[^05] &nbsp; GitHub        |
 | 06 | user_complaints                    | 00,69 %   | 229,0  kB |[^06] &nbsp; GitHub        |
 | 07 | consumer_complaints.csv            | n/a       | 175,39 MB |[^07] &nbsp; Kaggle        |
 | 08 | Complaints_Reports_Data.sql        | n/a       | 3,28   MB |[^08] &nbsp; MendeleyData  |
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
 
-<i>Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser das höchste Scoring mit 82 % erreicht.</i>
+<i>Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser das höchste Scoring mit 82,63 % erreicht.</i>
   </details>
 </ol>
 
@@ -214,15 +227,15 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <details>
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
         <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</p>
-        <i><ins>Anwendungsfall</ins>: XXX </i><br>
+        <i><ins>Anwendungsfall</ins>: Fehlende Texte (NaTs) sowie sehr kurze Texte unter einer projektspezifischen Mindestlänge wurden per listenweisem Fallausschluss entfernt; auf eine Imputation wurde zugunsten inhaltlicher Konsistenz verzichtet. </i><br>
           <div>
-            <code>XXX</code><br>
+            <code>pandas(dropna(subset=["text"])) + pandas(str.len) + boolescher Filter</code><br>
           </div>
       </details>
           <details>
             <summary>⚪ Duplikatentfernung (engl. duplicate removal)</summary>
           <p>Durch die Duplikatentfernung werden doppelte Instanzen (Zeilen) aus dem Datensatz entfernt.</p><br>
-          <i><ins>Anwendungsfall</ins>: XXX </i><br>
+          <i><ins>Anwendungsfall</ins>: Die identifizierte doppelte Datensatzinstanz wurde entfernt, sodass jede Beschwerde nur einmal in die NLP-Pipeline eingeht. </i><br>
           <div>
               <code>duplicated(keep=False)</code>
           </div>
@@ -283,7 +296,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
             <ul>
               <details>
                 <summary> unspezifische Filter</summary>
-                <p><i>XXXXX</i></p>
+                <p><i>Unspezifische Wortfilter entfernen allgemein häufige, semantisch schwache oder für den Analysezweck irrelevante Token und reduzieren so Rauschen im Korpus.</i></p>
                 <ol type="1">
                 <details>
                   <summary>🔴 Stopworte (engl. stopwords)</summary>
@@ -301,8 +314,8 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <ol type="1">
                 <details>
                   <summary>🔴 Pronomenfilter</summary>
-                  <p><i>XXXXX</i></p>
-                  <i><ins>Anwendungsfall</ins>: XXX</i><br>
+                  <p><i>Pronomen tragen häufig geringe thematische Trennschärfe und werden daher entfernt, um den Fokus auf inhaltstragende Token zu erhöhen.</i></p>
+                  <i><ins>Anwendungsfall</ins>: Pronomen wurden über POS-Tagging (<code>PRON</code>) im Token-Filtering ausgeschlossen.</i><br>
                   <div>
                     <code>spaCy(token.pos_ != "PRON")</code><br><br>
                   </div>
@@ -310,7 +323,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <details>
                   <summary>🔴 domänenspezifische Wortfilter</summary>
                   <p><i>Einzelne domänenspezifische Tokens werden ausgeschlossen.</i></p>
-                  <i><ins>Anwendungsfall</ins>: XXX </i><br>
+                  <i><ins>Anwendungsfall</ins>: Häufige, aber wenig differenzierende Domänenbegriffe (z. B. <code>company</code>, <code>service</code>, <code>customer</code>) wurden als projektspezifische Stoppwörter gefiltert. </i><br>
                   <div>
                     <code>spaCy(token.text)</code><br>
                   </div>
@@ -321,11 +334,11 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           </details>
           <details>
           <summary>🔴 Zeichenbereinigung (engl. character cleaning)</summary>
-          <p><i>XXXXX</i></p>
+          <p><i>Die Zeichenbereinigung entfernt nicht-inhaltstragende Zeichenartefakte und vereinheitlicht die Textoberfläche für eine stabile Tokenisierung.</i></p>
             <ol type="1">
               <details>
                 <summary>🔴 Satzzeichen (engl. punctuation marks)</summary>
-                <p><i>XXXXX</i></p>
+                <p><i>Satzzeichen strukturieren Sprache, tragen im Topic Modeling jedoch meist nur begrenzt zur Themenunterscheidung bei und werden daher gefiltert.</i></p>
                 <i><ins>Anwendungsfall</ins>: Satzzeichen werden beim Token-Filtering entfernt.</i><br>
                 <div>
                 <code>spaCy(token.is_punct)</code><br>
@@ -333,22 +346,22 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               </details>
               <details>
                 <summary>🔴 Leerzeichen (engl. white spaces)</summary>
-                <p><i>XXXXX</i></p>
-                <i><ins>Anwendungsfall</ins>: XXX </i><br>
+                <p><i>Überflüssige Leerzeichen, Zeilenumbrüche und Tabulatoren werden normalisiert, damit Token konsistent segmentiert werden.</i></p>
+                <i><ins>Anwendungsfall</ins>: Mehrfachleerzeichen, Zeilenumbrüche und Tabulatoren wurden auf ein einzelnes Leerzeichen reduziert. </i><br>
                 <ul>
               </details>
               <details>
                 <summary>🔴 Sonderzeichen (engl. special character)</summary>
-                <p><i>XXXXX</i></p>
-                <i><ins>Anwendungsfall</ins>: XXX </i><br>
+                <p><i>Sonderzeichen ohne semantischen Mehrwert werden entfernt, um irrelevante Tokenbildung und Merkmalsrauschen zu vermeiden.</i></p>
+                <i><ins>Anwendungsfall</ins>: Nicht-alphanumerische Sonderzeichen wurden regex-basiert gefiltert, sofern sie keine sprachlich relevante Funktion hatten. </i><br>
                 <ul>
               </details>
             </ol>
           </details>
           <details>
           <summary>🔴 Nummernbereinigung (engl. numbers cleaning)</summary>
-          <p><i>XXXXX</i></p>
-          <i><ins>Anwendungsfall</ins>: XXX </i><br>
+          <p><i>Numerische Token und Datumsfragmente werden entfernt oder normalisiert, wenn sie für die Themenextraktion keinen inhaltlichen Mehrwert liefern.</i></p>
+          <i><ins>Anwendungsfall</ins>: Reine Zahlen-Token wurden beim Filtering ausgeschlossen; alphanumerische Tokens mit semantischem Gehalt blieben erhalten. </i><br>
           </details> 
     </ul>
       </li>
@@ -366,7 +379,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Kasusumwandlung (engl. case conversion)</summary>
                 <p><i>Tokens werden in Kleinschreibung überführt.</i></p>
-                <i><ins>Anwendungsfall</ins>: XXX </i><br>
+                <i><ins>Anwendungsfall</ins>: Alle Tokens wurden in Kleinschreibung überführt, um Varianten wie <code>Service</code> und <code>service</code> zusammenzuführen. </i><br>
                 <div>
                   <code>spaCy(token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
                 </div>
@@ -374,7 +387,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Lemmatisierung (engl. lemmatization)</summary>
                 <p><i>Tokens werden auf ihre Grundform reduziert.</i></p>
-                <i><ins>Anwendungsfall</ins>: XXX </i><br>
+                <i><ins>Anwendungsfall</ins>: Tokens wurden auf ihre Grundform reduziert, um Flexionsvarianten zusammenzufassen und die Merkmalsdichte zu erhöhen. </i><br>
                 <div>
                   <code>spaCy(token.lemma_)</code><br><br>
                 </div>
@@ -418,7 +431,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 Grundformreduktion (engl. inflection reduction)</summary>
         <i>Die Tokens werden lemmatisiert und in Kleinschreibung überführt.</i><br><br>
-        <i><ins>Anwendungsfall</ins>: XXX </i><br>
+        <i><ins>Anwendungsfall</ins>: Lemmatisierung und Kleinschreibung wurden kombiniert, um ein konsistentes, dimensionsärmeres Vokabular für die Vektorisierung zu erhalten. </i><br>
         <div>
           <code>spaCy(token.lemma_)</code><br><br>
         </div>
@@ -426,7 +439,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 Vokabularerstellung/Wortschatzaufbau (engl. vocabulary construction)</summary>
         <i>Aus den bereinigten Texten wird ein Vokabular mit Token-IDs aufgebaut.</i><br><br>
-        <i><ins>Anwendungsfall</ins>: XXX </i><br>
+        <i><ins>Anwendungsfall</ins>: Das Vokabular wurde aus bereinigten Tokens aufgebaut und anschließend für BoW- bzw. TF-IDF-Repräsentationen verwendet. </i><br>
         <div>
           <code>sklearn(CountVectorizer)</code><br><br>
         </div>
@@ -434,7 +447,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🔴 lexikalisches POS-Tagging (nicht kontextsensitiv)</summary>
     <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br><br>
-    <i><ins>Anwendungsfall</ins>: XXX </i><br>
+    <i><ins>Anwendungsfall</ins>: POS-Tags wurden zur regelbasierten Filterung genutzt, insbesondere für den Ausschluss von Pronomen. </i><br>
         <div>
           <code>spaCy(token.pos_)</code><br><br>
         </div>
@@ -448,34 +461,34 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <ul>
       <details>
         <summary>🔴 syntaktisches POS-Tagging (kontextsensitiv)</summary>
-      <i>XXX</i><br><br>
-  <i><ins>Anwendungsfall</ins>: XXX </i><br>
+        <i>Kontextsensitives POS-Tagging bestimmt Wortarten unter Berücksichtigung des Satzkontexts und verbessert die grammatische Einordnung ambiger Token.</i><br><br>
+      <i><ins>Anwendungsfall</ins>: Wurde im Projekt nicht als separater Auswertungsschritt vertieft, da der Fokus auf robuster Themenextraktion lag. </i><br>
       </details>
       <details>
         <summary>🔴 syntaktisches Parsen (engl. syntax parsing)</summary>
-    <i>XXX</i><br><br>
-  <i><ins>Anwendungsfall</ins>: XXX </i><br>
+    <i>Syntaktisches Parsen rekonstruiert Abhängigkeitsstrukturen zwischen Token und macht Phrasen- sowie Satzbeziehungen maschinell auswertbar.</i><br><br>
+  <i><ins>Anwendungsfall</ins>: Wurde aus Aufwandsgründen nicht vertieft, da es für die gewählte BERTopic-Pipeline nicht zwingend erforderlich war. </i><br>
       </details>
       </ul>
   </details>
   <details>
     <summary>🔴 semantische Vorverarbeitung (engl. semantic pre-processing)</summary>
 
-> XXX
+> Die semantische Vorverarbeitung ergänzt lexikalisch-syntaktische Schritte um bedeutungsbezogene Verfahren, die Entitäten, Referenzen und Relationen inhaltlich erfassen.
   <ul>
       <details>
         <summary>🔴 Eigennamenerkennung (engl. Named Entity Recognition - NER)</summary>
-        <p><i>XXX</i></p>
+        <p><i>Named Entity Recognition identifiziert und klassifiziert benannte Entitäten wie Personen, Orte, Organisationen oder Datumsangaben in Texten.</i></p>
         <i><ins>Anwendungsfall</ins>: Auf NER wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
       <details>
         <summary>🔴 Koreferenzauflösung (engl. Coreference Resolution - CR)</summary>
-        <p><i>XXX</i></p>
+        <p><i>Koreferenzauflösung verknüpft verschiedene Ausdrücke, die auf dieselbe Entität referieren (z. B. <code>the company</code> und <code>it</code>).</i></p>
         <i><ins>Anwendungsfall</ins>: Auf CR wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
       <details>
         <summary>🔴 Beziehungsextraktion (engl. Relationship Extraction - RE)</summary>
-        <p><i>XXX</i></p>
+        <p><i>Beziehungsextraktion erkennt semantische Relationen zwischen Entitäten, etwa Akteur-Objekt-, Ursache-Wirkung- oder Besitzbeziehungen.</i></p>
         <i><ins>Anwendungsfall</ins>: Auf RE wurde aufgrund des Projektumfangs verzichtet.</i><br>
       </details>
     </ul>
@@ -892,26 +905,26 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
     <details>
     <summary>🟠 Manuelle Suche (engl. search)</summary>
     
-  > XXXXX<br>
-  <i><ins>Anwendungsfall</ins>: XXX</i><br>
+  > Bei der manuellen Suche werden Hyperparameter iterativ auf Basis fachlicher Heuristiken und Zwischenresultate angepasst, um geeignete Wertebereiche einzugrenzen.<br>
+  <i><ins>Anwendungsfall</ins>: Diente zur initialen Eingrenzung plausibler Parameterbereiche vor der systematischen Rastersuche.</i><br>
   </details>
   <details>
     <summary>🟠 Rastersuche (engl. grid search)</summary>
   
-  > XXXXX<br>
+  > Rastersuche evaluiert alle Kombinationen eines definierten Hyperparametergitters und identifiziert die beste Konfiguration gemäß gewählter Zielfunktion (Metrik).<br>
   <i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wird Rastersuche (engl. grid search) genutzt.</i><br>
   </details>
   <details>
     <summary>🟠 Zufallssuche (engl. random search)</summary>
 
-> XXX<br>
-  <i><ins>Anwendungsfall</ins>: XXX</i><br>
+> Zufallssuche testet zufällig gezogene Parameterkombinationen aus vorgegebenen Verteilungen und erreicht häufig mit weniger Läufen robuste Ergebnisse.<br>
+  <i><ins>Anwendungsfall</ins>: Wurde im Projekt nicht genutzt, da der Suchraum überschaubar war und per Rastersuche (engl. grid search)  vollständig geprüft werden konnte.</i><br>
   </details>
   <details>
     <summary>🟠 Bayesianische Optimierung</b> (engl. bayesian optimization)</summary>
 
-> XXX<br>
-  <i><ins>Anwendungsfall</ins>: XXX</i><br>
+> Bayesianische Optimierung modelliert die Zielfunktion probabilistisch und wählt neue Testpunkte informationsgeleitet über eine Akquisitionsfunktion aus.<br>
+  <i><ins>Anwendungsfall</ins>: Wurde im Projekt nicht eingesetzt, da Implementierungsaufwand und Rechenkosten für den Projektumfang nicht erforderlich waren.</i><br>
   </details>
   </ul>
  
@@ -925,29 +938,29 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <details>
     <summary>🟧<b> Modellanwendung</b> (engl. model inference)</summary>
 
-> Anwendung des trainierten Modells auf ungesehene Eingabedaten zur Erzeugung von Modellausgaben, die anschließend in die Datennachverarbeitung überführt werden.<br>
+> Anwendung des trainierten Modells auf Eingabedaten zur Erzeugung von Modellausgaben.<br>
   <br><ins>Modellausgaben (engl. output features)</ins>:<br>
   Modell verarbeitet neue Daten und erzeugt rohe Ausgaben.
             <ul>
               <details>
                 <summary> Rohwerte (engl. logits)</summary>
-                <p><i>XXXXX</i></p>
-              </details>
-              <details>
-                <summary> Bewertungen (engl. scores)</summary>
-                <p><i>XXXXX</i></p>
+                <p><i>Logits sind unnormalisierte Modellrohausgaben vor Aktivierungs- oder Normalisierungsschritten und bilden die Grundlage nachgelagerter Entscheidungen.</i></p>
               </details>
               <details>
                 <summary> Klassenbezeichnungen (engl. labels)</summary>
-                <p><i>XXXXX</i></p>
+                <p><i>Labels sind diskrete Ergebnisbezeichnungen, die aus Scores oder Entscheidungsregeln des Modells abgeleitet werden.</i></p>
+              </details>
+              <details>
+                <summary> Bewertungen (engl. scores)</summary>
+                <p><i>Scores sind quantitative Güte- oder Zugehörigkeitswerte (z. B. Wahrscheinlichkeiten oder Ähnlichkeiten) für Klassen bzw. Cluster.</i></p>
               </details>
               <details>
                 <summary><span style="color:white">Clusterzuordnungen (engl. cluster assignments)</span></summary>
-                <p><i>XXXXX</i></p>
+                <p><i>Clusterzuordnungen ordnen jede Instanz einem Cluster zu; je nach Verfahren können zusätzlich Ausreißerklassen auftreten.</i></p>
               <ul>
               <details>
                 <summary><span style="color:white">🟠 Themenzuordnungen (engl. topic assignments)</summary>
-                <span style="color:white">Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema/Topic bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten und weichen (probalistischen) Zuordnungen diffenziert werden.
+                <span style="color:white">Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema (engl. topic) bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten (engl. hard assignment) und weichen probalistischen Zuordnungen (engl. soft assignment/scores) diffenziert werden.
               </details>
               </details>
             </ul>
@@ -956,20 +969,18 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 </ol>
 
 ###### NLP-Pipeline Ausgabe (engl. pipeline output)
+> Die durch das erstellte Modell verarbeiteten Daten fließen je nach genutzem Modelltyp in Form von Rohwerten, Klassenbezeichnungen, Bewertungen oder Clusterzuordnungen in die Datennachverarbeitung (engl. data post-processing) ein.
 
-Die durch das finale Modell verarbeiteten Daten fließen in Form von Scores, Labels oder Logits die Datennachverarbeitung (engl. data post-processing) ein.
-
-Input oder Outputfeatures in die Datennachvereitung ein
+<i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die gewählten Modelle Themenzuordnungen (engl. topic assignments)als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Zuordnungen) erstellt.</i>
 ______________
+
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
-> In der Datennachverarbeitung werden Informationen aus Datensatz, Merkmalsanalyse und Modellanalyse ausgewertet und adressatengerecht kommuniziert.
+> Im Zuge der Datennachverarbeitung werden Datenauswertungen und deren adressatenberechne Kommunikation durchgeführt.
 
 <ol type="1">
   <details>
     <summary>🟦<b> Datenauswertung</b>  (engl. data evaluation)</summary>
-    <p><i>Die Datenauswertung setzt sich aus der Datenzusammenfassung und der Datenanalyse zusammen.
-    Merkmalsanalyse - Merkmalsauswertungen (engl. feature analysen) / Modellanalysen - Modellauswertung. 
-    </i></p>
+    <p><i>Die Datenauswertung setzt sich aus der Datenzusammenfassung und der Datenanalyse zusammen.</i></p>
     <img src="docs/3 - Datenauswertung (engl. data evaluation).jpg" width="1200">
     <ol type="1">
       <details>
@@ -985,6 +996,8 @@ ______________
   <summary>🔵 Merkmalsanalyse (engl. feature analysis)</summary>
 
 > Merkmalsanalyse ist der analytische Prozess, bei dem erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und bewertet werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.
+Merkmalsanalyse - Merkmalsauswertungen (engl. feature analysen) / Modellanalysen - Modellauswertung. 
+
   </details>
   <details>
   <summary>🔵 Modellanalyse (engl. model analysis)</summary>
@@ -1109,7 +1122,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
   <details>
   <summary>🔘 Vollständigkeit (engl. completeness)</summary>
  
-  > XXX
+  > Vollständigkeit ist erfüllt, wenn alle Datenpunkte einer Klasse möglichst demselben Cluster zugeordnet sind.
   <div>
     <code>sklearn.metrics (completeness_score)</code><br><br>
   </div>
@@ -1126,7 +1139,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
   <ul>
     <details>
       <summary>🔘 Kohärenz (engl. coherence)</summary>
-      <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin. XXXX Bereich: 0 bis 1 (höher = besser)</i></p>
+      <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin. Typischerweise (für <code>c_v</code>) im Bereich: 0 bis 1 (höher = besser)</i></p>
       <ul>
         <li><b>u_mass</b>: Interne Kohärenz</li>
         <li><b>c_v</b>: Externe Konsistenz</li>
@@ -1140,7 +1153,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
     <details>
       <summary>🔘 Themenvielfalt (engl. topic diversity)</summary>
       <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen. <b>Bereich:</b> X bis X (X = X) </i></p>
-      <i><ins>Anwendungsfall</ins>: Im Projekt wird die Themenvielfal berechnet.</i><br>
+      <i><ins>Anwendungsfall</ins>: Im Projekt wird die Themenvielfalt berechnet.</i><br>
     </details>
   </ul>
 </ul>
@@ -1151,8 +1164,8 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
   <ul>
     <details>
       <summary>🔘 Verwirrung (engl. perplexity)</summary>
-      <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin.... XXX Bereich: 0 bis ∞ (niedriger = besser)</i></p>
-      <i><ins>Anwendungsfall</ins>: XXX</i><br>
+      <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin. Theoretischer Bereich: 0 bis ∞ (niedriger = besser)</i></p>
+      <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt nicht als Leitmetrik genutzt, da BERTopic primär über Kohärenz und Themenvielfalt bewertet wurde.</i><br>
       <div>
         <code>gensim</code>&nbsp;<code>torchmetrics</code><br>
       </div>
@@ -1207,12 +1220,13 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
 
 ###### quantitavive Modellvalidierung (engl. quantitative model validation)
 > Bei der quantitativen Modellvalidierung wird die Modellqualität objektiv und metrikbasiert bewertet; die Auswertung erfolgt automatisiert.
-  <div>
-    <code>XXX</code>&nbsp;<code>XXXX</code>&nbsp;<code>XXXX</code><br>
-  </div>
+  
+  <i><ins>Anwendungsfall</ins>: Im Projekt wurde dieser Ansatz nicht verfolgt.</i>
   
 ###### qualitative Modellvalidierung (engl. qualitative model validation)
 > Bei der qualitativen Modellvalidierung wird die Modellqualität subjektiv bewertet; die Auswertung erfolgt manuell.
+
+  <i><ins>Anwendungsfall</ins>: Im Projekt wurde dieser Ansatz genutzt.</i>
   </ul>
 </details>
 </ul>
@@ -1250,34 +1264,28 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
 
 ### 🟩 Datenverständnis (engl. data understanding)
 
-> Das Datenverständnis ergibt sich aus den gewonnenen Analyseergebnissen durch eine domänenspezifisch Interpretation.
+> Das Datenverständnis ergibt sich aus den gewonnenen Analyseergebnissen durch eine domänenspezifisch Interpretation aus der Erkenntnisse und Handlungsempfehlungen abgeleitet werden können.
 ______________
-
-## Installation (engl. setup)
-Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
-
-```console
-conda env create -f environment.yml
-conda activate Projekt_Advanced-Data-Analysis
-conda install ipykernel
-```
-
-Anschließend ist in VSCode der Kernel `ada_env (Python 3.12.9)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
 
 ## Projektstruktur
 ### Ordnerstruktur
 ```markdown
-├── datasets/  # Datensatz
+├──────────────────────────────────────────── datasets/  # Datensatz
 ├─────────────── / complaints_data.csv
 ├─────────────── / complaints_data_cleaned.csv
-├── src/       # Python-Skripte
+|
+├──────────────────────────────────────────── src/       # Projekt-Code
 ├─────────────── / Projekt_Advanced_Data_Analysis.ipynb
-├── docs/      # Arbeitsunterlagen (Datensatzauswertungen, Übersichten)
-├─────────────── / 1 - Datenauswertung
-├─────────────── / 2 - 
-├─────────────── / 3 - 
-├─────────────── / X - 
-└── README.md
+|
+├──────────────────────────────────────────── docs/      # Arbeitsunterlagen (Übersichten)
+├─────────────── / 1 - 1_Datensatzauswahl
+├─────────────── / 2 - 1_Datensatzverarbeitung
+├─────────────── / 3 - 2_Textbereinigung
+├─────────────── / 4 - 3_Datenauswertung
+├─────────────── / 5 - 3_Datenkommunikation
+├─────────────── / 6 - 3_Datennachverarbeitung
+├─────────────── / 7 - 
+└──────────────────────────────────────────── README.md  # Projektdokumentation
 ```
 _________________________________________________________________________________________________________________________________________________________
 
@@ -1315,41 +1323,43 @@ aufgerufen werden.[^15]<br>
 ## Referenzen
 
 ###### Software
-Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python<br>
+<p>Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python</p>
 
 ###### Skripte
-IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.<br>
-<br>IU Internationale Hochschule. (2023). Artificial Intelligence (K. Schaaff, Übers.; DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.<br>
-<br>IU Internationale Hochschule. (2025). Artificial Intelligence (K. Schaaff, Übers.) [Lernskript]. 001-2025-0805 (DLBDSEAIS01-01_D).<br>
-<br>IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.
+<p>IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.</p>
+<p>IU Internationale Hochschule. (2023). Artificial Intelligence (DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.</p>
+<p>IU Internationale Hochschule. (2025). Artificial Intelligence (DLBDSEAIS01-01_D) [Lernskript]. 001-2025-0805.</p>
+<p>IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.</p>
 
 ###### Abschlussarbeiten
-Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf<br>
-<br>Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf<br>
+<p>Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf</p>
+<p>Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf</p>
+<p>Tschechlov, D. (2017). Metriken zur Evaluation von Teilschritten in Data Mining Analysen [Bachelorarbeit, Universität Stuttgart]. https://www2.informatik.uni-stuttgart.de/bibliothek/ftp/medoc.ustuttgart_fi/BCLR-2017-69/BCLR-2017-69.pdf</p>
+<p>Alhuda, H. N. (2022). Eine vergleichende Untersuchung zum Clustering von  Textdokumenten [Bachelorarbeit, Hochschule für Angewandte Wissenschaften Hamburg]. https://reposit.haw-hamburg.de/bitstream/20.500.12738/15632/1/BA_Clustering%20von%20Textdokumenten.pdf</p>
 
 ###### Bücher
-Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.<br>
-<br>Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.<br>
-<br>Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2<br>
+<p>Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.</p>
+<p>Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.</p>
+<p>Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2</p>
 
 ###### Fachzeitschriften
-Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
-<br>Blum et al., 2020 ?<br>
+<p>Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
+<p>Blum et al., 2020 ?</p>
 
 ###### Websites
-Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/<br>
-<br>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/<br>
-<br>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
-Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.com/choijin/NLP_Topic_Modeling (Ursprünglich erschienen 2023)
-Emergent Mind. (2025, September 6). Intrinsic and Extrinsic Evaluators [Wissensplattform]. Emergent Mind. https://www.emergentmind.com/topics/intrinsic-and-extrinsic-evaluators
+<p>Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/</p>
+<p>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/</p>
+<p>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/</p>
+<p>Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.com/choijin/NLP_Topic_Modeling (Ursprünglich erschienen 2023)</p>
+<p>Emergent Mind. (2025, September 6). Intrinsic and Extrinsic Evaluators [Wissensplattform]. Emergent Mind. https://www.emergentmind.com/topics/intrinsic-and-extrinsic-evaluators</p>
 
 ###### Anleitungen/Tutorials
-`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
-<br>`gensim` Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/<br>
-<br>`gensim` Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html<br>
-<br>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/<br>
-<br>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/<br>
-Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/choropleth-maps/
+<p>Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
+<p>Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/</p>
+<p>Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
+<p>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/</p>
+<p>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/</p>
+<p>Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/choropleth-maps/</p>
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
@@ -1365,14 +1375,6 @@ Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/c
 [^16]: [Webseite] (Timmermann, T. (2019, März 7). Natural Language Processing—Einsteigen und loslegen! [Unternehmenswebseite]. codecentric AG. https://www.codecentric.de/wissens-hub/blog/natural-language-processing-basics)
 
 [^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
-[^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021<br>
+[^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
 [^14]: Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 [^15]: Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
-
-
-Formatierung
-🟥🟨🟦🟫⬜🟧🟩🟪◼️◻️🔶🔸🔘
-:red_square:
-<br>GitHub - https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
-⚪
-🟣🟢🟠🔴🔵🟡🟤⚫
