@@ -161,7 +161,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         <details>
           <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
 > Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprch Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
-          <ul>
+  <ul>
             <i><ins>Anwendungsfall</ins>: In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englischsprachige Kundenbeschwerden (engl. customer complaints).</i><br><br>
             <details>
               <summary>"text"</summary>
