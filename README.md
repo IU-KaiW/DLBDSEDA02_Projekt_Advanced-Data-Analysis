@@ -140,8 +140,10 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <ul>
         <details>
           <summary>⚪ Analyse der strukturierten Daten (engl. analysis of structured data)</summary>
-          Im Rahmen der Analyse strukturierter Daten werden strukturierte Spalteninhalte systematisch auf Merkmale, Verteilungen und Muster hin untersucht.<br><br>
-          <i><ins>Anwendungsfall</ins>: Im vorliegenden Datensatz wurden Verteilungen in Ortsdaten (engl. location data), Zeitdaten (engl. time data) und Bewertungen (engl. rating data) aus den Spalten "author", "posted_on" und "rating" untersucht, um Muster zu erkennen.</i><br><br>
+  
+  > Im Rahmen der Analyse strukturierter Daten werden strukturierte Spalteninhalte systematisch auf Merkmale, Verteilungen und Muster hin untersucht.<br><br>
+  
+  <i><ins>Anwendungsfall</ins>: Im vorliegenden Datensatz wurden Verteilungen in Ortsdaten (engl. location data), Zeitdaten (engl. time data) und Bewertungen (engl. rating data) aus den Spalten "author", "posted_on" und "rating" untersucht, um Muster zu erkennen.</i><br>
           <ul>
             <details>
               <summary>"author"</summary>
@@ -248,7 +250,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
     <details>
       <summary>⬜ Datensatzvalidierung (engl. dataset validation)</b></summary>
       Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.<br><br>
-      <i><ins>Anwendungsfall</ins>: XXX </i><br>
+      <i><ins>Anwendungsfall</ins>: Im Projekt musste die Schreibweise eines US-Bundesstaaten korrigiert und zwei CAN-Bundesstaaten aus dem Datensatz entfernt werden.</i><br>
     </details>
 </ol>
 
@@ -734,10 +736,11 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 
 > Clustering ist ein unüberwachtes Lernverfahren zur Strukturentdeckung in ungelabelten Daten, bei dem Objekte anhand eines Ähnlichkeits- oder Distanzmaßes so in Gruppen (Cluster) partitioniert werden, dass die Intra-Cluster-Ähnlichkeit hoch und die Inter-Cluster-Ähnlichkeit gering ist.
 
+  <i><ins>Anwendungsfall</ins>: Im Projekt wird HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) durch das BERTopic genutzt. In Kombination mit UMAP hilft HDBSCAN dem BERTopic-Modell dabei, ähnliche Dokumente zu kohärenten Themen zu gruppieren – selbst in unübersichtlichen, realen Textkorpora (Nguyen und Ramdas, 2025).
+  </i><br>
 <ul>
   <details>
     <summary>🟠 Themenmodellierung (engl. topic modeling)</summary>
-
 Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation latenter semantischer Strukturen in Textsammlungen. Durch Themenmodelle (engl. topic models) werden aus bestehenden Merkmalen automatisch neue, interpretierbare Themendimensionen extrahiert oder transformiert, die nicht explizit im Text vorhanden sind. Die methodische Differenzierung erfolgt nach dem verwendeten Modellierungsverfahren: Abstraktionsbasierte Ansätze extrahieren Themen durch probabilistische oder semantische Prozesse, während projektionsbasierte Ansätze algebraische Matrixfaktorisierungsverfahren nutzen.
 
 > **Merkmalsabstraktion (engl. feature abstraction):** Abstraktionsbasierte Modelle nutzen probabilistische oder Embedding-basierte Verfahren, um neue semantisch interpretierbare Konzepte direkt aus Daten zu extrahieren. Sie modellieren Themen durch komplexe statistische oder neuronale Prozesse und erzeugen Features, die nicht nur mathematische Transformationen, sondern bedeutungstragende Repräsentationen darstellen.
@@ -820,6 +823,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
             <code>sklearn (PCA)</code><br>
             <b>Output:</b> K Komponenten, Varianzanteil pro Komponente
           </div>
+         <i><ins>Anwendungsfall</ins>: Findet im Projekt keine Anwendung.</i><br>
         </details>
       </details>
       <details>
@@ -829,23 +833,22 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
         <ol type="1">
           <details>
             <summary>⚫ t-SNE (t-distributed Stochastic Neighbor Embedding)</summary>
-            <p><i>Projiziert auf 2-3 Dimensionen, bewahrt lokale Nachbarschaften. Ideal für Cluster-Visualisierung.</i></p>
-            T-SNE (t-distributed Stochastic Neighbor Embedding) „Die t-SNE- Projektion (Mitte) zeigt eine Verbesserung mit gut voneinander getrennten Clustern. Jede Farbe (die für eine andere Person steht) bildet eine eigene, kompakte Gruppe mit klaren Grenzen zwischen den verschiedenen Personen. Schau mal, wie t-SNE fast perfekte lokale Gruppierungen macht, bei denen Gesichter derselben Person ganz nah beieinander liegen und von anderen Gruppen weggeschoben werden. Das ist die Stärke von t-SNE: Es ist super darin, lokale Nachbarschaften zu erhalten und visuell unterschiedliche Cluster zu erstellen.“ (Thevapalan, 2025)
-            nichtlineare probabilistische Technik zur Dimensionalitätsreduzierung „Eigene Embedding Spaces erstellen & visualisieren
+            <p><i>t-SNE ist eine nichtlineare, probabilistische Technik zur Dimensionalitätsreduzierung, die auf 2-3 Dimensionen projiziert, lokale Nachbarschaften bewahrt und dadurch eine visuelle Trennung von Clustern ermöglicht (Thevapalan, 2025).</i></p>
             <div>
               <code>sklearn (TSNE)</code><br>
               <b>Output:</b> 2-3D Koordinaten
             </div>
+              <i><ins>Anwendungsfall</ins>: Wird im NLP-Projket nicht genutzt.</i><br>
           </details>
           <details>
             <summary>⚫ UMAP (Uniform Manifold Approximation and Projection)</summary>
             <p><i>Moderne Alternative zu t-SNE, schneller und skalierbarer. Bewahrt lokale und globale Strukturen.</i></p>
-            UMAP (Uniform Manifold Approximation and Projection) „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen“ (Thevapalan, 2025).
+            „Natürliche Sprachverarbeitung: Textdaten können, wenn sie in hochdimensionale Einbettungen umgewandelt werden, mit UMAP visualisiert werden, um semantische Beziehungen zu verstehen. Es wird oft benutzt, um Wort-Embeddings und Dokument-Cluster zu zeigen und Sprachmodelle zu debuggen, indem es zeigt, wie verschiedene Konzepte im Embedding-Raum miteinander zusammenhängen“ (Thevapalan, 2025).
             <div>
               <code>umap-learn</code><br>
-              <b>Output:</b> 2-3D Koordinaten
+              <b>Output:</b> Visualisierbar, aber nicht semantisch interpretierbar
             </div>
-            Output: Visualisierbar, aber nicht semantisch interpretierbar
+            <i><ins>Anwendungsfall</ins>: Wird im NLP-Projekt innerhalb des BERTopic-Modells zur Dimensionsreduktion der Satz-Embeddings vor dem Clustering genutzt.</i><br>
           </details>
         </ol>
       </details>
@@ -969,7 +972,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 </ol>
 
 ###### NLP-Pipeline Ausgabe (engl. pipeline output)
-> Die durch das erstellte Modell verarbeiteten Daten fließen je nach genutzem Modelltyp in Form von Rohwerten, Klassenbezeichnungen, Bewertungen oder Clusterzuordnungen in die Datennachverarbeitung (engl. data post-processing) ein.
+> Die durch das erstellte Modell verarbeiteten Daten fließen, je nach genutzem Modelltyp, in Form von Rohwerten, Klassenbezeichnungen, Bewertungen oder Clusterzuordnungen in die Datennachverarbeitung (engl. data post-processing) ein.
 
 <i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die gewählten Modelle Themenzuordnungen (engl. topic assignments)als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Zuordnungen) erstellt.</i>
 ______________
@@ -990,19 +993,19 @@ ______________
   <ol type="1">
   <details>
         <summary>🔵 Datenanalyse (engl. data analysis)</summary>
-        <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder die merkmalsverarbeitenden Modelle gewonnen.</i></p>
+        <p><i>In der Datenanalyse werden Erkenntnisse über Merkmale und/oder merkmalsverarbeitenden Modelle gewonnen.</i></p>
         <ul>
   <details> 
   <summary>🔵 Merkmalsanalyse (engl. feature analysis)</summary>
 
-> Merkmalsanalyse ist der analytische Prozess, bei dem erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und bewertet werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren.
-Merkmalsanalyse - Merkmalsauswertungen (engl. feature analysen) / Modellanalysen - Modellauswertung. 
-
+> Merkmalsanalyse ist der analytische Prozess, bei dem erstellte, ausgewählte oder gelernte Merkmale untersucht, beschrieben und bewertet werden. Dies erfolgt durch Merkmalserkennung, um spezifische Muster und Strukturen in den Daten zu identifizieren. Je nach Ursprung des Merkmals kann zwischen Merkmalsauswertungen von Input-/ Hidden- und Output-Features unterschieden werden.
   </details>
   <details>
   <summary>🔵 Modellanalyse (engl. model analysis)</summary>
 
   > Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell Eingabemerkmale transformiert. Sie wird als  Modellbewertung (engl. model scoring) bezeichnet und umfasst die Modellqualitätsmessung und die Modellvalidierung.
+  Modellanalysen - Modellauswertung. 
+
   <ul>
   <details>
   <summary>🔵 Modellqualitätsmessung (engl. model quality assessment)</summary>
@@ -1139,20 +1142,20 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
   <ul>
     <details>
       <summary>🔘 Kohärenz (engl. coherence)</summary>
-      <p><i>Misst semantische Konsistenz der Top-Wörter pro Thema. Ein höherer Wert deutet auf kohärente, interpretierbare Themen hin. Typischerweise (für <code>c_v</code>) im Bereich: 0 bis 1 (höher = besser)</i></p>
-      <ul>
-        <li><b>u_mass</b>: Interne Kohärenz</li>
-        <li><b>c_v</b>: Externe Konsistenz</li>
-        <li><b>c_uci, c_npmi</b>: Alternative Berechnungsvarianten</li><br>
-      </ul>
-      <i><ins>Anwendungsfall</ins>: Im Projekt wird die Kohärenz über das Standard-Maße „c_v“, welches einen konsensbasierten Vektorraum-Ansatz zur Messung der Wort-Ähnlichkeit innerhalb der Themen nutzt, ermittelt.</i><br>
+
+> Misst die semantische Konsistenz der Top-Wörter eines Themas und dient damit der Bewertung seiner inhaltlichen Interpretierbarkeit. Für die Berechnung stehen mehrere Kohärenzmaße zur Verfügung, darunter <code>u_mass</code>, <code>c_v</code>, <code>c_uci</code> und <code>c_npmi</code> wobei höhere Werte auf kohärentere Themen hinweisen.
+
+<i><ins>Anwendungsfall</ins>: Im Projekt wird die Kohärenz über das Standard-Maße „c_v“, welches einen konsensbasierten Vektorraum-Ansatz zur Messung der Wort-Ähnlichkeit innerhalb der Themen nutzt, ermittelt.</i><br>
       <div>
         <code>gensim.models.CoherenceModel</code><br>
       </div>
     </details>
     <details>
       <summary>🔘 Themenvielfalt (engl. topic diversity)</summary>
-      <p><i>Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – verhindert redundante Themen. <b>Bereich:</b> X bis X (X = X) </i></p>
+
+> Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – über die Berechnung können redundante Themen identifiziert werden. Bereich: 0 bis 1 (höher = bessser)
+
+${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wörter}|}$<br><br>
       <i><ins>Anwendungsfall</ins>: Im Projekt wird die Themenvielfalt berechnet.</i><br>
     </details>
   </ul>
@@ -1207,6 +1210,11 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
   <ul>
 <details>
     <summary>🔘 OCTIS (Optimizing and Comparing Topic models Is Simple)</summary>
+
+> OCTIS bietet 10 Bewertungsmetriken, die direkt über ein Web-Dashboard verfügbar sind, sowie 13 weitere, die über eine Python-Bibliothek zugänglich sind. Die Metriken umfassen Themenkohärenz-Metriken, Themensignifikanz-Metriken, Diversitätsmetriken und Klassifikationsmetriken (Terragni et al., 2021, p. 265).
+  <div>
+    <code>octis</code><br>
+  </div>
 </details>
 </ul>
 </details>
@@ -1221,12 +1229,12 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
 ###### quantitavive Modellvalidierung (engl. quantitative model validation)
 > Bei der quantitativen Modellvalidierung wird die Modellqualität objektiv und metrikbasiert bewertet; die Auswertung erfolgt automatisiert.
   
-  <i><ins>Anwendungsfall</ins>: Im Projekt wurde dieser Ansatz nicht verfolgt.</i>
+  <i><ins>Anwendungsfall</ins>: Im Projekt wird der Ansatz der quantitavive Modellvalisierung nicht verfolgt.</i>
   
 ###### qualitative Modellvalidierung (engl. qualitative model validation)
 > Bei der qualitativen Modellvalidierung wird die Modellqualität subjektiv bewertet; die Auswertung erfolgt manuell.
 
-  <i><ins>Anwendungsfall</ins>: Im Projekt wurde dieser Ansatz genutzt.</i>
+  <i><ins>Anwendungsfall</ins>: Im Projekt wird eine qualitativer Ansatz genutzt.</i>
   </ul>
 </details>
 </ul>
@@ -1238,8 +1246,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
 
   <details>
     <summary>🟦<b> Datenkommunikation</b> (engl. data communication)</summary>
-    <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.
-    Visualisierung stellt aggregierte Daten grafisch dar, um Muster erkennbar zu machen.</i></p>
+    <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, um Muster erkennbar zu machen, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.</i></p>
     <div>
       <code>plotly</code>&nbsp;<code>matplotlib</code><br><br>
     </div> 
@@ -1270,14 +1277,14 @@ ______________
 ## Projektstruktur
 ### Ordnerstruktur
 ```markdown
-├──────────────────────────────────────────── datasets/  # Datensatz
-├─────────────── / complaints_data.csv
-├─────────────── / complaints_data_cleaned.csv
+├─────── datasets/ # Datensatz
+├─────────────── /   complaints_data.csv
+├─────────────── /   complaints_data_cleaned.csv
 |
-├──────────────────────────────────────────── src/       # Projekt-Code
-├─────────────── / Projekt_Advanced_Data_Analysis.ipynb
+├──────────── src/ # Projekt-Code
+├─────────────── /   Projekt_Advanced_Data_Analysis.ipynb
 |
-├──────────────────────────────────────────── docs/      # Arbeitsunterlagen (Übersichten)
+├────────────docs/ # Arbeitsunterlagen (Übersichten)
 ├─────────────── / 1 - 1_Datensatzauswahl
 ├─────────────── / 2 - 1_Datensatzverarbeitung
 ├─────────────── / 3 - 2_Textbereinigung
@@ -1285,7 +1292,8 @@ ______________
 ├─────────────── / 5 - 3_Datenkommunikation
 ├─────────────── / 6 - 3_Datennachverarbeitung
 ├─────────────── / 7 - 
-└──────────────────────────────────────────── README.md  # Projektdokumentation
+|
+└──────README.md   # Projektdokumentation
 ```
 _________________________________________________________________________________________________________________________________________________________
 
@@ -1323,43 +1331,46 @@ aufgerufen werden.[^15]<br>
 ## Referenzen
 
 ###### Software
-<p>Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python</p>
+- Jai Soorya N, K. (2023). AI-Text-Detector-python [Software]. https://github.com/Kishanjaisoorya/AI-Text-Detector-python</p>
 
 ###### Skripte
-<p>IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.</p>
-<p>IU Internationale Hochschule. (2023). Artificial Intelligence (DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.</p>
-<p>IU Internationale Hochschule. (2025). Artificial Intelligence (DLBDSEAIS01-01_D) [Lernskript]. 001-2025-0805.</p>
-<p>IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.</p>
+- IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.</p>
+- IU Internationale Hochschule. (2023). Artificial Intelligence (DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.</p>
+- IU Internationale Hochschule. (2025). Artificial Intelligence (DLBDSEAIS01-01_D) [Lernskript]. 001-2025-0805.</p>
+- IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.</p>
 
 ###### Abschlussarbeiten
-<p>Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf</p>
-<p>Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf</p>
-<p>Tschechlov, D. (2017). Metriken zur Evaluation von Teilschritten in Data Mining Analysen [Bachelorarbeit, Universität Stuttgart]. https://www2.informatik.uni-stuttgart.de/bibliothek/ftp/medoc.ustuttgart_fi/BCLR-2017-69/BCLR-2017-69.pdf</p>
-<p>Alhuda, H. N. (2022). Eine vergleichende Untersuchung zum Clustering von  Textdokumenten [Bachelorarbeit, Hochschule für Angewandte Wissenschaften Hamburg]. https://reposit.haw-hamburg.de/bitstream/20.500.12738/15632/1/BA_Clustering%20von%20Textdokumenten.pdf</p>
+- Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf</p>
+- Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf</p>
+- Tschechlov, D. (2017). Metriken zur Evaluation von Teilschritten in Data Mining Analysen [Bachelorarbeit, Universität Stuttgart]. https://www2.informatik.uni-stuttgart.de/bibliothek/ftp/medoc.ustuttgart_fi/BCLR-2017-69/BCLR-2017-69.pdf</p>
+- Alhuda, H. N. (2022). Eine vergleichende Untersuchung zum Clustering von  Textdokumenten [Bachelorarbeit, Hochschule für Angewandte Wissenschaften Hamburg]. https://reposit.haw-hamburg.de/bitstream/20.500.12738/15632/1/BA_Clustering%20von%20Textdokumenten.pdf</p>
 
 ###### Bücher
-<p>Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.</p>
-<p>Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.</p>
-<p>Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2</p>
+- Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.</p>
+- Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.</p>
+- Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2</p>
 
 ###### Fachzeitschriften
-<p>Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022<br>
-<p>Blum et al., 2020 ?</p>
+- Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022</p>
+- Blum et al., 2020 ?</p>
+
+###### Konferenz-Paper
+- Terragni, S., Fersini, E., Galuzzi, B. G., Tropeano, P., & Candelieri, A. (2021). OCTIS: Comparing and Optimizing Topic models is Simple! Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations, 263–270. https://doi.org/10.18653/v1/2021.eacl-demos.31</p>
 
 ###### Websites
-<p>Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/</p>
-<p>Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/</p>
-<p>Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/</p>
-<p>Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.com/choijin/NLP_Topic_Modeling (Ursprünglich erschienen 2023)</p>
-<p>Emergent Mind. (2025, September 6). Intrinsic and Extrinsic Evaluators [Wissensplattform]. Emergent Mind. https://www.emergentmind.com/topics/intrinsic-and-extrinsic-evaluators</p>
-
+- Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/</p>
+- Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/</p>
+- Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/</p>
+- Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.com/choijin/NLP_Topic_Modeling (Ursprünglich erschienen 2023)</p>
+- Emergent Mind. (2025, September 6). Intrinsic and Extrinsic Evaluators [Wissensplattform]. Emergent Mind. https://www.emergentmind.com/topics/intrinsic-and-extrinsic-evaluators</p>
+- Nguyen, M., & Ramdas, T. (2025, Juli 27). Topic Modeling: A Comparative Overview of BERTopic, LDA, and Beyond. Chamomile.Ai. https://chamomile.ai/topic-modeling-overview/</p>
 ###### Anleitungen/Tutorials
-<p>Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
-<p>Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/</p>
-<p>Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
-<p>Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/</p>
-<p>Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/</p>
-<p>Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/choropleth-maps/</p>
+- Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
+- Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/</p>
+- Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
+- Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/</p>
+- Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/</p>
+- Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/choropleth-maps/</p>
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
 [^02]: [Datensatz02] (https://www.kaggle.com/datasets/selener/consumer-complaint-database)
@@ -1376,5 +1387,4 @@ aufgerufen werden.[^15]<br>
 
 [^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
 [^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
-[^14]: Elson, P., Andrade, E. S. de, Lucas, G., May, R., Hattersley, R., Campbell, E., Comer, R., Dawson, A., Little, B., Raynaud, S., scmc72, Snow, A. D., lgolston, Blay, B., Killick, P., lbdreyer, Peglar, P., Wilson, N., Andrew, … Kirkham, D. (2024). SciTools/cartopy: REL: v0.24.1 (Version v0.24.1) [Software]. Zenodo. https://doi.org/10.5281/ZENODO.1182735
 [^15]: Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
