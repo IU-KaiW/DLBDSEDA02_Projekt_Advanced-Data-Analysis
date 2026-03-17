@@ -1,7 +1,7 @@
-# Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analyieren
-Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understandung - NLU) befasst. Ziel des Hochschulprojekts ist es NLP-Techniken auf einen organisch entstandenen Datensatz anzuwenden und so eine Analyse und Interpretation des Textinhalts durchzuführen. 
+# Aufgabe 1.1: NLP-Techniken anwenden, um eine Textsammlung zu analysieren
+Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernens (engl. machine learning - ML), die sich mit der algorithmischen Verarbeitung und dem Verstehen natürlichsprachlicher Texte (engl. natural language understanding - NLU) befasst. Ziel des Hochschulprojekts ist es NLP-Techniken auf einen organisch entstandenen Datensatz anzuwenden und so eine Analyse und Interpretation des Textinhalts durchzuführen. 
 
-Der ausgearbeitet Lösungsansatz fokussiert sich auf Verarbeitung von englischsprachigen Kundenbeschwerden (engl. customer complaints) mit dem Ziel, die am häufigsten angesprochenen Themen systematisch zu extrahieren und visuell für Entscheidungsträger einer örtlichen Stadtverwaltung adressatengerecht aufzubereiten.
+Der ausgearbeitete Lösungsansatz fokussiert sich auf Verarbeitung von englischsprachigen Kundenbeschwerden (engl. customer complaints) mit dem Ziel, die am häufigsten angesprochenen Themen systematisch zu extrahieren und visuell für Entscheidungsträger einer örtlichen Stadtverwaltung adressatengerecht aufzubereiten.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Installation (engl. setup)
 Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
@@ -15,7 +15,7 @@ conda install ipykernel
 Anschließend ist in VSCode der Kernel `ada_env (Python 3.12.9)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Konzeptionelle Überlegungen
-Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergäzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
+Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergänzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
 
 Die ausgearbeitete Konzeption lässt sich grob in 4 Hauptphasen einteilen: 
   <ul>
@@ -67,8 +67,8 @@ ________________________________________________________________________________
       <ul>
       <details>
       <summary>⚪ KI-Detektoren (engl. AI-detectors)</summary>
-      Eine Prüfung auf Datenauthenzität kann über KI-Detektoren erfolgen.<br><br>
-  <i><ins>Anwendungsfall</ins>: Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwerndet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Spachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Emgedding verwendet.</i><br>
+      Eine Prüfung auf Datenauthentizität kann über KI-Detektoren erfolgen.<br><br>
+  <i><ins>Anwendungsfall</ins>: Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwendet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Embedding verwendet.</i><br>
         <div>
           <code>transformers</code>&nbsp;<code>torch</code><br>
         </details>
@@ -77,7 +77,7 @@ ________________________________________________________________________________
     </details>
     <details>
       <summary>⬜ Datensatzauswahl (engl. dataset selection)</summary>
-      Über eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationramm wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über folgende Formel ermittelt:<br>
+      Über eine Häufigkeitsauswertung der Label durch ein Tabellenkalkulationsprogramm wird der Datensatz mit dem prozentual höchsten Anteil an organischen (REAL-Label) Instanzen über folgende Formel ermittelt:<br>
 
 $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
@@ -103,7 +103,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-> In der Phase der Datensatzsichtung wird der ausgewählte Datensatz einer explorativen Datenanalyse (engl. exploratory data analysis - EDA) unterzogen, um strukturelle Merkmale, Muster und potenzielle ualitätsprobleme systematisch zu identifizieren. Zu diesem Zweck werden sowohl die Datenstruktur als auch der Dateninhalt analysiert, sodass die gewonnene Erkenntnisse in die Datensatzaufbereitung (engl. dataset preparation) überführt und den nachgelagerten Prozessphasen methodisch berücksichtigt werden können.
+> In der Phase der Datensatzsichtung wird der ausgewählte Datensatz einer explorativen Datenanalyse (engl. exploratory data analysis - EDA) unterzogen, um strukturelle Merkmale, Muster und potenzielle Qualitätsprobleme systematisch zu identifizieren. Zu diesem Zweck werden sowohl die Datenstruktur als auch der Dateninhalt analysiert, sodass die gewonnene Erkenntnisse in die Datensatzaufbereitung (engl. dataset preparation) überführt und den nachgelagerten Prozessphasen methodisch berücksichtigt werden können.
 
 <ol>   
   <details>
@@ -157,7 +157,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
   > Die Zeilen der Spalte "posted_on" enthalten Datumsangaben mit alphabetisch abgekürzter Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format "Monat, Tag, Jahr".<br>
 
-  Im Rahmen der Datenexploration wurde eine Zeitdatenanlyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
+  Im Rahmen der Datenexploration wurde eine Zeitdatenanalyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
             <ul>
               <li><ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgt sind. <br>
               <li><ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt.<br>
@@ -175,7 +175,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         </details>
         <details>
           <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
-> Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprch Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
+> Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprich Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
   <ul>
             <i><ins>Anwendungsfall</ins>: In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englischsprachige Kundenbeschwerden (engl. customer complaints).</i><br><br>
             <details>
@@ -399,7 +399,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           <details>
             <summary>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</summary>
 
-> Durch Rechtschreibkorrekturen können Tippfehler und Schreibfehler reduziert werden, um diee Konsistenz von Texten zu verbessern
+> Durch Rechtschreibkorrekturen können Tippfehler und Schreibfehler reduziert werden, um die Konsistenz von Texten zu verbessern
 
   <i><ins>Anwendungsfall</ins>: Auf eine Rechtschreibkorrektur wurde in diesem Projekt verzichtet.</i><br>
           </details>
@@ -504,7 +504,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <details>
     <summary>🟨 <b> Merkmalsgenerierung </b> (engl. feature generation/featurization)</summary>
 
-> Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt ustrukturierte Daten (Texte) durch *Merkmalskodierung (engl. feature encoding)* in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von *Merkmalsaufbereitung (engl. feature engineering)* gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von *Merkmalslernen (engl. feature learning / representation learning)*, wobei Merkmale direkt aus Rohtexten gewonnen werden.
+> Merkmalsgenerierung bezeichnet den Prozess, aus rohem oder vorverarbeitetem Text neue, informative Merkmale zu erzeugen, die Machine-Learning-Modelle effizient nutzen können. Sie wandelt unstrukturierte Daten (Texte) durch *Merkmalskodierung (engl. feature encoding)* in numerische oder kategorische Repräsentationen um, welche syntaktische, semantische oder kontextuelle Aspekte einfangen. Dabei werden Attribute/Features in eine für die Modellierung adäquate Form überführt, weshalb von *Merkmalsaufbereitung (engl. feature engineering)* gesprochen wird (Baars und Kemper, 2021, p. 159). Dies kann mittels Merkmalskonstruktion, Merkmalsextraktion oder Merkmalsumwandlung erfolgen oder automatisch über trainierte Modelle vorgenommen werden. In diesem Fall spricht man von *Merkmalslernen (engl. feature learning / representation learning)*, wobei Merkmale direkt aus Rohtexten gewonnen werden.
 <ol type="1">
   <details>
     <summary>🟨 Vektorisierung (engl. vectorization)</summary>
@@ -514,7 +514,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 <ol type="1">
         <details>
           <summary>🟡 Merkmalsvektoren (engl. feature vectors)</summary>
-          <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden ohne und mit Informationsgewichtung diffrenziert wird.</i></p>
+          <p><i>Spannen keinen semantischen Merkmalsraum auf, sondern erzeugen dünn besetzte Vektoren (engl. sparse vectors) auf Basis von Tokenfrequenzen, was Modellen eine algebraische bzw. statistische Auswertung ermöglicht. Teils werden die Merkmalsvektoren auch als unsemantische oder häufigkeitsbasierte Embeddings (engl. frequency based embeddings) bezeichnet. Diese frequenzbasierten Methoden erzeugen dünn besetzte Merkmalsvektoren basierend auf Vokabularpositionen, wobei zwischen Methoden ohne und mit Informationsgewichtung differenziert wird.</i></p>
           <ul>
 
 ###### ohne Informationsgewichtung
@@ -670,7 +670,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                           <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
                         </div>
                         <li>USE Embedding (Universal Sentence Encoder)</li>
-                          <p><i>USE erzeugt bidirektionale Satz-Einbettungen für ganze Aussagen und ist auf die semantische Repräsentation und Vergleichbarkeit von Saetzen optimiert.</i></p>
+                          <p><i>USE erzeugt bidirektionale Satz-Einbettungen für ganze Aussagen und ist auf die semantische Repräsentation und Vergleichbarkeit von Sätzen optimiert.</i></p>
                         <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt nicht genutzt.</i><br>
                           <div>
                             <code>tensorflow-hub</code><br><br>
@@ -972,13 +972,13 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 </ol>
 
 ###### NLP-Pipeline Ausgabe (engl. pipeline output)
-> Die durch das erstellte Modell verarbeiteten Daten fließen, je nach genutzem Modelltyp, in Form von Rohwerten, Klassenbezeichnungen, Bewertungen oder Clusterzuordnungen in die Datennachverarbeitung (engl. data post-processing) ein.
+> Die durch das erstellte Modell verarbeiteten Daten fließen, je nach genutztem Modelltyp, in Form von Rohwerten, Klassenbezeichnungen, Bewertungen oder Clusterzuordnungen in die Datennachverarbeitung (engl. data post-processing) ein.
 
 <i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die gewählten Modelle Themenzuordnungen (engl. topic assignments)als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Zuordnungen) erstellt.</i>
 ______________
 
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
-> Im Zuge der Datennachverarbeitung werden Datenauswertungen und deren adressatenberechne Kommunikation durchgeführt.
+> Im Zuge der Datennachverarbeitung werden Datenauswertungen und deren adressatengerechte Kommunikation durchgeführt.
 
 <ol type="1">
   <details>
@@ -1226,10 +1226,10 @@ ${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wört
 
   <ul>
 
-###### quantitavive Modellvalidierung (engl. quantitative model validation)
+###### quantitative Modellvalidierung (engl. quantitative model validation)
 > Bei der quantitativen Modellvalidierung wird die Modellqualität objektiv und metrikbasiert bewertet; die Auswertung erfolgt automatisiert.
   
-  <i><ins>Anwendungsfall</ins>: Im Projekt wird der Ansatz der quantitavive Modellvalisierung nicht verfolgt.</i>
+  <i><ins>Anwendungsfall</ins>: Im Projekt wird der Ansatz der quantitativen Modellvalidierung nicht verfolgt.</i>
   
 ###### qualitative Modellvalidierung (engl. qualitative model validation)
 > Bei der qualitativen Modellvalidierung wird die Modellqualität subjektiv bewertet; die Auswertung erfolgt manuell.
@@ -1384,7 +1384,6 @@ aufgerufen werden.[^15]<br>
 [^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 [^11]: [Webseite] (Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/)
 [^16]: [Webseite] (Timmermann, T. (2019, März 7). Natural Language Processing—Einsteigen und loslegen! [Unternehmenswebseite]. codecentric AG. https://www.codecentric.de/wissens-hub/blog/natural-language-processing-basics)
-
 [^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
 [^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
-[^15]: Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
+[^15]: [Webseite] Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
