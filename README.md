@@ -12,7 +12,7 @@ conda activate Projekt_Advanced-Data-Analysis
 conda install ipykernel
 ```
 
-Anschließend ist in VSCode der Kernel `ada_env (Python 3.12.9)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
+Anschließend ist in VSCode der Kernel `Projekt_Advanced-Data-Analysis (Python 3.11)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Konzeptionelle Überlegungen
 Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergänzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
