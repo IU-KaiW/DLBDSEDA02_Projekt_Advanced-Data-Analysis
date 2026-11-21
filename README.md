@@ -12,7 +12,7 @@ conda activate Projekt_Advanced-Data-Analysis
 conda install ipykernel
 ```
 
-Anschließend ist in VSCode der Kernel `Projekt_Advanced-Data-Analysis (Python 3.11)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
+Anschließend ist in VSCode der Kernel `Projekt_Advanced-Data-Analysis (Python 3.11.18)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Konzeptionelle Überlegungen
 Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergänzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
@@ -914,8 +914,8 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <details>
     <summary>🟠 Rastersuche (engl. grid search)</summary>
   
-  > Rastersuche evaluiert alle Kombinationen eines definierten Hyperparametergitters und identifiziert die beste Konfiguration gemäß gewählter Zielfunktion (Metrik).<br>
-  <i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wird Rastersuche (engl. grid search) genutzt.</i><br>
+  > Rastersuche evaluiert alle Kombinationen eines definierten Hyperparametergitters und identifiziert die beste Konfiguration gemäß einer gewählten Zielfunktion.<br>
+  <i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wird Rastersuche (engl. grid search) genutzt. Dazu wurden modellspezifische Zielfunktionen entwickelt.</i><br>
   </details>
   <details>
     <summary>🟠 Zufallssuche (engl. random search)</summary>
@@ -974,7 +974,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 ###### NLP-Pipeline Ausgabe (engl. pipeline output)
 > Die durch das erstellte Modell verarbeiteten Daten fließen, je nach genutztem Modelltyp, in Form von Rohwerten, Klassenbezeichnungen, Bewertungen oder Clusterzuordnungen in die Datennachverarbeitung (engl. data post-processing) ein.
 
-<i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die gewählten Modelle Themenzuordnungen (engl. topic assignments)als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Zuordnungen) erstellt.</i>
+<i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die gewählten Modelle Themenzuordnungen (engl. topic assignments) als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Zuordnungen) erstellt.</i>
 ______________
 
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
@@ -1335,41 +1335,82 @@ aufgerufen werden.[^15]<br>
 
 ###### Skripte
 - IU Internationale Hochschule. (2024). Advanced Data Analysis (DLBDSEDA01_D) [Lernskript]. 001-2024-1210.</p>
+
 - IU Internationale Hochschule. (2023). Artificial Intelligence (DLBDSEAIS01_D) [Studienskript]. 001-2023-1213.</p>
+
 - IU Internationale Hochschule. (2025). Artificial Intelligence (DLBDSEAIS01-01_D) [Lernskript]. 001-2025-0805.</p>
+
 - IU Internationale Hochschule. (2025). Data Analytics und Big Data (DLBINGDABD01) [Lernskript]. 002-2025-0108.</p>
 
 ###### Abschlussarbeiten
-- Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf</p>
-- Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf</p>
-- Tschechlov, D. (2017). Metriken zur Evaluation von Teilschritten in Data Mining Analysen [Bachelorarbeit, Universität Stuttgart]. https://www2.informatik.uni-stuttgart.de/bibliothek/ftp/medoc.ustuttgart_fi/BCLR-2017-69/BCLR-2017-69.pdf</p>
 - Alhuda, H. N. (2022). Eine vergleichende Untersuchung zum Clustering von  Textdokumenten [Bachelorarbeit, Hochschule für Angewandte Wissenschaften Hamburg]. https://reposit.haw-hamburg.de/bitstream/20.500.12738/15632/1/BA_Clustering%20von%20Textdokumenten.pdf</p>
 
+- Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf</p>
+
+- Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf</p>
+
+- Tschechlov, D. (2017). Metriken zur Evaluation von Teilschritten in Data Mining Analysen [Bachelorarbeit, Universität Stuttgart]. https://www2.informatik.uni-stuttgart.de/bibliothek/ftp/medoc.ustuttgart_fi/BCLR-2017-69/BCLR-2017-69.pdf</p>
+
 ###### Bücher
-- Lane, H., Howard, C, & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.</p>
-- Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte (1. Auflage). dpunkt.verlag.</p>
+- Abbott, D., Kommer, I., & Kommer, C. (2025). Datenvisualisierung im praktischen Einsatz: Ansprechende Diagramme und Dashboards gestalte. dpunkt.verlag.</p>
+
 - Alpar, P., Alt, R., Bensberg, F., & Czarnecki, C. (2023). Anwendungsorientierte Wirtschaftsinformatik: Strategische Planung, Entwicklung und Nutzung von Informationssystemen (10. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-658-40352-2</p>
 
+- Baars, H., Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung (4. Auflage). Springer Vieweg. https://doi.org/10.1007/978-3-8348-2344-1</p>
+
+- Klein, B. (2023). Numerisches Python: arbeiten mit NumPy, Matplotlib und Pandas. (2. Auflage). Hanser.</p>
+
+- Lane, H., Howard, C., & Hapke, H. M. (2019). Natural language processing in action: Understanding, analyzing, and generating text with Python. Manning.</p>
+
+- Papp, S., Weidinger, W., Munro, K., Ortner, B., Cadonna, A., Langs, G., Licandro, R., Meir-Huber, M.,  Nikolić, D., Toth, Z., Vesela, B., Wazir, R., Zauner, G. (2022). Handbuch Data Science und KI: mit Machine Learning und Datenanalyse Wert aus Daten generieren. (2. Auflage). Hanser.</p>
+
+- Zheng, A., Casari, A., (2019). Merkmalskonstruktion für Machine Learning: Prinzipien und Techniken der Datenaufbereitung. (T. Loze, Übers.; 1. Auflage). O'Reilly.</p>
+
 ###### Fachzeitschriften
-- Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.: Latent dirichlet allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022</p>
-- Blum et al., 2020 ?</p>
+- Blei, David M. and Ng, Andrew Y. and Jordan, Michael I. (2003) Latent Dirichlet Allocation. In: The Journal of Machine Learning Research. Nr. 3, 3. Januar 2003, S. 993–1022</p>
+
+- Grootendorst, M. (2022). BERTopic: Neural topic modeling with a class-based TF-IDF procedure (arXiv:2203.05794). arXiv. https://doi.org/10.48550/arXiv.2203.05794</p>
+
 
 ###### Konferenz-Paper
 - Terragni, S., Fersini, E., Galuzzi, B. G., Tropeano, P., & Candelieri, A. (2021). OCTIS: Comparing and Optimizing Topic models is Simple! Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations, 263–270. https://doi.org/10.18653/v1/2021.eacl-demos.31</p>
 
 ###### Websites
 - Freitas, G. & Lily Hulatt. (2025). Feature Selection: Methoden & Techniken [Bildungsplattform]. StudySmarter. https://www.studysmarter.de/schule/informatik/computerlinguistik-theorie/feature-selection/</p>
+
 - Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/</p>
-- Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/</p>
-- Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.com/choijin/NLP_Topic_Modeling (Ursprünglich erschienen 2023)</p>
+
+- Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliotheken: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. https://bonartm.github.io/data-librarian/organisation/packages/</p>
+
+- Choi, J. (2023). Choijin/NLP_Topic_Modeling [Jupyter Notebook]. https://github.com/choijin/NLP_Topic_Modeling</p>
+
 - Emergent Mind. (2025, September 6). Intrinsic and Extrinsic Evaluators [Wissensplattform]. Emergent Mind. https://www.emergentmind.com/topics/intrinsic-and-extrinsic-evaluators</p>
+
 - Nguyen, M., & Ramdas, T. (2025, Juli 27). Topic Modeling: A Comparative Overview of BERTopic, LDA, and Beyond. Chamomile.Ai. https://chamomile.ai/topic-modeling-overview/</p>
+
+- Nagy, G. (2025). Wie die lexikalische Analyse die natürliche Sprachverarbeitung antreibt [Unternehmenswebseite]. Luigi’s Box. https://www.luigisbox.de/suchglossar/lexikalische-analyse-in-nlp/</p>
+
+- IBM Deutschland GmbH. (2025). Was ist Modelltraining? [Unternehmenswebseite]. IBM. https://www.ibm.com/de-de/think/topics/model-training</p>
+
+- IBM Deutschland GmbH. (2025). Was sind Modellparameter? [Unternehmenswebseite]. IBM. https://www.ibm.com/de-de/think/topics/model-parameters</p>
+
+- Wehner, N. (2025). Embedding für KI und Machine Learning [Wissensplattform]. IBM. https://www.ibm.com/de-de/think/topics/model-parameters</p>
+
+- Timmermann, T. (2019, März 7). Natural Language Processing - Einsteigen und loslegen!. [Unternehmenswebseite]. codecentric. https://www.codecentric.de/wissens-hub/blog/natural-language-processing-basics</p>
+
 ###### Anleitungen/Tutorials
 - Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
+
 - Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/</p>
+
 - Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
+
 - Sanchhaya Education Private Ltd. (2025, September 3). NLP Gensim Tutorial—Complete Guide For Beginners [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/nlp/nlp-gensim-tutorial-complete-guide-for-beginners/</p>
+
 - Sanchhaya Education Private Ltd. (2025, Juli 23). Normalizing Textual Data with Python [Bildungsplattform]. GeeksforGeeks. https://www.geeksforgeeks.org/python/normalizing-textual-data-with-python/</p>
+
+- Thevapalan, A. (2025, November 4). UMAP verstehen: Ein umfassender Leitfaden zur Dimensionsreduktion. datacamp. https://www.datacamp.com/tutorial/understanding-umap-guide-to-dimensionality-reduction</p>
+
 - Plotly Technologies Inc. (2026). Choropleth. Plotly. https://plotly.com/python/choropleth-maps/</p>
 
 [^01]: [Datensatz01] (https://www.kaggle.com/datasets/ashwinik/consumer-complaints-financial-products)
