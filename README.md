@@ -229,7 +229,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <details>
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
         <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</p>
-        <i><ins>Anwendungsfall</ins>: Fehlende Texte (NaTs) sowie sehr kurze Texte unter einer projektspezifischen Mindestlänge wurden per listenweisem Fallausschluss entfernt; auf eine Imputation wurde zugunsten inhaltlicher Konsistenz verzichtet. </i><br>
+        <i><ins>Anwendungsfall</ins>: Fehlende Texte (NaTs) wurden per listenweisem Fallausschluss entfernt; auf eine Imputation wurde zugunsten inhaltlicher Konsistenz verzichtet. </i><br>
           <div>
             <code>pandas(dropna(subset=["text"])) + pandas(str.len) + boolescher Filter</code><br>
           </div>
@@ -266,7 +266,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 </div>
 <br>
 
-> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können.[^16] Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
+> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können. (Timmermann, T. (2019)). Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
 
 ## Upstream-Aufgaben (engl. upstream tasks)
 > Als Upstream-Aufgaben in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
@@ -1273,7 +1273,7 @@ ______________
 _________________________________________________________________________________________________________________________________________________________
 
 ## Abhängigkeiten (engl. dependencies)
-Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. librarys) genannt. [^15]<br>
+Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. librarys) genannt (Bonart, M., & Förstner, K. (o. J.)).<br>
 
   | Bibliothek              | Website                                                                                                                                              |Verwendung              |
   |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
@@ -1301,7 +1301,7 @@ Als Rahmenwerk (engl. framework) werden große, grundlegende Bibliotheken mit vi
 <paketname>.<funktionsname>(<funktionsargumente>)
 ```
 
-aufgerufen werden.[^15]<br>
+aufgerufen werden (Bonart, M., & Förstner, K. (o. J.)).<br>
 
 ## Referenzen
 
