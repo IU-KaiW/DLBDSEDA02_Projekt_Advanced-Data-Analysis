@@ -250,7 +250,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
     <details>
       <summary>⬜ Datensatzvalidierung (engl. dataset validation)</b></summary>
       Im Rahmen der Datensatzvalidierung werden fehlerhafte Daten korrigiert, verworfen oder speziell behandelt, um Datenqualität und Aussagekraft zu sichern.<br><br>
-      <i><ins>Anwendungsfall</ins>: Im Projekt musste die Schreibweise eines US-Bundesstaaten korrigiert und zwei CAN-Bundesstaaten aus dem Datensatz entfernt werden.</i><br>
+      <i><ins>Anwendungsfall</ins>: Im Projekt mussten die Schreibweise eines US-Bundesstaaten korrigiert und zwei CAN-Bundesstaaten aus dem Datensatz entfernt werden.</i><br>
     </details>
 </ol>
 
@@ -273,9 +273,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 
 ### 🟥 Datenvorverarbeitung (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt.<br>
-<div style="margin-left: 1em;">
-  <code>spaCy</code>
-</div>
+<div style="margin-left: 1em;"><code>spaCy</code></div>
 <br>
 <ol type="1">
   <details>
@@ -294,7 +292,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           <ul>
           <details>
             <summary>🔴 Wortbereinigung (engl. word cleaning)</b></summary>
-            <p><i>Wortfilter</i></p>
+            <p><i>Wortbereinigungen erfolgen über Wortfilter. Hierbei kann zwischen unspezifischen und spezifischen Filtern differenziert werden.</i></p>
             <ul>
               <details>
                 <summary> unspezifische Filter</summary>
@@ -303,7 +301,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                 <details>
                   <summary>🔴 Stopworte (engl. stopwords)</summary>
                   <p><i>>Stoppwörter sind häufige Funktionswörter (z. B. „the", „is", „and"), die kaum semantischen Gehalt tragen und daher vor der Modellierung aus dem Korpus entfernt werden.</i></p>
-                  <i><ins>Anwendungsfall</ins>: Stoppworte werden beim Token-Filtering entfernt.</i><br>
+                  <i><ins>Anwendungsfall</ins>: Stoppworte werden beim Token-Filtering entfernt.</i><br><br>
                   <div>
                     <code>spaCy(token.is_stop)</code><br><br>
                   </div>
@@ -312,22 +310,14 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               </details>
               <details>
                 <summary> spezifische Filter</summary>
-                <p><i>projektspezifisch Filter</i></p>
+                <p><i>Durch projektspezifische Filter können Worte entfernt werden, die für einen Anwendungsfall nicht relevant sind.</i></p>
                 <ol type="1">
-                <details>
-                  <summary>🔴 Pronomenfilter</summary>
-                  <p><i>Pronomen tragen häufig geringe thematische Trennschärfe und werden daher entfernt, um den Fokus auf inhaltstragende Token zu erhöhen.</i></p>
-                  <i><ins>Anwendungsfall</ins>: Pronomen wurden über POS-Tagging (<code>PRON</code>) im Token-Filtering ausgeschlossen.</i><br>
-                  <div>
-                    <code>spaCy(token.pos_ != "PRON")</code><br><br>
-                  </div>
-                </details>
                 <details>
                   <summary>🔴 domänenspezifische Wortfilter</summary>
                   <p><i>Einzelne domänenspezifische Tokens werden ausgeschlossen.</i></p>
-                  <i><ins>Anwendungsfall</ins>: Häufige, aber wenig differenzierende Domänenbegriffe (z. B. <code>company</code>, <code>service</code>, <code>customer</code>) wurden als projektspezifische Stoppwörter gefiltert. </i><br>
+                  <i><ins>Anwendungsfall</ins>: Häufige, aber wenig differenzierende domänenspezifische Begriffe (z. B. <code>tell</code>, <code>call</code>, <code>say</code>, <code>time</code>) wurden als projektspezifische Stoppwörter gefiltert. </i><br><br>
                   <div>
-                    <code>spaCy(token.text)</code><br>
+                    <code>token.lemma_.lower() not in excluded_words</code><br>
                   </div>
                 </details>
                 </ol>
@@ -341,7 +331,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Satzzeichen (engl. punctuation marks)</summary>
                 <p><i>Satzzeichen strukturieren Sprache, tragen im Topic Modeling jedoch meist nur begrenzt zur Themenunterscheidung bei und werden daher gefiltert.</i></p>
-                <i><ins>Anwendungsfall</ins>: Satzzeichen werden beim Token-Filtering entfernt.</i><br>
+                <i><ins>Anwendungsfall</ins>: Satzzeichen werden beim Token-Filtering entfernt.</i><br><br>
                 <div>
                 <code>spaCy(token.is_punct)</code><br>
               </div>
@@ -381,7 +371,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <details>
                 <summary>🔴 Kasusumwandlung (engl. case conversion)</summary>
                 <p><i>Tokens werden in Kleinschreibung überführt.</i></p>
-                <i><ins>Anwendungsfall</ins>: Alle Tokens wurden in Kleinschreibung überführt, um Varianten wie <code>Service</code> und <code>service</code> zusammenzuführen. </i><br>
+                <i><ins>Anwendungsfall</ins>: Alle Tokens wurden in Kleinschreibung überführt, um Varianten wie <code>Service</code> und <code>service</code> zusammenzuführen.</i><br><br>
                 <div>
                   <code>spaCy(token.lemma_)</code>&nbsp;<code>stdlib(.lower)</code><br><br>
                 </div>
@@ -400,8 +390,6 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
             <summary>🔴 Rechtschreibfehlerkorrektur (engl. spelling correction)</summary>
 
 > Durch Rechtschreibkorrekturen können Tippfehler und Schreibfehler reduziert werden, um die Konsistenz von Texten zu verbessern
-
-  <i><ins>Anwendungsfall</ins>: Auf eine Rechtschreibkorrektur wurde in diesem Projekt verzichtet.</i><br>
           </details>
         </details>
         </ul>
@@ -448,8 +436,8 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   </details>
   <details>
     <summary>🔴 lexikalisches POS-Tagging (nicht kontextsensitiv)</summary>
-    <i>POS-Informationen werden für projektspezifische Filter (z. B. Pronomenfilter) genutzt.</i><br><br>
-    <i><ins>Anwendungsfall</ins>: POS-Tags wurden zur regelbasierten Filterung genutzt, insbesondere für den Ausschluss von Pronomen. </i><br>
+    <i>POS-Informationen werden bei POS-basierten Filter genutzt.</i><br><br>
+    <i><ins>Anwendungsfall</ins>: POS-Tags werden zur regelbasierten Filterung genutzt werden.</i><br>
         <div>
           <code>spaCy(token.pos_)</code><br><br>
         </div>
@@ -464,7 +452,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
       <details>
         <summary>🔴 syntaktisches POS-Tagging (kontextsensitiv)</summary>
         <i>Kontextsensitives POS-Tagging bestimmt Wortarten unter Berücksichtigung des Satzkontexts und verbessert die grammatische Einordnung ambiger Token.</i><br><br>
-      <i><ins>Anwendungsfall</ins>: Wurde im Projekt nicht als separater Auswertungsschritt vertieft, da der Fokus auf robuster Themenextraktion lag. </i><br>
+      <i><ins>Anwendungsfall</ins>: Wurde nicht als separater Auswertungsschritt vertieft, da der Fokus auf robuster Themenextraktion lag. </i><br>
       </details>
       <details>
         <summary>🔴 syntaktisches Parsen (engl. syntax parsing)</summary>
@@ -537,20 +525,18 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
           </details>
 
 ###### mit Informationsgewichtung
-      
-  <details>
+ <details>
             <summary>🟡 TF-IDF (Term Frequency times Inverse Document Frequency)</summary>
             <p><i>Bei der TF-IDF-Methode handelt es sich um eine statistische Erweiterung von BoX, durch welche eine Informationsgewichtung der Token bzw. Tokensequenzen vorgenommen wird.</i></p>
               <ul>
               <li><ins>TF-IDF auf Einzeltoken</ins></li>
               <p><i>Wird die TF-IDF-Methode auf Wortebene durchgeführt, werden Einzelwörter gewichtet, um ihre Relevanz im Dokument und im Korpus auszudrücken.</i></p>
-              <i><ins>Anwendungsfall</ins>: Diese Technik wurde im vorliegenden Projekt genutzt.</i><br>
+              <i><ins>Anwendungsfall</ins>: Diese Technik wurde zur Vektorisierung genutzt.</i><br><br>
               <div>
                 <code>sklearn (TfidfVectorizer)</code><br><br>
               </div>
               <li><ins>TF-IDF auf Tokensequenzen</ins></li>
               <p><i>Wird die TF-IDF-Methode mit einer Folge von n-Token durchgeführt, werden Wort-Paare oder längere Phrasen gewichtet, um ihre Relevanz auszudrücken.</i></p>
-              <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
               <div>
                 <code>sklearn (TfidfVectorizer(ngram_range))</code><br><br>
               </div>
@@ -575,19 +561,16 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                 <p><i>GloVe erzeugt statische Worteinbettungen, indem globale Worthäufigkeiten und gemeinsame Auftretensmuster in einer Wort-Kookkurrenzmatrix modelliert werden.</i></p>
-                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>gensim</code>&nbsp;<code>glove-python</code><br><br>
                   </div>
                 <li>Word2Vec</li>
                 <p><i>Word2Vec erzeugt statische Worteinbettungen, indem es Wörter über lokale Nachbarschaften im Satzkontext über die Trainingsvariante Skip-gram oder CBOW lernt.</i></p>
-                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>gensim</code><br><br>
                   </div>
                 <li>FastText</li>
                 <p><i>FastText erweitert statische Worteinbettungen um Subwortinformationen, indem auch Zeichen-n-Gramme in die Berechnung der Wortvektoren einbezogen werden.</i></p>
-                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>gensim</code><br><br>
                   </div>
@@ -604,7 +587,6 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <ul>
                 <li>GPT (Generative Pre-trained Transformer)</li>
                 <p><i>GPT verwendet ein unidirektionales Kontextmodell auf Wortebene und erzeugt kontextabhängige Einbettungen, bei denen die Bedeutung eines Tokens aus den vorhergehenden Wörtern im Satzverlauf abgeleitet wird.</i></p>
-                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
                   </div>
@@ -616,14 +598,12 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <ul>
                 <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
                 <p><i>BERT verwendet ein bidirektionales Kontextmodell auf Wortebene und erzeugt dadurch kontextabhängige Einbettungen, bei denen die Bedeutung eines Wortes aus seinem linken und rechten Kontext abgeleitet wird.</i></p>
-                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i><br>
                   <div>
                     <code>transformers</code>&nbsp;<code>sentence-transformers</code><br><br>
                   </div>
                 </li>
                 <li>ELMo (Embeddings from Language Models)</li>
                 <p><i>ELMo verwendet ein bidirektionales LSTM-Kontextmodell auf Wortebene und erzeugt dynamische Einbettungen, deren Bedeutung aus dem vorangehenden und nachfolgenden Kontext eines Wortes berechnet wird.</i></p>
-                <i><ins>Anwendungsfall</ins>: Im Projekt nicht genutzt.</i>
                   <div>
                     <code>tensorflow</code>&nbsp;<code>tensorflow_hub</code><br><br>
                   </div>
@@ -643,7 +623,6 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <ul>
                       <li>SkipThought Embeddings</li>
                       <p><i>Als vorhersagebasierte Satzeinbettung mit Encoder-Decoder-Architektur verarbeiten SkipThought Embeddings die Eingabesequenzen sequenziell. Das ursprüngliche SkipThought-Modell basiert typischerweise auf RNNs/LSTMs, die Sequenzen Token für Token(Wort für Wort) verarbeiten. Bei der klassischen SkipThought-Architektur mit RNN/LSTM-Encoder-Decoder verarbeitet der Encoder die Eingabesequenz in einer Richtung (von links nach rechts). Das Modell nutzt dabei nur Informationen aus den vorangegangenen Tokens, um zukünftige Tokens vorherzusagen.</p></i>
-                      <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt nicht genutzt.</i><br><br>
                       </li>
                     </ul>
                   </details>
@@ -665,13 +644,12 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
   <ul>
                         <li>SBERT Embedding (Sentence-BERT)</li>
                         <p><i>SBERT erzeugt bidirektionale Satz-Einbettungen, indem BERT so angepasst wird, dass semantische Ähnlichkeiten zwischen ganzen Sätzen effizient vergleichbar werden.</i></p>
-                        <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt wird diese Form des Embedding von BERTopic-Modell verwendet.</i><br>
+                        <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt wird diese Form des Embedding vom BERTopic-Modell genutzt.</i><br>
                         <div>
                           <code>sentence-transformers</code>&nbsp;<code>transformers</code><br><br>
                         </div>
                         <li>USE Embedding (Universal Sentence Encoder)</li>
                           <p><i>USE erzeugt bidirektionale Satz-Einbettungen für ganze Aussagen und ist auf die semantische Repräsentation und Vergleichbarkeit von Sätzen optimiert.</i></p>
-                        <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt nicht genutzt.</i><br>
                           <div>
                             <code>tensorflow-hub</code><br><br>
                           </div>
@@ -823,7 +801,6 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
             <code>sklearn (PCA)</code><br>
             <b>Output:</b> K Komponenten, Varianzanteil pro Komponente
           </div>
-         <i><ins>Anwendungsfall</ins>: Findet im Projekt keine Anwendung.</i><br>
         </details>
       </details>
       <details>
@@ -838,7 +815,6 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
               <code>sklearn (TSNE)</code><br>
               <b>Output:</b> 2-3D Koordinaten
             </div>
-              <i><ins>Anwendungsfall</ins>: Wird im NLP-Projket nicht genutzt.</i><br>
           </details>
           <details>
             <summary>⚫ UMAP (Uniform Manifold Approximation and Projection)</summary>
@@ -908,26 +884,26 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
     <details>
     <summary>🟠 Manuelle Suche (engl. search)</summary>
     
-  > Bei der manuellen Suche werden Hyperparameter iterativ auf Basis fachlicher Heuristiken und Zwischenresultate angepasst, um geeignete Wertebereiche einzugrenzen.<br>
+  > Bei der manuellen Suche werden Hyperparameter iterativ auf Basis fachlicher Heuristiken und Zwischenresultate angepasst, um geeignete Wertebereiche einzugrenzen.<br><br>
   <i><ins>Anwendungsfall</ins>: Diente zur initialen Eingrenzung plausibler Parameterbereiche vor der systematischen Rastersuche.</i><br>
   </details>
   <details>
     <summary>🟠 Rastersuche (engl. grid search)</summary>
   
-  > Rastersuche evaluiert alle Kombinationen eines definierten Hyperparametergitters und identifiziert die beste Konfiguration gemäß einer gewählten Zielfunktion.<br>
-  <i><ins>Anwendungsfall</ins>: Im vorliegenden Anwendungsfall wird Rastersuche (engl. grid search) genutzt. Dazu wurden modellspezifische Zielfunktionen entwickelt.</i><br>
-  </details>
+  > Rastersuche evaluiert alle Kombinationen eines definierten Hyperparametergitters und identifiziert die beste Konfiguration gemäß einer gewählten Zielfunktion.<br><br>
+  <i><ins>Anwendungsfall</ins>: Die Rastersuche (engl. grid search) wird genutzt, um Parameterkombination für die Modelle zu systematisch prüfen.</i><br>
+  <div style="margin-left: 1em;"><code>itertools</code></div>
+</details>
+
   <details>
     <summary>🟠 Zufallssuche (engl. random search)</summary>
 
 > Zufallssuche testet zufällig gezogene Parameterkombinationen aus vorgegebenen Verteilungen und erreicht häufig mit weniger Läufen robuste Ergebnisse.<br>
-  <i><ins>Anwendungsfall</ins>: Wurde im Projekt nicht genutzt, da der Suchraum überschaubar war und per Rastersuche (engl. grid search)  vollständig geprüft werden konnte.</i><br>
   </details>
   <details>
     <summary>🟠 Bayesianische Optimierung</b> (engl. bayesian optimization)</summary>
 
 > Bayesianische Optimierung modelliert die Zielfunktion probabilistisch und wählt neue Testpunkte informationsgeleitet über eine Akquisitionsfunktion aus.<br>
-  <i><ins>Anwendungsfall</ins>: Wurde im Projekt nicht eingesetzt, da Implementierungsaufwand und Rechenkosten für den Projektumfang nicht erforderlich waren.</i><br>
   </details>
   </ul>
  
@@ -963,7 +939,8 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
               <ul>
               <details>
                 <summary><span style="color:white">🟠 Themenzuordnungen (engl. topic assignments)</summary>
-                <span style="color:white">Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema (engl. topic) bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten (engl. hard assignment) und weichen probalistischen Zuordnungen (engl. soft assignment/scores) diffenziert werden.
+                <span style="color:white">Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema (engl. topic) bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten (engl. hard assignment) und weichen probalistischen Zuordnungen (engl. soft assignment/scores) diffenziert werden.</br></br>
+                <i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die genutzten Modelle Themenzuordnungen (engl. topic assignments) als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Cluster) erstellt.</i>
               </details>
               </details>
             </ul>
@@ -973,8 +950,6 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
 
 ###### NLP-Pipeline Ausgabe (engl. pipeline output)
 > Die durch das erstellte Modell verarbeiteten Daten fließen, je nach genutztem Modelltyp, in Form von Rohwerten, Klassenbezeichnungen, Bewertungen oder Clusterzuordnungen in die Datennachverarbeitung (engl. data post-processing) ein.
-
-<i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die gewählten Modelle Themenzuordnungen (engl. topic assignments) als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Zuordnungen) erstellt.</i>
 ______________
 
 ### 🟦 Datennachverarbeitung (engl. data post-processing)
@@ -1145,7 +1120,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
 
 > Misst die semantische Konsistenz der Top-Wörter eines Themas und dient damit der Bewertung seiner inhaltlichen Interpretierbarkeit. Für die Berechnung stehen mehrere Kohärenzmaße zur Verfügung, darunter <code>u_mass</code>, <code>c_v</code>, <code>c_uci</code> und <code>c_npmi</code> wobei höhere Werte auf kohärentere Themen hinweisen.
 
-<i><ins>Anwendungsfall</ins>: Im Projekt wird die Kohärenz über das Standard-Maße „c_v“, welches einen konsensbasierten Vektorraum-Ansatz zur Messung der Wort-Ähnlichkeit innerhalb der Themen nutzt, ermittelt.</i><br>
+<i><ins>Anwendungsfall</ins>: Die Kohärenz würde über das Standard-Maß „c_v“, welches einen konsensbasierten Vektorraum-Ansatz zur Messung der Wort-Ähnlichkeit innerhalb der Themen nutzt, ermittelt.</i><br>
       <div>
         <code>gensim.models.CoherenceModel</code><br>
       </div>
@@ -1156,7 +1131,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
 > Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – über die Berechnung können redundante Themen identifiziert werden. Bereich: 0 bis 1 (höher = bessser)
 
 ${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wörter}|}$<br><br>
-      <i><ins>Anwendungsfall</ins>: Im Projekt wird die Themenvielfalt berechnet.</i><br>
+      <i><ins>Anwendungsfall</ins>: Die Themenvielfalt wird als Metrik zur Modellabstimmung genutzt.</i><br>
     </details>
   </ul>
 </ul>
@@ -1168,7 +1143,6 @@ ${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wört
     <details>
       <summary>🔘 Verwirrung (engl. perplexity)</summary>
       <p><i>Misst die durchschnittliche Vorhersageunsicherheit des Modells auf ungesehenen Daten. Niedrigere Werte deuten auf bessere Generalisierung hin. Theoretischer Bereich: 0 bis ∞ (niedriger = besser)</i></p>
-      <i><ins>Anwendungsfall</ins>: Im vorliegenden Projekt nicht als Leitmetrik genutzt, da BERTopic primär über Kohärenz und Themenvielfalt bewertet wurde.</i><br>
       <div>
         <code>gensim</code>&nbsp;<code>torchmetrics</code><br>
       </div>
@@ -1229,12 +1203,12 @@ ${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wört
 ###### quantitative Modellvalidierung (engl. quantitative model validation)
 > Bei der quantitativen Modellvalidierung wird die Modellqualität objektiv und metrikbasiert bewertet; die Auswertung erfolgt automatisiert.
   
-  <i><ins>Anwendungsfall</ins>: Im Projekt wird der Ansatz der quantitativen Modellvalidierung nicht verfolgt.</i>
+  <i><ins>Anwendungsfall</ins>: Im Projekt wurde der quantitative Ansatz zur Modellvalidierung genutzt.</i>
   
 ###### qualitative Modellvalidierung (engl. qualitative model validation)
 > Bei der qualitativen Modellvalidierung wird die Modellqualität subjektiv bewertet; die Auswertung erfolgt manuell.
 
-  <i><ins>Anwendungsfall</ins>: Im Projekt wird eine qualitativer Ansatz genutzt.</i>
+  <i><ins>Anwendungsfall</ins>: Im Projekt wurde auch der qualitative Ansatz verwendet.</i>
   </ul>
 </details>
 </ul>
