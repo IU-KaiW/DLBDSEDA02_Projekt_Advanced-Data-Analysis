@@ -4,15 +4,16 @@ Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernen
 Der ausgearbeitete Lösungsansatz fokussiert sich auf Verarbeitung von englischsprachigen Kundenbeschwerden (engl. customer complaints) mit dem Ziel, die am häufigsten angesprochenen Themen systematisch zu extrahieren und visuell für Entscheidungsträger einer örtlichen Stadtverwaltung adressatengerecht aufzubereiten.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Installation (engl. setup)
-Die Projektumgebung wurde mit Microsoft Visual Studio Code (VSCode) und einer lokalen virtuellen Python-Umgebung (conda) eingerichtet. Für die Ausführung in VSCode wird folgender Standardweg verwendet:
+Als Laufzeitumgebung wird eine virtuelle Umgebung (engl. virtual environment) eingerichtet. Diese isoliert die projektspezifischen Pakete von anderen Projekten sowie von der systemweiten Python-Installation. Für die Installation ist eine Internetverbindung erforderlich.
+
+Für die Ausführung des Projekt in VS Code wird müssen folgenden Befehle ausgeführt werden:
 
 ```console
 conda env create -f environment.yml
 conda activate Projekt_Advanced-Data-Analysis
-conda install ipykernel
+python -m spacy download en_core_web_sm
 ```
-
-Anschließend ist in VSCode der Kernel `Projekt_Advanced-Data-Analysis (Python 3.11.18)` zu wählen und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` auszuführen.
+Anschließend ist der Kernel `Projekt_Advanced-Data-Analysis (Python 3.11.18)` verfügbar und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` kann ausgeführt werden. Beim ersten Ausführen werden `all-MiniLM-L6-v2` und `en_core_web_sm` aus dem Internet geladen und anschließend lokal zwischengespeichert.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Konzeptionelle Überlegungen
 Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergänzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
@@ -1255,18 +1256,17 @@ ______________
 ├─────────────── /   complaints_data.csv
 ├─────────────── /   complaints_data_cleaned.csv
 |
-├──────────── src/ # Projekt-Code
-├─────────────── /   Projekt_Advanced_Data_Analysis (Model final).ipynb
-├─────────────── /   Projekt_Advanced_Data_Analysis (Model calibration).ipynb
+├──────────── src/ # Quellcode
+├─────────────── /   Projekt_Advanced_Data_Analysis.ipynb
+├─────────────── /   Projekt_Advanced_Data_Analysis (model calibration).ipynb
 |
 ├────────────docs/ # Arbeitsunterlagen (Übersichten)
-├─────────────── / 1 - 1_Datensatzauswahl
-├─────────────── / 2 - 1_Datensatzverarbeitung
-├─────────────── / 3 - 2_Textbereinigung
-├─────────────── / 4 - 3_Datenauswertung
-├─────────────── / 5 - 3_Datenkommunikation
-├─────────────── / 6 - 3_Datennachverarbeitung
-├─────────────── / 7 - 
+├─────────────── /   1_Datensatzauswahl
+├─────────────── /   1_Datensatzverarbeitung
+├─────────────── /   2_Textbereinigung
+├─────────────── /   3_Datenauswertung
+├─────────────── /   3_Datenkommunikation
+├─────────────── /   3_Datennachverarbeitung
 |
 └──────README.md   # Projektdokumentation
 ```
