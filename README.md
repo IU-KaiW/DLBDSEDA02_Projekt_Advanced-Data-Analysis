@@ -272,6 +272,9 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 ## Upstream-Aufgaben (engl. upstream tasks)
 > Als Upstream-Aufgaben in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
 
+<img src="Upstream-Aufgaben (engl. upstream tasks)" width="1200">
+
+
 ### 🟥 Datenvorverarbeitung (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt.<br>
 <div style="margin-left: 1em;"><code>spaCy</code></div>
