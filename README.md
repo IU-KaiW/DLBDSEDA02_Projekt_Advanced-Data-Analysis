@@ -6,7 +6,7 @@ ________________________________________________________________________________
 ## Installation (engl. setup)
 Als Laufzeitumgebung wird eine virtuelle Umgebung (engl. virtual environment) eingerichtet. Diese isoliert die projektspezifischen Pakete von anderen Projekten sowie von der systemweiten Python-Installation. Für die Installation ist eine Internetverbindung erforderlich.
 
-Für die Ausführung des Projekt in VS Code wird müssen folgenden Befehle ausgeführt werden:
+Für die Ausführung des Projekt müssen in VS Code folgenden Befehle ausgeführt werden:
 
 ```console
 conda env create -f environment.yml
@@ -42,7 +42,7 @@ ________________________________________________________________________________
 <details>
   <summary>⬜ Datensatzrecherche (engl. dataset research)</summary>
   Im Rahmen der Datensatzrecherche werden geeignete Datensätze auf einschlägigen Datenportalen recherchiert und nach definierten Kriterien vorausgewählt.<br><br>
-  <i><ins>Anwendungsfall</ins>: Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u.A.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i>
+  <i><ins>Anwendungsfall</ins>: Es wurde eine Onlinerecherche auf verschiedenen Datenportalen (Kaggle, GitHub, GovData, MendeleyData, u. a.) durchgeführt und nach geeigneten deutschen und englischen Datensätzen gesucht.</i>
 </details>
 </ol>
 <ol>
@@ -82,9 +82,9 @@ ________________________________________________________________________________
 
 $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
-  Die  durch den KI-Detektor verarbeitbaren Datensatzinstanzen (Zeilen) wurden anhand ihrer Label REAL, FAKE und ERROR in einem Tabellenkalkulationsprogramm durch eine Häufigkeitsauswertung ausgewertet. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über folgende eine Tabellenkalkulationsprogramm ausgewertet.
+  Die  durch den KI-Detektor verarbeitbaren Datensatzinstanzen (Zeilen) wurden anhand ihrer Label REAL, FAKE und ERROR in einem Tabellenkalkulationsprogramm durch eine Häufigkeitsauswertung ausgewertet. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über ein Tabellenkalkulationsprogramm ausgewertet.
 
-<i><ins>Anwendungsfall</ins>: Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der prozentualen höchsten Bewertung wurde ausgewählt.</i><br>
+<i><ins>Anwendungsfall</ins>: Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der höchsten Bewertung wurde ausgewählt.</i><br>
 
 | Nr.| Bezeichnung                        | Bewertung | Größe     |Quelle                     |
 |----|------------------------------------|-----------|-----------|---------------------------|
@@ -99,12 +99,12 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
 
-<i>Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt da dieser das höchste Scoring mit 82,63 % erreicht.</i>
+<i>Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt er das höchste Scoring mit 82,63 % erreicht.</i>
   </details>
 </ol>
 
 ### Datensatzsichtung (engl. dataset inspection)
-> In der Phase der Datensatzsichtung wird der ausgewählte Datensatz einer explorativen Datenanalyse (engl. exploratory data analysis - EDA) unterzogen, um strukturelle Merkmale, Muster und potenzielle Qualitätsprobleme systematisch zu identifizieren. Zu diesem Zweck werden sowohl die Datenstruktur als auch der Dateninhalt analysiert, sodass die gewonnene Erkenntnisse in die Datensatzaufbereitung (engl. dataset preparation) überführt und den nachgelagerten Prozessphasen methodisch berücksichtigt werden können.
+> In der Phase der Datensatzsichtung wird der ausgewählte Datensatz einer explorativen Datenanalyse (engl. exploratory data analysis - EDA) unterzogen, um strukturelle Merkmale, Muster und potenzielle Qualitätsprobleme systematisch zu identifizieren. Zu diesem Zweck werden sowohl die Datenstruktur als auch der Dateninhalt analysiert, sodass die gewonnenen Erkenntnisse in die Datensatzaufbereitung (engl. dataset preparation) überführt und den nachgelagerten Prozessphasen methodisch berücksichtigt werden können.
 
 <ol>   
   <details>
@@ -115,12 +115,12 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
   <summary>⚪ Datenformatsanalyse (engl. data format analysis)</summary>
   Bei der Datenformatanalyse wird die technische Hülle eines Datensatzes, sprich sein Speicherformat untersucht.<br>
 
-  <br><i><ins>Anwendungsfall</ins>: Der gewählte Datensatz liegt im CSV-Format vor, einem tabellarischen Speicherformat mit kommagetrennten Werten (Klein, 2023, p. 261).</i><br><br>
+  <br><i><ins>Anwendungsfall</ins>: Der gewählte Datensatz liegt im CSV-Format vor, einem tabellarischen Speicherformat mit durch Kommas getrennten Werten (Klein, 2023, p. 261).</i><br><br>
   </details>
   <details>
   <summary>⚪ Datenschemaanalyse (engl. data schema analysis)</summary>
   Bei der Datenschemanalyse wird die inhaltliche Struktur der Spalten analysiert.<br><br>
-  <i><ins>Anwendungsfall</ins>: Der gewählte Datensatz besteht aus vier Spalten. Die darin enthaltene Informationen lassen sich in strukturierte Informationen ("author", "posted_on", "rating"), die ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter) Form vorliegen und unstrukturierte ("text") Informationen unterteilen, wobei letztere als Input für die NLP-Pipeline genutzt werden.</i><br><br>
+  <i><ins>Anwendungsfall</ins>: Der gewählte Datensatz besteht aus vier Spalten. Die darin enthaltenen Informationen lassen sich in strukturierte Informationen ("author", "posted_on", "rating"), die ohne größere Vorverarbeitung direkt weiterverarbeitet werden können, da die Informationen meist in einheitlicher (normalisierter) Form vorliegen und unstrukturierte Informationen ("text") unterteilen. Letztere werden als Input für die NLP-Pipeline genutzt.</i><br><br>
 
 |author                             |posted_on                 |rating |text              |
 |-----------------------------------|--------------------------|-------|------------------|
@@ -151,17 +151,17 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
   > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrennte, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt.<br>
 
-  Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, von deren auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
+  Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, wovon auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
             </details>
             <details>
               <summary>"posted_on"</summary>
 
   > Die Zeilen der Spalte "posted_on" enthalten Datumsangaben mit alphabetisch abgekürzter Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format "Monat, Tag, Jahr".<br>
 
-  Im Rahmen der Datenexploration wurde eine Zeitdatenanalyse durchgeführt welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden im Datensatz über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
+  Im Rahmen der Datenexploration wurde eine Zeitdatenanalyse durchgeführt, welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
             <ul>
               <li><ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgt sind. <br>
-              <li><ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) abgesetzt wurden, wobei der Datensatz ein saisonales Muster zeigt.<br>
+              <li><ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) eingereicht wurden, wobei der Datensatz ein saisonales Muster zeigt.<br>
               <li><ins>wöchentliche Verteilung:</ins> Die Verteilung der Beschwerden aufgeschlüsselt nach Wochentagen zeigt, dass die meisten Beschwerden mittwochs (993), dienstags (960) und donnerstags (861), gefolgt von montags (820) und freitags (802) abgesetzt wurden, wohingegen an den Tagen der Wochenenden Samstag (659) und Sonntag (564) weniger Beschwerden zu verzeichnen sind. Dieses Muster deutet ebenfalls auf einen organischen Ursprung des Datensatzes hin.<br>
             </ul>
             </details>
@@ -182,7 +182,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
             <details>
               <summary>"text"</summary>
           <ul>
-          Die Kundenbeschwerden enthalten Zeit- und Datumsangaben in unterschiedlichen Formaten, Großschreibungen, Aufzählungen und Sonderzeichen was in der der Phase linguistische Datenverarbeitung zu beachten ist. Die durchgeführte Textlängenanalyse (engl. text length analysis) zeigt, dass die durchschnittliche Beschwerdelänge im Median 864 Zeichen aufweist und dabei im Schnitt aus 11 Sätzen besteht.
+          Die Kundenbeschwerden enthalten Zeit- und Datumsangaben in unterschiedlichen Formaten, Großschreibungen, Aufzählungen und Sonderzeichen was in der Phase der linguistischen Datenverarbeitung zu beachten ist. Die durchgeführte Textlängenanalyse (engl. text length analysis) zeigt, dass die durchschnittliche Beschwerdelänge im Median 864 Zeichen aufweist und dabei im Schnitt aus 11 Sätzen besteht.
           <br>
             </details>
           </ul>
@@ -200,12 +200,12 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         <details>
           <summary>Nummernfehlwerte (engl. number errors)</summary>
           Bei einem Nummernfehlwert (engl. Not a Number - NaNs) handelt es sich um einen nicht vorhandenen numerischen Wert im Datensatz.<br><br>
-          <i><ins>Anwendungsfall</ins>: Die Analyse fehlender Daten zeigte keine Fehlwerte in der nummerischen Spalte 'rating'</i><br>
+          <i><ins>Anwendungsfall</ins>: Die Analyse fehlender Daten zeigte keine Fehlwerte in der numerischen Spalte 'rating'</i><br>
         </details>
       <details>
         <summary>Textfehlwerte (engl. text errors)</summary>
-        Bei einem Textfehlwerten (engl. Not a Text - NaTs) handelt es sich um einen nicht vorhandenen textuellen Wert im Datensatz.<br><br>
-        <i><ins>Anwendungsfall</ins>: Die Untersuchung strukturiert vorliegenden, textuellen Spalten 'author' und 'posted_on' zeigte keine Fehlwerte. Es wurden jedoch 30 NaTs in unstrukturiert vorliegenden Spalte 'text' festgestellt welche bereinigt werden müssen, um Verzerrungen im NLP-Modell zu vermeiden.</i><br>
+        Bei einem Textfehlwert (engl. Not a Text - NaTs) handelt es sich um einen nicht vorhandenen textuellen Wert im Datensatz.<br><br>
+        <i><ins>Anwendungsfall</ins>: Die Untersuchung strukturiert vorliegenden, textuellen Spalten 'author' und 'posted_on' zeigte keine Fehlwerte. Es wurden jedoch 30 NaTs in der unstrukturiert vorliegenden Spalte 'text' festgestellt welche bereinigt werden müssen, um Verzerrungen im NLP-Modell zu vermeiden.</i><br>
       </details>
       </details>
       <details>
@@ -256,40 +256,38 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 </ol>
 
 ###### Datensatz-Pipeline Ausgabe (engl. dataset pipeline output)
-Der so aufbereiteten Datensatzes wird als *"complaints_data_cleaned.csv"* exportiert, welcher als Korpus für die nachfolgenden NLP-Schritte genutzt wird.
+Der so aufbereitete Datensatzes wird als *"complaints_data_cleaned.csv"* exportiert, welcher als Korpus für die nachfolgenden NLP-Schritte genutzt wird.
 _________________________________________________________________________________________________________________________________________________________
 
 ## 🟧 Linguistische Datenverarbeitung - LDV (engl. NLP-Pipeline)
 ###### NLP-Pipeline Eingabe (engl. pipeline input)
-Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Datensatzinstanzen (Zeilen) werden als Dokumente bezeichnet. 
+Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Datensatzinstanzen (Zeilen) werden als Dokumente, bezeichnet. 
 <div>
   <code>pandas</code>
 </div>
 <br>
 
-> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können. (Timmermann, T. (2019)). Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
+> Im maschinellen Lernen stellen Merkmale (engl. features) kategorielle oder numerische Größen dar, anhand derer die Algorithmen oder neuronale Netze Texte klassifizieren oder clustern können (Timmermann, T. (2019)). Innerhalb von NLU dienen die Merkmale als Brücke zwischen rohem Text und algorithmischer Verarbeitung, welche als Pipeline bezeichnet wird und relevante linguistische Informationen auf lexikalischer, syntaktischer oder semantischer Ebene durch Verarbeitungsschritte extrahiert.
 
 ## Upstream-Aufgaben (engl. upstream tasks)
 > Als Upstream-Aufgaben in NLP-Pipelines werden die frühen, vorbereitenden Verarbeitungsschritte, die Daten generieren oder vorverarbeiten, um spätere Komponenten zu ermöglichen bezeichnet.
 
-<img src="Upstream-Aufgaben (engl. upstream tasks)" width="1200">
-
-
 ### 🟥 Datenvorverarbeitung (engl. data pre-processing)
 > Während der Datenvorverarbeitung erfolgt die *Merkmalsvorbereitung (engl. feature preparation)* für nachfolgende Schritte in einem mehrstufigen Prozess, welcher sich grob in Textvorverarbeitung und linguistische Vorverarbeitung unterteilen lässt.<br>
-<div style="margin-left: 1em;"><code>spaCy</code></div>
-<br>
+<div style="margin-left: 1em;"><code>spaCy</code></div><br>
+<img src="docs/2 - Datenvorverarbeitung (engl. data pre-processing).jpg" width="1200">
+<br><br>
 <ol type="1">
   <details>
     <summary>🟥 <b>textuelle Vorverarbeitung</b> (engl. text pre-processing)</summary>
 
-> In der textuellen Vorverarbeitung erfolgt eine Textbereinigung (engl. text cleaning) was über Rauschentfernung (engl. noise reduction) und Standardisierung (engl. standardisation) umgesetzt wird.<br>
+> In der textuellen Vorverarbeitung erfolgt eine Textbereinigung (engl. text cleaning), welche durch Rauschentfernung (engl. noise reduction) und Standardisierung (engl. standardisation) umgesetzt wird.<br>
 
   <img src="docs/2 - Textbereinigung (engl. text cleaning).jpg">
     <ol type="1">
         <details>
           <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
-          <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen. Dies erfolgt über Standard- und Individualfilter, um sprachspezifische Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Schreibfehler, Emoijs, ect. zu entfernen.
+          <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen. Dies erfolgt über Standard- und Individualfilter, um sprachbezogene Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Schreibfehler, Emoijs, ect. zu entfernen.
           </i></p>
           <div><code>spaCy</code></div>
           <br>
@@ -521,7 +519,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
               <code>sklearn (CountVectorizer)</code>
             </div><br>
             <li><ins>BoX auf Tokensequenzen</ins></li>
-            <p><i>Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünner besetzter Merkmalsraum ergibt.</p></i>
+            <p><i>Wird die Methode mit einer Folge von n-Token durchgeführt, wird sie als Bag-of-N-Grams (BoN) bezeichnet, was eine lokal auf die Tokensequenz begrenzte Kontexterfassung ermöglicht. „Je größer n ist, desto reicher ist der Informationsgehalt und desto höher die Kosten“ für Berechnung, Speicherung und Modellierung (Zheng und Casari, 2019, p. 44). Was bedeutet, dass sich bei BoN ein viel größerer und dünn besetzter Merkmalsraum ergibt.</p></i>
             <div>
               <code>sklearn (CountVectorizer(ngram_range))</code><br>
             </div>
@@ -561,7 +559,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
       <details>
         <summary>🟡 statische Wort-Einbettungen (engl. )</summary>
 
-> nichtkontextuelle sprich *vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)* sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).       
+> nichtkontextuelle, sprich *vorhersagebasierte Wort-Einbettungen (engl. prediction based word embeddings)* sind statische Einbettungen, die jedes Wort zu einem festen Vektor übersetzen – unabhängig vom Kontext, in dem es steht. Ihr Training erfolgt auf riesigen Textkorpora, dabei lernen die Modelle, Wörter mit ähnlichen Kontexten auch im Vektorraum zusammenzubringen. Sprachliche Vieldeutigkeiten (Polysemie) und Kontextänderungen werden dabei jedoch nicht abgebildet (Papp et al., 2022, p. 329; Wehner, 2026).       
   <ul>
                 <li>GloVe (Global Vectors for Word Representation)</li>
                 <p><i>GloVe erzeugt statische Worteinbettungen, indem globale Worthäufigkeiten und gemeinsame Auftretensmuster in einer Wort-Kookkurrenzmatrix modelliert werden.</i></p>
@@ -633,7 +631,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
                   <details>
                     <summary>🟡 kontextbasierte Satzeinbettungen (engl. contextualized sentence embeddings)</summary>
                     
-  > kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Satzebenen-Semantik.</i></p>
+  > kontextbasierte Satzeinbettungen werden durch Transformer-basierte oder RNN-basierte Modelle erzeugt und erfassen Semantik auf Satzebene.</i></p>
   <ul>
   
   ###### unidirektionale Satzeinbettungen (unidirektional)
@@ -685,7 +683,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
 > Als Downstream-Aufgaben werden in NLP-Pipelines spezifische, anwendungsorientierte Aufgaben, die auf den Ergebnissen grundlegender (Upstream-Aufgaben) Verarbeitungsschritte aufbauen, bezeichnet. Sie stellen die "Endprodukte" dar, bei denen Modelle an reale Probleme angepasst werden, um direkt nutzbaren Output zu liefern.
 
 ### 🟧 Datenverarbeitung (engl. data processing)
-> Im Rahmen der Datenverarbeitung erfolgt eine *Modellierung (engl. modeling)*, sprich die Entwicklung mathematischer oder statistischer Funktionen (z.B. Machine-Learning-Modelle), die Muster in Daten erfassen und nutzbar machen. Man spricht in diesem Zusammenhang auch vom *Merkmalsmodellierung (engl. feature modeling)*. Sie bezeichnet den Prozess der systematischen Konstruktion und Optimierung von Merkmalen in einem formalisierten mathematischen, sprich deterministischen oder probabilistischen Rahmen. Ziel ist es, rohe, unstrukturierte oder hochdimensionale Daten in eine kompakte, diskriminative oder interpretierbare numerische Repräsentation zu überführen, welche die wesentlichen Informationen bewahrt oder verstärkt. Dabei werden werden ML-Algorithmen auf die vorverarbeiteten Daten angewendet, die eingesetzten Kernverfahren umfassen *überwachtes Lernen (engl. supervised learning)* – Regression, Klassifikation oder *unüberwachtes Lernen (engl. unsupervised learning)* – Clustering. Als Algorithmus wird das Lernverfahren bezeichnet, als Modell eine parametrisierte Instanz des Algorithmus.
+> Im Rahmen der Datenverarbeitung erfolgt eine *Modellierung (engl. modeling)*, sprich die Entwicklung mathematischer oder statistischer Funktionen (z.B. Machine-Learning-Modelle), die Muster in Daten erfassen und nutzbar machen. Man spricht in diesem Zusammenhang auch vom *Merkmalsmodellierung (engl. feature modeling)*. Sie bezeichnet den Prozess der systematischen Konstruktion und Optimierung von Merkmalen in einem formalisierten mathematischen, sprich deterministischen oder probabilistischen Rahmen. Ziel ist es, rohe, unstrukturierte oder hochdimensionale Daten in eine kompakte, diskriminative oder interpretierbare numerische Repräsentation zu überführen, welche die wesentlichen Informationen bewahrt oder verstärkt. Dabei werden ML-Algorithmen auf die vorverarbeiteten Daten angewendet, die eingesetzten Kernverfahren umfassen *überwachtes Lernen (engl. supervised learning)* – Regression, Klassifikation oder *unüberwachtes Lernen (engl. unsupervised learning)* – Clustering. Als Algorithmus wird das Lernverfahren bezeichnet, als Modell eine parametrisierte Instanz des Algorithmus.
 <ol type="1">
   <details>
     <summary>🟧<b> Modellentwicklung</b> (engl. model development)</summary>
@@ -732,7 +730,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
  <ol type="1">
     <details>
       <summary>🟠 Wortraum Themenmodelle (engl. word-space topic models)</summary>
-      <p><i>Wortraumbasierte Modelle operieren auf frequenzbasierten Eingabe-Repräsentation (z.B. BoW, TF-IDF). Sie nutzen einen diskreten Wort-Merkmals-Raum. Jedes Wort ist eine Dimension, die vom Modell über einen Merkmalsvektor (engl. feature vector) aufgerufen wird, da diese meist hochdimensional sind werden sie auch als dünnbesetzte Vektoren (engl. sparse vektors) bezeichnet (siehe oben).</i></p>
+      <p><i>Wortraumbasierte Modelle operieren auf frequenzbasierten Eingabe-Repräsentation (z.B. BoW, TF-IDF). Sie nutzen einen diskreten Wort-Merkmals-Raum. Jedes Wort ist eine Dimension, die vom Modell über einen Merkmalsvektor (engl. feature vector) aufgerufen wird, da diese meist hochdimensional sind, werden sie auch als dünnbesetzte Vektoren (engl. sparse vektors) bezeichnet (siehe oben).</i></p>
     <ul>
     <details>
         <summary>🟠 Merkmalsabstraktion (engl. feature abstraction)</summary>
@@ -843,7 +841,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <details>
     <summary>🟠<b> Modellkonfiguration </b> (engl. model configuration)</summary>
 
-  > Bei der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells welche außerhalb liegen. Sie bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren, Hyperparameter werden vor dem Training durch Abstimmung festgelegt (IBM Deutschland GmbH, 2025). Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
+  > Bei der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells, welche außerhalb liegen. Sie bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren, Hyperparameter werden vor dem Training durch Abstimmung festgelegt (IBM Deutschland GmbH, 2025). Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
   
   </details>
   <details>
@@ -854,7 +852,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <details>
     <summary>🟠 <b> Modelltraining</b> (engl. model training)</summary>
 
-> Beim Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte welche steuern, wie das Modell auf ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder ein Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen. Je nachdem, ob und wie das Modell Eingaberepräsentationen verarbeitet, lassen sich zwei Hauptkategorien innerhalb des Modelltraining unterscheiden:<br>
+> Beim Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte, welche steuern, wie das Modell auf ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder eine Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen. Je nachdem, ob und wie das Modell Eingaberepräsentationen verarbeitet, lassen sich zwei Hauptkategorien innerhalb des Modelltraining unterscheiden:<br>
 
 <ul>
   <details>
@@ -943,7 +941,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
               <ul>
               <details>
                 <summary><span style="color:white">🟠 Themenzuordnungen (engl. topic assignments)</summary>
-                <span style="color:white">Als Themenzuordnungen werden die Zuordnung eines Dokuments (oder Satzes) zu einem Thema (engl. topic) bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten (engl. hard assignment) und weichen probalistischen Zuordnungen (engl. soft assignment/scores) diffenziert werden.</br></br>
+                <span style="color:white">Als Themenzuordnungen wird die Zuordnung eines Dokuments (oder Satzes) zu einem Thema (engl. topic) bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten (engl. hard assignment) und weichen probabilistischen Zuordnungen (engl. soft assignment/scores) differenziert werden.</br></br>
                 <i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die genutzten Modelle Themenzuordnungen (engl. topic assignments) als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Cluster) erstellt.</i>
               </details>
               </details>
@@ -982,8 +980,7 @@ ______________
   <details>
   <summary>🔵 Modellanalyse (engl. model analysis)</summary>
 
-  > Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell Eingabemerkmale transformiert. Sie wird als  Modellbewertung (engl. model scoring) bezeichnet und umfasst die Modellqualitätsmessung und die Modellvalidierung.
-  Modellanalysen - Modellauswertung. 
+  > Eine Modellanalyse erfolgt modellspezifisch und untersucht, wie ein Modell Eingabemerkmale transformiert. Sie wird als Modellbewertung (engl. model scoring) bezeichnet und umfasst die Modellqualitätsmessung und die Modellvalidierung.
 
   <ul>
   <details>
@@ -1051,7 +1048,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
   </ol>
 
 ###### Intrinsische Metriken (engl. intrinsic metrics)
-> Intrinsische Metriken erfassen inhärente Eigenschaften (Emergent Mind, 2025). Sie bewerten die Qualität gelernter Features auf Basis der innerern Struktur des Modells.
+> Intrinsische Metriken erfassen inhärente Eigenschaften (Emergent Mind, 2025). Sie bewerten die Qualität gelernter Features auf Basis der inneren Struktur des Modells.
 <ol type="1">
   <details>
   <summary>🔘 Clustering-Metriken (engl. clustering metrics)</summary>
@@ -1062,9 +1059,9 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
       <p><i>Allgemeine Clustering-Metriken bewerten die strukturelle Qualität einer Clusterlösung unabhängig vom konkreten Anwendungsfall. Sie messen vor allem Trennschärfe, Kompaktheit und Konsistenz der Cluster auf einer übergeordneten methodischen Ebene.</i></p>
       <ul>
       <details>
-        <summary>🔘 Silhouetten Koeffizient (engl. silhouette score)</summary>
+        <summary>🔘 Silhouettenkoeffizient (engl. silhouette score)</summary>
   
-  > „Der Silhouetten Koeffizient (SK) versucht eine Aussage über die Kompaktheit und die Separation zu treffen, sowohl für einzelne Punkte, als auch für Cluster“ (Tschechlov, 2017, p. 40).
+  > „Der Silhouettenkoeffizient (SK) versucht eine Aussage über die Kompaktheit und die Separation zu treffen, sowohl für einzelne Punkte, als auch für Cluster“ (Tschechlov, 2017, p. 40).
   <div>
     <code>sklearn.metrics (silhouette_score)</code><br><br>
   </div>
@@ -1122,7 +1119,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
     <details>
       <summary>🔘 Kohärenz (engl. coherence)</summary>
 
-> Misst die semantische Konsistenz der Top-Wörter eines Themas und dient damit der Bewertung seiner inhaltlichen Interpretierbarkeit. Für die Berechnung stehen mehrere Kohärenzmaße zur Verfügung, darunter <code>u_mass</code>, <code>c_v</code>, <code>c_uci</code> und <code>c_npmi</code> wobei höhere Werte auf kohärentere Themen hinweisen.
+> Misst die semantische Konsistenz der Top-Wörter eines Themas und dient damit der Bewertung seiner inhaltlichen Interpretierbarkeit. Für die Berechnung stehen mehrere Kohärenzmaße zur Verfügung, darunter <code>u_mass</code>, <code>c_v</code>, <code>c_uci</code> und <code>c_npmi</code>, wobei höhere Werte auf kohärentere Themen hinweisen.
 
 <i><ins>Anwendungsfall</ins>: Die Kohärenz würde über das Standard-Maß „c_v“, welches einen konsensbasierten Vektorraum-Ansatz zur Messung der Wort-Ähnlichkeit innerhalb der Themen nutzt, ermittelt.</i><br>
       <div>
@@ -1132,7 +1129,7 @@ Bei der Entwicklung und dem Finetuning von Algorithmen müssen Metriken vorhande
     <details>
       <summary>🔘 Themenvielfalt (engl. topic diversity)</summary>
 
-> Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – über die Berechnung können redundante Themen identifiziert werden. Bereich: 0 bis 1 (höher = bessser)
+> Misst, inwieweit sich die Top-Wörter verschiedener Themen unterscheiden – über die Berechnung können redundante Themen identifiziert werden. Bereich: 0 bis 1 (höher = besser)
 
 ${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wörter}|}$<br><br>
       <i><ins>Anwendungsfall</ins>: Die Themenvielfalt wird als Metrik zur Modellabstimmung genutzt.</i><br>
@@ -1241,7 +1238,7 @@ ${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wört
       </details>
       <details>
       <summary>🔵 Modelldarstellung (engl. model visualizations)</summary>
-      <p><i>Bei der Modelldarstellung werden Parameter und Ergebnissen in textueller und visueller Form vorgenommen, um Funktionsweise, Qualität und Grenzen des Modells nachvollziehbar zu machen. Die Darstellung von Metriken erfolgt dabei tabellarisch und grafisch, um Modellgüte, Vergleichbarkeit und Optimierungspotenziale darzustellen.</i></p>
+      <p><i>Bei der Modelldarstellung werden Parameter und Ergebnisse in textueller und visueller Form vorgenommen, um Funktionsweise, Qualität und Grenzen des Modells nachvollziehbar zu machen. Die Darstellung von Metriken erfolgt dabei tabellarisch und grafisch, um Modellgüte, Vergleichbarkeit und Optimierungspotenziale darzustellen.</i></p>
       </details>
     </ol>
   </details>
@@ -1266,6 +1263,7 @@ ______________
 ├────────────docs/ # Arbeitsunterlagen (Übersichten)
 ├─────────────── /   1_Datensatzauswahl
 ├─────────────── /   1_Datensatzverarbeitung
+├─────────────── /   2_Datenvorverarbeitung
 ├─────────────── /   2_Textbereinigung
 ├─────────────── /   3_Datenauswertung
 ├─────────────── /   3_Datenkommunikation
@@ -1276,7 +1274,7 @@ ______________
 _________________________________________________________________________________________________________________________________________________________
 
 ## Abhängigkeiten (engl. dependencies)
-Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. librarys) genannt (Bonart, M., & Förstner, K. (o. J.)).<br>
+Ein Python Skript mit der Endung ".py" wird als Modul bezeichnet. Eine Sammlung von Modulen in einem Ordner, wird Paket (engl. package) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (engl. library) genannt (Bonart, M., & Förstner, K. (o. J.)).<br>
 
   | Bibliothek              | Website                                                                                                                                              |Verwendung              |
   |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
@@ -1325,7 +1323,7 @@ aufgerufen werden (Bonart, M., & Förstner, K. (o. J.)).<br>
 
 - Kruse, C. (2022). Vergleichende Evaluation von  Topic-Modellen für die  Analyse von  Softwareinzidenztickets [Masterarbeit, Technische Hochschule Ingolstadt]. https://opus4.kobv.de/opus4-haw/frontdoor/deliver/index/docId/3478/file/I001169705Abschlussarbeit.pdf</p>
 
-- Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von grossen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf</p>
+- Steiner, D., & Zeneli, G. (2019). Texploration: Automatische Analyse von großen Textsammlungen [Bachelorarbeit, Zürcher Hochschule für Angewandte Wissenschaften]. https://www.zhaw.ch/storage/engineering/institute-zentren/cai/BA19_Texploration_Steiner_Zeneli.pdf</p>
 
 - Tschechlov, D. (2017). Metriken zur Evaluation von Teilschritten in Data Mining Analysen [Bachelorarbeit, Universität Stuttgart]. https://www2.informatik.uni-stuttgart.de/bibliothek/ftp/medoc.ustuttgart_fi/BCLR-2017-69/BCLR-2017-69.pdf</p>
 
@@ -1379,7 +1377,7 @@ aufgerufen werden (Bonart, M., & Förstner, K. (o. J.)).<br>
 ###### Anleitungen/Tutorials
 - Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
 
-- Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gemsim. https://radimrehurek.com/gensim/</p>
+- Řehůřek, R. (2025). Gensim: Topic modelling for humans. Gensim. https://radimrehurek.com/gensim/</p>
 
 - Řehůřek, R. (2024, August 10). LDA Model. Gensim. https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html</p>
 
@@ -1405,4 +1403,3 @@ aufgerufen werden (Bonart, M., & Förstner, K. (o. J.)).<br>
 [^16]: [Webseite] (Timmermann, T. (2019, März 7). Natural Language Processing—Einsteigen und loslegen! [Unternehmenswebseite]. codecentric AG. https://www.codecentric.de/wissens-hub/blog/natural-language-processing-basics)
 [^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
 [^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
-[^15]: [Webseite] Bonart, M., & Förstner, K. (o. J.). Python Pakete und Bibliothekten: Data librarian—Modul 3—Daten analysieren und darstellen. Data Librarian. Abgerufen 11. Oktober 2025, von https://bonartm.github.io/data-librarian/organisation/packages/
