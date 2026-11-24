@@ -6,7 +6,7 @@ ________________________________________________________________________________
 ## Installation (engl. setup)
 Als Laufzeitumgebung wird eine virtuelle Umgebung (engl. virtual environment) eingerichtet. Diese isoliert die projektspezifischen Pakete von anderen Projekten sowie von der systemweiten Python-Installation. Für die Installation ist eine Internetverbindung erforderlich.
 
-Für die Ausführung des Projekt müssen in VS Code folgenden Befehle ausgeführt werden:
+Für die Ausführung des Projekts müssen in VS Code die folgenden Befehle ausgeführt werden:
 
 ```console
 conda env create -f environment.yml
@@ -69,9 +69,8 @@ ________________________________________________________________________________
       <details>
       <summary>⚪ KI-Detektoren (engl. AI-detectors)</summary>
       Eine Prüfung auf Datenauthentizität kann über KI-Detektoren erfolgen.<br><br>
-  <i><ins>Anwendungsfall</ins>: Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwendet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur Abschätzung der Textquelle, da organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Embedding verwendet.</i><br>
-        <div>
-          <code>transformers</code>&nbsp;<code>torch</code><br>
+  <i><ins>Anwendungsfall</ins>: Zur Prüfung der Datenauthentizität wurde ein extern entwickelter, vortrainierter KI-Detektor (https://github.com/Kishanjaisoorya/AI-Text-Detector-python) eingesetzt und gemäß Herstellerdokumentation installiert und verwendet. Eine Anpassung der Konfidenzschwelle im Programm erfolgte nicht. Der Detektor verwendet Sentimentanalyse zur Erfassung der emotionalen Ausprägung von Beschwerdetexten und liefert damit ein indirektes Signal zur möglichen Abschätzung der Textquelle. Es wird die Hypothese zugrunde gelegt, dass organisch verfasste Beschwerden typischerweise variablere emotionale und sprachliche Muster aufweisen als synthetisch generierte Texte. Diese Hypothese wurde im Rahmen des Projekts nicht empirisch verifiziert. Die Klassifikation der Datensatzinstanzen (Beschwerdetexte) erfolgt durch das Programm automatisiert in den Labelklassen REAL, FAKE und ERROR. Während der Anwendung zeigte sich, dass nicht alle Datensätze vollständig verarbeitet werden konnten; dies ist plausibel auf lange Beschwerdetexte (>512 Tokens), begrenzte Rechenressourcen sowie den Modellgrenzen des Sprachmodells „bert-base-multilingual-uncased“ (110M Parametern) zurückzuführen, welche das vom Programm eingesetzte Embedding verwendet.</i><br>
+        <div><code>transformers</code>&nbsp;<code>torch</code><br></div>
         </details>
       </ul>
       </details>
@@ -82,7 +81,7 @@ ________________________________________________________________________________
 
 $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
-  Die  durch den KI-Detektor verarbeitbaren Datensatzinstanzen (Zeilen) wurden anhand ihrer Label REAL, FAKE und ERROR in einem Tabellenkalkulationsprogramm durch eine Häufigkeitsauswertung ausgewertet. Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über ein Tabellenkalkulationsprogramm ausgewertet.
+  Die verarbeitbaren Datensätze wurden anhand der Klassifikationslabel (REAL / FAKE / ERROR) über ein Tabellenkalkulationsprogramm ausgewertet.
 
 <i><ins>Anwendungsfall</ins>: Die Wahrscheinlichkeit eines organischen Ursprungs erscheint höher, je höher der Prozentsatz als organisch identifizierter Instanzen im Verhältnis zum Gesamtdatensatz ist. Konnte ein Datensatz nicht in angemessener Zeit (30 min.) durch den KI-Detektor verarbeitet werden, wurde die Prüfung abgebrochen und der Datensatz mit n/a bewertet. Diese Datensätze flossen dann nicht in den Ergebnisvergleich ein. Der Datensatz mit der höchsten Bewertung wurde ausgewählt.</i><br>
 
@@ -99,7 +98,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 | 09 | chatgpt_reviews.csv                | 35,03 %   | 119,9  MB |[^09] &nbsp; GitHub        |
 | 10 | dataset-tickets-multi-lang3-4k.csv | n/a       | 6,87   MB |[^10] Kaggle               |
 
-<i>Es wird Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt er das höchste Scoring mit 82,63 % erreicht.</i>
+<i>Es wurde Datensatz Nr. 05[^05] *"complaints_data.csv"* gewählt, da er mit 82,63 % die höchste Bewertung erreichte.</i>
   </details>
 </ol>
 
@@ -133,7 +132,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 <ol>
   <details>
     <summary>⬜ Dateninhaltsanalyse (engl. data content analysis)</summary>
-    Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse der Datensatzspalten durchgeführt um Verteilungen, Muster, Auffälligkeiten und potenzielle Qualitätsprobleme sichtbar zu machen. Dabei wird zwischen Datenerkundung und Datenerkennung differenziert.<br><br>
+    Im Rahmen der Dateninhaltsanalyse wird die explorative Datenanalyse der Datensatzspalten durchgeführt um Verteilungen, Muster, Auffälligkeiten und potenzielle Qualitätsprobleme sichtbar zu machen, dabei wird zwischen Datenerkundung und Datenerkennung differenziert.<br><br>
     <ul>
       <details>
       <summary>⚪ Datenerkundung (engl. data exploration)</summary>
@@ -149,7 +148,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
             <details>
               <summary>"author"</summary>
 
-  > Die Zeilen der Spalte enthalten jeweils den alphanumerischen`<Benutzernamen>` des Beschwerdeverfassers sowie eine, durch ein "of" getrennte, US-Ortsangabe welche im Format `<Ortsname "of" US-Bundesstaat>` vorliegt.<br>
+  > Die Zeilen der Spalte enthalten den alphanumerischen <Benutzername> sowie eine US-Ortsangabe im Format <Ortsname> of <US-Bundesstaat>.<br>
 
   Die Datenexploration durch eine Ortsdatenanalyse zeigte, dass 3 US-Ortsangaben ['BC', 'ON', 'PE'] ungültig sind, aus 17 Bundesstaaten eine dreistellige Anzahl an Beschwerden zu verzeichnen ist, wovon auf ['FL: 778', 'CA: 554', 'GA: 414'] entfallen und aus 5 Bundesstaaten ['IA', 'MT', 'OK', 'RI', 'SD'] keine Beschwerden erfasst wurden.
             </details>
@@ -158,7 +157,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 
   > Die Zeilen der Spalte "posted_on" enthalten Datumsangaben mit alphabetisch abgekürzter Monatsangabe über einen Zeitraum von 16 Jahren im amerikanischem Format "Monat, Tag, Jahr".<br>
 
-  Im Rahmen der Datenexploration wurde eine Zeitdatenanalyse durchgeführt, welche Muster in der (jährlichen, monatlichen, wöchentlichen) Verteilung der Beschwerden über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
+  Im Rahmen der Datenexploration wurde eine Zeitdatenanalyse durchgeführt, welche Muster in der (jährlichen, monatlichen, wöchentlichen) Beschwerdenverteilung über den Zeitraum vom 31.07.2000 bis 22.11.2016 zeigte.
             <ul>
               <li><ins>jährliche Verteilung:</ins> Die EDA zeigt, dass die meisten Beschwerden im Jahr 2015 erfolgt sind. <br>
               <li><ins>monatliche Verteilung:</ins> Die EDA zeigte weiter, dass die meisten Beschwerden im August (540) und die wenigsten Beschwerden im April (369) eingereicht wurden, wobei der Datensatz ein saisonales Muster zeigt.<br>
@@ -176,13 +175,13 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
         </details>
         <details>
           <summary>⚪ Analyse der unstrukturierten Daten (engl. analysis of unstructured data)</summary>
-> Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprich Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, etc.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
+> Unstrukturierte Daten sind Informationen, die in keiner geordneten Strukturierung vorliegen. Ein typisches Beispiel dafür sind natürlichsprachliche Texte, welche aus Wörtern, sprich Zeichenketten (Folgen von Buchstaben, Ziffern, Satzzeichen, u.a.) bestehen und konkateniert Sätze (Folgen von Wörtern) bilden.<br><br>
   <ul>
             <i><ins>Anwendungsfall</ins>: In den Zeilen der Spalte "text" des gewählten Datensatzes befindet sich englischsprachige Kundenbeschwerden (engl. customer complaints).</i><br><br>
             <details>
               <summary>"text"</summary>
           <ul>
-          Die Kundenbeschwerden enthalten Zeit- und Datumsangaben in unterschiedlichen Formaten, Großschreibungen, Aufzählungen und Sonderzeichen was in der Phase der linguistischen Datenverarbeitung zu beachten ist. Die durchgeführte Textlängenanalyse (engl. text length analysis) zeigt, dass die durchschnittliche Beschwerdelänge im Median 864 Zeichen aufweist und dabei im Schnitt aus 11 Sätzen besteht.
+          Die Kundenbeschwerden enthalten Zeit- und Datumsangaben in unterschiedlichen Formaten, Großschreibungen, Aufzählungen und Sonderzeichen was bei der linguistischen Datenverarbeitung zu beachten ist. Die durchgeführte Textlängenanalyse (engl. text length analysis) zeigt, dass die durchschnittliche Beschwerdelänge im Median 864 Zeichen aufweist und dabei im Schnitt aus 11 Sätzen besteht.
           <br>
             </details>
           </ul>
@@ -205,7 +204,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <details>
         <summary>Textfehlwerte (engl. text errors)</summary>
         Bei einem Textfehlwert (engl. Not a Text - NaTs) handelt es sich um einen nicht vorhandenen textuellen Wert im Datensatz.<br><br>
-        <i><ins>Anwendungsfall</ins>: Die Untersuchung strukturiert vorliegenden, textuellen Spalten 'author' und 'posted_on' zeigte keine Fehlwerte. Es wurden jedoch 30 NaTs in der unstrukturiert vorliegenden Spalte 'text' festgestellt welche bereinigt werden müssen, um Verzerrungen im NLP-Modell zu vermeiden.</i><br>
+        <i><ins>Anwendungsfall</ins>: Die Untersuchung strukturiert vorliegenden, textuellen Spalten 'author' und 'posted_on' zeigte keine Fehlwerte. Es wurden jedoch 30 NaTs in der unstrukturiert vorliegenden Spalte 'text' festgestellt, welche bereinigt werden müssen, um Verzerrungen im NLP-Modell zu vermeiden.</i><br>
       </details>
       </details>
       <details>
@@ -229,7 +228,7 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
       <ul>
       <details>
         <summary>⚪ Fehlwertbehandlung (engl. missing value handling)</summary>
-        <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, durch welchen Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente durch geschätzte Werte, damit der Datensatz für Modelltraining oder Analyse vollständig nutzbar bleibt.</p>
+        <p>Die Behandlung von Fehlwerten wie NaNs (Not a Number) oder NaTs (Not a Text) kann durch listenweisen Fallausschluss, bei welchem Zeilen ohne Text oder Text unter einer Mindestlänge entfernt wird oder Imputation, bei welcher das Auffüllen oder Ersetzen fehlender oder unvollständiger Textelemente mit geschätzten Werte erfolgt, druchgeführt werden.</p>
         <i><ins>Anwendungsfall</ins>: Fehlende Texte (NaTs) wurden per listenweisem Fallausschluss entfernt; auf eine Imputation wurde zugunsten inhaltlicher Konsistenz verzichtet. </i><br>
           <div>
             <code>pandas(dropna(subset=["text"])) + pandas(str.len) + boolescher Filter</code><br>
@@ -256,12 +255,12 @@ $$\%\text{ organisch} = \left(\frac{REAL}{REAL + FAKE + ERROR}\right) \cdot100$$
 </ol>
 
 ###### Datensatz-Pipeline Ausgabe (engl. dataset pipeline output)
-Der so aufbereitete Datensatzes wird als *"complaints_data_cleaned.csv"* exportiert, welcher als Korpus für die nachfolgenden NLP-Schritte genutzt wird.
+Der so aufbereitete Datensatz wird als *"complaints_data_cleaned.csv"* exportiert, welcher als Korpus für die nachfolgenden NLP-Schritte genutzt wird.
 _________________________________________________________________________________________________________________________________________________________
 
-## 🟧 Linguistische Datenverarbeitung - LDV (engl. NLP-Pipeline)
+## 🟧 Linguistische Datenverarbeitung, LDV (engl. Natural Language Processing, NLP)
 ###### NLP-Pipeline Eingabe (engl. pipeline input)
-Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Datensatzinstanzen (Zeilen) werden als Dokumente, bezeichnet. 
+Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"complaints_data_cleaned.csv"*, genauer dem Import der Spalte `<text>`, welche als Korpus für die folgenden NLP-Schritte genutzt wird. Die Datensatzinstanzen (Zeilen) werden als Dokumente bezeichnet. 
 <div>
   <code>pandas</code>
 </div>
@@ -287,7 +286,7 @@ Die Sprachverarbeitung beginnt mit dem Import des aufbereiteten Datensatzes *"co
     <ol type="1">
         <details>
           <summary>🔴 Rauschentfernung (engl. noise reduction)</summary>
-          <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen. Dies erfolgt über Standard- und Individualfilter, um sprachbezogene Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Schreibfehler, Emoijs, ect. zu entfernen.
+          <p><i>Ziel der Rauschentfernung ist es irrelevante Token (Zeichen und Zeichenketten) für nachfolgende Prozesse zu identifizieren und zu löschen. Dies erfolgt über Standard- und Individualfilter, um sprachbezogene Stopp- und Kurzworte, Satzzeichen, Nummern, Zeitangaben, Schreibfehler, Emojis, usw. zu entfernen.
           </i></p>
           <div><code>spaCy</code></div>
           <br>
@@ -730,7 +729,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
  <ol type="1">
     <details>
       <summary>🟠 Wortraum Themenmodelle (engl. word-space topic models)</summary>
-      <p><i>Wortraumbasierte Modelle operieren auf frequenzbasierten Eingabe-Repräsentation (z.B. BoW, TF-IDF). Sie nutzen einen diskreten Wort-Merkmals-Raum. Jedes Wort ist eine Dimension, die vom Modell über einen Merkmalsvektor (engl. feature vector) aufgerufen wird, da diese meist hochdimensional sind, werden sie auch als dünnbesetzte Vektoren (engl. sparse vektors) bezeichnet (siehe oben).</i></p>
+      <p><i>Wortraumbasierte Modelle operieren auf frequenzbasierten Eingaberepräsentation (z.B. BoW, TF-IDF). Sie nutzen einen diskreten Wort-Merkmals-Raum. Jedes Wort ist eine Dimension, die vom Modell über einen Merkmalsvektor (engl. feature vector) aufgerufen wird, da diese meist hochdimensional sind, werden sie auch als dünnbesetzte Vektoren (engl. sparse vectors) bezeichnet (siehe oben).</i></p>
     <ul>
     <details>
         <summary>🟠 Merkmalsabstraktion (engl. feature abstraction)</summary>
@@ -852,7 +851,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   <details>
     <summary>🟠 <b> Modelltraining</b> (engl. model training)</summary>
 
-> Beim Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte, welche steuern, wie das Modell auf ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder eine Clusterung abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen. Je nachdem, ob und wie das Modell Eingaberepräsentationen verarbeitet, lassen sich zwei Hauptkategorien innerhalb des Modelltraining unterscheiden:<br>
+> Beim Modelltraining werden die Modellparameter vom Modell direkt oder über mehrere Iterationen des Lernprozesses als Reaktion auf die Trainingsdaten aktualisiert. Das Modell aktualisiert die Parameterwerte, welche steuern, wie das Modell auf ungesehene Daten reagiert. Es handelt sich also um die gelernten Werte (Gewichtungen) innerhalb des maschinellen Lernmodells, die bestimmen, wie es Eingabedaten auf Ausgaben, wie z. B. eine vorhergesagte Klassifizierung oder Ein Clustering abbildet (IBM Deutschland GmbH, 2025). Die Anpassung der Parameter erfolgt bis zur Konvergenz oder zum Erreichen einer maximalen Anzahl von Iterationen. Je nachdem, ob und wie das Modell Eingaberepräsentationen verarbeitet, lassen sich zwei Hauptkategorien innerhalb des Modelltraining unterscheiden:<br>
 
 <ul>
   <details>
@@ -909,7 +908,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
   </details>
   </ul>
  
- > Das Ergebnis  der Modellabstimmung ist ein trainiertes und optimiertes Modell, das je nach Aufgabenstellung eine Regression, Klassifikation (im NLP z. B. Sentiment Analysis) oder Clustering (im NLP z. B. Topic Modeling) durchführt, indem es Eingabedaten in Vorhersagen, Klassenzuordnungen oder Clusterstrukturen überführt.
+ > Das Ergebnis der Modellabstimmung ist ein trainiertes und optimiertes Modell, das je nach Aufgabenstellung eine Regression, Klassifikation (im NLP z. B. Sentiment Analysis) oder Clustering (im NLP z. B. Topic Modeling) durchführt, indem es Eingabedaten in Vorhersagen, Klassenzuordnungen oder Clusterzuordnungen überführt.
   </details>
   <details>
     <summary>🟧<b> Modellbereitstellung</b> (engl. model deployment)</summary>
@@ -941,8 +940,8 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
               <ul>
               <details>
                 <summary><span style="color:white">🟠 Themenzuordnungen (engl. topic assignments)</summary>
-                <span style="color:white">Als Themenzuordnungen wird die Zuordnung eines Dokuments (oder Satzes) zu einem Thema (engl. topic) bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten (engl. hard assignment) und weichen probabilistischen Zuordnungen (engl. soft assignment/scores) differenziert werden.</br></br>
-                <i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die genutzten Modelle Themenzuordnungen (engl. topic assignments) als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten/Gewichte), durch das BERTopic-Modell harte Zuordnungen (Themen-Cluster) erstellt.</i>
+                <span style="color:white">Als Themenzuordnungen wird die Zuordnung eines Dokuments (oder Satzes) zu einem Thema (engl. topic) bezeichnet. Dabei kann zwischen Einzelzuordnungen (engl. single-assignment) und Mehrfachzuordnung (engl. multi-assignment) sowie harten (engl. hard assignment) und weichen Zuordnungen (engl. soft assignment/scores) differenziert werden.</br></br>
+                <i><ins>Anwendungsfall</ins>: Im vorliegenden NLP-Anwendungsfall werden durch die genutzten Modelle Themenzuordnungen (engl. topic assignments) als Output-Features generiert. Durch das LDA-Modell werden weiche Zuordnungen (Themen-Wahrscheinlichkeiten), durch das BERTopic-Modell harte Zuordnungen (Themen-Cluster) erstellt.</i>
               </details>
               </details>
             </ul>
@@ -1221,7 +1220,7 @@ ${Themenvielfalt} = \frac{|\text{eindeutige Top-Wörter}|}{|\text{alle Top-Wört
 
   <details>
     <summary>🟦<b> Datenkommunikation</b> (engl. data communication)</summary>
-    <p><i>Durch die Datenkommunikation werden gewonnene Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, um Muster erkennbar zu machen, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.</i></p>
+    <p><i>Durch die Datenkommunikation werden Erkenntnisse aus der Datenanalyse textuell und/oder grafisch präsentiert, um Muster erkennbar zu machen, weshalb dieser Schritt auch als Datenpräsentation (engl. data presentation) oder Visualisierung (engl. visualization) bezeichnet wird.</i></p>
     <div>
       <code>plotly</code>&nbsp;<code>matplotlib</code><br><br>
     </div> 
@@ -1394,12 +1393,11 @@ aufgerufen werden (Bonart, M., & Förstner, K. (o. J.)).<br>
 [^03]: [Datensatz03] (https://www.kaggle.com/code/saurabhsawhney/nlp-complaints-classification)
 [^04]: [Datensatz04] (https://www.kaggle.com/datasets/shashwatwork/consume-complaints-dataset-fo-nlp)
 [^05]: [Datensatz05] (https://github.com/sanax-997/nlp_customer_complaints_analysis/blob/main/Data/complaints_data.csv)
-[^06]: [Datensatz07] (https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
-[^07]: [Datensatz08] (https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
-[^08]: [Datensatz09] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
-[^09]: [Datensatz10] (https://github.com/Schossi2908/DLBDSEDA02_D)
-[^10]: [Datensatz11] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
+[^06]: [Datensatz06] (https://github.com/gurneetjuneja/NLP-Problem-Solving/blob/main/user_complaints.csv)
+[^07]: [Datensatz07] (https://www.kaggle.com/code/mchirico/analyzing-text-in-consumer-complaints)
+[^08]: [Datensatz08] (https://data.mendeley.com/datasets/w2cp7h53s5/1)
+[^09]: [Datensatz09] (https://github.com/Schossi2908/DLBDSEDA02_D)
+[^10]: [Datensatz10] (https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets)
 [^11]: [Webseite] (Helm, C. (2025, Mai 8). spaCy vs NLTK – Was ist die bessere Wahl für NLP? Konfuzio. https://konfuzio.com/de/spacy-vs-nltk/)
-[^16]: [Webseite] (Timmermann, T. (2019, März 7). Natural Language Processing—Einsteigen und loslegen! [Unternehmenswebseite]. codecentric AG. https://www.codecentric.de/wissens-hub/blog/natural-language-processing-basics)
 [^12]: [Buch] Klein, B. (2023). Numerisches Python: Arbeiten mit NumPy, Matplotlib und Pandas (2., aktualisierte u. erweiterte Auflage). Hanser.
 [^13]: `seaborn` Waskom, M. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
