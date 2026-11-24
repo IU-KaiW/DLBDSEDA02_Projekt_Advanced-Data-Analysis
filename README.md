@@ -841,7 +841,7 @@ Themenmodellierung ist ein unüberwachtes Lernverfahren zur Identifikation laten
     <summary>🟠<b> Modellkonfiguration </b> (engl. model configuration)</summary>
 
   > Bei der Konfiguration werden Hyperparameter eines Modells festgelegt. Hierbei handelt es sich um nicht-adaptive Einstellungen eines Modells, welche außerhalb liegen. Sie bestimmen das Trainingsverhalten und beeinflussen die Qualität der gelernten Features. Ihre Optimierung erfolgt typischerweise durch iterative Verfahren, Hyperparameter werden vor dem Training durch Abstimmung festgelegt (IBM Deutschland GmbH, 2025). Einige Hyperparameter bestimmen das Verhalten des Modells während des Trainings (z.B. Lernrate beim Gradientenabstieg oder die Anzahl der Epochen des Trainingsprozesses). Andere Hyperparameter sind für die Form und Struktur des Modells verantwortlich, wie z. B. Anzahl der Cluster im k-means Clustering oder der versteckten Schichten in einem neuronalen Netz (IBM Deutschland GmbH, 2025).
-  
+
   </details>
   <details>
     <summary>🟠 <b> Modellinitialisierung </b> (engl. model initialization)</summary>
