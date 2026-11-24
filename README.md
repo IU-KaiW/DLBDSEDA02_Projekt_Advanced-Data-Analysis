@@ -4,16 +4,15 @@ Natural Language Processing (NLP) ist eine Teildisziplin des maschinellen Lernen
 Der ausgearbeitete Lösungsansatz fokussiert sich auf Verarbeitung von englischsprachigen Kundenbeschwerden (engl. customer complaints) mit dem Ziel, die am häufigsten angesprochenen Themen systematisch zu extrahieren und visuell für Entscheidungsträger einer örtlichen Stadtverwaltung adressatengerecht aufzubereiten.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Installation (engl. setup)
-Als Laufzeitumgebung wird eine virtuelle Umgebung (engl. virtual environment) eingerichtet. Diese isoliert die projektspezifischen Pakete von anderen Projekten sowie von der systemweiten Python-Installation. Für die Installation ist eine Internetverbindung erforderlich.
-
-Für die Ausführung des Projekts müssen in VS Code die folgenden Befehle ausgeführt werden:
+Um das entwickelte NLP-System in Betrieb zu nehmen, ist eine Internetverbindung erforderlich. Zunächst muss das GitHub Projektarchiv über den angegebenen Link geladen werden. Im Anschluss sollten „Microsoft Virtual Studio Code (VS Code)“ gemäß den Herstellerangaben installiert, seine Erweiterungen „Jupyter Extension for Visual Studio Code“ und „Jupyter Notebook Renderers“ installiert und die die folgenden Befehle im Terminal ausgeführt werden:
 
 ```console
 conda env create -f environment.yml
 conda activate Projekt_Advanced-Data-Analysis
 python -m spacy download en_core_web_sm
 ```
-Anschließend ist der Kernel `Projekt_Advanced-Data-Analysis (Python 3.11.18)` verfügbar und das Notebook `src/Projekt_Advanced_Data_Analysis.ipynb` kann ausgeführt werden. Beim ersten Ausführen werden `all-MiniLM-L6-v2` und `en_core_web_sm` aus dem Internet geladen und anschließend lokal zwischengespeichert.
+
+In VS Code sollte nun der Kernel `Projekt_Advanced-Data-Analysis (Python 3.11.18)` verfügbar sein und die Jupyter-Notebooks `src/Projekt_Advanced_Data_Analysis.ipynb` und `Projekt_Advanced_Data_Analysis (model calibration).ipynb` können ausgeführt werden. Beim ersten Ausführen des Quellcodes wird zusätzlich das Sprachmodell `all-MiniLM-L6-v2` aus dem Internet geladen und ebenfalls lokal zwischengespeichert. 
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## Konzeptionelle Überlegungen
 Das Konzept beinhaltet gemäß den Vorgaben der Hochschule die Darstellung von zwei Techniken zur Textvektorisierung sowie zwei Ansätzen zur Extraktion von Themen (engl. topics) aus Texten. Darüber hinaus wurden ergänzende NLP-Verarbeitungsschritte aufgeführt und für die Umsetzung notwendige Python-Bibliotheken genannt.
